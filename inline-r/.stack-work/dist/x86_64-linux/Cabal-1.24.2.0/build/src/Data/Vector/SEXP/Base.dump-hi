@@ -1,0 +1,212 @@
+
+==================== FINAL INTERFACE ====================
+2017-12-28 08:02:24.062856 UTC
+
+interface inline-r-0.9.0.2-GXEXrsxC4K8OTVxhqWwxs:Data.Vector.SEXP.Base 8002
+  interface hash: 547d95c8587f05fb35d95704f670e3e7
+  ABI hash: 4fee69f30bb73a3bab2a9c4037daa643
+  export-list hash: aa30f1c2f3261c65181cdb6d644559bf
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: 998a89db083c5683b1dbaa2fc557c9d5
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Data.Vector.SEXP.Base.E
+  Data.Vector.SEXP.Base.ElemRep
+  Data.Vector.SEXP.Base.SVECTOR
+  Data.Vector.SEXP.Base.VECTOR
+module dependencies: Control.Memory.Region Foreign.R
+                     Foreign.R.Constraints Foreign.R.Internal Foreign.R.Type
+                     Internal.Error Language.R.HExp [boot]
+package dependencies: array-0.5.1.1@array-0.5.1.1 base-4.9.1.0
+                      binary-0.8.3.0@binary-0.8.3.0
+                      bytestring-0.10.8.1@bytestring-0.10.8.1
+                      containers-0.5.7.1@containers-0.5.7.1
+                      deepseq-1.4.2.0@deepseq-1.4.2.0 ghc-boot-th-8.0.2@ghc-boot-th-8.0.2
+                      ghc-prim-0.5.0.0 integer-gmp-1.0.0.1
+                      mtl-2.2.1@mtl-2.2.1-BLKBelFsPB3BoFeSWSOYj6
+                      pretty-1.1.3.3@pretty-1.1.3.3
+                      primitive-0.6.2.0@primitive-0.6.2.0-4578caNkWQ54Gt1mxLF2Yh
+                      safe-0.3.15@safe-0.3.15-2Yd45VWFfdcKqKyispOifY
+                      singletons-2.2@singletons-2.2-F6aalBFPo1F9ebvy1Wkuj3
+                      syb-0.7@syb-0.7-4OKdCpwGutyB1rNRmoa0ya template-haskell-2.11.1.0
+                      text-1.2.2.2@text-1.2.2.2-9UQZjEJZQFSGMffj1Z5g00
+                      th-desugar-1.6@th-desugar-1.6-4xe2xTMQQiAGUPVUAkAZhp
+                      th-expand-syns-0.4.3.0@th-expand-syns-0.4.3.0-A2GRp9XTxmBCMfV7DnYdn0
+                      th-lift-0.7.7@th-lift-0.7.7-JWI9Gh7wB0MC9Q5wqv5aoI
+                      th-lift-instances-0.1.11@th-lift-instances-0.1.11-A7sWuFC2KLsFTBmLagoRSX
+                      th-orphans-0.13.4@th-orphans-0.13.4-IGsCpZ5u2Ab1MvGd5biF2z
+                      th-reify-many-0.1.8@th-reify-many-0.1.8-5ZNbfXxMl3y5DMJznTzmN9
+                      transformers-0.5.2.0@transformers-0.5.2.0
+                      vector-0.12.0.1@vector-0.12.0.1-692PQMDMB6pIQ1uGwefDcQ
+orphans: base-4.9.1.0:GHC.Base base-4.9.1.0:GHC.Float
+         binary-0.8.3.0@binary-0.8.3.0:Data.Binary.Generic
+         bytestring-0.10.8.1@bytestring-0.10.8.1:Data.ByteString.Builder
+         singletons-2.2@singletons-2.2-F6aalBFPo1F9ebvy1Wkuj3:Data.Singletons.Decide
+         singletons-2.2@singletons-2.2-F6aalBFPo1F9ebvy1Wkuj3:Data.Singletons.Prelude.Instances
+         singletons-2.2@singletons-2.2-F6aalBFPo1F9ebvy1Wkuj3:Data.Singletons.TypeLits
+         singletons-2.2@singletons-2.2-F6aalBFPo1F9ebvy1Wkuj3:Data.Singletons.TypeLits.Internal
+         syb-0.7@syb-0.7-4OKdCpwGutyB1rNRmoa0ya:Data.Generics.Instances
+         text-1.2.2.2@text-1.2.2.2-9UQZjEJZQFSGMffj1Z5g00:Data.Text
+         text-1.2.2.2@text-1.2.2.2-9UQZjEJZQFSGMffj1Z5g00:Data.Text.Lazy
+         text-1.2.2.2@text-1.2.2.2-9UQZjEJZQFSGMffj1Z5g00:Data.Text.Show
+         th-lift-0.7.7@th-lift-0.7.7-JWI9Gh7wB0MC9Q5wqv5aoI:Language.Haskell.TH.Lift
+         th-lift-instances-0.1.11@th-lift-instances-0.1.11-A7sWuFC2KLsFTBmLagoRSX:Instances.TH.Lift
+         th-orphans-0.13.4@th-orphans-0.13.4-IGsCpZ5u2Ab1MvGd5biF2z:Language.Haskell.TH.Instances
+         transformers-0.5.2.0@transformers-0.5.2.0:Control.Monad.Trans.Error
+         vector-0.12.0.1@vector-0.12.0.1-692PQMDMB6pIQ1uGwefDcQ:Data.Vector.Fusion.Bundle
+         vector-0.12.0.1@vector-0.12.0.1-692PQMDMB6pIQ1uGwefDcQ:Data.Vector.Unboxed
+family instance modules: base-4.9.1.0:Control.Applicative
+                         base-4.9.1.0:Data.Complex base-4.9.1.0:Data.Either
+                         base-4.9.1.0:Data.Functor.Const base-4.9.1.0:Data.Functor.Identity
+                         base-4.9.1.0:Data.List.NonEmpty base-4.9.1.0:Data.Monoid
+                         base-4.9.1.0:Data.Semigroup base-4.9.1.0:Data.Type.Equality
+                         base-4.9.1.0:Data.Version base-4.9.1.0:Data.Void
+                         base-4.9.1.0:GHC.Exts base-4.9.1.0:GHC.Generics
+                         base-4.9.1.0:GHC.IO.Exception base-4.9.1.0:GHC.TypeLits
+                         containers-0.5.7.1@containers-0.5.7.1:Data.IntMap.Base
+                         containers-0.5.7.1@containers-0.5.7.1:Data.IntSet.Base
+                         containers-0.5.7.1@containers-0.5.7.1:Data.Map.Base
+                         containers-0.5.7.1@containers-0.5.7.1:Data.Sequence
+                         containers-0.5.7.1@containers-0.5.7.1:Data.Set.Base
+                         ghc-boot-th-8.0.2@ghc-boot-th-8.0.2:GHC.LanguageExtensions.Type
+                         inline-r-0.9.0.2-GXEXrsxC4K8OTVxhqWwxs:Control.Memory.Region
+                         inline-r-0.9.0.2-GXEXrsxC4K8OTVxhqWwxs:Foreign.R.Type
+                         pretty-1.1.3.3@pretty-1.1.3.3:Text.PrettyPrint.Annotated.HughesPJ
+                         pretty-1.1.3.3@pretty-1.1.3.3:Text.PrettyPrint.HughesPJ
+                         primitive-0.6.2.0@primitive-0.6.2.0-4578caNkWQ54Gt1mxLF2Yh:Control.Monad.Primitive
+                         primitive-0.6.2.0@primitive-0.6.2.0-4578caNkWQ54Gt1mxLF2Yh:Data.Primitive.Array
+                         singletons-2.2@singletons-2.2-F6aalBFPo1F9ebvy1Wkuj3:Data.Singletons
+                         singletons-2.2@singletons-2.2-F6aalBFPo1F9ebvy1Wkuj3:Data.Singletons.Prelude.Bool
+                         singletons-2.2@singletons-2.2-F6aalBFPo1F9ebvy1Wkuj3:Data.Singletons.Prelude.Eq
+                         singletons-2.2@singletons-2.2-F6aalBFPo1F9ebvy1Wkuj3:Data.Singletons.Prelude.Instances
+                         singletons-2.2@singletons-2.2-F6aalBFPo1F9ebvy1Wkuj3:Data.Singletons.Prelude.Num
+                         singletons-2.2@singletons-2.2-F6aalBFPo1F9ebvy1Wkuj3:Data.Singletons.Prelude.Ord
+                         singletons-2.2@singletons-2.2-F6aalBFPo1F9ebvy1Wkuj3:Data.Singletons.Syntax
+                         singletons-2.2@singletons-2.2-F6aalBFPo1F9ebvy1Wkuj3:Data.Singletons.TypeLits.Internal
+                         template-haskell-2.11.1.0:Language.Haskell.TH.Syntax
+                         text-1.2.2.2@text-1.2.2.2-9UQZjEJZQFSGMffj1Z5g00:Data.Text
+                         text-1.2.2.2@text-1.2.2.2-9UQZjEJZQFSGMffj1Z5g00:Data.Text.Lazy
+                         th-desugar-1.6@th-desugar-1.6-4xe2xTMQQiAGUPVUAkAZhp:Language.Haskell.TH.Desugar.Core
+                         vector-0.12.0.1@vector-0.12.0.1-692PQMDMB6pIQ1uGwefDcQ:Data.Vector
+                         vector-0.12.0.1@vector-0.12.0.1-692PQMDMB6pIQ1uGwefDcQ:Data.Vector.Primitive
+                         vector-0.12.0.1@vector-0.12.0.1-692PQMDMB6pIQ1uGwefDcQ:Data.Vector.Storable
+                         vector-0.12.0.1@vector-0.12.0.1-692PQMDMB6pIQ1uGwefDcQ:Data.Vector.Unboxed
+                         vector-0.12.0.1@vector-0.12.0.1-692PQMDMB6pIQ1uGwefDcQ:Data.Vector.Unboxed.Base
+import  -/  base-4.9.1.0:Data.Complex ec864ed8b68bbdf9c6cffa700c3cfe8e
+import  -/  base-4.9.1.0:Data.Int 07f5a36c488acfe0ac32e81c7536b8ff
+import  -/  base-4.9.1.0:Data.Type.Equality e58d97d060ef5a0f7906bf33d6e50df2
+import  -/  base-4.9.1.0:Data.Word 77f42e01d0fb6b071f1ea2176d87fa6c
+import  -/  base-4.9.1.0:Foreign.Storable 085c8d7f42ceec1dbb4e818f06339b9d
+import  -/  base-4.9.1.0:GHC.Int e6f85fcab22769385fba2b5fce0acb40
+import  -/  base-4.9.1.0:Prelude 22dd289b8469a8fa8dc81cab7b237771
+import  -/  Control.Memory.Region 308182c83bf046edf073fad284bcd617
+  exports: 0c21e32b92bdaf94d0d4d90814626648
+  V 761191645162463b83c4dd72888da9ec
+import  -/  Foreign.R 76af03c75eee17c66f999e9a2952a2da
+  exports: 48f78775472e7fa46d6f356ef53096ba
+import  -/  Foreign.R.Internal 94b91017c41283795b0b9850baa548e1
+  SEXP e854911eaf3995eafd7923a39be3730e
+  SomeSEXP 2d223e0ee1874a597046c351c68c0d5d
+import  -/  Foreign.R.Type 87886be580abef21e3eb082d49bd5e09
+  exports: 4a9e8ba576dbff5e9a94102d7ea58a6b
+  Char 5a1ac22d2987bdd3eece5f743d2cb5f4
+  Complex e3ab53f74c77296d0ba4be591701521d
+  Expr be9c3f2d7dd8742451490d026e98e87c
+  Int 6bcba177d987d55800c18b81ba8743df
+  IsVector 0143b1d3b569e92594aeca4f8bd230af
+  Logical 7bdfc2078965c38226b1ce131bf680a9
+  Logical 9963a440f8731b94f650595bd8b72193
+  Raw d02f4414723e232e799f99e1614148a7
+  Real 0c81d244b1d6437d5b712aeb06759a1e
+  SEXPTYPE afeb9caa0ff491cd3c753bbb63a08899
+  String dbce0f4ae053a2b4d564fb855017ab2a
+  Vector f4e580af838f2d80bd3b1cd7b62854f9
+import  -/  singletons-2.2@singletons-2.2-F6aalBFPo1F9ebvy1Wkuj3:Data.Singletons 96f581fbb6b163dc76612f9ad2e8eb18
+f02bdc7b3a1a45d4ae92f7c396cad8be
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module
+                   Data.Vector.SEXP.Base.$trModule2
+                   Data.Vector.SEXP.Base.$trModule1) -}
+1c3d44c352bc69eec1b7b618fa06f5ac
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "Data.Vector.SEXP.Base"#) -}
+3cd8e2b261b9c17ed83120409abacd44
+  $trModule2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   "inline-r-0.9.0.2-GXEXrsxC4K8OTVxhqWwxs"#) -}
+8e4dd549ff2b82b8535f8cd92bb19531
+  axiom D:R:ElemRep::
+    [s]
+      Data.Vector.SEXP.Base.ElemRep s 'Foreign.R.Type.Char
+        = GHC.Word.Word8
+    [s]
+      Data.Vector.SEXP.Base.ElemRep s 'Foreign.R.Type.Logical
+        = Foreign.R.Type.Logical
+    [s]
+      Data.Vector.SEXP.Base.ElemRep s 'Foreign.R.Type.Int = GHC.Int.Int32
+    [s]
+      Data.Vector.SEXP.Base.ElemRep s 'Foreign.R.Type.Real
+        = GHC.Types.Double
+    [s]
+      Data.Vector.SEXP.Base.ElemRep s 'Foreign.R.Type.Complex
+        = Data.Complex.Complex GHC.Types.Double
+    [s]
+      Data.Vector.SEXP.Base.ElemRep s 'Foreign.R.Type.String
+        = Foreign.R.Internal.SEXP s 'Foreign.R.Type.Char
+    [s]
+      Data.Vector.SEXP.Base.ElemRep s 'Foreign.R.Type.Vector
+        = Foreign.R.Internal.SomeSEXP s
+    [s]
+      Data.Vector.SEXP.Base.ElemRep s 'Foreign.R.Type.Expr
+        = Foreign.R.Internal.SomeSEXP s
+    [s]
+      Data.Vector.SEXP.Base.ElemRep s 'Foreign.R.Type.Raw
+        = GHC.Word.Word8
+728b13ba6feb666a729aee52138bcf8b
+  type E s (a :: Foreign.R.Type.SEXPTYPE) b =
+    Data.Vector.SEXP.Base.ElemRep s a Data.Type.Equality.~ b
+    :: GHC.Types.Constraint
+8e4dd549ff2b82b8535f8cd92bb19531
+  type family ElemRep s (a :: Foreign.R.Type.SEXPTYPE) :: *
+    where
+      [s] ElemRep s 'Foreign.R.Type.Char = GHC.Word.Word8
+      [s] ElemRep s 'Foreign.R.Type.Logical = Foreign.R.Type.Logical
+      [s] ElemRep s 'Foreign.R.Type.Int = GHC.Int.Int32
+      [s] ElemRep s 'Foreign.R.Type.Real = GHC.Types.Double
+      [s]
+        ElemRep s 'Foreign.R.Type.Complex
+          = Data.Complex.Complex GHC.Types.Double
+      [s]
+        ElemRep s 'Foreign.R.Type.String
+          = Foreign.R.Internal.SEXP s 'Foreign.R.Type.Char
+      [s]
+        ElemRep s 'Foreign.R.Type.Vector = Foreign.R.Internal.SomeSEXP s
+      [s] ElemRep s 'Foreign.R.Type.Expr = Foreign.R.Internal.SomeSEXP s
+      [s] ElemRep s 'Foreign.R.Type.Raw = GHC.Word.Word8
+      axiom Data.Vector.SEXP.Base.D:R:ElemRep
+03246a7a052ca4771b6275d9fc90d833
+  type SVECTOR (ty :: Foreign.R.Type.SEXPTYPE) a =
+    (Foreign.Storable.Storable a, Foreign.R.Type.IsVector ty,
+     Data.Singletons.SingI ty,
+     Data.Vector.SEXP.Base.ElemRep Control.Memory.Region.V ty
+     Data.Type.Equality.~ a)
+    :: GHC.Types.Constraint
+93c7fea9b59e1a69c8899e0c05cdaf3f
+  type VECTOR s (ty :: Foreign.R.Type.SEXPTYPE) a =
+    (Foreign.Storable.Storable a, Foreign.R.Type.IsVector ty,
+     Data.Singletons.SingI ty,
+     Data.Vector.SEXP.Base.ElemRep s ty Data.Type.Equality.~ a)
+    :: GHC.Types.Constraint
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: none
+require own pkg trusted: False
+

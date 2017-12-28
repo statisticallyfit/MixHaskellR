@@ -1,0 +1,2853 @@
+
+==================== FINAL INTERFACE ====================
+2017-12-28 08:50:13.190088 UTC
+
+interface main:Main 8022
+  interface hash: bdbc2245e52a562b5b367c5e1398ca9c
+  ABI hash: b02c023477d23478863aa3b93560931f
+  export-list hash: 4b570018093700d80dead10a85cc83a7
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: 0d5cdb5de4956cb923cdd3e097474aa5
+  sig of: Nothing
+  used TH splices: True
+  where
+exports:
+  Main.inVoid
+  Main.main
+  Main.tests
+module dependencies: Test.Constraints Test.Event Test.FunPtr
+                     Test.GC Test.Matcher Test.Regions Test.Vector
+package dependencies: QuickCheck-2.10.1 ansi-terminal-0.7.1.1
+                      ansi-wl-pprint-0.6.8.1 array-0.5.2.0 async-2.1.1.1 base-4.10.1.0
+                      binary-0.8.5.1 bytestring-0.10.8.2 clock-0.7.2 colour-2.3.4
+                      containers-0.5.10.2 data-default-class-0.1.2.0 deepseq-1.4.3.0
+                      directory-1.3.0.2 exceptions-0.8.3 filepath-1.4.1.2
+                      ghc-boot-th-8.2.2 ghc-prim-0.5.1.1 haskell-lexer-1.0.1
+                      ieee754-0.8.0 inline-r-0.9.0.2 integer-gmp-1.0.1.0 mtl-2.2.1
+                      optparse-applicative-0.14.0.0 parsec-3.1.11 pretty-1.1.3.3
+                      pretty-show-1.6.15 primitive-0.6.2.0 process-1.6.1.0
+                      quickcheck-assertions-0.3.0 random-1.1 reflection-2.1.2
+                      regex-base-0.93.2 regex-tdfa-1.2.2 safe-0.3.15 setenv-0.1.1.3
+                      singletons-2.3.1 stm-2.4.4.1 syb-0.7 tagged-0.8.5 tasty-0.11.3
+                      tasty-expected-failure-0.11.0.4 tasty-hunit-0.9.2
+                      tasty-quickcheck-0.9.1 template-haskell-2.12.0.0 temporary-1.2.1.1
+                      text-1.2.2.2 tf-random-0.5 th-desugar-1.7 th-expand-syns-0.4.3.0
+                      th-lift-0.7.7 th-lift-instances-0.1.11 th-orphans-0.13.4
+                      th-reify-many-0.1.8 time-1.8.0.2 transformers-0.5.2.0
+                      unbounded-delays-0.1.1.0 unix-2.7.2.2 vector-0.12.0.1
+orphans: main:Test.Vector time-1.8.0.2:Data.Time.Format.Parse
+         time-1.8.0.2:Data.Time.LocalTime.Internal.ZonedTime
+         time-1.8.0.2:Data.Time.LocalTime.Internal.LocalTime
+         time-1.8.0.2:Data.Time.Calendar.Gregorian
+         regex-tdfa-1.2.2:Text.Regex.TDFA.ByteString
+         regex-tdfa-1.2.2:Text.Regex.TDFA.ByteString.Lazy
+         regex-tdfa-1.2.2:Text.Regex.TDFA.Sequence
+         regex-tdfa-1.2.2:Text.Regex.TDFA.String
+         regex-base-0.93.2:Text.Regex.Base.Context colour-2.3.4:Data.Colour
+         stm-2.4.4.1:Control.Monad.STM
+         singletons-2.3.1:Data.Singletons.TypeLits
+         singletons-2.3.1:Data.Singletons.TypeLits.Internal
+         singletons-2.3.1:Data.Singletons.Prelude.Instances
+         singletons-2.3.1:Data.Singletons.Decide
+         th-orphans-0.13.4:Language.Haskell.TH.Instances
+         th-lift-instances-0.1.11:Instances.TH.Lift
+         th-lift-0.7.7:Language.Haskell.TH.Lift text-1.2.2.2:Data.Text.Lazy
+         text-1.2.2.2:Data.Text binary-0.8.5.1:Data.Binary.Generic
+         bytestring-0.10.8.2:Data.ByteString.Builder
+         text-1.2.2.2:Data.Text.Show vector-0.12.0.1:Data.Vector.Unboxed
+         syb-0.7:Data.Generics.Instances reflection-2.1.2:Data.Reflection
+         vector-0.12.0.1:Data.Vector.Fusion.Bundle
+         transformers-0.5.2.0:Control.Monad.Trans.Error
+         base-4.10.1.0:GHC.Float base-4.10.1.0:GHC.Base
+family instance modules: base-4.10.1.0:Control.Applicative
+                         base-4.10.1.0:Data.Complex base-4.10.1.0:Data.Either
+                         base-4.10.1.0:Data.Functor.Compose base-4.10.1.0:Data.Functor.Const
+                         base-4.10.1.0:Data.Functor.Identity
+                         base-4.10.1.0:Data.Functor.Product base-4.10.1.0:Data.Functor.Sum
+                         base-4.10.1.0:Data.List.NonEmpty base-4.10.1.0:Data.Monoid
+                         base-4.10.1.0:Data.Semigroup base-4.10.1.0:Data.Type.Equality
+                         base-4.10.1.0:Data.Version base-4.10.1.0:Data.Void
+                         base-4.10.1.0:GHC.Exts base-4.10.1.0:GHC.Generics
+                         base-4.10.1.0:GHC.IO.Exception base-4.10.1.0:GHC.TypeLits
+                         base-4.10.1.0:GHC.TypeNats clock-0.7.2:System.Clock
+                         containers-0.5.10.2:Data.IntMap.Internal
+                         containers-0.5.10.2:Data.IntSet.Internal
+                         containers-0.5.10.2:Data.Map.Internal
+                         containers-0.5.10.2:Data.Sequence.Internal
+                         containers-0.5.10.2:Data.Set.Internal containers-0.5.10.2:Data.Tree
+                         ghc-boot-th-8.2.2:GHC.ForeignSrcLang.Type
+                         ghc-boot-th-8.2.2:GHC.LanguageExtensions.Type
+                         inline-r-0.9.0.2:Control.Memory.Region
+                         inline-r-0.9.0.2:Data.Vector.SEXP inline-r-0.9.0.2:Foreign.R.Type
+                         inline-r-0.9.0.2:Language.R.Instance
+                         inline-r-0.9.0.2:Language.R.Matcher
+                         pretty-1.1.3.3:Text.PrettyPrint.Annotated.HughesPJ
+                         pretty-1.1.3.3:Text.PrettyPrint.HughesPJ
+                         primitive-0.6.2.0:Control.Monad.Primitive
+                         primitive-0.6.2.0:Data.Primitive.Array
+                         singletons-2.3.1:Data.Singletons
+                         singletons-2.3.1:Data.Singletons.Prelude.Bool
+                         singletons-2.3.1:Data.Singletons.Prelude.Eq
+                         singletons-2.3.1:Data.Singletons.Prelude.Instances
+                         singletons-2.3.1:Data.Singletons.Prelude.Num
+                         singletons-2.3.1:Data.Singletons.Prelude.Ord
+                         singletons-2.3.1:Data.Singletons.Syntax
+                         singletons-2.3.1:Data.Singletons.TypeLits
+                         singletons-2.3.1:Data.Singletons.TypeLits.Internal
+                         tagged-0.8.5:Data.Tagged tasty-0.11.3:Test.Tasty.Core
+                         template-haskell-2.12.0.0:Language.Haskell.TH.Syntax
+                         text-1.2.2.2:Data.Text text-1.2.2.2:Data.Text.Lazy
+                         th-desugar-1.7:Language.Haskell.TH.Desugar.Core
+                         vector-0.12.0.1:Data.Vector vector-0.12.0.1:Data.Vector.Primitive
+                         vector-0.12.0.1:Data.Vector.Storable
+                         vector-0.12.0.1:Data.Vector.Unboxed
+                         vector-0.12.0.1:Data.Vector.Unboxed.Base
+import  -/  base-4.10.1.0:Control.Applicative 99577a9c463ffe4790a1d37547a345bd
+import  -/  base-4.10.1.0:Control.Concurrent 54b4f33006223552c60861a4a302d698
+import  -/  base-4.10.1.0:Control.Exception c134ea327d158f2eebf26e12a1d4ad47
+import  -/  base-4.10.1.0:Control.Exception.Base a0c09fb1722df56c4c26d548157007ca
+import  -/  base-4.10.1.0:Control.Monad ebed2e8e7444944e0c1d827c6faf40a4
+import  -/  base-4.10.1.0:Data.Foldable 9ed87455d68e87ff2b5b8725eae9897e
+import  -/  base-4.10.1.0:Data.Functor 2ffda4f936b8f474394d93205750aff3
+import  -/  base-4.10.1.0:Data.List 4ab7fa2a1b87502b23af891a384f0506
+import  -/  base-4.10.1.0:Data.OldList 555420b092ca8cf0a8f9666bc0e07dcf
+import  -/  base-4.10.1.0:Foreign 6e1e49cc01b9f846dbcb01cc4a57d323
+import  -/  base-4.10.1.0:Foreign.Marshal.Alloc e54e11de29230f1b8b6bcaebfff7f8a0
+import  -/  base-4.10.1.0:Foreign.Storable c463817097bdd1b4c7f7c325680a9964
+import  -/  base-4.10.1.0:GHC.Base 782fd99b5e36f3698a26179a49afca64
+import  -/  base-4.10.1.0:GHC.Conc.Sync 3cf9d980bef04043684377f638021935
+import  -/  base-4.10.1.0:GHC.IO.Unsafe 0aa7e5adc396c9f651baef415ce018da
+import  -/  base-4.10.1.0:GHC.Int f3b679d79c8ad65bf2b736aa9628303f
+import  -/  base-4.10.1.0:GHC.Num 6e1dc5d36d99a802edb39b92bb1923b8
+import  -/  base-4.10.1.0:Prelude 31945b7d0084063347fc52506d3a4020
+import  -/  base-4.10.1.0:System.Environment c9f912affeed5beb387a8c5d2b2c6102
+import  -/  base-4.10.1.0:System.IO 6e5bb580370d8d71dc5888f723cea4b4
+import  -/  base-4.10.1.0:Text.Read 9e862e012b3c71e83cb56fb456188f44
+import  -/  ghc-prim-0.5.1.1:GHC.Classes 93e2660065dce9329577e83d76d8f0d4
+import  -/  ghc-prim-0.5.1.1:GHC.Types b1fd0716441595db508c1a74387bf394
+import  -/  inline-r-0.9.0.2:Control.Memory.Region bd2f465c2e25d1f80c1a2e359d1309ef
+import  -/  inline-r-0.9.0.2:Control.Monad.R.Class e5a0c4056d91754aa90b5adf4bc59248
+import  -/  inline-r-0.9.0.2:Data.Vector.SEXP 1ba3b4d0f52c5e1239a58edb94ac6587
+import  -/  inline-r-0.9.0.2:Foreign.R 51460710da704a1aff942901939ab83a
+import  -/  inline-r-0.9.0.2:Foreign.R.Error 01dac5f36b0f41d1f5189560b4d35018
+import  -/  inline-r-0.9.0.2:Foreign.R.Internal 0950ef2cc999f128080e9690ff115a12
+import  -/  inline-r-0.9.0.2:Foreign.R.Type c66cc062d80b456888eb0e05aa6a4002
+import  -/  inline-r-0.9.0.2:H.Prelude e36d2c9f12de64ccb9a431bc0e48e285
+import  -/  inline-r-0.9.0.2:Language.R e598fe485b33abac7367c6e28d8b9814
+import  -/  inline-r-0.9.0.2:Language.R.Globals 6466af466952ec50029e279d952209f8
+import  -/  inline-r-0.9.0.2:Language.R.HExp 65742348049316c593051d25bc8cd9c6
+import  -/  inline-r-0.9.0.2:Language.R.Instance 7c21de0bbc964770a1fa7d8ec3cc550d
+import  -/  inline-r-0.9.0.2:Language.R.Literal ad8f87454366c7ad983921c1f51fd824
+import  -/  inline-r-0.9.0.2:Language.R.QQ 1885758794873fa7a90ccf5c301146fd
+import  -/  Test.Constraints cb4e9933bbc27722cc247d0a12174d73
+  exports: 6b759e48d9e2fd20094b00b6dc35efd7
+  tests 461717b4be37cc5282cca820e344b90c
+import  -/  Test.Event 8c50658cd05fe9dbbc82e5160b09ce4e
+  exports: ca4106eec2a5463ee934c82a111cf06e
+  tests ebf4af9915d956f19c51587d0542802b
+import  -/  Test.FunPtr 97fd702be2c9f042f2b886bf3f9da0f2
+  exports: 1b2473c062a2876dde60847221549d9f
+  tests 03dd8bc83e7e972171067423f16e30b4
+import  -/  Test.GC 458bb5fd3f459e7757f24f6088158ea9
+  exports: 4831beaaa716a2abfeb0017bbf3ff77b
+  tests e49d81f454034c19d17c3128e67192fe
+import  -/  Test.Matcher 90031a4b5c2d941c953700f2a985420c
+  exports: f385f388a41499e0bdb51b2b45aa0988
+  tests bb317953a30e2bfb8d6ec0964855448f
+import  -/  Test.Regions a25f05e54f5dc80c43aa5f99298889ed
+  exports: d5378e99b75d87cfd15e3fa028dd3b60
+  tests 7b5b52b19a6c70349bedf5dd70eadc13
+import  -/  Test.Vector ed06612310d21fbd98b51c3c8a48ea00
+  exports: d6039e12613d397d402809cc670e180e
+  tests 3b78633a87ef01f35baa4aa8d436f2d7
+import  -/  singletons-2.3.1:Data.Singletons 9da68ca382f47f0899b26cbacf532ec5
+import  -/  tasty-0.11.3:Test.Tasty fd7a7d678fb037373a84e0d2c94ba977
+import  -/  tasty-0.11.3:Test.Tasty.Core ad38a7bfdd07cb983b46499179f5feea
+import  -/  tasty-expected-failure-0.11.0.4:Test.Tasty.ExpectedFailure 05b9550d4d795d6948b50b7eef836c7a
+import  -/  tasty-hunit-0.9.2:Test.Tasty.HUnit e2c91e2e2a1aa9764fce15de0bdca332
+import  -/  tasty-hunit-0.9.2:Test.Tasty.HUnit.Orig cabfe6febc3dd1bdd12e76f191fca3cf
+277215b729af61637a8ecadf06ffcba9
+  $s$WClosure_$d(%,%) ::
+    (Data.Singletons.SingI 'Foreign.R.Type.Any, () :: Constraint)
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: ((Foreign.R.Type.$fSingISEXPTYPEAny1
+                    `cast`
+                  (Trans
+                       (Sym (Foreign.R.Type.D:R:SingSEXPTYPEz0[0]))
+                       (Sym (Data.Singletons.N:SingI[0]) <Foreign.R.Type.SEXPTYPE>_N) <'Foreign.R.Type.Any>_N),
+                  GHC.Classes.C:(%%))) -}
+9d72b2fddb818bcd8919052935e0f1f3
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module Main.$trModule3 Main.$trModule1) -}
+3108ceeaf5a318be844de422b45de9d8
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Main.$trModule2) -}
+e5875966b74dad2d29772660b8a75e33
+  $trModule2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Main"#) -}
+33bd129667974f0a0ba4a893af79107d
+  $trModule3 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Main.$trModule4) -}
+d026be77cb9ced20e35a61514e0458aa
+  $trModule4 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("main"#) -}
+f68850a629f5648bbf4d59beb7f40f22
+  $w$j ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, [GHC.Types.Char] #)
+  {- Arity: 1, Strictness: <S,U>, Inline: [0],
+     Unfolding: (\ (w :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                 case GHC.Prim.getMaskingState# w of ds2 { (#,#) ipv ipv1 ->
+                 case ipv1 of ds3 {
+                   DEFAULT
+                   -> case Language.R.Literal.$fLiteralDoubleReal_$smkSEXPVectorIO
+                             Foreign.R.Type.$fSingISEXPTYPEReal1
+                               `cast`
+                             (Sym (Foreign.R.Type.D:R:SingSEXPTYPEz0[0]) <'Foreign.R.Type.Real>_N)
+                             Main.tests55
+                               `cast`
+                             (Nth:2
+                                  (Trans
+                                       (([(GHC.Types.IO
+                                             (Sub (Sym (Data.Vector.SEXP.Base.D:R:ElemRep[3]
+                                                            <Control.Memory.Region.Void>_N))))_R])_R
+                                        ->_R <GHC.Types.IO
+                                                (Foreign.R.Internal.SEXP
+                                                   Control.Memory.Region.V 'Foreign.R.Type.Real)>_R)
+                                       (<[GHC.Types.IO
+                                            (Data.Vector.SEXP.Base.ElemRep
+                                               Control.Memory.Region.V 'Foreign.R.Type.Real)]>_R
+                                        ->_R GHC.Types.N:IO[0]
+                                                 <Foreign.R.Internal.SEXP
+                                                    Control.Memory.Region.V
+                                                    'Foreign.R.Type.Real>_R)))
+                             ipv of ds4 { (#,#) ipv2 ipv3 ->
+                      case ipv3
+                             `cast`
+                           (Trans
+                                (Foreign.R.Internal.N:SEXP[0]
+                                     <Control.Memory.Region.V>_P <'Foreign.R.Type.Real>_P)
+                                (GHC.Ptr.Ptr
+                                   <Language.R.HExp.HExp
+                                      Control.Memory.Region.V
+                                      'Foreign.R.Type.Real, Foreign.R.Internal.SEXPREC>)_R) of ds5 { GHC.Ptr.Ptr ds6 ->
+                      case {__pkg_ccall_GC inline-r-0.9.0.2 GHC.Prim.Addr#
+                                                            -> GHC.Prim.State# GHC.Prim.RealWorld
+                                                            -> (# GHC.Prim.State#
+                                                                    GHC.Prim.RealWorld,
+                                                                  GHC.Prim.Addr# #)}
+                             ds6
+                             ipv2 of wild { (#,#) ds7 ds8 ->
+                      case GHC.Prim.catch#
+                             @ ()
+                             @ GHC.Exception.SomeException
+                             (GHC.Prim.maskAsyncExceptions#
+                                @ ()
+                                (\ (w1 :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                                 Main.$wf1 ds6 w1))
+                             (Foreign.R.withProtected2 @ ())
+                             ds7 of ds9 { (#,#) ipv4 ipv5 ->
+                      case {__pkg_ccall_GC inline-r-0.9.0.2 GHC.Prim.Int#
+                                                            -> GHC.Prim.State# GHC.Prim.RealWorld
+                                                            -> (# GHC.Prim.State#
+                                                                    GHC.Prim.RealWorld #)}
+                             1#
+                             ipv4 of wild1 { Unit# ds10 ->
+                      Main.$w$j1 ds10 } } } } }
+                   0#
+                   -> case GHC.Prim.maskAsyncExceptions#
+                             @ ()
+                             Main.tests57
+                             ipv of ds4 { (#,#) ipv2 ipv3 ->
+                      Main.$w$j1 ipv2 }
+                   1#
+                   -> case Language.R.Literal.$fLiteralDoubleReal_$smkSEXPVectorIO
+                             Foreign.R.Type.$fSingISEXPTYPEReal1
+                               `cast`
+                             (Sym (Foreign.R.Type.D:R:SingSEXPTYPEz0[0]) <'Foreign.R.Type.Real>_N)
+                             Main.tests55
+                               `cast`
+                             (Nth:2
+                                  (Trans
+                                       (([(GHC.Types.IO
+                                             (Sub (Sym (Data.Vector.SEXP.Base.D:R:ElemRep[3]
+                                                            <Control.Memory.Region.Void>_N))))_R])_R
+                                        ->_R <GHC.Types.IO
+                                                (Foreign.R.Internal.SEXP
+                                                   Control.Memory.Region.V 'Foreign.R.Type.Real)>_R)
+                                       (<[GHC.Types.IO
+                                            (Data.Vector.SEXP.Base.ElemRep
+                                               Control.Memory.Region.V 'Foreign.R.Type.Real)]>_R
+                                        ->_R GHC.Types.N:IO[0]
+                                                 <Foreign.R.Internal.SEXP
+                                                    Control.Memory.Region.V
+                                                    'Foreign.R.Type.Real>_R)))
+                             ipv of ds4 { (#,#) ipv2 ipv3 ->
+                      case ipv3
+                             `cast`
+                           (Trans
+                                (Foreign.R.Internal.N:SEXP[0]
+                                     <Control.Memory.Region.V>_P <'Foreign.R.Type.Real>_P)
+                                (GHC.Ptr.Ptr
+                                   <Language.R.HExp.HExp
+                                      Control.Memory.Region.V
+                                      'Foreign.R.Type.Real, Foreign.R.Internal.SEXPREC>)_R) of ds5 { GHC.Ptr.Ptr ds6 ->
+                      case {__pkg_ccall_GC inline-r-0.9.0.2 GHC.Prim.Addr#
+                                                            -> GHC.Prim.State# GHC.Prim.RealWorld
+                                                            -> (# GHC.Prim.State#
+                                                                    GHC.Prim.RealWorld,
+                                                                  GHC.Prim.Addr# #)}
+                             ds6
+                             ipv2 of wild { (#,#) ds7 ds8 ->
+                      case GHC.Prim.catch#
+                             @ ()
+                             @ GHC.Exception.SomeException
+                             (GHC.Prim.maskUninterruptible#
+                                @ ()
+                                (\ (w1 :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                                 Main.$wf1 ds6 w1))
+                             (Foreign.R.withProtected2 @ ())
+                             ds7 of ds9 { (#,#) ipv4 ipv5 ->
+                      case {__pkg_ccall_GC inline-r-0.9.0.2 GHC.Prim.Int#
+                                                            -> GHC.Prim.State# GHC.Prim.RealWorld
+                                                            -> (# GHC.Prim.State#
+                                                                    GHC.Prim.RealWorld #)}
+                             1#
+                             ipv4 of wild1 { Unit# ds10 ->
+                      Main.$w$j1 ds10 } } } } } } }) -}
+0c20ad875151e33c81edb3fe0a028f0c
+  $w$j1 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, [GHC.Types.Char] #)
+  {- Arity: 1, Strictness: <S,U>, Inline: [0],
+     Unfolding: (\ (w :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                 case GHC.Prim.getMaskingState# w of ds2 { (#,#) ipv ipv1 ->
+                 case ipv1 of ds3 {
+                   DEFAULT
+                   -> case Language.R.Literal.$fLiteralDoubleReal_$smkSEXPVectorIO
+                             Foreign.R.Type.$fSingISEXPTYPEReal1
+                               `cast`
+                             (Sym (Foreign.R.Type.D:R:SingSEXPTYPEz0[0]) <'Foreign.R.Type.Real>_N)
+                             Main.tests55
+                               `cast`
+                             (Nth:2
+                                  (Trans
+                                       (([(GHC.Types.IO
+                                             (Sub (Sym (Data.Vector.SEXP.Base.D:R:ElemRep[3]
+                                                            <Control.Memory.Region.Void>_N))))_R])_R
+                                        ->_R <GHC.Types.IO
+                                                (Foreign.R.Internal.SEXP
+                                                   Control.Memory.Region.V 'Foreign.R.Type.Real)>_R)
+                                       (<[GHC.Types.IO
+                                            (Data.Vector.SEXP.Base.ElemRep
+                                               Control.Memory.Region.V 'Foreign.R.Type.Real)]>_R
+                                        ->_R GHC.Types.N:IO[0]
+                                                 <Foreign.R.Internal.SEXP
+                                                    Control.Memory.Region.V
+                                                    'Foreign.R.Type.Real>_R)))
+                             ipv of ds4 { (#,#) ipv2 ipv3 ->
+                      case ipv3
+                             `cast`
+                           (Trans
+                                (Foreign.R.Internal.N:SEXP[0]
+                                     <Control.Memory.Region.V>_P <'Foreign.R.Type.Real>_P)
+                                (GHC.Ptr.Ptr
+                                   <Language.R.HExp.HExp
+                                      Control.Memory.Region.V
+                                      'Foreign.R.Type.Real, Foreign.R.Internal.SEXPREC>)_R) of ds5 { GHC.Ptr.Ptr ds6 ->
+                      case {__pkg_ccall_GC inline-r-0.9.0.2 GHC.Prim.Addr#
+                                                            -> GHC.Prim.State# GHC.Prim.RealWorld
+                                                            -> (# GHC.Prim.State#
+                                                                    GHC.Prim.RealWorld,
+                                                                  GHC.Prim.Addr# #)}
+                             ds6
+                             ipv2 of wild { (#,#) ds7 ds8 ->
+                      case GHC.Prim.catch#
+                             @ ()
+                             @ GHC.Exception.SomeException
+                             (GHC.Prim.maskAsyncExceptions#
+                                @ ()
+                                (\ (w1 :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                                 Main.$wf2 ds6 w1))
+                             (Foreign.R.withProtected2 @ ())
+                             ds7 of ds9 { (#,#) ipv4 ipv5 ->
+                      case {__pkg_ccall_GC inline-r-0.9.0.2 GHC.Prim.Int#
+                                                            -> GHC.Prim.State# GHC.Prim.RealWorld
+                                                            -> (# GHC.Prim.State#
+                                                                    GHC.Prim.RealWorld #)}
+                             1#
+                             ipv4 of wild1 { Unit# ds10 ->
+                      (# ds10, GHC.Types.[] @ GHC.Types.Char #) } } } } }
+                   0#
+                   -> case GHC.Prim.maskAsyncExceptions#
+                             @ ()
+                             Main.tests58
+                             ipv of ds4 { (#,#) ipv2 ipv3 ->
+                      (# ipv2, GHC.Types.[] @ GHC.Types.Char #) }
+                   1#
+                   -> case Language.R.Literal.$fLiteralDoubleReal_$smkSEXPVectorIO
+                             Foreign.R.Type.$fSingISEXPTYPEReal1
+                               `cast`
+                             (Sym (Foreign.R.Type.D:R:SingSEXPTYPEz0[0]) <'Foreign.R.Type.Real>_N)
+                             Main.tests55
+                               `cast`
+                             (Nth:2
+                                  (Trans
+                                       (([(GHC.Types.IO
+                                             (Sub (Sym (Data.Vector.SEXP.Base.D:R:ElemRep[3]
+                                                            <Control.Memory.Region.Void>_N))))_R])_R
+                                        ->_R <GHC.Types.IO
+                                                (Foreign.R.Internal.SEXP
+                                                   Control.Memory.Region.V 'Foreign.R.Type.Real)>_R)
+                                       (<[GHC.Types.IO
+                                            (Data.Vector.SEXP.Base.ElemRep
+                                               Control.Memory.Region.V 'Foreign.R.Type.Real)]>_R
+                                        ->_R GHC.Types.N:IO[0]
+                                                 <Foreign.R.Internal.SEXP
+                                                    Control.Memory.Region.V
+                                                    'Foreign.R.Type.Real>_R)))
+                             ipv of ds4 { (#,#) ipv2 ipv3 ->
+                      case ipv3
+                             `cast`
+                           (Trans
+                                (Foreign.R.Internal.N:SEXP[0]
+                                     <Control.Memory.Region.V>_P <'Foreign.R.Type.Real>_P)
+                                (GHC.Ptr.Ptr
+                                   <Language.R.HExp.HExp
+                                      Control.Memory.Region.V
+                                      'Foreign.R.Type.Real, Foreign.R.Internal.SEXPREC>)_R) of ds5 { GHC.Ptr.Ptr ds6 ->
+                      case {__pkg_ccall_GC inline-r-0.9.0.2 GHC.Prim.Addr#
+                                                            -> GHC.Prim.State# GHC.Prim.RealWorld
+                                                            -> (# GHC.Prim.State#
+                                                                    GHC.Prim.RealWorld,
+                                                                  GHC.Prim.Addr# #)}
+                             ds6
+                             ipv2 of wild { (#,#) ds7 ds8 ->
+                      case GHC.Prim.catch#
+                             @ ()
+                             @ GHC.Exception.SomeException
+                             (GHC.Prim.maskUninterruptible#
+                                @ ()
+                                (\ (w1 :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                                 Main.$wf2 ds6 w1))
+                             (Foreign.R.withProtected2 @ ())
+                             ds7 of ds9 { (#,#) ipv4 ipv5 ->
+                      case {__pkg_ccall_GC inline-r-0.9.0.2 GHC.Prim.Int#
+                                                            -> GHC.Prim.State# GHC.Prim.RealWorld
+                                                            -> (# GHC.Prim.State#
+                                                                    GHC.Prim.RealWorld #)}
+                             1#
+                             ipv4 of wild1 { Unit# ds10 ->
+                      (# ds10, GHC.Types.[] @ GHC.Types.Char #) } } } } } } }) -}
+5d5d5a839a47d1008e0d8815ec4f750c
+  $wf ::
+    GHC.Prim.Addr#
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+  {- Arity: 2, Strictness: <S,U><L,U>, Inline: [0] -}
+43f8effb67b59d1ac172ca082d95218f
+  $wf1 ::
+    GHC.Prim.Addr#
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+  {- Arity: 2, Strictness: <S,U><L,U>, Inline: [0] -}
+b161a591f72dbfd47cd6552b1469e0a8
+  $wf2 ::
+    GHC.Prim.Addr#
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+  {- Arity: 2, Strictness: <S,U><L,U>, Inline: [0] -}
+235e50d52881523acc986a7d90fbceb3
+  $wtests ::
+    GHC.Types.Bool
+    -> (# Test.Tasty.Core.TestName, [Test.Tasty.Core.TestTree] #)
+  {- Arity: 1, Strictness: <L,U>, Inline: [0],
+     Unfolding: (\ (w :: GHC.Types.Bool) ->
+                 (# Main.tests66,
+                    GHC.Types.:
+                      @ Test.Tasty.Core.TestTree
+                      Main.tests61
+                      (GHC.Types.:
+                         @ Test.Tasty.Core.TestTree
+                         Main.tests52
+                         (GHC.Types.:
+                            @ Test.Tasty.Core.TestTree
+                            Main.tests46
+                            (GHC.Types.:
+                               @ Test.Tasty.Core.TestTree
+                               Main.tests40
+                               (GHC.Types.:
+                                  @ Test.Tasty.Core.TestTree
+                                  Main.tests33
+                                  (GHC.Types.:
+                                     @ Test.Tasty.Core.TestTree
+                                     Test.Constraints.tests
+                                     (GHC.Types.:
+                                        @ Test.Tasty.Core.TestTree
+                                        Test.FunPtr.tests
+                                        (GHC.Types.:
+                                           @ Test.Tasty.Core.TestTree
+                                           (case w of wild {
+                                              GHC.Types.False -> Main.tests32
+                                              GHC.Types.True -> Test.GC.tests })
+                                           (GHC.Types.:
+                                              @ Test.Tasty.Core.TestTree
+                                              (case w of wild {
+                                                 GHC.Types.False -> Main.tests31
+                                                 GHC.Types.True -> Test.Regions.tests })
+                                              Main.tests1)))))))) #)) -}
+f561df36caa96ceb4a40ba16e9f6a2d8
+  inVoid ::
+    Language.R.Instance.R Control.Memory.Region.V z
+    -> Language.R.Instance.R Control.Memory.Region.V z
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>,
+     Unfolding: InlineRule (0, True, True)
+                (\ @ z ->
+                 GHC.Base.id @ (Language.R.Instance.R Control.Memory.Region.V z)) -}
+45382869fccdc8575fe927b5bd9b3648
+  main :: GHC.Types.IO ()
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: InlineRule (0, True, True)
+                Main.main1 `cast` (Sym (GHC.Types.N:IO[0] <()>_R)) -}
+529073e95d7e97cca9b9c5c633464b51
+  main1 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+  {- Arity: 1, Strictness: <S,U> -}
+5510fa2cfc7989247ee295903c8707a0
+  main2 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+  {- Arity: 1,
+     Unfolding: (GHC.TopHandler.runMainIO1
+                   @ ()
+                   Main.main1 `cast` (Sym (GHC.Types.N:IO[0] <()>_R))) -}
+d290200590de987eed10ad7f71682b6b
+  tests :: GHC.Types.Bool -> Test.Tasty.Core.TestTree
+  {- Arity: 1, Strictness: <L,U>m2, Inline: [0],
+     Unfolding: InlineRule (1, True, False)
+                (\ (w :: GHC.Types.Bool) ->
+                 case Main.$wtests w of ww { (#,#) ww1 ww2 ->
+                 Test.Tasty.Core.TestGroup ww1 ww2 }) -}
+6e9f97a3ed7835c1de269ff17f633e85
+  tests1 :: [Test.Tasty.Core.TestTree]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Test.Tasty.Core.TestTree
+                   Test.Vector.tests
+                   Main.tests2) -}
+6ff0c73aa515d06c98a4b0a478eb2552
+  tests10 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: (\ (eta :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                 case GHC.Prim.getMaskingState# eta of ds2 { (#,#) ipv ipv1 ->
+                 case ipv1 of ds3 {
+                   DEFAULT
+                   -> case GHC.Prim.newMutVar#
+                             @ GHC.Types.Int
+                             @ GHC.Prim.RealWorld
+                             Language.R.Instance.runRegion3
+                             ipv of ds4 { (#,#) ipv2 ipv3 ->
+                      case GHC.Prim.catch#
+                             @ ()
+                             @ GHC.Exception.SomeException
+                             (GHC.Prim.maskAsyncExceptions#
+                                @ ()
+                                (\ (s1 :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                                 case Main.tests11
+                                        (GHC.STRef.STRef @ GHC.Prim.RealWorld @ GHC.Types.Int ipv3)
+                                          `cast`
+                                        (Trans
+                                             (Sym (GHC.IORef.N:IORef[0]) <GHC.Types.Int>_N)
+                                             (Nth:2
+                                                  (Trans
+                                                       (Sym (Control.Monad.Trans.Reader.N:ReaderT[0]
+                                                                 <*>_N
+                                                                 <GHC.IORef.IORef GHC.Types.Int>_R
+                                                                 <GHC.Types.IO>_R
+                                                                 <()>_N))
+                                                       (Trans
+                                                            (Sym (Language.R.Instance.N:R[0]
+                                                                      <GHC.Types.Any>_P) <()>_N)
+                                                            (Nth:3
+                                                                 (Nth:3
+                                                                      (Trans
+                                                                           (<()>_R
+                                                                            ->_R Language.R.Instance.N:R[0]
+                                                                                     <GHC.Types.Any>_P <Foreign.R.Internal.SomeSEXP
+                                                                                                          GHC.Types.Any>_N
+                                                                            ->_R Language.R.Instance.N:R[0]
+                                                                                     <GHC.Types.Any>_P <()>_N)
+                                                                           (<()>_R
+                                                                            ->_R <Control.Monad.Trans.Reader.ReaderT
+                                                                                    (GHC.IORef.IORef
+                                                                                       GHC.Types.Int)
+                                                                                    GHC.Types.IO
+                                                                                    (Foreign.R.Internal.SomeSEXP
+                                                                                       GHC.Types.Any)>_R
+                                                                            ->_R Trans
+                                                                                     (Control.Monad.Trans.Reader.N:ReaderT[0]
+                                                                                          <*>_N
+                                                                                          <GHC.IORef.IORef
+                                                                                             GHC.Types.Int>_R
+                                                                                          <GHC.Types.IO>_R
+                                                                                          <()>_N)
+                                                                                     (<GHC.IORef.IORef
+                                                                                         GHC.Types.Int>_R
+                                                                                      ->_R GHC.Types.N:IO[0]
+                                                                                               <()>_R)))))))))
+                                        s1 of ds5 { (#,#) ipv4 ipv5 ->
+                                 case ipv5 of ds6 { () -> ds5 } }))
+                             (\ (e1 :: GHC.Exception.SomeException)[OneShot]
+                                (s1 :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                              case GHC.Prim.readMutVar#
+                                     @ GHC.Prim.RealWorld
+                                     @ GHC.Types.Int
+                                     ipv3
+                                     s1 of ds5 { (#,#) ipv4 ipv5 ->
+                              case ipv5 of wild { GHC.Types.I# x# ->
+                              case {__pkg_ccall_GC inline-r-0.9.0.2 GHC.Prim.Int#
+                                                                    -> GHC.Prim.State#
+                                                                         GHC.Prim.RealWorld
+                                                                    -> (# GHC.Prim.State#
+                                                                            GHC.Prim.RealWorld #)}
+                                     (GHC.Prim.narrow32Int# x#)
+                                     ipv4 of wild1 { Unit# ds6 ->
+                              GHC.Prim.raiseIO# @ GHC.Exception.SomeException @ () e1 ds6 } } })
+                             ipv2 of ds5 { (#,#) ipv4 ipv5 ->
+                      case GHC.Prim.readMutVar#
+                             @ GHC.Prim.RealWorld
+                             @ GHC.Types.Int
+                             ipv3
+                             ipv4 of ds6 { (#,#) ipv7 ipv8 ->
+                      case ipv8 of wild { GHC.Types.I# x# ->
+                      case {__pkg_ccall_GC inline-r-0.9.0.2 GHC.Prim.Int#
+                                                            -> GHC.Prim.State# GHC.Prim.RealWorld
+                                                            -> (# GHC.Prim.State#
+                                                                    GHC.Prim.RealWorld #)}
+                             (GHC.Prim.narrow32Int# x#)
+                             ipv7 of wild1 { Unit# ds7 ->
+                      (# ds7, ipv5 #) } } } } }
+                   0#
+                   -> GHC.Prim.maskAsyncExceptions#
+                        @ ()
+                        (\ (s1 :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                         case GHC.Prim.newMutVar#
+                                @ GHC.Types.Int
+                                @ GHC.Prim.RealWorld
+                                Language.R.Instance.runRegion3
+                                s1 of ds4 { (#,#) ipv2 ipv3 ->
+                         case GHC.Prim.catch#
+                                @ ()
+                                @ GHC.Exception.SomeException
+                                (GHC.Prim.unmaskAsyncExceptions#
+                                   @ ()
+                                   (\ (s2 :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                                    case Main.tests11
+                                           (GHC.STRef.STRef
+                                              @ GHC.Prim.RealWorld
+                                              @ GHC.Types.Int
+                                              ipv3)
+                                             `cast`
+                                           (Trans
+                                                (Sym (GHC.IORef.N:IORef[0]) <GHC.Types.Int>_N)
+                                                (Nth:2
+                                                     (Trans
+                                                          (Sym (Control.Monad.Trans.Reader.N:ReaderT[0]
+                                                                    <*>_N
+                                                                    <GHC.IORef.IORef
+                                                                       GHC.Types.Int>_R
+                                                                    <GHC.Types.IO>_R
+                                                                    <()>_N))
+                                                          (Trans
+                                                               (Sym (Language.R.Instance.N:R[0]
+                                                                         <GHC.Types.Any>_P) <()>_N)
+                                                               (Nth:3
+                                                                    (Nth:3
+                                                                         (Trans
+                                                                              (<()>_R
+                                                                               ->_R Language.R.Instance.N:R[0]
+                                                                                        <GHC.Types.Any>_P <Foreign.R.Internal.SomeSEXP
+                                                                                                             GHC.Types.Any>_N
+                                                                               ->_R Language.R.Instance.N:R[0]
+                                                                                        <GHC.Types.Any>_P <()>_N)
+                                                                              (<()>_R
+                                                                               ->_R <Control.Monad.Trans.Reader.ReaderT
+                                                                                       (GHC.IORef.IORef
+                                                                                          GHC.Types.Int)
+                                                                                       GHC.Types.IO
+                                                                                       (Foreign.R.Internal.SomeSEXP
+                                                                                          GHC.Types.Any)>_R
+                                                                               ->_R Trans
+                                                                                        (Control.Monad.Trans.Reader.N:ReaderT[0]
+                                                                                             <*>_N
+                                                                                             <GHC.IORef.IORef
+                                                                                                GHC.Types.Int>_R
+                                                                                             <GHC.Types.IO>_R
+                                                                                             <()>_N)
+                                                                                        (<GHC.IORef.IORef
+                                                                                            GHC.Types.Int>_R
+                                                                                         ->_R GHC.Types.N:IO[0]
+                                                                                                  <()>_R)))))))))
+                                           s2 of ds5 { (#,#) ipv4 ipv5 ->
+                                    case ipv5 of ds6 { () -> ds5 } }))
+                                (\ (e1 :: GHC.Exception.SomeException)[OneShot]
+                                   (s2 :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                                 case GHC.Prim.readMutVar#
+                                        @ GHC.Prim.RealWorld
+                                        @ GHC.Types.Int
+                                        ipv3
+                                        s2 of ds5 { (#,#) ipv4 ipv5 ->
+                                 case ipv5 of wild { GHC.Types.I# x# ->
+                                 case {__pkg_ccall_GC inline-r-0.9.0.2 GHC.Prim.Int#
+                                                                       -> GHC.Prim.State#
+                                                                            GHC.Prim.RealWorld
+                                                                       -> (# GHC.Prim.State#
+                                                                               GHC.Prim.RealWorld #)}
+                                        (GHC.Prim.narrow32Int# x#)
+                                        ipv4 of wild1 { Unit# ds6 ->
+                                 GHC.Prim.raiseIO# @ GHC.Exception.SomeException @ () e1 ds6 } } })
+                                ipv2 of ds5 { (#,#) ipv4 ipv5 ->
+                         case GHC.Prim.readMutVar#
+                                @ GHC.Prim.RealWorld
+                                @ GHC.Types.Int
+                                ipv3
+                                ipv4 of ds6 { (#,#) ipv7 ipv8 ->
+                         case ipv8 of wild { GHC.Types.I# x# ->
+                         case {__pkg_ccall_GC inline-r-0.9.0.2 GHC.Prim.Int#
+                                                               -> GHC.Prim.State# GHC.Prim.RealWorld
+                                                               -> (# GHC.Prim.State#
+                                                                       GHC.Prim.RealWorld #)}
+                                (GHC.Prim.narrow32Int# x#)
+                                ipv7 of wild1 { Unit# ds7 ->
+                         (# ds7, ipv5 #) } } } } })
+                        ipv
+                   1#
+                   -> case GHC.Prim.newMutVar#
+                             @ GHC.Types.Int
+                             @ GHC.Prim.RealWorld
+                             Language.R.Instance.runRegion3
+                             ipv of ds4 { (#,#) ipv2 ipv3 ->
+                      case GHC.Prim.catch#
+                             @ ()
+                             @ GHC.Exception.SomeException
+                             (GHC.Prim.maskUninterruptible#
+                                @ ()
+                                (\ (s1 :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                                 case Main.tests11
+                                        (GHC.STRef.STRef @ GHC.Prim.RealWorld @ GHC.Types.Int ipv3)
+                                          `cast`
+                                        (Trans
+                                             (Sym (GHC.IORef.N:IORef[0]) <GHC.Types.Int>_N)
+                                             (Nth:2
+                                                  (Trans
+                                                       (Sym (Control.Monad.Trans.Reader.N:ReaderT[0]
+                                                                 <*>_N
+                                                                 <GHC.IORef.IORef GHC.Types.Int>_R
+                                                                 <GHC.Types.IO>_R
+                                                                 <()>_N))
+                                                       (Trans
+                                                            (Sym (Language.R.Instance.N:R[0]
+                                                                      <GHC.Types.Any>_P) <()>_N)
+                                                            (Nth:3
+                                                                 (Nth:3
+                                                                      (Trans
+                                                                           (<()>_R
+                                                                            ->_R Language.R.Instance.N:R[0]
+                                                                                     <GHC.Types.Any>_P <Foreign.R.Internal.SomeSEXP
+                                                                                                          GHC.Types.Any>_N
+                                                                            ->_R Language.R.Instance.N:R[0]
+                                                                                     <GHC.Types.Any>_P <()>_N)
+                                                                           (<()>_R
+                                                                            ->_R <Control.Monad.Trans.Reader.ReaderT
+                                                                                    (GHC.IORef.IORef
+                                                                                       GHC.Types.Int)
+                                                                                    GHC.Types.IO
+                                                                                    (Foreign.R.Internal.SomeSEXP
+                                                                                       GHC.Types.Any)>_R
+                                                                            ->_R Trans
+                                                                                     (Control.Monad.Trans.Reader.N:ReaderT[0]
+                                                                                          <*>_N
+                                                                                          <GHC.IORef.IORef
+                                                                                             GHC.Types.Int>_R
+                                                                                          <GHC.Types.IO>_R
+                                                                                          <()>_N)
+                                                                                     (<GHC.IORef.IORef
+                                                                                         GHC.Types.Int>_R
+                                                                                      ->_R GHC.Types.N:IO[0]
+                                                                                               <()>_R)))))))))
+                                        s1 of ds5 { (#,#) ipv4 ipv5 ->
+                                 case ipv5 of ds6 { () -> ds5 } }))
+                             (\ (e1 :: GHC.Exception.SomeException)[OneShot]
+                                (s1 :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                              case GHC.Prim.readMutVar#
+                                     @ GHC.Prim.RealWorld
+                                     @ GHC.Types.Int
+                                     ipv3
+                                     s1 of ds5 { (#,#) ipv4 ipv5 ->
+                              case ipv5 of wild { GHC.Types.I# x# ->
+                              case {__pkg_ccall_GC inline-r-0.9.0.2 GHC.Prim.Int#
+                                                                    -> GHC.Prim.State#
+                                                                         GHC.Prim.RealWorld
+                                                                    -> (# GHC.Prim.State#
+                                                                            GHC.Prim.RealWorld #)}
+                                     (GHC.Prim.narrow32Int# x#)
+                                     ipv4 of wild1 { Unit# ds6 ->
+                              GHC.Prim.raiseIO# @ GHC.Exception.SomeException @ () e1 ds6 } } })
+                             ipv2 of ds5 { (#,#) ipv4 ipv5 ->
+                      case GHC.Prim.readMutVar#
+                             @ GHC.Prim.RealWorld
+                             @ GHC.Types.Int
+                             ipv3
+                             ipv4 of ds6 { (#,#) ipv7 ipv8 ->
+                      case ipv8 of wild { GHC.Types.I# x# ->
+                      case {__pkg_ccall_GC inline-r-0.9.0.2 GHC.Prim.Int#
+                                                            -> GHC.Prim.State# GHC.Prim.RealWorld
+                                                            -> (# GHC.Prim.State#
+                                                                    GHC.Prim.RealWorld #)}
+                             (GHC.Prim.narrow32Int# x#)
+                             ipv7 of wild1 { Unit# ds7 ->
+                      (# ds7, ipv5 #) } } } } } } }) -}
+f688cd397181e5c6f3aa796dd1221f93
+  tests11 ::
+    GHC.IORef.IORef GHC.Types.Int
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+  {- Arity: 2, Strictness: <L,U><L,U>,
+     Unfolding: (\ (eta1 :: GHC.IORef.IORef GHC.Types.Int)[OneShot]
+                   (s :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                 case GHC.Magic.runRW#
+                        @ ('GHC.Types.TupleRep
+                             '['GHC.Types.TupleRep '[], 'GHC.Types.LiftedRep])
+                        @ (# GHC.Prim.State# GHC.Prim.RealWorld,
+                             Foreign.R.Internal.SomeSEXP Control.Memory.Region.V #)
+                        Main.tests12 of ds2 { (#,#) ipv ipv1 ->
+                 case ipv1 of wild { Foreign.R.Internal.SomeSEXP a dt ->
+                 case Language.R.Globals.nilValue
+                        `cast`
+                      (Trans
+                           (Foreign.R.Internal.N:SEXP[0]
+                                <Control.Memory.Region.G>_P <'Foreign.R.Type.Nil>_P)
+                           (GHC.Ptr.Ptr
+                              <Language.R.HExp.HExp
+                                 Control.Memory.Region.G
+                                 'Foreign.R.Type.Nil, Foreign.R.Internal.SEXPREC>)_R) of ds3 { GHC.Ptr.Ptr ds4 ->
+                 case {__pkg_ccall_GC inline-r-0.9.0.2 GHC.Prim.Addr#
+                                                       -> GHC.Prim.Addr#
+                                                       -> GHC.Prim.State# GHC.Prim.RealWorld
+                                                       -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+                                                             GHC.Prim.Addr# #)}
+                        dt
+                        ds4
+                        s of wild1 { (#,#) ds5 ds6 ->
+                 case ((Language.R.$wevalEnv
+                          @ (Language.R.Instance.R GHC.Types.Any)
+                          @ Control.Memory.Region.V
+                          @ 'Foreign.R.Type.Lang
+                          (Language.R.Instance.$fMonadRR @ GHC.Types.Any)
+                          ds6
+                          Language.R.Globals.globalEnv
+                            `cast`
+                          (Trans
+                               (Foreign.R.Internal.N:SEXP[0]
+                                    <Control.Memory.Region.G>_P <'Foreign.R.Type.Env>_P)
+                               (Trans
+                                    (GHC.Ptr.Ptr
+                                       <Language.R.HExp.HExp
+                                          Control.Memory.Region.G
+                                          'Foreign.R.Type.Env, Language.R.HExp.HExp
+                                                                 Control.Memory.Region.V
+                                                                 'Foreign.R.Type.Env>)_R
+                                    (Sym (Foreign.R.Internal.N:SEXP[0]
+                                              <Control.Memory.Region.V>_P
+                                              <'Foreign.R.Type.Env>_P)))))
+                         `cast`
+                       (Trans
+                            (Nth:3
+                                 (Trans
+                                      (<Foreign.R.Internal.SEXP
+                                          Control.Memory.Region.V 'Foreign.R.Type.Lang>_R
+                                       ->_R (Language.R.Instance.R
+                                               <GHC.Types.Any>_P
+                                               (Foreign.R.Internal.SomeSEXP
+                                                  (Language.R.Instance.D:R:PrimStateR[0]
+                                                       <GHC.Types.Any>_N))_N)_R)
+                                      (Trans
+                                           (<Foreign.R.Internal.SEXP
+                                               Control.Memory.Region.V 'Foreign.R.Type.Lang>_R
+                                            ->_R Language.R.Instance.N:R[0]
+                                                     <GHC.Types.Any>_P <Foreign.R.Internal.SomeSEXP
+                                                                          GHC.Types.Any>_N)
+                                           (Nth:2
+                                                (Nth:3
+                                                     (Trans
+                                                          (<Control.Monad.Trans.Reader.ReaderT
+                                                              (GHC.IORef.IORef GHC.Types.Int)
+                                                              GHC.Types.IO
+                                                              (Foreign.R.Internal.SEXP
+                                                                 Control.Memory.Region.V
+                                                                 'Foreign.R.Type.Lang)>_R
+                                                           ->_R <Foreign.R.Internal.SEXP
+                                                                   Control.Memory.Region.V
+                                                                   'Foreign.R.Type.Lang
+                                                                 -> Control.Monad.Trans.Reader.ReaderT
+                                                                      (GHC.IORef.IORef
+                                                                         GHC.Types.Int)
+                                                                      GHC.Types.IO
+                                                                      (Foreign.R.Internal.SomeSEXP
+                                                                         GHC.Types.Any)>_R
+                                                           ->_R Control.Monad.Trans.Reader.N:ReaderT[0]
+                                                                    <*>_N
+                                                                    <GHC.IORef.IORef
+                                                                       GHC.Types.Int>_R
+                                                                    <GHC.Types.IO>_R
+                                                                    <Foreign.R.Internal.SomeSEXP
+                                                                       GHC.Types.Any>_N)
+                                                          (<Control.Monad.Trans.Reader.ReaderT
+                                                              (GHC.IORef.IORef GHC.Types.Int)
+                                                              GHC.Types.IO
+                                                              (Foreign.R.Internal.SEXP
+                                                                 Control.Memory.Region.V
+                                                                 'Foreign.R.Type.Lang)>_R
+                                                           ->_R <Foreign.R.Internal.SEXP
+                                                                   Control.Memory.Region.V
+                                                                   'Foreign.R.Type.Lang
+                                                                 -> Control.Monad.Trans.Reader.ReaderT
+                                                                      (GHC.IORef.IORef
+                                                                         GHC.Types.Int)
+                                                                      GHC.Types.IO
+                                                                      (Foreign.R.Internal.SomeSEXP
+                                                                         GHC.Types.Any)>_R
+                                                           ->_R <GHC.IORef.IORef GHC.Types.Int>_R
+                                                           ->_R GHC.Types.N:IO[0]
+                                                                    <Foreign.R.Internal.SomeSEXP
+                                                                       GHC.Types.Any>_R)))))))
+                            (Control.Monad.Trans.Reader.N:ReaderT[0]
+                                 <*>_N
+                                 <GHC.IORef.IORef GHC.Types.Int>_R
+                                 <GHC.Types.IO>_R
+                                 <Foreign.R.Internal.SomeSEXP GHC.Types.Any>_N))
+                         eta1)
+                        `cast`
+                      (GHC.Types.N:IO[0] <Foreign.R.Internal.SomeSEXP GHC.Types.Any>_R)
+                        ds5 of ds7 { (#,#) ipv2 ipv3 ->
+                 (# ipv2, GHC.Tuple.() #) } } } } }) -}
+7e1d405d3da857ce810e8cd71f63ef2a
+  tests12 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+          Foreign.R.Internal.SomeSEXP Control.Memory.Region.V #)
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: (\ (s :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                 case GHC.Prim.noDuplicate#
+                        @ GHC.Prim.RealWorld
+                        s of s' { DEFAULT ->
+                 case Language.R.QQ.parse1
+                        Main.tests13
+                        s' of ds2 { (#,#) ipv ipv1 ->
+                 case ipv1
+                        `cast`
+                      (Trans
+                           (Foreign.R.Internal.N:SEXP[0]
+                                <Control.Memory.Region.V>_P <'Foreign.R.Type.Expr>_P)
+                           (GHC.Ptr.Ptr
+                              <Language.R.HExp.HExp
+                                 Control.Memory.Region.V
+                                 'Foreign.R.Type.Expr, Foreign.R.Internal.SEXPREC>)_R) of ds3 { GHC.Ptr.Ptr ds4 ->
+                 case {__pkg_ccall_GC inline-r-0.9.0.2 GHC.Prim.Addr#
+                                                       -> GHC.Prim.Int#
+                                                       -> GHC.Prim.State# GHC.Prim.RealWorld
+                                                       -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+                                                             GHC.Prim.Addr# #)}
+                        ds4
+                        0#
+                        ipv of wild1 { (#,#) ds5 ds6 ->
+                 case Language.R.Globals.globalEnv
+                        `cast`
+                      (Trans
+                           (Foreign.R.Internal.N:SEXP[0]
+                                <Control.Memory.Region.G>_P <'Foreign.R.Type.Env>_P)
+                           (GHC.Ptr.Ptr
+                              <Language.R.HExp.HExp
+                                 Control.Memory.Region.G
+                                 'Foreign.R.Type.Env, Foreign.R.Internal.SEXPREC>)_R) of ds7 { GHC.Ptr.Ptr ds8 ->
+                 case {__pkg_ccall_GC inline-r-0.9.0.2 GHC.Prim.Addr#
+                                                       -> GHC.Prim.Addr#
+                                                       -> GHC.Prim.State# GHC.Prim.RealWorld
+                                                       -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+                                                             GHC.Prim.Addr# #)}
+                        ds6
+                        ds8
+                        ds5 of wild { (#,#) ds9 ds10 ->
+                 case {__pkg_ccall_GC inline-r-0.9.0.2 GHC.Prim.Addr#
+                                                       -> GHC.Prim.State# GHC.Prim.RealWorld
+                                                       -> (# GHC.Prim.State# GHC.Prim.RealWorld #)}
+                        ds10
+                        ds9 of wild2 { Unit# ds11 ->
+                 (# ds11,
+                    Foreign.R.Internal.SomeSEXP
+                      @ Control.Memory.Region.V
+                      @ GHC.Types.Any
+                      ds10 #) } } } } } } }) -}
+66be844a241776a727e19cf1a431f712
+  tests13 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# Main.tests14) -}
+708426879f52f04488473fa6b4272691
+  tests14 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("function(){ while(1){}; }"#) -}
+12124db27bc145bfeb78c07600827010
+  tests15 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: (\ (eta :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                 GHC.Prim.catch#
+                   @ ()
+                   @ GHC.Exception.SomeException
+                   Language.R.cancel1
+                   GHC.Conc.Sync.forkIO2
+                   eta) -}
+16588b2ed4bdc9fdb333d76116ac7b3b
+  tests16 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# Main.tests17) -}
+89570bbeca9f410c473a43d309674db6
+  tests17 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("cancel works"#) -}
+c7e860d5a4c89ad83e7be76988238dc7
+  tests18 :: Test.Tasty.Core.TestTree
+  {- Unfolding: (Test.Tasty.Core.SingleTest
+                   @ Test.Tasty.HUnit.TestCase
+                   Test.Tasty.HUnit.$fIsTestTestCase
+                   Main.tests20
+                   Main.tests19
+                     `cast`
+                   (Trans
+                        (Sym (GHC.Types.N:IO[0] <[GHC.Types.Char]>_R))
+                        (Sym (Test.Tasty.HUnit.N:TestCase[0])))) -}
+1b11d74ffe64bdbe9cc62c49c84772d8
+  tests19 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, [GHC.Types.Char] #)
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (s :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                 (# s, GHC.Types.[] @ GHC.Types.Char #)) -}
+6c1d853340a8f5b909c4f608e5db2919
+  tests2 :: [Test.Tasty.Core.TestTree]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Test.Tasty.Core.TestTree
+                   Test.Event.tests
+                   Main.tests3) -}
+36b453a3deb07b0bddc11abf5269c405
+  tests20 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# Main.tests21) -}
+963b4d325f9b0e601c93b66727cfdda3
+  tests21 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("sanity check "#) -}
+beb2d182368cee10d948f197487a94e8
+  tests22 :: Test.Tasty.Core.TestTree
+  {- Unfolding: (Test.Tasty.Core.SingleTest
+                   @ Test.Tasty.HUnit.TestCase
+                   Test.Tasty.HUnit.$fIsTestTestCase
+                   Main.tests29
+                   Main.tests23
+                     `cast`
+                   (Trans
+                        (Sym (GHC.Types.N:IO[0] <[GHC.Types.Char]>_R))
+                        (Sym (Test.Tasty.HUnit.N:TestCase[0])))) -}
+bfe7873323831a2a81dc8c5ca8165a12
+  tests23 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, [GHC.Types.Char] #)
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: (\ (s :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                 case GHC.Prim.getMaskingState# s of ds2 { (#,#) ipv ipv1 ->
+                 case ipv1 of ds3 {
+                   DEFAULT
+                   -> case GHC.Prim.newMutVar#
+                             @ GHC.Types.Int
+                             @ GHC.Prim.RealWorld
+                             Language.R.Instance.runRegion3
+                             ipv of ds4 { (#,#) ipv2 ipv3 ->
+                      case GHC.Prim.catch#
+                             @ ()
+                             @ GHC.Exception.SomeException
+                             (GHC.Prim.maskAsyncExceptions#
+                                @ ()
+                                (\ (s1 :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                                 case Main.tests25
+                                        (GHC.STRef.STRef @ GHC.Prim.RealWorld @ GHC.Types.Int ipv3)
+                                          `cast`
+                                        (Trans
+                                             (Sym (GHC.IORef.N:IORef[0]) <GHC.Types.Int>_N)
+                                             (Nth:2
+                                                  (Trans
+                                                       (Sym (Control.Monad.Trans.Reader.N:ReaderT[0]
+                                                                 <*>_N
+                                                                 <GHC.IORef.IORef GHC.Types.Int>_R
+                                                                 <GHC.Types.IO>_R
+                                                                 <()>_N))
+                                                       (Nth:3
+                                                            (Nth:3
+                                                                 (Trans
+                                                                      (<Control.Monad.Trans.Reader.ReaderT
+                                                                          (GHC.IORef.IORef
+                                                                             GHC.Types.Int)
+                                                                          GHC.Types.IO
+                                                                          (Foreign.R.Internal.SomeSEXP
+                                                                             GHC.Types.Any)>_R
+                                                                       ->_R <Control.Monad.Trans.Reader.ReaderT
+                                                                               (GHC.IORef.IORef
+                                                                                  GHC.Types.Int)
+                                                                               GHC.Types.IO
+                                                                               ()>_R
+                                                                       ->_R Control.Monad.Trans.Reader.N:ReaderT[0]
+                                                                                <*>_N
+                                                                                <GHC.IORef.IORef
+                                                                                   GHC.Types.Int>_R
+                                                                                <GHC.Types.IO>_R
+                                                                                <()>_N)
+                                                                      (<Control.Monad.Trans.Reader.ReaderT
+                                                                          (GHC.IORef.IORef
+                                                                             GHC.Types.Int)
+                                                                          GHC.Types.IO
+                                                                          (Foreign.R.Internal.SomeSEXP
+                                                                             GHC.Types.Any)>_R
+                                                                       ->_R <Control.Monad.Trans.Reader.ReaderT
+                                                                               (GHC.IORef.IORef
+                                                                                  GHC.Types.Int)
+                                                                               GHC.Types.IO
+                                                                               ()>_R
+                                                                       ->_R <GHC.IORef.IORef
+                                                                               GHC.Types.Int>_R
+                                                                       ->_R GHC.Types.N:IO[0]
+                                                                                <()>_R)))))))
+                                        s1 of ds5 { (#,#) ipv4 ipv5 ->
+                                 case ipv5 of wild { () -> ds5 } }))
+                             (\ (e1 :: GHC.Exception.SomeException)[OneShot]
+                                (s1 :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                              case GHC.Prim.readMutVar#
+                                     @ GHC.Prim.RealWorld
+                                     @ GHC.Types.Int
+                                     ipv3
+                                     s1 of ds5 { (#,#) ipv4 ipv5 ->
+                              case ipv5 of wild { GHC.Types.I# x# ->
+                              case {__pkg_ccall_GC inline-r-0.9.0.2 GHC.Prim.Int#
+                                                                    -> GHC.Prim.State#
+                                                                         GHC.Prim.RealWorld
+                                                                    -> (# GHC.Prim.State#
+                                                                            GHC.Prim.RealWorld #)}
+                                     (GHC.Prim.narrow32Int# x#)
+                                     ipv4 of wild1 { Unit# ds6 ->
+                              GHC.Prim.raiseIO# @ GHC.Exception.SomeException @ () e1 ds6 } } })
+                             ipv2 of ds5 { (#,#) ipv4 ipv5 ->
+                      case GHC.Prim.readMutVar#
+                             @ GHC.Prim.RealWorld
+                             @ GHC.Types.Int
+                             ipv3
+                             ipv4 of ds6 { (#,#) ipv7 ipv8 ->
+                      case ipv8 of wild { GHC.Types.I# x# ->
+                      case {__pkg_ccall_GC inline-r-0.9.0.2 GHC.Prim.Int#
+                                                            -> GHC.Prim.State# GHC.Prim.RealWorld
+                                                            -> (# GHC.Prim.State#
+                                                                    GHC.Prim.RealWorld #)}
+                             (GHC.Prim.narrow32Int# x#)
+                             ipv7 of wild1 { Unit# ds7 ->
+                      (# ds7, GHC.Types.[] @ GHC.Types.Char #) } } } } }
+                   0#
+                   -> case GHC.Prim.maskAsyncExceptions#
+                             @ ()
+                             Main.tests24
+                             ipv of ds4 { (#,#) ipv2 ipv3 ->
+                      (# ipv2, GHC.Types.[] @ GHC.Types.Char #) }
+                   1#
+                   -> case GHC.Prim.newMutVar#
+                             @ GHC.Types.Int
+                             @ GHC.Prim.RealWorld
+                             Language.R.Instance.runRegion3
+                             ipv of ds4 { (#,#) ipv2 ipv3 ->
+                      case GHC.Prim.catch#
+                             @ ()
+                             @ GHC.Exception.SomeException
+                             (GHC.Prim.maskUninterruptible#
+                                @ ()
+                                (\ (s1 :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                                 case Main.tests25
+                                        (GHC.STRef.STRef @ GHC.Prim.RealWorld @ GHC.Types.Int ipv3)
+                                          `cast`
+                                        (Trans
+                                             (Sym (GHC.IORef.N:IORef[0]) <GHC.Types.Int>_N)
+                                             (Nth:2
+                                                  (Trans
+                                                       (Sym (Control.Monad.Trans.Reader.N:ReaderT[0]
+                                                                 <*>_N
+                                                                 <GHC.IORef.IORef GHC.Types.Int>_R
+                                                                 <GHC.Types.IO>_R
+                                                                 <()>_N))
+                                                       (Nth:3
+                                                            (Nth:3
+                                                                 (Trans
+                                                                      (<Control.Monad.Trans.Reader.ReaderT
+                                                                          (GHC.IORef.IORef
+                                                                             GHC.Types.Int)
+                                                                          GHC.Types.IO
+                                                                          (Foreign.R.Internal.SomeSEXP
+                                                                             GHC.Types.Any)>_R
+                                                                       ->_R <Control.Monad.Trans.Reader.ReaderT
+                                                                               (GHC.IORef.IORef
+                                                                                  GHC.Types.Int)
+                                                                               GHC.Types.IO
+                                                                               ()>_R
+                                                                       ->_R Control.Monad.Trans.Reader.N:ReaderT[0]
+                                                                                <*>_N
+                                                                                <GHC.IORef.IORef
+                                                                                   GHC.Types.Int>_R
+                                                                                <GHC.Types.IO>_R
+                                                                                <()>_N)
+                                                                      (<Control.Monad.Trans.Reader.ReaderT
+                                                                          (GHC.IORef.IORef
+                                                                             GHC.Types.Int)
+                                                                          GHC.Types.IO
+                                                                          (Foreign.R.Internal.SomeSEXP
+                                                                             GHC.Types.Any)>_R
+                                                                       ->_R <Control.Monad.Trans.Reader.ReaderT
+                                                                               (GHC.IORef.IORef
+                                                                                  GHC.Types.Int)
+                                                                               GHC.Types.IO
+                                                                               ()>_R
+                                                                       ->_R <GHC.IORef.IORef
+                                                                               GHC.Types.Int>_R
+                                                                       ->_R GHC.Types.N:IO[0]
+                                                                                <()>_R)))))))
+                                        s1 of ds5 { (#,#) ipv4 ipv5 ->
+                                 case ipv5 of wild { () -> ds5 } }))
+                             (\ (e1 :: GHC.Exception.SomeException)[OneShot]
+                                (s1 :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                              case GHC.Prim.readMutVar#
+                                     @ GHC.Prim.RealWorld
+                                     @ GHC.Types.Int
+                                     ipv3
+                                     s1 of ds5 { (#,#) ipv4 ipv5 ->
+                              case ipv5 of wild { GHC.Types.I# x# ->
+                              case {__pkg_ccall_GC inline-r-0.9.0.2 GHC.Prim.Int#
+                                                                    -> GHC.Prim.State#
+                                                                         GHC.Prim.RealWorld
+                                                                    -> (# GHC.Prim.State#
+                                                                            GHC.Prim.RealWorld #)}
+                                     (GHC.Prim.narrow32Int# x#)
+                                     ipv4 of wild1 { Unit# ds6 ->
+                              GHC.Prim.raiseIO# @ GHC.Exception.SomeException @ () e1 ds6 } } })
+                             ipv2 of ds5 { (#,#) ipv4 ipv5 ->
+                      case GHC.Prim.readMutVar#
+                             @ GHC.Prim.RealWorld
+                             @ GHC.Types.Int
+                             ipv3
+                             ipv4 of ds6 { (#,#) ipv7 ipv8 ->
+                      case ipv8 of wild { GHC.Types.I# x# ->
+                      case {__pkg_ccall_GC inline-r-0.9.0.2 GHC.Prim.Int#
+                                                            -> GHC.Prim.State# GHC.Prim.RealWorld
+                                                            -> (# GHC.Prim.State#
+                                                                    GHC.Prim.RealWorld #)}
+                             (GHC.Prim.narrow32Int# x#)
+                             ipv7 of wild1 { Unit# ds7 ->
+                      (# ds7, GHC.Types.[] @ GHC.Types.Char #) } } } } } } }) -}
+283c448c5d19014ac3d8641f70e8c842
+  tests24 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: (\ (s1 :: GHC.Prim.State#
+                            GHC.Prim.RealWorld)[OneShot] ->
+                 case GHC.Prim.newMutVar#
+                        @ GHC.Types.Int
+                        @ GHC.Prim.RealWorld
+                        Language.R.Instance.runRegion3
+                        s1 of ds2 { (#,#) ipv2 ipv3 ->
+                 case GHC.Prim.catch#
+                        @ ()
+                        @ GHC.Exception.SomeException
+                        (GHC.Prim.unmaskAsyncExceptions#
+                           @ ()
+                           (\ (s2 :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                            case Main.tests25
+                                   (GHC.STRef.STRef @ GHC.Prim.RealWorld @ GHC.Types.Int ipv3)
+                                     `cast`
+                                   (Trans
+                                        (Sym (GHC.IORef.N:IORef[0]) <GHC.Types.Int>_N)
+                                        (Nth:2
+                                             (Trans
+                                                  (Sym (Control.Monad.Trans.Reader.N:ReaderT[0]
+                                                            <*>_N
+                                                            <GHC.IORef.IORef GHC.Types.Int>_R
+                                                            <GHC.Types.IO>_R
+                                                            <()>_N))
+                                                  (Nth:3
+                                                       (Nth:3
+                                                            (Trans
+                                                                 (<Control.Monad.Trans.Reader.ReaderT
+                                                                     (GHC.IORef.IORef GHC.Types.Int)
+                                                                     GHC.Types.IO
+                                                                     (Foreign.R.Internal.SomeSEXP
+                                                                        GHC.Types.Any)>_R
+                                                                  ->_R <Control.Monad.Trans.Reader.ReaderT
+                                                                          (GHC.IORef.IORef
+                                                                             GHC.Types.Int)
+                                                                          GHC.Types.IO
+                                                                          ()>_R
+                                                                  ->_R Control.Monad.Trans.Reader.N:ReaderT[0]
+                                                                           <*>_N
+                                                                           <GHC.IORef.IORef
+                                                                              GHC.Types.Int>_R
+                                                                           <GHC.Types.IO>_R
+                                                                           <()>_N)
+                                                                 (<Control.Monad.Trans.Reader.ReaderT
+                                                                     (GHC.IORef.IORef GHC.Types.Int)
+                                                                     GHC.Types.IO
+                                                                     (Foreign.R.Internal.SomeSEXP
+                                                                        GHC.Types.Any)>_R
+                                                                  ->_R <Control.Monad.Trans.Reader.ReaderT
+                                                                          (GHC.IORef.IORef
+                                                                             GHC.Types.Int)
+                                                                          GHC.Types.IO
+                                                                          ()>_R
+                                                                  ->_R <GHC.IORef.IORef
+                                                                          GHC.Types.Int>_R
+                                                                  ->_R GHC.Types.N:IO[0]
+                                                                           <()>_R)))))))
+                                   s2 of ds3 { (#,#) ipv4 ipv5 ->
+                            case ipv5 of wild { () -> ds3 } }))
+                        (\ (e1 :: GHC.Exception.SomeException)[OneShot]
+                           (s2 :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                         case GHC.Prim.readMutVar#
+                                @ GHC.Prim.RealWorld
+                                @ GHC.Types.Int
+                                ipv3
+                                s2 of ds3 { (#,#) ipv4 ipv5 ->
+                         case ipv5 of wild { GHC.Types.I# x# ->
+                         case {__pkg_ccall_GC inline-r-0.9.0.2 GHC.Prim.Int#
+                                                               -> GHC.Prim.State# GHC.Prim.RealWorld
+                                                               -> (# GHC.Prim.State#
+                                                                       GHC.Prim.RealWorld #)}
+                                (GHC.Prim.narrow32Int# x#)
+                                ipv4 of wild1 { Unit# ds4 ->
+                         GHC.Prim.raiseIO# @ GHC.Exception.SomeException @ () e1 ds4 } } })
+                        ipv2 of ds3 { (#,#) ipv4 ipv5 ->
+                 case GHC.Prim.readMutVar#
+                        @ GHC.Prim.RealWorld
+                        @ GHC.Types.Int
+                        ipv3
+                        ipv4 of ds4 { (#,#) ipv7 ipv8 ->
+                 case ipv8 of wild { GHC.Types.I# x# ->
+                 case {__pkg_ccall_GC inline-r-0.9.0.2 GHC.Prim.Int#
+                                                       -> GHC.Prim.State# GHC.Prim.RealWorld
+                                                       -> (# GHC.Prim.State# GHC.Prim.RealWorld #)}
+                        (GHC.Prim.narrow32Int# x#)
+                        ipv7 of wild1 { Unit# ds5 ->
+                 (# ds5, ipv5 #) } } } } }) -}
+47f5430245ec8dbf80501c9128950ea1
+  tests25 ::
+    GHC.IORef.IORef GHC.Types.Int
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+  {- Arity: 2, Strictness: <L,U><L,U>,
+     Unfolding: (\ (r1 :: GHC.IORef.IORef GHC.Types.Int)[OneShot]
+                   (s :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                 case GHC.Magic.runRW#
+                        @ ('GHC.Types.TupleRep
+                             '['GHC.Types.TupleRep '[], 'GHC.Types.LiftedRep])
+                        @ (# GHC.Prim.State# GHC.Prim.RealWorld,
+                             Foreign.R.Internal.SomeSEXP Control.Memory.Region.V #)
+                        Main.tests26 of ds2 { (#,#) ipv ipv1 ->
+                 case ipv1 of wild { Foreign.R.Internal.SomeSEXP a dt ->
+                 case Language.R.Globals.nilValue
+                        `cast`
+                      (Trans
+                           (Foreign.R.Internal.N:SEXP[0]
+                                <Control.Memory.Region.G>_P <'Foreign.R.Type.Nil>_P)
+                           (GHC.Ptr.Ptr
+                              <Language.R.HExp.HExp
+                                 Control.Memory.Region.G
+                                 'Foreign.R.Type.Nil, Foreign.R.Internal.SEXPREC>)_R) of ds3 { GHC.Ptr.Ptr ds4 ->
+                 case {__pkg_ccall_GC inline-r-0.9.0.2 GHC.Prim.Addr#
+                                                       -> GHC.Prim.Addr#
+                                                       -> GHC.Prim.State# GHC.Prim.RealWorld
+                                                       -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+                                                             GHC.Prim.Addr# #)}
+                        dt
+                        ds4
+                        s of wild1 { (#,#) ds5 ds6 ->
+                 case ((Language.R.$wevalEnv
+                          @ (Language.R.Instance.R GHC.Types.Any)
+                          @ Control.Memory.Region.V
+                          @ 'Foreign.R.Type.Lang
+                          (Language.R.Instance.$fMonadRR @ GHC.Types.Any)
+                          ds6
+                          Language.R.Globals.globalEnv
+                            `cast`
+                          (Trans
+                               (Foreign.R.Internal.N:SEXP[0]
+                                    <Control.Memory.Region.G>_P <'Foreign.R.Type.Env>_P)
+                               (Trans
+                                    (GHC.Ptr.Ptr
+                                       <Language.R.HExp.HExp
+                                          Control.Memory.Region.G
+                                          'Foreign.R.Type.Env, Language.R.HExp.HExp
+                                                                 Control.Memory.Region.V
+                                                                 'Foreign.R.Type.Env>)_R
+                                    (Sym (Foreign.R.Internal.N:SEXP[0]
+                                              <Control.Memory.Region.V>_P
+                                              <'Foreign.R.Type.Env>_P)))))
+                         `cast`
+                       (Trans
+                            (Nth:3
+                                 (Trans
+                                      (<Foreign.R.Internal.SEXP
+                                          Control.Memory.Region.V 'Foreign.R.Type.Lang>_R
+                                       ->_R (Language.R.Instance.R
+                                               <GHC.Types.Any>_P
+                                               (Foreign.R.Internal.SomeSEXP
+                                                  (Language.R.Instance.D:R:PrimStateR[0]
+                                                       <GHC.Types.Any>_N))_N)_R)
+                                      (Trans
+                                           (<Foreign.R.Internal.SEXP
+                                               Control.Memory.Region.V 'Foreign.R.Type.Lang>_R
+                                            ->_R Language.R.Instance.N:R[0]
+                                                     <GHC.Types.Any>_P <Foreign.R.Internal.SomeSEXP
+                                                                          GHC.Types.Any>_N)
+                                           (Nth:2
+                                                (Nth:3
+                                                     (Trans
+                                                          (<Control.Monad.Trans.Reader.ReaderT
+                                                              (GHC.IORef.IORef GHC.Types.Int)
+                                                              GHC.Types.IO
+                                                              (Foreign.R.Internal.SEXP
+                                                                 Control.Memory.Region.V
+                                                                 'Foreign.R.Type.Lang)>_R
+                                                           ->_R <Foreign.R.Internal.SEXP
+                                                                   Control.Memory.Region.V
+                                                                   'Foreign.R.Type.Lang
+                                                                 -> Control.Monad.Trans.Reader.ReaderT
+                                                                      (GHC.IORef.IORef
+                                                                         GHC.Types.Int)
+                                                                      GHC.Types.IO
+                                                                      (Foreign.R.Internal.SomeSEXP
+                                                                         GHC.Types.Any)>_R
+                                                           ->_R Control.Monad.Trans.Reader.N:ReaderT[0]
+                                                                    <*>_N
+                                                                    <GHC.IORef.IORef
+                                                                       GHC.Types.Int>_R
+                                                                    <GHC.Types.IO>_R
+                                                                    <Foreign.R.Internal.SomeSEXP
+                                                                       GHC.Types.Any>_N)
+                                                          (<Control.Monad.Trans.Reader.ReaderT
+                                                              (GHC.IORef.IORef GHC.Types.Int)
+                                                              GHC.Types.IO
+                                                              (Foreign.R.Internal.SEXP
+                                                                 Control.Memory.Region.V
+                                                                 'Foreign.R.Type.Lang)>_R
+                                                           ->_R <Foreign.R.Internal.SEXP
+                                                                   Control.Memory.Region.V
+                                                                   'Foreign.R.Type.Lang
+                                                                 -> Control.Monad.Trans.Reader.ReaderT
+                                                                      (GHC.IORef.IORef
+                                                                         GHC.Types.Int)
+                                                                      GHC.Types.IO
+                                                                      (Foreign.R.Internal.SomeSEXP
+                                                                         GHC.Types.Any)>_R
+                                                           ->_R <GHC.IORef.IORef GHC.Types.Int>_R
+                                                           ->_R GHC.Types.N:IO[0]
+                                                                    <Foreign.R.Internal.SomeSEXP
+                                                                       GHC.Types.Any>_R)))))))
+                            (Control.Monad.Trans.Reader.N:ReaderT[0]
+                                 <*>_N
+                                 <GHC.IORef.IORef GHC.Types.Int>_R
+                                 <GHC.Types.IO>_R
+                                 <Foreign.R.Internal.SomeSEXP GHC.Types.Any>_N))
+                         r1)
+                        `cast`
+                      (GHC.Types.N:IO[0] <Foreign.R.Internal.SomeSEXP GHC.Types.Any>_R)
+                        ds5 of ds7 { (#,#) ipv2 ipv3 ->
+                 (# ipv2, GHC.Tuple.() #) } } } } }) -}
+1fabd19430bd084ec61f2872a8050f83
+  tests26 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+          Foreign.R.Internal.SomeSEXP Control.Memory.Region.V #)
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: (\ (s :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                 case GHC.Prim.noDuplicate#
+                        @ GHC.Prim.RealWorld
+                        s of s' { DEFAULT ->
+                 case Language.R.QQ.parse1
+                        Main.tests27
+                        s' of ds2 { (#,#) ipv ipv1 ->
+                 case ipv1
+                        `cast`
+                      (Trans
+                           (Foreign.R.Internal.N:SEXP[0]
+                                <Control.Memory.Region.V>_P <'Foreign.R.Type.Expr>_P)
+                           (GHC.Ptr.Ptr
+                              <Language.R.HExp.HExp
+                                 Control.Memory.Region.V
+                                 'Foreign.R.Type.Expr, Foreign.R.Internal.SEXPREC>)_R) of ds3 { GHC.Ptr.Ptr ds4 ->
+                 case {__pkg_ccall_GC inline-r-0.9.0.2 GHC.Prim.Addr#
+                                                       -> GHC.Prim.Int#
+                                                       -> GHC.Prim.State# GHC.Prim.RealWorld
+                                                       -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+                                                             GHC.Prim.Addr# #)}
+                        ds4
+                        0#
+                        ipv of wild1 { (#,#) ds5 ds6 ->
+                 case Language.R.Globals.globalEnv
+                        `cast`
+                      (Trans
+                           (Foreign.R.Internal.N:SEXP[0]
+                                <Control.Memory.Region.G>_P <'Foreign.R.Type.Env>_P)
+                           (GHC.Ptr.Ptr
+                              <Language.R.HExp.HExp
+                                 Control.Memory.Region.G
+                                 'Foreign.R.Type.Env, Foreign.R.Internal.SEXPREC>)_R) of ds7 { GHC.Ptr.Ptr ds8 ->
+                 case {__pkg_ccall_GC inline-r-0.9.0.2 GHC.Prim.Addr#
+                                                       -> GHC.Prim.Addr#
+                                                       -> GHC.Prim.State# GHC.Prim.RealWorld
+                                                       -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+                                                             GHC.Prim.Addr# #)}
+                        ds6
+                        ds8
+                        ds5 of wild { (#,#) ds9 ds10 ->
+                 case {__pkg_ccall_GC inline-r-0.9.0.2 GHC.Prim.Addr#
+                                                       -> GHC.Prim.State# GHC.Prim.RealWorld
+                                                       -> (# GHC.Prim.State# GHC.Prim.RealWorld #)}
+                        ds10
+                        ds9 of wild2 { Unit# ds11 ->
+                 (# ds11,
+                    Foreign.R.Internal.SomeSEXP
+                      @ Control.Memory.Region.V
+                      @ GHC.Types.Any
+                      ds10 #) } } } } } } }) -}
+9d3fc0fe3120802a825a230ac87c0246
+  tests27 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# Main.tests28) -}
+a95d41575c5a4b815e23c9a899bbffd8
+  tests28 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("function(){ 1 }"#) -}
+efe4b7e623c8d34daa22735ede3029be
+  tests29 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# Main.tests30) -}
+ede5b98dc3b3dd92661eafcf148cdd77
+  tests3 :: [Test.Tasty.Core.TestTree]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Test.Tasty.Core.TestTree
+                   Test.Matcher.tests
+                   Main.tests4) -}
+d8a9f6670129f6f73586796885e10df1
+  tests30 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("qq/concurrent-initialization"#) -}
+c9b20cd2aaeabbb2fc026a7808ee9002
+  tests31 :: Test.Tasty.Core.TestTree
+  {- Unfolding: (Test.Tasty.ExpectedFailure.wrapTest
+                   Test.Tasty.ExpectedFailure.ignoreTest1
+                     `cast`
+                   (<GHC.Types.IO Test.Tasty.Core.Result>_R
+                    ->_R Sym (GHC.Types.N:IO[0] <Test.Tasty.Core.Result>_R))
+                   Test.Regions.tests) -}
+4920d1ba362213f7bbde28d1a10129af
+  tests32 :: Test.Tasty.Core.TestTree
+  {- Unfolding: (Test.Tasty.ExpectedFailure.wrapTest
+                   Test.Tasty.ExpectedFailure.ignoreTest1
+                     `cast`
+                   (<GHC.Types.IO Test.Tasty.Core.Result>_R
+                    ->_R Sym (GHC.Types.N:IO[0] <Test.Tasty.Core.Result>_R))
+                   Test.GC.tests) -}
+0ba8a2a7f1ddae5167210cb57b3ae9c7
+  tests33 :: Test.Tasty.Core.TestTree
+  {- Unfolding: (Test.Tasty.Core.SingleTest
+                   @ Test.Tasty.HUnit.TestCase
+                   Test.Tasty.HUnit.$fIsTestTestCase
+                   Main.tests38
+                   Main.tests34
+                     `cast`
+                   (Trans
+                        (Sym (GHC.Types.N:IO[0] <[GHC.Types.Char]>_R))
+                        (Sym (Test.Tasty.HUnit.N:TestCase[0])))) -}
+fa1fa590ce58849e210ee54d71417527
+  tests34 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, [GHC.Types.Char] #)
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: (\ (s :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                 case GHC.Prim.getMaskingState# s of ds2 { (#,#) ipv ipv1 ->
+                 case ipv1 of ds3 {
+                   DEFAULT
+                   -> case GHC.Prim.newMutVar#
+                             @ GHC.Types.Int
+                             @ GHC.Prim.RealWorld
+                             Language.R.Instance.runRegion3
+                             ipv of ds4 { (#,#) ipv2 ipv3 ->
+                      case GHC.Prim.catch#
+                             @ GHC.Types.Double
+                             @ GHC.Exception.SomeException
+                             (GHC.Prim.maskAsyncExceptions#
+                                @ GHC.Types.Double
+                                (\ (s1 :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                                 case Main.tests36
+                                        (GHC.STRef.STRef @ GHC.Prim.RealWorld @ GHC.Types.Int ipv3)
+                                          `cast`
+                                        (Trans
+                                             (Sym (GHC.IORef.N:IORef[0]) <GHC.Types.Int>_N)
+                                             (Nth:2
+                                                  (Trans
+                                                       (Sym (Control.Monad.Trans.Reader.N:ReaderT[0]
+                                                                 <*>_N
+                                                                 <GHC.IORef.IORef GHC.Types.Int>_R
+                                                                 <GHC.Types.IO>_R
+                                                                 <GHC.Types.Double>_N))
+                                                       (Nth:3
+                                                            (Nth:3
+                                                                 (Trans
+                                                                      (<Control.Monad.Trans.Reader.ReaderT
+                                                                          (GHC.IORef.IORef
+                                                                             GHC.Types.Int)
+                                                                          GHC.Types.IO
+                                                                          (Foreign.R.Internal.SEXP
+                                                                             GHC.Types.Any
+                                                                             'Foreign.R.Type.Real)>_R
+                                                                       ->_R <Foreign.R.Internal.SEXP
+                                                                               GHC.Types.Any
+                                                                               'Foreign.R.Type.Real
+                                                                             -> Control.Monad.Trans.Reader.ReaderT
+                                                                                  (GHC.IORef.IORef
+                                                                                     GHC.Types.Int)
+                                                                                  GHC.Types.IO
+                                                                                  GHC.Types.Double>_R
+                                                                       ->_R Control.Monad.Trans.Reader.N:ReaderT[0]
+                                                                                <*>_N
+                                                                                <GHC.IORef.IORef
+                                                                                   GHC.Types.Int>_R
+                                                                                <GHC.Types.IO>_R
+                                                                                <GHC.Types.Double>_N)
+                                                                      (<Control.Monad.Trans.Reader.ReaderT
+                                                                          (GHC.IORef.IORef
+                                                                             GHC.Types.Int)
+                                                                          GHC.Types.IO
+                                                                          (Foreign.R.Internal.SEXP
+                                                                             GHC.Types.Any
+                                                                             'Foreign.R.Type.Real)>_R
+                                                                       ->_R <Foreign.R.Internal.SEXP
+                                                                               GHC.Types.Any
+                                                                               'Foreign.R.Type.Real
+                                                                             -> Control.Monad.Trans.Reader.ReaderT
+                                                                                  (GHC.IORef.IORef
+                                                                                     GHC.Types.Int)
+                                                                                  GHC.Types.IO
+                                                                                  GHC.Types.Double>_R
+                                                                       ->_R <GHC.IORef.IORef
+                                                                               GHC.Types.Int>_R
+                                                                       ->_R GHC.Types.N:IO[0]
+                                                                                <GHC.Types.Double>_R)))))))
+                                        s1 of ds5 { (#,#) ipv4 ipv5 ->
+                                 case ipv5 of ds6 { GHC.Types.D# ipv7 -> ds5 } }))
+                             (\ (e1 :: GHC.Exception.SomeException)[OneShot]
+                                (s1 :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                              case GHC.Prim.readMutVar#
+                                     @ GHC.Prim.RealWorld
+                                     @ GHC.Types.Int
+                                     ipv3
+                                     s1 of ds5 { (#,#) ipv4 ipv5 ->
+                              case ipv5 of wild { GHC.Types.I# x# ->
+                              case {__pkg_ccall_GC inline-r-0.9.0.2 GHC.Prim.Int#
+                                                                    -> GHC.Prim.State#
+                                                                         GHC.Prim.RealWorld
+                                                                    -> (# GHC.Prim.State#
+                                                                            GHC.Prim.RealWorld #)}
+                                     (GHC.Prim.narrow32Int# x#)
+                                     ipv4 of wild1 { Unit# ds6 ->
+                              GHC.Prim.raiseIO#
+                                @ GHC.Exception.SomeException
+                                @ GHC.Types.Double
+                                e1
+                                ds6 } } })
+                             ipv2 of ds5 { (#,#) ipv4 ipv5 ->
+                      case GHC.Prim.readMutVar#
+                             @ GHC.Prim.RealWorld
+                             @ GHC.Types.Int
+                             ipv3
+                             ipv4 of ds6 { (#,#) ipv7 ipv8 ->
+                      case ipv8 of wild { GHC.Types.I# x# ->
+                      case {__pkg_ccall_GC inline-r-0.9.0.2 GHC.Prim.Int#
+                                                            -> GHC.Prim.State# GHC.Prim.RealWorld
+                                                            -> (# GHC.Prim.State#
+                                                                    GHC.Prim.RealWorld #)}
+                             (GHC.Prim.narrow32Int# x#)
+                             ipv7 of wild1 { Unit# ds7 ->
+                      case ipv5 of wild2 { GHC.Types.D# x ->
+                      case GHC.Prim.tagToEnum#
+                             @ GHC.Types.Bool
+                             (GHC.Prim.==## x 42.0##) of wild3 {
+                        GHC.Types.False
+                        -> case Main.tests37 wild2 ds7
+                           ret_ty (# GHC.Prim.State# GHC.Prim.RealWorld, [GHC.Types.Char] #)
+                           of {}
+                        GHC.Types.True
+                        -> (# ds7, GHC.Types.[] @ GHC.Types.Char #) } } } } } } }
+                   0#
+                   -> case GHC.Prim.maskAsyncExceptions#
+                             @ GHC.Types.Double
+                             Main.tests35
+                             ipv of ds4 { (#,#) ipv2 ipv3 ->
+                      case ipv3 of wild { GHC.Types.D# x ->
+                      case GHC.Prim.tagToEnum#
+                             @ GHC.Types.Bool
+                             (GHC.Prim.==## x 42.0##) of wild1 {
+                        GHC.Types.False
+                        -> case Main.tests37 wild ipv2
+                           ret_ty (# GHC.Prim.State# GHC.Prim.RealWorld, [GHC.Types.Char] #)
+                           of {}
+                        GHC.Types.True -> (# ipv2, GHC.Types.[] @ GHC.Types.Char #) } } }
+                   1#
+                   -> case GHC.Prim.newMutVar#
+                             @ GHC.Types.Int
+                             @ GHC.Prim.RealWorld
+                             Language.R.Instance.runRegion3
+                             ipv of ds4 { (#,#) ipv2 ipv3 ->
+                      case GHC.Prim.catch#
+                             @ GHC.Types.Double
+                             @ GHC.Exception.SomeException
+                             (GHC.Prim.maskUninterruptible#
+                                @ GHC.Types.Double
+                                (\ (s1 :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                                 case Main.tests36
+                                        (GHC.STRef.STRef @ GHC.Prim.RealWorld @ GHC.Types.Int ipv3)
+                                          `cast`
+                                        (Trans
+                                             (Sym (GHC.IORef.N:IORef[0]) <GHC.Types.Int>_N)
+                                             (Nth:2
+                                                  (Trans
+                                                       (Sym (Control.Monad.Trans.Reader.N:ReaderT[0]
+                                                                 <*>_N
+                                                                 <GHC.IORef.IORef GHC.Types.Int>_R
+                                                                 <GHC.Types.IO>_R
+                                                                 <GHC.Types.Double>_N))
+                                                       (Nth:3
+                                                            (Nth:3
+                                                                 (Trans
+                                                                      (<Control.Monad.Trans.Reader.ReaderT
+                                                                          (GHC.IORef.IORef
+                                                                             GHC.Types.Int)
+                                                                          GHC.Types.IO
+                                                                          (Foreign.R.Internal.SEXP
+                                                                             GHC.Types.Any
+                                                                             'Foreign.R.Type.Real)>_R
+                                                                       ->_R <Foreign.R.Internal.SEXP
+                                                                               GHC.Types.Any
+                                                                               'Foreign.R.Type.Real
+                                                                             -> Control.Monad.Trans.Reader.ReaderT
+                                                                                  (GHC.IORef.IORef
+                                                                                     GHC.Types.Int)
+                                                                                  GHC.Types.IO
+                                                                                  GHC.Types.Double>_R
+                                                                       ->_R Control.Monad.Trans.Reader.N:ReaderT[0]
+                                                                                <*>_N
+                                                                                <GHC.IORef.IORef
+                                                                                   GHC.Types.Int>_R
+                                                                                <GHC.Types.IO>_R
+                                                                                <GHC.Types.Double>_N)
+                                                                      (<Control.Monad.Trans.Reader.ReaderT
+                                                                          (GHC.IORef.IORef
+                                                                             GHC.Types.Int)
+                                                                          GHC.Types.IO
+                                                                          (Foreign.R.Internal.SEXP
+                                                                             GHC.Types.Any
+                                                                             'Foreign.R.Type.Real)>_R
+                                                                       ->_R <Foreign.R.Internal.SEXP
+                                                                               GHC.Types.Any
+                                                                               'Foreign.R.Type.Real
+                                                                             -> Control.Monad.Trans.Reader.ReaderT
+                                                                                  (GHC.IORef.IORef
+                                                                                     GHC.Types.Int)
+                                                                                  GHC.Types.IO
+                                                                                  GHC.Types.Double>_R
+                                                                       ->_R <GHC.IORef.IORef
+                                                                               GHC.Types.Int>_R
+                                                                       ->_R GHC.Types.N:IO[0]
+                                                                                <GHC.Types.Double>_R)))))))
+                                        s1 of ds5 { (#,#) ipv4 ipv5 ->
+                                 case ipv5 of ds6 { GHC.Types.D# ipv7 -> ds5 } }))
+                             (\ (e1 :: GHC.Exception.SomeException)[OneShot]
+                                (s1 :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                              case GHC.Prim.readMutVar#
+                                     @ GHC.Prim.RealWorld
+                                     @ GHC.Types.Int
+                                     ipv3
+                                     s1 of ds5 { (#,#) ipv4 ipv5 ->
+                              case ipv5 of wild { GHC.Types.I# x# ->
+                              case {__pkg_ccall_GC inline-r-0.9.0.2 GHC.Prim.Int#
+                                                                    -> GHC.Prim.State#
+                                                                         GHC.Prim.RealWorld
+                                                                    -> (# GHC.Prim.State#
+                                                                            GHC.Prim.RealWorld #)}
+                                     (GHC.Prim.narrow32Int# x#)
+                                     ipv4 of wild1 { Unit# ds6 ->
+                              GHC.Prim.raiseIO#
+                                @ GHC.Exception.SomeException
+                                @ GHC.Types.Double
+                                e1
+                                ds6 } } })
+                             ipv2 of ds5 { (#,#) ipv4 ipv5 ->
+                      case GHC.Prim.readMutVar#
+                             @ GHC.Prim.RealWorld
+                             @ GHC.Types.Int
+                             ipv3
+                             ipv4 of ds6 { (#,#) ipv7 ipv8 ->
+                      case ipv8 of wild { GHC.Types.I# x# ->
+                      case {__pkg_ccall_GC inline-r-0.9.0.2 GHC.Prim.Int#
+                                                            -> GHC.Prim.State# GHC.Prim.RealWorld
+                                                            -> (# GHC.Prim.State#
+                                                                    GHC.Prim.RealWorld #)}
+                             (GHC.Prim.narrow32Int# x#)
+                             ipv7 of wild1 { Unit# ds7 ->
+                      case ipv5 of wild2 { GHC.Types.D# x ->
+                      case GHC.Prim.tagToEnum#
+                             @ GHC.Types.Bool
+                             (GHC.Prim.==## x 42.0##) of wild3 {
+                        GHC.Types.False
+                        -> case Main.tests37 wild2 ds7
+                           ret_ty (# GHC.Prim.State# GHC.Prim.RealWorld, [GHC.Types.Char] #)
+                           of {}
+                        GHC.Types.True
+                        -> (# ds7, GHC.Types.[] @ GHC.Types.Char #) } } } } } } } } }) -}
+20d1e8c838830fad47e216e06f55e76f
+  tests35 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, GHC.Types.Double #)
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: (\ (s1 :: GHC.Prim.State#
+                            GHC.Prim.RealWorld)[OneShot] ->
+                 case GHC.Prim.newMutVar#
+                        @ GHC.Types.Int
+                        @ GHC.Prim.RealWorld
+                        Language.R.Instance.runRegion3
+                        s1 of ds2 { (#,#) ipv2 ipv3 ->
+                 case GHC.Prim.catch#
+                        @ GHC.Types.Double
+                        @ GHC.Exception.SomeException
+                        (GHC.Prim.unmaskAsyncExceptions#
+                           @ GHC.Types.Double
+                           (\ (s2 :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                            case Main.tests36
+                                   (GHC.STRef.STRef @ GHC.Prim.RealWorld @ GHC.Types.Int ipv3)
+                                     `cast`
+                                   (Trans
+                                        (Sym (GHC.IORef.N:IORef[0]) <GHC.Types.Int>_N)
+                                        (Nth:2
+                                             (Trans
+                                                  (Sym (Control.Monad.Trans.Reader.N:ReaderT[0]
+                                                            <*>_N
+                                                            <GHC.IORef.IORef GHC.Types.Int>_R
+                                                            <GHC.Types.IO>_R
+                                                            <GHC.Types.Double>_N))
+                                                  (Nth:3
+                                                       (Nth:3
+                                                            (Trans
+                                                                 (<Control.Monad.Trans.Reader.ReaderT
+                                                                     (GHC.IORef.IORef GHC.Types.Int)
+                                                                     GHC.Types.IO
+                                                                     (Foreign.R.Internal.SEXP
+                                                                        GHC.Types.Any
+                                                                        'Foreign.R.Type.Real)>_R
+                                                                  ->_R <Foreign.R.Internal.SEXP
+                                                                          GHC.Types.Any
+                                                                          'Foreign.R.Type.Real
+                                                                        -> Control.Monad.Trans.Reader.ReaderT
+                                                                             (GHC.IORef.IORef
+                                                                                GHC.Types.Int)
+                                                                             GHC.Types.IO
+                                                                             GHC.Types.Double>_R
+                                                                  ->_R Control.Monad.Trans.Reader.N:ReaderT[0]
+                                                                           <*>_N
+                                                                           <GHC.IORef.IORef
+                                                                              GHC.Types.Int>_R
+                                                                           <GHC.Types.IO>_R
+                                                                           <GHC.Types.Double>_N)
+                                                                 (<Control.Monad.Trans.Reader.ReaderT
+                                                                     (GHC.IORef.IORef GHC.Types.Int)
+                                                                     GHC.Types.IO
+                                                                     (Foreign.R.Internal.SEXP
+                                                                        GHC.Types.Any
+                                                                        'Foreign.R.Type.Real)>_R
+                                                                  ->_R <Foreign.R.Internal.SEXP
+                                                                          GHC.Types.Any
+                                                                          'Foreign.R.Type.Real
+                                                                        -> Control.Monad.Trans.Reader.ReaderT
+                                                                             (GHC.IORef.IORef
+                                                                                GHC.Types.Int)
+                                                                             GHC.Types.IO
+                                                                             GHC.Types.Double>_R
+                                                                  ->_R <GHC.IORef.IORef
+                                                                          GHC.Types.Int>_R
+                                                                  ->_R GHC.Types.N:IO[0]
+                                                                           <GHC.Types.Double>_R)))))))
+                                   s2 of ds3 { (#,#) ipv4 ipv5 ->
+                            case ipv5 of ds5 { GHC.Types.D# ipv -> ds3 } }))
+                        (\ (e1 :: GHC.Exception.SomeException)[OneShot]
+                           (s2 :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                         case GHC.Prim.readMutVar#
+                                @ GHC.Prim.RealWorld
+                                @ GHC.Types.Int
+                                ipv3
+                                s2 of ds3 { (#,#) ipv4 ipv5 ->
+                         case ipv5 of wild { GHC.Types.I# x# ->
+                         case {__pkg_ccall_GC inline-r-0.9.0.2 GHC.Prim.Int#
+                                                               -> GHC.Prim.State# GHC.Prim.RealWorld
+                                                               -> (# GHC.Prim.State#
+                                                                       GHC.Prim.RealWorld #)}
+                                (GHC.Prim.narrow32Int# x#)
+                                ipv4 of wild1 { Unit# ds4 ->
+                         GHC.Prim.raiseIO#
+                           @ GHC.Exception.SomeException
+                           @ GHC.Types.Double
+                           e1
+                           ds4 } } })
+                        ipv2 of ds3 { (#,#) ipv4 ipv5 ->
+                 case GHC.Prim.readMutVar#
+                        @ GHC.Prim.RealWorld
+                        @ GHC.Types.Int
+                        ipv3
+                        ipv4 of ds4 { (#,#) ipv7 ipv8 ->
+                 case ipv8 of wild { GHC.Types.I# x# ->
+                 case {__pkg_ccall_GC inline-r-0.9.0.2 GHC.Prim.Int#
+                                                       -> GHC.Prim.State# GHC.Prim.RealWorld
+                                                       -> (# GHC.Prim.State# GHC.Prim.RealWorld #)}
+                        (GHC.Prim.narrow32Int# x#)
+                        ipv7 of wild1 { Unit# ds5 ->
+                 (# ds5, ipv5 #) } } } } }) -}
+02f463aaf73766cf89b7c135b4498758
+  tests36 ::
+    GHC.IORef.IORef GHC.Types.Int
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, GHC.Types.Double #)
+  {- Arity: 2, Strictness: <L,U(U)><S,U> -}
+c4bafe88f30f34d38a6801185d10f86e
+  tests37 ::
+    GHC.Types.Double
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+  {- Arity: 2, Strictness: <B,U><B,U>x -}
+a9d521ef3731106c00f5d8ff1b3c848b
+  tests38 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# Main.tests39) -}
+95777cab9b0dc2516889c90625910e81
+  tests39 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Hexp works"#) -}
+e252046bfd81d959720bfcf2e49efb03
+  tests4 :: [Test.Tasty.Core.TestTree]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Test.Tasty.Core.TestTree
+                   Main.tests22
+                   Main.tests5) -}
+c6345d47260f17fe18d701cd19eb0912
+  tests40 :: Test.Tasty.Core.TestTree
+  {- Unfolding: (Test.Tasty.Core.SingleTest
+                   @ Test.Tasty.HUnit.TestCase
+                   Test.Tasty.HUnit.$fIsTestTestCase
+                   Main.tests44
+                   Main.tests41
+                     `cast`
+                   (Trans
+                        (Sym (GHC.Types.N:IO[0] <[GHC.Types.Char]>_R))
+                        (Sym (Test.Tasty.HUnit.N:TestCase[0])))) -}
+597cf361620bc06b8ba8bfa95b2748c5
+  tests41 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, [GHC.Types.Char] #)
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: (\ (s :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                 case GHC.Prim.getMaskingState# s of ds2 { (#,#) ipv ipv1 ->
+                 case ipv1 of ds3 {
+                   DEFAULT
+                   -> case GHC.Prim.newMutVar#
+                             @ GHC.Types.Int
+                             @ GHC.Prim.RealWorld
+                             Language.R.Instance.runRegion3
+                             ipv of ds4 { (#,#) ipv2 ipv3 ->
+                      case GHC.Prim.catch#
+                             @ ()
+                             @ GHC.Exception.SomeException
+                             (GHC.Prim.maskAsyncExceptions#
+                                @ ()
+                                (\ (s1 :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                                 case Main.tests43
+                                        (GHC.STRef.STRef @ GHC.Prim.RealWorld @ GHC.Types.Int ipv3)
+                                          `cast`
+                                        (Trans
+                                             (Sym (GHC.IORef.N:IORef[0]) <GHC.Types.Int>_N)
+                                             (Nth:2
+                                                  (Trans
+                                                       (Sym (Control.Monad.Trans.Reader.N:ReaderT[0]
+                                                                 <*>_N
+                                                                 <GHC.IORef.IORef GHC.Types.Int>_R
+                                                                 <GHC.Types.IO>_R
+                                                                 <()>_N))
+                                                       (Nth:3
+                                                            (Nth:3
+                                                                 (Trans
+                                                                      (<Control.Monad.Trans.Reader.ReaderT
+                                                                          (GHC.IORef.IORef
+                                                                             GHC.Types.Int)
+                                                                          GHC.Types.IO
+                                                                          (Foreign.R.Internal.SomeSEXP
+                                                                             GHC.Types.Any)>_R
+                                                                       ->_R <Foreign.R.Internal.SomeSEXP
+                                                                               GHC.Types.Any
+                                                                             -> Control.Monad.Trans.Reader.ReaderT
+                                                                                  (GHC.IORef.IORef
+                                                                                     GHC.Types.Int)
+                                                                                  GHC.Types.IO
+                                                                                  ()>_R
+                                                                       ->_R Control.Monad.Trans.Reader.N:ReaderT[0]
+                                                                                <*>_N
+                                                                                <GHC.IORef.IORef
+                                                                                   GHC.Types.Int>_R
+                                                                                <GHC.Types.IO>_R
+                                                                                <()>_N)
+                                                                      (<Control.Monad.Trans.Reader.ReaderT
+                                                                          (GHC.IORef.IORef
+                                                                             GHC.Types.Int)
+                                                                          GHC.Types.IO
+                                                                          (Foreign.R.Internal.SomeSEXP
+                                                                             GHC.Types.Any)>_R
+                                                                       ->_R <Foreign.R.Internal.SomeSEXP
+                                                                               GHC.Types.Any
+                                                                             -> Control.Monad.Trans.Reader.ReaderT
+                                                                                  (GHC.IORef.IORef
+                                                                                     GHC.Types.Int)
+                                                                                  GHC.Types.IO
+                                                                                  ()>_R
+                                                                       ->_R <GHC.IORef.IORef
+                                                                               GHC.Types.Int>_R
+                                                                       ->_R GHC.Types.N:IO[0]
+                                                                                <()>_R)))))))
+                                        s1 of ds5 { (#,#) ipv4 ipv5 ->
+                                 case ipv5 of wild { () -> ds5 } }))
+                             (\ (e1 :: GHC.Exception.SomeException)[OneShot]
+                                (s1 :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                              case GHC.Prim.readMutVar#
+                                     @ GHC.Prim.RealWorld
+                                     @ GHC.Types.Int
+                                     ipv3
+                                     s1 of ds5 { (#,#) ipv4 ipv5 ->
+                              case ipv5 of wild { GHC.Types.I# x# ->
+                              case {__pkg_ccall_GC inline-r-0.9.0.2 GHC.Prim.Int#
+                                                                    -> GHC.Prim.State#
+                                                                         GHC.Prim.RealWorld
+                                                                    -> (# GHC.Prim.State#
+                                                                            GHC.Prim.RealWorld #)}
+                                     (GHC.Prim.narrow32Int# x#)
+                                     ipv4 of wild1 { Unit# ds6 ->
+                              GHC.Prim.raiseIO# @ GHC.Exception.SomeException @ () e1 ds6 } } })
+                             ipv2 of ds5 { (#,#) ipv4 ipv5 ->
+                      case GHC.Prim.readMutVar#
+                             @ GHC.Prim.RealWorld
+                             @ GHC.Types.Int
+                             ipv3
+                             ipv4 of ds6 { (#,#) ipv7 ipv8 ->
+                      case ipv8 of wild { GHC.Types.I# x# ->
+                      case {__pkg_ccall_GC inline-r-0.9.0.2 GHC.Prim.Int#
+                                                            -> GHC.Prim.State# GHC.Prim.RealWorld
+                                                            -> (# GHC.Prim.State#
+                                                                    GHC.Prim.RealWorld #)}
+                             (GHC.Prim.narrow32Int# x#)
+                             ipv7 of wild1 { Unit# ds7 ->
+                      (# ds7, GHC.Types.[] @ GHC.Types.Char #) } } } } }
+                   0#
+                   -> case GHC.Prim.maskAsyncExceptions#
+                             @ ()
+                             Main.tests42
+                             ipv of ds4 { (#,#) ipv2 ipv3 ->
+                      (# ipv2, GHC.Types.[] @ GHC.Types.Char #) }
+                   1#
+                   -> case GHC.Prim.newMutVar#
+                             @ GHC.Types.Int
+                             @ GHC.Prim.RealWorld
+                             Language.R.Instance.runRegion3
+                             ipv of ds4 { (#,#) ipv2 ipv3 ->
+                      case GHC.Prim.catch#
+                             @ ()
+                             @ GHC.Exception.SomeException
+                             (GHC.Prim.maskUninterruptible#
+                                @ ()
+                                (\ (s1 :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                                 case Main.tests43
+                                        (GHC.STRef.STRef @ GHC.Prim.RealWorld @ GHC.Types.Int ipv3)
+                                          `cast`
+                                        (Trans
+                                             (Sym (GHC.IORef.N:IORef[0]) <GHC.Types.Int>_N)
+                                             (Nth:2
+                                                  (Trans
+                                                       (Sym (Control.Monad.Trans.Reader.N:ReaderT[0]
+                                                                 <*>_N
+                                                                 <GHC.IORef.IORef GHC.Types.Int>_R
+                                                                 <GHC.Types.IO>_R
+                                                                 <()>_N))
+                                                       (Nth:3
+                                                            (Nth:3
+                                                                 (Trans
+                                                                      (<Control.Monad.Trans.Reader.ReaderT
+                                                                          (GHC.IORef.IORef
+                                                                             GHC.Types.Int)
+                                                                          GHC.Types.IO
+                                                                          (Foreign.R.Internal.SomeSEXP
+                                                                             GHC.Types.Any)>_R
+                                                                       ->_R <Foreign.R.Internal.SomeSEXP
+                                                                               GHC.Types.Any
+                                                                             -> Control.Monad.Trans.Reader.ReaderT
+                                                                                  (GHC.IORef.IORef
+                                                                                     GHC.Types.Int)
+                                                                                  GHC.Types.IO
+                                                                                  ()>_R
+                                                                       ->_R Control.Monad.Trans.Reader.N:ReaderT[0]
+                                                                                <*>_N
+                                                                                <GHC.IORef.IORef
+                                                                                   GHC.Types.Int>_R
+                                                                                <GHC.Types.IO>_R
+                                                                                <()>_N)
+                                                                      (<Control.Monad.Trans.Reader.ReaderT
+                                                                          (GHC.IORef.IORef
+                                                                             GHC.Types.Int)
+                                                                          GHC.Types.IO
+                                                                          (Foreign.R.Internal.SomeSEXP
+                                                                             GHC.Types.Any)>_R
+                                                                       ->_R <Foreign.R.Internal.SomeSEXP
+                                                                               GHC.Types.Any
+                                                                             -> Control.Monad.Trans.Reader.ReaderT
+                                                                                  (GHC.IORef.IORef
+                                                                                     GHC.Types.Int)
+                                                                                  GHC.Types.IO
+                                                                                  ()>_R
+                                                                       ->_R <GHC.IORef.IORef
+                                                                               GHC.Types.Int>_R
+                                                                       ->_R GHC.Types.N:IO[0]
+                                                                                <()>_R)))))))
+                                        s1 of ds5 { (#,#) ipv4 ipv5 ->
+                                 case ipv5 of wild { () -> ds5 } }))
+                             (\ (e1 :: GHC.Exception.SomeException)[OneShot]
+                                (s1 :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                              case GHC.Prim.readMutVar#
+                                     @ GHC.Prim.RealWorld
+                                     @ GHC.Types.Int
+                                     ipv3
+                                     s1 of ds5 { (#,#) ipv4 ipv5 ->
+                              case ipv5 of wild { GHC.Types.I# x# ->
+                              case {__pkg_ccall_GC inline-r-0.9.0.2 GHC.Prim.Int#
+                                                                    -> GHC.Prim.State#
+                                                                         GHC.Prim.RealWorld
+                                                                    -> (# GHC.Prim.State#
+                                                                            GHC.Prim.RealWorld #)}
+                                     (GHC.Prim.narrow32Int# x#)
+                                     ipv4 of wild1 { Unit# ds6 ->
+                              GHC.Prim.raiseIO# @ GHC.Exception.SomeException @ () e1 ds6 } } })
+                             ipv2 of ds5 { (#,#) ipv4 ipv5 ->
+                      case GHC.Prim.readMutVar#
+                             @ GHC.Prim.RealWorld
+                             @ GHC.Types.Int
+                             ipv3
+                             ipv4 of ds6 { (#,#) ipv7 ipv8 ->
+                      case ipv8 of wild { GHC.Types.I# x# ->
+                      case {__pkg_ccall_GC inline-r-0.9.0.2 GHC.Prim.Int#
+                                                            -> GHC.Prim.State# GHC.Prim.RealWorld
+                                                            -> (# GHC.Prim.State#
+                                                                    GHC.Prim.RealWorld #)}
+                             (GHC.Prim.narrow32Int# x#)
+                             ipv7 of wild1 { Unit# ds7 ->
+                      (# ds7, GHC.Types.[] @ GHC.Types.Char #) } } } } } } }) -}
+0c11f52b90b3f40d1f567a78302d982a
+  tests42 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: (\ (s1 :: GHC.Prim.State#
+                            GHC.Prim.RealWorld)[OneShot] ->
+                 case GHC.Prim.newMutVar#
+                        @ GHC.Types.Int
+                        @ GHC.Prim.RealWorld
+                        Language.R.Instance.runRegion3
+                        s1 of ds2 { (#,#) ipv2 ipv3 ->
+                 case GHC.Prim.catch#
+                        @ ()
+                        @ GHC.Exception.SomeException
+                        (GHC.Prim.unmaskAsyncExceptions#
+                           @ ()
+                           (\ (s2 :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                            case Main.tests43
+                                   (GHC.STRef.STRef @ GHC.Prim.RealWorld @ GHC.Types.Int ipv3)
+                                     `cast`
+                                   (Trans
+                                        (Sym (GHC.IORef.N:IORef[0]) <GHC.Types.Int>_N)
+                                        (Nth:2
+                                             (Trans
+                                                  (Sym (Control.Monad.Trans.Reader.N:ReaderT[0]
+                                                            <*>_N
+                                                            <GHC.IORef.IORef GHC.Types.Int>_R
+                                                            <GHC.Types.IO>_R
+                                                            <()>_N))
+                                                  (Nth:3
+                                                       (Nth:3
+                                                            (Trans
+                                                                 (<Control.Monad.Trans.Reader.ReaderT
+                                                                     (GHC.IORef.IORef GHC.Types.Int)
+                                                                     GHC.Types.IO
+                                                                     (Foreign.R.Internal.SomeSEXP
+                                                                        GHC.Types.Any)>_R
+                                                                  ->_R <Foreign.R.Internal.SomeSEXP
+                                                                          GHC.Types.Any
+                                                                        -> Control.Monad.Trans.Reader.ReaderT
+                                                                             (GHC.IORef.IORef
+                                                                                GHC.Types.Int)
+                                                                             GHC.Types.IO
+                                                                             ()>_R
+                                                                  ->_R Control.Monad.Trans.Reader.N:ReaderT[0]
+                                                                           <*>_N
+                                                                           <GHC.IORef.IORef
+                                                                              GHC.Types.Int>_R
+                                                                           <GHC.Types.IO>_R
+                                                                           <()>_N)
+                                                                 (<Control.Monad.Trans.Reader.ReaderT
+                                                                     (GHC.IORef.IORef GHC.Types.Int)
+                                                                     GHC.Types.IO
+                                                                     (Foreign.R.Internal.SomeSEXP
+                                                                        GHC.Types.Any)>_R
+                                                                  ->_R <Foreign.R.Internal.SomeSEXP
+                                                                          GHC.Types.Any
+                                                                        -> Control.Monad.Trans.Reader.ReaderT
+                                                                             (GHC.IORef.IORef
+                                                                                GHC.Types.Int)
+                                                                             GHC.Types.IO
+                                                                             ()>_R
+                                                                  ->_R <GHC.IORef.IORef
+                                                                          GHC.Types.Int>_R
+                                                                  ->_R GHC.Types.N:IO[0]
+                                                                           <()>_R)))))))
+                                   s2 of ds3 { (#,#) ipv4 ipv5 ->
+                            case ipv5 of wild { () -> ds3 } }))
+                        (\ (e1 :: GHC.Exception.SomeException)[OneShot]
+                           (s2 :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                         case GHC.Prim.readMutVar#
+                                @ GHC.Prim.RealWorld
+                                @ GHC.Types.Int
+                                ipv3
+                                s2 of ds3 { (#,#) ipv4 ipv5 ->
+                         case ipv5 of wild { GHC.Types.I# x# ->
+                         case {__pkg_ccall_GC inline-r-0.9.0.2 GHC.Prim.Int#
+                                                               -> GHC.Prim.State# GHC.Prim.RealWorld
+                                                               -> (# GHC.Prim.State#
+                                                                       GHC.Prim.RealWorld #)}
+                                (GHC.Prim.narrow32Int# x#)
+                                ipv4 of wild1 { Unit# ds4 ->
+                         GHC.Prim.raiseIO# @ GHC.Exception.SomeException @ () e1 ds4 } } })
+                        ipv2 of ds3 { (#,#) ipv4 ipv5 ->
+                 case GHC.Prim.readMutVar#
+                        @ GHC.Prim.RealWorld
+                        @ GHC.Types.Int
+                        ipv3
+                        ipv4 of ds4 { (#,#) ipv7 ipv8 ->
+                 case ipv8 of wild { GHC.Types.I# x# ->
+                 case {__pkg_ccall_GC inline-r-0.9.0.2 GHC.Prim.Int#
+                                                       -> GHC.Prim.State# GHC.Prim.RealWorld
+                                                       -> (# GHC.Prim.State# GHC.Prim.RealWorld #)}
+                        (GHC.Prim.narrow32Int# x#)
+                        ipv7 of wild1 { Unit# ds5 ->
+                 (# ds5, ipv5 #) } } } } }) -}
+9badd7e51e78ce50273a13d056f033e6
+  tests43 ::
+    GHC.IORef.IORef GHC.Types.Int
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+  {- Arity: 2, Strictness: <L,U><L,U> -}
+b79b1284fa27b45a8011a56b3a9ffe30
+  tests44 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# Main.tests45) -}
+0f330ccd14c87e79124827c4be196c9e
+  tests45 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Weak Ptr test"#) -}
+593aa48cc1c3fbda88d25f05319d53f7
+  tests46 :: Test.Tasty.Core.TestTree
+  {- Unfolding: (Test.Tasty.Core.SingleTest
+                   @ Test.Tasty.HUnit.TestCase
+                   Test.Tasty.HUnit.$fIsTestTestCase
+                   Main.tests50
+                   Main.tests47
+                     `cast`
+                   (Trans
+                        (Sym (GHC.Types.N:IO[0] <[GHC.Types.Char]>_R))
+                        (Sym (Test.Tasty.HUnit.N:TestCase[0])))) -}
+8e035a841c0324f6fed6fa55d6f599ae
+  tests47 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, [GHC.Types.Char] #)
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: (\ (s :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                 case (Foreign.Marshal.Alloc.allocaBytesAligned
+                         @ Foreign.C.Types.CInt
+                         @ (Foreign.R.Internal.SEXP
+                              Control.Memory.Region.V 'Foreign.R.Type.Real)
+                         Foreign.Storable.$fStorableBool7
+                         Foreign.Storable.$fStorableBool7
+                         Main.tests49
+                           `cast`
+                         (<GHC.Ptr.Ptr Foreign.C.Types.CInt>_R
+                          ->_R Sym (GHC.Types.N:IO[0]
+                                        <Foreign.R.Internal.SEXP
+                                           Control.Memory.Region.V 'Foreign.R.Type.Real>_R)))
+                        `cast`
+                      (GHC.Types.N:IO[0]
+                           <Foreign.R.Internal.SEXP
+                              Control.Memory.Region.V 'Foreign.R.Type.Real>_R)
+                        s of ds2 { (#,#) ipv ipv1 ->
+                 case ipv1
+                        `cast`
+                      (Foreign.R.Internal.N:SEXP[0]
+                           <Control.Memory.Region.V>_P
+                           <'Foreign.R.Type.Real>_P) of ww { GHC.Ptr.Ptr ww1 ->
+                 case Language.R.Literal.$w$cfromSEXP3
+                        @ Control.Memory.Region.V
+                        ww1 of wild {
+                   []
+                   -> case Language.R.Literal.$fLiteralDoubleReal1
+                      ret_ty (# GHC.Prim.State# GHC.Prim.RealWorld, [GHC.Types.Char] #)
+                      of {}
+                   : x ds3
+                   -> case ds3 of wild1 {
+                        []
+                        -> case x of wild2 { GHC.Types.D# x1 ->
+                           case GHC.Prim.tagToEnum#
+                                  @ GHC.Types.Bool
+                                  (GHC.Prim.==## x1 3.0##) of wild3 {
+                             GHC.Types.False
+                             -> case Main.tests48 wild2 ipv
+                                ret_ty (# GHC.Prim.State# GHC.Prim.RealWorld, [GHC.Types.Char] #)
+                                of {}
+                             GHC.Types.True -> (# ipv, GHC.Types.[] @ GHC.Types.Char #) } }
+                        : ipv2 ipv3
+                        -> case Language.R.Literal.$fLiteralDoubleReal1
+                           ret_ty (# GHC.Prim.State# GHC.Prim.RealWorld, [GHC.Types.Char] #)
+                           of {} } } } }) -}
+a26e9d30d5a9511f086e70624d3bcf54
+  tests48 ::
+    GHC.Types.Double
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+  {- Arity: 2, Strictness: <B,U><B,U>x -}
+abb33e199a21889629ef4c7ef2d3030c
+  tests49 ::
+    GHC.Ptr.Ptr Foreign.C.Types.CInt
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+          Foreign.R.Internal.SEXP
+            Control.Memory.Region.V 'Foreign.R.Type.Real #)
+  {- Arity: 2, Strictness: <L,1*U(U)><S,U> -}
+56cfa9109e0e8af54d9fa8d22602edae
+  tests5 :: [Test.Tasty.Core.TestTree]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Test.Tasty.Core.TestTree
+                   Main.tests18
+                   Main.tests6) -}
+6c38b11f4371c77972ddd279bedaa152
+  tests50 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# Main.tests51) -}
+173fd27f136f1bcf499742f99d1d8e2b
+  tests51 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Haskell function from R"#) -}
+4ba84ecdf1139f0c1ad93145c00bc5eb
+  tests52 :: Test.Tasty.Core.TestTree
+  {- Unfolding: (Test.Tasty.Core.SingleTest
+                   @ Test.Tasty.HUnit.TestCase
+                   Test.Tasty.HUnit.$fIsTestTestCase
+                   Main.tests59
+                   Main.tests53
+                     `cast`
+                   (Trans
+                        (Sym (GHC.Types.N:IO[0] <[GHC.Types.Char]>_R))
+                        (Sym (Test.Tasty.HUnit.N:TestCase[0])))) -}
+d55f549209d67b904e7f8c606db87553
+  tests53 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, [GHC.Types.Char] #)
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: (\ (s :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                 case GHC.Prim.getMaskingState# s of ds2 { (#,#) ipv ipv1 ->
+                 case ipv1 of ds3 {
+                   DEFAULT
+                   -> case Language.R.Literal.$fLiteralDoubleReal_$smkSEXPVectorIO
+                             Foreign.R.Type.$fSingISEXPTYPEReal1
+                               `cast`
+                             (Sym (Foreign.R.Type.D:R:SingSEXPTYPEz0[0]) <'Foreign.R.Type.Real>_N)
+                             Main.tests55
+                               `cast`
+                             (Nth:2
+                                  (Trans
+                                       (([(GHC.Types.IO
+                                             (Sub (Sym (Data.Vector.SEXP.Base.D:R:ElemRep[3]
+                                                            <Control.Memory.Region.Void>_N))))_R])_R
+                                        ->_R <GHC.Types.IO
+                                                (Foreign.R.Internal.SEXP
+                                                   Control.Memory.Region.V 'Foreign.R.Type.Real)>_R)
+                                       (<[GHC.Types.IO
+                                            (Data.Vector.SEXP.Base.ElemRep
+                                               Control.Memory.Region.V 'Foreign.R.Type.Real)]>_R
+                                        ->_R GHC.Types.N:IO[0]
+                                                 <Foreign.R.Internal.SEXP
+                                                    Control.Memory.Region.V
+                                                    'Foreign.R.Type.Real>_R)))
+                             ipv of ds4 { (#,#) ipv2 ipv3 ->
+                      case ipv3
+                             `cast`
+                           (Trans
+                                (Foreign.R.Internal.N:SEXP[0]
+                                     <Control.Memory.Region.V>_P <'Foreign.R.Type.Real>_P)
+                                (GHC.Ptr.Ptr
+                                   <Language.R.HExp.HExp
+                                      Control.Memory.Region.V
+                                      'Foreign.R.Type.Real, Foreign.R.Internal.SEXPREC>)_R) of ds5 { GHC.Ptr.Ptr ds6 ->
+                      case {__pkg_ccall_GC inline-r-0.9.0.2 GHC.Prim.Addr#
+                                                            -> GHC.Prim.State# GHC.Prim.RealWorld
+                                                            -> (# GHC.Prim.State#
+                                                                    GHC.Prim.RealWorld,
+                                                                  GHC.Prim.Addr# #)}
+                             ds6
+                             ipv2 of wild { (#,#) ds7 ds8 ->
+                      case GHC.Prim.catch#
+                             @ ()
+                             @ GHC.Exception.SomeException
+                             (GHC.Prim.maskAsyncExceptions#
+                                @ ()
+                                (\ (w :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                                 Main.$wf ds6 w))
+                             (Foreign.R.withProtected2 @ ())
+                             ds7 of ds9 { (#,#) ipv4 ipv5 ->
+                      case {__pkg_ccall_GC inline-r-0.9.0.2 GHC.Prim.Int#
+                                                            -> GHC.Prim.State# GHC.Prim.RealWorld
+                                                            -> (# GHC.Prim.State#
+                                                                    GHC.Prim.RealWorld #)}
+                             1#
+                             ipv4 of wild1 { Unit# ds10 ->
+                      Main.$w$j ds10 } } } } }
+                   0#
+                   -> case GHC.Prim.maskAsyncExceptions#
+                             @ ()
+                             Main.tests54
+                             ipv of ds4 { (#,#) ipv2 ipv3 ->
+                      Main.$w$j ipv2 }
+                   1#
+                   -> case Language.R.Literal.$fLiteralDoubleReal_$smkSEXPVectorIO
+                             Foreign.R.Type.$fSingISEXPTYPEReal1
+                               `cast`
+                             (Sym (Foreign.R.Type.D:R:SingSEXPTYPEz0[0]) <'Foreign.R.Type.Real>_N)
+                             Main.tests55
+                               `cast`
+                             (Nth:2
+                                  (Trans
+                                       (([(GHC.Types.IO
+                                             (Sub (Sym (Data.Vector.SEXP.Base.D:R:ElemRep[3]
+                                                            <Control.Memory.Region.Void>_N))))_R])_R
+                                        ->_R <GHC.Types.IO
+                                                (Foreign.R.Internal.SEXP
+                                                   Control.Memory.Region.V 'Foreign.R.Type.Real)>_R)
+                                       (<[GHC.Types.IO
+                                            (Data.Vector.SEXP.Base.ElemRep
+                                               Control.Memory.Region.V 'Foreign.R.Type.Real)]>_R
+                                        ->_R GHC.Types.N:IO[0]
+                                                 <Foreign.R.Internal.SEXP
+                                                    Control.Memory.Region.V
+                                                    'Foreign.R.Type.Real>_R)))
+                             ipv of ds4 { (#,#) ipv2 ipv3 ->
+                      case ipv3
+                             `cast`
+                           (Trans
+                                (Foreign.R.Internal.N:SEXP[0]
+                                     <Control.Memory.Region.V>_P <'Foreign.R.Type.Real>_P)
+                                (GHC.Ptr.Ptr
+                                   <Language.R.HExp.HExp
+                                      Control.Memory.Region.V
+                                      'Foreign.R.Type.Real, Foreign.R.Internal.SEXPREC>)_R) of ds5 { GHC.Ptr.Ptr ds6 ->
+                      case {__pkg_ccall_GC inline-r-0.9.0.2 GHC.Prim.Addr#
+                                                            -> GHC.Prim.State# GHC.Prim.RealWorld
+                                                            -> (# GHC.Prim.State#
+                                                                    GHC.Prim.RealWorld,
+                                                                  GHC.Prim.Addr# #)}
+                             ds6
+                             ipv2 of wild { (#,#) ds7 ds8 ->
+                      case GHC.Prim.catch#
+                             @ ()
+                             @ GHC.Exception.SomeException
+                             (GHC.Prim.maskUninterruptible#
+                                @ ()
+                                (\ (w :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                                 Main.$wf ds6 w))
+                             (Foreign.R.withProtected2 @ ())
+                             ds7 of ds9 { (#,#) ipv4 ipv5 ->
+                      case {__pkg_ccall_GC inline-r-0.9.0.2 GHC.Prim.Int#
+                                                            -> GHC.Prim.State# GHC.Prim.RealWorld
+                                                            -> (# GHC.Prim.State#
+                                                                    GHC.Prim.RealWorld #)}
+                             1#
+                             ipv4 of wild1 { Unit# ds10 ->
+                      Main.$w$j ds10 } } } } } } }) -}
+c77af5341ce5550b1db00986f63103c7
+  tests54 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: (\ (s1 :: GHC.Prim.State#
+                            GHC.Prim.RealWorld)[OneShot] ->
+                 case Language.R.Literal.$fLiteralDoubleReal_$smkSEXPVectorIO
+                        Foreign.R.Type.$fSingISEXPTYPEReal1
+                          `cast`
+                        (Sym (Foreign.R.Type.D:R:SingSEXPTYPEz0[0]) <'Foreign.R.Type.Real>_N)
+                        Main.tests55
+                          `cast`
+                        (Nth:2
+                             (Trans
+                                  (([(GHC.Types.IO
+                                        (Sub (Sym (Data.Vector.SEXP.Base.D:R:ElemRep[3]
+                                                       <Control.Memory.Region.Void>_N))))_R])_R
+                                   ->_R <GHC.Types.IO
+                                           (Foreign.R.Internal.SEXP
+                                              Control.Memory.Region.V 'Foreign.R.Type.Real)>_R)
+                                  (<[GHC.Types.IO
+                                       (Data.Vector.SEXP.Base.ElemRep
+                                          Control.Memory.Region.V 'Foreign.R.Type.Real)]>_R
+                                   ->_R GHC.Types.N:IO[0]
+                                            <Foreign.R.Internal.SEXP
+                                               Control.Memory.Region.V 'Foreign.R.Type.Real>_R)))
+                        s1 of ds2 { (#,#) ipv2 ipv3 ->
+                 case ipv3
+                        `cast`
+                      (Trans
+                           (Foreign.R.Internal.N:SEXP[0]
+                                <Control.Memory.Region.V>_P <'Foreign.R.Type.Real>_P)
+                           (GHC.Ptr.Ptr
+                              <Language.R.HExp.HExp
+                                 Control.Memory.Region.V
+                                 'Foreign.R.Type.Real, Foreign.R.Internal.SEXPREC>)_R) of ds3 { GHC.Ptr.Ptr ds4 ->
+                 case {__pkg_ccall_GC inline-r-0.9.0.2 GHC.Prim.Addr#
+                                                       -> GHC.Prim.State# GHC.Prim.RealWorld
+                                                       -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+                                                             GHC.Prim.Addr# #)}
+                        ds4
+                        ipv2 of wild { (#,#) ds5 ds6 ->
+                 case GHC.Prim.catch#
+                        @ ()
+                        @ GHC.Exception.SomeException
+                        (GHC.Prim.unmaskAsyncExceptions#
+                           @ ()
+                           (\ (w :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                            Main.$wf ds4 w))
+                        (Foreign.R.withProtected2 @ ())
+                        ds5 of ds7 { (#,#) ipv4 ipv5 ->
+                 case {__pkg_ccall_GC inline-r-0.9.0.2 GHC.Prim.Int#
+                                                       -> GHC.Prim.State# GHC.Prim.RealWorld
+                                                       -> (# GHC.Prim.State# GHC.Prim.RealWorld #)}
+                        1#
+                        ipv4 of wild1 { Unit# ds8 ->
+                 (# ds8, ipv5 #) } } } } }) -}
+c6d114d8e292850581895b07cf88c471
+  tests55 :: [GHC.Types.IO GHC.Types.Double]
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ (GHC.Types.IO GHC.Types.Double)
+                   Main.tests56 `cast` (Sym (GHC.Types.N:IO[0] <GHC.Types.Double>_R))
+                   (GHC.Types.[] @ (GHC.Types.IO GHC.Types.Double))) -}
+49e5d93516e01ea087e24a3544bcf753
+  tests56 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, GHC.Types.Double #)
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,U>,
+     Unfolding: (\ (s :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                 (# s, Main.tests_expected #)) -}
+e50dba7d9e068a67556febcfedd6ef9f
+  tests57 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: (\ (s1 :: GHC.Prim.State#
+                            GHC.Prim.RealWorld)[OneShot] ->
+                 case Language.R.Literal.$fLiteralDoubleReal_$smkSEXPVectorIO
+                        Foreign.R.Type.$fSingISEXPTYPEReal1
+                          `cast`
+                        (Sym (Foreign.R.Type.D:R:SingSEXPTYPEz0[0]) <'Foreign.R.Type.Real>_N)
+                        Main.tests55
+                          `cast`
+                        (Nth:2
+                             (Trans
+                                  (([(GHC.Types.IO
+                                        (Sub (Sym (Data.Vector.SEXP.Base.D:R:ElemRep[3]
+                                                       <Control.Memory.Region.Void>_N))))_R])_R
+                                   ->_R <GHC.Types.IO
+                                           (Foreign.R.Internal.SEXP
+                                              Control.Memory.Region.V 'Foreign.R.Type.Real)>_R)
+                                  (<[GHC.Types.IO
+                                       (Data.Vector.SEXP.Base.ElemRep
+                                          Control.Memory.Region.V 'Foreign.R.Type.Real)]>_R
+                                   ->_R GHC.Types.N:IO[0]
+                                            <Foreign.R.Internal.SEXP
+                                               Control.Memory.Region.V 'Foreign.R.Type.Real>_R)))
+                        s1 of ds2 { (#,#) ipv2 ipv3 ->
+                 case ipv3
+                        `cast`
+                      (Trans
+                           (Foreign.R.Internal.N:SEXP[0]
+                                <Control.Memory.Region.V>_P <'Foreign.R.Type.Real>_P)
+                           (GHC.Ptr.Ptr
+                              <Language.R.HExp.HExp
+                                 Control.Memory.Region.V
+                                 'Foreign.R.Type.Real, Foreign.R.Internal.SEXPREC>)_R) of ds3 { GHC.Ptr.Ptr ds4 ->
+                 case {__pkg_ccall_GC inline-r-0.9.0.2 GHC.Prim.Addr#
+                                                       -> GHC.Prim.State# GHC.Prim.RealWorld
+                                                       -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+                                                             GHC.Prim.Addr# #)}
+                        ds4
+                        ipv2 of wild { (#,#) ds5 ds6 ->
+                 case GHC.Prim.catch#
+                        @ ()
+                        @ GHC.Exception.SomeException
+                        (GHC.Prim.unmaskAsyncExceptions#
+                           @ ()
+                           (\ (w :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                            Main.$wf1 ds4 w))
+                        (Foreign.R.withProtected2 @ ())
+                        ds5 of ds7 { (#,#) ipv4 ipv5 ->
+                 case {__pkg_ccall_GC inline-r-0.9.0.2 GHC.Prim.Int#
+                                                       -> GHC.Prim.State# GHC.Prim.RealWorld
+                                                       -> (# GHC.Prim.State# GHC.Prim.RealWorld #)}
+                        1#
+                        ipv4 of wild1 { Unit# ds8 ->
+                 (# ds8, ipv5 #) } } } } }) -}
+18e0bca8f07e8ef2c87b7c65314a5bac
+  tests58 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: (\ (s1 :: GHC.Prim.State#
+                            GHC.Prim.RealWorld)[OneShot] ->
+                 case Language.R.Literal.$fLiteralDoubleReal_$smkSEXPVectorIO
+                        Foreign.R.Type.$fSingISEXPTYPEReal1
+                          `cast`
+                        (Sym (Foreign.R.Type.D:R:SingSEXPTYPEz0[0]) <'Foreign.R.Type.Real>_N)
+                        Main.tests55
+                          `cast`
+                        (Nth:2
+                             (Trans
+                                  (([(GHC.Types.IO
+                                        (Sub (Sym (Data.Vector.SEXP.Base.D:R:ElemRep[3]
+                                                       <Control.Memory.Region.Void>_N))))_R])_R
+                                   ->_R <GHC.Types.IO
+                                           (Foreign.R.Internal.SEXP
+                                              Control.Memory.Region.V 'Foreign.R.Type.Real)>_R)
+                                  (<[GHC.Types.IO
+                                       (Data.Vector.SEXP.Base.ElemRep
+                                          Control.Memory.Region.V 'Foreign.R.Type.Real)]>_R
+                                   ->_R GHC.Types.N:IO[0]
+                                            <Foreign.R.Internal.SEXP
+                                               Control.Memory.Region.V 'Foreign.R.Type.Real>_R)))
+                        s1 of ds2 { (#,#) ipv2 ipv3 ->
+                 case ipv3
+                        `cast`
+                      (Trans
+                           (Foreign.R.Internal.N:SEXP[0]
+                                <Control.Memory.Region.V>_P <'Foreign.R.Type.Real>_P)
+                           (GHC.Ptr.Ptr
+                              <Language.R.HExp.HExp
+                                 Control.Memory.Region.V
+                                 'Foreign.R.Type.Real, Foreign.R.Internal.SEXPREC>)_R) of ds3 { GHC.Ptr.Ptr ds4 ->
+                 case {__pkg_ccall_GC inline-r-0.9.0.2 GHC.Prim.Addr#
+                                                       -> GHC.Prim.State# GHC.Prim.RealWorld
+                                                       -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+                                                             GHC.Prim.Addr# #)}
+                        ds4
+                        ipv2 of wild { (#,#) ds5 ds6 ->
+                 case GHC.Prim.catch#
+                        @ ()
+                        @ GHC.Exception.SomeException
+                        (GHC.Prim.unmaskAsyncExceptions#
+                           @ ()
+                           (\ (w :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                            Main.$wf2 ds4 w))
+                        (Foreign.R.withProtected2 @ ())
+                        ds5 of ds7 { (#,#) ipv4 ipv5 ->
+                 case {__pkg_ccall_GC inline-r-0.9.0.2 GHC.Prim.Int#
+                                                       -> GHC.Prim.State# GHC.Prim.RealWorld
+                                                       -> (# GHC.Prim.State# GHC.Prim.RealWorld #)}
+                        1#
+                        ipv4 of wild1 { Unit# ds8 ->
+                 (# ds8, ipv5 #) } } } } }) -}
+932badba4850fdd2c242bbfc0a80c3eb
+  tests59 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# Main.tests60) -}
+6904cfdc16b9308db1be818e7de9c3b3
+  tests6 :: [Test.Tasty.Core.TestTree]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Test.Tasty.Core.TestTree
+                   Main.tests7
+                   (GHC.Types.[] @ Test.Tasty.Core.TestTree)) -}
+d8abc5eb8e6b5cec3b9883a6c6c06653
+  tests60 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("HEq HExp"#) -}
+270fd892d728da1e1304fd471cdc7d97
+  tests61 :: Test.Tasty.Core.TestTree
+  {- Unfolding: (Test.Tasty.Core.SingleTest
+                   @ Test.Tasty.HUnit.TestCase
+                   Test.Tasty.HUnit.$fIsTestTestCase
+                   Main.tests64
+                   Main.tests62
+                     `cast`
+                   (Trans
+                        (Sym (GHC.Types.N:IO[0] <[GHC.Types.Char]>_R))
+                        (Sym (Test.Tasty.HUnit.N:TestCase[0])))) -}
+028728804bc27e798f048921f7164604
+  tests62 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, [GHC.Types.Char] #)
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: (\ (s :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                 case Language.R.Literal.$fLiteralDoubleReal_$smkSEXPVectorIO
+                        Foreign.R.Type.$fSingISEXPTYPEReal1
+                          `cast`
+                        (Sym (Foreign.R.Type.D:R:SingSEXPTYPEz0[0]) <'Foreign.R.Type.Real>_N)
+                        Main.tests55
+                          `cast`
+                        (Nth:2
+                             (Trans
+                                  (([(GHC.Types.IO
+                                        (Sub (Sym (Data.Vector.SEXP.Base.D:R:ElemRep[3]
+                                                       <Control.Memory.Region.Void>_N))))_R])_R
+                                   ->_R <GHC.Types.IO
+                                           (Foreign.R.Internal.SEXP
+                                              Control.Memory.Region.V 'Foreign.R.Type.Real)>_R)
+                                  (<[GHC.Types.IO
+                                       (Data.Vector.SEXP.Base.ElemRep
+                                          Control.Memory.Region.V 'Foreign.R.Type.Real)]>_R
+                                   ->_R GHC.Types.N:IO[0]
+                                            <Foreign.R.Internal.SEXP
+                                               Control.Memory.Region.V 'Foreign.R.Type.Real>_R)))
+                        s of ds2 { (#,#) ipv ipv1 ->
+                 case ipv1
+                        `cast`
+                      (Foreign.R.Internal.N:SEXP[0]
+                           <Control.Memory.Region.V>_P
+                           <'Foreign.R.Type.Real>_P) of ww { GHC.Ptr.Ptr ww1 ->
+                 case Language.R.Literal.$w$cfromSEXP3
+                        @ Control.Memory.Region.V
+                        ww1 of wild {
+                   []
+                   -> case Language.R.Literal.$fLiteralDoubleReal1
+                      ret_ty (# GHC.Prim.State# GHC.Prim.RealWorld, [GHC.Types.Char] #)
+                      of {}
+                   : x ds3
+                   -> case ds3 of wild1 {
+                        []
+                        -> case x of wild2 { GHC.Types.D# x1 ->
+                           case GHC.Prim.tagToEnum#
+                                  @ GHC.Types.Bool
+                                  (GHC.Prim.==## x1 2.0##) of wild3 {
+                             GHC.Types.False
+                             -> case Main.tests63 wild2 ipv
+                                ret_ty (# GHC.Prim.State# GHC.Prim.RealWorld, [GHC.Types.Char] #)
+                                of {}
+                             GHC.Types.True -> (# ipv, GHC.Types.[] @ GHC.Types.Char #) } }
+                        : ipv2 ipv3
+                        -> case Language.R.Literal.$fLiteralDoubleReal1
+                           ret_ty (# GHC.Prim.State# GHC.Prim.RealWorld, [GHC.Types.Char] #)
+                           of {} } } } }) -}
+4977940873140bdca3df5e5fff340f0a
+  tests63 ::
+    GHC.Types.Double
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+  {- Arity: 2, Strictness: <B,U><B,U>x -}
+18ff3e2652b90228d39eb208ac10c92e
+  tests64 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# Main.tests65) -}
+0d1387caca3ca5205bf5f6e7780ebcef
+  tests65 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("fromSEXP . mkSEXP"#) -}
+5c37ef1a8c60d700fdc992ceb2b6723a
+  tests66 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# Main.tests67) -}
+475b7f41013359bc35b55678b635bb0d
+  tests67 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Unit tests"#) -}
+121f34dcb67cf7478d2adb22db8f9fe7
+  tests7 :: Test.Tasty.Core.TestTree
+  {- Unfolding: (Test.Tasty.Core.SingleTest
+                   @ Test.Tasty.HUnit.TestCase
+                   Test.Tasty.HUnit.$fIsTestTestCase
+                   Main.tests16
+                   Main.tests8
+                     `cast`
+                   (Trans
+                        (Sym (GHC.Types.N:IO[0] <[GHC.Types.Char]>_R))
+                        (Sym (Test.Tasty.HUnit.N:TestCase[0])))) -}
+8ce7844c7b923f5b7609b1d13004a126
+  tests8 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, [GHC.Types.Char] #)
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: (\ (s :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                 case GHC.Prim.fork#
+                        @ (GHC.Types.IO ())
+                        Main.tests15 `cast` (Sym (GHC.Types.N:IO[0] <()>_R))
+                        s of ds2 { (#,#) ipv ipv1 ->
+                 case GHC.Prim.catch#
+                        @ ()
+                        @ GHC.Exception.SomeException
+                        Main.tests10
+                        Main.tests9
+                        ipv of ds3 { (#,#) ipv2 ipv3 ->
+                 (# ipv2, GHC.Types.[] @ GHC.Types.Char #) } }) -}
+78f2acdcc8003559b27a58b9957bc9e8
+  tests9 ::
+    GHC.Exception.SomeException
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+  {- Arity: 2, Strictness: <S,1*U><S,U>,
+     Unfolding: (\ (e1 :: GHC.Exception.SomeException)[OneShot]
+                   (eta :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                 case e1 of wild { GHC.Exception.SomeException e2 $dException1 e3 ->
+                 case Data.Typeable.Internal.eqTypeRep
+                        @ *
+                        @ *
+                        @ e2
+                        @ Foreign.R.Error.RError
+                        (GHC.Exception.$p1Exception @ e2 $dException1)
+                          `cast`
+                        (Data.Typeable.Internal.N:Typeable[0] <*>_N <e2>_N)
+                        Foreign.R.Error.$fExceptionRError2 of wild1 {
+                   GHC.Base.Nothing
+                   -> GHC.Prim.raiseIO# @ GHC.Exception.SomeException @ () wild eta
+                   GHC.Base.Just ds2
+                   -> case ds2 of wild2 { Data.Type.Equality.HRefl cobox cobox1 ->
+                      case e3
+                             `cast`
+                           (Sub (Sym cobox1)) of wild4 { Foreign.R.Error.RError ds3 ->
+                      (# eta, GHC.Tuple.() #) } } } }) -}
+e2a61fe75b5c10dbf041dcadde0af882
+  tests_expected :: GHC.Types.Double
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.D# 2.0##) -}
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: none
+require own pkg trusted: False
+

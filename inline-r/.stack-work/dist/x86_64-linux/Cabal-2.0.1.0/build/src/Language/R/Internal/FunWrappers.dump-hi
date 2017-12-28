@@ -1,0 +1,1530 @@
+
+==================== FINAL INTERFACE ====================
+2017-12-28 08:49:45.111811 UTC
+
+interface inline-r-0.9.0.2-CmRL2Hikuao7dNZScoizZz:Language.R.Internal.FunWrappers 8022
+  interface hash: 05d9f4d5ea350416b2e2c8d5901f07d6
+  ABI hash: 63eb051acc9f7bfd61e176896a2dd24e
+  export-list hash: 15083a473734732170b10ea63d30e1fa
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: c78720f439b5781938ae530082cbd44b
+  sig of: Nothing
+  used TH splices: True
+  where
+exports:
+  Language.R.Internal.FunWrappers.wrap0
+  Language.R.Internal.FunWrappers.wrap1
+  Language.R.Internal.FunWrappers.wrap10
+  Language.R.Internal.FunWrappers.wrap11
+  Language.R.Internal.FunWrappers.wrap12
+  Language.R.Internal.FunWrappers.wrap2
+  Language.R.Internal.FunWrappers.wrap3
+  Language.R.Internal.FunWrappers.wrap4
+  Language.R.Internal.FunWrappers.wrap5
+  Language.R.Internal.FunWrappers.wrap6
+  Language.R.Internal.FunWrappers.wrap7
+  Language.R.Internal.FunWrappers.wrap8
+  Language.R.Internal.FunWrappers.wrap9
+module dependencies: Control.Memory.Region Foreign.R
+                     Foreign.R.Constraints Foreign.R.Internal Foreign.R.Type
+                     Internal.Error Language.R.HExp [boot]
+                     Language.R.Internal.FunWrappers.TH
+package dependencies: array-0.5.2.0 base-4.10.1.0 binary-0.8.5.1
+                      bytestring-0.10.8.2 containers-0.5.10.2 deepseq-1.4.3.0
+                      ghc-boot-th-8.2.2 ghc-prim-0.5.1.1 integer-gmp-1.0.1.0 mtl-2.2.1
+                      pretty-1.1.3.3 primitive-0.6.2.0 safe-0.3.15 singletons-2.3.1
+                      syb-0.7 template-haskell-2.12.0.0 text-1.2.2.2 th-desugar-1.7
+                      th-expand-syns-0.4.3.0 th-lift-0.7.7 th-lift-instances-0.1.11
+                      th-orphans-0.13.4 th-reify-many-0.1.8 transformers-0.5.2.0
+                      vector-0.12.0.1
+orphans: singletons-2.3.1:Data.Singletons.TypeLits
+         singletons-2.3.1:Data.Singletons.TypeLits.Internal
+         singletons-2.3.1:Data.Singletons.Prelude.Instances
+         singletons-2.3.1:Data.Singletons.Decide
+         th-orphans-0.13.4:Language.Haskell.TH.Instances
+         th-lift-instances-0.1.11:Instances.TH.Lift
+         th-lift-0.7.7:Language.Haskell.TH.Lift text-1.2.2.2:Data.Text.Lazy
+         text-1.2.2.2:Data.Text binary-0.8.5.1:Data.Binary.Generic
+         bytestring-0.10.8.2:Data.ByteString.Builder
+         text-1.2.2.2:Data.Text.Show vector-0.12.0.1:Data.Vector.Unboxed
+         vector-0.12.0.1:Data.Vector.Fusion.Bundle
+         transformers-0.5.2.0:Control.Monad.Trans.Error
+         syb-0.7:Data.Generics.Instances base-4.10.1.0:GHC.Float
+         base-4.10.1.0:GHC.Base
+family instance modules: base-4.10.1.0:Control.Applicative
+                         base-4.10.1.0:Data.Complex base-4.10.1.0:Data.Either
+                         base-4.10.1.0:Data.Functor.Compose base-4.10.1.0:Data.Functor.Const
+                         base-4.10.1.0:Data.Functor.Identity
+                         base-4.10.1.0:Data.Functor.Product base-4.10.1.0:Data.Functor.Sum
+                         base-4.10.1.0:Data.List.NonEmpty base-4.10.1.0:Data.Monoid
+                         base-4.10.1.0:Data.Semigroup base-4.10.1.0:Data.Type.Equality
+                         base-4.10.1.0:Data.Version base-4.10.1.0:Data.Void
+                         base-4.10.1.0:GHC.Exts base-4.10.1.0:GHC.Generics
+                         base-4.10.1.0:GHC.IO.Exception base-4.10.1.0:GHC.TypeLits
+                         base-4.10.1.0:GHC.TypeNats containers-0.5.10.2:Data.IntMap.Internal
+                         containers-0.5.10.2:Data.IntSet.Internal
+                         containers-0.5.10.2:Data.Map.Internal
+                         containers-0.5.10.2:Data.Sequence.Internal
+                         containers-0.5.10.2:Data.Set.Internal containers-0.5.10.2:Data.Tree
+                         ghc-boot-th-8.2.2:GHC.ForeignSrcLang.Type
+                         ghc-boot-th-8.2.2:GHC.LanguageExtensions.Type
+                         inline-r-0.9.0.2-CmRL2Hikuao7dNZScoizZz:Control.Memory.Region
+                         inline-r-0.9.0.2-CmRL2Hikuao7dNZScoizZz:Foreign.R.Type
+                         pretty-1.1.3.3:Text.PrettyPrint.Annotated.HughesPJ
+                         pretty-1.1.3.3:Text.PrettyPrint.HughesPJ
+                         primitive-0.6.2.0:Control.Monad.Primitive
+                         primitive-0.6.2.0:Data.Primitive.Array
+                         singletons-2.3.1:Data.Singletons
+                         singletons-2.3.1:Data.Singletons.Prelude.Bool
+                         singletons-2.3.1:Data.Singletons.Prelude.Eq
+                         singletons-2.3.1:Data.Singletons.Prelude.Instances
+                         singletons-2.3.1:Data.Singletons.Prelude.Num
+                         singletons-2.3.1:Data.Singletons.Prelude.Ord
+                         singletons-2.3.1:Data.Singletons.Syntax
+                         singletons-2.3.1:Data.Singletons.TypeLits
+                         singletons-2.3.1:Data.Singletons.TypeLits.Internal
+                         template-haskell-2.12.0.0:Language.Haskell.TH.Syntax
+                         text-1.2.2.2:Data.Text text-1.2.2.2:Data.Text.Lazy
+                         th-desugar-1.7:Language.Haskell.TH.Desugar.Core
+                         vector-0.12.0.1:Data.Vector vector-0.12.0.1:Data.Vector.Primitive
+                         vector-0.12.0.1:Data.Vector.Storable
+                         vector-0.12.0.1:Data.Vector.Unboxed
+                         vector-0.12.0.1:Data.Vector.Unboxed.Base
+import  -/  base-4.10.1.0:Foreign 6e1e49cc01b9f846dbcb01cc4a57d323
+import  -/  base-4.10.1.0:GHC.Ptr f6ff03f1ebd95f085d6be4b1fdb71ff8
+import  -/  base-4.10.1.0:Prelude 31945b7d0084063347fc52506d3a4020
+import  -/  ghc-prim-0.5.1.1:GHC.Types b1fd0716441595db508c1a74387bf394
+import  -/  Foreign.R 51460710da704a1aff942901939ab83a
+  exports: 66604cef250b707139e6d39041287043
+  SEXP0 1e7c3803f3abb3c979e17a50378d440a
+import  -/  Language.R.Internal.FunWrappers.TH d6163568add535beef0e5afc8b94de84
+  exports: a3366d7ec050d0d707097a3f42a340be
+  thWrappers f809a33a885dcdc3dc6f0459e52d2d22
+73eb0ae6a9eaba7ce69dd3e9e293336d
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module
+                   Language.R.Internal.FunWrappers.$trModule3
+                   Language.R.Internal.FunWrappers.$trModule1) -}
+afe5ad1355ee3bdd074ef7e7228b0689
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Language.R.Internal.FunWrappers.$trModule2) -}
+d74a6a5e8e19f94983f6b34fdc50d9bb
+  $trModule2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Language.R.Internal.FunWrappers"#) -}
+3c562b76889531b268d06540d674f169
+  $trModule3 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Language.R.Internal.FunWrappers.$trModule4) -}
+447e78c312a6c2ea408f52b3a9e01085
+  $trModule4 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("inline-r-0.9.0.2-CmRL2Hikuao7dNZScoizZz"#) -}
+3642fc3a8f8a719e3ef648fb111639ea
+  wrap0 ::
+    GHC.Types.IO Foreign.R.SEXP0
+    -> GHC.Types.IO (GHC.Ptr.FunPtr (GHC.Types.IO Foreign.R.SEXP0))
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,U><S,U>, Inline: [~],
+     Unfolding: InlineRule (0, True, True)
+                Language.R.Internal.FunWrappers.wrap16
+                  `cast`
+                (<GHC.Types.IO (GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC)>_R
+                 ->_R Sym (GHC.Types.N:IO[0]
+                               <GHC.Ptr.FunPtr
+                                  (GHC.Types.IO (GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC))>_R)) -}
+3397c6c9d2b6890f4efe563eab5883a9
+  wrap1 ::
+    (Foreign.R.SEXP0 -> GHC.Types.IO Foreign.R.SEXP0)
+    -> GHC.Types.IO
+         (GHC.Ptr.FunPtr (Foreign.R.SEXP0 -> GHC.Types.IO Foreign.R.SEXP0))
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,U><S,U>, Inline: [~],
+     Unfolding: InlineRule (0, True, True)
+                Language.R.Internal.FunWrappers.wrap18
+                  `cast`
+                (<GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                  -> GHC.Types.IO (GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC)>_R
+                 ->_R Sym (GHC.Types.N:IO[0]
+                               <GHC.Ptr.FunPtr
+                                  (GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                                   -> GHC.Types.IO (GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC))>_R)) -}
+649dac3c88a3ca473f42483a9b588c98
+  wrap10 ::
+    (Foreign.R.SEXP0
+     -> Foreign.R.SEXP0
+     -> Foreign.R.SEXP0
+     -> Foreign.R.SEXP0
+     -> Foreign.R.SEXP0
+     -> Foreign.R.SEXP0
+     -> Foreign.R.SEXP0
+     -> Foreign.R.SEXP0
+     -> Foreign.R.SEXP0
+     -> Foreign.R.SEXP0
+     -> GHC.Types.IO Foreign.R.SEXP0)
+    -> GHC.Types.IO
+         (GHC.Ptr.FunPtr
+            (Foreign.R.SEXP0
+             -> Foreign.R.SEXP0
+             -> Foreign.R.SEXP0
+             -> Foreign.R.SEXP0
+             -> Foreign.R.SEXP0
+             -> Foreign.R.SEXP0
+             -> Foreign.R.SEXP0
+             -> Foreign.R.SEXP0
+             -> Foreign.R.SEXP0
+             -> Foreign.R.SEXP0
+             -> GHC.Types.IO Foreign.R.SEXP0))
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,U><S,U>, Inline: [~],
+     Unfolding: InlineRule (0, True, True)
+                Language.R.Internal.FunWrappers.wrap20
+                  `cast`
+                (<GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                  -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                  -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                  -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                  -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                  -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                  -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                  -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                  -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                  -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                  -> GHC.Types.IO (GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC)>_R
+                 ->_R Sym (GHC.Types.N:IO[0]
+                               <GHC.Ptr.FunPtr
+                                  (GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                                   -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                                   -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                                   -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                                   -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                                   -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                                   -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                                   -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                                   -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                                   -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                                   -> GHC.Types.IO (GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC))>_R)) -}
+307501416537ca931435b793d925b2f6
+  wrap11 ::
+    (Foreign.R.SEXP0
+     -> Foreign.R.SEXP0
+     -> Foreign.R.SEXP0
+     -> Foreign.R.SEXP0
+     -> Foreign.R.SEXP0
+     -> Foreign.R.SEXP0
+     -> Foreign.R.SEXP0
+     -> Foreign.R.SEXP0
+     -> Foreign.R.SEXP0
+     -> Foreign.R.SEXP0
+     -> Foreign.R.SEXP0
+     -> GHC.Types.IO Foreign.R.SEXP0)
+    -> GHC.Types.IO
+         (GHC.Ptr.FunPtr
+            (Foreign.R.SEXP0
+             -> Foreign.R.SEXP0
+             -> Foreign.R.SEXP0
+             -> Foreign.R.SEXP0
+             -> Foreign.R.SEXP0
+             -> Foreign.R.SEXP0
+             -> Foreign.R.SEXP0
+             -> Foreign.R.SEXP0
+             -> Foreign.R.SEXP0
+             -> Foreign.R.SEXP0
+             -> Foreign.R.SEXP0
+             -> GHC.Types.IO Foreign.R.SEXP0))
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,U><S,U>, Inline: [~],
+     Unfolding: InlineRule (0, True, True)
+                Language.R.Internal.FunWrappers.wrap22
+                  `cast`
+                (<GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                  -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                  -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                  -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                  -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                  -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                  -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                  -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                  -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                  -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                  -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                  -> GHC.Types.IO (GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC)>_R
+                 ->_R Sym (GHC.Types.N:IO[0]
+                               <GHC.Ptr.FunPtr
+                                  (GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                                   -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                                   -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                                   -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                                   -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                                   -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                                   -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                                   -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                                   -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                                   -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                                   -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                                   -> GHC.Types.IO (GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC))>_R)) -}
+a4e89c2c3b259bcea72b0b0b9ec64436
+  wrap12 ::
+    (Foreign.R.SEXP0
+     -> Foreign.R.SEXP0
+     -> Foreign.R.SEXP0
+     -> Foreign.R.SEXP0
+     -> Foreign.R.SEXP0
+     -> Foreign.R.SEXP0
+     -> Foreign.R.SEXP0
+     -> Foreign.R.SEXP0
+     -> Foreign.R.SEXP0
+     -> Foreign.R.SEXP0
+     -> Foreign.R.SEXP0
+     -> Foreign.R.SEXP0
+     -> GHC.Types.IO Foreign.R.SEXP0)
+    -> GHC.Types.IO
+         (GHC.Ptr.FunPtr
+            (Foreign.R.SEXP0
+             -> Foreign.R.SEXP0
+             -> Foreign.R.SEXP0
+             -> Foreign.R.SEXP0
+             -> Foreign.R.SEXP0
+             -> Foreign.R.SEXP0
+             -> Foreign.R.SEXP0
+             -> Foreign.R.SEXP0
+             -> Foreign.R.SEXP0
+             -> Foreign.R.SEXP0
+             -> Foreign.R.SEXP0
+             -> Foreign.R.SEXP0
+             -> GHC.Types.IO Foreign.R.SEXP0))
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,U><S,U>, Inline: [~],
+     Unfolding: InlineRule (0, True, True)
+                Language.R.Internal.FunWrappers.wrap24
+                  `cast`
+                (<GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                  -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                  -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                  -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                  -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                  -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                  -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                  -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                  -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                  -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                  -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                  -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                  -> GHC.Types.IO (GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC)>_R
+                 ->_R Sym (GHC.Types.N:IO[0]
+                               <GHC.Ptr.FunPtr
+                                  (GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                                   -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                                   -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                                   -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                                   -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                                   -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                                   -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                                   -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                                   -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                                   -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                                   -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                                   -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                                   -> GHC.Types.IO (GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC))>_R)) -}
+aaf20ee5e3c163f31780d470ade1bf93
+  wrap16 ::
+    GHC.Types.IO (GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC)
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+          GHC.Ptr.FunPtr
+            (GHC.Types.IO (GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC)) #)
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,U><S,U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (ds :: GHC.Types.IO (GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC))
+                   (s :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                 case GHC.Prim.makeStablePtr#
+                        @ (GHC.Types.IO (GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC))
+                        ds
+                        s of ds1 { (#,#) ipv ipv1 ->
+                 case {__pkg_ccall GHC.Prim.Int#
+                                   -> GHC.Prim.StablePtr#
+                                        (GHC.Types.IO (GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC))
+                                   -> GHC.Prim.Addr#
+                                   -> GHC.Prim.Addr#
+                                   -> GHC.Prim.State# GHC.Prim.RealWorld
+                                   -> (# GHC.Prim.State# GHC.Prim.RealWorld, GHC.Prim.Addr# #)}
+                        1#
+                        ipv1
+                        __label "zdinlinezmrzm0zi9zi0zi2zmCmRL2Hikuao7dNZZScoizzZZzzzdLanguageziRziInternalziFunWrapperszdinlinezzmrzzm0zzi9zzi0zzi2zzmCmRL2Hikuao7dNZZZZScoizzzzZZZZzzzzzuLanguagezziRzziInternalzziFunWrapperszuwrap0" (function)
+                        Language.R.Internal.FunWrappers.wrap17
+                        ipv of wild { (#,#) ds2 ds3 ->
+                 (# ds2,
+                    GHC.Ptr.FunPtr
+                      @ (GHC.Types.IO (GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC))
+                      ds3 #) } }) -}
+8a49e53cf4b64e9e580840f64bcc5cdf
+  wrap17 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: (""#) -}
+e9463d7876f6f15aa0e5564b91b85ca2
+  wrap18 ::
+    (GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+     -> GHC.Types.IO (GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC))
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+          GHC.Ptr.FunPtr
+            (GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+             -> GHC.Types.IO (GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC)) #)
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,U><S,U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (ds :: GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                          -> GHC.Types.IO (GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC))
+                   (s :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                 case GHC.Prim.makeStablePtr#
+                        @ (GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                           -> GHC.Types.IO (GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC))
+                        ds
+                        s of ds1 { (#,#) ipv ipv1 ->
+                 case {__pkg_ccall GHC.Prim.Int#
+                                   -> GHC.Prim.StablePtr#
+                                        (GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                                         -> GHC.Types.IO (GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC))
+                                   -> GHC.Prim.Addr#
+                                   -> GHC.Prim.Addr#
+                                   -> GHC.Prim.State# GHC.Prim.RealWorld
+                                   -> (# GHC.Prim.State# GHC.Prim.RealWorld, GHC.Prim.Addr# #)}
+                        1#
+                        ipv1
+                        __label "zdinlinezmrzm0zi9zi0zi2zmCmRL2Hikuao7dNZZScoizzZZzzzdLanguageziRziInternalziFunWrapperszdinlinezzmrzzm0zzi9zzi0zzi2zzmCmRL2Hikuao7dNZZZZScoizzzzZZZZzzzzzuLanguagezziRzziInternalzziFunWrapperszuwrap1" (function)
+                        Language.R.Internal.FunWrappers.wrap19
+                        ipv of wild { (#,#) ds2 ds3 ->
+                 (# ds2,
+                    GHC.Ptr.FunPtr
+                      @ (GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                         -> GHC.Types.IO (GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC))
+                      ds3 #) } }) -}
+821b3e2f787898da0908da93941d30e7
+  wrap19 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("p"#) -}
+d7a2aa9d71ff3f7488ac4a7a1b23859a
+  wrap2 ::
+    (Foreign.R.SEXP0
+     -> Foreign.R.SEXP0 -> GHC.Types.IO Foreign.R.SEXP0)
+    -> GHC.Types.IO
+         (GHC.Ptr.FunPtr
+            (Foreign.R.SEXP0
+             -> Foreign.R.SEXP0 -> GHC.Types.IO Foreign.R.SEXP0))
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,U><S,U>, Inline: [~],
+     Unfolding: InlineRule (0, True, True)
+                Language.R.Internal.FunWrappers.wrap26
+                  `cast`
+                (<GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                  -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                  -> GHC.Types.IO (GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC)>_R
+                 ->_R Sym (GHC.Types.N:IO[0]
+                               <GHC.Ptr.FunPtr
+                                  (GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                                   -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                                   -> GHC.Types.IO (GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC))>_R)) -}
+adf10fa9c803dc9564e9873110b39263
+  wrap20 ::
+    (GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+     -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+     -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+     -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+     -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+     -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+     -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+     -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+     -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+     -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+     -> GHC.Types.IO (GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC))
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+          GHC.Ptr.FunPtr
+            (GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+             -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+             -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+             -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+             -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+             -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+             -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+             -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+             -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+             -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+             -> GHC.Types.IO (GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC)) #)
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,U><S,U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (ds :: GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                          -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                          -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                          -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                          -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                          -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                          -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                          -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                          -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                          -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                          -> GHC.Types.IO (GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC))
+                   (s :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                 case GHC.Prim.makeStablePtr#
+                        @ (GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                           -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                           -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                           -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                           -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                           -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                           -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                           -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                           -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                           -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                           -> GHC.Types.IO (GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC))
+                        ds
+                        s of ds1 { (#,#) ipv ipv1 ->
+                 case {__pkg_ccall GHC.Prim.Int#
+                                   -> GHC.Prim.StablePtr#
+                                        (GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                                         -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                                         -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                                         -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                                         -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                                         -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                                         -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                                         -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                                         -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                                         -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                                         -> GHC.Types.IO (GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC))
+                                   -> GHC.Prim.Addr#
+                                   -> GHC.Prim.Addr#
+                                   -> GHC.Prim.State# GHC.Prim.RealWorld
+                                   -> (# GHC.Prim.State# GHC.Prim.RealWorld, GHC.Prim.Addr# #)}
+                        1#
+                        ipv1
+                        __label "zdinlinezmrzm0zi9zi0zi2zmCmRL2Hikuao7dNZZScoizzZZzzzdLanguageziRziInternalziFunWrapperszdinlinezzmrzzm0zzi9zzi0zzi2zzmCmRL2Hikuao7dNZZZZScoizzzzZZZZzzzzzuLanguagezziRzziInternalzziFunWrapperszuwrap10" (function)
+                        Language.R.Internal.FunWrappers.wrap21
+                        ipv of wild { (#,#) ds2 ds3 ->
+                 (# ds2,
+                    GHC.Ptr.FunPtr
+                      @ (GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                         -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                         -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                         -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                         -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                         -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                         -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                         -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                         -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                         -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                         -> GHC.Types.IO (GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC))
+                      ds3 #) } }) -}
+81ff4817e81a8ac14cc3d6472fb26371
+  wrap21 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("pppppppppp"#) -}
+da27d1e6fbe7f00943ecb4244e3f613d
+  wrap22 ::
+    (GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+     -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+     -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+     -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+     -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+     -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+     -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+     -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+     -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+     -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+     -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+     -> GHC.Types.IO (GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC))
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+          GHC.Ptr.FunPtr
+            (GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+             -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+             -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+             -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+             -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+             -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+             -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+             -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+             -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+             -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+             -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+             -> GHC.Types.IO (GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC)) #)
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,U><S,U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (ds :: GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                          -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                          -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                          -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                          -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                          -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                          -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                          -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                          -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                          -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                          -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                          -> GHC.Types.IO (GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC))
+                   (s :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                 case GHC.Prim.makeStablePtr#
+                        @ (GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                           -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                           -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                           -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                           -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                           -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                           -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                           -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                           -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                           -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                           -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                           -> GHC.Types.IO (GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC))
+                        ds
+                        s of ds1 { (#,#) ipv ipv1 ->
+                 case {__pkg_ccall GHC.Prim.Int#
+                                   -> GHC.Prim.StablePtr#
+                                        (GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                                         -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                                         -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                                         -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                                         -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                                         -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                                         -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                                         -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                                         -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                                         -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                                         -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                                         -> GHC.Types.IO (GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC))
+                                   -> GHC.Prim.Addr#
+                                   -> GHC.Prim.Addr#
+                                   -> GHC.Prim.State# GHC.Prim.RealWorld
+                                   -> (# GHC.Prim.State# GHC.Prim.RealWorld, GHC.Prim.Addr# #)}
+                        1#
+                        ipv1
+                        __label "zdinlinezmrzm0zi9zi0zi2zmCmRL2Hikuao7dNZZScoizzZZzzzdLanguageziRziInternalziFunWrapperszdinlinezzmrzzm0zzi9zzi0zzi2zzmCmRL2Hikuao7dNZZZZScoizzzzZZZZzzzzzuLanguagezziRzziInternalzziFunWrapperszuwrap11" (function)
+                        Language.R.Internal.FunWrappers.wrap23
+                        ipv of wild { (#,#) ds2 ds3 ->
+                 (# ds2,
+                    GHC.Ptr.FunPtr
+                      @ (GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                         -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                         -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                         -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                         -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                         -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                         -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                         -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                         -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                         -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                         -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                         -> GHC.Types.IO (GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC))
+                      ds3 #) } }) -}
+6884c518c274bed538664d7212872d40
+  wrap23 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("ppppppppppp"#) -}
+90ef411449c9644505d694f962196f57
+  wrap24 ::
+    (GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+     -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+     -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+     -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+     -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+     -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+     -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+     -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+     -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+     -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+     -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+     -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+     -> GHC.Types.IO (GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC))
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+          GHC.Ptr.FunPtr
+            (GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+             -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+             -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+             -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+             -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+             -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+             -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+             -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+             -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+             -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+             -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+             -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+             -> GHC.Types.IO (GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC)) #)
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,U><S,U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (ds :: GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                          -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                          -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                          -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                          -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                          -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                          -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                          -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                          -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                          -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                          -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                          -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                          -> GHC.Types.IO (GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC))
+                   (s :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                 case GHC.Prim.makeStablePtr#
+                        @ (GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                           -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                           -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                           -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                           -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                           -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                           -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                           -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                           -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                           -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                           -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                           -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                           -> GHC.Types.IO (GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC))
+                        ds
+                        s of ds1 { (#,#) ipv ipv1 ->
+                 case {__pkg_ccall GHC.Prim.Int#
+                                   -> GHC.Prim.StablePtr#
+                                        (GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                                         -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                                         -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                                         -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                                         -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                                         -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                                         -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                                         -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                                         -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                                         -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                                         -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                                         -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                                         -> GHC.Types.IO (GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC))
+                                   -> GHC.Prim.Addr#
+                                   -> GHC.Prim.Addr#
+                                   -> GHC.Prim.State# GHC.Prim.RealWorld
+                                   -> (# GHC.Prim.State# GHC.Prim.RealWorld, GHC.Prim.Addr# #)}
+                        1#
+                        ipv1
+                        __label "zdinlinezmrzm0zi9zi0zi2zmCmRL2Hikuao7dNZZScoizzZZzzzdLanguageziRziInternalziFunWrapperszdinlinezzmrzzm0zzi9zzi0zzi2zzmCmRL2Hikuao7dNZZZZScoizzzzZZZZzzzzzuLanguagezziRzziInternalzziFunWrapperszuwrap12" (function)
+                        Language.R.Internal.FunWrappers.wrap25
+                        ipv of wild { (#,#) ds2 ds3 ->
+                 (# ds2,
+                    GHC.Ptr.FunPtr
+                      @ (GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                         -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                         -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                         -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                         -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                         -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                         -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                         -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                         -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                         -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                         -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                         -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                         -> GHC.Types.IO (GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC))
+                      ds3 #) } }) -}
+c47ec869219a71a6b9929eed087f6a19
+  wrap25 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("pppppppppppp"#) -}
+e25c026e09b68eefdf1719db018bed41
+  wrap26 ::
+    (GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+     -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+     -> GHC.Types.IO (GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC))
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+          GHC.Ptr.FunPtr
+            (GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+             -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+             -> GHC.Types.IO (GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC)) #)
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,U><S,U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (ds :: GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                          -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                          -> GHC.Types.IO (GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC))
+                   (s :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                 case GHC.Prim.makeStablePtr#
+                        @ (GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                           -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                           -> GHC.Types.IO (GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC))
+                        ds
+                        s of ds1 { (#,#) ipv ipv1 ->
+                 case {__pkg_ccall GHC.Prim.Int#
+                                   -> GHC.Prim.StablePtr#
+                                        (GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                                         -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                                         -> GHC.Types.IO (GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC))
+                                   -> GHC.Prim.Addr#
+                                   -> GHC.Prim.Addr#
+                                   -> GHC.Prim.State# GHC.Prim.RealWorld
+                                   -> (# GHC.Prim.State# GHC.Prim.RealWorld, GHC.Prim.Addr# #)}
+                        1#
+                        ipv1
+                        __label "zdinlinezmrzm0zi9zi0zi2zmCmRL2Hikuao7dNZZScoizzZZzzzdLanguageziRziInternalziFunWrapperszdinlinezzmrzzm0zzi9zzi0zzi2zzmCmRL2Hikuao7dNZZZZScoizzzzZZZZzzzzzuLanguagezziRzziInternalzziFunWrapperszuwrap2" (function)
+                        Language.R.Internal.FunWrappers.wrap27
+                        ipv of wild { (#,#) ds2 ds3 ->
+                 (# ds2,
+                    GHC.Ptr.FunPtr
+                      @ (GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                         -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                         -> GHC.Types.IO (GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC))
+                      ds3 #) } }) -}
+05460791768a5dc302aa0ceea7947de9
+  wrap27 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("pp"#) -}
+ceb922a799f34f628b84fbe33bead20b
+  wrap28 ::
+    (GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+     -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+     -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+     -> GHC.Types.IO (GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC))
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+          GHC.Ptr.FunPtr
+            (GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+             -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+             -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+             -> GHC.Types.IO (GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC)) #)
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,U><S,U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (ds :: GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                          -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                          -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                          -> GHC.Types.IO (GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC))
+                   (s :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                 case GHC.Prim.makeStablePtr#
+                        @ (GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                           -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                           -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                           -> GHC.Types.IO (GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC))
+                        ds
+                        s of ds1 { (#,#) ipv ipv1 ->
+                 case {__pkg_ccall GHC.Prim.Int#
+                                   -> GHC.Prim.StablePtr#
+                                        (GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                                         -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                                         -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                                         -> GHC.Types.IO (GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC))
+                                   -> GHC.Prim.Addr#
+                                   -> GHC.Prim.Addr#
+                                   -> GHC.Prim.State# GHC.Prim.RealWorld
+                                   -> (# GHC.Prim.State# GHC.Prim.RealWorld, GHC.Prim.Addr# #)}
+                        1#
+                        ipv1
+                        __label "zdinlinezmrzm0zi9zi0zi2zmCmRL2Hikuao7dNZZScoizzZZzzzdLanguageziRziInternalziFunWrapperszdinlinezzmrzzm0zzi9zzi0zzi2zzmCmRL2Hikuao7dNZZZZScoizzzzZZZZzzzzzuLanguagezziRzziInternalzziFunWrapperszuwrap3" (function)
+                        Language.R.Internal.FunWrappers.wrap29
+                        ipv of wild { (#,#) ds2 ds3 ->
+                 (# ds2,
+                    GHC.Ptr.FunPtr
+                      @ (GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                         -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                         -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                         -> GHC.Types.IO (GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC))
+                      ds3 #) } }) -}
+2795acc49bff984c8b8ba55e8350a6fb
+  wrap29 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("ppp"#) -}
+a06b4a57c4fb888dff6fa4e0ee4ce27d
+  wrap3 ::
+    (Foreign.R.SEXP0
+     -> Foreign.R.SEXP0
+     -> Foreign.R.SEXP0
+     -> GHC.Types.IO Foreign.R.SEXP0)
+    -> GHC.Types.IO
+         (GHC.Ptr.FunPtr
+            (Foreign.R.SEXP0
+             -> Foreign.R.SEXP0
+             -> Foreign.R.SEXP0
+             -> GHC.Types.IO Foreign.R.SEXP0))
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,U><S,U>, Inline: [~],
+     Unfolding: InlineRule (0, True, True)
+                Language.R.Internal.FunWrappers.wrap28
+                  `cast`
+                (<GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                  -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                  -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                  -> GHC.Types.IO (GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC)>_R
+                 ->_R Sym (GHC.Types.N:IO[0]
+                               <GHC.Ptr.FunPtr
+                                  (GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                                   -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                                   -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                                   -> GHC.Types.IO (GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC))>_R)) -}
+0bb44aee948846e2dac94410274f87d4
+  wrap30 ::
+    (GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+     -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+     -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+     -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+     -> GHC.Types.IO (GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC))
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+          GHC.Ptr.FunPtr
+            (GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+             -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+             -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+             -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+             -> GHC.Types.IO (GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC)) #)
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,U><S,U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (ds :: GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                          -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                          -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                          -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                          -> GHC.Types.IO (GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC))
+                   (s :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                 case GHC.Prim.makeStablePtr#
+                        @ (GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                           -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                           -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                           -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                           -> GHC.Types.IO (GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC))
+                        ds
+                        s of ds1 { (#,#) ipv ipv1 ->
+                 case {__pkg_ccall GHC.Prim.Int#
+                                   -> GHC.Prim.StablePtr#
+                                        (GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                                         -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                                         -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                                         -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                                         -> GHC.Types.IO (GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC))
+                                   -> GHC.Prim.Addr#
+                                   -> GHC.Prim.Addr#
+                                   -> GHC.Prim.State# GHC.Prim.RealWorld
+                                   -> (# GHC.Prim.State# GHC.Prim.RealWorld, GHC.Prim.Addr# #)}
+                        1#
+                        ipv1
+                        __label "zdinlinezmrzm0zi9zi0zi2zmCmRL2Hikuao7dNZZScoizzZZzzzdLanguageziRziInternalziFunWrapperszdinlinezzmrzzm0zzi9zzi0zzi2zzmCmRL2Hikuao7dNZZZZScoizzzzZZZZzzzzzuLanguagezziRzziInternalzziFunWrapperszuwrap4" (function)
+                        Language.R.Internal.FunWrappers.wrap31
+                        ipv of wild { (#,#) ds2 ds3 ->
+                 (# ds2,
+                    GHC.Ptr.FunPtr
+                      @ (GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                         -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                         -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                         -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                         -> GHC.Types.IO (GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC))
+                      ds3 #) } }) -}
+4c6647ecfe89b164dc48b654144107d0
+  wrap31 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("pppp"#) -}
+d1de88fd103b75220b0fde93e1de5d30
+  wrap32 ::
+    (GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+     -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+     -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+     -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+     -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+     -> GHC.Types.IO (GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC))
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+          GHC.Ptr.FunPtr
+            (GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+             -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+             -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+             -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+             -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+             -> GHC.Types.IO (GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC)) #)
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,U><S,U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (ds :: GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                          -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                          -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                          -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                          -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                          -> GHC.Types.IO (GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC))
+                   (s :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                 case GHC.Prim.makeStablePtr#
+                        @ (GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                           -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                           -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                           -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                           -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                           -> GHC.Types.IO (GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC))
+                        ds
+                        s of ds1 { (#,#) ipv ipv1 ->
+                 case {__pkg_ccall GHC.Prim.Int#
+                                   -> GHC.Prim.StablePtr#
+                                        (GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                                         -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                                         -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                                         -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                                         -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                                         -> GHC.Types.IO (GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC))
+                                   -> GHC.Prim.Addr#
+                                   -> GHC.Prim.Addr#
+                                   -> GHC.Prim.State# GHC.Prim.RealWorld
+                                   -> (# GHC.Prim.State# GHC.Prim.RealWorld, GHC.Prim.Addr# #)}
+                        1#
+                        ipv1
+                        __label "zdinlinezmrzm0zi9zi0zi2zmCmRL2Hikuao7dNZZScoizzZZzzzdLanguageziRziInternalziFunWrapperszdinlinezzmrzzm0zzi9zzi0zzi2zzmCmRL2Hikuao7dNZZZZScoizzzzZZZZzzzzzuLanguagezziRzziInternalzziFunWrapperszuwrap5" (function)
+                        Language.R.Internal.FunWrappers.wrap33
+                        ipv of wild { (#,#) ds2 ds3 ->
+                 (# ds2,
+                    GHC.Ptr.FunPtr
+                      @ (GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                         -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                         -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                         -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                         -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                         -> GHC.Types.IO (GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC))
+                      ds3 #) } }) -}
+22a565f14943460da9ab0afe93b32cdb
+  wrap33 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("ppppp"#) -}
+08263fc000462629e33be8a474a6ae27
+  wrap34 ::
+    (GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+     -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+     -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+     -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+     -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+     -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+     -> GHC.Types.IO (GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC))
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+          GHC.Ptr.FunPtr
+            (GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+             -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+             -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+             -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+             -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+             -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+             -> GHC.Types.IO (GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC)) #)
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,U><S,U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (ds :: GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                          -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                          -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                          -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                          -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                          -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                          -> GHC.Types.IO (GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC))
+                   (s :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                 case GHC.Prim.makeStablePtr#
+                        @ (GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                           -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                           -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                           -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                           -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                           -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                           -> GHC.Types.IO (GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC))
+                        ds
+                        s of ds1 { (#,#) ipv ipv1 ->
+                 case {__pkg_ccall GHC.Prim.Int#
+                                   -> GHC.Prim.StablePtr#
+                                        (GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                                         -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                                         -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                                         -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                                         -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                                         -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                                         -> GHC.Types.IO (GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC))
+                                   -> GHC.Prim.Addr#
+                                   -> GHC.Prim.Addr#
+                                   -> GHC.Prim.State# GHC.Prim.RealWorld
+                                   -> (# GHC.Prim.State# GHC.Prim.RealWorld, GHC.Prim.Addr# #)}
+                        1#
+                        ipv1
+                        __label "zdinlinezmrzm0zi9zi0zi2zmCmRL2Hikuao7dNZZScoizzZZzzzdLanguageziRziInternalziFunWrapperszdinlinezzmrzzm0zzi9zzi0zzi2zzmCmRL2Hikuao7dNZZZZScoizzzzZZZZzzzzzuLanguagezziRzziInternalzziFunWrapperszuwrap6" (function)
+                        Language.R.Internal.FunWrappers.wrap35
+                        ipv of wild { (#,#) ds2 ds3 ->
+                 (# ds2,
+                    GHC.Ptr.FunPtr
+                      @ (GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                         -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                         -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                         -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                         -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                         -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                         -> GHC.Types.IO (GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC))
+                      ds3 #) } }) -}
+4347442ad520c149cb8516eaa30c2fba
+  wrap35 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("pppppp"#) -}
+3833f6d18e814c60e9eb8a9a8863bbf6
+  wrap36 ::
+    (GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+     -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+     -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+     -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+     -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+     -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+     -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+     -> GHC.Types.IO (GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC))
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+          GHC.Ptr.FunPtr
+            (GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+             -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+             -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+             -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+             -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+             -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+             -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+             -> GHC.Types.IO (GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC)) #)
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,U><S,U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (ds :: GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                          -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                          -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                          -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                          -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                          -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                          -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                          -> GHC.Types.IO (GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC))
+                   (s :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                 case GHC.Prim.makeStablePtr#
+                        @ (GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                           -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                           -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                           -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                           -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                           -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                           -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                           -> GHC.Types.IO (GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC))
+                        ds
+                        s of ds1 { (#,#) ipv ipv1 ->
+                 case {__pkg_ccall GHC.Prim.Int#
+                                   -> GHC.Prim.StablePtr#
+                                        (GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                                         -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                                         -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                                         -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                                         -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                                         -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                                         -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                                         -> GHC.Types.IO (GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC))
+                                   -> GHC.Prim.Addr#
+                                   -> GHC.Prim.Addr#
+                                   -> GHC.Prim.State# GHC.Prim.RealWorld
+                                   -> (# GHC.Prim.State# GHC.Prim.RealWorld, GHC.Prim.Addr# #)}
+                        1#
+                        ipv1
+                        __label "zdinlinezmrzm0zi9zi0zi2zmCmRL2Hikuao7dNZZScoizzZZzzzdLanguageziRziInternalziFunWrapperszdinlinezzmrzzm0zzi9zzi0zzi2zzmCmRL2Hikuao7dNZZZZScoizzzzZZZZzzzzzuLanguagezziRzziInternalzziFunWrapperszuwrap7" (function)
+                        Language.R.Internal.FunWrappers.wrap37
+                        ipv of wild { (#,#) ds2 ds3 ->
+                 (# ds2,
+                    GHC.Ptr.FunPtr
+                      @ (GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                         -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                         -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                         -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                         -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                         -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                         -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                         -> GHC.Types.IO (GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC))
+                      ds3 #) } }) -}
+62802b673ee3e2bf1a6ad9f3ae36a261
+  wrap37 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("ppppppp"#) -}
+583c66982a2bde2a9327f740a8301118
+  wrap38 ::
+    (GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+     -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+     -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+     -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+     -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+     -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+     -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+     -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+     -> GHC.Types.IO (GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC))
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+          GHC.Ptr.FunPtr
+            (GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+             -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+             -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+             -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+             -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+             -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+             -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+             -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+             -> GHC.Types.IO (GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC)) #)
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,U><S,U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (ds :: GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                          -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                          -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                          -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                          -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                          -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                          -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                          -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                          -> GHC.Types.IO (GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC))
+                   (s :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                 case GHC.Prim.makeStablePtr#
+                        @ (GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                           -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                           -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                           -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                           -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                           -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                           -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                           -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                           -> GHC.Types.IO (GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC))
+                        ds
+                        s of ds1 { (#,#) ipv ipv1 ->
+                 case {__pkg_ccall GHC.Prim.Int#
+                                   -> GHC.Prim.StablePtr#
+                                        (GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                                         -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                                         -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                                         -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                                         -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                                         -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                                         -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                                         -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                                         -> GHC.Types.IO (GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC))
+                                   -> GHC.Prim.Addr#
+                                   -> GHC.Prim.Addr#
+                                   -> GHC.Prim.State# GHC.Prim.RealWorld
+                                   -> (# GHC.Prim.State# GHC.Prim.RealWorld, GHC.Prim.Addr# #)}
+                        1#
+                        ipv1
+                        __label "zdinlinezmrzm0zi9zi0zi2zmCmRL2Hikuao7dNZZScoizzZZzzzdLanguageziRziInternalziFunWrapperszdinlinezzmrzzm0zzi9zzi0zzi2zzmCmRL2Hikuao7dNZZZZScoizzzzZZZZzzzzzuLanguagezziRzziInternalzziFunWrapperszuwrap8" (function)
+                        Language.R.Internal.FunWrappers.wrap39
+                        ipv of wild { (#,#) ds2 ds3 ->
+                 (# ds2,
+                    GHC.Ptr.FunPtr
+                      @ (GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                         -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                         -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                         -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                         -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                         -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                         -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                         -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                         -> GHC.Types.IO (GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC))
+                      ds3 #) } }) -}
+7a72108fbcb341dbbb231b0fb38ea47c
+  wrap39 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("pppppppp"#) -}
+0d6076f6bb38c688abcfd98ece8109bb
+  wrap4 ::
+    (Foreign.R.SEXP0
+     -> Foreign.R.SEXP0
+     -> Foreign.R.SEXP0
+     -> Foreign.R.SEXP0
+     -> GHC.Types.IO Foreign.R.SEXP0)
+    -> GHC.Types.IO
+         (GHC.Ptr.FunPtr
+            (Foreign.R.SEXP0
+             -> Foreign.R.SEXP0
+             -> Foreign.R.SEXP0
+             -> Foreign.R.SEXP0
+             -> GHC.Types.IO Foreign.R.SEXP0))
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,U><S,U>, Inline: [~],
+     Unfolding: InlineRule (0, True, True)
+                Language.R.Internal.FunWrappers.wrap30
+                  `cast`
+                (<GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                  -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                  -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                  -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                  -> GHC.Types.IO (GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC)>_R
+                 ->_R Sym (GHC.Types.N:IO[0]
+                               <GHC.Ptr.FunPtr
+                                  (GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                                   -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                                   -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                                   -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                                   -> GHC.Types.IO (GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC))>_R)) -}
+d3aef5a9c5fda0de8b14c2f39c393683
+  wrap40 ::
+    (GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+     -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+     -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+     -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+     -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+     -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+     -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+     -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+     -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+     -> GHC.Types.IO (GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC))
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+          GHC.Ptr.FunPtr
+            (GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+             -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+             -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+             -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+             -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+             -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+             -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+             -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+             -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+             -> GHC.Types.IO (GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC)) #)
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,U><S,U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (ds :: GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                          -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                          -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                          -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                          -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                          -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                          -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                          -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                          -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                          -> GHC.Types.IO (GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC))
+                   (s :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                 case GHC.Prim.makeStablePtr#
+                        @ (GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                           -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                           -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                           -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                           -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                           -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                           -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                           -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                           -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                           -> GHC.Types.IO (GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC))
+                        ds
+                        s of ds1 { (#,#) ipv ipv1 ->
+                 case {__pkg_ccall GHC.Prim.Int#
+                                   -> GHC.Prim.StablePtr#
+                                        (GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                                         -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                                         -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                                         -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                                         -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                                         -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                                         -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                                         -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                                         -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                                         -> GHC.Types.IO (GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC))
+                                   -> GHC.Prim.Addr#
+                                   -> GHC.Prim.Addr#
+                                   -> GHC.Prim.State# GHC.Prim.RealWorld
+                                   -> (# GHC.Prim.State# GHC.Prim.RealWorld, GHC.Prim.Addr# #)}
+                        1#
+                        ipv1
+                        __label "zdinlinezmrzm0zi9zi0zi2zmCmRL2Hikuao7dNZZScoizzZZzzzdLanguageziRziInternalziFunWrapperszdinlinezzmrzzm0zzi9zzi0zzi2zzmCmRL2Hikuao7dNZZZZScoizzzzZZZZzzzzzuLanguagezziRzziInternalzziFunWrapperszuwrap9" (function)
+                        Language.R.Internal.FunWrappers.wrap41
+                        ipv of wild { (#,#) ds2 ds3 ->
+                 (# ds2,
+                    GHC.Ptr.FunPtr
+                      @ (GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                         -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                         -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                         -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                         -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                         -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                         -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                         -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                         -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                         -> GHC.Types.IO (GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC))
+                      ds3 #) } }) -}
+72b70a8b559535e48dcf15f3f2452c4d
+  wrap41 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("ppppppppp"#) -}
+cdfbf8ac271198648083f2363ab92a7f
+  wrap5 ::
+    (Foreign.R.SEXP0
+     -> Foreign.R.SEXP0
+     -> Foreign.R.SEXP0
+     -> Foreign.R.SEXP0
+     -> Foreign.R.SEXP0
+     -> GHC.Types.IO Foreign.R.SEXP0)
+    -> GHC.Types.IO
+         (GHC.Ptr.FunPtr
+            (Foreign.R.SEXP0
+             -> Foreign.R.SEXP0
+             -> Foreign.R.SEXP0
+             -> Foreign.R.SEXP0
+             -> Foreign.R.SEXP0
+             -> GHC.Types.IO Foreign.R.SEXP0))
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,U><S,U>, Inline: [~],
+     Unfolding: InlineRule (0, True, True)
+                Language.R.Internal.FunWrappers.wrap32
+                  `cast`
+                (<GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                  -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                  -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                  -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                  -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                  -> GHC.Types.IO (GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC)>_R
+                 ->_R Sym (GHC.Types.N:IO[0]
+                               <GHC.Ptr.FunPtr
+                                  (GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                                   -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                                   -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                                   -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                                   -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                                   -> GHC.Types.IO (GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC))>_R)) -}
+911fd4943edfb88e16135e66818232ae
+  wrap6 ::
+    (Foreign.R.SEXP0
+     -> Foreign.R.SEXP0
+     -> Foreign.R.SEXP0
+     -> Foreign.R.SEXP0
+     -> Foreign.R.SEXP0
+     -> Foreign.R.SEXP0
+     -> GHC.Types.IO Foreign.R.SEXP0)
+    -> GHC.Types.IO
+         (GHC.Ptr.FunPtr
+            (Foreign.R.SEXP0
+             -> Foreign.R.SEXP0
+             -> Foreign.R.SEXP0
+             -> Foreign.R.SEXP0
+             -> Foreign.R.SEXP0
+             -> Foreign.R.SEXP0
+             -> GHC.Types.IO Foreign.R.SEXP0))
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,U><S,U>, Inline: [~],
+     Unfolding: InlineRule (0, True, True)
+                Language.R.Internal.FunWrappers.wrap34
+                  `cast`
+                (<GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                  -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                  -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                  -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                  -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                  -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                  -> GHC.Types.IO (GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC)>_R
+                 ->_R Sym (GHC.Types.N:IO[0]
+                               <GHC.Ptr.FunPtr
+                                  (GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                                   -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                                   -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                                   -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                                   -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                                   -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                                   -> GHC.Types.IO (GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC))>_R)) -}
+e38badfc56270c0e78712176349dcd80
+  wrap7 ::
+    (Foreign.R.SEXP0
+     -> Foreign.R.SEXP0
+     -> Foreign.R.SEXP0
+     -> Foreign.R.SEXP0
+     -> Foreign.R.SEXP0
+     -> Foreign.R.SEXP0
+     -> Foreign.R.SEXP0
+     -> GHC.Types.IO Foreign.R.SEXP0)
+    -> GHC.Types.IO
+         (GHC.Ptr.FunPtr
+            (Foreign.R.SEXP0
+             -> Foreign.R.SEXP0
+             -> Foreign.R.SEXP0
+             -> Foreign.R.SEXP0
+             -> Foreign.R.SEXP0
+             -> Foreign.R.SEXP0
+             -> Foreign.R.SEXP0
+             -> GHC.Types.IO Foreign.R.SEXP0))
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,U><S,U>, Inline: [~],
+     Unfolding: InlineRule (0, True, True)
+                Language.R.Internal.FunWrappers.wrap36
+                  `cast`
+                (<GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                  -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                  -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                  -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                  -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                  -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                  -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                  -> GHC.Types.IO (GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC)>_R
+                 ->_R Sym (GHC.Types.N:IO[0]
+                               <GHC.Ptr.FunPtr
+                                  (GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                                   -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                                   -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                                   -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                                   -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                                   -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                                   -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                                   -> GHC.Types.IO (GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC))>_R)) -}
+41c2697e46e2ffbb863c86a52f66eaea
+  wrap8 ::
+    (Foreign.R.SEXP0
+     -> Foreign.R.SEXP0
+     -> Foreign.R.SEXP0
+     -> Foreign.R.SEXP0
+     -> Foreign.R.SEXP0
+     -> Foreign.R.SEXP0
+     -> Foreign.R.SEXP0
+     -> Foreign.R.SEXP0
+     -> GHC.Types.IO Foreign.R.SEXP0)
+    -> GHC.Types.IO
+         (GHC.Ptr.FunPtr
+            (Foreign.R.SEXP0
+             -> Foreign.R.SEXP0
+             -> Foreign.R.SEXP0
+             -> Foreign.R.SEXP0
+             -> Foreign.R.SEXP0
+             -> Foreign.R.SEXP0
+             -> Foreign.R.SEXP0
+             -> Foreign.R.SEXP0
+             -> GHC.Types.IO Foreign.R.SEXP0))
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,U><S,U>, Inline: [~],
+     Unfolding: InlineRule (0, True, True)
+                Language.R.Internal.FunWrappers.wrap38
+                  `cast`
+                (<GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                  -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                  -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                  -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                  -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                  -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                  -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                  -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                  -> GHC.Types.IO (GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC)>_R
+                 ->_R Sym (GHC.Types.N:IO[0]
+                               <GHC.Ptr.FunPtr
+                                  (GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                                   -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                                   -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                                   -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                                   -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                                   -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                                   -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                                   -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                                   -> GHC.Types.IO (GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC))>_R)) -}
+4efb799c013be54f969971f4c3d718af
+  wrap9 ::
+    (Foreign.R.SEXP0
+     -> Foreign.R.SEXP0
+     -> Foreign.R.SEXP0
+     -> Foreign.R.SEXP0
+     -> Foreign.R.SEXP0
+     -> Foreign.R.SEXP0
+     -> Foreign.R.SEXP0
+     -> Foreign.R.SEXP0
+     -> Foreign.R.SEXP0
+     -> GHC.Types.IO Foreign.R.SEXP0)
+    -> GHC.Types.IO
+         (GHC.Ptr.FunPtr
+            (Foreign.R.SEXP0
+             -> Foreign.R.SEXP0
+             -> Foreign.R.SEXP0
+             -> Foreign.R.SEXP0
+             -> Foreign.R.SEXP0
+             -> Foreign.R.SEXP0
+             -> Foreign.R.SEXP0
+             -> Foreign.R.SEXP0
+             -> Foreign.R.SEXP0
+             -> GHC.Types.IO Foreign.R.SEXP0))
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,U><S,U>, Inline: [~],
+     Unfolding: InlineRule (0, True, True)
+                Language.R.Internal.FunWrappers.wrap40
+                  `cast`
+                (<GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                  -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                  -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                  -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                  -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                  -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                  -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                  -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                  -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                  -> GHC.Types.IO (GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC)>_R
+                 ->_R Sym (GHC.Types.N:IO[0]
+                               <GHC.Ptr.FunPtr
+                                  (GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                                   -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                                   -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                                   -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                                   -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                                   -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                                   -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                                   -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                                   -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+                                   -> GHC.Types.IO (GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC))>_R)) -}
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: none
+require own pkg trusted: False
+

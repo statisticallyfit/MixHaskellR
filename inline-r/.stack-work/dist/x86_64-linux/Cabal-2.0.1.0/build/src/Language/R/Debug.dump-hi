@@ -1,0 +1,1237 @@
+
+==================== FINAL INTERFACE ====================
+2017-12-28 08:49:42.741875 UTC
+
+interface inline-r-0.9.0.2-CmRL2Hikuao7dNZScoizZz:Language.R.Debug [orphan module] 8022
+  interface hash: f8e8fecd7dc85e2a035d21e187c743a9
+  ABI hash: e2662e39d3172eff27a0a8bd8d33a393
+  export-list hash: 71be4d9dc5f94f735d135ced4a0770ca
+  orphan hash: 8172ba56b6ce24c4ea4500dd9b1eef61
+  flag hash: 5077f099dbd44e8c239f70b7deaeb4d9
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Language.R.Debug.inspect
+module dependencies: Control.Memory.Region Control.Monad.R.Class
+                     Control.Monad.R.Internal Data.Vector.SEXP Data.Vector.SEXP.Base
+                     Data.Vector.SEXP.Mutable Data.Vector.SEXP.Mutable.Internal
+                     Foreign.R Foreign.R.Constraints Foreign.R.EventLoop
+                     Foreign.R.Internal Foreign.R.Type Internal.Error Language.R.Globals
+                     Language.R.HExp
+package dependencies: aeson-1.2.3.0 array-0.5.2.0
+                      attoparsec-0.13.2.0 base-4.10.1.0 base-compat-0.9.3 binary-0.8.5.1
+                      bytestring-0.10.8.2 containers-0.5.10.2 deepseq-1.4.3.0
+                      dlist-0.8.0.3 exceptions-0.8.3 ghc-boot-th-8.2.2 ghc-prim-0.5.1.1
+                      hashable-1.2.6.1 integer-gmp-1.0.1.0 integer-logarithms-1.0.2
+                      mtl-2.2.1 pretty-1.1.3.3 primitive-0.6.2.0 random-1.1
+                      reflection-2.1.2 safe-0.3.15 scientific-0.3.5.2 singletons-2.3.1
+                      stm-2.4.4.1 syb-0.7 tagged-0.8.5 template-haskell-2.12.0.0
+                      text-1.2.2.2 th-desugar-1.7 th-expand-syns-0.4.3.0 th-lift-0.7.7
+                      th-lift-instances-0.1.11 th-orphans-0.13.4 th-reify-many-0.1.8
+                      time-1.8.0.2 time-locale-compat-0.1.1.3 transformers-0.5.2.0
+                      unordered-containers-0.2.8.0 uuid-types-1.0.3 vector-0.12.0.1
+orphans: stm-2.4.4.1:Control.Monad.STM
+         singletons-2.3.1:Data.Singletons.TypeLits
+         singletons-2.3.1:Data.Singletons.TypeLits.Internal
+         singletons-2.3.1:Data.Singletons.Prelude.Instances
+         singletons-2.3.1:Data.Singletons.Decide
+         th-orphans-0.13.4:Language.Haskell.TH.Instances
+         th-lift-instances-0.1.11:Instances.TH.Lift
+         th-lift-0.7.7:Language.Haskell.TH.Lift
+         syb-0.7:Data.Generics.Instances reflection-2.1.2:Data.Reflection
+         attoparsec-0.13.2.0:Data.Attoparsec.Text.Internal
+         attoparsec-0.13.2.0:Data.Attoparsec.ByteString.Char8
+         vector-0.12.0.1:Data.Vector.Unboxed
+         time-1.8.0.2:Data.Time.Format.Parse
+         time-1.8.0.2:Data.Time.LocalTime.Internal.ZonedTime
+         time-1.8.0.2:Data.Time.LocalTime.Internal.LocalTime
+         time-1.8.0.2:Data.Time.Calendar.Gregorian
+         hashable-1.2.6.1:Data.Hashable.Generic text-1.2.2.2:Data.Text.Lazy
+         text-1.2.2.2:Data.Text binary-0.8.5.1:Data.Binary.Generic
+         bytestring-0.10.8.2:Data.ByteString.Builder
+         text-1.2.2.2:Data.Text.Show
+         vector-0.12.0.1:Data.Vector.Fusion.Bundle
+         transformers-0.5.2.0:Control.Monad.Trans.Error
+         base-4.10.1.0:GHC.Float base-4.10.1.0:GHC.Base
+family instance modules: aeson-1.2.3.0:Data.Aeson.Types.Internal
+                         attoparsec-0.13.2.0:Data.Attoparsec.Internal.Types
+                         base-4.10.1.0:Control.Applicative base-4.10.1.0:Data.Complex
+                         base-4.10.1.0:Data.Either base-4.10.1.0:Data.Functor.Compose
+                         base-4.10.1.0:Data.Functor.Const
+                         base-4.10.1.0:Data.Functor.Identity
+                         base-4.10.1.0:Data.Functor.Product base-4.10.1.0:Data.Functor.Sum
+                         base-4.10.1.0:Data.List.NonEmpty base-4.10.1.0:Data.Monoid
+                         base-4.10.1.0:Data.Semigroup base-4.10.1.0:Data.Type.Equality
+                         base-4.10.1.0:Data.Version base-4.10.1.0:Data.Void
+                         base-4.10.1.0:GHC.Exts base-4.10.1.0:GHC.Generics
+                         base-4.10.1.0:GHC.IO.Exception base-4.10.1.0:GHC.TypeLits
+                         base-4.10.1.0:GHC.TypeNats containers-0.5.10.2:Data.IntMap.Internal
+                         containers-0.5.10.2:Data.IntSet.Internal
+                         containers-0.5.10.2:Data.Map.Internal
+                         containers-0.5.10.2:Data.Sequence.Internal
+                         containers-0.5.10.2:Data.Set.Internal containers-0.5.10.2:Data.Tree
+                         dlist-0.8.0.3:Data.DList ghc-boot-th-8.2.2:GHC.ForeignSrcLang.Type
+                         ghc-boot-th-8.2.2:GHC.LanguageExtensions.Type
+                         inline-r-0.9.0.2-CmRL2Hikuao7dNZScoizZz:Control.Memory.Region
+                         inline-r-0.9.0.2-CmRL2Hikuao7dNZScoizZz:Data.Vector.SEXP
+                         inline-r-0.9.0.2-CmRL2Hikuao7dNZScoizZz:Foreign.R.Type
+                         pretty-1.1.3.3:Text.PrettyPrint.Annotated.HughesPJ
+                         pretty-1.1.3.3:Text.PrettyPrint.HughesPJ
+                         primitive-0.6.2.0:Control.Monad.Primitive
+                         primitive-0.6.2.0:Data.Primitive.Array
+                         singletons-2.3.1:Data.Singletons
+                         singletons-2.3.1:Data.Singletons.Prelude.Bool
+                         singletons-2.3.1:Data.Singletons.Prelude.Eq
+                         singletons-2.3.1:Data.Singletons.Prelude.Instances
+                         singletons-2.3.1:Data.Singletons.Prelude.Num
+                         singletons-2.3.1:Data.Singletons.Prelude.Ord
+                         singletons-2.3.1:Data.Singletons.Syntax
+                         singletons-2.3.1:Data.Singletons.TypeLits
+                         singletons-2.3.1:Data.Singletons.TypeLits.Internal
+                         tagged-0.8.5:Data.Tagged
+                         template-haskell-2.12.0.0:Language.Haskell.TH.Syntax
+                         text-1.2.2.2:Data.Text text-1.2.2.2:Data.Text.Lazy
+                         th-desugar-1.7:Language.Haskell.TH.Desugar.Core
+                         unordered-containers-0.2.8.0:Data.HashMap.Base
+                         unordered-containers-0.2.8.0:Data.HashSet
+                         uuid-types-1.0.3:Data.UUID.Types.Internal
+                         uuid-types-1.0.3:Data.UUID.Types.Internal.Builder
+                         vector-0.12.0.1:Data.Vector vector-0.12.0.1:Data.Vector.Primitive
+                         vector-0.12.0.1:Data.Vector.Storable
+                         vector-0.12.0.1:Data.Vector.Unboxed
+                         vector-0.12.0.1:Data.Vector.Unboxed.Base
+import  -/  aeson-1.2.3.0:Data.Aeson dc7d2d8e683b70726f4b41384021a09e
+import  -/  aeson-1.2.3.0:Data.Aeson.Types.Internal fae0996c9725d4bb2ff239af6669cb2a
+import  -/  aeson-1.2.3.0:Data.Aeson.Types.ToJSON dab3244de4139a944213b6b37651bf6a
+import  -/  base-4.10.1.0:Data.Complex b75c9c36fb3e1275b27f07a23b164de4
+import  -/  base-4.10.1.0:Foreign.Storable c463817097bdd1b4c7f7c325680a9964
+import  -/  base-4.10.1.0:GHC.Base 782fd99b5e36f3698a26179a49afca64
+import  -/  base-4.10.1.0:GHC.IO.Unsafe 0aa7e5adc396c9f651baef415ce018da
+import  -/  base-4.10.1.0:GHC.Show 0a8ce2b5e533d1c2cfb7954e6736be45
+import  -/  base-4.10.1.0:Prelude 31945b7d0084063347fc52506d3a4020
+import  -/  base-4.10.1.0:System.IO.Unsafe 00b3b8853d06169d9bfd9af46118ba88
+import  -/  bytestring-0.10.8.2:Data.ByteString.Lazy.Char8 d8a0ad0c6ad85bb7f313f5b248fda90d
+import  -/  ghc-prim-0.5.1.1:GHC.Classes 93e2660065dce9329577e83d76d8f0d4
+import  -/  Data.Vector.SEXP 1ba3b4d0f52c5e1239a58edb94ac6587
+  exports: ba6781c44342a369931119b5db2f7524
+  Vector 3476d9bcd1360fdfad479ca1a02d99fb
+  toList 3476d9bcd1360fdfad479ca1a02d99fb
+  toString 89db6b8b39a587c28a1fdeb77939331d
+import  -/  Data.Vector.SEXP.Base 45a38cf91fe2cf94fe8625a751ba7f0f
+  ElemRep 2b851d09f4d303100201309c9c4ed4f7
+import  -/  Foreign.R 51460710da704a1aff942901939ab83a
+  exports: 66604cef250b707139e6d39041287043
+import  -/  Foreign.R.Internal 0950ef2cc999f128080e9690ff115a12
+  SEXP 8e71af79acc64eda5f9cb7291bf461df
+  SEXPInfo d987a3d74a29c27a7f56da4895135b7b
+  SomeSEXP d3242a05a97056d0f4278da347cae3e8
+  SomeSEXP 870de88561703105d28633d6a8e2294b
+  getAttributes 3a756b0150a1a8de093445b277f682b7
+  infoDebug d987a3d74a29c27a7f56da4895135b7b
+  infoGcCls d987a3d74a29c27a7f56da4895135b7b
+  infoGcGen d987a3d74a29c27a7f56da4895135b7b
+  infoGp d987a3d74a29c27a7f56da4895135b7b
+  infoMark d987a3d74a29c27a7f56da4895135b7b
+  infoNamed d987a3d74a29c27a7f56da4895135b7b
+  infoObj d987a3d74a29c27a7f56da4895135b7b
+  infoSpare d987a3d74a29c27a7f56da4895135b7b
+  infoTrace d987a3d74a29c27a7f56da4895135b7b
+  infoType d987a3d74a29c27a7f56da4895135b7b
+  peekInfo 9849ef013bc40682e2d0f6aa549090ad
+  unsexp 456b119a325c68ef328adef52d3b1e7c
+import  -/  Foreign.R.Type c66cc062d80b456888eb0e05aa6a4002
+  exports: 5754d5cde3f2758aa360e9e8b66ebc71
+  IsVector dd85b2d9ae3c40d713f260e06d8370c5
+  SEXPTYPE 155aac0ce58f46653dea12e588ab4eb0
+import  -/  Language.R.Globals 6466af466952ec50029e279d952209f8
+  exports: d382aabb26fa46ceafcdf718d6d966c6
+  missingArg 222588e043308f97d706906abdd9e542
+  nilValue 6fd3b3a9ae25de3a8024897c909e667c
+  unboundValue 06106fec0cdd66187a24dd64bc4888b5
+import  -/  Language.R.HExp 65742348049316c593051d25bc8cd9c6
+  exports: c8c11e48e2f3de692b7c0633951e2386
+  Builtin 918c29bff29e472ec2d30d7481f3251a
+  Bytecode e629081deef5429c997ad858f4a6e5f8
+  Char 580fe987e5b9f944444503249b3ba7ea
+  Closure 88275f05ae0956dc8a72318709121ee4
+  Complex f235946b13e0cbd8ebc8e7c2360a3537
+  DotDotDot 53196cdab8db23872a0b6cc7e9dd6723
+  Env 0a586ed225ea85bc4415734a6dbd3d26
+  Expr e58e2ffee6e2a2ed0855e8206e05b9fc
+  ExtPtr f5e8bd4683526f00b18fe70026f5cf83
+  Int 858608b86e02608eb274851ea8c590e6
+  Lang 194e787388653e6e58af52f98aae478b
+  List 78a926d23c6d60b2ad213d44a3d3c6b6
+  Nil 955d3c36214a4994ba97284e1485f178
+  Promise 41a6564fe7ae1f0464144dc87c3cc1bc
+  Raw ae493a6b994a2d8ea1f0f70ad9347a14
+  Real 8584fdda8d6051cf195cee65b9a7ec76
+  S4 f35f9bf7467ecf7253c219719ec402a0
+  Special 50f270b832438c867cfa5ef73ca9f118
+  Symbol a2e76fda143312ec2bb3ff827f019621
+  Vector d5ee8726a05c153bd8d37d8319332ac2
+  WeakRef cb9b7701adc04607caa50f52e011f5bb
+  hexp 4c1fd9e46ec95c8e40058dd387b6e55d
+import  -/  text-1.2.2.2:Data.Text 179ed20f3e41d2270f9a36dd7f638215
+import  -/  vector-0.12.0.1:Data.Vector 975fdc19330e33900e442533f401a601
+39ae32c6a06c0c33217062e1b16eb0a5
+  $fToJSONComplex ::
+    Data.Aeson.Types.ToJSON.ToJSON a =>
+    Data.Aeson.Types.ToJSON.ToJSON (Data.Complex.Complex a)
+  DFunId
+  {- Arity: 1, Strictness: <L,U(C(U),A,A,A)>m, Inline: CONLIKE,
+     Unfolding: DFun: @ a (v :: Data.Aeson.Types.ToJSON.ToJSON a).
+                  @ (Data.Complex.Complex a)
+                  (Language.R.Debug.$fToJSONComplex_$ctoJSON @ a v)
+                  (Language.R.Debug.$fToJSONComplex_$ctoEncoding @ a v)
+                  (Language.R.Debug.$fToJSONComplex_$ctoJSONList @ a v)
+                  (Language.R.Debug.$fToJSONComplex_$ctoEncodingList @ a v) -}
+ab892c6a643a84c3244d47467a5ba67c
+  $fToJSONComplex1 :: Data.Text.Internal.Text
+  {- Unfolding: (Data.Text.Show.unpackCString#
+                   Language.R.Debug.$fToJSONComplex2) -}
+989fa6d8f5357ad2cba51f3e6f59907f
+  $fToJSONComplex2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Im"#) -}
+095a68f5399f048f3ac643737f52b75e
+  $fToJSONComplex3 :: Data.Text.Internal.Text
+  {- Unfolding: (Data.Text.Show.unpackCString#
+                   Language.R.Debug.$fToJSONComplex4) -}
+926fdff479fa86cdfffa99060900327d
+  $fToJSONComplex4 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Re"#) -}
+74af4d26f7dd007577ff4659eb24bf87
+  $fToJSONComplex_$ctoEncoding ::
+    Data.Aeson.Types.ToJSON.ToJSON a =>
+    Data.Complex.Complex a -> Data.Aeson.Encoding.Internal.Encoding
+  {- Arity: 2,
+     Strictness: <S(C(S)LLL),U(C(U),A,A,A)><S(SS),1*U(U,U)>,
+     Inline: (sat-args=0),
+     Unfolding: InlineRule (1, False, False)
+                (\ @ a
+                   ($dToJSON :: Data.Aeson.Types.ToJSON.ToJSON a)
+                   (x :: Data.Complex.Complex a) ->
+                 Data.Aeson.Encoding.Builder.encodeToBuilder
+                   (Language.R.Debug.$fToJSONComplex_$ctoJSON @ a $dToJSON x))
+                  `cast`
+                (forall (a :: <*>_N).
+                 <Data.Aeson.Types.ToJSON.ToJSON a>_R
+                 ->_R <Data.Complex.Complex a>_R
+                 ->_R Sym (Data.Aeson.Encoding.Internal.N:Encoding'[0]
+                               <Data.Aeson.Types.Internal.Value>_P)) -}
+6ea77bac60043820604a2060144d4457
+  $fToJSONComplex_$ctoEncodingList ::
+    Data.Aeson.Types.ToJSON.ToJSON a =>
+    [Data.Complex.Complex a] -> Data.Aeson.Encoding.Internal.Encoding
+  {- Arity: 2, Strictness: <L,U(C(U),A,A,A)><S,1*U>,
+     Inline: (sat-args=0),
+     Unfolding: InlineRule (1, False, False)
+                (\ @ a ($dToJSON :: Data.Aeson.Types.ToJSON.ToJSON a) ->
+                 Data.Aeson.Encoding.Internal.list
+                   @ (Data.Complex.Complex a)
+                   (Language.R.Debug.$fToJSONComplex_$ctoEncoding @ a $dToJSON)) -}
+242eb6ac5eb08c85b9cb17a9a45ad8da
+  $fToJSONComplex_$ctoJSON ::
+    Data.Aeson.Types.ToJSON.ToJSON a =>
+    Data.Complex.Complex a -> Data.Aeson.Types.Internal.Value
+  {- Arity: 2,
+     Strictness: <S(C(S)LLL),U(C(U),A,A,A)><S(SS),1*U(U,U)>m1,
+     Inline: [0],
+     Unfolding: InlineRule (2, True, False)
+                (\ @ a
+                   (w :: Data.Aeson.Types.ToJSON.ToJSON a)
+                   (w1 :: Data.Complex.Complex a) ->
+                 case w1 of ww { Data.Complex.:+ ww1 ww2 ->
+                 case Language.R.Debug.$w$ctoJSON
+                        @ a
+                        w
+                        ww1
+                        ww2 of ww3 { Unit# ww4 ->
+                 Data.Aeson.Types.Internal.Object ww4 } }) -}
+f691be0c9c631652314b2d3757ae28b1
+  $fToJSONComplex_$ctoJSONList ::
+    Data.Aeson.Types.ToJSON.ToJSON a =>
+    [Data.Complex.Complex a] -> Data.Aeson.Types.Internal.Value
+  {- Arity: 2, Strictness: <L,U(C(U),A,A,A)><S,1*U>m2,
+     Inline: (sat-args=0),
+     Unfolding: InlineRule (1, False, False)
+                (\ @ a ($dToJSON :: Data.Aeson.Types.ToJSON.ToJSON a) ->
+                 let {
+                   f1 :: Data.Complex.Complex a -> Data.Aeson.Types.Internal.Value
+                     {- Arity: 1 -}
+                   = Language.R.Debug.$fToJSONComplex_$ctoJSON @ a $dToJSON
+                 } in
+                 \ (x :: [Data.Complex.Complex a]) ->
+                 Data.Aeson.Types.Internal.$WArray
+                   (Data.Vector.Generic.new
+                      @ Data.Vector.Vector
+                      @ Data.Aeson.Types.Internal.Value
+                      (Data.Vector.$fVectorVectora @ Data.Aeson.Types.Internal.Value)
+                      (Data.Vector.Generic.New.unstream
+                         @ Data.Vector.Vector
+                         @ Data.Aeson.Types.Internal.Value
+                         (Data.Vector.$fVectorVectora @ Data.Aeson.Types.Internal.Value)
+                         (Data.Vector.Fusion.Bundle.Monadic.unsafeFromList
+                            @ Data.Vector.Fusion.Util.Id
+                            @ Data.Aeson.Types.Internal.Value
+                            @ Data.Vector.Vector
+                            Data.Vector.Fusion.Util.$fMonadId
+                            Data.Vector.Fusion.Bundle.Size.Unknown
+                            (GHC.Base.build
+                               @ Data.Aeson.Types.Internal.Value
+                               (\ @ b1
+                                  (c :: Data.Aeson.Types.Internal.Value -> b1 -> b1)[OneShot]
+                                  (n1 :: b1)[OneShot] ->
+                                GHC.Base.foldr
+                                  @ (Data.Complex.Complex a)
+                                  @ b1
+                                  (GHC.Base.mapFB
+                                     @ Data.Aeson.Types.Internal.Value
+                                     @ b1
+                                     @ (Data.Complex.Complex a)
+                                     c
+                                     f1)
+                                  n1
+                                  x)))))) -}
+66985a392714fd7b008df66ae1d00783
+  $fToJSONComplex_$s$ctoJSON ::
+    Data.Complex.Complex GHC.Types.Double
+    -> Data.Aeson.Types.Internal.Value
+  {- Arity: 1, Strictness: <S(S(S)S(S)),1*U(U(U),U(U))>, Inline: [0],
+     Unfolding: InlineRule (1, True, False)
+                (\ (w :: Data.Complex.Complex GHC.Types.Double) ->
+                 case w of ww { Data.Complex.:+ ww1 ww2 ->
+                 case ww1 of ww3 { GHC.Types.D# ww4 ->
+                 case ww2 of ww5 { GHC.Types.D# ww6 ->
+                 Language.R.Debug.$w$s$ctoJSON ww4 ww6 } } }) -}
+c4ed57359218690337c2d1f67863e598
+  $fToJSONComplex_$s$fToJSONComplex ::
+    Data.Aeson.Types.ToJSON.ToJSON
+      (Data.Complex.Complex GHC.Types.Double)
+  {- Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ (Data.Complex.Complex GHC.Types.Double)
+                  Language.R.Debug.$fToJSONComplex_$s$ctoJSON
+                  (\ (x :: Data.Complex.Complex GHC.Types.Double) ->
+                   case x of wild { Data.Complex.:+ x1 y ->
+                   case x1 of ds { GHC.Types.D# ds1 ->
+                   case {__pkg_ccall base-4.10.1.0 GHC.Prim.Double#
+                                                   -> GHC.Prim.State# GHC.Prim.RealWorld
+                                                   -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+                                                         GHC.Prim.Int# #)}
+                          ds1
+                          GHC.Prim.realWorld# of wild2 { (#,#) ds2 ds3 ->
+                   let {
+                     $j :: Data.Aeson.Types.Internal.Value
+                           -> Data.ByteString.Builder.Internal.Builder
+                       <join 1> {- Arity: 1 -}
+                     = \ (v2 :: Data.Aeson.Types.Internal.Value)[OneShot] ->
+                       case Data.Aeson.Types.Internal.$sunsafeInsert
+                              @ Data.Aeson.Types.Internal.Value
+                              Language.R.Debug.$fToJSONComplex3
+                              v2
+                              (Data.HashMap.Base.Empty
+                                 @ Data.Text.Internal.Text
+                                 @ Data.Aeson.Types.Internal.Value) of z23 { DEFAULT ->
+                       case y of ds4 { GHC.Types.D# ds5 ->
+                       case {__pkg_ccall base-4.10.1.0 GHC.Prim.Double#
+                                                       -> GHC.Prim.State# GHC.Prim.RealWorld
+                                                       -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+                                                             GHC.Prim.Int# #)}
+                              ds5
+                              GHC.Prim.realWorld# of wild1 { (#,#) ds6 ds7 ->
+                       case ds7 of wild3 {
+                         DEFAULT
+                         -> case Data.Aeson.Types.Internal.$sunsafeInsert
+                                   @ Data.Aeson.Types.Internal.Value
+                                   Language.R.Debug.$fToJSONComplex1
+                                   Data.Aeson.Types.Internal.Null
+                                   z23 of dt { DEFAULT ->
+                            Data.Aeson.Encoding.Builder.encodeToBuilder
+                              (Data.Aeson.Types.Internal.Object dt) }
+                         0#
+                         -> case {__pkg_ccall base-4.10.1.0 GHC.Prim.Double#
+                                                            -> GHC.Prim.State# GHC.Prim.RealWorld
+                                                            -> (# GHC.Prim.State#
+                                                                    GHC.Prim.RealWorld,
+                                                                  GHC.Prim.Int# #)}
+                                   ds5
+                                   GHC.Prim.realWorld# of wild5 { (#,#) ds8 ds9 ->
+                            case ds9 of wild6 {
+                              DEFAULT
+                              -> case Data.Aeson.Types.Internal.$sunsafeInsert
+                                        @ Data.Aeson.Types.Internal.Value
+                                        Language.R.Debug.$fToJSONComplex1
+                                        Data.Aeson.Types.Internal.Null
+                                        z23 of dt { DEFAULT ->
+                                 Data.Aeson.Encoding.Builder.encodeToBuilder
+                                   (Data.Aeson.Types.Internal.Object dt) }
+                              0#
+                              -> case Data.Aeson.Types.Internal.$WNumber
+                                        (Data.Scientific.fromFloatDigits_$sfromFloatDigits1
+                                           ds4) of v1 { DEFAULT ->
+                                 case Data.Aeson.Types.Internal.$sunsafeInsert
+                                        @ Data.Aeson.Types.Internal.Value
+                                        Language.R.Debug.$fToJSONComplex1
+                                        v1
+                                        z23 of dt { DEFAULT ->
+                                 Data.Aeson.Encoding.Builder.encodeToBuilder
+                                   (Data.Aeson.Types.Internal.Object dt) } } } } } } } }
+                   } in
+                   case ds3 of wild3 {
+                     DEFAULT -> $j Data.Aeson.Types.Internal.Null
+                     0#
+                     -> case {__pkg_ccall base-4.10.1.0 GHC.Prim.Double#
+                                                        -> GHC.Prim.State# GHC.Prim.RealWorld
+                                                        -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+                                                              GHC.Prim.Int# #)}
+                               ds1
+                               GHC.Prim.realWorld# of wild1 { (#,#) ds4 ds5 ->
+                        case ds5 of wild5 {
+                          DEFAULT -> $j Data.Aeson.Types.Internal.Null
+                          0#
+                          -> case Data.Aeson.Types.Internal.$WNumber
+                                    (Data.Scientific.fromFloatDigits_$sfromFloatDigits1
+                                       ds) of v2 { DEFAULT ->
+                             $j v2 } } } } } } })
+                    `cast`
+                  (<Data.Complex.Complex GHC.Types.Double>_R
+                   ->_R Sym (Data.Aeson.Encoding.Internal.N:Encoding'[0]
+                                 <Data.Aeson.Types.Internal.Value>_P))
+                  (let {
+                     f1 :: Data.Complex.Complex GHC.Types.Double
+                           -> Data.Aeson.Types.Internal.Value
+                       {- Arity: 1 -}
+                     = \ (ds :: Data.Complex.Complex GHC.Types.Double) ->
+                       case ds of wild { Data.Complex.:+ x y ->
+                       case x of ds1 { GHC.Types.D# ds2 ->
+                       case {__pkg_ccall base-4.10.1.0 GHC.Prim.Double#
+                                                       -> GHC.Prim.State# GHC.Prim.RealWorld
+                                                       -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+                                                             GHC.Prim.Int# #)}
+                              ds2
+                              GHC.Prim.realWorld# of wild2 { (#,#) ds3 ds4 ->
+                       let {
+                         $j :: Data.Aeson.Types.Internal.Value
+                               -> Data.Aeson.Types.Internal.Value
+                           <join 1> {- Arity: 1 -}
+                         = \ (v2 :: Data.Aeson.Types.Internal.Value)[OneShot] ->
+                           case Data.Aeson.Types.Internal.$sunsafeInsert
+                                  @ Data.Aeson.Types.Internal.Value
+                                  Language.R.Debug.$fToJSONComplex3
+                                  v2
+                                  (Data.HashMap.Base.Empty
+                                     @ Data.Text.Internal.Text
+                                     @ Data.Aeson.Types.Internal.Value) of z23 { DEFAULT ->
+                           case y of ds5 { GHC.Types.D# ds6 ->
+                           case {__pkg_ccall base-4.10.1.0 GHC.Prim.Double#
+                                                           -> GHC.Prim.State# GHC.Prim.RealWorld
+                                                           -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+                                                                 GHC.Prim.Int# #)}
+                                  ds6
+                                  GHC.Prim.realWorld# of wild1 { (#,#) ds7 ds8 ->
+                           case ds8 of wild3 {
+                             DEFAULT
+                             -> case Data.Aeson.Types.Internal.$sunsafeInsert
+                                       @ Data.Aeson.Types.Internal.Value
+                                       Language.R.Debug.$fToJSONComplex1
+                                       Data.Aeson.Types.Internal.Null
+                                       z23 of dt { DEFAULT ->
+                                Data.Aeson.Types.Internal.Object dt }
+                             0#
+                             -> case {__pkg_ccall base-4.10.1.0 GHC.Prim.Double#
+                                                                -> GHC.Prim.State#
+                                                                     GHC.Prim.RealWorld
+                                                                -> (# GHC.Prim.State#
+                                                                        GHC.Prim.RealWorld,
+                                                                      GHC.Prim.Int# #)}
+                                       ds6
+                                       GHC.Prim.realWorld# of wild5 { (#,#) ds9 ds10 ->
+                                case ds10 of wild6 {
+                                  DEFAULT
+                                  -> case Data.Aeson.Types.Internal.$sunsafeInsert
+                                            @ Data.Aeson.Types.Internal.Value
+                                            Language.R.Debug.$fToJSONComplex1
+                                            Data.Aeson.Types.Internal.Null
+                                            z23 of dt { DEFAULT ->
+                                     Data.Aeson.Types.Internal.Object dt }
+                                  0#
+                                  -> case Data.Aeson.Types.Internal.$WNumber
+                                            (Data.Scientific.fromFloatDigits_$sfromFloatDigits1
+                                               ds5) of v1 { DEFAULT ->
+                                     case Data.Aeson.Types.Internal.$sunsafeInsert
+                                            @ Data.Aeson.Types.Internal.Value
+                                            Language.R.Debug.$fToJSONComplex1
+                                            v1
+                                            z23 of dt { DEFAULT ->
+                                     Data.Aeson.Types.Internal.Object dt } } } } } } } }
+                       } in
+                       case ds4 of wild3 {
+                         DEFAULT -> $j Data.Aeson.Types.Internal.Null
+                         0#
+                         -> case {__pkg_ccall base-4.10.1.0 GHC.Prim.Double#
+                                                            -> GHC.Prim.State# GHC.Prim.RealWorld
+                                                            -> (# GHC.Prim.State#
+                                                                    GHC.Prim.RealWorld,
+                                                                  GHC.Prim.Int# #)}
+                                   ds2
+                                   GHC.Prim.realWorld# of wild1 { (#,#) ds5 ds6 ->
+                            case ds6 of wild5 {
+                              DEFAULT -> $j Data.Aeson.Types.Internal.Null
+                              0#
+                              -> case Data.Aeson.Types.Internal.$WNumber
+                                        (Data.Scientific.fromFloatDigits_$sfromFloatDigits1
+                                           ds1) of v2 { DEFAULT ->
+                                 $j v2 } } } } } } }
+                   } in
+                   \ (x :: [Data.Complex.Complex GHC.Types.Double]) ->
+                   Data.Aeson.Types.Internal.$WArray
+                     (Data.Vector.Generic.new
+                        @ Data.Vector.Vector
+                        @ Data.Aeson.Types.Internal.Value
+                        (Data.Vector.$fVectorVectora @ Data.Aeson.Types.Internal.Value)
+                        (Data.Vector.Generic.New.unstream
+                           @ Data.Vector.Vector
+                           @ Data.Aeson.Types.Internal.Value
+                           (Data.Vector.$fVectorVectora @ Data.Aeson.Types.Internal.Value)
+                           (Data.Vector.Fusion.Bundle.Monadic.unsafeFromList
+                              @ Data.Vector.Fusion.Util.Id
+                              @ Data.Aeson.Types.Internal.Value
+                              @ Data.Vector.Vector
+                              Data.Vector.Fusion.Util.$fMonadId
+                              Data.Vector.Fusion.Bundle.Size.Unknown
+                              (GHC.Base.build
+                                 @ Data.Aeson.Types.Internal.Value
+                                 (\ @ b1
+                                    (c :: Data.Aeson.Types.Internal.Value -> b1 -> b1)[OneShot]
+                                    (n1 :: b1)[OneShot] ->
+                                  GHC.Base.foldr
+                                    @ (Data.Complex.Complex GHC.Types.Double)
+                                    @ b1
+                                    (GHC.Base.mapFB
+                                       @ Data.Aeson.Types.Internal.Value
+                                       @ b1
+                                       @ (Data.Complex.Complex GHC.Types.Double)
+                                       c
+                                       f1)
+                                    n1
+                                    x))))))
+                  (Data.Aeson.Encoding.Internal.list
+                     @ (Data.Complex.Complex GHC.Types.Double)
+                     (\ (x :: Data.Complex.Complex GHC.Types.Double) ->
+                      case x of wild { Data.Complex.:+ x1 y ->
+                      case x1 of ds { GHC.Types.D# ds1 ->
+                      case {__pkg_ccall base-4.10.1.0 GHC.Prim.Double#
+                                                      -> GHC.Prim.State# GHC.Prim.RealWorld
+                                                      -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+                                                            GHC.Prim.Int# #)}
+                             ds1
+                             GHC.Prim.realWorld# of wild2 { (#,#) ds2 ds3 ->
+                      let {
+                        $j :: Data.Aeson.Types.Internal.Value
+                              -> Data.ByteString.Builder.Internal.Builder
+                          <join 1> {- Arity: 1 -}
+                        = \ (v2 :: Data.Aeson.Types.Internal.Value)[OneShot] ->
+                          case Data.Aeson.Types.Internal.$sunsafeInsert
+                                 @ Data.Aeson.Types.Internal.Value
+                                 Language.R.Debug.$fToJSONComplex3
+                                 v2
+                                 (Data.HashMap.Base.Empty
+                                    @ Data.Text.Internal.Text
+                                    @ Data.Aeson.Types.Internal.Value) of z23 { DEFAULT ->
+                          case y of ds4 { GHC.Types.D# ds5 ->
+                          case {__pkg_ccall base-4.10.1.0 GHC.Prim.Double#
+                                                          -> GHC.Prim.State# GHC.Prim.RealWorld
+                                                          -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+                                                                GHC.Prim.Int# #)}
+                                 ds5
+                                 GHC.Prim.realWorld# of wild1 { (#,#) ds6 ds7 ->
+                          case ds7 of wild3 {
+                            DEFAULT
+                            -> case Data.Aeson.Types.Internal.$sunsafeInsert
+                                      @ Data.Aeson.Types.Internal.Value
+                                      Language.R.Debug.$fToJSONComplex1
+                                      Data.Aeson.Types.Internal.Null
+                                      z23 of dt { DEFAULT ->
+                               Data.Aeson.Encoding.Builder.encodeToBuilder
+                                 (Data.Aeson.Types.Internal.Object dt) }
+                            0#
+                            -> case {__pkg_ccall base-4.10.1.0 GHC.Prim.Double#
+                                                               -> GHC.Prim.State# GHC.Prim.RealWorld
+                                                               -> (# GHC.Prim.State#
+                                                                       GHC.Prim.RealWorld,
+                                                                     GHC.Prim.Int# #)}
+                                      ds5
+                                      GHC.Prim.realWorld# of wild5 { (#,#) ds8 ds9 ->
+                               case ds9 of wild6 {
+                                 DEFAULT
+                                 -> case Data.Aeson.Types.Internal.$sunsafeInsert
+                                           @ Data.Aeson.Types.Internal.Value
+                                           Language.R.Debug.$fToJSONComplex1
+                                           Data.Aeson.Types.Internal.Null
+                                           z23 of dt { DEFAULT ->
+                                    Data.Aeson.Encoding.Builder.encodeToBuilder
+                                      (Data.Aeson.Types.Internal.Object dt) }
+                                 0#
+                                 -> case Data.Aeson.Types.Internal.$WNumber
+                                           (Data.Scientific.fromFloatDigits_$sfromFloatDigits1
+                                              ds4) of v1 { DEFAULT ->
+                                    case Data.Aeson.Types.Internal.$sunsafeInsert
+                                           @ Data.Aeson.Types.Internal.Value
+                                           Language.R.Debug.$fToJSONComplex1
+                                           v1
+                                           z23 of dt { DEFAULT ->
+                                    Data.Aeson.Encoding.Builder.encodeToBuilder
+                                      (Data.Aeson.Types.Internal.Object dt) } } } } } } } }
+                      } in
+                      case ds3 of wild3 {
+                        DEFAULT -> $j Data.Aeson.Types.Internal.Null
+                        0#
+                        -> case {__pkg_ccall base-4.10.1.0 GHC.Prim.Double#
+                                                           -> GHC.Prim.State# GHC.Prim.RealWorld
+                                                           -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+                                                                 GHC.Prim.Int# #)}
+                                  ds1
+                                  GHC.Prim.realWorld# of wild1 { (#,#) ds4 ds5 ->
+                           case ds5 of wild5 {
+                             DEFAULT -> $j Data.Aeson.Types.Internal.Null
+                             0#
+                             -> case Data.Aeson.Types.Internal.$WNumber
+                                       (Data.Scientific.fromFloatDigits_$sfromFloatDigits1
+                                          ds) of v2 { DEFAULT ->
+                                $j v2 } } } } } } })
+                       `cast`
+                     (<Data.Complex.Complex GHC.Types.Double>_R
+                      ->_R Sym (Data.Aeson.Encoding.Internal.N:Encoding'[0]
+                                    <Data.Aeson.Types.Internal.Value>_P))) -}
+3ef0e3fb1ad1af2619da5ed84ecb6dbe
+  $fToJSONSEXP ::
+    Data.Aeson.Types.ToJSON.ToJSON (Foreign.R.Internal.SEXP s a)
+  DFunId
+  {- Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun: @ s @ a :: Foreign.R.Type.SEXPTYPE.
+                  @ (Foreign.R.Internal.SEXP s a)
+                  (Language.R.Debug.$fToJSONSEXP_$ctoJSON @ s @ a)
+                  (Language.R.Debug.$fToJSONSEXP_$ctoEncoding @ s @ a)
+                  (Language.R.Debug.$fToJSONSEXP_$ctoJSONList @ s @ a)
+                  (Language.R.Debug.$fToJSONSEXP_$ctoEncodingList @ s @ a) -}
+2144077382b20ee3f0c854cfeaf30a2c
+  $fToJSONSEXPInfo ::
+    Data.Aeson.Types.ToJSON.ToJSON Foreign.R.Internal.SEXPInfo
+  DFunId
+  {- Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ Foreign.R.Internal.SEXPInfo
+                  Language.R.Debug.$fToJSONSEXPInfo_$ctoJSON
+                  Language.R.Debug.$fToJSONSEXPInfo_$ctoEncoding
+                  Language.R.Debug.$fToJSONSEXPInfo_$ctoJSONList
+                  Language.R.Debug.$fToJSONSEXPInfo_$ctoEncodingList -}
+a105c7f7443882c79495c70a46bc178d
+  $fToJSONSEXPInfo_$ctoEncoding ::
+    Foreign.R.Internal.SEXPInfo
+    -> Data.Aeson.Encoding.Internal.Encoding
+  {- Arity: 1,
+     Strictness: <S(SLLLLLLLLL),1*U(1*U,1*U,1*U(U),1*U(U),1*U,1*U,1*U,1*U,1*U(U),1*U(U))>,
+     Inline: (sat-args=0),
+     Unfolding: InlineRule (0, False, False)
+                (\ (x :: Foreign.R.Internal.SEXPInfo) ->
+                 Data.Aeson.Encoding.Builder.encodeToBuilder
+                   (Language.R.Debug.$fToJSONSEXPInfo_$ctoJSON x))
+                  `cast`
+                (<Foreign.R.Internal.SEXPInfo>_R
+                 ->_R Sym (Data.Aeson.Encoding.Internal.N:Encoding'[0]
+                               <Data.Aeson.Types.Internal.Value>_P)) -}
+ef97a9f14de83a51e4c679090a008bcc
+  $fToJSONSEXPInfo_$ctoEncodingList ::
+    [Foreign.R.Internal.SEXPInfo]
+    -> Data.Aeson.Encoding.Internal.Encoding
+  {- Arity: 1, Inline: (sat-args=0),
+     Unfolding: InlineRule (0, False, False)
+                (Data.Aeson.Encoding.Internal.list
+                   @ Foreign.R.Internal.SEXPInfo
+                   Language.R.Debug.$fToJSONSEXPInfo_$ctoEncoding) -}
+104ca57a98d05dc7bf209d7d6eb206b2
+  $fToJSONSEXPInfo_$ctoJSON ::
+    Foreign.R.Internal.SEXPInfo -> Data.Aeson.Types.Internal.Value
+  {- Arity: 1,
+     Strictness: <S(SLLLLLLLLL),1*U(1*U,1*U,1*U(U),1*U(U),1*U,1*U,1*U,1*U,1*U(U),1*U(U))>m1,
+     Inline: [0],
+     Unfolding: InlineRule (1, True, False)
+                (\ (w :: Foreign.R.Internal.SEXPInfo) ->
+                 case w of ww { Foreign.R.Internal.SEXPInfo ww1 ww2 ww3 ww4 ww5 ww6 ww7 ww8 ww9 ww10 ->
+                 case Language.R.Debug.$w$ctoJSON2
+                        ww1
+                        ww2
+                        ww3
+                        ww4
+                        ww5
+                        ww6
+                        ww7
+                        ww8
+                        ww9
+                        ww10 of ww11 { Unit# ww12 ->
+                 Data.Aeson.Types.Internal.Object ww12 } }) -}
+1aeed8dfa764b58752b927eb0a41dbc7
+  $fToJSONSEXPInfo_$ctoJSONList ::
+    [Foreign.R.Internal.SEXPInfo] -> Data.Aeson.Types.Internal.Value
+  {- Arity: 1, Strictness: <S,1*U>m2, Inline: (sat-args=0),
+     Unfolding: InlineRule (0, False, False)
+                (\ (x :: [Foreign.R.Internal.SEXPInfo]) ->
+                 Data.Aeson.Types.Internal.$WArray
+                   (Data.Vector.Generic.new
+                      @ Data.Vector.Vector
+                      @ Data.Aeson.Types.Internal.Value
+                      (Data.Vector.$fVectorVectora @ Data.Aeson.Types.Internal.Value)
+                      (Data.Vector.Generic.New.unstream
+                         @ Data.Vector.Vector
+                         @ Data.Aeson.Types.Internal.Value
+                         (Data.Vector.$fVectorVectora @ Data.Aeson.Types.Internal.Value)
+                         (Data.Vector.Fusion.Bundle.Monadic.unsafeFromList
+                            @ Data.Vector.Fusion.Util.Id
+                            @ Data.Aeson.Types.Internal.Value
+                            @ Data.Vector.Vector
+                            Data.Vector.Fusion.Util.$fMonadId
+                            Data.Vector.Fusion.Bundle.Size.Unknown
+                            (GHC.Base.build
+                               @ Data.Aeson.Types.Internal.Value
+                               (\ @ b1
+                                  (c :: Data.Aeson.Types.Internal.Value -> b1 -> b1)[OneShot]
+                                  (n1 :: b1)[OneShot] ->
+                                GHC.Base.foldr
+                                  @ Foreign.R.Internal.SEXPInfo
+                                  @ b1
+                                  (GHC.Base.mapFB
+                                     @ Data.Aeson.Types.Internal.Value
+                                     @ b1
+                                     @ Foreign.R.Internal.SEXPInfo
+                                     c
+                                     Language.R.Debug.$fToJSONSEXPInfo_$ctoJSON)
+                                  n1
+                                  x)))))) -}
+d12108e7450fa6614ed0c47428295e48
+  $fToJSONSEXPTYPE ::
+    Data.Aeson.Types.ToJSON.ToJSON Foreign.R.Type.SEXPTYPE
+  DFunId
+  {- Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ Foreign.R.Type.SEXPTYPE
+                  Language.R.Debug.$fToJSONSEXPTYPE_$ctoJSON
+                  Language.R.Debug.$fToJSONSEXPTYPE_$ctoEncoding
+                  Language.R.Debug.$fToJSONSEXPTYPE_$ctoJSONList
+                  Language.R.Debug.$fToJSONSEXPTYPE_$ctoEncodingList -}
+6e93c21afc7975bfb59121fcd2d524fc
+  $fToJSONSEXPTYPE_$ctoEncoding ::
+    Foreign.R.Type.SEXPTYPE -> Data.Aeson.Encoding.Internal.Encoding
+  {- Arity: 1, Strictness: <S,1*U>, Inline: (sat-args=0),
+     Unfolding: InlineRule (0, False, False)
+                (\ (x :: Foreign.R.Type.SEXPTYPE) ->
+                 Data.Aeson.Encoding.Builder.encodeToBuilder
+                   (Data.Aeson.Types.Internal.$WString
+                      (Data.Text.pack (Foreign.R.Type.$fLiftSEXPTYPE_$cshow x))))
+                  `cast`
+                (<Foreign.R.Type.SEXPTYPE>_R
+                 ->_R Sym (Data.Aeson.Encoding.Internal.N:Encoding'[0]
+                               <Data.Aeson.Types.Internal.Value>_P)) -}
+01766afa8f4c4dcf8928e1775f0bbea5
+  $fToJSONSEXPTYPE_$ctoEncodingList ::
+    [Foreign.R.Type.SEXPTYPE] -> Data.Aeson.Encoding.Internal.Encoding
+  {- Arity: 1, Inline: (sat-args=0),
+     Unfolding: InlineRule (0, False, False)
+                (Data.Aeson.Encoding.Internal.list
+                   @ Foreign.R.Type.SEXPTYPE
+                   Language.R.Debug.$fToJSONSEXPTYPE_$ctoEncoding) -}
+1a25f14c5f3177436353532796dff16b
+  $fToJSONSEXPTYPE_$ctoJSON ::
+    Foreign.R.Type.SEXPTYPE -> Data.Aeson.Types.Internal.Value
+  {- Arity: 1, Strictness: <S,1*U>m3, Inline: [0],
+     Unfolding: InlineRule (1, True, False)
+                (\ (w :: Foreign.R.Type.SEXPTYPE) ->
+                 case Language.R.Debug.$w$ctoJSON3 w of ww { Unit# ww1 ->
+                 Data.Aeson.Types.Internal.String ww1 }) -}
+249cb0893570c473f3f2e8c24290a81f
+  $fToJSONSEXPTYPE_$ctoJSONList ::
+    [Foreign.R.Type.SEXPTYPE] -> Data.Aeson.Types.Internal.Value
+  {- Arity: 1, Strictness: <S,1*U>m2, Inline: (sat-args=0),
+     Unfolding: InlineRule (0, False, False)
+                (\ (x :: [Foreign.R.Type.SEXPTYPE]) ->
+                 Data.Aeson.Types.Internal.$WArray
+                   (Data.Vector.Generic.new
+                      @ Data.Vector.Vector
+                      @ Data.Aeson.Types.Internal.Value
+                      (Data.Vector.$fVectorVectora @ Data.Aeson.Types.Internal.Value)
+                      (Data.Vector.Generic.New.unstream
+                         @ Data.Vector.Vector
+                         @ Data.Aeson.Types.Internal.Value
+                         (Data.Vector.$fVectorVectora @ Data.Aeson.Types.Internal.Value)
+                         (Data.Vector.Fusion.Bundle.Monadic.unsafeFromList
+                            @ Data.Vector.Fusion.Util.Id
+                            @ Data.Aeson.Types.Internal.Value
+                            @ Data.Vector.Vector
+                            Data.Vector.Fusion.Util.$fMonadId
+                            Data.Vector.Fusion.Bundle.Size.Unknown
+                            (GHC.Base.build
+                               @ Data.Aeson.Types.Internal.Value
+                               (\ @ b1
+                                  (c :: Data.Aeson.Types.Internal.Value -> b1 -> b1)[OneShot]
+                                  (n1 :: b1)[OneShot] ->
+                                GHC.Base.foldr
+                                  @ Foreign.R.Type.SEXPTYPE
+                                  @ b1
+                                  (GHC.Base.mapFB
+                                     @ Data.Aeson.Types.Internal.Value
+                                     @ b1
+                                     @ Foreign.R.Type.SEXPTYPE
+                                     c
+                                     Language.R.Debug.$fToJSONSEXPTYPE_$ctoJSON)
+                                  n1
+                                  x)))))) -}
+c9502bab415811650a329e2313e8df50
+  $fToJSONSEXP_$ctoEncoding ::
+    Foreign.R.Internal.SEXP s a
+    -> Data.Aeson.Encoding.Internal.Encoding
+  {- Arity: 1, Strictness: <S(S),1*U(U)>, Inline: (sat-args=0),
+     Unfolding: InlineRule (0, False, False)
+                (\ @ s
+                   @ a :: Foreign.R.Type.SEXPTYPE
+                   (x :: Foreign.R.Internal.SEXP s a) ->
+                 Data.Aeson.Encoding.Builder.encodeToBuilder
+                   (Language.R.Debug.$fToJSONSEXP_$ctoJSON @ s @ a x))
+                  `cast`
+                (forall (s :: <*>_N) (a :: <Foreign.R.Type.SEXPTYPE>_N).
+                 <Foreign.R.Internal.SEXP s a>_R
+                 ->_R Sym (Data.Aeson.Encoding.Internal.N:Encoding'[0]
+                               <Data.Aeson.Types.Internal.Value>_P)) -}
+92b6e8086e74ee782b58dcffdb744fbf
+  $fToJSONSEXP_$ctoEncodingList ::
+    [Foreign.R.Internal.SEXP s a]
+    -> Data.Aeson.Encoding.Internal.Encoding
+  {- Arity: 1, Inline: (sat-args=0),
+     Unfolding: InlineRule (0, False, False)
+                (\ @ s @ a :: Foreign.R.Type.SEXPTYPE ->
+                 Data.Aeson.Encoding.Internal.list
+                   @ (Foreign.R.Internal.SEXP s a)
+                   (Language.R.Debug.$fToJSONSEXP_$ctoEncoding @ s @ a)) -}
+1d7ce4c666b0bcd2faa217c0950adbe8
+  $fToJSONSEXP_$ctoJSON ::
+    Foreign.R.Internal.SEXP s a -> Data.Aeson.Types.Internal.Value
+  {- Arity: 1, Strictness: <S(S),1*U(U)>, Inline: [0],
+     Unfolding: InlineRule (1, True, False)
+                (\ @ s
+                   @ a :: Foreign.R.Type.SEXPTYPE
+                   (w :: Foreign.R.Internal.SEXP s a) ->
+                 case w `cast`
+                      (Foreign.R.Internal.N:SEXP[0]
+                           <s>_P <a>_P) of ww { GHC.Ptr.Ptr ww1 ->
+                 Language.R.Debug.$w$ctoJSON1 @ s @ a ww1 }) -}
+4ff5a5f746057b234b8a603707497207
+  $fToJSONSEXP_$ctoJSONList ::
+    [Foreign.R.Internal.SEXP s a] -> Data.Aeson.Types.Internal.Value
+  {- Arity: 1, Strictness: <S,1*U>m2, Inline: (sat-args=0),
+     Unfolding: InlineRule (0, False, False)
+                (\ @ s
+                   @ a :: Foreign.R.Type.SEXPTYPE
+                   (x :: [Foreign.R.Internal.SEXP s a]) ->
+                 Data.Aeson.Types.Internal.$WArray
+                   (Data.Vector.Generic.new
+                      @ Data.Vector.Vector
+                      @ Data.Aeson.Types.Internal.Value
+                      (Data.Vector.$fVectorVectora @ Data.Aeson.Types.Internal.Value)
+                      (Data.Vector.Generic.New.unstream
+                         @ Data.Vector.Vector
+                         @ Data.Aeson.Types.Internal.Value
+                         (Data.Vector.$fVectorVectora @ Data.Aeson.Types.Internal.Value)
+                         (Data.Vector.Fusion.Bundle.Monadic.unsafeFromList
+                            @ Data.Vector.Fusion.Util.Id
+                            @ Data.Aeson.Types.Internal.Value
+                            @ Data.Vector.Vector
+                            Data.Vector.Fusion.Util.$fMonadId
+                            Data.Vector.Fusion.Bundle.Size.Unknown
+                            (GHC.Base.build
+                               @ Data.Aeson.Types.Internal.Value
+                               (\ @ b1
+                                  (c :: Data.Aeson.Types.Internal.Value -> b1 -> b1)[OneShot]
+                                  (n1 :: b1)[OneShot] ->
+                                GHC.Base.foldr
+                                  @ (Foreign.R.Internal.SEXP s a)
+                                  @ b1
+                                  (GHC.Base.mapFB
+                                     @ Data.Aeson.Types.Internal.Value
+                                     @ b1
+                                     @ (Foreign.R.Internal.SEXP s a)
+                                     c
+                                     (Language.R.Debug.$fToJSONSEXP_$ctoJSON @ s @ a))
+                                  n1
+                                  x)))))) -}
+a3c0e27637f621e4194508e5f393940b
+  $fToJSONSomeSEXP ::
+    Data.Aeson.Types.ToJSON.ToJSON (Foreign.R.Internal.SomeSEXP s)
+  DFunId
+  {- Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun: @ s.
+                  @ (Foreign.R.Internal.SomeSEXP s)
+                  (Language.R.Debug.$fToJSONSomeSEXP_$ctoJSON @ s)
+                  (Language.R.Debug.$fToJSONSomeSEXP_$ctoEncoding @ s)
+                  (Language.R.Debug.$fToJSONSomeSEXP_$ctoJSONList @ s)
+                  (Language.R.Debug.$fToJSONSomeSEXP_$ctoEncodingList @ s) -}
+1412b9d51de66cf20452aee0baee45dd
+  $fToJSONSomeSEXP_$ctoEncoding ::
+    Foreign.R.Internal.SomeSEXP s
+    -> Data.Aeson.Encoding.Internal.Encoding
+  {- Arity: 1, Strictness: <S,1*U>, Inline: (sat-args=0),
+     Unfolding: InlineRule (0, False, False)
+                (\ @ s (x :: Foreign.R.Internal.SomeSEXP s) ->
+                 case x of wild { Foreign.R.Internal.SomeSEXP a dt ->
+                 Data.Aeson.Encoding.Builder.encodeToBuilder
+                   (Language.R.Debug.$fToJSONSEXP_$ctoJSON
+                      @ s
+                      @ a
+                      (GHC.Ptr.Ptr @ (Language.R.HExp.HExp s a) dt)
+                        `cast`
+                      (Sym (Foreign.R.Internal.N:SEXP[0] <s>_P <a>_P))) })
+                  `cast`
+                (forall (s :: <*>_N).
+                 <Foreign.R.Internal.SomeSEXP s>_R
+                 ->_R Sym (Data.Aeson.Encoding.Internal.N:Encoding'[0]
+                               <Data.Aeson.Types.Internal.Value>_P)) -}
+eb81a9e97aea5088c87cc5824f2eb745
+  $fToJSONSomeSEXP_$ctoEncodingList ::
+    [Foreign.R.Internal.SomeSEXP s]
+    -> Data.Aeson.Encoding.Internal.Encoding
+  {- Arity: 1, Inline: (sat-args=0),
+     Unfolding: InlineRule (0, False, False)
+                (\ @ s ->
+                 Data.Aeson.Encoding.Internal.list
+                   @ (Foreign.R.Internal.SomeSEXP s)
+                   (Language.R.Debug.$fToJSONSomeSEXP_$ctoEncoding @ s)) -}
+68164a043cb3dec266454a7c61738d16
+  $fToJSONSomeSEXP_$ctoJSON ::
+    Foreign.R.Internal.SomeSEXP s -> Data.Aeson.Types.Internal.Value
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ @ s (ds :: Foreign.R.Internal.SomeSEXP s) ->
+                 case ds of wild { Foreign.R.Internal.SomeSEXP a dt ->
+                 Language.R.Debug.$fToJSONSEXP_$ctoJSON
+                   @ s
+                   @ a
+                   (GHC.Ptr.Ptr @ (Language.R.HExp.HExp s a) dt)
+                     `cast`
+                   (Sym (Foreign.R.Internal.N:SEXP[0] <s>_P <a>_P)) }) -}
+ff0ed96b1588768e431272629fc631bc
+  $fToJSONSomeSEXP_$ctoJSONList ::
+    [Foreign.R.Internal.SomeSEXP s] -> Data.Aeson.Types.Internal.Value
+  {- Arity: 1, Strictness: <S,1*U>m2, Inline: (sat-args=0),
+     Unfolding: InlineRule (0, False, False)
+                (\ @ s (x :: [Foreign.R.Internal.SomeSEXP s]) ->
+                 Data.Aeson.Types.Internal.$WArray
+                   (Data.Vector.Generic.new
+                      @ Data.Vector.Vector
+                      @ Data.Aeson.Types.Internal.Value
+                      (Data.Vector.$fVectorVectora @ Data.Aeson.Types.Internal.Value)
+                      (Data.Vector.Generic.New.unstream
+                         @ Data.Vector.Vector
+                         @ Data.Aeson.Types.Internal.Value
+                         (Data.Vector.$fVectorVectora @ Data.Aeson.Types.Internal.Value)
+                         (Data.Vector.Fusion.Bundle.Monadic.unsafeFromList
+                            @ Data.Vector.Fusion.Util.Id
+                            @ Data.Aeson.Types.Internal.Value
+                            @ Data.Vector.Vector
+                            Data.Vector.Fusion.Util.$fMonadId
+                            Data.Vector.Fusion.Bundle.Size.Unknown
+                            (GHC.Base.build
+                               @ Data.Aeson.Types.Internal.Value
+                               (\ @ b1
+                                  (c :: Data.Aeson.Types.Internal.Value -> b1 -> b1)[OneShot]
+                                  (n1 :: b1)[OneShot] ->
+                                GHC.Base.foldr
+                                  @ (Foreign.R.Internal.SomeSEXP s)
+                                  @ b1
+                                  (GHC.Base.mapFB
+                                     @ Data.Aeson.Types.Internal.Value
+                                     @ b1
+                                     @ (Foreign.R.Internal.SomeSEXP s)
+                                     c
+                                     (Language.R.Debug.$fToJSONSomeSEXP_$ctoJSON @ s))
+                                  n1
+                                  x)))))) -}
+6e32e9acc893c5b570e37609abffba78
+  $s$fStorableComplex ::
+    Foreign.Storable.Storable (Data.Complex.Complex GHC.Types.Double)
+  {- HasNoCafRefs, Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ (Data.Complex.Complex GHC.Types.Double)
+                  (\ (a1 :: Data.Complex.Complex GHC.Types.Double) ->
+                   GHC.Types.I# 16#)
+                  (\ (a1 :: Data.Complex.Complex GHC.Types.Double) ->
+                   Foreign.Storable.$fStorableDouble5)
+                  (\ (ptr :: GHC.Ptr.Ptr (Data.Complex.Complex GHC.Types.Double))
+                     (off :: GHC.Types.Int)
+                     (eta :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                   case ptr of wild { GHC.Ptr.Ptr addr ->
+                   case off of wild1 { GHC.Types.I# x ->
+                   let {
+                     a :: GHC.Prim.Addr# = GHC.Prim.plusAddr# addr (GHC.Prim.*# x 16#)
+                   } in
+                   case GHC.Prim.readDoubleOffAddr#
+                          @ GHC.Prim.RealWorld
+                          a
+                          0#
+                          eta of ds2 { (#,#) ipv ipv1 ->
+                   case GHC.Prim.readDoubleOffAddr#
+                          @ GHC.Prim.RealWorld
+                          a
+                          1#
+                          ipv of ds1 { (#,#) ipv2 ipv3 ->
+                   (# ipv2,
+                      Data.Complex.$W:+
+                        @ GHC.Types.Double
+                        (GHC.Types.D# ipv1)
+                        (GHC.Types.D# ipv3) #) } } } })
+                    `cast`
+                  (<GHC.Ptr.Ptr (Data.Complex.Complex GHC.Types.Double)>_R
+                   ->_R <GHC.Types.Int>_R
+                   ->_R Sym (GHC.Types.N:IO[0]
+                                 <Data.Complex.Complex GHC.Types.Double>_R))
+                  (Data.Complex.$fStorableComplex6
+                     @ GHC.Types.Double
+                     Foreign.Storable.$fStorableDouble)
+                    `cast`
+                  (<GHC.Ptr.Ptr (Data.Complex.Complex GHC.Types.Double)>_R
+                   ->_R <GHC.Types.Int>_R
+                   ->_R <Data.Complex.Complex GHC.Types.Double>_R
+                   ->_R Sym (GHC.Types.N:IO[0] <()>_R))
+                  (\ @ b
+                     (ptr :: GHC.Ptr.Ptr b)
+                     (off :: GHC.Types.Int)
+                     (eta :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                   case ptr of wild { GHC.Ptr.Ptr addr ->
+                   case off of wild1 { GHC.Types.I# d ->
+                   let {
+                     a :: GHC.Prim.Addr# = GHC.Prim.plusAddr# addr d
+                   } in
+                   case GHC.Prim.readDoubleOffAddr#
+                          @ GHC.Prim.RealWorld
+                          a
+                          0#
+                          eta of ds2 { (#,#) ipv ipv1 ->
+                   case GHC.Prim.readDoubleOffAddr#
+                          @ GHC.Prim.RealWorld
+                          a
+                          1#
+                          ipv of ds1 { (#,#) ipv2 ipv3 ->
+                   (# ipv2,
+                      Data.Complex.$W:+
+                        @ GHC.Types.Double
+                        (GHC.Types.D# ipv1)
+                        (GHC.Types.D# ipv3) #) } } } })
+                    `cast`
+                  (forall (b :: <*>_N).
+                   <GHC.Ptr.Ptr b>_R
+                   ->_R <GHC.Types.Int>_R
+                   ->_R Sym (GHC.Types.N:IO[0]
+                                 <Data.Complex.Complex GHC.Types.Double>_R))
+                  (\ @ b
+                     (ptr :: GHC.Ptr.Ptr b)
+                     (off :: GHC.Types.Int)
+                     (eta :: Data.Complex.Complex GHC.Types.Double)
+                     (eta1 :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                   Data.Complex.$fStorableComplex1
+                     @ GHC.Types.Double
+                     Foreign.Storable.$fStorableDouble
+                     (case ptr of wild { GHC.Ptr.Ptr addr ->
+                      case off of wild1 { GHC.Types.I# d ->
+                      GHC.Ptr.Ptr
+                        @ (Data.Complex.Complex GHC.Types.Double)
+                        (GHC.Prim.plusAddr# addr d) } })
+                     eta
+                     eta1)
+                    `cast`
+                  (forall (b :: <*>_N).
+                   <GHC.Ptr.Ptr b>_R
+                   ->_R <GHC.Types.Int>_R
+                   ->_R <Data.Complex.Complex GHC.Types.Double>_R
+                   ->_R Sym (GHC.Types.N:IO[0] <()>_R))
+                  (\ (p :: GHC.Ptr.Ptr (Data.Complex.Complex GHC.Types.Double))
+                     (s :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                   case p `cast`
+                        (GHC.Ptr.Ptr
+                           <Data.Complex.Complex
+                              GHC.Types.Double, GHC.Types.Double>)_R of wild { GHC.Ptr.Ptr a ->
+                   case GHC.Prim.readDoubleOffAddr#
+                          @ GHC.Prim.RealWorld
+                          a
+                          0#
+                          s of ds2 { (#,#) ipv ipv1 ->
+                   case GHC.Prim.readDoubleOffAddr#
+                          @ GHC.Prim.RealWorld
+                          a
+                          1#
+                          ipv of ds1 { (#,#) ipv2 ipv3 ->
+                   (# ipv2,
+                      Data.Complex.$W:+
+                        @ GHC.Types.Double
+                        (GHC.Types.D# ipv1)
+                        (GHC.Types.D# ipv3) #) } } })
+                    `cast`
+                  (<GHC.Ptr.Ptr (Data.Complex.Complex GHC.Types.Double)>_R
+                   ->_R Sym (GHC.Types.N:IO[0]
+                                 <Data.Complex.Complex GHC.Types.Double>_R))
+                  (Data.Complex.$fStorableComplex1
+                     @ GHC.Types.Double
+                     Foreign.Storable.$fStorableDouble)
+                    `cast`
+                  (<GHC.Ptr.Ptr (Data.Complex.Complex GHC.Types.Double)>_R
+                   ->_R <Data.Complex.Complex GHC.Types.Double>_R
+                   ->_R Sym (GHC.Types.N:IO[0] <()>_R)) -}
+e65a0d93bebddf45a1cef36c1000c079
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module
+                   Language.R.Debug.$trModule3
+                   Language.R.Debug.$trModule1) -}
+269f3b23f61bbef363b511e2d655ecbc
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Language.R.Debug.$trModule2) -}
+6037cb972a4cdb6b9b19334ff7b7fb98
+  $trModule2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Language.R.Debug"#) -}
+70cfc49ec6aa8760598236e5b6824970
+  $trModule3 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Language.R.Debug.$trModule4) -}
+6883d5aa1be3bd454dfa5fde0a0b19cd
+  $trModule4 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("inline-r-0.9.0.2-CmRL2Hikuao7dNZScoizZz"#) -}
+bcc10c7d9d89ead2a4276eaf4e0df8ab
+  $w$ctoJSON ::
+    Data.Aeson.Types.ToJSON.ToJSON a =>
+    a -> a -> (# Data.Aeson.Types.Internal.Object #)
+  {- Arity: 3, Strictness: <S(C(S)LLL),U(C(U),A,A,A)><L,U><L,U>,
+     Inline: [0],
+     Unfolding: (\ @ a
+                   (w :: Data.Aeson.Types.ToJSON.ToJSON a)
+                   (ww :: a)
+                   (ww1 :: a) ->
+                 case Data.Aeson.Types.ToJSON.toJSON @ a w ww of v2 { DEFAULT ->
+                 case Language.R.Debug.$fToJSONComplex3 of ww2 { Data.Text.Internal.Text ww3 ww4 ww5 ->
+                 case Data.Aeson.Types.Internal.$w$sunsafeInsert
+                        @ Data.Aeson.Types.Internal.Value
+                        ww3
+                        ww4
+                        ww5
+                        v2
+                        (Data.HashMap.Base.Empty
+                           @ Data.Text.Internal.Text
+                           @ Data.Aeson.Types.Internal.Value) of z23 { DEFAULT ->
+                 case Data.Aeson.Types.ToJSON.toJSON @ a w ww1 of v1 { DEFAULT ->
+                 case Language.R.Debug.$fToJSONComplex1 of ww6 { Data.Text.Internal.Text ww7 ww8 ww9 ->
+                 case Data.Aeson.Types.Internal.$w$sunsafeInsert
+                        @ Data.Aeson.Types.Internal.Value
+                        ww7
+                        ww8
+                        ww9
+                        v1
+                        z23 of dt { DEFAULT ->
+                 (# dt #) } } } } } }) -}
+5e8e44bdb073c22cbc1152ab08a711bb
+  $w$ctoJSON1 :: GHC.Prim.Addr# -> Data.Aeson.Types.Internal.Value
+  {- Arity: 1, Strictness: <S,U>, Inline: [0] -}
+25dd6ce5188c963bdef2ac23347b8a72
+  $w$ctoJSON2 ::
+    Foreign.R.Type.SEXPTYPE
+    -> GHC.Types.Bool
+    -> GHC.Types.Int
+    -> GHC.Types.Int
+    -> GHC.Types.Bool
+    -> GHC.Types.Bool
+    -> GHC.Types.Bool
+    -> GHC.Types.Bool
+    -> GHC.Types.Int
+    -> GHC.Types.Int
+    -> (# Data.Aeson.Types.Internal.Object #)
+  {- Arity: 10,
+     Strictness: <S,1*U><L,1*U><L,1*U(U)><L,1*U(U)><L,1*U><L,1*U><L,1*U><L,1*U><L,1*U(U)><L,1*U(U)>,
+     Inline: [0] -}
+cf4042775143e6626b21a42e43cc542f
+  $w$ctoJSON3 ::
+    Foreign.R.Type.SEXPTYPE -> (# Data.Text.Internal.Text #)
+  {- Arity: 1, Strictness: <S,1*U>, Inline: [0],
+     Unfolding: (\ (w :: Foreign.R.Type.SEXPTYPE) ->
+                 case Foreign.R.Type.$fLiftSEXPTYPE_$cshow w of dt { DEFAULT ->
+                 case GHC.Magic.runRW#
+                        @ ('GHC.Types.TupleRep
+                             '['GHC.Types.TupleRep '[], 'GHC.Types.LiftedRep])
+                        @ (# GHC.Prim.State# GHC.Prim.RealWorld, Data.Text.Internal.Text #)
+                        (\ (s1 :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                         case GHC.Prim.newByteArray#
+                                @ GHC.Prim.RealWorld
+                                10#
+                                s1 of ds1 { (#,#) ipv ipv1 ->
+                         Language.R.Debug.$wouter
+                           ipv1
+                           4#
+                           dt
+                           0#
+                           ipv }) of ds1 { (#,#) ipv ipv1 ->
+                 case ipv1 of dt1 { Data.Text.Internal.Text ipv2 ipv3 ipv4 ->
+                 (# dt1 #) } } }) -}
+fa3c1259b8cb08ebab73f32c3648b9aa
+  $w$s$ctoJSON ::
+    GHC.Prim.Double#
+    -> GHC.Prim.Double# -> Data.Aeson.Types.Internal.Value
+  {- Arity: 2, Strictness: <S,U><L,U>, Inline: [0] -}
+3b6b778cadb2e630b098994e0767b328
+  $wouter ::
+    GHC.Prim.MutableByteArray# GHC.Prim.RealWorld
+    -> GHC.Prim.Int#
+    -> [GHC.Types.Char]
+    -> GHC.Prim.Int#
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+          Data.Text.Internal.Text #)
+  {- Arity: 5, Strictness: <L,U><S,U><S,1*U><S,U><S,U>,
+     Inline: [0] -}
+81384320080b2a6b3e0220d596b0a209
+  inspect :: Foreign.R.Internal.SEXP s a -> GHC.Base.String
+  {- Arity: 1, Strictness: <L,1*U(U)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ @ s
+                   @ a :: Foreign.R.Type.SEXPTYPE
+                   (x :: Foreign.R.Internal.SEXP s a) ->
+                 Data.ByteString.Lazy.Internal.unpackChars
+                   (Data.ByteString.Builder.toLazyByteString
+                      (Data.Aeson.Encoding.Builder.encodeToBuilder
+                         (Language.R.Debug.$fToJSONSEXP_$ctoJSON @ s @ a x)))) -}
+instance [orphan] Data.Aeson.Types.ToJSON.ToJSON [Data.Complex.Complex]
+  = Language.R.Debug.$fToJSONComplex
+instance [orphan] Data.Aeson.Types.ToJSON.ToJSON [Foreign.R.Internal.SEXP]
+  = Language.R.Debug.$fToJSONSEXP
+instance [orphan] Data.Aeson.Types.ToJSON.ToJSON [Foreign.R.Internal.SEXPInfo]
+  = Language.R.Debug.$fToJSONSEXPInfo
+instance [orphan] Data.Aeson.Types.ToJSON.ToJSON [Foreign.R.Type.SEXPTYPE]
+  = Language.R.Debug.$fToJSONSEXPTYPE
+instance [orphan] Data.Aeson.Types.ToJSON.ToJSON [Foreign.R.Internal.SomeSEXP]
+  = Language.R.Debug.$fToJSONSomeSEXP
+"SPEC $ctoJSON @ Double" forall ($dToJSON :: Data.Aeson.Types.ToJSON.ToJSON
+                                               GHC.Types.Double)
+  Language.R.Debug.$fToJSONComplex_$ctoJSON @ GHC.Types.Double
+                                            $dToJSON
+  = Language.R.Debug.$fToJSONComplex_$s$ctoJSON
+"SPEC $fToJSONComplex @ Double" forall ($dToJSON :: Data.Aeson.Types.ToJSON.ToJSON
+                                                      GHC.Types.Double)
+  Language.R.Debug.$fToJSONComplex @ GHC.Types.Double $dToJSON
+  = Language.R.Debug.$fToJSONComplex_$s$fToJSONComplex
+"SPEC/Language.R.Debug $fStorableComplex @ Double" [orphan] forall (v :: Foreign.Storable.Storable
+                                                                           GHC.Types.Double)
+  Data.Complex.$fStorableComplex @ GHC.Types.Double v
+  = Language.R.Debug.$s$fStorableComplex
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: none
+require own pkg trusted: False
+

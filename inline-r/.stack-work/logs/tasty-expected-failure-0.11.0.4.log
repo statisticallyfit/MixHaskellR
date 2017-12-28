@@ -1,0 +1,6 @@
+Configuring tasty-expected-failure-0.11.0.4...
+Preprocessing library for tasty-expected-failure-0.11.0.4..
+Building library for tasty-expected-failure-0.11.0.4..
+[1 of 1] Compiling Test.Tasty.ExpectedFailure ( Test/Tasty/ExpectedFailure.hs, .stack-work/dist/x86_64-linux/Cabal-2.0.1.0/build/Test/Tasty/ExpectedFailure.o )
+Installing library in /datascience/bin/stack/snapshots/x86_64-linux/lts-10.1/8.2.2/lib/x86_64-linux-ghc-8.2.2/tasty-expected-failure-0.11.0.4-H3yHSGfAgCDIWelBdtglSH
+Registering library for tasty-expected-failure-0.11.0.4..

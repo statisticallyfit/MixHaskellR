@@ -1,0 +1,249 @@
+
+==================== FINAL INTERFACE ====================
+2017-12-28 08:02:24.017985 UTC
+
+interface inline-r-0.9.0.2-GXEXrsxC4K8OTVxhqWwxs:Control.Monad.R.Internal 8002
+  interface hash: 053cba8c07aeefe7a0e35d1dc2408d03
+  ABI hash: e86ff55415b5cf4a4b45773ec8435141
+  export-list hash: 7d4cac02ee004d8eaf6eeb6af347c8eb
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: da0b08bdf5466b2605d3b02a9869c7a1
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Control.Monad.R.Internal.withAcquire
+  Control.Monad.R.Internal.AcquireIO{Control.Monad.R.Internal.AcquireIO}
+module dependencies: Control.Memory.Region Control.Monad.R.Class
+                     Foreign.R Foreign.R.Constraints Foreign.R.Internal Foreign.R.Type
+                     Internal.Error Language.R.HExp [boot]
+package dependencies: array-0.5.1.1@array-0.5.1.1 base-4.9.1.0
+                      binary-0.8.3.0@binary-0.8.3.0
+                      bytestring-0.10.8.1@bytestring-0.10.8.1
+                      containers-0.5.7.1@containers-0.5.7.1
+                      deepseq-1.4.2.0@deepseq-1.4.2.0
+                      exceptions-0.8.3@exceptions-0.8.3-ADEDRATtUrMK1JW4zMQ9U
+                      ghc-boot-th-8.0.2@ghc-boot-th-8.0.2 ghc-prim-0.5.0.0
+                      integer-gmp-1.0.0.1 mtl-2.2.1@mtl-2.2.1-BLKBelFsPB3BoFeSWSOYj6
+                      pretty-1.1.3.3@pretty-1.1.3.3
+                      primitive-0.6.2.0@primitive-0.6.2.0-4578caNkWQ54Gt1mxLF2Yh
+                      reflection-2.1.2@reflection-2.1.2-Bem12O1xFGSHr4C2Hyu1c4
+                      safe-0.3.15@safe-0.3.15-2Yd45VWFfdcKqKyispOifY
+                      singletons-2.2@singletons-2.2-F6aalBFPo1F9ebvy1Wkuj3
+                      stm-2.4.4.1@stm-2.4.4.1-JQn4hNPyYjP5m9AcbI88Ve
+                      syb-0.7@syb-0.7-4OKdCpwGutyB1rNRmoa0ya template-haskell-2.11.1.0
+                      text-1.2.2.2@text-1.2.2.2-9UQZjEJZQFSGMffj1Z5g00
+                      th-desugar-1.6@th-desugar-1.6-4xe2xTMQQiAGUPVUAkAZhp
+                      th-expand-syns-0.4.3.0@th-expand-syns-0.4.3.0-A2GRp9XTxmBCMfV7DnYdn0
+                      th-lift-0.7.7@th-lift-0.7.7-JWI9Gh7wB0MC9Q5wqv5aoI
+                      th-lift-instances-0.1.11@th-lift-instances-0.1.11-A7sWuFC2KLsFTBmLagoRSX
+                      th-orphans-0.13.4@th-orphans-0.13.4-IGsCpZ5u2Ab1MvGd5biF2z
+                      th-reify-many-0.1.8@th-reify-many-0.1.8-5ZNbfXxMl3y5DMJznTzmN9
+                      transformers-0.5.2.0@transformers-0.5.2.0
+                      vector-0.12.0.1@vector-0.12.0.1-692PQMDMB6pIQ1uGwefDcQ
+orphans: base-4.9.1.0:GHC.Base base-4.9.1.0:GHC.Float
+         binary-0.8.3.0@binary-0.8.3.0:Data.Binary.Generic
+         bytestring-0.10.8.1@bytestring-0.10.8.1:Data.ByteString.Builder
+         reflection-2.1.2@reflection-2.1.2-Bem12O1xFGSHr4C2Hyu1c4:Data.Reflection
+         singletons-2.2@singletons-2.2-F6aalBFPo1F9ebvy1Wkuj3:Data.Singletons.Decide
+         singletons-2.2@singletons-2.2-F6aalBFPo1F9ebvy1Wkuj3:Data.Singletons.Prelude.Instances
+         singletons-2.2@singletons-2.2-F6aalBFPo1F9ebvy1Wkuj3:Data.Singletons.TypeLits
+         singletons-2.2@singletons-2.2-F6aalBFPo1F9ebvy1Wkuj3:Data.Singletons.TypeLits.Internal
+         stm-2.4.4.1@stm-2.4.4.1-JQn4hNPyYjP5m9AcbI88Ve:Control.Monad.STM
+         syb-0.7@syb-0.7-4OKdCpwGutyB1rNRmoa0ya:Data.Generics.Instances
+         text-1.2.2.2@text-1.2.2.2-9UQZjEJZQFSGMffj1Z5g00:Data.Text
+         text-1.2.2.2@text-1.2.2.2-9UQZjEJZQFSGMffj1Z5g00:Data.Text.Lazy
+         text-1.2.2.2@text-1.2.2.2-9UQZjEJZQFSGMffj1Z5g00:Data.Text.Show
+         th-lift-0.7.7@th-lift-0.7.7-JWI9Gh7wB0MC9Q5wqv5aoI:Language.Haskell.TH.Lift
+         th-lift-instances-0.1.11@th-lift-instances-0.1.11-A7sWuFC2KLsFTBmLagoRSX:Instances.TH.Lift
+         th-orphans-0.13.4@th-orphans-0.13.4-IGsCpZ5u2Ab1MvGd5biF2z:Language.Haskell.TH.Instances
+         transformers-0.5.2.0@transformers-0.5.2.0:Control.Monad.Trans.Error
+         vector-0.12.0.1@vector-0.12.0.1-692PQMDMB6pIQ1uGwefDcQ:Data.Vector.Fusion.Bundle
+         vector-0.12.0.1@vector-0.12.0.1-692PQMDMB6pIQ1uGwefDcQ:Data.Vector.Unboxed
+family instance modules: base-4.9.1.0:Control.Applicative
+                         base-4.9.1.0:Data.Complex base-4.9.1.0:Data.Either
+                         base-4.9.1.0:Data.Functor.Const base-4.9.1.0:Data.Functor.Identity
+                         base-4.9.1.0:Data.List.NonEmpty base-4.9.1.0:Data.Monoid
+                         base-4.9.1.0:Data.Semigroup base-4.9.1.0:Data.Type.Equality
+                         base-4.9.1.0:Data.Version base-4.9.1.0:Data.Void
+                         base-4.9.1.0:GHC.Exts base-4.9.1.0:GHC.Generics
+                         base-4.9.1.0:GHC.IO.Exception base-4.9.1.0:GHC.TypeLits
+                         containers-0.5.7.1@containers-0.5.7.1:Data.IntMap.Base
+                         containers-0.5.7.1@containers-0.5.7.1:Data.IntSet.Base
+                         containers-0.5.7.1@containers-0.5.7.1:Data.Map.Base
+                         containers-0.5.7.1@containers-0.5.7.1:Data.Sequence
+                         containers-0.5.7.1@containers-0.5.7.1:Data.Set.Base
+                         ghc-boot-th-8.0.2@ghc-boot-th-8.0.2:GHC.LanguageExtensions.Type
+                         inline-r-0.9.0.2-GXEXrsxC4K8OTVxhqWwxs:Control.Memory.Region
+                         inline-r-0.9.0.2-GXEXrsxC4K8OTVxhqWwxs:Foreign.R.Type
+                         pretty-1.1.3.3@pretty-1.1.3.3:Text.PrettyPrint.Annotated.HughesPJ
+                         pretty-1.1.3.3@pretty-1.1.3.3:Text.PrettyPrint.HughesPJ
+                         primitive-0.6.2.0@primitive-0.6.2.0-4578caNkWQ54Gt1mxLF2Yh:Control.Monad.Primitive
+                         primitive-0.6.2.0@primitive-0.6.2.0-4578caNkWQ54Gt1mxLF2Yh:Data.Primitive.Array
+                         singletons-2.2@singletons-2.2-F6aalBFPo1F9ebvy1Wkuj3:Data.Singletons
+                         singletons-2.2@singletons-2.2-F6aalBFPo1F9ebvy1Wkuj3:Data.Singletons.Prelude.Bool
+                         singletons-2.2@singletons-2.2-F6aalBFPo1F9ebvy1Wkuj3:Data.Singletons.Prelude.Eq
+                         singletons-2.2@singletons-2.2-F6aalBFPo1F9ebvy1Wkuj3:Data.Singletons.Prelude.Instances
+                         singletons-2.2@singletons-2.2-F6aalBFPo1F9ebvy1Wkuj3:Data.Singletons.Prelude.Num
+                         singletons-2.2@singletons-2.2-F6aalBFPo1F9ebvy1Wkuj3:Data.Singletons.Prelude.Ord
+                         singletons-2.2@singletons-2.2-F6aalBFPo1F9ebvy1Wkuj3:Data.Singletons.Syntax
+                         singletons-2.2@singletons-2.2-F6aalBFPo1F9ebvy1Wkuj3:Data.Singletons.TypeLits.Internal
+                         template-haskell-2.11.1.0:Language.Haskell.TH.Syntax
+                         text-1.2.2.2@text-1.2.2.2-9UQZjEJZQFSGMffj1Z5g00:Data.Text
+                         text-1.2.2.2@text-1.2.2.2-9UQZjEJZQFSGMffj1Z5g00:Data.Text.Lazy
+                         th-desugar-1.6@th-desugar-1.6-4xe2xTMQQiAGUPVUAkAZhp:Language.Haskell.TH.Desugar.Core
+                         vector-0.12.0.1@vector-0.12.0.1-692PQMDMB6pIQ1uGwefDcQ:Data.Vector
+                         vector-0.12.0.1@vector-0.12.0.1-692PQMDMB6pIQ1uGwefDcQ:Data.Vector.Primitive
+                         vector-0.12.0.1@vector-0.12.0.1-692PQMDMB6pIQ1uGwefDcQ:Data.Vector.Storable
+                         vector-0.12.0.1@vector-0.12.0.1-692PQMDMB6pIQ1uGwefDcQ:Data.Vector.Unboxed
+                         vector-0.12.0.1@vector-0.12.0.1-692PQMDMB6pIQ1uGwefDcQ:Data.Vector.Unboxed.Base
+import  -/  base-4.9.1.0:Data.Proxy d7f87a37cf7ec5ca87c59c8d2859031f
+import  -/  base-4.9.1.0:Prelude 22dd289b8469a8fa8dc81cab7b237771
+import  -/  ghc-prim-0.5.0.0:GHC.Types 89f8de4f08018c9177c98d979eae0e45
+import  -/  Control.Memory.Region 308182c83bf046edf073fad284bcd617
+  exports: 0c21e32b92bdaf94d0d4d90814626648
+  V 761191645162463b83c4dd72888da9ec
+import  -/  Control.Monad.R.Class cad819d8a5243541d9a0f1421f7ef4d8
+  exports: 7b258842783caee6f8995be87e582334
+  MonadR 1f397b618ab35a4d9191d2514797ac03
+  Region 9ddc10a1fcce4af410d9af5cec63780b
+  acquire c97740e9eedd70c24248a6eb93268c15
+  getExecContext 1503063814295ac01bde16cbbdbe8120
+  unsafeRunWithExecContext 56e8703577e9985a3dffe3160423cc84
+import  -/  Foreign.R 76af03c75eee17c66f999e9a2952a2da
+  exports: 48f78775472e7fa46d6f356ef53096ba
+import  -/  Foreign.R.Internal 94b91017c41283795b0b9850baa548e1
+  SEXP e854911eaf3995eafd7923a39be3730e
+import  -/  reflection-2.1.2@reflection-2.1.2-Bem12O1xFGSHr4C2Hyu1c4:Data.Reflection e8ed21fc086f07e13656de2c3828f8a9
+7aca19f5d636853a41f162a31f9ca297
+  $tc'AcquireIO :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   17977694420312760832##
+                   13870755689020886549##
+                   Control.Monad.R.Internal.$trModule
+                   Control.Monad.R.Internal.$tc'AcquireIO1) -}
+afaa45ebb2428cd473e008c7a4cd3d8d
+  $tc'AcquireIO1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'AcquireIO"#) -}
+5370d6d7e7847fc9cee8f80a3eaaf36a
+  $tcAcquireIO :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   2190583332287009535##
+                   9535736618201645386##
+                   Control.Monad.R.Internal.$trModule
+                   Control.Monad.R.Internal.$tcAcquireIO1) -}
+e200149119a537c308faff4e4ab6b6b8
+  $tcAcquireIO1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "AcquireIO"#) -}
+6d020633b47d12226f19ce8ec112cab1
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module
+                   Control.Monad.R.Internal.$trModule2
+                   Control.Monad.R.Internal.$trModule1) -}
+8d3423b9e0f2c5c83e2a43cad292d34a
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "Control.Monad.R.Internal"#) -}
+4a02d4684f509f30d6150f77d8ca979f
+  $trModule2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   "inline-r-0.9.0.2-GXEXrsxC4K8OTVxhqWwxs"#) -}
+c39851170d1b482f78433de5d5762977
+  type role AcquireIO phantom
+  newtype AcquireIO s
+    = AcquireIO (forall (ty :: Foreign.R.Type.SEXPTYPE).
+                 Foreign.R.Internal.SEXP Control.Memory.Region.V ty
+                 -> GHC.Types.IO (Foreign.R.Internal.SEXP s ty))
+548792489dd0dbfe817e1fabf293af46
+  withAcquire ::
+    Control.Monad.R.Class.MonadR m =>
+    (forall s.
+     Data.Reflection.Reifies
+       s
+       (Control.Monad.R.Internal.AcquireIO
+          (Control.Monad.R.Class.Region m)) =>
+     Data.Proxy.Proxy s -> m r)
+    -> m r
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <S(LS(S(LC(C(S))LLL)L)LLLLLLL),U(A,1*U(1*U(A,1*C1(C1(U)),A,A,A),A),A,A,A,A,C(C1(U)),1*U,C(C1(U)))><L,C(C1(U))>,
+     Unfolding: (\ @ (m :: * -> *)
+                   @ r
+                   ($dMonadR :: Control.Monad.R.Class.MonadR m)
+                   (eta :: forall s.
+                           Data.Reflection.Reifies
+                             s
+                             (Control.Monad.R.Internal.AcquireIO
+                                (Control.Monad.R.Class.Region m)) =>
+                           Data.Proxy.Proxy s -> m r) ->
+                 GHC.Base.>>=
+                   @ m
+                   (Control.Monad.IO.Class.$p1MonadIO
+                      @ m
+                      (Control.Monad.R.Class.$p2MonadR @ m $dMonadR))
+                   @ (Control.Monad.R.Class.ExecContext m)
+                   @ r
+                   (Control.Monad.R.Class.getExecContext @ m $dMonadR)
+                   (\ (cxt :: Control.Monad.R.Class.ExecContext m) ->
+                    eta
+                      `cast`
+                    (Trans
+                         (Sym (Data.Reflection.N:Magic[0]
+                                   <Control.Monad.R.Internal.AcquireIO
+                                      (Control.Monad.Primitive.PrimState m)>_N
+                                   <m r>_R))
+                         (UnsafeCo representational (Data.Reflection.Magic
+                                                       (Control.Monad.R.Internal.AcquireIO
+                                                          (Control.Monad.Primitive.PrimState m))
+                                                       (m r)) ((GHC.Prim.Any
+                                                                -> Control.Monad.R.Internal.AcquireIO
+                                                                     (Control.Monad.Primitive.PrimState
+                                                                        m))
+                                                               -> Data.Proxy.Proxy GHC.Prim.Any
+                                                               -> m r)))
+                      (\ (ds :: GHC.Prim.Any)
+                         @ (ty :: Foreign.R.Type.SEXPTYPE)
+                         (eta1 :: Foreign.R.Internal.SEXP Control.Memory.Region.V ty) ->
+                       Control.Monad.R.Class.unsafeRunWithExecContext
+                         @ m
+                         $dMonadR
+                         @ (Foreign.R.Internal.SEXP (Control.Monad.R.Class.Region m) ty)
+                         (Control.Monad.R.Class.acquire
+                            @ m
+                            $dMonadR
+                            @ Control.Memory.Region.V
+                            @ ty
+                            Control.Monad.R.Internal.withAcquire1
+                              `cast`
+                            (Sym (Data.Type.Equality.N:~[0]
+                                      <*>_N) <Control.Memory.Region.Void>_N <Control.Memory.Region.Void>_N)
+                            eta1)
+                         cxt)
+                        `cast`
+                      (<GHC.Prim.Any>_R
+                       ->_R Sym (Control.Monad.R.Internal.N:AcquireIO[0]
+                                     <Control.Monad.Primitive.PrimState m>_P))
+                      (Data.Proxy.Proxy @ GHC.Prim.Any @ GHC.Prim.Any))) -}
+859f01e2f7059e6b1aeedb7481ac0604
+  withAcquire1 ::
+    Control.Memory.Region.Void GHC.Types.~~ Control.Memory.Region.Void
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Eq#
+                   @ *
+                   @ *
+                   @ Control.Memory.Region.Void
+                   @ Control.Memory.Region.Void
+                   @~ <Control.Memory.Region.Void>_N) -}
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: none
+require own pkg trusted: False
+

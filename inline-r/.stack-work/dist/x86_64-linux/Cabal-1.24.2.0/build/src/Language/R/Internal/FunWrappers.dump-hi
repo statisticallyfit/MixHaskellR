@@ -1,0 +1,393 @@
+
+==================== FINAL INTERFACE ====================
+2017-12-28 08:02:49.653517 UTC
+
+interface inline-r-0.9.0.2-GXEXrsxC4K8OTVxhqWwxs:Language.R.Internal.FunWrappers 8002
+  interface hash: aa1e024b6117fab20c35238783396a44
+  ABI hash: a5770d0b565c38cfe619495c17b14d24
+  export-list hash: de5f78bb06b33258370d280e6acb9a99
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: c9afcdaaea11c575cf3848aba8e1884f
+  sig of: Nothing
+  used TH splices: True
+  where
+exports:
+  Language.R.Internal.FunWrappers.wrap0
+  Language.R.Internal.FunWrappers.wrap1
+  Language.R.Internal.FunWrappers.wrap10
+  Language.R.Internal.FunWrappers.wrap11
+  Language.R.Internal.FunWrappers.wrap12
+  Language.R.Internal.FunWrappers.wrap2
+  Language.R.Internal.FunWrappers.wrap3
+  Language.R.Internal.FunWrappers.wrap4
+  Language.R.Internal.FunWrappers.wrap5
+  Language.R.Internal.FunWrappers.wrap6
+  Language.R.Internal.FunWrappers.wrap7
+  Language.R.Internal.FunWrappers.wrap8
+  Language.R.Internal.FunWrappers.wrap9
+module dependencies: Control.Memory.Region Foreign.R
+                     Foreign.R.Constraints Foreign.R.Internal Foreign.R.Type
+                     Internal.Error Language.R.HExp [boot]
+                     Language.R.Internal.FunWrappers.TH
+package dependencies: array-0.5.1.1@array-0.5.1.1 base-4.9.1.0
+                      binary-0.8.3.0@binary-0.8.3.0
+                      bytestring-0.10.8.1@bytestring-0.10.8.1
+                      containers-0.5.7.1@containers-0.5.7.1
+                      deepseq-1.4.2.0@deepseq-1.4.2.0 ghc-boot-th-8.0.2@ghc-boot-th-8.0.2
+                      ghc-prim-0.5.0.0 integer-gmp-1.0.0.1
+                      mtl-2.2.1@mtl-2.2.1-BLKBelFsPB3BoFeSWSOYj6
+                      pretty-1.1.3.3@pretty-1.1.3.3
+                      primitive-0.6.2.0@primitive-0.6.2.0-4578caNkWQ54Gt1mxLF2Yh
+                      safe-0.3.15@safe-0.3.15-2Yd45VWFfdcKqKyispOifY
+                      singletons-2.2@singletons-2.2-F6aalBFPo1F9ebvy1Wkuj3
+                      syb-0.7@syb-0.7-4OKdCpwGutyB1rNRmoa0ya template-haskell-2.11.1.0
+                      text-1.2.2.2@text-1.2.2.2-9UQZjEJZQFSGMffj1Z5g00
+                      th-desugar-1.6@th-desugar-1.6-4xe2xTMQQiAGUPVUAkAZhp
+                      th-expand-syns-0.4.3.0@th-expand-syns-0.4.3.0-A2GRp9XTxmBCMfV7DnYdn0
+                      th-lift-0.7.7@th-lift-0.7.7-JWI9Gh7wB0MC9Q5wqv5aoI
+                      th-lift-instances-0.1.11@th-lift-instances-0.1.11-A7sWuFC2KLsFTBmLagoRSX
+                      th-orphans-0.13.4@th-orphans-0.13.4-IGsCpZ5u2Ab1MvGd5biF2z
+                      th-reify-many-0.1.8@th-reify-many-0.1.8-5ZNbfXxMl3y5DMJznTzmN9
+                      transformers-0.5.2.0@transformers-0.5.2.0
+                      vector-0.12.0.1@vector-0.12.0.1-692PQMDMB6pIQ1uGwefDcQ
+orphans: base-4.9.1.0:GHC.Base base-4.9.1.0:GHC.Float
+         binary-0.8.3.0@binary-0.8.3.0:Data.Binary.Generic
+         bytestring-0.10.8.1@bytestring-0.10.8.1:Data.ByteString.Builder
+         singletons-2.2@singletons-2.2-F6aalBFPo1F9ebvy1Wkuj3:Data.Singletons.Decide
+         singletons-2.2@singletons-2.2-F6aalBFPo1F9ebvy1Wkuj3:Data.Singletons.Prelude.Instances
+         singletons-2.2@singletons-2.2-F6aalBFPo1F9ebvy1Wkuj3:Data.Singletons.TypeLits
+         singletons-2.2@singletons-2.2-F6aalBFPo1F9ebvy1Wkuj3:Data.Singletons.TypeLits.Internal
+         syb-0.7@syb-0.7-4OKdCpwGutyB1rNRmoa0ya:Data.Generics.Instances
+         text-1.2.2.2@text-1.2.2.2-9UQZjEJZQFSGMffj1Z5g00:Data.Text
+         text-1.2.2.2@text-1.2.2.2-9UQZjEJZQFSGMffj1Z5g00:Data.Text.Lazy
+         text-1.2.2.2@text-1.2.2.2-9UQZjEJZQFSGMffj1Z5g00:Data.Text.Show
+         th-lift-0.7.7@th-lift-0.7.7-JWI9Gh7wB0MC9Q5wqv5aoI:Language.Haskell.TH.Lift
+         th-lift-instances-0.1.11@th-lift-instances-0.1.11-A7sWuFC2KLsFTBmLagoRSX:Instances.TH.Lift
+         th-orphans-0.13.4@th-orphans-0.13.4-IGsCpZ5u2Ab1MvGd5biF2z:Language.Haskell.TH.Instances
+         transformers-0.5.2.0@transformers-0.5.2.0:Control.Monad.Trans.Error
+         vector-0.12.0.1@vector-0.12.0.1-692PQMDMB6pIQ1uGwefDcQ:Data.Vector.Fusion.Bundle
+         vector-0.12.0.1@vector-0.12.0.1-692PQMDMB6pIQ1uGwefDcQ:Data.Vector.Unboxed
+family instance modules: base-4.9.1.0:Control.Applicative
+                         base-4.9.1.0:Data.Complex base-4.9.1.0:Data.Either
+                         base-4.9.1.0:Data.Functor.Const base-4.9.1.0:Data.Functor.Identity
+                         base-4.9.1.0:Data.List.NonEmpty base-4.9.1.0:Data.Monoid
+                         base-4.9.1.0:Data.Semigroup base-4.9.1.0:Data.Type.Equality
+                         base-4.9.1.0:Data.Version base-4.9.1.0:Data.Void
+                         base-4.9.1.0:GHC.Exts base-4.9.1.0:GHC.Generics
+                         base-4.9.1.0:GHC.IO.Exception base-4.9.1.0:GHC.TypeLits
+                         containers-0.5.7.1@containers-0.5.7.1:Data.IntMap.Base
+                         containers-0.5.7.1@containers-0.5.7.1:Data.IntSet.Base
+                         containers-0.5.7.1@containers-0.5.7.1:Data.Map.Base
+                         containers-0.5.7.1@containers-0.5.7.1:Data.Sequence
+                         containers-0.5.7.1@containers-0.5.7.1:Data.Set.Base
+                         ghc-boot-th-8.0.2@ghc-boot-th-8.0.2:GHC.LanguageExtensions.Type
+                         inline-r-0.9.0.2-GXEXrsxC4K8OTVxhqWwxs:Control.Memory.Region
+                         inline-r-0.9.0.2-GXEXrsxC4K8OTVxhqWwxs:Foreign.R.Type
+                         pretty-1.1.3.3@pretty-1.1.3.3:Text.PrettyPrint.Annotated.HughesPJ
+                         pretty-1.1.3.3@pretty-1.1.3.3:Text.PrettyPrint.HughesPJ
+                         primitive-0.6.2.0@primitive-0.6.2.0-4578caNkWQ54Gt1mxLF2Yh:Control.Monad.Primitive
+                         primitive-0.6.2.0@primitive-0.6.2.0-4578caNkWQ54Gt1mxLF2Yh:Data.Primitive.Array
+                         singletons-2.2@singletons-2.2-F6aalBFPo1F9ebvy1Wkuj3:Data.Singletons
+                         singletons-2.2@singletons-2.2-F6aalBFPo1F9ebvy1Wkuj3:Data.Singletons.Prelude.Bool
+                         singletons-2.2@singletons-2.2-F6aalBFPo1F9ebvy1Wkuj3:Data.Singletons.Prelude.Eq
+                         singletons-2.2@singletons-2.2-F6aalBFPo1F9ebvy1Wkuj3:Data.Singletons.Prelude.Instances
+                         singletons-2.2@singletons-2.2-F6aalBFPo1F9ebvy1Wkuj3:Data.Singletons.Prelude.Num
+                         singletons-2.2@singletons-2.2-F6aalBFPo1F9ebvy1Wkuj3:Data.Singletons.Prelude.Ord
+                         singletons-2.2@singletons-2.2-F6aalBFPo1F9ebvy1Wkuj3:Data.Singletons.Syntax
+                         singletons-2.2@singletons-2.2-F6aalBFPo1F9ebvy1Wkuj3:Data.Singletons.TypeLits.Internal
+                         template-haskell-2.11.1.0:Language.Haskell.TH.Syntax
+                         text-1.2.2.2@text-1.2.2.2-9UQZjEJZQFSGMffj1Z5g00:Data.Text
+                         text-1.2.2.2@text-1.2.2.2-9UQZjEJZQFSGMffj1Z5g00:Data.Text.Lazy
+                         th-desugar-1.6@th-desugar-1.6-4xe2xTMQQiAGUPVUAkAZhp:Language.Haskell.TH.Desugar.Core
+                         vector-0.12.0.1@vector-0.12.0.1-692PQMDMB6pIQ1uGwefDcQ:Data.Vector
+                         vector-0.12.0.1@vector-0.12.0.1-692PQMDMB6pIQ1uGwefDcQ:Data.Vector.Primitive
+                         vector-0.12.0.1@vector-0.12.0.1-692PQMDMB6pIQ1uGwefDcQ:Data.Vector.Storable
+                         vector-0.12.0.1@vector-0.12.0.1-692PQMDMB6pIQ1uGwefDcQ:Data.Vector.Unboxed
+                         vector-0.12.0.1@vector-0.12.0.1-692PQMDMB6pIQ1uGwefDcQ:Data.Vector.Unboxed.Base
+import  -/  base-4.9.1.0:Foreign b4bee334aade4f33021057fdecf4a495
+import  -/  base-4.9.1.0:GHC.Ptr 427a6ad9312f04edb98e0f5b7c4e2596
+import  -/  base-4.9.1.0:Prelude 22dd289b8469a8fa8dc81cab7b237771
+import  -/  ghc-prim-0.5.0.0:GHC.Types 89f8de4f08018c9177c98d979eae0e45
+import  -/  Foreign.R 76af03c75eee17c66f999e9a2952a2da
+  exports: 48f78775472e7fa46d6f356ef53096ba
+  SEXP0 12efc2d6507407c762763b432400a30a
+import  -/  Language.R.Internal.FunWrappers.TH f287118cbdab5dbdcf22a9306234a586
+  exports: e13e77a8f95b94d0740b7d488ac19b22
+  thWrappers 751bc474951936833766288a98b0d5b5
+c52178e8de91867b357edbe9567ff714
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module
+                   Language.R.Internal.FunWrappers.$trModule2
+                   Language.R.Internal.FunWrappers.$trModule1) -}
+bbd8bf0747fae4e6323d88f26a804e1e
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   "Language.R.Internal.FunWrappers"#) -}
+12d5e6bfce8b94510f510c31db248a33
+  $trModule2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   "inline-r-0.9.0.2-GXEXrsxC4K8OTVxhqWwxs"#) -}
+4a6016b4c39c1222ec99f87769b57df2
+  wrap0 ::
+    GHC.Types.IO Foreign.R.SEXP0
+    -> GHC.Types.IO (GHC.Ptr.FunPtr (GHC.Types.IO Foreign.R.SEXP0))
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,U><S,U>,
+     Inline: [NEVER] -}
+ff4273b1b718dab7894b1f472df24ff5
+  wrap1 ::
+    (Foreign.R.SEXP0 -> GHC.Types.IO Foreign.R.SEXP0)
+    -> GHC.Types.IO
+         (GHC.Ptr.FunPtr (Foreign.R.SEXP0 -> GHC.Types.IO Foreign.R.SEXP0))
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,U><S,U>,
+     Inline: [NEVER] -}
+937b3ea37c4c0daa0d54000622a6bb6a
+  wrap10 ::
+    (Foreign.R.SEXP0
+     -> Foreign.R.SEXP0
+     -> Foreign.R.SEXP0
+     -> Foreign.R.SEXP0
+     -> Foreign.R.SEXP0
+     -> Foreign.R.SEXP0
+     -> Foreign.R.SEXP0
+     -> Foreign.R.SEXP0
+     -> Foreign.R.SEXP0
+     -> Foreign.R.SEXP0
+     -> GHC.Types.IO Foreign.R.SEXP0)
+    -> GHC.Types.IO
+         (GHC.Ptr.FunPtr
+            (Foreign.R.SEXP0
+             -> Foreign.R.SEXP0
+             -> Foreign.R.SEXP0
+             -> Foreign.R.SEXP0
+             -> Foreign.R.SEXP0
+             -> Foreign.R.SEXP0
+             -> Foreign.R.SEXP0
+             -> Foreign.R.SEXP0
+             -> Foreign.R.SEXP0
+             -> Foreign.R.SEXP0
+             -> GHC.Types.IO Foreign.R.SEXP0))
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,U><S,U>,
+     Inline: [NEVER] -}
+a05b679bd1489b9f259cc0a397123939
+  wrap11 ::
+    (Foreign.R.SEXP0
+     -> Foreign.R.SEXP0
+     -> Foreign.R.SEXP0
+     -> Foreign.R.SEXP0
+     -> Foreign.R.SEXP0
+     -> Foreign.R.SEXP0
+     -> Foreign.R.SEXP0
+     -> Foreign.R.SEXP0
+     -> Foreign.R.SEXP0
+     -> Foreign.R.SEXP0
+     -> Foreign.R.SEXP0
+     -> GHC.Types.IO Foreign.R.SEXP0)
+    -> GHC.Types.IO
+         (GHC.Ptr.FunPtr
+            (Foreign.R.SEXP0
+             -> Foreign.R.SEXP0
+             -> Foreign.R.SEXP0
+             -> Foreign.R.SEXP0
+             -> Foreign.R.SEXP0
+             -> Foreign.R.SEXP0
+             -> Foreign.R.SEXP0
+             -> Foreign.R.SEXP0
+             -> Foreign.R.SEXP0
+             -> Foreign.R.SEXP0
+             -> Foreign.R.SEXP0
+             -> GHC.Types.IO Foreign.R.SEXP0))
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,U><S,U>,
+     Inline: [NEVER] -}
+b906fe1faee801e261173477c88e312b
+  wrap12 ::
+    (Foreign.R.SEXP0
+     -> Foreign.R.SEXP0
+     -> Foreign.R.SEXP0
+     -> Foreign.R.SEXP0
+     -> Foreign.R.SEXP0
+     -> Foreign.R.SEXP0
+     -> Foreign.R.SEXP0
+     -> Foreign.R.SEXP0
+     -> Foreign.R.SEXP0
+     -> Foreign.R.SEXP0
+     -> Foreign.R.SEXP0
+     -> Foreign.R.SEXP0
+     -> GHC.Types.IO Foreign.R.SEXP0)
+    -> GHC.Types.IO
+         (GHC.Ptr.FunPtr
+            (Foreign.R.SEXP0
+             -> Foreign.R.SEXP0
+             -> Foreign.R.SEXP0
+             -> Foreign.R.SEXP0
+             -> Foreign.R.SEXP0
+             -> Foreign.R.SEXP0
+             -> Foreign.R.SEXP0
+             -> Foreign.R.SEXP0
+             -> Foreign.R.SEXP0
+             -> Foreign.R.SEXP0
+             -> Foreign.R.SEXP0
+             -> Foreign.R.SEXP0
+             -> GHC.Types.IO Foreign.R.SEXP0))
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,U><S,U>,
+     Inline: [NEVER] -}
+2cde28dff27f77905a44a3649a591b9b
+  wrap2 ::
+    (Foreign.R.SEXP0
+     -> Foreign.R.SEXP0 -> GHC.Types.IO Foreign.R.SEXP0)
+    -> GHC.Types.IO
+         (GHC.Ptr.FunPtr
+            (Foreign.R.SEXP0
+             -> Foreign.R.SEXP0 -> GHC.Types.IO Foreign.R.SEXP0))
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,U><S,U>,
+     Inline: [NEVER] -}
+ba79414a236bce9045fe78fbd1ec28da
+  wrap3 ::
+    (Foreign.R.SEXP0
+     -> Foreign.R.SEXP0
+     -> Foreign.R.SEXP0
+     -> GHC.Types.IO Foreign.R.SEXP0)
+    -> GHC.Types.IO
+         (GHC.Ptr.FunPtr
+            (Foreign.R.SEXP0
+             -> Foreign.R.SEXP0
+             -> Foreign.R.SEXP0
+             -> GHC.Types.IO Foreign.R.SEXP0))
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,U><S,U>,
+     Inline: [NEVER] -}
+368e4e7898cf461a1bee25dc5dfdf721
+  wrap4 ::
+    (Foreign.R.SEXP0
+     -> Foreign.R.SEXP0
+     -> Foreign.R.SEXP0
+     -> Foreign.R.SEXP0
+     -> GHC.Types.IO Foreign.R.SEXP0)
+    -> GHC.Types.IO
+         (GHC.Ptr.FunPtr
+            (Foreign.R.SEXP0
+             -> Foreign.R.SEXP0
+             -> Foreign.R.SEXP0
+             -> Foreign.R.SEXP0
+             -> GHC.Types.IO Foreign.R.SEXP0))
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,U><S,U>,
+     Inline: [NEVER] -}
+d5bfb172d573c009c45462ca33277abf
+  wrap5 ::
+    (Foreign.R.SEXP0
+     -> Foreign.R.SEXP0
+     -> Foreign.R.SEXP0
+     -> Foreign.R.SEXP0
+     -> Foreign.R.SEXP0
+     -> GHC.Types.IO Foreign.R.SEXP0)
+    -> GHC.Types.IO
+         (GHC.Ptr.FunPtr
+            (Foreign.R.SEXP0
+             -> Foreign.R.SEXP0
+             -> Foreign.R.SEXP0
+             -> Foreign.R.SEXP0
+             -> Foreign.R.SEXP0
+             -> GHC.Types.IO Foreign.R.SEXP0))
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,U><S,U>,
+     Inline: [NEVER] -}
+f9e3ab78d3fd064b699bc53e606e7e36
+  wrap6 ::
+    (Foreign.R.SEXP0
+     -> Foreign.R.SEXP0
+     -> Foreign.R.SEXP0
+     -> Foreign.R.SEXP0
+     -> Foreign.R.SEXP0
+     -> Foreign.R.SEXP0
+     -> GHC.Types.IO Foreign.R.SEXP0)
+    -> GHC.Types.IO
+         (GHC.Ptr.FunPtr
+            (Foreign.R.SEXP0
+             -> Foreign.R.SEXP0
+             -> Foreign.R.SEXP0
+             -> Foreign.R.SEXP0
+             -> Foreign.R.SEXP0
+             -> Foreign.R.SEXP0
+             -> GHC.Types.IO Foreign.R.SEXP0))
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,U><S,U>,
+     Inline: [NEVER] -}
+75a03c1afed82b8d30872ca81b1b7727
+  wrap7 ::
+    (Foreign.R.SEXP0
+     -> Foreign.R.SEXP0
+     -> Foreign.R.SEXP0
+     -> Foreign.R.SEXP0
+     -> Foreign.R.SEXP0
+     -> Foreign.R.SEXP0
+     -> Foreign.R.SEXP0
+     -> GHC.Types.IO Foreign.R.SEXP0)
+    -> GHC.Types.IO
+         (GHC.Ptr.FunPtr
+            (Foreign.R.SEXP0
+             -> Foreign.R.SEXP0
+             -> Foreign.R.SEXP0
+             -> Foreign.R.SEXP0
+             -> Foreign.R.SEXP0
+             -> Foreign.R.SEXP0
+             -> Foreign.R.SEXP0
+             -> GHC.Types.IO Foreign.R.SEXP0))
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,U><S,U>,
+     Inline: [NEVER] -}
+84111649a3891eaf3aea1b9b71f55bd4
+  wrap8 ::
+    (Foreign.R.SEXP0
+     -> Foreign.R.SEXP0
+     -> Foreign.R.SEXP0
+     -> Foreign.R.SEXP0
+     -> Foreign.R.SEXP0
+     -> Foreign.R.SEXP0
+     -> Foreign.R.SEXP0
+     -> Foreign.R.SEXP0
+     -> GHC.Types.IO Foreign.R.SEXP0)
+    -> GHC.Types.IO
+         (GHC.Ptr.FunPtr
+            (Foreign.R.SEXP0
+             -> Foreign.R.SEXP0
+             -> Foreign.R.SEXP0
+             -> Foreign.R.SEXP0
+             -> Foreign.R.SEXP0
+             -> Foreign.R.SEXP0
+             -> Foreign.R.SEXP0
+             -> Foreign.R.SEXP0
+             -> GHC.Types.IO Foreign.R.SEXP0))
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,U><S,U>,
+     Inline: [NEVER] -}
+778c48714384e5381a12e475a5e2e91f
+  wrap9 ::
+    (Foreign.R.SEXP0
+     -> Foreign.R.SEXP0
+     -> Foreign.R.SEXP0
+     -> Foreign.R.SEXP0
+     -> Foreign.R.SEXP0
+     -> Foreign.R.SEXP0
+     -> Foreign.R.SEXP0
+     -> Foreign.R.SEXP0
+     -> Foreign.R.SEXP0
+     -> GHC.Types.IO Foreign.R.SEXP0)
+    -> GHC.Types.IO
+         (GHC.Ptr.FunPtr
+            (Foreign.R.SEXP0
+             -> Foreign.R.SEXP0
+             -> Foreign.R.SEXP0
+             -> Foreign.R.SEXP0
+             -> Foreign.R.SEXP0
+             -> Foreign.R.SEXP0
+             -> Foreign.R.SEXP0
+             -> Foreign.R.SEXP0
+             -> Foreign.R.SEXP0
+             -> GHC.Types.IO Foreign.R.SEXP0))
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,U><S,U>,
+     Inline: [NEVER] -}
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: none
+require own pkg trusted: False
+

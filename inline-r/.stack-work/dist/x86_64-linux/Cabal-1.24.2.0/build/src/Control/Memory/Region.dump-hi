@@ -1,0 +1,91 @@
+
+==================== FINAL INTERFACE ====================
+2017-12-28 08:02:21.8567 UTC
+
+interface inline-r-0.9.0.2-GXEXrsxC4K8OTVxhqWwxs:Control.Memory.Region [family instance module] 8002
+  interface hash: 73d3cc24f2980d9ff9b4758b7c45739d
+  ABI hash: 308182c83bf046edf073fad284bcd617
+  export-list hash: 0c21e32b92bdaf94d0d4d90814626648
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: 68c3742e804d78ca79929acdba7323bc
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Control.Memory.Region.<=
+  Control.Memory.Region.G
+  Control.Memory.Region.GlobalRegion
+  Control.Memory.Region.V
+  Control.Memory.Region.Void
+module dependencies:
+package dependencies: base-4.9.1.0 ghc-prim-0.5.0.0
+                      integer-gmp-1.0.0.1
+orphans: base-4.9.1.0:GHC.Base base-4.9.1.0:GHC.Float
+family instance modules: base-4.9.1.0:Control.Applicative
+                         base-4.9.1.0:Data.Either base-4.9.1.0:Data.Functor.Const
+                         base-4.9.1.0:Data.Monoid base-4.9.1.0:Data.Type.Equality
+                         base-4.9.1.0:Data.Version base-4.9.1.0:GHC.Exts
+                         base-4.9.1.0:GHC.Generics base-4.9.1.0:GHC.IO.Exception
+                         base-4.9.1.0:GHC.TypeLits
+import  -/  base-4.9.1.0:GHC.Exts 26da1d42716da321d2d8df514b70012a
+import  -/  base-4.9.1.0:Prelude 22dd289b8469a8fa8dc81cab7b237771
+6753a900cfe37720df12c116907132f5
+  $tcVoid :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   13726670990372669907##
+                   2940433427168421948##
+                   Control.Memory.Region.$trModule
+                   Control.Memory.Region.$tcVoid1) -}
+4ea7107b94683100cd8c207ef9d01553
+  $tcVoid1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "Void"#) -}
+95cf11c0a29d7895c4421faa13362f88
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module
+                   Control.Memory.Region.$trModule2
+                   Control.Memory.Region.$trModule1) -}
+ff446dc938ee0d3795dab7a2e583b145
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "Control.Memory.Region"#) -}
+e42fce4953b284d6577cc64c065c6a6e
+  $trModule2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   "inline-r-0.9.0.2-GXEXrsxC4K8OTVxhqWwxs"#) -}
+df3db98a1597214f8a687757612a22d5
+  type family (<=) a b :: GHC.Types.Constraint open
+df3db98a1597214f8a687757612a22d5
+  axiom D:R:<=Voidb::
+    [b] Control.Memory.Region.<= Control.Memory.Region.V b = ()
+df3db98a1597214f8a687757612a22d5
+  axiom D:R:<=aRealWorld::
+    [a] Control.Memory.Region.<= a Control.Memory.Region.G = ()
+df3db98a1597214f8a687757612a22d5
+  axiom D:R:<=aa:: [a] Control.Memory.Region.<= a a = ()
+5206da058dee6b52317e30a2eceb5c81
+  type G = Control.Memory.Region.GlobalRegion
+7cd2cb8ccc0e10d1c8895429040103ee
+  type GlobalRegion = GHC.Prim.RealWorld
+761191645162463b83c4dd72888da9ec
+  type V = Control.Memory.Region.Void
+71f066642ff332fe83aca0fafb92acf3
+  data Void
+family instance Control.Memory.Region.<= [.], [.]
+  = Control.Memory.Region.D:R:<=aa
+family instance Control.Memory.Region.<= [.], [GHC.Prim.RealWorld]
+  = Control.Memory.Region.D:R:<=aRealWorld
+family instance Control.Memory.Region.<= [Control.Memory.Region.Void],
+                                         [.]
+  = Control.Memory.Region.D:R:<=Voidb
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: none
+require own pkg trusted: False
+

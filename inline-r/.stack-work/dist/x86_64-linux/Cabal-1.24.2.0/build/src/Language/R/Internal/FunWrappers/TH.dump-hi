@@ -1,0 +1,445 @@
+
+==================== FINAL INTERFACE ====================
+2017-12-28 08:02:21.587785 UTC
+
+interface inline-r-0.9.0.2-GXEXrsxC4K8OTVxhqWwxs:Language.R.Internal.FunWrappers.TH 8002
+  interface hash: 48e1829fa139efe9e1d8c2f73b7edae2
+  ABI hash: f287118cbdab5dbdcf22a9306234a586
+  export-list hash: e13e77a8f95b94d0740b7d488ac19b22
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: 5d132b9a4f1977d7bb56fd4d700c96e5
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Language.R.Internal.FunWrappers.TH.thWrapper
+  Language.R.Internal.FunWrappers.TH.thWrapperLiteral
+  Language.R.Internal.FunWrappers.TH.thWrapperLiterals
+  Language.R.Internal.FunWrappers.TH.thWrappers
+module dependencies: Foreign.R.Constraints Foreign.R.Type
+                     Internal.Error
+package dependencies: array-0.5.1.1@array-0.5.1.1 base-4.9.1.0
+                      binary-0.8.3.0@binary-0.8.3.0
+                      bytestring-0.10.8.1@bytestring-0.10.8.1
+                      containers-0.5.7.1@containers-0.5.7.1
+                      deepseq-1.4.2.0@deepseq-1.4.2.0 ghc-boot-th-8.0.2@ghc-boot-th-8.0.2
+                      ghc-prim-0.5.0.0 integer-gmp-1.0.0.1
+                      mtl-2.2.1@mtl-2.2.1-BLKBelFsPB3BoFeSWSOYj6
+                      pretty-1.1.3.3@pretty-1.1.3.3
+                      primitive-0.6.2.0@primitive-0.6.2.0-4578caNkWQ54Gt1mxLF2Yh
+                      safe-0.3.15@safe-0.3.15-2Yd45VWFfdcKqKyispOifY
+                      singletons-2.2@singletons-2.2-F6aalBFPo1F9ebvy1Wkuj3
+                      syb-0.7@syb-0.7-4OKdCpwGutyB1rNRmoa0ya template-haskell-2.11.1.0
+                      text-1.2.2.2@text-1.2.2.2-9UQZjEJZQFSGMffj1Z5g00
+                      th-desugar-1.6@th-desugar-1.6-4xe2xTMQQiAGUPVUAkAZhp
+                      th-expand-syns-0.4.3.0@th-expand-syns-0.4.3.0-A2GRp9XTxmBCMfV7DnYdn0
+                      th-lift-0.7.7@th-lift-0.7.7-JWI9Gh7wB0MC9Q5wqv5aoI
+                      th-lift-instances-0.1.11@th-lift-instances-0.1.11-A7sWuFC2KLsFTBmLagoRSX
+                      th-orphans-0.13.4@th-orphans-0.13.4-IGsCpZ5u2Ab1MvGd5biF2z
+                      th-reify-many-0.1.8@th-reify-many-0.1.8-5ZNbfXxMl3y5DMJznTzmN9
+                      transformers-0.5.2.0@transformers-0.5.2.0
+                      vector-0.12.0.1@vector-0.12.0.1-692PQMDMB6pIQ1uGwefDcQ
+orphans: base-4.9.1.0:GHC.Base base-4.9.1.0:GHC.Float
+         binary-0.8.3.0@binary-0.8.3.0:Data.Binary.Generic
+         bytestring-0.10.8.1@bytestring-0.10.8.1:Data.ByteString.Builder
+         singletons-2.2@singletons-2.2-F6aalBFPo1F9ebvy1Wkuj3:Data.Singletons.Decide
+         singletons-2.2@singletons-2.2-F6aalBFPo1F9ebvy1Wkuj3:Data.Singletons.Prelude.Instances
+         singletons-2.2@singletons-2.2-F6aalBFPo1F9ebvy1Wkuj3:Data.Singletons.TypeLits
+         singletons-2.2@singletons-2.2-F6aalBFPo1F9ebvy1Wkuj3:Data.Singletons.TypeLits.Internal
+         syb-0.7@syb-0.7-4OKdCpwGutyB1rNRmoa0ya:Data.Generics.Instances
+         text-1.2.2.2@text-1.2.2.2-9UQZjEJZQFSGMffj1Z5g00:Data.Text
+         text-1.2.2.2@text-1.2.2.2-9UQZjEJZQFSGMffj1Z5g00:Data.Text.Lazy
+         text-1.2.2.2@text-1.2.2.2-9UQZjEJZQFSGMffj1Z5g00:Data.Text.Show
+         th-lift-0.7.7@th-lift-0.7.7-JWI9Gh7wB0MC9Q5wqv5aoI:Language.Haskell.TH.Lift
+         th-lift-instances-0.1.11@th-lift-instances-0.1.11-A7sWuFC2KLsFTBmLagoRSX:Instances.TH.Lift
+         th-orphans-0.13.4@th-orphans-0.13.4-IGsCpZ5u2Ab1MvGd5biF2z:Language.Haskell.TH.Instances
+         transformers-0.5.2.0@transformers-0.5.2.0:Control.Monad.Trans.Error
+         vector-0.12.0.1@vector-0.12.0.1-692PQMDMB6pIQ1uGwefDcQ:Data.Vector.Fusion.Bundle
+         vector-0.12.0.1@vector-0.12.0.1-692PQMDMB6pIQ1uGwefDcQ:Data.Vector.Unboxed
+family instance modules: base-4.9.1.0:Control.Applicative
+                         base-4.9.1.0:Data.Complex base-4.9.1.0:Data.Either
+                         base-4.9.1.0:Data.Functor.Const base-4.9.1.0:Data.Functor.Identity
+                         base-4.9.1.0:Data.List.NonEmpty base-4.9.1.0:Data.Monoid
+                         base-4.9.1.0:Data.Semigroup base-4.9.1.0:Data.Type.Equality
+                         base-4.9.1.0:Data.Version base-4.9.1.0:Data.Void
+                         base-4.9.1.0:GHC.Exts base-4.9.1.0:GHC.Generics
+                         base-4.9.1.0:GHC.IO.Exception base-4.9.1.0:GHC.TypeLits
+                         containers-0.5.7.1@containers-0.5.7.1:Data.IntMap.Base
+                         containers-0.5.7.1@containers-0.5.7.1:Data.IntSet.Base
+                         containers-0.5.7.1@containers-0.5.7.1:Data.Map.Base
+                         containers-0.5.7.1@containers-0.5.7.1:Data.Sequence
+                         containers-0.5.7.1@containers-0.5.7.1:Data.Set.Base
+                         ghc-boot-th-8.0.2@ghc-boot-th-8.0.2:GHC.LanguageExtensions.Type
+                         inline-r-0.9.0.2-GXEXrsxC4K8OTVxhqWwxs:Foreign.R.Type
+                         pretty-1.1.3.3@pretty-1.1.3.3:Text.PrettyPrint.Annotated.HughesPJ
+                         pretty-1.1.3.3@pretty-1.1.3.3:Text.PrettyPrint.HughesPJ
+                         primitive-0.6.2.0@primitive-0.6.2.0-4578caNkWQ54Gt1mxLF2Yh:Control.Monad.Primitive
+                         primitive-0.6.2.0@primitive-0.6.2.0-4578caNkWQ54Gt1mxLF2Yh:Data.Primitive.Array
+                         singletons-2.2@singletons-2.2-F6aalBFPo1F9ebvy1Wkuj3:Data.Singletons
+                         singletons-2.2@singletons-2.2-F6aalBFPo1F9ebvy1Wkuj3:Data.Singletons.Prelude.Bool
+                         singletons-2.2@singletons-2.2-F6aalBFPo1F9ebvy1Wkuj3:Data.Singletons.Prelude.Eq
+                         singletons-2.2@singletons-2.2-F6aalBFPo1F9ebvy1Wkuj3:Data.Singletons.Prelude.Instances
+                         singletons-2.2@singletons-2.2-F6aalBFPo1F9ebvy1Wkuj3:Data.Singletons.Prelude.Num
+                         singletons-2.2@singletons-2.2-F6aalBFPo1F9ebvy1Wkuj3:Data.Singletons.Prelude.Ord
+                         singletons-2.2@singletons-2.2-F6aalBFPo1F9ebvy1Wkuj3:Data.Singletons.Syntax
+                         singletons-2.2@singletons-2.2-F6aalBFPo1F9ebvy1Wkuj3:Data.Singletons.TypeLits.Internal
+                         template-haskell-2.11.1.0:Language.Haskell.TH.Syntax
+                         text-1.2.2.2@text-1.2.2.2-9UQZjEJZQFSGMffj1Z5g00:Data.Text
+                         text-1.2.2.2@text-1.2.2.2-9UQZjEJZQFSGMffj1Z5g00:Data.Text.Lazy
+                         th-desugar-1.6@th-desugar-1.6-4xe2xTMQQiAGUPVUAkAZhp:Language.Haskell.TH.Desugar.Core
+                         vector-0.12.0.1@vector-0.12.0.1-692PQMDMB6pIQ1uGwefDcQ:Data.Vector
+                         vector-0.12.0.1@vector-0.12.0.1-692PQMDMB6pIQ1uGwefDcQ:Data.Vector.Primitive
+                         vector-0.12.0.1@vector-0.12.0.1-692PQMDMB6pIQ1uGwefDcQ:Data.Vector.Storable
+                         vector-0.12.0.1@vector-0.12.0.1-692PQMDMB6pIQ1uGwefDcQ:Data.Vector.Unboxed
+                         vector-0.12.0.1@vector-0.12.0.1-692PQMDMB6pIQ1uGwefDcQ:Data.Vector.Unboxed.Base
+import  -/  base-4.9.1.0:Control.Monad a6784c5dab0d75c63dabec5a37843f98
+import  -/  base-4.9.1.0:Data.Foldable 3e0b6967a1da89945d0e2d47266337a2
+import  -/  base-4.9.1.0:Data.Functor 5ab1dc703df5b482e77efb697833ca3c
+import  -/  base-4.9.1.0:Data.Traversable 556020d7cf3c4a34a774600512918a37
+import  -/  base-4.9.1.0:Foreign b4bee334aade4f33021057fdecf4a495
+import  -/  base-4.9.1.0:GHC.Base c4231c43c07e46080a26bf94094c7aa1
+import  -/  base-4.9.1.0:GHC.List ab8c4e523e6c479c549d3bcd5fc4a439
+import  -/  base-4.9.1.0:GHC.Num 00bfaa7b2f9d6084913c0697a8a49ec8
+import  -/  base-4.9.1.0:GHC.Ptr 427a6ad9312f04edb98e0f5b7c4e2596
+import  -/  base-4.9.1.0:GHC.Show a027f5ac24879eaba752f44aa90fe511
+import  -/  base-4.9.1.0:Prelude 22dd289b8469a8fa8dc81cab7b237771
+import  -/  ghc-prim-0.5.0.0:GHC.Types 89f8de4f08018c9177c98d979eae0e45
+import  -/  Foreign.R.Type 87886be580abef21e3eb082d49bd5e09
+  exports: 4a9e8ba576dbff5e9a94102d7ea58a6b
+  ExtPtr 47fbb737cdf190aa2f58d5acfa226e26
+import  -/  Internal.Error 4ff915c9ecc9112f8c436f5ab8665640
+  exports: 1cf446c8d06e4ccec0c56e44b9f9480d
+  impossible 8df2fc319c9948abcd37f19a34b88b54
+  unimplemented 9f2583d00eb497be46bc091af16bd702
+import  -/  template-haskell-2.11.1.0:Language.Haskell.TH d856a1f9d606be57026da48a46c8b0a9
+import  -/  template-haskell-2.11.1.0:Language.Haskell.TH.Lib 715cf040319ba19bc69da4853519bde7
+import  -/  template-haskell-2.11.1.0:Language.Haskell.TH.Syntax f73a6f51a55e744c097972689232ddf4
+addDependentFile "/datascience/bin/stack/programs/x86_64-linux/ghc-8.0.2/lib/ghc-8.0.2/include/ghcversion.h"
+addDependentFile ".stack-work/dist/x86_64-linux/Cabal-1.24.2.0/build/autogen/cabal_macros.h"
+addDependentFile "/usr/include/stdc-predef.h"
+635661cca8118c27c0e7eb003112e746
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module
+                   Language.R.Internal.FunWrappers.TH.$trModule2
+                   Language.R.Internal.FunWrappers.TH.$trModule1) -}
+9c3d94ba17a4df3c6a393401cab9ba36
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   "Language.R.Internal.FunWrappers.TH"#) -}
+d81fb59e0dc518503c607d8ff3031bde
+  $trModule2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   "inline-r-0.9.0.2-GXEXrsxC4K8OTVxhqWwxs"#) -}
+31e4f71caa5095297bd22d5f197c61b9
+  $wgo ::
+    [GHC.Types.Char]
+    -> GHC.Prim.Int#
+    -> [Language.Haskell.TH.Syntax.Q Language.Haskell.TH.Syntax.Type]
+  {- Arity: 2, Strictness: <S,1*U><L,1*U>, Inline: [0] -}
+931fa6c5b16e0bcabfc86fed6b595ff5
+  $wthWrapperLiterals ::
+    GHC.Prim.Int#
+    -> GHC.Prim.Int#
+    -> Language.Haskell.TH.Syntax.Q [Language.Haskell.TH.Syntax.Dec]
+  {- Arity: 2, Strictness: <S,U><S,U>, Inline: [0],
+     Unfolding: (\ (ww :: GHC.Prim.Int#) (ww1 :: GHC.Prim.Int#) ->
+                 case GHC.Prim.tagToEnum#
+                        @ GHC.Types.Bool
+                        (GHC.Prim.># ww ww1) of wild {
+                   GHC.Types.False
+                   -> letrec {
+                        go4 :: GHC.Prim.Int# -> [GHC.Types.Int] {- Arity: 1 -}
+                        = \ (x :: GHC.Prim.Int#) ->
+                          GHC.Types.:
+                            @ GHC.Types.Int
+                            (GHC.Types.I# x)
+                            (case GHC.Prim.tagToEnum#
+                                    @ GHC.Types.Bool
+                                    (GHC.Prim.==# x ww1) of wild1 {
+                               GHC.Types.False -> go4 (GHC.Prim.+# x 1#)
+                               GHC.Types.True -> GHC.Types.[] @ GHC.Types.Int })
+                      } in
+                      Language.R.Internal.FunWrappers.TH.thWrapperLiterals_go (go4 ww)
+                   GHC.Types.True
+                   -> Language.R.Internal.FunWrappers.TH.thWrapperLiterals1 }) -}
+74362c0ec7f99a1acd2471ceba528e52
+  $wthWrappers ::
+    GHC.Prim.Int#
+    -> GHC.Prim.Int#
+    -> Language.Haskell.TH.Syntax.Q [Language.Haskell.TH.Syntax.Dec]
+  {- Arity: 2, Strictness: <S,U><S,U>, Inline: [0],
+     Unfolding: (\ (ww :: GHC.Prim.Int#) (ww1 :: GHC.Prim.Int#) ->
+                 case GHC.Prim.tagToEnum#
+                        @ GHC.Types.Bool
+                        (GHC.Prim.># ww ww1) of wild {
+                   GHC.Types.False
+                   -> letrec {
+                        go4 :: GHC.Prim.Int# -> [GHC.Types.Int] {- Arity: 1 -}
+                        = \ (x :: GHC.Prim.Int#) ->
+                          GHC.Types.:
+                            @ GHC.Types.Int
+                            (GHC.Types.I# x)
+                            (case GHC.Prim.tagToEnum#
+                                    @ GHC.Types.Bool
+                                    (GHC.Prim.==# x ww1) of wild1 {
+                               GHC.Types.False -> go4 (GHC.Prim.+# x 1#)
+                               GHC.Types.True -> GHC.Types.[] @ GHC.Types.Int })
+                      } in
+                      Language.R.Internal.FunWrappers.TH.thWrappers_go (go4 ww)
+                   GHC.Types.True
+                   -> Language.R.Internal.FunWrappers.TH.thWrappers1 }) -}
+662ff6633e8ca80af634024541ea4c61
+  thWrapper ::
+    GHC.Types.Int
+    -> Language.Haskell.TH.Syntax.Q Language.Haskell.TH.Syntax.Dec
+  {- Arity: 1, Strictness: <L,U(U)>,
+     Unfolding: (\ (n :: GHC.Types.Int) ->
+                 let {
+                   ty :: [Language.Haskell.TH.Syntax.Q
+                            Language.Haskell.TH.Syntax.Type]
+                   = case n of wild { GHC.Types.I# x ->
+                     let {
+                       y :: GHC.Prim.Int# = GHC.Prim.+# x 1#
+                     } in
+                     case GHC.Prim.tagToEnum#
+                            @ GHC.Types.Bool
+                            (GHC.Prim.<# 0# y) of wild1 {
+                       GHC.Types.False
+                       -> GHC.Types.[]
+                            @ (Language.Haskell.TH.Syntax.Q Language.Haskell.TH.Syntax.Type)
+                       GHC.Types.True
+                       -> Language.R.Internal.FunWrappers.TH.$wgo
+                            Language.R.Internal.FunWrappers.TH.thWrapper16
+                            y } }
+                 } in
+                 let {
+                   ty1 :: forall (m :: * -> *).
+                          Language.Haskell.TH.Syntax.Quasi m =>
+                          m Language.Haskell.TH.Syntax.Type
+                     {- Arity: 1 -}
+                   = Language.R.Internal.FunWrappers.TH.thWrapper15 ty
+                 } in
+                 (Language.Haskell.TH.Lib.forImpD1
+                    Language.Haskell.TH.Syntax.CCall
+                    Language.Haskell.TH.Syntax.Safe
+                    Language.R.Internal.FunWrappers.TH.thWrapper14
+                    (case GHC.List.reverse1
+                            @ GHC.Types.Char
+                            (GHC.CString.unpackAppendCString#
+                               "wrap"#
+                               (case n of ww2 { GHC.Types.I# ww3 ->
+                                case GHC.Show.$wshowSignedInt
+                                       0#
+                                       ww3
+                                       (GHC.Types.[] @ GHC.Types.Char) of ww4 { (#,#) ww5 ww6 ->
+                                GHC.Types.: @ GHC.Types.Char ww5 ww6 } }))
+                            (GHC.Types.[] @ GHC.Types.Char) of wild {
+                       [] -> Language.R.Internal.FunWrappers.TH.thWrapper13
+                       : ds rev
+                       -> case ds of wild1 { GHC.Types.C# ds1 ->
+                          case ds1 of ds2 {
+                            DEFAULT
+                            -> case Language.Haskell.TH.Syntax.mkName_$s$wsplit1
+                                      rev
+                                      wild1
+                                      (GHC.Types.[] @ GHC.Types.Char) of ww { (#,#) ww1 ww2 ->
+                               Language.Haskell.TH.Syntax.Name ww1 ww2 }
+                            '.'#
+                            -> case Language.Haskell.TH.Syntax.mkName_$s$wsplit1
+                                      rev
+                                      wild1
+                                      (GHC.Types.[] @ GHC.Types.Char) of ww { (#,#) ww1 ww2 ->
+                               Language.Haskell.TH.Syntax.Name ww1 ww2 } } } })
+                    (Language.Haskell.TH.Lib.appT1
+                       (Language.Haskell.TH.Lib.appT1
+                          Language.Haskell.TH.Lib.arrowT1
+                            `cast`
+                          (Sym (Language.Haskell.TH.Syntax.N:Q[0]
+                                    <Language.Haskell.TH.Syntax.Type>_N))
+                          ty1
+                            `cast`
+                          (Sym (Language.Haskell.TH.Syntax.N:Q[0]
+                                    <Language.Haskell.TH.Syntax.Type>_N)))
+                         `cast`
+                       (Sym (Language.Haskell.TH.Syntax.N:Q[0]
+                                 <Language.Haskell.TH.Syntax.Type>_N))
+                       (Language.Haskell.TH.Lib.appT1
+                          Language.R.Internal.FunWrappers.TH.thWrapper7
+                            `cast`
+                          (Sym (Language.Haskell.TH.Syntax.N:Q[0]
+                                    <Language.Haskell.TH.Syntax.Type>_N))
+                          (Language.Haskell.TH.Lib.appT1
+                             Language.R.Internal.FunWrappers.TH.thWrapper1
+                               `cast`
+                             (Sym (Language.Haskell.TH.Syntax.N:Q[0]
+                                       <Language.Haskell.TH.Syntax.Type>_N))
+                             ty1
+                               `cast`
+                             (Sym (Language.Haskell.TH.Syntax.N:Q[0]
+                                       <Language.Haskell.TH.Syntax.Type>_N)))
+                            `cast`
+                          (Sym (Language.Haskell.TH.Syntax.N:Q[0]
+                                    <Language.Haskell.TH.Syntax.Type>_N)))
+                         `cast`
+                       (Sym (Language.Haskell.TH.Syntax.N:Q[0]
+                                 <Language.Haskell.TH.Syntax.Type>_N)))
+                      `cast`
+                    (Sym (Language.Haskell.TH.Syntax.N:Q[0]
+                              <Language.Haskell.TH.Syntax.Type>_N)))
+                   `cast`
+                 (Sym (Language.Haskell.TH.Syntax.N:Q[0]
+                           <Language.Haskell.TH.Syntax.Dec>_N))) -}
+4ebea5d26c8887d60c18d4e200cabf20
+  thWrapper1 ::
+    Language.Haskell.TH.Syntax.Quasi m =>
+    m Language.Haskell.TH.Syntax.Type
+  {- Arity: 1,
+     Unfolding: (Language.Haskell.TH.Lib.conT1
+                   Language.R.Internal.FunWrappers.TH.thWrapper2) -}
+1413cfcae5a1191d99bb69abe62bc4f6
+  thWrapper10 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "GHC.Types"#) -}
+0072e8dc7c9feecf94e7e0ecc764b676
+  thWrapper11 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "ghc-prim"#) -}
+68ffdbe54e7420323f9ae702317a3fc4
+  thWrapper12 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "IO"#) -}
+09492fb4117a37ca6dadca886d55487f
+  thWrapper13 :: Language.Haskell.TH.Syntax.Name
+  {- HasNoCafRefs,
+     Unfolding: (Language.Haskell.TH.Syntax.Name
+                   (GHC.Types.[] @ GHC.Types.Char)
+                     `cast`
+                   (Sym (Language.Haskell.TH.Syntax.N:OccName[0]))
+                   Language.Haskell.TH.Syntax.NameS) -}
+10047d8cd2ba2c6db07d46778bc7aac0
+  thWrapper14 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "wrapper"#) -}
+c84b13514a8c8ae8419dbc6403dc4a81
+  thWrapper15 ::
+    [Language.Haskell.TH.Syntax.Q Language.Haskell.TH.Syntax.Type]
+    -> forall (m :: * -> *).
+       Language.Haskell.TH.Syntax.Quasi m =>
+       m Language.Haskell.TH.Syntax.Type
+  {- Arity: 2,
+     Strictness: <S,1*U><S(SLLLLLLLLLLLLLLLLLLLL),U(U(U(U(U,U,U,U,U),U,U,U,U),U),A,A,A,A,A,A,A,A,A,A,A,A,A,A,A,A,A,A,A,A)> -}
+21aefd91afcf09985cb8c9c7ee998e99
+  thWrapper16 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.Enum.eftChar 97# 1114111#) -}
+416a6f2c4abc101a3122d3939cee2537
+  thWrapper2 :: Language.Haskell.TH.Syntax.Name
+  {- Strictness: m,
+     Unfolding: (Language.Haskell.TH.Syntax.Name
+                   Language.R.Internal.FunWrappers.TH.thWrapper6
+                     `cast`
+                   (Sym (Language.Haskell.TH.Syntax.N:OccName[0]))
+                   Language.R.Internal.FunWrappers.TH.thWrapper3) -}
+44b0c2f3d7b7744c20739033203de409
+  thWrapper3 :: Language.Haskell.TH.Syntax.NameFlavour
+  {- Strictness: m5,
+     Unfolding: (Language.Haskell.TH.Syntax.NameG
+                   Language.Haskell.TH.Syntax.TcClsName
+                   Language.R.Internal.FunWrappers.TH.thWrapper5
+                     `cast`
+                   (Sym (Language.Haskell.TH.Syntax.N:PkgName[0]))
+                   Language.R.Internal.FunWrappers.TH.thWrapper4
+                     `cast`
+                   (Sym (Language.Haskell.TH.Syntax.N:ModName[0]))) -}
+d5f9713f203312bf6ee6422a06dd9f84
+  thWrapper4 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "GHC.Ptr"#) -}
+703e6502ed8766ae3b9c2621fefbc907
+  thWrapper5 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "base"#) -}
+991ab218e592c491f8ccc924b9e0a964
+  thWrapper6 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "FunPtr"#) -}
+9575d5ede6db9c6320f3ab3b2014ed68
+  thWrapper7 ::
+    Language.Haskell.TH.Syntax.Quasi m =>
+    m Language.Haskell.TH.Syntax.Type
+  {- Arity: 1,
+     Unfolding: (Language.Haskell.TH.Lib.conT1
+                   Language.R.Internal.FunWrappers.TH.thWrapper8) -}
+ba8968c68dc8dd02706c06f08dde2db4
+  thWrapper8 :: Language.Haskell.TH.Syntax.Name
+  {- Strictness: m,
+     Unfolding: (Language.Haskell.TH.Syntax.Name
+                   Language.R.Internal.FunWrappers.TH.thWrapper12
+                     `cast`
+                   (Sym (Language.Haskell.TH.Syntax.N:OccName[0]))
+                   Language.R.Internal.FunWrappers.TH.thWrapper9) -}
+0faf0dd478dbdb7a9c93ccff3710bad5
+  thWrapper9 :: Language.Haskell.TH.Syntax.NameFlavour
+  {- Strictness: m5,
+     Unfolding: (Language.Haskell.TH.Syntax.NameG
+                   Language.Haskell.TH.Syntax.TcClsName
+                   Language.R.Internal.FunWrappers.TH.thWrapper11
+                     `cast`
+                   (Sym (Language.Haskell.TH.Syntax.N:PkgName[0]))
+                   Language.R.Internal.FunWrappers.TH.thWrapper10
+                     `cast`
+                   (Sym (Language.Haskell.TH.Syntax.N:ModName[0]))) -}
+c40ba89891f95ce69512c8a17e9a67c3
+  thWrapperLiteral ::
+    GHC.Types.Int
+    -> Language.Haskell.TH.Syntax.Q Language.Haskell.TH.Syntax.Dec
+  {- Arity: 1, Strictness: <L,U(U)> -}
+1f49646a342876e0fda47aa349d3c70f
+  thWrapperLiterals ::
+    GHC.Types.Int
+    -> GHC.Types.Int
+    -> Language.Haskell.TH.Syntax.Q [Language.Haskell.TH.Syntax.Dec]
+  {- Arity: 2, Strictness: <S(S),1*U(U)><S(S),1*U(U)>,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (2, True, False)
+                (\ (w :: GHC.Types.Int) (w1 :: GHC.Types.Int) ->
+                 case w of ww { GHC.Types.I# ww1 ->
+                 case w1 of ww2 { GHC.Types.I# ww3 ->
+                 Language.R.Internal.FunWrappers.TH.$wthWrapperLiterals
+                   ww1
+                   ww3 } }) -}
+5339e4e69aee542e53b8b461534e09ee
+  thWrapperLiterals1 ::
+    Language.Haskell.TH.Syntax.Q [Language.Haskell.TH.Syntax.Dec]
+  {- Unfolding: (Language.R.Internal.FunWrappers.TH.thWrapperLiterals_go
+                   (GHC.Types.[] @ GHC.Types.Int)) -}
+039259b53d02683f2337c73c725ed93d
+  thWrapperLiterals_go ::
+    [GHC.Types.Int]
+    -> Language.Haskell.TH.Syntax.Q [Language.Haskell.TH.Syntax.Dec]
+  {- Arity: 1, Strictness: <S,1*U> -}
+751bc474951936833766288a98b0d5b5
+  thWrappers ::
+    GHC.Types.Int
+    -> GHC.Types.Int
+    -> Language.Haskell.TH.Syntax.Q [Language.Haskell.TH.Syntax.Dec]
+  {- Arity: 2, Strictness: <S(S),1*U(U)><S(S),1*U(U)>,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (2, True, False)
+                (\ (w :: GHC.Types.Int) (w1 :: GHC.Types.Int) ->
+                 case w of ww { GHC.Types.I# ww1 ->
+                 case w1 of ww2 { GHC.Types.I# ww3 ->
+                 Language.R.Internal.FunWrappers.TH.$wthWrappers ww1 ww3 } }) -}
+e5325107d185d9aaf1a01863c5292358
+  thWrappers1 ::
+    Language.Haskell.TH.Syntax.Q [Language.Haskell.TH.Syntax.Dec]
+  {- Unfolding: (Language.R.Internal.FunWrappers.TH.thWrappers_go
+                   (GHC.Types.[] @ GHC.Types.Int)) -}
+a6ec279c994e6e84fe0ff5cc676e7e5e
+  thWrappers_go ::
+    [GHC.Types.Int]
+    -> Language.Haskell.TH.Syntax.Q [Language.Haskell.TH.Syntax.Dec]
+  {- Arity: 1, Strictness: <S,1*U> -}
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: none
+require own pkg trusted: False
+

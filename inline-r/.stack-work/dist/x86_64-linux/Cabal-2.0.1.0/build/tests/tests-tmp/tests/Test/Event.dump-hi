@@ -1,0 +1,856 @@
+
+==================== FINAL INTERFACE ====================
+2017-12-28 08:50:02.554024 UTC
+
+interface main:Test.Event 8022
+  interface hash: f746c64855fa8efba8c34b6def7f54d6
+  ABI hash: 8c50658cd05fe9dbbc82e5160b09ce4e
+  export-list hash: ca4106eec2a5463ee934c82a111cf06e
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: 1ca4c9edc45300df9deecc3ddc57e0e3
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Test.Event.tests
+  Test.Event.wrap
+module dependencies:
+package dependencies: ansi-terminal-0.7.1.1 ansi-wl-pprint-0.6.8.1
+                      array-0.5.2.0 async-2.1.1.1 base-4.10.1.0 binary-0.8.5.1
+                      bytestring-0.10.8.2 clock-0.7.2 colour-2.3.4 containers-0.5.10.2
+                      data-default-class-0.1.2.0 deepseq-1.4.3.0 directory-1.3.0.2
+                      exceptions-0.8.3 filepath-1.4.1.2 ghc-boot-th-8.2.2
+                      ghc-prim-0.5.1.1 inline-r-0.9.0.2 integer-gmp-1.0.1.0 mtl-2.2.1
+                      optparse-applicative-0.14.0.0 parsec-3.1.11 pretty-1.1.3.3
+                      primitive-0.6.2.0 process-1.6.1.0 reflection-2.1.2
+                      regex-base-0.93.2 regex-tdfa-1.2.2 safe-0.3.15 setenv-0.1.1.3
+                      singletons-2.3.1 stm-2.4.4.1 syb-0.7 tagged-0.8.5 tasty-0.11.3
+                      tasty-hunit-0.9.2 template-haskell-2.12.0.0 temporary-1.2.1.1
+                      text-1.2.2.2 th-desugar-1.7 th-expand-syns-0.4.3.0 th-lift-0.7.7
+                      th-lift-instances-0.1.11 th-orphans-0.13.4 th-reify-many-0.1.8
+                      time-1.8.0.2 transformers-0.5.2.0 unbounded-delays-0.1.1.0
+                      unix-2.7.2.2 vector-0.12.0.1
+orphans: reflection-2.1.2:Data.Reflection
+         singletons-2.3.1:Data.Singletons.TypeLits
+         singletons-2.3.1:Data.Singletons.TypeLits.Internal
+         singletons-2.3.1:Data.Singletons.Prelude.Instances
+         singletons-2.3.1:Data.Singletons.Decide
+         th-orphans-0.13.4:Language.Haskell.TH.Instances
+         th-lift-instances-0.1.11:Instances.TH.Lift
+         th-lift-0.7.7:Language.Haskell.TH.Lift
+         vector-0.12.0.1:Data.Vector.Unboxed
+         vector-0.12.0.1:Data.Vector.Fusion.Bundle
+         syb-0.7:Data.Generics.Instances time-1.8.0.2:Data.Time.Format.Parse
+         time-1.8.0.2:Data.Time.LocalTime.Internal.ZonedTime
+         time-1.8.0.2:Data.Time.LocalTime.Internal.LocalTime
+         time-1.8.0.2:Data.Time.Calendar.Gregorian
+         stm-2.4.4.1:Control.Monad.STM
+         regex-tdfa-1.2.2:Text.Regex.TDFA.ByteString
+         regex-tdfa-1.2.2:Text.Regex.TDFA.ByteString.Lazy
+         regex-tdfa-1.2.2:Text.Regex.TDFA.Sequence
+         regex-tdfa-1.2.2:Text.Regex.TDFA.String text-1.2.2.2:Data.Text.Lazy
+         text-1.2.2.2:Data.Text binary-0.8.5.1:Data.Binary.Generic
+         bytestring-0.10.8.2:Data.ByteString.Builder
+         text-1.2.2.2:Data.Text.Show
+         transformers-0.5.2.0:Control.Monad.Trans.Error
+         regex-base-0.93.2:Text.Regex.Base.Context colour-2.3.4:Data.Colour
+         base-4.10.1.0:GHC.Float base-4.10.1.0:GHC.Base
+family instance modules: base-4.10.1.0:Control.Applicative
+                         base-4.10.1.0:Data.Complex base-4.10.1.0:Data.Either
+                         base-4.10.1.0:Data.Functor.Compose base-4.10.1.0:Data.Functor.Const
+                         base-4.10.1.0:Data.Functor.Identity
+                         base-4.10.1.0:Data.Functor.Product base-4.10.1.0:Data.Functor.Sum
+                         base-4.10.1.0:Data.List.NonEmpty base-4.10.1.0:Data.Monoid
+                         base-4.10.1.0:Data.Semigroup base-4.10.1.0:Data.Type.Equality
+                         base-4.10.1.0:Data.Version base-4.10.1.0:Data.Void
+                         base-4.10.1.0:GHC.Exts base-4.10.1.0:GHC.Generics
+                         base-4.10.1.0:GHC.IO.Exception base-4.10.1.0:GHC.TypeLits
+                         base-4.10.1.0:GHC.TypeNats clock-0.7.2:System.Clock
+                         containers-0.5.10.2:Data.IntMap.Internal
+                         containers-0.5.10.2:Data.IntSet.Internal
+                         containers-0.5.10.2:Data.Map.Internal
+                         containers-0.5.10.2:Data.Sequence.Internal
+                         containers-0.5.10.2:Data.Set.Internal containers-0.5.10.2:Data.Tree
+                         ghc-boot-th-8.2.2:GHC.ForeignSrcLang.Type
+                         ghc-boot-th-8.2.2:GHC.LanguageExtensions.Type
+                         inline-r-0.9.0.2:Control.Memory.Region
+                         inline-r-0.9.0.2:Data.Vector.SEXP inline-r-0.9.0.2:Foreign.R.Type
+                         inline-r-0.9.0.2:Language.R.Instance
+                         pretty-1.1.3.3:Text.PrettyPrint.Annotated.HughesPJ
+                         pretty-1.1.3.3:Text.PrettyPrint.HughesPJ
+                         primitive-0.6.2.0:Control.Monad.Primitive
+                         primitive-0.6.2.0:Data.Primitive.Array
+                         singletons-2.3.1:Data.Singletons
+                         singletons-2.3.1:Data.Singletons.Prelude.Bool
+                         singletons-2.3.1:Data.Singletons.Prelude.Eq
+                         singletons-2.3.1:Data.Singletons.Prelude.Instances
+                         singletons-2.3.1:Data.Singletons.Prelude.Num
+                         singletons-2.3.1:Data.Singletons.Prelude.Ord
+                         singletons-2.3.1:Data.Singletons.Syntax
+                         singletons-2.3.1:Data.Singletons.TypeLits
+                         singletons-2.3.1:Data.Singletons.TypeLits.Internal
+                         tagged-0.8.5:Data.Tagged tasty-0.11.3:Test.Tasty.Core
+                         template-haskell-2.12.0.0:Language.Haskell.TH.Syntax
+                         text-1.2.2.2:Data.Text text-1.2.2.2:Data.Text.Lazy
+                         th-desugar-1.7:Language.Haskell.TH.Desugar.Core
+                         vector-0.12.0.1:Data.Vector vector-0.12.0.1:Data.Vector.Primitive
+                         vector-0.12.0.1:Data.Vector.Storable
+                         vector-0.12.0.1:Data.Vector.Unboxed
+                         vector-0.12.0.1:Data.Vector.Unboxed.Base
+import  -/  base-4.10.1.0:Data.IORef 27e590a10ae158b4075a28a9902178b2
+import  -/  base-4.10.1.0:Foreign 6e1e49cc01b9f846dbcb01cc4a57d323
+import  -/  base-4.10.1.0:Foreign.Ptr 2bbd57f0acbb5d9a11c58f4f5d32b343
+import  -/  base-4.10.1.0:GHC.Base 782fd99b5e36f3698a26179a49afca64
+import  -/  base-4.10.1.0:GHC.IO.Handle 5f614cc041d5fa954b0de4d7c73104fe
+import  -/  base-4.10.1.0:GHC.IO.Handle.Text f965c72d2e9a995ca335a979dc85c98d
+import  -/  base-4.10.1.0:GHC.IORef fcf9a9efa120217c33e71b5dc4a08e1f
+import  -/  base-4.10.1.0:GHC.Num 6e1dc5d36d99a802edb39b92bb1923b8
+import  -/  base-4.10.1.0:GHC.Ptr f6ff03f1ebd95f085d6be4b1fdb71ff8
+import  -/  base-4.10.1.0:Prelude 31945b7d0084063347fc52506d3a4020
+import  -/  base-4.10.1.0:System.IO 6e5bb580370d8d71dc5888f723cea4b4
+import  -/  base-4.10.1.0:System.Posix.Types 2e879d5e842b3fead25f2c7a529cf5a2
+import  -/  ghc-prim-0.5.1.1:GHC.Types b1fd0716441595db508c1a74387bf394
+import  -/  inline-r-0.9.0.2:Foreign.R.EventLoop 1af8f70b39dd17b80af9b76062dbb57d
+import  -/  inline-r-0.9.0.2:H.Prelude e36d2c9f12de64ccb9a431bc0e48e285
+import  -/  inline-r-0.9.0.2:Language.R.Event 88c3de7f6edcc681fb23bf19e3b33aaf
+import  -/  inline-r-0.9.0.2:Language.R.Globals 6466af466952ec50029e279d952209f8
+import  -/  inline-r-0.9.0.2:Language.R.Instance 7c21de0bbc964770a1fa7d8ec3cc550d
+import  -/  tasty-0.11.3:Test.Tasty fd7a7d678fb037373a84e0d2c94ba977
+import  -/  tasty-0.11.3:Test.Tasty.Core ad38a7bfdd07cb983b46499179f5feea
+import  -/  tasty-hunit-0.9.2:Test.Tasty.HUnit e2c91e2e2a1aa9764fce15de0bdca332
+import  -/  tasty-hunit-0.9.2:Test.Tasty.HUnit.Orig cabfe6febc3dd1bdd12e76f191fca3cf
+import  -/  temporary-1.2.1.1:System.IO.Temp 0078b1f3f12947085144a146f13c6383
+import  -/  unix-2.7.2.2:System.Posix.IO e0ae0f06abdcf416348ebc272f131771
+import  -/  unix-2.7.2.2:System.Posix.IO.Common bf8a2a741ada245a002079b0ae4af848
+addDependentFile "/datascience/bin/stack/programs/x86_64-linux/ghc-8.2.2/lib/ghc-8.2.2/include/ghcversion.h"
+addDependentFile ".stack-work/dist/x86_64-linux/Cabal-2.0.1.0/build/tests/autogen/cabal_macros.h"
+addDependentFile "/usr/include/stdc-predef.h"
+23aeac462901c3b5aa8c10f7ebd1323a
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module
+                   Test.Event.$trModule3
+                   Test.Event.$trModule1) -}
+068c7c645348a14a36dc7e76d6e4bb95
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Test.Event.$trModule2) -}
+01e0fedb8dbfbc78adfd97f57ed5db97
+  $trModule2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Test.Event"#) -}
+9cb81d505730d27a9bd9ece1c8d47849
+  $trModule3 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Test.Event.$trModule4) -}
+30920809bfcd5a742bb407c157d2c27a
+  $trModule4 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("main"#) -}
+ebf4af9915d956f19c51587d0542802b
+  tests :: Test.Tasty.Core.TestTree
+  {- Strictness: m2,
+     Unfolding: (Test.Tasty.Core.TestGroup
+                   Test.Event.tests34
+                   Test.Event.tests1) -}
+4d4ee80e9749f2d710c3b20de88113be
+  tests1 :: [Test.Tasty.Core.TestTree]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Test.Tasty.Core.TestTree
+                   Test.Event.tests27
+                   Test.Event.tests2) -}
+256d2e3872936533a12876e09d81aa5b
+  tests10 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+  {- Arity: 1,
+     Unfolding: (GHC.Prim.unmaskAsyncExceptions#
+                   @ ()
+                   Test.Event.tests8) -}
+5cd54b31ba8e0d0e9b2f97803485eec1
+  tests11 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+  {- Arity: 1, Strictness: <B,U>x -}
+e505ddd013dbadd50b99804026bfea16
+  tests12 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+  {- Arity: 1,
+     Unfolding: (GHC.Prim.maskAsyncExceptions#
+                   @ ()
+                   Test.Event.tests8) -}
+a389bd4cfd6c17b70e2c1eebabbbbcdd
+  tests13 ::
+    (System.Posix.Types.Fd -> GHC.Types.IO ())
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+  {- Arity: 2, Strictness: <L,C(C1(U(U,A)))><S,U>,
+     Unfolding: (\ (action :: System.Posix.Types.Fd -> GHC.Types.IO ())
+                   (eta :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                 case GHC.Prim.catch#
+                        @ GHC.Base.String
+                        @ GHC.Exception.SomeException
+                        System.Directory.getTemporaryDirectory5
+                        System.Directory.getTemporaryDirectory2
+                        eta of ds1 { (#,#) ipv ipv1 ->
+                 case System.Directory.canonicalizePath1
+                        ipv1
+                        ipv of ds2 { (#,#) ipv2 ipv3 ->
+                 (System.IO.Temp.withTempFile
+                    @ GHC.Types.IO
+                    @ ()
+                    Control.Monad.IO.Class.$fMonadIOIO
+                    Control.Monad.Catch.$fMonadMaskIO
+                    ipv3
+                    Test.Event.tests17
+                    (\ (path :: GHC.IO.FilePath)
+                       (h :: GHC.IO.Handle.Types.Handle)[OneShot]
+                       (s :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                     case GHC.IO.Handle.Text.hPutStr2
+                            h
+                            Test.Event.tests15
+                            GHC.Types.True
+                            s of ds3 { (#,#) ipv4 ipv5 ->
+                     case GHC.IO.Handle.hClose1 h ipv4 of ds4 { (#,#) ipv6 ipv7 ->
+                     case System.Posix.IO.createFile3
+                            path
+                            System.Posix.IO.Common.ReadOnly
+                            (GHC.Base.Nothing @ System.Posix.Types.FileMode)
+                            Test.Event.tests14
+                            ipv6 of ds5 { (#,#) ipv8 ipv9 ->
+                     case (action ipv9) `cast` (GHC.Types.N:IO[0] <()>_R)
+                            ipv8 of ds6 { (#,#) ipv10 ipv11 ->
+                     System.Posix.IO.Common.closeFd1 ipv9 ipv10 } } } })
+                      `cast`
+                    (<GHC.IO.FilePath>_R
+                     ->_R <GHC.IO.Handle.Types.Handle>_R
+                     ->_R Sym (GHC.Types.N:IO[0] <()>_R)))
+                   `cast`
+                 (GHC.Types.N:IO[0] <()>_R)
+                   ipv2 } }) -}
+a2a341221fe93e487293ed41586fc8e0
+  tests14 :: System.Posix.IO.Common.OpenFileFlags
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (System.Posix.IO.Common.OpenFileFlags
+                   GHC.Types.False
+                   GHC.Types.False
+                   GHC.Types.False
+                   GHC.Types.True
+                   GHC.Types.False) -}
+7392b20e700524cf9163e4f81fa099db
+  tests15 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# Test.Event.tests16) -}
+0d9391d40e4dd7a27e31b019b0c3bbb0
+  tests16 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("hello"#) -}
+7b453a167257d2e97c51f65a674ee809
+  tests17 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# Test.Event.tests18) -}
+eec505c2792304bec3ed9ee92ec53c65
+  tests18 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("inline-r-"#) -}
+593858da8074cccecbed964e7ba74fa8
+  tests19 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# Test.Event.tests20) -}
+e3e718b53c449a90a1453e55d03fc763
+  tests2 :: [Test.Tasty.Core.TestTree]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Test.Tasty.Core.TestTree
+                   Test.Event.tests21
+                   Test.Event.tests3) -}
+cd39d3fbec5e8192b5ed5f6c0bbd2b39
+  tests20 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("file events (select)"#) -}
+3e9205df36a16e6d42817edf2560d2be
+  tests21 :: Test.Tasty.Core.TestTree
+  {- Unfolding: (Test.Tasty.Core.SingleTest
+                   @ Test.Tasty.HUnit.TestCase
+                   Test.Tasty.HUnit.$fIsTestTestCase
+                   Test.Event.tests25
+                   Test.Event.tests22
+                     `cast`
+                   (Trans
+                        (Sym (GHC.Types.N:IO[0] <[GHC.Types.Char]>_R))
+                        (Sym (Test.Tasty.HUnit.N:TestCase[0])))) -}
+3f46ee8fa4d0b4235bc4d89d87ea8976
+  tests22 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, [GHC.Types.Char] #)
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: (\ (s :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                 case Test.Event.tests13
+                        Test.Event.tests23
+                          `cast`
+                        (<System.Posix.Types.Fd>_R ->_R Sym (GHC.Types.N:IO[0] <()>_R))
+                        s of ds { (#,#) ipv ipv1 ->
+                 (# ipv, GHC.Types.[] @ GHC.Types.Char #) }) -}
+c3a0d8a98cbf4bf8c958f2c93b790535
+  tests23 ::
+    System.Posix.Types.Fd
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+  {- Arity: 2, Strictness: <L,1*U(U)><S,U>,
+     Unfolding: (\ (fd :: System.Posix.Types.Fd)
+                   (s :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                 case (Test.Event.wrap
+                         Test.Event.tests24
+                           `cast`
+                         (<GHC.Ptr.Ptr ()>_R ->_R Sym (GHC.Types.N:IO[0] <()>_R)))
+                        `cast`
+                      (GHC.Types.N:IO[0]
+                           <GHC.Ptr.FunPtr (GHC.Ptr.Ptr () -> GHC.Types.IO ())>_R)
+                        s of ds1 { (#,#) ipv ipv1 ->
+                 case Language.R.Globals.inputHandlers of ds { GHC.Ptr.Ptr ds2 ->
+                 case fd
+                        `cast`
+                      (Trans
+                           (System.Posix.Types.N:Fd[0])
+                           (Foreign.C.Types.N:CInt[0])) of ds3 { GHC.Int.I32# ds4 ->
+                 case ipv1 of ds5 { GHC.Ptr.FunPtr ds6 ->
+                 case {__pkg_ccall_GC inline-r-0.9.0.2 GHC.Prim.Addr#
+                                                       -> GHC.Prim.Int#
+                                                       -> GHC.Prim.Addr#
+                                                       -> GHC.Prim.Int#
+                                                       -> GHC.Prim.State# GHC.Prim.RealWorld
+                                                       -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+                                                             GHC.Prim.Addr# #)}
+                        ds2
+                        ds4
+                        ds6
+                        0#
+                        ipv of wild1 { (#,#) ds7 ds8 ->
+                 case Foreign.R.EventLoop.$wremoveInputHandler
+                        ds2
+                        ds8
+                        ds7 of ds9 { (#,#) ipv2 ipv3 ->
+                 case ipv3 of wild {
+                   GHC.Types.False -> Test.Event.tests11 ipv2
+                   GHC.Types.True
+                   -> case {__pkg_ccall base-4.10.1.0 GHC.Prim.Addr#
+                                                      -> GHC.Prim.State# GHC.Prim.RealWorld
+                                                      -> (# GHC.Prim.State# GHC.Prim.RealWorld #)}
+                             ds6
+                             ipv2 of wild2 { Unit# ds10 ->
+                      (# ds10, GHC.Tuple.() #) } } } } } } } }) -}
+2688825b276da596bf81aed77e2be95e
+  tests24 ::
+    GHC.Ptr.Ptr ()
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,A><S,U>,
+     Unfolding: InlineRule (2, True, True)
+                (\ (ds :: GHC.Ptr.Ptr ())
+                   (s :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                 (# s, GHC.Tuple.() #)) -}
+91c18c93ab763774fadec3675309d6bf
+  tests25 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# Test.Event.tests26) -}
+7d167e7ab27f02e9f739b84436746694
+  tests26 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("removeInputHandler decreases handler count"#) -}
+a35504b724fc245810e05f9ada6b79b7
+  tests27 :: Test.Tasty.Core.TestTree
+  {- Unfolding: (Test.Tasty.Core.SingleTest
+                   @ Test.Tasty.HUnit.TestCase
+                   Test.Tasty.HUnit.$fIsTestTestCase
+                   Test.Event.tests32
+                   Test.Event.tests28
+                     `cast`
+                   (Trans
+                        (Sym (GHC.Types.N:IO[0] <[GHC.Types.Char]>_R))
+                        (Sym (Test.Tasty.HUnit.N:TestCase[0])))) -}
+58a032aac67025e2df282ec7f362b443
+  tests28 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, [GHC.Types.Char] #)
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: (\ (s :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                 case Test.Event.tests13
+                        Test.Event.tests29
+                          `cast`
+                        (<System.Posix.Types.Fd>_R ->_R Sym (GHC.Types.N:IO[0] <()>_R))
+                        s of ds { (#,#) ipv ipv1 ->
+                 (# ipv, GHC.Types.[] @ GHC.Types.Char #) }) -}
+93b2f1f2cb56b1e9fba9a7962fa74f48
+  tests29 ::
+    System.Posix.Types.Fd
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+  {- Arity: 2, Strictness: <L,1*U(U)><S,U>,
+     Unfolding: (\ (fd :: System.Posix.Types.Fd)
+                   (s :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                 case (Test.Event.wrap
+                         Test.Event.tests24
+                           `cast`
+                         (<GHC.Ptr.Ptr ()>_R ->_R Sym (GHC.Types.N:IO[0] <()>_R)))
+                        `cast`
+                      (GHC.Types.N:IO[0]
+                           <GHC.Ptr.FunPtr (GHC.Ptr.Ptr () -> GHC.Types.IO ())>_R)
+                        s of ds1 { (#,#) ipv ipv1 ->
+                 case GHC.Prim.newMutVar#
+                        @ GHC.Types.Int
+                        @ GHC.Prim.RealWorld
+                        Test.Event.tests31
+                        ipv of ds { (#,#) ipv2 ipv3 ->
+                 case Language.R.Globals.inputHandlers of ww { GHC.Ptr.Ptr ww1 ->
+                 case Language.R.Event.$wforIH_
+                        ww1
+                        (\ (ds2 :: Foreign.R.EventLoop.InputHandler)
+                           (s1 :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                         case GHC.Prim.readMutVar#
+                                @ GHC.Prim.RealWorld
+                                @ GHC.Types.Int
+                                ipv3
+                                s1 of ds3 { (#,#) ipv4 ipv5 ->
+                         case ipv5 of wild { GHC.Types.I# x ->
+                         case GHC.Prim.writeMutVar#
+                                @ GHC.Prim.RealWorld
+                                @ GHC.Types.Int
+                                ipv3
+                                (GHC.Types.I# (GHC.Prim.+# x 1#))
+                                ipv4 of s2# { DEFAULT ->
+                         (# s2#, GHC.Tuple.() #) } } })
+                          `cast`
+                        (<Foreign.R.EventLoop.InputHandler>_R
+                         ->_R Sym (GHC.Types.N:IO[0] <()>_R))
+                        ipv2 of ds2 { (#,#) ipv4 ipv5 ->
+                 case fd
+                        `cast`
+                      (Trans
+                           (System.Posix.Types.N:Fd[0])
+                           (Foreign.C.Types.N:CInt[0])) of ds3 { GHC.Int.I32# ds4 ->
+                 case ipv1 of ds5 { GHC.Ptr.FunPtr ds6 ->
+                 case {__pkg_ccall_GC inline-r-0.9.0.2 GHC.Prim.Addr#
+                                                       -> GHC.Prim.Int#
+                                                       -> GHC.Prim.Addr#
+                                                       -> GHC.Prim.Int#
+                                                       -> GHC.Prim.State# GHC.Prim.RealWorld
+                                                       -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+                                                             GHC.Prim.Addr# #)}
+                        ww1
+                        ds4
+                        ds6
+                        0#
+                        ipv4 of wild1 { (#,#) ds7 ds8 ->
+                 case GHC.Prim.newMutVar#
+                        @ GHC.Types.Int
+                        @ GHC.Prim.RealWorld
+                        Test.Event.tests31
+                        ds7 of ds9 { (#,#) ipv6 ipv7 ->
+                 case Language.R.Event.$wforIH_
+                        ww1
+                        (\ (ds10 :: Foreign.R.EventLoop.InputHandler)
+                           (s1 :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                         case GHC.Prim.readMutVar#
+                                @ GHC.Prim.RealWorld
+                                @ GHC.Types.Int
+                                ipv7
+                                s1 of ds11 { (#,#) ipv8 ipv9 ->
+                         case ipv9 of wild { GHC.Types.I# x ->
+                         case GHC.Prim.writeMutVar#
+                                @ GHC.Prim.RealWorld
+                                @ GHC.Types.Int
+                                ipv7
+                                (GHC.Types.I# (GHC.Prim.+# x 1#))
+                                ipv8 of s2# { DEFAULT ->
+                         (# s2#, GHC.Tuple.() #) } } })
+                          `cast`
+                        (<Foreign.R.EventLoop.InputHandler>_R
+                         ->_R Sym (GHC.Types.N:IO[0] <()>_R))
+                        ipv6 of ds10 { (#,#) ipv8 ipv9 ->
+                 case GHC.Prim.readMutVar#
+                        @ GHC.Prim.RealWorld
+                        @ GHC.Types.Int
+                        ipv3
+                        ipv8 of ds11 { (#,#) ipv10 ipv11 ->
+                 case GHC.Prim.readMutVar#
+                        @ GHC.Prim.RealWorld
+                        @ GHC.Types.Int
+                        ipv7
+                        ipv10 of ds12 { (#,#) ipv12 ipv13 ->
+                 case ipv11 of wild { GHC.Types.I# x ->
+                 case ipv13 of wild2 { GHC.Types.I# x1 ->
+                 let {
+                   y :: GHC.Prim.Int# = GHC.Prim.-# x1 1#
+                 } in
+                 case GHC.Prim.tagToEnum#
+                        @ GHC.Types.Bool
+                        (GHC.Prim.==# x y) of wild3 {
+                   GHC.Types.False -> Test.Event.tests30 (GHC.Types.I# y) wild ipv12
+                   GHC.Types.True
+                   -> case {__pkg_ccall base-4.10.1.0 GHC.Prim.Addr#
+                                                      -> GHC.Prim.State# GHC.Prim.RealWorld
+                                                      -> (# GHC.Prim.State# GHC.Prim.RealWorld #)}
+                             ds6
+                             ipv12 of wild4 { Unit# ds13 ->
+                      (# ds13, GHC.Tuple.() #) } } } } } } } } } } } } } } }) -}
+61a1ed200e438f70942316172be647d8
+  tests3 :: [Test.Tasty.Core.TestTree]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ Test.Tasty.Core.TestTree
+                   Test.Event.tests4
+                   (GHC.Types.[] @ Test.Tasty.Core.TestTree)) -}
+e9ce9ac6e415bdefbf152180e9e39d36
+  tests30 ::
+    GHC.Types.Int
+    -> GHC.Types.Int
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+  {- Arity: 3, Strictness: <B,U><B,U><B,U>x -}
+311b85c0c212fb45c19fc393674b9ee5
+  tests31 :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 0#) -}
+e42cb16a83f8a02f2ea2683001b3044e
+  tests32 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# Test.Event.tests33) -}
+c3230c33af9ebcff5bfd2007b009ed22
+  tests33 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("addInputHandler increases handler count"#) -}
+1c7c1aef6d96164e044796750593998d
+  tests34 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# Test.Event.tests35) -}
+83e825991ab88398aea01d98157f7b02
+  tests35 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("events"#) -}
+a8a4961540c74975d58517fdd310b5c9
+  tests4 :: Test.Tasty.Core.TestTree
+  {- Unfolding: (Test.Tasty.Core.SingleTest
+                   @ Test.Tasty.HUnit.TestCase
+                   Test.Tasty.HUnit.$fIsTestTestCase
+                   Test.Event.tests19
+                   Test.Event.tests5
+                     `cast`
+                   (Trans
+                        (Sym (GHC.Types.N:IO[0] <[GHC.Types.Char]>_R))
+                        (Sym (Test.Tasty.HUnit.N:TestCase[0])))) -}
+47617bc6690a6d5528256b3351e92e1c
+  tests5 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, [GHC.Types.Char] #)
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: (\ (s :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                 case Test.Event.tests13
+                        Test.Event.tests6
+                          `cast`
+                        (<System.Posix.Types.Fd>_R ->_R Sym (GHC.Types.N:IO[0] <()>_R))
+                        s of ds { (#,#) ipv ipv1 ->
+                 (# ipv, GHC.Types.[] @ GHC.Types.Char #) }) -}
+57fb34f6724213a3c24267c73bb12428
+  tests6 ::
+    System.Posix.Types.Fd
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+  {- Arity: 2, Strictness: <L,1*U(U)><S,U>,
+     Unfolding: (\ (fd :: System.Posix.Types.Fd)
+                   (s :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                 case GHC.Prim.newMutVar#
+                        @ GHC.Types.Bool
+                        @ GHC.Prim.RealWorld
+                        GHC.Types.False
+                        s of ds { (#,#) ipv ipv1 ->
+                 case (Test.Event.wrap
+                         (\ (ds1 :: GHC.Ptr.Ptr ())
+                            (eta :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                          case GHC.Prim.writeMutVar#
+                                 @ GHC.Prim.RealWorld
+                                 @ GHC.Types.Bool
+                                 ipv1
+                                 GHC.Types.True
+                                 eta of s2# { DEFAULT ->
+                          (# s2#, GHC.Tuple.() #) })
+                           `cast`
+                         (<GHC.Ptr.Ptr ()>_R
+                          ->_R Nth:3
+                                   (Nth:3
+                                        (Trans
+                                             (Sym (GHC.IORef.N:IORef[0]) <GHC.Types.Bool>_N
+                                              ->_R <GHC.Types.Bool
+                                                    -> GHC.Prim.State# GHC.Prim.RealWorld
+                                                    -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+                                                          () #)>_R)
+                                             (<GHC.IORef.IORef GHC.Types.Bool>_R
+                                              ->_R <GHC.Types.Bool>_R
+                                              ->_R Sym (GHC.Types.N:IO[0] <()>_R))))))
+                        `cast`
+                      (GHC.Types.N:IO[0]
+                           <GHC.Ptr.FunPtr (GHC.Ptr.Ptr () -> GHC.Types.IO ())>_R)
+                        ipv of ds1 { (#,#) ipv2 ipv3 ->
+                 case Language.R.Globals.inputHandlers of ds2 { GHC.Ptr.Ptr ds3 ->
+                 case fd
+                        `cast`
+                      (Trans
+                           (System.Posix.Types.N:Fd[0])
+                           (Foreign.C.Types.N:CInt[0])) of ds4 { GHC.Int.I32# ds5 ->
+                 case ipv3 of ds6 { GHC.Ptr.FunPtr ds7 ->
+                 case {__pkg_ccall_GC inline-r-0.9.0.2 GHC.Prim.Addr#
+                                                       -> GHC.Prim.Int#
+                                                       -> GHC.Prim.Addr#
+                                                       -> GHC.Prim.Int#
+                                                       -> GHC.Prim.State# GHC.Prim.RealWorld
+                                                       -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+                                                             GHC.Prim.Addr# #)}
+                        ds3
+                        ds5
+                        ds7
+                        0#
+                        ipv2 of wild1 { (#,#) ds8 ds9 ->
+                 case GHC.Prim.getMaskingState# ds8 of ds10 { (#,#) ipv4 ipv5 ->
+                 case ipv5 of ds11 {
+                   DEFAULT
+                   -> case GHC.Prim.newMutVar#
+                             @ GHC.Types.Int
+                             @ GHC.Prim.RealWorld
+                             Language.R.Instance.runRegion3
+                             ipv4 of ds12 { (#,#) ipv6 ipv7 ->
+                      case GHC.Prim.catch#
+                             @ ()
+                             @ GHC.Exception.SomeException
+                             Test.Event.tests12
+                             (\ (e1 :: GHC.Exception.SomeException)[OneShot]
+                                (s1 :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                              case GHC.Prim.readMutVar#
+                                     @ GHC.Prim.RealWorld
+                                     @ GHC.Types.Int
+                                     ipv7
+                                     s1 of ds13 { (#,#) ipv8 ipv9 ->
+                              case ipv9 of wild { GHC.Types.I# x# ->
+                              case {__pkg_ccall_GC inline-r-0.9.0.2 GHC.Prim.Int#
+                                                                    -> GHC.Prim.State#
+                                                                         GHC.Prim.RealWorld
+                                                                    -> (# GHC.Prim.State#
+                                                                            GHC.Prim.RealWorld #)}
+                                     (GHC.Prim.narrow32Int# x#)
+                                     ipv8 of wild2 { Unit# ds14 ->
+                              GHC.Prim.raiseIO# @ GHC.Exception.SomeException @ () e1 ds14 } } })
+                             ipv6 of ds13 { (#,#) ipv8 ipv9 ->
+                      case GHC.Prim.readMutVar#
+                             @ GHC.Prim.RealWorld
+                             @ GHC.Types.Int
+                             ipv7
+                             ipv8 of ds14 { (#,#) ipv10 ipv11 ->
+                      case ipv11 of wild { GHC.Types.I# x# ->
+                      case {__pkg_ccall_GC inline-r-0.9.0.2 GHC.Prim.Int#
+                                                            -> GHC.Prim.State# GHC.Prim.RealWorld
+                                                            -> (# GHC.Prim.State#
+                                                                    GHC.Prim.RealWorld #)}
+                             (GHC.Prim.narrow32Int# x#)
+                             ipv10 of wild2 { Unit# ds15 ->
+                      case GHC.Prim.readMutVar#
+                             @ GHC.Prim.RealWorld
+                             @ GHC.Types.Bool
+                             ipv1
+                             ds15 of ds16 { (#,#) ipv12 ipv13 ->
+                      case ipv13 of wild3 {
+                        GHC.Types.False -> Test.Event.tests11 ipv12
+                        GHC.Types.True
+                        -> case {__pkg_ccall base-4.10.1.0 GHC.Prim.Addr#
+                                                           -> GHC.Prim.State# GHC.Prim.RealWorld
+                                                           -> (# GHC.Prim.State#
+                                                                   GHC.Prim.RealWorld #)}
+                                  ds7
+                                  ipv12 of wild4 { Unit# ds17 ->
+                           (# ds17, GHC.Tuple.() #) } } } } } } } }
+                   0#
+                   -> case GHC.Prim.maskAsyncExceptions#
+                             @ ()
+                             Test.Event.tests9
+                             ipv4 of ds12 { (#,#) ipv6 ipv7 ->
+                      case GHC.Prim.readMutVar#
+                             @ GHC.Prim.RealWorld
+                             @ GHC.Types.Bool
+                             ipv1
+                             ipv6 of ds13 { (#,#) ipv8 ipv9 ->
+                      case ipv9 of wild {
+                        GHC.Types.False -> Test.Event.tests11 ipv8
+                        GHC.Types.True
+                        -> case {__pkg_ccall base-4.10.1.0 GHC.Prim.Addr#
+                                                           -> GHC.Prim.State# GHC.Prim.RealWorld
+                                                           -> (# GHC.Prim.State#
+                                                                   GHC.Prim.RealWorld #)}
+                                  ds7
+                                  ipv8 of wild2 { Unit# ds14 ->
+                           (# ds14, GHC.Tuple.() #) } } } }
+                   1#
+                   -> case GHC.Prim.newMutVar#
+                             @ GHC.Types.Int
+                             @ GHC.Prim.RealWorld
+                             Language.R.Instance.runRegion3
+                             ipv4 of ds12 { (#,#) ipv6 ipv7 ->
+                      case GHC.Prim.catch#
+                             @ ()
+                             @ GHC.Exception.SomeException
+                             Test.Event.tests7
+                             (\ (e1 :: GHC.Exception.SomeException)[OneShot]
+                                (s1 :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                              case GHC.Prim.readMutVar#
+                                     @ GHC.Prim.RealWorld
+                                     @ GHC.Types.Int
+                                     ipv7
+                                     s1 of ds13 { (#,#) ipv8 ipv9 ->
+                              case ipv9 of wild { GHC.Types.I# x# ->
+                              case {__pkg_ccall_GC inline-r-0.9.0.2 GHC.Prim.Int#
+                                                                    -> GHC.Prim.State#
+                                                                         GHC.Prim.RealWorld
+                                                                    -> (# GHC.Prim.State#
+                                                                            GHC.Prim.RealWorld #)}
+                                     (GHC.Prim.narrow32Int# x#)
+                                     ipv8 of wild2 { Unit# ds14 ->
+                              GHC.Prim.raiseIO# @ GHC.Exception.SomeException @ () e1 ds14 } } })
+                             ipv6 of ds13 { (#,#) ipv8 ipv9 ->
+                      case GHC.Prim.readMutVar#
+                             @ GHC.Prim.RealWorld
+                             @ GHC.Types.Int
+                             ipv7
+                             ipv8 of ds14 { (#,#) ipv10 ipv11 ->
+                      case ipv11 of wild { GHC.Types.I# x# ->
+                      case {__pkg_ccall_GC inline-r-0.9.0.2 GHC.Prim.Int#
+                                                            -> GHC.Prim.State# GHC.Prim.RealWorld
+                                                            -> (# GHC.Prim.State#
+                                                                    GHC.Prim.RealWorld #)}
+                             (GHC.Prim.narrow32Int# x#)
+                             ipv10 of wild2 { Unit# ds15 ->
+                      case GHC.Prim.readMutVar#
+                             @ GHC.Prim.RealWorld
+                             @ GHC.Types.Bool
+                             ipv1
+                             ds15 of ds16 { (#,#) ipv12 ipv13 ->
+                      case ipv13 of wild3 {
+                        GHC.Types.False -> Test.Event.tests11 ipv12
+                        GHC.Types.True
+                        -> case {__pkg_ccall base-4.10.1.0 GHC.Prim.Addr#
+                                                           -> GHC.Prim.State# GHC.Prim.RealWorld
+                                                           -> (# GHC.Prim.State#
+                                                                   GHC.Prim.RealWorld #)}
+                                  ds7
+                                  ipv12 of wild4 { Unit# ds17 ->
+                           (# ds17, GHC.Tuple.() #) } } } } } } } } } } } } } } } }) -}
+44f53245bf17566384b4ceac7833040f
+  tests7 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+  {- Arity: 1,
+     Unfolding: (GHC.Prim.maskUninterruptible#
+                   @ ()
+                   Test.Event.tests8) -}
+74aa483cac0ee36bdb3e14fcfa3d1613
+  tests8 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (s1 :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                 case {__pkg_ccall inline-r-0.9.0.2 GHC.Prim.Int#
+                                                    -> GHC.Prim.Int#
+                                                    -> GHC.Prim.State# GHC.Prim.RealWorld
+                                                    -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+                                                          GHC.Prim.Addr# #)}
+                        0#
+                        1#
+                        s1 of wild { (#,#) ds7 ds8 ->
+                 case Language.R.Globals.inputHandlers of ds2 { GHC.Ptr.Ptr ds3 ->
+                 case {__pkg_ccall_GC inline-r-0.9.0.2 GHC.Prim.Addr#
+                                                       -> GHC.Prim.Addr#
+                                                       -> GHC.Prim.State# GHC.Prim.RealWorld
+                                                       -> (# GHC.Prim.State# GHC.Prim.RealWorld #)}
+                        ds3
+                        ds8
+                        ds7 of wild1 { Unit# ds1 ->
+                 (# ds1, GHC.Tuple.() #) } } }) -}
+81a3ef9ac45c33fa8671d30fa766e5b6
+  tests9 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: (\ (s1 :: GHC.Prim.State#
+                            GHC.Prim.RealWorld)[OneShot] ->
+                 case GHC.Prim.newMutVar#
+                        @ GHC.Types.Int
+                        @ GHC.Prim.RealWorld
+                        Language.R.Instance.runRegion3
+                        s1 of ds2 { (#,#) ipv2 ipv3 ->
+                 case GHC.Prim.catch#
+                        @ ()
+                        @ GHC.Exception.SomeException
+                        Test.Event.tests10
+                        (\ (e1 :: GHC.Exception.SomeException)[OneShot]
+                           (s2 :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                         case GHC.Prim.readMutVar#
+                                @ GHC.Prim.RealWorld
+                                @ GHC.Types.Int
+                                ipv3
+                                s2 of ds3 { (#,#) ipv4 ipv5 ->
+                         case ipv5 of wild { GHC.Types.I# x# ->
+                         case {__pkg_ccall_GC inline-r-0.9.0.2 GHC.Prim.Int#
+                                                               -> GHC.Prim.State# GHC.Prim.RealWorld
+                                                               -> (# GHC.Prim.State#
+                                                                       GHC.Prim.RealWorld #)}
+                                (GHC.Prim.narrow32Int# x#)
+                                ipv4 of wild1 { Unit# ds4 ->
+                         GHC.Prim.raiseIO# @ GHC.Exception.SomeException @ () e1 ds4 } } })
+                        ipv2 of ds3 { (#,#) ipv4 ipv5 ->
+                 case GHC.Prim.readMutVar#
+                        @ GHC.Prim.RealWorld
+                        @ GHC.Types.Int
+                        ipv3
+                        ipv4 of ds4 { (#,#) ipv7 ipv8 ->
+                 case ipv8 of wild { GHC.Types.I# x# ->
+                 case {__pkg_ccall_GC inline-r-0.9.0.2 GHC.Prim.Int#
+                                                       -> GHC.Prim.State# GHC.Prim.RealWorld
+                                                       -> (# GHC.Prim.State# GHC.Prim.RealWorld #)}
+                        (GHC.Prim.narrow32Int# x#)
+                        ipv7 of wild1 { Unit# ds5 ->
+                 (# ds5, ipv5 #) } } } } }) -}
+a9681f90f2d9cf2af1bf9b49cba3d55e
+  wrap ::
+    (GHC.Ptr.Ptr () -> GHC.Types.IO ())
+    -> GHC.Types.IO
+         (GHC.Ptr.FunPtr (GHC.Ptr.Ptr () -> GHC.Types.IO ()))
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,U><S,U>, Inline: [~],
+     Unfolding: InlineRule (0, True, True)
+                Test.Event.wrap1
+                  `cast`
+                (<GHC.Ptr.Ptr () -> GHC.Types.IO ()>_R
+                 ->_R Sym (GHC.Types.N:IO[0]
+                               <GHC.Ptr.FunPtr (GHC.Ptr.Ptr () -> GHC.Types.IO ())>_R)) -}
+581b89c945b25197c4021e50811006f5
+  wrap1 ::
+    (GHC.Ptr.Ptr () -> GHC.Types.IO ())
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+          GHC.Ptr.FunPtr (GHC.Ptr.Ptr () -> GHC.Types.IO ()) #)
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,U><S,U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (ds :: GHC.Ptr.Ptr () -> GHC.Types.IO ())
+                   (s :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                 case GHC.Prim.makeStablePtr#
+                        @ (GHC.Ptr.Ptr () -> GHC.Types.IO ())
+                        ds
+                        s of ds1 { (#,#) ipv ipv1 ->
+                 case {__pkg_ccall GHC.Prim.Int#
+                                   -> GHC.Prim.StablePtr# (GHC.Ptr.Ptr () -> GHC.Types.IO ())
+                                   -> GHC.Prim.Addr#
+                                   -> GHC.Prim.Addr#
+                                   -> GHC.Prim.State# GHC.Prim.RealWorld
+                                   -> (# GHC.Prim.State# GHC.Prim.RealWorld, GHC.Prim.Addr# #)}
+                        1#
+                        ipv1
+                        __label "zdmainzdTestziEventzdTestzziEventzuwrap" (function)
+                        Test.Event.wrap2
+                        ipv of wild { (#,#) ds2 ds3 ->
+                 (# ds2,
+                    GHC.Ptr.FunPtr @ (GHC.Ptr.Ptr () -> GHC.Types.IO ()) ds3 #) } }) -}
+11f582b0072418df4fe32cf675effa3e
+  wrap2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("p"#) -}
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: none
+require own pkg trusted: False
+

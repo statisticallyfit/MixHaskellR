@@ -1,0 +1,2 @@
+C->Haskell Interface Version C->Haskell Compiler, version 0.28.2 Switcheroo, 1 April 2016
+([((False,"SEXP"),("SEXP0","SEXP0"))],[("SEXP0",Pointer {ptrTypeHO = Ptr, isNewtypeHO = False})],["CEType"])

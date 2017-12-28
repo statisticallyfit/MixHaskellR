@@ -1,0 +1,4352 @@
+
+==================== FINAL INTERFACE ====================
+2017-12-28 08:49:00.969048 UTC
+
+interface inline-r-0.9.0.2-CmRL2Hikuao7dNZScoizZz:Foreign.R.Type [boot] 8022
+  interface hash: a020eb87001227fbb7c31d040db8d653
+  ABI hash: 1180c13f75c58c938be62fa91eb99275
+  export-list hash: a265fcb857717b2f1294eafbb94a3084
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: 8978391c6db8f7ae6da8c78ecd78d1dd
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Foreign.R.Type.SEXPTYPE{Foreign.R.Type.Any Foreign.R.Type.Builtin Foreign.R.Type.Bytecode Foreign.R.Type.Char Foreign.R.Type.Closure Foreign.R.Type.Complex Foreign.R.Type.DotDotDot Foreign.R.Type.Env Foreign.R.Type.Expr Foreign.R.Type.ExtPtr Foreign.R.Type.Free Foreign.R.Type.Fun Foreign.R.Type.Int Foreign.R.Type.Lang Foreign.R.Type.List Foreign.R.Type.Logical Foreign.R.Type.New Foreign.R.Type.Nil Foreign.R.Type.Promise Foreign.R.Type.Raw Foreign.R.Type.Real Foreign.R.Type.S4 Foreign.R.Type.Special Foreign.R.Type.String Foreign.R.Type.Symbol Foreign.R.Type.Vector Foreign.R.Type.WeakRef}
+module dependencies:
+package dependencies: base-4.10.1.0* ghc-prim-0.5.1.1
+                      integer-gmp-1.0.1.0
+orphans: base-4.10.1.0:GHC.Float base-4.10.1.0:GHC.Base
+family instance modules: base-4.10.1.0:Control.Applicative
+                         base-4.10.1.0:Data.Either base-4.10.1.0:Data.Functor.Const
+                         base-4.10.1.0:Data.Functor.Identity base-4.10.1.0:Data.Monoid
+                         base-4.10.1.0:Data.Type.Equality base-4.10.1.0:GHC.Generics
+                         base-4.10.1.0:GHC.IO.Exception base-4.10.1.0:GHC.TypeLits
+                         base-4.10.1.0:GHC.TypeNats
+import  -/  base-4.10.1.0:Prelude 31945b7d0084063347fc52506d3a4020
+dfd90d4f0535999e14781d34dbb7e6d7
+  $tc'Any :: GHC.Types.TyCon
+c2319c2c1e90e7a2ed35321b336c4cfd
+  $tc'Builtin :: GHC.Types.TyCon
+3f21a869ccfcfe3b3053d419ced01b69
+  $tc'Bytecode :: GHC.Types.TyCon
+1588fb3efb50b2b012b131db481f73be
+  $tc'Char :: GHC.Types.TyCon
+332b18e63f7a5ca935493e86acd6b6ab
+  $tc'Closure :: GHC.Types.TyCon
+1e33975cfce6344703fa8521e6c14337
+  $tc'Complex :: GHC.Types.TyCon
+f21661539f64e090a541888d53372e57
+  $tc'DotDotDot :: GHC.Types.TyCon
+1dd1099daba2c91a168e743b63874898
+  $tc'Env :: GHC.Types.TyCon
+4c28be56eba3f4141a89b64b88dbbaf9
+  $tc'Expr :: GHC.Types.TyCon
+81683c9b3bf0043fbe8e01ddd3f59f31
+  $tc'ExtPtr :: GHC.Types.TyCon
+4dd91076189b869fac64f79e8c8570ed
+  $tc'Free :: GHC.Types.TyCon
+8d591519c8fb31ffca46994256560d94
+  $tc'Fun :: GHC.Types.TyCon
+51873e4ba4b7de1ce9efb91e9410c0b9
+  $tc'Int :: GHC.Types.TyCon
+6af5262f0b98b79b14d4a8f1e5794527
+  $tc'Lang :: GHC.Types.TyCon
+fa7e00beee0dc72c8f7fd1eb92556aa5
+  $tc'List :: GHC.Types.TyCon
+95e906ca2cd986c1c02ce1a3e5ad211e
+  $tc'Logical :: GHC.Types.TyCon
+c49c6344f3257792ff9bfdb7b3dcd0f8
+  $tc'New :: GHC.Types.TyCon
+62c6823693cf6c3a7ab11496579678d3
+  $tc'Nil :: GHC.Types.TyCon
+1063895fdff43d37f37265c4a8182096
+  $tc'Promise :: GHC.Types.TyCon
+9f50179138837a49e3ef54aaea5b83ff
+  $tc'Raw :: GHC.Types.TyCon
+e9bea3f027c84d85065cd78116c2b1bb
+  $tc'Real :: GHC.Types.TyCon
+965126240b356fef92a90f92357c2460
+  $tc'S4 :: GHC.Types.TyCon
+f51e9877e5fb2e096c0d2f9fad9cbbe9
+  $tc'Special :: GHC.Types.TyCon
+c52b27ed8284a2640c2d8f9d7bb8b8d4
+  $tc'String :: GHC.Types.TyCon
+06970b98c39a40ef46e5db2a3583e430
+  $tc'Symbol :: GHC.Types.TyCon
+7f1aab2df5329dd6deff45a3dab28521
+  $tc'Vector :: GHC.Types.TyCon
+1356b24272239b1c88a25d9f0c563433
+  $tc'WeakRef :: GHC.Types.TyCon
+108b57784456a9760c65930aa9133aa1
+  $tcSEXPTYPE :: GHC.Types.TyCon
+7d7aeacdc417932b3c64aefb3c822f82
+  $trModule :: GHC.Types.Module
+cb8c0403fabcc604750e51d3f024dbb2
+  data SEXPTYPE
+    = Nil
+    | Symbol
+    | List
+    | Closure
+    | Env
+    | Promise
+    | Lang
+    | Special
+    | Builtin
+    | Char
+    | Logical
+    | Int
+    | Real
+    | Complex
+    | String
+    | DotDotDot
+    | Any
+    | Vector
+    | Expr
+    | Bytecode
+    | ExtPtr
+    | WeakRef
+    | Raw
+    | S4
+    | New
+    | Free
+    | Fun
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: safe
+require own pkg trusted: False
+
+
+==================== FINAL INTERFACE ====================
+2017-12-28 08:49:03.112206 UTC
+
+interface inline-r-0.9.0.2-CmRL2Hikuao7dNZScoizZz:Foreign.R.Type [family instance module] 8022
+  interface hash: 9372d8a1e12778f011c1ccf7b9bf8711
+  ABI hash: c66cc062d80b456888eb0e05aa6a4002
+  export-list hash: 5754d5cde3f2758aa360e9e8b66ebc71
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: 7d1c052523e4c7b97f060e5c88fbe5d7
+  sig of: Nothing
+  used TH splices: True
+  where
+exports:
+  Foreign.R.Type.IsExpression
+  Foreign.R.Type.IsGenericVector
+  Foreign.R.Type.IsList
+  Foreign.R.Type.IsPairList
+  Foreign.R.Type.IsVector
+  Foreign.R.Type.Logical{Foreign.R.Type.FALSE Foreign.R.Type.NA Foreign.R.Type.TRUE}
+  Foreign.R.Type.PairList
+  Foreign.R.Type.SEXPTYPE{Foreign.R.Type.Any Foreign.R.Type.Builtin Foreign.R.Type.Bytecode Foreign.R.Type.Char Foreign.R.Type.Closure Foreign.R.Type.Complex Foreign.R.Type.DotDotDot Foreign.R.Type.Env Foreign.R.Type.Expr Foreign.R.Type.ExtPtr Foreign.R.Type.Free Foreign.R.Type.Fun Foreign.R.Type.Int Foreign.R.Type.Lang Foreign.R.Type.List Foreign.R.Type.Logical Foreign.R.Type.New Foreign.R.Type.Nil Foreign.R.Type.Promise Foreign.R.Type.Raw Foreign.R.Type.Real Foreign.R.Type.S4 Foreign.R.Type.Special Foreign.R.Type.String Foreign.R.Type.Symbol Foreign.R.Type.Vector Foreign.R.Type.WeakRef}
+  Foreign.R.Type.SSEXPTYPE
+  Data.Singletons.Sing{Foreign.R.Type.SAny Foreign.R.Type.SBuiltin Foreign.R.Type.SBytecode Foreign.R.Type.SChar Foreign.R.Type.SClosure Foreign.R.Type.SComplex Foreign.R.Type.SDotDotDot Foreign.R.Type.SEnv Foreign.R.Type.SExpr Foreign.R.Type.SExtPtr Foreign.R.Type.SFree Foreign.R.Type.SFun Foreign.R.Type.SInt Foreign.R.Type.SLang Foreign.R.Type.SList Foreign.R.Type.SLogical Foreign.R.Type.SNew Foreign.R.Type.SNil Foreign.R.Type.SPromise Foreign.R.Type.SRaw Foreign.R.Type.SReal Foreign.R.Type.SS4 Foreign.R.Type.SSpecial Foreign.R.Type.SString Foreign.R.Type.SSymbol Foreign.R.Type.SVector Foreign.R.Type.SWeakRef Data.Singletons.SLambda Data.Singletons.Prelude.Instances.SFalse Data.Singletons.Prelude.Instances.STrue Data.Singletons.Prelude.Instances.STuple0 Data.Singletons.Prelude.Instances.STuple2 Data.Singletons.Prelude.Instances.STuple3 Data.Singletons.Prelude.Instances.STuple4 Data.Singletons.Prelude.Instances.STuple5 Data.Singletons.Prelude.Instances.STuple6 Data.Singletons.Prelude.Instances.STuple7 applySing}
+module dependencies: Foreign.R.Constraints Internal.Error
+package dependencies: array-0.5.2.0 base-4.10.1.0 binary-0.8.5.1
+                      bytestring-0.10.8.2 containers-0.5.10.2 deepseq-1.4.3.0
+                      ghc-boot-th-8.2.2 ghc-prim-0.5.1.1 integer-gmp-1.0.1.0 mtl-2.2.1
+                      pretty-1.1.3.3 primitive-0.6.2.0 safe-0.3.15 singletons-2.3.1
+                      syb-0.7 template-haskell-2.12.0.0 text-1.2.2.2 th-desugar-1.7
+                      th-expand-syns-0.4.3.0 th-lift-0.7.7 th-lift-instances-0.1.11
+                      th-orphans-0.13.4 th-reify-many-0.1.8 transformers-0.5.2.0
+                      vector-0.12.0.1
+orphans: singletons-2.3.1:Data.Singletons.TypeLits
+         singletons-2.3.1:Data.Singletons.TypeLits.Internal
+         singletons-2.3.1:Data.Singletons.Prelude.Instances
+         singletons-2.3.1:Data.Singletons.Decide
+         th-orphans-0.13.4:Language.Haskell.TH.Instances
+         th-lift-instances-0.1.11:Instances.TH.Lift
+         th-lift-0.7.7:Language.Haskell.TH.Lift text-1.2.2.2:Data.Text.Lazy
+         text-1.2.2.2:Data.Text binary-0.8.5.1:Data.Binary.Generic
+         bytestring-0.10.8.2:Data.ByteString.Builder
+         text-1.2.2.2:Data.Text.Show vector-0.12.0.1:Data.Vector.Unboxed
+         vector-0.12.0.1:Data.Vector.Fusion.Bundle
+         transformers-0.5.2.0:Control.Monad.Trans.Error
+         syb-0.7:Data.Generics.Instances base-4.10.1.0:GHC.Float
+         base-4.10.1.0:GHC.Base
+family instance modules: base-4.10.1.0:Control.Applicative
+                         base-4.10.1.0:Data.Complex base-4.10.1.0:Data.Either
+                         base-4.10.1.0:Data.Functor.Compose base-4.10.1.0:Data.Functor.Const
+                         base-4.10.1.0:Data.Functor.Identity
+                         base-4.10.1.0:Data.Functor.Product base-4.10.1.0:Data.Functor.Sum
+                         base-4.10.1.0:Data.List.NonEmpty base-4.10.1.0:Data.Monoid
+                         base-4.10.1.0:Data.Semigroup base-4.10.1.0:Data.Type.Equality
+                         base-4.10.1.0:Data.Version base-4.10.1.0:Data.Void
+                         base-4.10.1.0:GHC.Exts base-4.10.1.0:GHC.Generics
+                         base-4.10.1.0:GHC.IO.Exception base-4.10.1.0:GHC.TypeLits
+                         base-4.10.1.0:GHC.TypeNats containers-0.5.10.2:Data.IntMap.Internal
+                         containers-0.5.10.2:Data.IntSet.Internal
+                         containers-0.5.10.2:Data.Map.Internal
+                         containers-0.5.10.2:Data.Sequence.Internal
+                         containers-0.5.10.2:Data.Set.Internal containers-0.5.10.2:Data.Tree
+                         ghc-boot-th-8.2.2:GHC.ForeignSrcLang.Type
+                         ghc-boot-th-8.2.2:GHC.LanguageExtensions.Type
+                         pretty-1.1.3.3:Text.PrettyPrint.Annotated.HughesPJ
+                         pretty-1.1.3.3:Text.PrettyPrint.HughesPJ
+                         primitive-0.6.2.0:Control.Monad.Primitive
+                         primitive-0.6.2.0:Data.Primitive.Array
+                         singletons-2.3.1:Data.Singletons
+                         singletons-2.3.1:Data.Singletons.Prelude.Bool
+                         singletons-2.3.1:Data.Singletons.Prelude.Eq
+                         singletons-2.3.1:Data.Singletons.Prelude.Instances
+                         singletons-2.3.1:Data.Singletons.Prelude.Num
+                         singletons-2.3.1:Data.Singletons.Prelude.Ord
+                         singletons-2.3.1:Data.Singletons.Syntax
+                         singletons-2.3.1:Data.Singletons.TypeLits
+                         singletons-2.3.1:Data.Singletons.TypeLits.Internal
+                         template-haskell-2.12.0.0:Language.Haskell.TH.Syntax
+                         text-1.2.2.2:Data.Text text-1.2.2.2:Data.Text.Lazy
+                         th-desugar-1.7:Language.Haskell.TH.Desugar.Core
+                         vector-0.12.0.1:Data.Vector vector-0.12.0.1:Data.Vector.Primitive
+                         vector-0.12.0.1:Data.Vector.Storable
+                         vector-0.12.0.1:Data.Vector.Unboxed
+                         vector-0.12.0.1:Data.Vector.Unboxed.Base
+import  -/  base-4.10.1.0:Foreign 6e1e49cc01b9f846dbcb01cc4a57d323
+import  -/  base-4.10.1.0:Foreign.C f34e348e91247a99e0eb5a41b6102351
+import  -/  base-4.10.1.0:Foreign.C.Types 936c0db027291520097b61fd8686710a
+import  -/  base-4.10.1.0:Foreign.Storable c463817097bdd1b4c7f7c325680a9964
+import  -/  base-4.10.1.0:GHC.Base 782fd99b5e36f3698a26179a49afca64
+import  -/  base-4.10.1.0:GHC.Enum 5a1ba50c23f92f669e01f8955f202337
+import  -/  base-4.10.1.0:GHC.Err 514b3a24b22e9d7d731c2d0d02d10842
+import  -/  base-4.10.1.0:GHC.Ptr f6ff03f1ebd95f085d6be4b1fdb71ff8
+import  -/  base-4.10.1.0:GHC.Show 0a8ce2b5e533d1c2cfb7954e6736be45
+import  -/  base-4.10.1.0:Prelude 31945b7d0084063347fc52506d3a4020
+import  -/  deepseq-1.4.3.0:Control.DeepSeq 9eeb1cba615a0eb5ceba9a811a507265
+import  -/  ghc-prim-0.5.1.1:GHC.Classes 93e2660065dce9329577e83d76d8f0d4
+import  -/  ghc-prim-0.5.1.1:GHC.Types b1fd0716441595db508c1a74387bf394
+import  -/  Foreign.R.Constraints 5e190340d29314eb38fd1cdb5ab46fca
+  exports: 441429338cad6caf0808dc7f956d20fa
+  :∈ 94dd0ad55a7963a5e0d3bae0faa1a5cd
+import  -/  Internal.Error 740162e156c3d9ec6fcb98a35435f6ce
+  exports: 13dcfd343f68bd642398afc1dc7f61a0
+  failure 1195b0f2e62fb52c3773907c4a230d1e
+  violation b8d3d6683e7c01fa74a453c2d484fb85
+import  -/  singletons-2.3.1:Data.Singletons 9da68ca382f47f0899b26cbacf532ec5
+import  -/  singletons-2.3.1:Data.Singletons.Prelude.Instances c8808cb0cccab92e954c7246b10c3998
+import  -/  singletons-2.3.1:Data.Singletons.Single 6a657d341003758489e981533248f9d8
+import  -/  singletons-2.3.1:Data.Singletons.TH b63a50933f4f297439041a5ba9e04006
+import  -/  template-haskell-2.12.0.0:Language.Haskell.TH.Lib bda195ec35e92c198ea9974455154870
+import  -/  template-haskell-2.12.0.0:Language.Haskell.TH.Syntax 89a468ec90271d2f2ee599dc8318cc79
+addDependentFile "src/Foreign/R/Type.hsc"
+addDependentFile "/datascience/bin/stack/programs/x86_64-linux/ghc-8.2.2/lib/ghc-8.2.2/include/ghcversion.h"
+addDependentFile ".stack-work/dist/x86_64-linux/Cabal-2.0.1.0/build/autogen/cabal_macros.h"
+addDependentFile "/usr/include/stdc-predef.h"
+155aac0ce58f46653dea12e588ab4eb0
+  $fEnumSEXPTYPE :: GHC.Enum.Enum Foreign.R.Type.SEXPTYPE
+  DFunId
+  {- Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ Foreign.R.Type.SEXPTYPE
+                  Foreign.R.Type.$fEnumSEXPTYPE_$csucc
+                  Foreign.R.Type.$fEnumSEXPTYPE_$cpred
+                  Foreign.R.Type.$fEnumSEXPTYPE_$ctoEnum
+                  Foreign.R.Type.$fEnumSEXPTYPE_$cfromEnum
+                  Foreign.R.Type.$fEnumSEXPTYPE_$cenumFrom
+                  Foreign.R.Type.$fEnumSEXPTYPE_$cenumFromThen
+                  Foreign.R.Type.$fEnumSEXPTYPE_$cenumFromTo
+                  Foreign.R.Type.$fEnumSEXPTYPE_$cenumFromThenTo -}
+155aac0ce58f46653dea12e588ab4eb0
+  $fEnumSEXPTYPE1 :: [Foreign.R.Type.SEXPTYPE]
+  {- Unfolding: (Foreign.R.Type.$fEnumSEXPTYPE_go 99#) -}
+155aac0ce58f46653dea12e588ab4eb0
+  $fEnumSEXPTYPE10 :: [Foreign.R.Type.SEXPTYPE]
+  {- Unfolding: (Foreign.R.Type.$fEnumSEXPTYPE_go 19#) -}
+155aac0ce58f46653dea12e588ab4eb0
+  $fEnumSEXPTYPE11 :: [Foreign.R.Type.SEXPTYPE]
+  {- Unfolding: (Foreign.R.Type.$fEnumSEXPTYPE_go 18#) -}
+155aac0ce58f46653dea12e588ab4eb0
+  $fEnumSEXPTYPE12 :: [Foreign.R.Type.SEXPTYPE]
+  {- Unfolding: (Foreign.R.Type.$fEnumSEXPTYPE_go 17#) -}
+155aac0ce58f46653dea12e588ab4eb0
+  $fEnumSEXPTYPE13 :: [Foreign.R.Type.SEXPTYPE]
+  {- Unfolding: (Foreign.R.Type.$fEnumSEXPTYPE_go 16#) -}
+155aac0ce58f46653dea12e588ab4eb0
+  $fEnumSEXPTYPE14 :: [Foreign.R.Type.SEXPTYPE]
+  {- Unfolding: (Foreign.R.Type.$fEnumSEXPTYPE_go 15#) -}
+155aac0ce58f46653dea12e588ab4eb0
+  $fEnumSEXPTYPE15 :: [Foreign.R.Type.SEXPTYPE]
+  {- Unfolding: (Foreign.R.Type.$fEnumSEXPTYPE_go 14#) -}
+155aac0ce58f46653dea12e588ab4eb0
+  $fEnumSEXPTYPE16 :: [Foreign.R.Type.SEXPTYPE]
+  {- Unfolding: (Foreign.R.Type.$fEnumSEXPTYPE_go 13#) -}
+155aac0ce58f46653dea12e588ab4eb0
+  $fEnumSEXPTYPE17 :: [Foreign.R.Type.SEXPTYPE]
+  {- Unfolding: (Foreign.R.Type.$fEnumSEXPTYPE_go 10#) -}
+155aac0ce58f46653dea12e588ab4eb0
+  $fEnumSEXPTYPE18 :: [Foreign.R.Type.SEXPTYPE]
+  {- Unfolding: (Foreign.R.Type.$fEnumSEXPTYPE_go 9#) -}
+155aac0ce58f46653dea12e588ab4eb0
+  $fEnumSEXPTYPE19 :: [Foreign.R.Type.SEXPTYPE]
+  {- Unfolding: (Foreign.R.Type.$fEnumSEXPTYPE_go 8#) -}
+155aac0ce58f46653dea12e588ab4eb0
+  $fEnumSEXPTYPE2 :: [Foreign.R.Type.SEXPTYPE]
+  {- Unfolding: (Foreign.R.Type.$fEnumSEXPTYPE_go 31#) -}
+155aac0ce58f46653dea12e588ab4eb0
+  $fEnumSEXPTYPE20 :: [Foreign.R.Type.SEXPTYPE]
+  {- Unfolding: (Foreign.R.Type.$fEnumSEXPTYPE_go 7#) -}
+155aac0ce58f46653dea12e588ab4eb0
+  $fEnumSEXPTYPE21 :: [Foreign.R.Type.SEXPTYPE]
+  {- Unfolding: (Foreign.R.Type.$fEnumSEXPTYPE_go 6#) -}
+155aac0ce58f46653dea12e588ab4eb0
+  $fEnumSEXPTYPE22 :: [Foreign.R.Type.SEXPTYPE]
+  {- Unfolding: (Foreign.R.Type.$fEnumSEXPTYPE_go 5#) -}
+155aac0ce58f46653dea12e588ab4eb0
+  $fEnumSEXPTYPE23 :: [Foreign.R.Type.SEXPTYPE]
+  {- Unfolding: (Foreign.R.Type.$fEnumSEXPTYPE_go 4#) -}
+155aac0ce58f46653dea12e588ab4eb0
+  $fEnumSEXPTYPE24 :: [Foreign.R.Type.SEXPTYPE]
+  {- Unfolding: (Foreign.R.Type.$fEnumSEXPTYPE_go 3#) -}
+155aac0ce58f46653dea12e588ab4eb0
+  $fEnumSEXPTYPE25 :: [Foreign.R.Type.SEXPTYPE]
+  {- Unfolding: (Foreign.R.Type.$fEnumSEXPTYPE_go 2#) -}
+155aac0ce58f46653dea12e588ab4eb0
+  $fEnumSEXPTYPE26 :: [Foreign.R.Type.SEXPTYPE]
+  {- Unfolding: (Foreign.R.Type.$fEnumSEXPTYPE_go 1#) -}
+155aac0ce58f46653dea12e588ab4eb0
+  $fEnumSEXPTYPE27 :: [Foreign.R.Type.SEXPTYPE]
+  {- Unfolding: (Foreign.R.Type.$fEnumSEXPTYPE_go 0#) -}
+155aac0ce58f46653dea12e588ab4eb0
+  $fEnumSEXPTYPE28 :: Foreign.R.Type.SEXPTYPE
+  {- Strictness: x -}
+155aac0ce58f46653dea12e588ab4eb0
+  $fEnumSEXPTYPE3 :: [Foreign.R.Type.SEXPTYPE]
+  {- Unfolding: (Foreign.R.Type.$fEnumSEXPTYPE_go 30#) -}
+155aac0ce58f46653dea12e588ab4eb0
+  $fEnumSEXPTYPE4 :: [Foreign.R.Type.SEXPTYPE]
+  {- Unfolding: (Foreign.R.Type.$fEnumSEXPTYPE_go 25#) -}
+155aac0ce58f46653dea12e588ab4eb0
+  $fEnumSEXPTYPE5 :: [Foreign.R.Type.SEXPTYPE]
+  {- Unfolding: (Foreign.R.Type.$fEnumSEXPTYPE_go 24#) -}
+155aac0ce58f46653dea12e588ab4eb0
+  $fEnumSEXPTYPE6 :: [Foreign.R.Type.SEXPTYPE]
+  {- Unfolding: (Foreign.R.Type.$fEnumSEXPTYPE_go 23#) -}
+155aac0ce58f46653dea12e588ab4eb0
+  $fEnumSEXPTYPE7 :: [Foreign.R.Type.SEXPTYPE]
+  {- Unfolding: (Foreign.R.Type.$fEnumSEXPTYPE_go 22#) -}
+155aac0ce58f46653dea12e588ab4eb0
+  $fEnumSEXPTYPE8 :: [Foreign.R.Type.SEXPTYPE]
+  {- Unfolding: (Foreign.R.Type.$fEnumSEXPTYPE_go 21#) -}
+155aac0ce58f46653dea12e588ab4eb0
+  $fEnumSEXPTYPE9 :: [Foreign.R.Type.SEXPTYPE]
+  {- Unfolding: (Foreign.R.Type.$fEnumSEXPTYPE_go 20#) -}
+155aac0ce58f46653dea12e588ab4eb0
+  $fEnumSEXPTYPE_$cenumFrom ::
+    Foreign.R.Type.SEXPTYPE -> [Foreign.R.Type.SEXPTYPE]
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: (\ (x :: Foreign.R.Type.SEXPTYPE) ->
+                 case x of wild {
+                   Foreign.R.Type.Nil -> Foreign.R.Type.$fEnumSEXPTYPE27
+                   Foreign.R.Type.Symbol -> Foreign.R.Type.$fEnumSEXPTYPE26
+                   Foreign.R.Type.List -> Foreign.R.Type.$fEnumSEXPTYPE25
+                   Foreign.R.Type.Closure -> Foreign.R.Type.$fEnumSEXPTYPE24
+                   Foreign.R.Type.Env -> Foreign.R.Type.$fEnumSEXPTYPE23
+                   Foreign.R.Type.Promise -> Foreign.R.Type.$fEnumSEXPTYPE22
+                   Foreign.R.Type.Lang -> Foreign.R.Type.$fEnumSEXPTYPE21
+                   Foreign.R.Type.Special -> Foreign.R.Type.$fEnumSEXPTYPE20
+                   Foreign.R.Type.Builtin -> Foreign.R.Type.$fEnumSEXPTYPE19
+                   Foreign.R.Type.Char -> Foreign.R.Type.$fEnumSEXPTYPE18
+                   Foreign.R.Type.Logical -> Foreign.R.Type.$fEnumSEXPTYPE17
+                   Foreign.R.Type.Int -> Foreign.R.Type.$fEnumSEXPTYPE16
+                   Foreign.R.Type.Real -> Foreign.R.Type.$fEnumSEXPTYPE15
+                   Foreign.R.Type.Complex -> Foreign.R.Type.$fEnumSEXPTYPE14
+                   Foreign.R.Type.String -> Foreign.R.Type.$fEnumSEXPTYPE13
+                   Foreign.R.Type.DotDotDot -> Foreign.R.Type.$fEnumSEXPTYPE12
+                   Foreign.R.Type.Any -> Foreign.R.Type.$fEnumSEXPTYPE11
+                   Foreign.R.Type.Vector -> Foreign.R.Type.$fEnumSEXPTYPE10
+                   Foreign.R.Type.Expr -> Foreign.R.Type.$fEnumSEXPTYPE9
+                   Foreign.R.Type.Bytecode -> Foreign.R.Type.$fEnumSEXPTYPE8
+                   Foreign.R.Type.ExtPtr -> Foreign.R.Type.$fEnumSEXPTYPE7
+                   Foreign.R.Type.WeakRef -> Foreign.R.Type.$fEnumSEXPTYPE6
+                   Foreign.R.Type.Raw -> Foreign.R.Type.$fEnumSEXPTYPE5
+                   Foreign.R.Type.S4 -> Foreign.R.Type.$fEnumSEXPTYPE4
+                   Foreign.R.Type.New -> Foreign.R.Type.$fEnumSEXPTYPE3
+                   Foreign.R.Type.Free -> Foreign.R.Type.$fEnumSEXPTYPE2
+                   Foreign.R.Type.Fun -> Foreign.R.Type.$fEnumSEXPTYPE1 }) -}
+155aac0ce58f46653dea12e588ab4eb0
+  $fEnumSEXPTYPE_$cenumFromThen ::
+    Foreign.R.Type.SEXPTYPE
+    -> Foreign.R.Type.SEXPTYPE -> [Foreign.R.Type.SEXPTYPE]
+  {- Arity: 2, Strictness: <S,1*U><S,1*U> -}
+155aac0ce58f46653dea12e588ab4eb0
+  $fEnumSEXPTYPE_$cenumFromThenTo ::
+    Foreign.R.Type.SEXPTYPE
+    -> Foreign.R.Type.SEXPTYPE
+    -> Foreign.R.Type.SEXPTYPE
+    -> [Foreign.R.Type.SEXPTYPE]
+  {- Arity: 3, Strictness: <S,1*U><S,1*U><S,1*U> -}
+155aac0ce58f46653dea12e588ab4eb0
+  $fEnumSEXPTYPE_$cenumFromTo ::
+    Foreign.R.Type.SEXPTYPE
+    -> Foreign.R.Type.SEXPTYPE -> [Foreign.R.Type.SEXPTYPE]
+  {- Arity: 2, Strictness: <S,1*U><S,1*U> -}
+155aac0ce58f46653dea12e588ab4eb0
+  $fEnumSEXPTYPE_$cfromEnum ::
+    Foreign.R.Type.SEXPTYPE -> GHC.Types.Int
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>m, Inline: [0],
+     Unfolding: InlineRule (1, True, False)
+                (\ (w :: Foreign.R.Type.SEXPTYPE) ->
+                 case Foreign.R.Type.$w$cfromEnum w of ww { DEFAULT ->
+                 GHC.Types.I# ww }) -}
+155aac0ce58f46653dea12e588ab4eb0
+  $fEnumSEXPTYPE_$cpred ::
+    Foreign.R.Type.SEXPTYPE -> Foreign.R.Type.SEXPTYPE
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: (\ (x :: Foreign.R.Type.SEXPTYPE) ->
+                 case x of wild {
+                   DEFAULT -> Foreign.R.Type.$fEnumSEXPTYPE28
+                   Foreign.R.Type.Symbol -> Foreign.R.Type.Nil
+                   Foreign.R.Type.List -> Foreign.R.Type.Symbol
+                   Foreign.R.Type.Closure -> Foreign.R.Type.List
+                   Foreign.R.Type.Env -> Foreign.R.Type.Closure
+                   Foreign.R.Type.Promise -> Foreign.R.Type.Env
+                   Foreign.R.Type.Lang -> Foreign.R.Type.Promise
+                   Foreign.R.Type.Special -> Foreign.R.Type.Lang
+                   Foreign.R.Type.Builtin -> Foreign.R.Type.Special
+                   Foreign.R.Type.Char -> Foreign.R.Type.Builtin
+                   Foreign.R.Type.Logical -> Foreign.R.Type.Char
+                   Foreign.R.Type.Real -> Foreign.R.Type.Int
+                   Foreign.R.Type.Complex -> Foreign.R.Type.Real
+                   Foreign.R.Type.String -> Foreign.R.Type.Complex
+                   Foreign.R.Type.DotDotDot -> Foreign.R.Type.String
+                   Foreign.R.Type.Any -> Foreign.R.Type.DotDotDot
+                   Foreign.R.Type.Vector -> Foreign.R.Type.Any
+                   Foreign.R.Type.Expr -> Foreign.R.Type.Vector
+                   Foreign.R.Type.Bytecode -> Foreign.R.Type.Expr
+                   Foreign.R.Type.ExtPtr -> Foreign.R.Type.Bytecode
+                   Foreign.R.Type.WeakRef -> Foreign.R.Type.ExtPtr
+                   Foreign.R.Type.Raw -> Foreign.R.Type.WeakRef
+                   Foreign.R.Type.S4 -> Foreign.R.Type.Raw
+                   Foreign.R.Type.Free -> Foreign.R.Type.New }) -}
+155aac0ce58f46653dea12e588ab4eb0
+  $fEnumSEXPTYPE_$csucc ::
+    Foreign.R.Type.SEXPTYPE -> Foreign.R.Type.SEXPTYPE
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: (\ (x :: Foreign.R.Type.SEXPTYPE) ->
+                 case x of wild {
+                   Foreign.R.Type.Nil -> Foreign.R.Type.Symbol
+                   Foreign.R.Type.Symbol -> Foreign.R.Type.List
+                   Foreign.R.Type.List -> Foreign.R.Type.Closure
+                   Foreign.R.Type.Closure -> Foreign.R.Type.Env
+                   Foreign.R.Type.Env -> Foreign.R.Type.Promise
+                   Foreign.R.Type.Promise -> Foreign.R.Type.Lang
+                   Foreign.R.Type.Lang -> Foreign.R.Type.Special
+                   Foreign.R.Type.Special -> Foreign.R.Type.Builtin
+                   Foreign.R.Type.Builtin -> Foreign.R.Type.Char
+                   Foreign.R.Type.Char -> Foreign.R.Type.Logical
+                   Foreign.R.Type.Logical -> Foreign.R.Type.$fEnumSEXPTYPE28
+                   Foreign.R.Type.Int -> Foreign.R.Type.Real
+                   Foreign.R.Type.Real -> Foreign.R.Type.Complex
+                   Foreign.R.Type.Complex -> Foreign.R.Type.String
+                   Foreign.R.Type.String -> Foreign.R.Type.DotDotDot
+                   Foreign.R.Type.DotDotDot -> Foreign.R.Type.Any
+                   Foreign.R.Type.Any -> Foreign.R.Type.Vector
+                   Foreign.R.Type.Vector -> Foreign.R.Type.Expr
+                   Foreign.R.Type.Expr -> Foreign.R.Type.Bytecode
+                   Foreign.R.Type.Bytecode -> Foreign.R.Type.ExtPtr
+                   Foreign.R.Type.ExtPtr -> Foreign.R.Type.WeakRef
+                   Foreign.R.Type.WeakRef -> Foreign.R.Type.Raw
+                   Foreign.R.Type.Raw -> Foreign.R.Type.S4
+                   Foreign.R.Type.S4 -> Foreign.R.Type.$fEnumSEXPTYPE28
+                   Foreign.R.Type.New -> Foreign.R.Type.Free
+                   Foreign.R.Type.Free -> Foreign.R.Type.$fEnumSEXPTYPE28
+                   Foreign.R.Type.Fun -> Foreign.R.Type.$fEnumSEXPTYPE28 }) -}
+155aac0ce58f46653dea12e588ab4eb0
+  $fEnumSEXPTYPE_$ctoEnum :: GHC.Types.Int -> Foreign.R.Type.SEXPTYPE
+  {- Arity: 1, Strictness: <S(S),1*U(1*U)>, Inline: [0],
+     Unfolding: InlineRule (1, True, False)
+                (\ (w :: GHC.Types.Int) ->
+                 case w of ww { GHC.Types.I# ww1 ->
+                 Foreign.R.Type.$w$ctoEnum ww1 }) -}
+155aac0ce58f46653dea12e588ab4eb0
+  $fEnumSEXPTYPE_go :: GHC.Prim.Int# -> [Foreign.R.Type.SEXPTYPE]
+  {- Arity: 1, Strictness: <L,U>m2 -}
+1780ac06eb92df8fe8d6ec65362cd7e7
+  $fEqLogical :: GHC.Classes.Eq Foreign.R.Type.Logical
+  DFunId
+  {- HasNoCafRefs, Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ Foreign.R.Type.Logical
+                  Foreign.R.Type.$fEqLogical_$c==
+                  Foreign.R.Type.$fEqLogical_$c/= -}
+1780ac06eb92df8fe8d6ec65362cd7e7
+  $fEqLogical_$c/= ::
+    Foreign.R.Type.Logical -> Foreign.R.Type.Logical -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (a :: Foreign.R.Type.Logical) (b :: Foreign.R.Type.Logical) ->
+                 case a of wild {
+                   Foreign.R.Type.FALSE
+                   -> case b of wild1 {
+                        DEFAULT -> GHC.Types.True Foreign.R.Type.FALSE -> GHC.Types.False }
+                   Foreign.R.Type.TRUE
+                   -> case b of wild1 {
+                        DEFAULT -> GHC.Types.True Foreign.R.Type.TRUE -> GHC.Types.False }
+                   Foreign.R.Type.NA
+                   -> case b of wild1 {
+                        DEFAULT -> GHC.Types.True
+                        Foreign.R.Type.NA -> GHC.Types.False } }) -}
+1780ac06eb92df8fe8d6ec65362cd7e7
+  $fEqLogical_$c== ::
+    Foreign.R.Type.Logical -> Foreign.R.Type.Logical -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (ds :: Foreign.R.Type.Logical)
+                   (ds1 :: Foreign.R.Type.Logical) ->
+                 case ds of wild {
+                   Foreign.R.Type.FALSE
+                   -> case ds1 of wild1 {
+                        DEFAULT -> GHC.Types.False Foreign.R.Type.FALSE -> GHC.Types.True }
+                   Foreign.R.Type.TRUE
+                   -> case ds1 of wild1 {
+                        DEFAULT -> GHC.Types.False Foreign.R.Type.TRUE -> GHC.Types.True }
+                   Foreign.R.Type.NA
+                   -> case ds1 of wild1 {
+                        DEFAULT -> GHC.Types.False
+                        Foreign.R.Type.NA -> GHC.Types.True } }) -}
+155aac0ce58f46653dea12e588ab4eb0
+  $fEqSEXPTYPE :: GHC.Classes.Eq Foreign.R.Type.SEXPTYPE
+  DFunId
+  {- HasNoCafRefs, Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ Foreign.R.Type.SEXPTYPE
+                  Foreign.R.Type.$fEqSEXPTYPE_$c==
+                  Foreign.R.Type.$fEqSEXPTYPE_$c/= -}
+155aac0ce58f46653dea12e588ab4eb0
+  $fEqSEXPTYPE_$c/= ::
+    Foreign.R.Type.SEXPTYPE
+    -> Foreign.R.Type.SEXPTYPE -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,U><S,U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (a :: Foreign.R.Type.SEXPTYPE) (b :: Foreign.R.Type.SEXPTYPE) ->
+                 case a of x1 { DEFAULT ->
+                 case b of x2 { DEFAULT ->
+                 case GHC.Prim.dataToTag#
+                        @ Foreign.R.Type.SEXPTYPE
+                        x1 of a# { DEFAULT ->
+                 case GHC.Prim.dataToTag#
+                        @ Foreign.R.Type.SEXPTYPE
+                        x2 of b# { DEFAULT ->
+                 case GHC.Prim.tagToEnum#
+                        @ GHC.Types.Bool
+                        (GHC.Prim.==# a# b#) of wild {
+                   GHC.Types.False -> GHC.Types.True
+                   GHC.Types.True -> GHC.Types.False } } } } }) -}
+155aac0ce58f46653dea12e588ab4eb0
+  $fEqSEXPTYPE_$c== ::
+    Foreign.R.Type.SEXPTYPE
+    -> Foreign.R.Type.SEXPTYPE -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,U><S,U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (a :: Foreign.R.Type.SEXPTYPE) (b :: Foreign.R.Type.SEXPTYPE) ->
+                 case a of x1 { DEFAULT ->
+                 case b of x2 { DEFAULT ->
+                 case GHC.Prim.dataToTag#
+                        @ Foreign.R.Type.SEXPTYPE
+                        x1 of a# { DEFAULT ->
+                 case GHC.Prim.dataToTag#
+                        @ Foreign.R.Type.SEXPTYPE
+                        x2 of b# { DEFAULT ->
+                 GHC.Prim.tagToEnum#
+                   @ GHC.Types.Bool
+                   (GHC.Prim.==# a# b#) } } } }) -}
+155aac0ce58f46653dea12e588ab4eb0
+  $fLiftSEXPTYPE ::
+    Language.Haskell.TH.Syntax.Lift Foreign.R.Type.SEXPTYPE
+  DFunId
+  {- Arity: 1, Strictness: <L,1*U>, Inline: (sat-args=0),
+     Unfolding: InlineRule (0, False, True)
+                Foreign.R.Type.$fLiftSEXPTYPE1
+                  `cast`
+                (Trans
+                     (<Foreign.R.Type.SEXPTYPE>_R
+                      ->_R Sym (Language.Haskell.TH.Syntax.N:Q[0]
+                                    <Language.Haskell.TH.Syntax.Exp>_N))
+                     (Sym (Language.Haskell.TH.Syntax.N:Lift[0]
+                               <Foreign.R.Type.SEXPTYPE>_N))) -}
+155aac0ce58f46653dea12e588ab4eb0
+  $fLiftSEXPTYPE1 ::
+    Foreign.R.Type.SEXPTYPE
+    -> forall (m :: * -> *).
+       Language.Haskell.TH.Syntax.Quasi m =>
+       m Language.Haskell.TH.Syntax.Exp
+  {- Arity: 1, Strictness: <L,1*U>,
+     Unfolding: (\ (a :: Foreign.R.Type.SEXPTYPE) ->
+                 Language.Haskell.TH.Lib.conE1
+                   (case GHC.List.reverse1
+                           @ GHC.Types.Char
+                           (GHC.CString.unpackAppendCString#
+                              Foreign.R.Type.$fLiftSEXPTYPE57
+                              (Foreign.R.Type.$fLiftSEXPTYPE_$cshow a))
+                           (GHC.Types.[] @ GHC.Types.Char) of wild {
+                      [] -> Foreign.R.Type.$fLiftSEXPTYPE2
+                      : ds rev
+                      -> case ds of wild1 { GHC.Types.C# ds1 ->
+                         case Language.Haskell.TH.Syntax.mkName_$s$wsplit1
+                                rev
+                                wild1
+                                (GHC.Types.[] @ GHC.Types.Char) of ww { (#,#) ww1 ww2 ->
+                         Language.Haskell.TH.Syntax.Name ww1 ww2 } } })) -}
+37fe3b80334d1d7963692ca85c18a143
+  $fLiftSEXPTYPE10 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("S4"#) -}
+5fd0971cb121ff4b91510a8ef277bc26
+  $fLiftSEXPTYPE11 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   Foreign.R.Type.$fLiftSEXPTYPE12) -}
+37ba2caa665433583123c4cc2677442e
+  $fLiftSEXPTYPE12 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Raw"#) -}
+6090f4fb5d9fbeb795a5d0a5afec50f4
+  $fLiftSEXPTYPE13 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   Foreign.R.Type.$fLiftSEXPTYPE14) -}
+f5e52bc3d16404a270e8aa29258dcb53
+  $fLiftSEXPTYPE14 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("WeakRef"#) -}
+1d9164a34d52310c55b99fad0d42c98a
+  $fLiftSEXPTYPE15 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   Foreign.R.Type.$fLiftSEXPTYPE16) -}
+a67727f75e6a8219197d8739d9940777
+  $fLiftSEXPTYPE16 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("ExtPtr"#) -}
+4e2e5743257ab80b4a49b23206ccc4b5
+  $fLiftSEXPTYPE17 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   Foreign.R.Type.$fLiftSEXPTYPE18) -}
+b23c0ccaa59aef9450f71b800ea386f9
+  $fLiftSEXPTYPE18 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Bytecode"#) -}
+09b126f2699ba52be2ce10483492ff8c
+  $fLiftSEXPTYPE19 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   Foreign.R.Type.$fLiftSEXPTYPE20) -}
+24d2f0d0d6a6abe5e526390804f851f0
+  $fLiftSEXPTYPE2 :: Language.Haskell.TH.Syntax.Name
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (Language.Haskell.TH.Syntax.Name
+                   (GHC.Types.[] @ GHC.Types.Char)
+                     `cast`
+                   (Sym (Language.Haskell.TH.Syntax.N:OccName[0]))
+                   Language.Haskell.TH.Syntax.NameS) -}
+3dfec24dadcb4d2b4aaed8ac95989d4b
+  $fLiftSEXPTYPE20 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Expr"#) -}
+848daea33f8a7ae47e99f90b0c61ef75
+  $fLiftSEXPTYPE21 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   Foreign.R.Type.$fLiftSEXPTYPE22) -}
+9e9b49c2315979dff6ba8a5255e18721
+  $fLiftSEXPTYPE22 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Vector"#) -}
+fd8e89a268fadbde066b1ca45eb9fa66
+  $fLiftSEXPTYPE23 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   Foreign.R.Type.$fLiftSEXPTYPE24) -}
+3e7b418296646fb8f7960fc15257701c
+  $fLiftSEXPTYPE24 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Any"#) -}
+6a277859ad0d71fe240d1b6194934aef
+  $fLiftSEXPTYPE25 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   Foreign.R.Type.$fLiftSEXPTYPE26) -}
+3e91bd2f2f335727e821a88e7ccec3ad
+  $fLiftSEXPTYPE26 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("DotDotDot"#) -}
+52cdc8232042b5afe0ea8548ddbc0de9
+  $fLiftSEXPTYPE27 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   Foreign.R.Type.$fLiftSEXPTYPE28) -}
+76f830dad741f91e755c9a8b481853de
+  $fLiftSEXPTYPE28 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("String"#) -}
+13a3e5c9c9cac8204b1e7c89e08327cf
+  $fLiftSEXPTYPE29 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   Foreign.R.Type.$fLiftSEXPTYPE30) -}
+8597ee351d3d7d8aae64ae147f768cdc
+  $fLiftSEXPTYPE3 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   Foreign.R.Type.$fLiftSEXPTYPE4) -}
+dc7fd7af7dc3275d8a11f2c98e34d8d6
+  $fLiftSEXPTYPE30 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Complex"#) -}
+aaa8fdec5f0d0e5e5b1a0547af70d93e
+  $fLiftSEXPTYPE31 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   Foreign.R.Type.$fLiftSEXPTYPE32) -}
+6a0b4bc110fc8b16aebbcc262b2d60b4
+  $fLiftSEXPTYPE32 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Real"#) -}
+592a142746793f6b55fa0f0a9afaeecd
+  $fLiftSEXPTYPE33 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   Foreign.R.Type.$fLiftSEXPTYPE34) -}
+d188aad0d48c9688873721f76a0137e7
+  $fLiftSEXPTYPE34 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Int"#) -}
+5e64d8401bdb0a363ef1e5ee0f329482
+  $fLiftSEXPTYPE35 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   Foreign.R.Type.$fLiftSEXPTYPE36) -}
+69f420fe1dd64631c9d09cd39c3cd5ce
+  $fLiftSEXPTYPE36 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Logical"#) -}
+0d2fe73e6e64bc0da282d842a1b1959b
+  $fLiftSEXPTYPE37 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   Foreign.R.Type.$fLiftSEXPTYPE38) -}
+12fbedfb9bae12a8241e052d790cde7d
+  $fLiftSEXPTYPE38 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Char"#) -}
+5ca43a101305ff2c2a4f05ddaaf5ec84
+  $fLiftSEXPTYPE39 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   Foreign.R.Type.$fLiftSEXPTYPE40) -}
+ae81dd8eb155bbe2c468a9d467c04bca
+  $fLiftSEXPTYPE4 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Fun"#) -}
+2eee0168342ad1fc11e9f194e46045d8
+  $fLiftSEXPTYPE40 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Builtin"#) -}
+610f44c971bdff32fac1a7646acb9d4b
+  $fLiftSEXPTYPE41 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   Foreign.R.Type.$fLiftSEXPTYPE42) -}
+036d4933b893280ef987a832b94cf01d
+  $fLiftSEXPTYPE42 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Special"#) -}
+cfaab4e2fa0fdb833dd8410730f5b710
+  $fLiftSEXPTYPE43 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   Foreign.R.Type.$fLiftSEXPTYPE44) -}
+0b4eec239e0cd5bd907f2b1fad33a5d2
+  $fLiftSEXPTYPE44 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Lang"#) -}
+e91e61698ce80b969d2c91110c612eaa
+  $fLiftSEXPTYPE45 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   Foreign.R.Type.$fLiftSEXPTYPE46) -}
+a8da0560c1d03aa543aad6f28f159b96
+  $fLiftSEXPTYPE46 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Promise"#) -}
+1eb2c850849df6ad33e5a27930e15155
+  $fLiftSEXPTYPE47 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   Foreign.R.Type.$fLiftSEXPTYPE48) -}
+20fdac650125d3d9e1b82368eae2c1fa
+  $fLiftSEXPTYPE48 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Env"#) -}
+3a5704d58f1c95e7b144594844a7d47a
+  $fLiftSEXPTYPE49 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   Foreign.R.Type.$fLiftSEXPTYPE50) -}
+6a832301351bc2a6aa1e40d0dc641d32
+  $fLiftSEXPTYPE5 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   Foreign.R.Type.$fLiftSEXPTYPE6) -}
+55b873fae5b9d3ec1ded866e27ef7451
+  $fLiftSEXPTYPE50 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Closure"#) -}
+cb21ce65e4495c5d48d8087950038143
+  $fLiftSEXPTYPE51 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   Foreign.R.Type.$fLiftSEXPTYPE52) -}
+ddb030cd9a4a3343b1ec70dd4f093d73
+  $fLiftSEXPTYPE52 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("List"#) -}
+bceeaf892a8d4e5f70da022e64fe720c
+  $fLiftSEXPTYPE53 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   Foreign.R.Type.$fLiftSEXPTYPE54) -}
+28b8a7925ee44b4764e2f553079bdd26
+  $fLiftSEXPTYPE54 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Symbol"#) -}
+ee3a4f32ce2de32bfa9666fa92c60255
+  $fLiftSEXPTYPE55 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   Foreign.R.Type.$fLiftSEXPTYPE56) -}
+92e7cb5fa044fdc974c86860a674d92f
+  $fLiftSEXPTYPE56 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Nil"#) -}
+c90a245ea1ab56b3a6cfe10350a2cc84
+  $fLiftSEXPTYPE57 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Foreign.R.Type."#) -}
+65954acc1770dfad2b0e2bf2e4e57c83
+  $fLiftSEXPTYPE6 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Free"#) -}
+fc54b36e95e90b06d395d14779acbd17
+  $fLiftSEXPTYPE7 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   Foreign.R.Type.$fLiftSEXPTYPE8) -}
+c25ff4bb2af39eef8d225b4c4cc073a3
+  $fLiftSEXPTYPE8 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("New"#) -}
+e03740ca1049872ac3ee9284f08818bc
+  $fLiftSEXPTYPE9 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   Foreign.R.Type.$fLiftSEXPTYPE10) -}
+155aac0ce58f46653dea12e588ab4eb0
+  $fLiftSEXPTYPE_$cshow :: Foreign.R.Type.SEXPTYPE -> GHC.Base.String
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: (\ (x :: Foreign.R.Type.SEXPTYPE) ->
+                 case x of wild {
+                   Foreign.R.Type.Nil -> Foreign.R.Type.$fLiftSEXPTYPE55
+                   Foreign.R.Type.Symbol -> Foreign.R.Type.$fLiftSEXPTYPE53
+                   Foreign.R.Type.List -> Foreign.R.Type.$fLiftSEXPTYPE51
+                   Foreign.R.Type.Closure -> Foreign.R.Type.$fLiftSEXPTYPE49
+                   Foreign.R.Type.Env -> Foreign.R.Type.$fLiftSEXPTYPE47
+                   Foreign.R.Type.Promise -> Foreign.R.Type.$fLiftSEXPTYPE45
+                   Foreign.R.Type.Lang -> Foreign.R.Type.$fLiftSEXPTYPE43
+                   Foreign.R.Type.Special -> Foreign.R.Type.$fLiftSEXPTYPE41
+                   Foreign.R.Type.Builtin -> Foreign.R.Type.$fLiftSEXPTYPE39
+                   Foreign.R.Type.Char -> Foreign.R.Type.$fLiftSEXPTYPE37
+                   Foreign.R.Type.Logical -> Foreign.R.Type.$fLiftSEXPTYPE35
+                   Foreign.R.Type.Int -> Foreign.R.Type.$fLiftSEXPTYPE33
+                   Foreign.R.Type.Real -> Foreign.R.Type.$fLiftSEXPTYPE31
+                   Foreign.R.Type.Complex -> Foreign.R.Type.$fLiftSEXPTYPE29
+                   Foreign.R.Type.String -> Foreign.R.Type.$fLiftSEXPTYPE27
+                   Foreign.R.Type.DotDotDot -> Foreign.R.Type.$fLiftSEXPTYPE25
+                   Foreign.R.Type.Any -> Foreign.R.Type.$fLiftSEXPTYPE23
+                   Foreign.R.Type.Vector -> Foreign.R.Type.$fLiftSEXPTYPE21
+                   Foreign.R.Type.Expr -> Foreign.R.Type.$fLiftSEXPTYPE19
+                   Foreign.R.Type.Bytecode -> Foreign.R.Type.$fLiftSEXPTYPE17
+                   Foreign.R.Type.ExtPtr -> Foreign.R.Type.$fLiftSEXPTYPE15
+                   Foreign.R.Type.WeakRef -> Foreign.R.Type.$fLiftSEXPTYPE13
+                   Foreign.R.Type.Raw -> Foreign.R.Type.$fLiftSEXPTYPE11
+                   Foreign.R.Type.S4 -> Foreign.R.Type.$fLiftSEXPTYPE9
+                   Foreign.R.Type.New -> Foreign.R.Type.$fLiftSEXPTYPE7
+                   Foreign.R.Type.Free -> Foreign.R.Type.$fLiftSEXPTYPE5
+                   Foreign.R.Type.Fun -> Foreign.R.Type.$fLiftSEXPTYPE3 }) -}
+155aac0ce58f46653dea12e588ab4eb0
+  $fNFDataSEXPTYPE :: Control.DeepSeq.NFData Foreign.R.Type.SEXPTYPE
+  DFunId
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>,
+     Inline: (sat-args=0),
+     Unfolding: InlineRule (0, False, True)
+                Foreign.R.Type.$fNFDataSEXPTYPE_$crnf
+                  `cast`
+                (Sym (Control.DeepSeq.N:NFData[0] <Foreign.R.Type.SEXPTYPE>_N)) -}
+155aac0ce58f46653dea12e588ab4eb0
+  $fNFDataSEXPTYPE_$crnf :: Foreign.R.Type.SEXPTYPE -> ()
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: Foreign.R.Type.SEXPTYPE) ->
+                 case ds of ds1 { DEFAULT -> GHC.Tuple.() }) -}
+1780ac06eb92df8fe8d6ec65362cd7e7
+  $fOrdLogical :: GHC.Classes.Ord Foreign.R.Type.Logical
+  DFunId
+  {- HasNoCafRefs, Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ Foreign.R.Type.Logical
+                  Foreign.R.Type.$fEqLogical
+                  Foreign.R.Type.$fOrdLogical_$ccompare
+                  Foreign.R.Type.$fOrdLogical_$c<
+                  Foreign.R.Type.$fOrdLogical_$c<=
+                  Foreign.R.Type.$fOrdLogical_$c>
+                  Foreign.R.Type.$fOrdLogical_$c>=
+                  Foreign.R.Type.$fOrdLogical_$cmax
+                  Foreign.R.Type.$fOrdLogical_$cmin -}
+1780ac06eb92df8fe8d6ec65362cd7e7
+  $fOrdLogical_$c< ::
+    Foreign.R.Type.Logical -> Foreign.R.Type.Logical -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (a :: Foreign.R.Type.Logical) (b :: Foreign.R.Type.Logical) ->
+                 case a of wild {
+                   Foreign.R.Type.FALSE
+                   -> case b of wild1 {
+                        Foreign.R.Type.FALSE -> GHC.Types.False
+                        Foreign.R.Type.TRUE -> GHC.Types.True
+                        Foreign.R.Type.NA -> GHC.Types.True }
+                   Foreign.R.Type.TRUE
+                   -> case b of wild1 {
+                        DEFAULT -> GHC.Types.False Foreign.R.Type.NA -> GHC.Types.True }
+                   Foreign.R.Type.NA
+                   -> case b of wild1 { DEFAULT -> GHC.Types.False } }) -}
+1780ac06eb92df8fe8d6ec65362cd7e7
+  $fOrdLogical_$c<= ::
+    Foreign.R.Type.Logical -> Foreign.R.Type.Logical -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>,
+     Unfolding: (\ (a :: Foreign.R.Type.Logical)
+                   (b :: Foreign.R.Type.Logical) ->
+                 let {
+                   $j :: GHC.Prim.Int# -> GHC.Types.Bool
+                     <join 1> {- Arity: 1, Strictness: <S,U> -}
+                   = \ (a# :: GHC.Prim.Int#)[OneShot] ->
+                     case a of wild {
+                       Foreign.R.Type.FALSE
+                       -> case GHC.Prim.tagToEnum#
+                                 @ GHC.Types.Bool
+                                 (GHC.Prim.<# a# 0#) of wild1 {
+                            GHC.Types.False -> GHC.Types.True
+                            GHC.Types.True -> GHC.Types.False }
+                       Foreign.R.Type.TRUE
+                       -> case GHC.Prim.tagToEnum#
+                                 @ GHC.Types.Bool
+                                 (GHC.Prim.<# a# 1#) of wild1 {
+                            GHC.Types.False -> GHC.Types.True
+                            GHC.Types.True -> GHC.Types.False }
+                       Foreign.R.Type.NA
+                       -> case GHC.Prim.tagToEnum#
+                                 @ GHC.Types.Bool
+                                 (GHC.Prim.<# a# 2#) of wild1 {
+                            GHC.Types.False -> GHC.Types.True
+                            GHC.Types.True -> GHC.Types.False } }
+                 } in
+                 case b of wild {
+                   Foreign.R.Type.FALSE -> $j 0#
+                   Foreign.R.Type.TRUE -> $j 1#
+                   Foreign.R.Type.NA -> $j 2# }) -}
+1780ac06eb92df8fe8d6ec65362cd7e7
+  $fOrdLogical_$c> ::
+    Foreign.R.Type.Logical -> Foreign.R.Type.Logical -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>,
+     Unfolding: InlineRule (2, True, True)
+                (\ (a :: Foreign.R.Type.Logical) (b :: Foreign.R.Type.Logical) ->
+                 Foreign.R.Type.$fOrdLogical_$c< b a) -}
+1780ac06eb92df8fe8d6ec65362cd7e7
+  $fOrdLogical_$c>= ::
+    Foreign.R.Type.Logical -> Foreign.R.Type.Logical -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>,
+     Unfolding: (\ (a :: Foreign.R.Type.Logical)
+                   (b :: Foreign.R.Type.Logical) ->
+                 let {
+                   $j :: GHC.Prim.Int# -> GHC.Types.Bool
+                     <join 1> {- Arity: 1, Strictness: <S,U> -}
+                   = \ (a# :: GHC.Prim.Int#)[OneShot] ->
+                     case b of wild {
+                       Foreign.R.Type.FALSE
+                       -> case GHC.Prim.tagToEnum#
+                                 @ GHC.Types.Bool
+                                 (GHC.Prim.<# a# 0#) of wild1 {
+                            GHC.Types.False -> GHC.Types.True
+                            GHC.Types.True -> GHC.Types.False }
+                       Foreign.R.Type.TRUE
+                       -> case GHC.Prim.tagToEnum#
+                                 @ GHC.Types.Bool
+                                 (GHC.Prim.<# a# 1#) of wild1 {
+                            GHC.Types.False -> GHC.Types.True
+                            GHC.Types.True -> GHC.Types.False }
+                       Foreign.R.Type.NA
+                       -> case GHC.Prim.tagToEnum#
+                                 @ GHC.Types.Bool
+                                 (GHC.Prim.<# a# 2#) of wild1 {
+                            GHC.Types.False -> GHC.Types.True
+                            GHC.Types.True -> GHC.Types.False } }
+                 } in
+                 case a of wild {
+                   Foreign.R.Type.FALSE -> $j 0#
+                   Foreign.R.Type.TRUE -> $j 1#
+                   Foreign.R.Type.NA -> $j 2# }) -}
+1780ac06eb92df8fe8d6ec65362cd7e7
+  $fOrdLogical_$ccompare ::
+    Foreign.R.Type.Logical
+    -> Foreign.R.Type.Logical -> GHC.Types.Ordering
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>,
+     Unfolding: (\ (a :: Foreign.R.Type.Logical)
+                   (b :: Foreign.R.Type.Logical) ->
+                 case a of wild {
+                   Foreign.R.Type.FALSE
+                   -> case b of wild1 {
+                        Foreign.R.Type.FALSE -> GHC.Types.EQ
+                        Foreign.R.Type.TRUE -> GHC.Types.LT
+                        Foreign.R.Type.NA -> GHC.Types.LT }
+                   Foreign.R.Type.TRUE
+                   -> case b of wild1 {
+                        Foreign.R.Type.FALSE -> GHC.Types.GT
+                        Foreign.R.Type.TRUE -> GHC.Types.EQ
+                        Foreign.R.Type.NA -> GHC.Types.LT }
+                   Foreign.R.Type.NA
+                   -> case b of wild1 {
+                        DEFAULT -> GHC.Types.GT Foreign.R.Type.NA -> GHC.Types.EQ } }) -}
+1780ac06eb92df8fe8d6ec65362cd7e7
+  $fOrdLogical_$cmax ::
+    Foreign.R.Type.Logical
+    -> Foreign.R.Type.Logical -> Foreign.R.Type.Logical
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,U>,
+     Unfolding: (\ (x :: Foreign.R.Type.Logical)
+                   (y :: Foreign.R.Type.Logical) ->
+                 let {
+                   $j :: GHC.Prim.Int# -> Foreign.R.Type.Logical
+                     <join 1> {- Arity: 1, Strictness: <S,U> -}
+                   = \ (a# :: GHC.Prim.Int#)[OneShot] ->
+                     case x of wild {
+                       Foreign.R.Type.FALSE
+                       -> case GHC.Prim.tagToEnum#
+                                 @ GHC.Types.Bool
+                                 (GHC.Prim.<# a# 0#) of wild1 {
+                            GHC.Types.False -> y GHC.Types.True -> Foreign.R.Type.FALSE }
+                       Foreign.R.Type.TRUE
+                       -> case GHC.Prim.tagToEnum#
+                                 @ GHC.Types.Bool
+                                 (GHC.Prim.<# a# 1#) of wild1 {
+                            GHC.Types.False -> y GHC.Types.True -> Foreign.R.Type.TRUE }
+                       Foreign.R.Type.NA
+                       -> case GHC.Prim.tagToEnum#
+                                 @ GHC.Types.Bool
+                                 (GHC.Prim.<# a# 2#) of wild1 {
+                            GHC.Types.False -> y GHC.Types.True -> Foreign.R.Type.NA } }
+                 } in
+                 case y of wild {
+                   Foreign.R.Type.FALSE -> $j 0#
+                   Foreign.R.Type.TRUE -> $j 1#
+                   Foreign.R.Type.NA -> $j 2# }) -}
+1780ac06eb92df8fe8d6ec65362cd7e7
+  $fOrdLogical_$cmin ::
+    Foreign.R.Type.Logical
+    -> Foreign.R.Type.Logical -> Foreign.R.Type.Logical
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,U>,
+     Unfolding: (\ (x :: Foreign.R.Type.Logical)
+                   (y :: Foreign.R.Type.Logical) ->
+                 let {
+                   $j :: GHC.Prim.Int# -> Foreign.R.Type.Logical
+                     <join 1> {- Arity: 1, Strictness: <S,U> -}
+                   = \ (a# :: GHC.Prim.Int#)[OneShot] ->
+                     case x of wild {
+                       Foreign.R.Type.FALSE
+                       -> case GHC.Prim.tagToEnum#
+                                 @ GHC.Types.Bool
+                                 (GHC.Prim.<# a# 0#) of wild1 {
+                            GHC.Types.False -> Foreign.R.Type.FALSE GHC.Types.True -> y }
+                       Foreign.R.Type.TRUE
+                       -> case GHC.Prim.tagToEnum#
+                                 @ GHC.Types.Bool
+                                 (GHC.Prim.<# a# 1#) of wild1 {
+                            GHC.Types.False -> Foreign.R.Type.TRUE GHC.Types.True -> y }
+                       Foreign.R.Type.NA
+                       -> case GHC.Prim.tagToEnum#
+                                 @ GHC.Types.Bool
+                                 (GHC.Prim.<# a# 2#) of wild1 {
+                            GHC.Types.False -> Foreign.R.Type.NA GHC.Types.True -> y } }
+                 } in
+                 case y of wild {
+                   Foreign.R.Type.FALSE -> $j 0#
+                   Foreign.R.Type.TRUE -> $j 1#
+                   Foreign.R.Type.NA -> $j 2# }) -}
+155aac0ce58f46653dea12e588ab4eb0
+  $fOrdSEXPTYPE :: GHC.Classes.Ord Foreign.R.Type.SEXPTYPE
+  DFunId
+  {- HasNoCafRefs, Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ Foreign.R.Type.SEXPTYPE
+                  Foreign.R.Type.$fEqSEXPTYPE
+                  Foreign.R.Type.$fOrdSEXPTYPE_$ccompare
+                  Foreign.R.Type.$fOrdSEXPTYPE_$c<
+                  Foreign.R.Type.$fOrdSEXPTYPE_$c<=
+                  Foreign.R.Type.$fOrdSEXPTYPE_$c>
+                  Foreign.R.Type.$fOrdSEXPTYPE_$c>=
+                  Foreign.R.Type.$fOrdSEXPTYPE_$cmax
+                  Foreign.R.Type.$fOrdSEXPTYPE_$cmin -}
+155aac0ce58f46653dea12e588ab4eb0
+  $fOrdSEXPTYPE_$c< ::
+    Foreign.R.Type.SEXPTYPE
+    -> Foreign.R.Type.SEXPTYPE -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,U><S,U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (a :: Foreign.R.Type.SEXPTYPE) (b :: Foreign.R.Type.SEXPTYPE) ->
+                 case a of x1 { DEFAULT ->
+                 case b of x2 { DEFAULT ->
+                 case GHC.Prim.dataToTag#
+                        @ Foreign.R.Type.SEXPTYPE
+                        x1 of a# { DEFAULT ->
+                 case GHC.Prim.dataToTag#
+                        @ Foreign.R.Type.SEXPTYPE
+                        x2 of b# { DEFAULT ->
+                 GHC.Prim.tagToEnum#
+                   @ GHC.Types.Bool
+                   (GHC.Prim.<# a# b#) } } } }) -}
+155aac0ce58f46653dea12e588ab4eb0
+  $fOrdSEXPTYPE_$c<= ::
+    Foreign.R.Type.SEXPTYPE
+    -> Foreign.R.Type.SEXPTYPE -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,U><S,U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (a :: Foreign.R.Type.SEXPTYPE) (b :: Foreign.R.Type.SEXPTYPE) ->
+                 case b of x1 { DEFAULT ->
+                 case a of x2 { DEFAULT ->
+                 case GHC.Prim.dataToTag#
+                        @ Foreign.R.Type.SEXPTYPE
+                        x1 of a# { DEFAULT ->
+                 case GHC.Prim.dataToTag#
+                        @ Foreign.R.Type.SEXPTYPE
+                        x2 of b# { DEFAULT ->
+                 case GHC.Prim.tagToEnum#
+                        @ GHC.Types.Bool
+                        (GHC.Prim.<# a# b#) of wild {
+                   GHC.Types.False -> GHC.Types.True
+                   GHC.Types.True -> GHC.Types.False } } } } }) -}
+155aac0ce58f46653dea12e588ab4eb0
+  $fOrdSEXPTYPE_$c> ::
+    Foreign.R.Type.SEXPTYPE
+    -> Foreign.R.Type.SEXPTYPE -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,U><S,U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (a :: Foreign.R.Type.SEXPTYPE) (b :: Foreign.R.Type.SEXPTYPE) ->
+                 case b of x1 { DEFAULT ->
+                 case a of x2 { DEFAULT ->
+                 case GHC.Prim.dataToTag#
+                        @ Foreign.R.Type.SEXPTYPE
+                        x1 of a# { DEFAULT ->
+                 case GHC.Prim.dataToTag#
+                        @ Foreign.R.Type.SEXPTYPE
+                        x2 of b# { DEFAULT ->
+                 GHC.Prim.tagToEnum#
+                   @ GHC.Types.Bool
+                   (GHC.Prim.<# a# b#) } } } }) -}
+155aac0ce58f46653dea12e588ab4eb0
+  $fOrdSEXPTYPE_$c>= ::
+    Foreign.R.Type.SEXPTYPE
+    -> Foreign.R.Type.SEXPTYPE -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,U><S,U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (a :: Foreign.R.Type.SEXPTYPE) (b :: Foreign.R.Type.SEXPTYPE) ->
+                 case a of x1 { DEFAULT ->
+                 case b of x2 { DEFAULT ->
+                 case GHC.Prim.dataToTag#
+                        @ Foreign.R.Type.SEXPTYPE
+                        x1 of a# { DEFAULT ->
+                 case GHC.Prim.dataToTag#
+                        @ Foreign.R.Type.SEXPTYPE
+                        x2 of b# { DEFAULT ->
+                 case GHC.Prim.tagToEnum#
+                        @ GHC.Types.Bool
+                        (GHC.Prim.<# a# b#) of wild {
+                   GHC.Types.False -> GHC.Types.True
+                   GHC.Types.True -> GHC.Types.False } } } } }) -}
+155aac0ce58f46653dea12e588ab4eb0
+  $fOrdSEXPTYPE_$ccompare ::
+    Foreign.R.Type.SEXPTYPE
+    -> Foreign.R.Type.SEXPTYPE -> GHC.Types.Ordering
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,U><S,U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (a :: Foreign.R.Type.SEXPTYPE) (b :: Foreign.R.Type.SEXPTYPE) ->
+                 case a of x1 { DEFAULT ->
+                 case b of x2 { DEFAULT ->
+                 case GHC.Prim.dataToTag#
+                        @ Foreign.R.Type.SEXPTYPE
+                        x1 of a# { DEFAULT ->
+                 case GHC.Prim.dataToTag#
+                        @ Foreign.R.Type.SEXPTYPE
+                        x2 of b# { DEFAULT ->
+                 case GHC.Prim.tagToEnum#
+                        @ GHC.Types.Bool
+                        (GHC.Prim.<# a# b#) of wild {
+                   GHC.Types.False
+                   -> case GHC.Prim.tagToEnum#
+                             @ GHC.Types.Bool
+                             (GHC.Prim.==# a# b#) of wild1 {
+                        GHC.Types.False -> GHC.Types.GT GHC.Types.True -> GHC.Types.EQ }
+                   GHC.Types.True -> GHC.Types.LT } } } } }) -}
+155aac0ce58f46653dea12e588ab4eb0
+  $fOrdSEXPTYPE_$cmax ::
+    Foreign.R.Type.SEXPTYPE
+    -> Foreign.R.Type.SEXPTYPE -> Foreign.R.Type.SEXPTYPE
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,U><S,U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (x :: Foreign.R.Type.SEXPTYPE) (y :: Foreign.R.Type.SEXPTYPE) ->
+                 case y of x1 { DEFAULT ->
+                 case x of x2 { DEFAULT ->
+                 case GHC.Prim.dataToTag#
+                        @ Foreign.R.Type.SEXPTYPE
+                        x1 of a# { DEFAULT ->
+                 case GHC.Prim.dataToTag#
+                        @ Foreign.R.Type.SEXPTYPE
+                        x2 of b# { DEFAULT ->
+                 case GHC.Prim.tagToEnum#
+                        @ GHC.Types.Bool
+                        (GHC.Prim.<# a# b#) of wild {
+                   GHC.Types.False -> x1 GHC.Types.True -> x2 } } } } }) -}
+155aac0ce58f46653dea12e588ab4eb0
+  $fOrdSEXPTYPE_$cmin ::
+    Foreign.R.Type.SEXPTYPE
+    -> Foreign.R.Type.SEXPTYPE -> Foreign.R.Type.SEXPTYPE
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,U><S,U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (x :: Foreign.R.Type.SEXPTYPE) (y :: Foreign.R.Type.SEXPTYPE) ->
+                 case y of x1 { DEFAULT ->
+                 case x of x2 { DEFAULT ->
+                 case GHC.Prim.dataToTag#
+                        @ Foreign.R.Type.SEXPTYPE
+                        x1 of a# { DEFAULT ->
+                 case GHC.Prim.dataToTag#
+                        @ Foreign.R.Type.SEXPTYPE
+                        x2 of b# { DEFAULT ->
+                 case GHC.Prim.tagToEnum#
+                        @ GHC.Types.Bool
+                        (GHC.Prim.<# a# b#) of wild {
+                   GHC.Types.False -> x2 GHC.Types.True -> x1 } } } } }) -}
+1780ac06eb92df8fe8d6ec65362cd7e7
+  $fShowLogical :: GHC.Show.Show Foreign.R.Type.Logical
+  DFunId
+  {- Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ Foreign.R.Type.Logical
+                  Foreign.R.Type.$fShowLogical_$cshowsPrec
+                  Foreign.R.Type.$fShowLogical_$cshow
+                  Foreign.R.Type.$fShowLogical_$cshowList -}
+c2b4c97d9539701d35748d2be16a4716
+  $fShowLogical1 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   Foreign.R.Type.$fShowLogical2) -}
+7ac64a94b79dbcc1e728c8f755b05f0d
+  $fShowLogical2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("NA"#) -}
+3eaf19daf73db8ca56a81eb12acf343f
+  $fShowLogical3 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   Foreign.R.Type.$fShowLogical4) -}
+885ee84a0ef569109d5ab72107ffba58
+  $fShowLogical4 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("TRUE"#) -}
+7310a4fb1820f88409ef08468c74789d
+  $fShowLogical5 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   Foreign.R.Type.$fShowLogical6) -}
+cf83e8fa1ca12792f1a82ae11a6e1f80
+  $fShowLogical6 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("FALSE"#) -}
+1780ac06eb92df8fe8d6ec65362cd7e7
+  $fShowLogical_$cshow :: Foreign.R.Type.Logical -> GHC.Base.String
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (x :: Foreign.R.Type.Logical) ->
+                 case x of wild {
+                   Foreign.R.Type.FALSE -> Foreign.R.Type.$fShowLogical5
+                   Foreign.R.Type.TRUE -> Foreign.R.Type.$fShowLogical3
+                   Foreign.R.Type.NA -> Foreign.R.Type.$fShowLogical1 }) -}
+1780ac06eb92df8fe8d6ec65362cd7e7
+  $fShowLogical_$cshowList ::
+    [Foreign.R.Type.Logical] -> GHC.Show.ShowS
+  {- Arity: 2,
+     Unfolding: (GHC.Show.showList__
+                   @ Foreign.R.Type.Logical
+                   Foreign.R.Type.$w$cshowsPrec) -}
+1780ac06eb92df8fe8d6ec65362cd7e7
+  $fShowLogical_$cshowsPrec ::
+    GHC.Types.Int -> Foreign.R.Type.Logical -> GHC.Show.ShowS
+  {- Arity: 3, Strictness: <L,A><S,1*U><L,1*U>, Inline: [0],
+     Unfolding: InlineRule (3, True, True)
+                (\ (w :: GHC.Types.Int)
+                   (w1 :: Foreign.R.Type.Logical)
+                   (w2 :: GHC.Base.String) ->
+                 Foreign.R.Type.$w$cshowsPrec w1 w2) -}
+155aac0ce58f46653dea12e588ab4eb0
+  $fShowSEXPTYPE :: GHC.Show.Show Foreign.R.Type.SEXPTYPE
+  DFunId
+  {- Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ Foreign.R.Type.SEXPTYPE
+                  Foreign.R.Type.$fShowSEXPTYPE_$cshowsPrec
+                  Foreign.R.Type.$fLiftSEXPTYPE_$cshow
+                  Foreign.R.Type.$fShowSEXPTYPE_$cshowList -}
+155aac0ce58f46653dea12e588ab4eb0
+  $fShowSEXPTYPE_$cshowList ::
+    [Foreign.R.Type.SEXPTYPE] -> GHC.Show.ShowS
+  {- Arity: 2,
+     Unfolding: (GHC.Show.showList__
+                   @ Foreign.R.Type.SEXPTYPE
+                   Foreign.R.Type.$w$cshowsPrec1) -}
+155aac0ce58f46653dea12e588ab4eb0
+  $fShowSEXPTYPE_$cshowsPrec ::
+    GHC.Types.Int -> Foreign.R.Type.SEXPTYPE -> GHC.Show.ShowS
+  {- Arity: 3, Strictness: <L,A><S,1*U><L,1*U>, Inline: [0],
+     Unfolding: InlineRule (3, True, True)
+                (\ (w :: GHC.Types.Int)
+                   (w1 :: Foreign.R.Type.SEXPTYPE)
+                   (w2 :: GHC.Base.String) ->
+                 Foreign.R.Type.$w$cshowsPrec1 w1 w2) -}
+cfa115ff198255bf8587980b0aed5def
+  $fSingISEXPTYPEAny :: Data.Singletons.SingI 'Foreign.R.Type.Any
+  DFunId
+  {- Strictness: m17, Inline: (sat-args=0),
+     Unfolding: InlineRule (0, False, True)
+                Foreign.R.Type.$fSingISEXPTYPEAny1
+                  `cast`
+                (Trans
+                     (Sym (Foreign.R.Type.D:R:SingSEXPTYPEz0[0]))
+                     (Sym (Data.Singletons.N:SingI[0]) <Foreign.R.Type.SEXPTYPE>_N) <'Foreign.R.Type.Any>_N) -}
+155aac0ce58f46653dea12e588ab4eb0
+  $fSingISEXPTYPEAny1 ::
+    Foreign.R.Type.R:SingSEXPTYPEz 'Foreign.R.Type.Any
+  {- HasNoCafRefs, Strictness: m17,
+     Unfolding: (Foreign.R.Type.SAny
+                   @ 'Foreign.R.Type.Any
+                   Foreign.R.Type.$fSingISEXPTYPEAny_$d~~
+                     `cast`
+                   (Sym (Data.Type.Equality.N:~[0]
+                             <Foreign.R.Type.SEXPTYPE>_N) <'Foreign.R.Type.Any>_N <'Foreign.R.Type.Any>_N)) -}
+155aac0ce58f46653dea12e588ab4eb0
+  $fSingISEXPTYPEAny_$d~~ ::
+    ('Foreign.R.Type.Any :: Foreign.R.Type.SEXPTYPE)
+    GHC.Types.~~
+    ('Foreign.R.Type.Any :: Foreign.R.Type.SEXPTYPE)
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Eq#
+                   @ Foreign.R.Type.SEXPTYPE
+                   @ Foreign.R.Type.SEXPTYPE
+                   @ 'Foreign.R.Type.Any
+                   @ 'Foreign.R.Type.Any
+                   @~ <'Foreign.R.Type.Any>_N) -}
+5651c105e4ec951e1bf9b523238f761a
+  $fSingISEXPTYPEBuiltin ::
+    Data.Singletons.SingI 'Foreign.R.Type.Builtin
+  DFunId
+  {- Strictness: m9, Inline: (sat-args=0),
+     Unfolding: InlineRule (0, False, True)
+                Foreign.R.Type.$fSingISEXPTYPEBuiltin1
+                  `cast`
+                (Trans
+                     (Sym (Foreign.R.Type.D:R:SingSEXPTYPEz0[0]))
+                     (Sym (Data.Singletons.N:SingI[0]) <Foreign.R.Type.SEXPTYPE>_N) <'Foreign.R.Type.Builtin>_N) -}
+155aac0ce58f46653dea12e588ab4eb0
+  $fSingISEXPTYPEBuiltin1 ::
+    Foreign.R.Type.R:SingSEXPTYPEz 'Foreign.R.Type.Builtin
+  {- HasNoCafRefs, Strictness: m9,
+     Unfolding: (Foreign.R.Type.SBuiltin
+                   @ 'Foreign.R.Type.Builtin
+                   Foreign.R.Type.$fSingISEXPTYPEBuiltin_$d~~
+                     `cast`
+                   (Sym (Data.Type.Equality.N:~[0]
+                             <Foreign.R.Type.SEXPTYPE>_N) <'Foreign.R.Type.Builtin>_N <'Foreign.R.Type.Builtin>_N)) -}
+155aac0ce58f46653dea12e588ab4eb0
+  $fSingISEXPTYPEBuiltin_$d~~ ::
+    ('Foreign.R.Type.Builtin :: Foreign.R.Type.SEXPTYPE)
+    GHC.Types.~~
+    ('Foreign.R.Type.Builtin :: Foreign.R.Type.SEXPTYPE)
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Eq#
+                   @ Foreign.R.Type.SEXPTYPE
+                   @ Foreign.R.Type.SEXPTYPE
+                   @ 'Foreign.R.Type.Builtin
+                   @ 'Foreign.R.Type.Builtin
+                   @~ <'Foreign.R.Type.Builtin>_N) -}
+a735419d301abb8181c1d918eb29f2dd
+  $fSingISEXPTYPEBytecode ::
+    Data.Singletons.SingI 'Foreign.R.Type.Bytecode
+  DFunId
+  {- Strictness: m20, Inline: (sat-args=0),
+     Unfolding: InlineRule (0, False, True)
+                Foreign.R.Type.$fSingISEXPTYPEBytecode1
+                  `cast`
+                (Trans
+                     (Sym (Foreign.R.Type.D:R:SingSEXPTYPEz0[0]))
+                     (Sym (Data.Singletons.N:SingI[0]) <Foreign.R.Type.SEXPTYPE>_N) <'Foreign.R.Type.Bytecode>_N) -}
+155aac0ce58f46653dea12e588ab4eb0
+  $fSingISEXPTYPEBytecode1 ::
+    Foreign.R.Type.R:SingSEXPTYPEz 'Foreign.R.Type.Bytecode
+  {- HasNoCafRefs, Strictness: m20,
+     Unfolding: (Foreign.R.Type.SBytecode
+                   @ 'Foreign.R.Type.Bytecode
+                   Foreign.R.Type.$fSingISEXPTYPEBytecode_$d~~
+                     `cast`
+                   (Sym (Data.Type.Equality.N:~[0]
+                             <Foreign.R.Type.SEXPTYPE>_N) <'Foreign.R.Type.Bytecode>_N <'Foreign.R.Type.Bytecode>_N)) -}
+155aac0ce58f46653dea12e588ab4eb0
+  $fSingISEXPTYPEBytecode_$d~~ ::
+    ('Foreign.R.Type.Bytecode :: Foreign.R.Type.SEXPTYPE)
+    GHC.Types.~~
+    ('Foreign.R.Type.Bytecode :: Foreign.R.Type.SEXPTYPE)
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Eq#
+                   @ Foreign.R.Type.SEXPTYPE
+                   @ Foreign.R.Type.SEXPTYPE
+                   @ 'Foreign.R.Type.Bytecode
+                   @ 'Foreign.R.Type.Bytecode
+                   @~ <'Foreign.R.Type.Bytecode>_N) -}
+1d3c011d211fe639bd018aeba42a6ed2
+  $fSingISEXPTYPEChar :: Data.Singletons.SingI 'Foreign.R.Type.Char
+  DFunId
+  {- Strictness: m10, Inline: (sat-args=0),
+     Unfolding: InlineRule (0, False, True)
+                Foreign.R.Type.$fSingISEXPTYPEChar1
+                  `cast`
+                (Trans
+                     (Sym (Foreign.R.Type.D:R:SingSEXPTYPEz0[0]))
+                     (Sym (Data.Singletons.N:SingI[0]) <Foreign.R.Type.SEXPTYPE>_N) <'Foreign.R.Type.Char>_N) -}
+155aac0ce58f46653dea12e588ab4eb0
+  $fSingISEXPTYPEChar1 ::
+    Foreign.R.Type.R:SingSEXPTYPEz 'Foreign.R.Type.Char
+  {- HasNoCafRefs, Strictness: m10,
+     Unfolding: (Foreign.R.Type.SChar
+                   @ 'Foreign.R.Type.Char
+                   Foreign.R.Type.$fSingISEXPTYPEChar_$d~~
+                     `cast`
+                   (Sym (Data.Type.Equality.N:~[0]
+                             <Foreign.R.Type.SEXPTYPE>_N) <'Foreign.R.Type.Char>_N <'Foreign.R.Type.Char>_N)) -}
+155aac0ce58f46653dea12e588ab4eb0
+  $fSingISEXPTYPEChar_$d~~ ::
+    ('Foreign.R.Type.Char :: Foreign.R.Type.SEXPTYPE)
+    GHC.Types.~~
+    ('Foreign.R.Type.Char :: Foreign.R.Type.SEXPTYPE)
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Eq#
+                   @ Foreign.R.Type.SEXPTYPE
+                   @ Foreign.R.Type.SEXPTYPE
+                   @ 'Foreign.R.Type.Char
+                   @ 'Foreign.R.Type.Char
+                   @~ <'Foreign.R.Type.Char>_N) -}
+4500e78605de249d24592429b3c6f362
+  $fSingISEXPTYPEClosure ::
+    Data.Singletons.SingI 'Foreign.R.Type.Closure
+  DFunId
+  {- Strictness: m4, Inline: (sat-args=0),
+     Unfolding: InlineRule (0, False, True)
+                Foreign.R.Type.$fSingISEXPTYPEClosure1
+                  `cast`
+                (Trans
+                     (Sym (Foreign.R.Type.D:R:SingSEXPTYPEz0[0]))
+                     (Sym (Data.Singletons.N:SingI[0]) <Foreign.R.Type.SEXPTYPE>_N) <'Foreign.R.Type.Closure>_N) -}
+155aac0ce58f46653dea12e588ab4eb0
+  $fSingISEXPTYPEClosure1 ::
+    Foreign.R.Type.R:SingSEXPTYPEz 'Foreign.R.Type.Closure
+  {- HasNoCafRefs, Strictness: m4,
+     Unfolding: (Foreign.R.Type.SClosure
+                   @ 'Foreign.R.Type.Closure
+                   Foreign.R.Type.$fSingISEXPTYPEClosure_$d~~
+                     `cast`
+                   (Sym (Data.Type.Equality.N:~[0]
+                             <Foreign.R.Type.SEXPTYPE>_N) <'Foreign.R.Type.Closure>_N <'Foreign.R.Type.Closure>_N)) -}
+155aac0ce58f46653dea12e588ab4eb0
+  $fSingISEXPTYPEClosure_$d~~ ::
+    ('Foreign.R.Type.Closure :: Foreign.R.Type.SEXPTYPE)
+    GHC.Types.~~
+    ('Foreign.R.Type.Closure :: Foreign.R.Type.SEXPTYPE)
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Eq#
+                   @ Foreign.R.Type.SEXPTYPE
+                   @ Foreign.R.Type.SEXPTYPE
+                   @ 'Foreign.R.Type.Closure
+                   @ 'Foreign.R.Type.Closure
+                   @~ <'Foreign.R.Type.Closure>_N) -}
+c5e5535c24def368fd00294955189df1
+  $fSingISEXPTYPEComplex ::
+    Data.Singletons.SingI 'Foreign.R.Type.Complex
+  DFunId
+  {- Strictness: m14, Inline: (sat-args=0),
+     Unfolding: InlineRule (0, False, True)
+                Foreign.R.Type.$fSingISEXPTYPEComplex1
+                  `cast`
+                (Trans
+                     (Sym (Foreign.R.Type.D:R:SingSEXPTYPEz0[0]))
+                     (Sym (Data.Singletons.N:SingI[0]) <Foreign.R.Type.SEXPTYPE>_N) <'Foreign.R.Type.Complex>_N) -}
+155aac0ce58f46653dea12e588ab4eb0
+  $fSingISEXPTYPEComplex1 ::
+    Foreign.R.Type.R:SingSEXPTYPEz 'Foreign.R.Type.Complex
+  {- HasNoCafRefs, Strictness: m14,
+     Unfolding: (Foreign.R.Type.SComplex
+                   @ 'Foreign.R.Type.Complex
+                   Foreign.R.Type.$fSingISEXPTYPEComplex_$d~~
+                     `cast`
+                   (Sym (Data.Type.Equality.N:~[0]
+                             <Foreign.R.Type.SEXPTYPE>_N) <'Foreign.R.Type.Complex>_N <'Foreign.R.Type.Complex>_N)) -}
+155aac0ce58f46653dea12e588ab4eb0
+  $fSingISEXPTYPEComplex_$d~~ ::
+    ('Foreign.R.Type.Complex :: Foreign.R.Type.SEXPTYPE)
+    GHC.Types.~~
+    ('Foreign.R.Type.Complex :: Foreign.R.Type.SEXPTYPE)
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Eq#
+                   @ Foreign.R.Type.SEXPTYPE
+                   @ Foreign.R.Type.SEXPTYPE
+                   @ 'Foreign.R.Type.Complex
+                   @ 'Foreign.R.Type.Complex
+                   @~ <'Foreign.R.Type.Complex>_N) -}
+05f116aad07110cbad081097691267c9
+  $fSingISEXPTYPEDotDotDot ::
+    Data.Singletons.SingI 'Foreign.R.Type.DotDotDot
+  DFunId
+  {- Strictness: m16, Inline: (sat-args=0),
+     Unfolding: InlineRule (0, False, True)
+                Foreign.R.Type.$fSingISEXPTYPEDotDotDot1
+                  `cast`
+                (Trans
+                     (Sym (Foreign.R.Type.D:R:SingSEXPTYPEz0[0]))
+                     (Sym (Data.Singletons.N:SingI[0]) <Foreign.R.Type.SEXPTYPE>_N) <'Foreign.R.Type.DotDotDot>_N) -}
+155aac0ce58f46653dea12e588ab4eb0
+  $fSingISEXPTYPEDotDotDot1 ::
+    Foreign.R.Type.R:SingSEXPTYPEz 'Foreign.R.Type.DotDotDot
+  {- HasNoCafRefs, Strictness: m16,
+     Unfolding: (Foreign.R.Type.SDotDotDot
+                   @ 'Foreign.R.Type.DotDotDot
+                   Foreign.R.Type.$fSingISEXPTYPEDotDotDot_$d~~
+                     `cast`
+                   (Sym (Data.Type.Equality.N:~[0]
+                             <Foreign.R.Type.SEXPTYPE>_N) <'Foreign.R.Type.DotDotDot>_N <'Foreign.R.Type.DotDotDot>_N)) -}
+155aac0ce58f46653dea12e588ab4eb0
+  $fSingISEXPTYPEDotDotDot_$d~~ ::
+    ('Foreign.R.Type.DotDotDot :: Foreign.R.Type.SEXPTYPE)
+    GHC.Types.~~
+    ('Foreign.R.Type.DotDotDot :: Foreign.R.Type.SEXPTYPE)
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Eq#
+                   @ Foreign.R.Type.SEXPTYPE
+                   @ Foreign.R.Type.SEXPTYPE
+                   @ 'Foreign.R.Type.DotDotDot
+                   @ 'Foreign.R.Type.DotDotDot
+                   @~ <'Foreign.R.Type.DotDotDot>_N) -}
+029791554dd7241901628fde5b86c6dc
+  $fSingISEXPTYPEEnv :: Data.Singletons.SingI 'Foreign.R.Type.Env
+  DFunId
+  {- Strictness: m5, Inline: (sat-args=0),
+     Unfolding: InlineRule (0, False, True)
+                Foreign.R.Type.$fSingISEXPTYPEEnv1
+                  `cast`
+                (Trans
+                     (Sym (Foreign.R.Type.D:R:SingSEXPTYPEz0[0]))
+                     (Sym (Data.Singletons.N:SingI[0]) <Foreign.R.Type.SEXPTYPE>_N) <'Foreign.R.Type.Env>_N) -}
+155aac0ce58f46653dea12e588ab4eb0
+  $fSingISEXPTYPEEnv1 ::
+    Foreign.R.Type.R:SingSEXPTYPEz 'Foreign.R.Type.Env
+  {- HasNoCafRefs, Strictness: m5,
+     Unfolding: (Foreign.R.Type.SEnv
+                   @ 'Foreign.R.Type.Env
+                   Foreign.R.Type.$fSingISEXPTYPEEnv_$d~~
+                     `cast`
+                   (Sym (Data.Type.Equality.N:~[0]
+                             <Foreign.R.Type.SEXPTYPE>_N) <'Foreign.R.Type.Env>_N <'Foreign.R.Type.Env>_N)) -}
+155aac0ce58f46653dea12e588ab4eb0
+  $fSingISEXPTYPEEnv_$d~~ ::
+    ('Foreign.R.Type.Env :: Foreign.R.Type.SEXPTYPE)
+    GHC.Types.~~
+    ('Foreign.R.Type.Env :: Foreign.R.Type.SEXPTYPE)
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Eq#
+                   @ Foreign.R.Type.SEXPTYPE
+                   @ Foreign.R.Type.SEXPTYPE
+                   @ 'Foreign.R.Type.Env
+                   @ 'Foreign.R.Type.Env
+                   @~ <'Foreign.R.Type.Env>_N) -}
+15abc0b94dbc4c01dd02a21c65f5f9c7
+  $fSingISEXPTYPEExpr :: Data.Singletons.SingI 'Foreign.R.Type.Expr
+  DFunId
+  {- Strictness: m19, Inline: (sat-args=0),
+     Unfolding: InlineRule (0, False, True)
+                Foreign.R.Type.$fSingISEXPTYPEExpr1
+                  `cast`
+                (Trans
+                     (Sym (Foreign.R.Type.D:R:SingSEXPTYPEz0[0]))
+                     (Sym (Data.Singletons.N:SingI[0]) <Foreign.R.Type.SEXPTYPE>_N) <'Foreign.R.Type.Expr>_N) -}
+155aac0ce58f46653dea12e588ab4eb0
+  $fSingISEXPTYPEExpr1 ::
+    Foreign.R.Type.R:SingSEXPTYPEz 'Foreign.R.Type.Expr
+  {- HasNoCafRefs, Strictness: m19,
+     Unfolding: (Foreign.R.Type.SExpr
+                   @ 'Foreign.R.Type.Expr
+                   Foreign.R.Type.$fSingISEXPTYPEExpr_$d~~
+                     `cast`
+                   (Sym (Data.Type.Equality.N:~[0]
+                             <Foreign.R.Type.SEXPTYPE>_N) <'Foreign.R.Type.Expr>_N <'Foreign.R.Type.Expr>_N)) -}
+155aac0ce58f46653dea12e588ab4eb0
+  $fSingISEXPTYPEExpr_$d~~ ::
+    ('Foreign.R.Type.Expr :: Foreign.R.Type.SEXPTYPE)
+    GHC.Types.~~
+    ('Foreign.R.Type.Expr :: Foreign.R.Type.SEXPTYPE)
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Eq#
+                   @ Foreign.R.Type.SEXPTYPE
+                   @ Foreign.R.Type.SEXPTYPE
+                   @ 'Foreign.R.Type.Expr
+                   @ 'Foreign.R.Type.Expr
+                   @~ <'Foreign.R.Type.Expr>_N) -}
+f1e6a07e24b33b9885dbe9db9a2bf184
+  $fSingISEXPTYPEExtPtr ::
+    Data.Singletons.SingI 'Foreign.R.Type.ExtPtr
+  DFunId
+  {- Strictness: m21, Inline: (sat-args=0),
+     Unfolding: InlineRule (0, False, True)
+                Foreign.R.Type.$fSingISEXPTYPEExtPtr1
+                  `cast`
+                (Trans
+                     (Sym (Foreign.R.Type.D:R:SingSEXPTYPEz0[0]))
+                     (Sym (Data.Singletons.N:SingI[0]) <Foreign.R.Type.SEXPTYPE>_N) <'Foreign.R.Type.ExtPtr>_N) -}
+155aac0ce58f46653dea12e588ab4eb0
+  $fSingISEXPTYPEExtPtr1 ::
+    Foreign.R.Type.R:SingSEXPTYPEz 'Foreign.R.Type.ExtPtr
+  {- HasNoCafRefs, Strictness: m21,
+     Unfolding: (Foreign.R.Type.SExtPtr
+                   @ 'Foreign.R.Type.ExtPtr
+                   Foreign.R.Type.$fSingISEXPTYPEExtPtr_$d~~
+                     `cast`
+                   (Sym (Data.Type.Equality.N:~[0]
+                             <Foreign.R.Type.SEXPTYPE>_N) <'Foreign.R.Type.ExtPtr>_N <'Foreign.R.Type.ExtPtr>_N)) -}
+155aac0ce58f46653dea12e588ab4eb0
+  $fSingISEXPTYPEExtPtr_$d~~ ::
+    ('Foreign.R.Type.ExtPtr :: Foreign.R.Type.SEXPTYPE)
+    GHC.Types.~~
+    ('Foreign.R.Type.ExtPtr :: Foreign.R.Type.SEXPTYPE)
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Eq#
+                   @ Foreign.R.Type.SEXPTYPE
+                   @ Foreign.R.Type.SEXPTYPE
+                   @ 'Foreign.R.Type.ExtPtr
+                   @ 'Foreign.R.Type.ExtPtr
+                   @~ <'Foreign.R.Type.ExtPtr>_N) -}
+b356acde121b258a33786308e0c91384
+  $fSingISEXPTYPEFree :: Data.Singletons.SingI 'Foreign.R.Type.Free
+  DFunId
+  {- Strictness: m26, Inline: (sat-args=0),
+     Unfolding: InlineRule (0, False, True)
+                Foreign.R.Type.$fSingISEXPTYPEFree1
+                  `cast`
+                (Trans
+                     (Sym (Foreign.R.Type.D:R:SingSEXPTYPEz0[0]))
+                     (Sym (Data.Singletons.N:SingI[0]) <Foreign.R.Type.SEXPTYPE>_N) <'Foreign.R.Type.Free>_N) -}
+155aac0ce58f46653dea12e588ab4eb0
+  $fSingISEXPTYPEFree1 ::
+    Foreign.R.Type.R:SingSEXPTYPEz 'Foreign.R.Type.Free
+  {- HasNoCafRefs, Strictness: m26,
+     Unfolding: (Foreign.R.Type.SFree
+                   @ 'Foreign.R.Type.Free
+                   Foreign.R.Type.$fSingISEXPTYPEFree_$d~~
+                     `cast`
+                   (Sym (Data.Type.Equality.N:~[0]
+                             <Foreign.R.Type.SEXPTYPE>_N) <'Foreign.R.Type.Free>_N <'Foreign.R.Type.Free>_N)) -}
+155aac0ce58f46653dea12e588ab4eb0
+  $fSingISEXPTYPEFree_$d~~ ::
+    ('Foreign.R.Type.Free :: Foreign.R.Type.SEXPTYPE)
+    GHC.Types.~~
+    ('Foreign.R.Type.Free :: Foreign.R.Type.SEXPTYPE)
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Eq#
+                   @ Foreign.R.Type.SEXPTYPE
+                   @ Foreign.R.Type.SEXPTYPE
+                   @ 'Foreign.R.Type.Free
+                   @ 'Foreign.R.Type.Free
+                   @~ <'Foreign.R.Type.Free>_N) -}
+2a50fca1e1ed1e2c9e7c27eb097a2503
+  $fSingISEXPTYPEFun :: Data.Singletons.SingI 'Foreign.R.Type.Fun
+  DFunId
+  {- Strictness: m27, Inline: (sat-args=0),
+     Unfolding: InlineRule (0, False, True)
+                Foreign.R.Type.$fSingISEXPTYPEFun1
+                  `cast`
+                (Trans
+                     (Sym (Foreign.R.Type.D:R:SingSEXPTYPEz0[0]))
+                     (Sym (Data.Singletons.N:SingI[0]) <Foreign.R.Type.SEXPTYPE>_N) <'Foreign.R.Type.Fun>_N) -}
+155aac0ce58f46653dea12e588ab4eb0
+  $fSingISEXPTYPEFun1 ::
+    Foreign.R.Type.R:SingSEXPTYPEz 'Foreign.R.Type.Fun
+  {- HasNoCafRefs, Strictness: m27,
+     Unfolding: (Foreign.R.Type.SFun
+                   @ 'Foreign.R.Type.Fun
+                   Foreign.R.Type.$fSingISEXPTYPEFun_$d~~
+                     `cast`
+                   (Sym (Data.Type.Equality.N:~[0]
+                             <Foreign.R.Type.SEXPTYPE>_N) <'Foreign.R.Type.Fun>_N <'Foreign.R.Type.Fun>_N)) -}
+155aac0ce58f46653dea12e588ab4eb0
+  $fSingISEXPTYPEFun_$d~~ ::
+    ('Foreign.R.Type.Fun :: Foreign.R.Type.SEXPTYPE)
+    GHC.Types.~~
+    ('Foreign.R.Type.Fun :: Foreign.R.Type.SEXPTYPE)
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Eq#
+                   @ Foreign.R.Type.SEXPTYPE
+                   @ Foreign.R.Type.SEXPTYPE
+                   @ 'Foreign.R.Type.Fun
+                   @ 'Foreign.R.Type.Fun
+                   @~ <'Foreign.R.Type.Fun>_N) -}
+9006974a9c75a6a8a68bb9d3f1ad1f2e
+  $fSingISEXPTYPEInt :: Data.Singletons.SingI 'Foreign.R.Type.Int
+  DFunId
+  {- Strictness: m12, Inline: (sat-args=0),
+     Unfolding: InlineRule (0, False, True)
+                Foreign.R.Type.$fSingISEXPTYPEInt1
+                  `cast`
+                (Trans
+                     (Sym (Foreign.R.Type.D:R:SingSEXPTYPEz0[0]))
+                     (Sym (Data.Singletons.N:SingI[0]) <Foreign.R.Type.SEXPTYPE>_N) <'Foreign.R.Type.Int>_N) -}
+155aac0ce58f46653dea12e588ab4eb0
+  $fSingISEXPTYPEInt1 ::
+    Foreign.R.Type.R:SingSEXPTYPEz 'Foreign.R.Type.Int
+  {- HasNoCafRefs, Strictness: m12,
+     Unfolding: (Foreign.R.Type.SInt
+                   @ 'Foreign.R.Type.Int
+                   Foreign.R.Type.$fSingISEXPTYPEInt_$d~~
+                     `cast`
+                   (Sym (Data.Type.Equality.N:~[0]
+                             <Foreign.R.Type.SEXPTYPE>_N) <'Foreign.R.Type.Int>_N <'Foreign.R.Type.Int>_N)) -}
+155aac0ce58f46653dea12e588ab4eb0
+  $fSingISEXPTYPEInt_$d~~ ::
+    ('Foreign.R.Type.Int :: Foreign.R.Type.SEXPTYPE)
+    GHC.Types.~~
+    ('Foreign.R.Type.Int :: Foreign.R.Type.SEXPTYPE)
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Eq#
+                   @ Foreign.R.Type.SEXPTYPE
+                   @ Foreign.R.Type.SEXPTYPE
+                   @ 'Foreign.R.Type.Int
+                   @ 'Foreign.R.Type.Int
+                   @~ <'Foreign.R.Type.Int>_N) -}
+6d56fa17ccfca6539d012998b0eca487
+  $fSingISEXPTYPELang :: Data.Singletons.SingI 'Foreign.R.Type.Lang
+  DFunId
+  {- Strictness: m7, Inline: (sat-args=0),
+     Unfolding: InlineRule (0, False, True)
+                Foreign.R.Type.$fSingISEXPTYPELang1
+                  `cast`
+                (Trans
+                     (Sym (Foreign.R.Type.D:R:SingSEXPTYPEz0[0]))
+                     (Sym (Data.Singletons.N:SingI[0]) <Foreign.R.Type.SEXPTYPE>_N) <'Foreign.R.Type.Lang>_N) -}
+155aac0ce58f46653dea12e588ab4eb0
+  $fSingISEXPTYPELang1 ::
+    Foreign.R.Type.R:SingSEXPTYPEz 'Foreign.R.Type.Lang
+  {- HasNoCafRefs, Strictness: m7,
+     Unfolding: (Foreign.R.Type.SLang
+                   @ 'Foreign.R.Type.Lang
+                   Foreign.R.Type.$fSingISEXPTYPELang_$d~~
+                     `cast`
+                   (Sym (Data.Type.Equality.N:~[0]
+                             <Foreign.R.Type.SEXPTYPE>_N) <'Foreign.R.Type.Lang>_N <'Foreign.R.Type.Lang>_N)) -}
+155aac0ce58f46653dea12e588ab4eb0
+  $fSingISEXPTYPELang_$d~~ ::
+    ('Foreign.R.Type.Lang :: Foreign.R.Type.SEXPTYPE)
+    GHC.Types.~~
+    ('Foreign.R.Type.Lang :: Foreign.R.Type.SEXPTYPE)
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Eq#
+                   @ Foreign.R.Type.SEXPTYPE
+                   @ Foreign.R.Type.SEXPTYPE
+                   @ 'Foreign.R.Type.Lang
+                   @ 'Foreign.R.Type.Lang
+                   @~ <'Foreign.R.Type.Lang>_N) -}
+1d934221d58ee6cb11487189f2ba7d60
+  $fSingISEXPTYPEList :: Data.Singletons.SingI 'Foreign.R.Type.List
+  DFunId
+  {- Strictness: m3, Inline: (sat-args=0),
+     Unfolding: InlineRule (0, False, True)
+                Foreign.R.Type.$fSingISEXPTYPEList1
+                  `cast`
+                (Trans
+                     (Sym (Foreign.R.Type.D:R:SingSEXPTYPEz0[0]))
+                     (Sym (Data.Singletons.N:SingI[0]) <Foreign.R.Type.SEXPTYPE>_N) <'Foreign.R.Type.List>_N) -}
+155aac0ce58f46653dea12e588ab4eb0
+  $fSingISEXPTYPEList1 ::
+    Foreign.R.Type.R:SingSEXPTYPEz 'Foreign.R.Type.List
+  {- HasNoCafRefs, Strictness: m3,
+     Unfolding: (Foreign.R.Type.SList
+                   @ 'Foreign.R.Type.List
+                   Foreign.R.Type.$fSingISEXPTYPEList_$d~~
+                     `cast`
+                   (Sym (Data.Type.Equality.N:~[0]
+                             <Foreign.R.Type.SEXPTYPE>_N) <'Foreign.R.Type.List>_N <'Foreign.R.Type.List>_N)) -}
+155aac0ce58f46653dea12e588ab4eb0
+  $fSingISEXPTYPEList_$d~~ ::
+    ('Foreign.R.Type.List :: Foreign.R.Type.SEXPTYPE)
+    GHC.Types.~~
+    ('Foreign.R.Type.List :: Foreign.R.Type.SEXPTYPE)
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Eq#
+                   @ Foreign.R.Type.SEXPTYPE
+                   @ Foreign.R.Type.SEXPTYPE
+                   @ 'Foreign.R.Type.List
+                   @ 'Foreign.R.Type.List
+                   @~ <'Foreign.R.Type.List>_N) -}
+84027211602385a601c0906e1d36a59e
+  $fSingISEXPTYPELogical ::
+    Data.Singletons.SingI 'Foreign.R.Type.Logical
+  DFunId
+  {- Strictness: m11, Inline: (sat-args=0),
+     Unfolding: InlineRule (0, False, True)
+                Foreign.R.Type.$fSingISEXPTYPELogical1
+                  `cast`
+                (Trans
+                     (Sym (Foreign.R.Type.D:R:SingSEXPTYPEz0[0]))
+                     (Sym (Data.Singletons.N:SingI[0]) <Foreign.R.Type.SEXPTYPE>_N) <'Foreign.R.Type.Logical>_N) -}
+155aac0ce58f46653dea12e588ab4eb0
+  $fSingISEXPTYPELogical1 ::
+    Foreign.R.Type.R:SingSEXPTYPEz 'Foreign.R.Type.Logical
+  {- HasNoCafRefs, Strictness: m11,
+     Unfolding: (Foreign.R.Type.SLogical
+                   @ 'Foreign.R.Type.Logical
+                   Foreign.R.Type.$fSingISEXPTYPELogical_$d~~
+                     `cast`
+                   (Sym (Data.Type.Equality.N:~[0]
+                             <Foreign.R.Type.SEXPTYPE>_N) <'Foreign.R.Type.Logical>_N <'Foreign.R.Type.Logical>_N)) -}
+155aac0ce58f46653dea12e588ab4eb0
+  $fSingISEXPTYPELogical_$d~~ ::
+    ('Foreign.R.Type.Logical :: Foreign.R.Type.SEXPTYPE)
+    GHC.Types.~~
+    ('Foreign.R.Type.Logical :: Foreign.R.Type.SEXPTYPE)
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Eq#
+                   @ Foreign.R.Type.SEXPTYPE
+                   @ Foreign.R.Type.SEXPTYPE
+                   @ 'Foreign.R.Type.Logical
+                   @ 'Foreign.R.Type.Logical
+                   @~ <'Foreign.R.Type.Logical>_N) -}
+7337cd756a5f55f22fd8573698eaefb8
+  $fSingISEXPTYPENew :: Data.Singletons.SingI 'Foreign.R.Type.New
+  DFunId
+  {- Strictness: m25, Inline: (sat-args=0),
+     Unfolding: InlineRule (0, False, True)
+                Foreign.R.Type.$fSingISEXPTYPENew1
+                  `cast`
+                (Trans
+                     (Sym (Foreign.R.Type.D:R:SingSEXPTYPEz0[0]))
+                     (Sym (Data.Singletons.N:SingI[0]) <Foreign.R.Type.SEXPTYPE>_N) <'Foreign.R.Type.New>_N) -}
+155aac0ce58f46653dea12e588ab4eb0
+  $fSingISEXPTYPENew1 ::
+    Foreign.R.Type.R:SingSEXPTYPEz 'Foreign.R.Type.New
+  {- HasNoCafRefs, Strictness: m25,
+     Unfolding: (Foreign.R.Type.SNew
+                   @ 'Foreign.R.Type.New
+                   Foreign.R.Type.$fSingISEXPTYPENew_$d~~
+                     `cast`
+                   (Sym (Data.Type.Equality.N:~[0]
+                             <Foreign.R.Type.SEXPTYPE>_N) <'Foreign.R.Type.New>_N <'Foreign.R.Type.New>_N)) -}
+155aac0ce58f46653dea12e588ab4eb0
+  $fSingISEXPTYPENew_$d~~ ::
+    ('Foreign.R.Type.New :: Foreign.R.Type.SEXPTYPE)
+    GHC.Types.~~
+    ('Foreign.R.Type.New :: Foreign.R.Type.SEXPTYPE)
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Eq#
+                   @ Foreign.R.Type.SEXPTYPE
+                   @ Foreign.R.Type.SEXPTYPE
+                   @ 'Foreign.R.Type.New
+                   @ 'Foreign.R.Type.New
+                   @~ <'Foreign.R.Type.New>_N) -}
+db99128dc6818e750495921d7f86065b
+  $fSingISEXPTYPENil :: Data.Singletons.SingI 'Foreign.R.Type.Nil
+  DFunId
+  {- Strictness: m1, Inline: (sat-args=0),
+     Unfolding: InlineRule (0, False, True)
+                Foreign.R.Type.$fSingISEXPTYPENil1
+                  `cast`
+                (Trans
+                     (Sym (Foreign.R.Type.D:R:SingSEXPTYPEz0[0]))
+                     (Sym (Data.Singletons.N:SingI[0]) <Foreign.R.Type.SEXPTYPE>_N) <'Foreign.R.Type.Nil>_N) -}
+155aac0ce58f46653dea12e588ab4eb0
+  $fSingISEXPTYPENil1 ::
+    Foreign.R.Type.R:SingSEXPTYPEz 'Foreign.R.Type.Nil
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (Foreign.R.Type.SNil
+                   @ 'Foreign.R.Type.Nil
+                   Foreign.R.Type.$fSingISEXPTYPENil_$d~~
+                     `cast`
+                   (Sym (Data.Type.Equality.N:~[0]
+                             <Foreign.R.Type.SEXPTYPE>_N) <'Foreign.R.Type.Nil>_N <'Foreign.R.Type.Nil>_N)) -}
+155aac0ce58f46653dea12e588ab4eb0
+  $fSingISEXPTYPENil_$d~~ ::
+    ('Foreign.R.Type.Nil :: Foreign.R.Type.SEXPTYPE)
+    GHC.Types.~~
+    ('Foreign.R.Type.Nil :: Foreign.R.Type.SEXPTYPE)
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Eq#
+                   @ Foreign.R.Type.SEXPTYPE
+                   @ Foreign.R.Type.SEXPTYPE
+                   @ 'Foreign.R.Type.Nil
+                   @ 'Foreign.R.Type.Nil
+                   @~ <'Foreign.R.Type.Nil>_N) -}
+a6f5a565b9f6bae91440eca398563915
+  $fSingISEXPTYPEPromise ::
+    Data.Singletons.SingI 'Foreign.R.Type.Promise
+  DFunId
+  {- Strictness: m6, Inline: (sat-args=0),
+     Unfolding: InlineRule (0, False, True)
+                Foreign.R.Type.$fSingISEXPTYPEPromise1
+                  `cast`
+                (Trans
+                     (Sym (Foreign.R.Type.D:R:SingSEXPTYPEz0[0]))
+                     (Sym (Data.Singletons.N:SingI[0]) <Foreign.R.Type.SEXPTYPE>_N) <'Foreign.R.Type.Promise>_N) -}
+155aac0ce58f46653dea12e588ab4eb0
+  $fSingISEXPTYPEPromise1 ::
+    Foreign.R.Type.R:SingSEXPTYPEz 'Foreign.R.Type.Promise
+  {- HasNoCafRefs, Strictness: m6,
+     Unfolding: (Foreign.R.Type.SPromise
+                   @ 'Foreign.R.Type.Promise
+                   Foreign.R.Type.$fSingISEXPTYPEPromise_$d~~
+                     `cast`
+                   (Sym (Data.Type.Equality.N:~[0]
+                             <Foreign.R.Type.SEXPTYPE>_N) <'Foreign.R.Type.Promise>_N <'Foreign.R.Type.Promise>_N)) -}
+155aac0ce58f46653dea12e588ab4eb0
+  $fSingISEXPTYPEPromise_$d~~ ::
+    ('Foreign.R.Type.Promise :: Foreign.R.Type.SEXPTYPE)
+    GHC.Types.~~
+    ('Foreign.R.Type.Promise :: Foreign.R.Type.SEXPTYPE)
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Eq#
+                   @ Foreign.R.Type.SEXPTYPE
+                   @ Foreign.R.Type.SEXPTYPE
+                   @ 'Foreign.R.Type.Promise
+                   @ 'Foreign.R.Type.Promise
+                   @~ <'Foreign.R.Type.Promise>_N) -}
+13b8d44916ee940c30ec13a3afa1ecea
+  $fSingISEXPTYPERaw :: Data.Singletons.SingI 'Foreign.R.Type.Raw
+  DFunId
+  {- Strictness: m23, Inline: (sat-args=0),
+     Unfolding: InlineRule (0, False, True)
+                Foreign.R.Type.$fSingISEXPTYPERaw1
+                  `cast`
+                (Trans
+                     (Sym (Foreign.R.Type.D:R:SingSEXPTYPEz0[0]))
+                     (Sym (Data.Singletons.N:SingI[0]) <Foreign.R.Type.SEXPTYPE>_N) <'Foreign.R.Type.Raw>_N) -}
+155aac0ce58f46653dea12e588ab4eb0
+  $fSingISEXPTYPERaw1 ::
+    Foreign.R.Type.R:SingSEXPTYPEz 'Foreign.R.Type.Raw
+  {- HasNoCafRefs, Strictness: m23,
+     Unfolding: (Foreign.R.Type.SRaw
+                   @ 'Foreign.R.Type.Raw
+                   Foreign.R.Type.$fSingISEXPTYPERaw_$d~~
+                     `cast`
+                   (Sym (Data.Type.Equality.N:~[0]
+                             <Foreign.R.Type.SEXPTYPE>_N) <'Foreign.R.Type.Raw>_N <'Foreign.R.Type.Raw>_N)) -}
+155aac0ce58f46653dea12e588ab4eb0
+  $fSingISEXPTYPERaw_$d~~ ::
+    ('Foreign.R.Type.Raw :: Foreign.R.Type.SEXPTYPE)
+    GHC.Types.~~
+    ('Foreign.R.Type.Raw :: Foreign.R.Type.SEXPTYPE)
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Eq#
+                   @ Foreign.R.Type.SEXPTYPE
+                   @ Foreign.R.Type.SEXPTYPE
+                   @ 'Foreign.R.Type.Raw
+                   @ 'Foreign.R.Type.Raw
+                   @~ <'Foreign.R.Type.Raw>_N) -}
+618827497e4f5a76038c23ddf68b5fea
+  $fSingISEXPTYPEReal :: Data.Singletons.SingI 'Foreign.R.Type.Real
+  DFunId
+  {- Strictness: m13, Inline: (sat-args=0),
+     Unfolding: InlineRule (0, False, True)
+                Foreign.R.Type.$fSingISEXPTYPEReal1
+                  `cast`
+                (Trans
+                     (Sym (Foreign.R.Type.D:R:SingSEXPTYPEz0[0]))
+                     (Sym (Data.Singletons.N:SingI[0]) <Foreign.R.Type.SEXPTYPE>_N) <'Foreign.R.Type.Real>_N) -}
+155aac0ce58f46653dea12e588ab4eb0
+  $fSingISEXPTYPEReal1 ::
+    Foreign.R.Type.R:SingSEXPTYPEz 'Foreign.R.Type.Real
+  {- HasNoCafRefs, Strictness: m13,
+     Unfolding: (Foreign.R.Type.SReal
+                   @ 'Foreign.R.Type.Real
+                   Foreign.R.Type.$fSingISEXPTYPEReal_$d~~
+                     `cast`
+                   (Sym (Data.Type.Equality.N:~[0]
+                             <Foreign.R.Type.SEXPTYPE>_N) <'Foreign.R.Type.Real>_N <'Foreign.R.Type.Real>_N)) -}
+155aac0ce58f46653dea12e588ab4eb0
+  $fSingISEXPTYPEReal_$d~~ ::
+    ('Foreign.R.Type.Real :: Foreign.R.Type.SEXPTYPE)
+    GHC.Types.~~
+    ('Foreign.R.Type.Real :: Foreign.R.Type.SEXPTYPE)
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Eq#
+                   @ Foreign.R.Type.SEXPTYPE
+                   @ Foreign.R.Type.SEXPTYPE
+                   @ 'Foreign.R.Type.Real
+                   @ 'Foreign.R.Type.Real
+                   @~ <'Foreign.R.Type.Real>_N) -}
+155aac0ce58f46653dea12e588ab4eb0
+  $fSingISEXPTYPES1 ::
+    Foreign.R.Type.R:SingSEXPTYPEz 'Foreign.R.Type.S4
+  {- HasNoCafRefs, Strictness: m24,
+     Unfolding: (Foreign.R.Type.SS4
+                   @ 'Foreign.R.Type.S4
+                   Foreign.R.Type.$fSingISEXPTYPES4_$d~~
+                     `cast`
+                   (Sym (Data.Type.Equality.N:~[0]
+                             <Foreign.R.Type.SEXPTYPE>_N) <'Foreign.R.Type.S4>_N <'Foreign.R.Type.S4>_N)) -}
+3e8cc23d01ba44bfa5c48cbe86b4ac0e
+  $fSingISEXPTYPES4 :: Data.Singletons.SingI 'Foreign.R.Type.S4
+  DFunId
+  {- Strictness: m24, Inline: (sat-args=0),
+     Unfolding: InlineRule (0, False, True)
+                Foreign.R.Type.$fSingISEXPTYPES1
+                  `cast`
+                (Trans
+                     (Sym (Foreign.R.Type.D:R:SingSEXPTYPEz0[0]))
+                     (Sym (Data.Singletons.N:SingI[0]) <Foreign.R.Type.SEXPTYPE>_N) <'Foreign.R.Type.S4>_N) -}
+155aac0ce58f46653dea12e588ab4eb0
+  $fSingISEXPTYPES4_$d~~ ::
+    ('Foreign.R.Type.S4 :: Foreign.R.Type.SEXPTYPE)
+    GHC.Types.~~
+    ('Foreign.R.Type.S4 :: Foreign.R.Type.SEXPTYPE)
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Eq#
+                   @ Foreign.R.Type.SEXPTYPE
+                   @ Foreign.R.Type.SEXPTYPE
+                   @ 'Foreign.R.Type.S4
+                   @ 'Foreign.R.Type.S4
+                   @~ <'Foreign.R.Type.S4>_N) -}
+155aac0ce58f46653dea12e588ab4eb0
+  $fSingISEXPTYPESpecial ::
+    Data.Singletons.SingI 'Foreign.R.Type.Special
+  DFunId
+  {- Strictness: m8, Inline: (sat-args=0),
+     Unfolding: InlineRule (0, False, True)
+                Foreign.R.Type.$fSingISEXPTYPESpecial1
+                  `cast`
+                (Trans
+                     (Sym (Foreign.R.Type.D:R:SingSEXPTYPEz0[0]))
+                     (Sym (Data.Singletons.N:SingI[0]) <Foreign.R.Type.SEXPTYPE>_N) <'Foreign.R.Type.Special>_N) -}
+155aac0ce58f46653dea12e588ab4eb0
+  $fSingISEXPTYPESpecial1 ::
+    Foreign.R.Type.R:SingSEXPTYPEz 'Foreign.R.Type.Special
+  {- HasNoCafRefs, Strictness: m8,
+     Unfolding: (Foreign.R.Type.SSpecial
+                   @ 'Foreign.R.Type.Special
+                   Foreign.R.Type.$fSingISEXPTYPESpecial_$d~~
+                     `cast`
+                   (Sym (Data.Type.Equality.N:~[0]
+                             <Foreign.R.Type.SEXPTYPE>_N) <'Foreign.R.Type.Special>_N <'Foreign.R.Type.Special>_N)) -}
+155aac0ce58f46653dea12e588ab4eb0
+  $fSingISEXPTYPESpecial_$d~~ ::
+    ('Foreign.R.Type.Special :: Foreign.R.Type.SEXPTYPE)
+    GHC.Types.~~
+    ('Foreign.R.Type.Special :: Foreign.R.Type.SEXPTYPE)
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Eq#
+                   @ Foreign.R.Type.SEXPTYPE
+                   @ Foreign.R.Type.SEXPTYPE
+                   @ 'Foreign.R.Type.Special
+                   @ 'Foreign.R.Type.Special
+                   @~ <'Foreign.R.Type.Special>_N) -}
+155aac0ce58f46653dea12e588ab4eb0
+  $fSingISEXPTYPEString ::
+    Data.Singletons.SingI 'Foreign.R.Type.String
+  DFunId
+  {- Strictness: m15, Inline: (sat-args=0),
+     Unfolding: InlineRule (0, False, True)
+                Foreign.R.Type.$fSingISEXPTYPEString1
+                  `cast`
+                (Trans
+                     (Sym (Foreign.R.Type.D:R:SingSEXPTYPEz0[0]))
+                     (Sym (Data.Singletons.N:SingI[0]) <Foreign.R.Type.SEXPTYPE>_N) <'Foreign.R.Type.String>_N) -}
+155aac0ce58f46653dea12e588ab4eb0
+  $fSingISEXPTYPEString1 ::
+    Foreign.R.Type.R:SingSEXPTYPEz 'Foreign.R.Type.String
+  {- HasNoCafRefs, Strictness: m15,
+     Unfolding: (Foreign.R.Type.SString
+                   @ 'Foreign.R.Type.String
+                   Foreign.R.Type.$fSingISEXPTYPEString_$d~~
+                     `cast`
+                   (Sym (Data.Type.Equality.N:~[0]
+                             <Foreign.R.Type.SEXPTYPE>_N) <'Foreign.R.Type.String>_N <'Foreign.R.Type.String>_N)) -}
+155aac0ce58f46653dea12e588ab4eb0
+  $fSingISEXPTYPEString_$d~~ ::
+    ('Foreign.R.Type.String :: Foreign.R.Type.SEXPTYPE)
+    GHC.Types.~~
+    ('Foreign.R.Type.String :: Foreign.R.Type.SEXPTYPE)
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Eq#
+                   @ Foreign.R.Type.SEXPTYPE
+                   @ Foreign.R.Type.SEXPTYPE
+                   @ 'Foreign.R.Type.String
+                   @ 'Foreign.R.Type.String
+                   @~ <'Foreign.R.Type.String>_N) -}
+155aac0ce58f46653dea12e588ab4eb0
+  $fSingISEXPTYPESymbol ::
+    Data.Singletons.SingI 'Foreign.R.Type.Symbol
+  DFunId
+  {- Strictness: m2, Inline: (sat-args=0),
+     Unfolding: InlineRule (0, False, True)
+                Foreign.R.Type.$fSingISEXPTYPESymbol1
+                  `cast`
+                (Trans
+                     (Sym (Foreign.R.Type.D:R:SingSEXPTYPEz0[0]))
+                     (Sym (Data.Singletons.N:SingI[0]) <Foreign.R.Type.SEXPTYPE>_N) <'Foreign.R.Type.Symbol>_N) -}
+155aac0ce58f46653dea12e588ab4eb0
+  $fSingISEXPTYPESymbol1 ::
+    Foreign.R.Type.R:SingSEXPTYPEz 'Foreign.R.Type.Symbol
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (Foreign.R.Type.SSymbol
+                   @ 'Foreign.R.Type.Symbol
+                   Foreign.R.Type.$fSingISEXPTYPESymbol_$d~~
+                     `cast`
+                   (Sym (Data.Type.Equality.N:~[0]
+                             <Foreign.R.Type.SEXPTYPE>_N) <'Foreign.R.Type.Symbol>_N <'Foreign.R.Type.Symbol>_N)) -}
+155aac0ce58f46653dea12e588ab4eb0
+  $fSingISEXPTYPESymbol_$d~~ ::
+    ('Foreign.R.Type.Symbol :: Foreign.R.Type.SEXPTYPE)
+    GHC.Types.~~
+    ('Foreign.R.Type.Symbol :: Foreign.R.Type.SEXPTYPE)
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Eq#
+                   @ Foreign.R.Type.SEXPTYPE
+                   @ Foreign.R.Type.SEXPTYPE
+                   @ 'Foreign.R.Type.Symbol
+                   @ 'Foreign.R.Type.Symbol
+                   @~ <'Foreign.R.Type.Symbol>_N) -}
+155aac0ce58f46653dea12e588ab4eb0
+  $fSingISEXPTYPEVector ::
+    Data.Singletons.SingI 'Foreign.R.Type.Vector
+  DFunId
+  {- Strictness: m18, Inline: (sat-args=0),
+     Unfolding: InlineRule (0, False, True)
+                Foreign.R.Type.$fSingISEXPTYPEVector1
+                  `cast`
+                (Trans
+                     (Sym (Foreign.R.Type.D:R:SingSEXPTYPEz0[0]))
+                     (Sym (Data.Singletons.N:SingI[0]) <Foreign.R.Type.SEXPTYPE>_N) <'Foreign.R.Type.Vector>_N) -}
+155aac0ce58f46653dea12e588ab4eb0
+  $fSingISEXPTYPEVector1 ::
+    Foreign.R.Type.R:SingSEXPTYPEz 'Foreign.R.Type.Vector
+  {- HasNoCafRefs, Strictness: m18,
+     Unfolding: (Foreign.R.Type.SVector
+                   @ 'Foreign.R.Type.Vector
+                   Foreign.R.Type.$fSingISEXPTYPEVector_$d~~
+                     `cast`
+                   (Sym (Data.Type.Equality.N:~[0]
+                             <Foreign.R.Type.SEXPTYPE>_N) <'Foreign.R.Type.Vector>_N <'Foreign.R.Type.Vector>_N)) -}
+155aac0ce58f46653dea12e588ab4eb0
+  $fSingISEXPTYPEVector_$d~~ ::
+    ('Foreign.R.Type.Vector :: Foreign.R.Type.SEXPTYPE)
+    GHC.Types.~~
+    ('Foreign.R.Type.Vector :: Foreign.R.Type.SEXPTYPE)
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Eq#
+                   @ Foreign.R.Type.SEXPTYPE
+                   @ Foreign.R.Type.SEXPTYPE
+                   @ 'Foreign.R.Type.Vector
+                   @ 'Foreign.R.Type.Vector
+                   @~ <'Foreign.R.Type.Vector>_N) -}
+155aac0ce58f46653dea12e588ab4eb0
+  $fSingISEXPTYPEWeakRef ::
+    Data.Singletons.SingI 'Foreign.R.Type.WeakRef
+  DFunId
+  {- Strictness: m22, Inline: (sat-args=0),
+     Unfolding: InlineRule (0, False, True)
+                Foreign.R.Type.$fSingISEXPTYPEWeakRef1
+                  `cast`
+                (Trans
+                     (Sym (Foreign.R.Type.D:R:SingSEXPTYPEz0[0]))
+                     (Sym (Data.Singletons.N:SingI[0]) <Foreign.R.Type.SEXPTYPE>_N) <'Foreign.R.Type.WeakRef>_N) -}
+155aac0ce58f46653dea12e588ab4eb0
+  $fSingISEXPTYPEWeakRef1 ::
+    Foreign.R.Type.R:SingSEXPTYPEz 'Foreign.R.Type.WeakRef
+  {- HasNoCafRefs, Strictness: m22,
+     Unfolding: (Foreign.R.Type.SWeakRef
+                   @ 'Foreign.R.Type.WeakRef
+                   Foreign.R.Type.$fSingISEXPTYPEWeakRef_$d~~
+                     `cast`
+                   (Sym (Data.Type.Equality.N:~[0]
+                             <Foreign.R.Type.SEXPTYPE>_N) <'Foreign.R.Type.WeakRef>_N <'Foreign.R.Type.WeakRef>_N)) -}
+155aac0ce58f46653dea12e588ab4eb0
+  $fSingISEXPTYPEWeakRef_$d~~ ::
+    ('Foreign.R.Type.WeakRef :: Foreign.R.Type.SEXPTYPE)
+    GHC.Types.~~
+    ('Foreign.R.Type.WeakRef :: Foreign.R.Type.SEXPTYPE)
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Eq#
+                   @ Foreign.R.Type.SEXPTYPE
+                   @ Foreign.R.Type.SEXPTYPE
+                   @ 'Foreign.R.Type.WeakRef
+                   @ 'Foreign.R.Type.WeakRef
+                   @~ <'Foreign.R.Type.WeakRef>_N) -}
+155aac0ce58f46653dea12e588ab4eb0
+  $fSingKindSEXPTYPE ::
+    Data.Singletons.SingKind Foreign.R.Type.SEXPTYPE
+  DFunId
+  {- HasNoCafRefs, Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ Foreign.R.Type.SEXPTYPE
+                  Foreign.R.Type.$fSingKindSEXPTYPE_$cfromSing
+                  Foreign.R.Type.$fSingKindSEXPTYPE_$ctoSing -}
+155aac0ce58f46653dea12e588ab4eb0
+  $fSingKindSEXPTYPE1 ::
+    Data.Singletons.SomeSing Foreign.R.Type.SEXPTYPE
+  {- HasNoCafRefs,
+     Unfolding: (Data.Singletons.SomeSing
+                   @ Foreign.R.Type.SEXPTYPE
+                   @ GHC.Types.Any
+                   @ GHC.Types.Any
+                   @ 'Foreign.R.Type.Fun
+                   Foreign.R.Type.$fSingISEXPTYPEFun1
+                     `cast`
+                   (Sym (Foreign.R.Type.D:R:SingSEXPTYPEz0[0]) <'Foreign.R.Type.Fun>_N)) -}
+155aac0ce58f46653dea12e588ab4eb0
+  $fSingKindSEXPTYPE10 ::
+    Data.Singletons.SomeSing Foreign.R.Type.SEXPTYPE
+  {- HasNoCafRefs,
+     Unfolding: (Data.Singletons.SomeSing
+                   @ Foreign.R.Type.SEXPTYPE
+                   @ GHC.Types.Any
+                   @ GHC.Types.Any
+                   @ 'Foreign.R.Type.Vector
+                   Foreign.R.Type.$fSingISEXPTYPEVector1
+                     `cast`
+                   (Sym (Foreign.R.Type.D:R:SingSEXPTYPEz0[0]) <'Foreign.R.Type.Vector>_N)) -}
+155aac0ce58f46653dea12e588ab4eb0
+  $fSingKindSEXPTYPE11 ::
+    Data.Singletons.SomeSing Foreign.R.Type.SEXPTYPE
+  {- HasNoCafRefs,
+     Unfolding: (Data.Singletons.SomeSing
+                   @ Foreign.R.Type.SEXPTYPE
+                   @ GHC.Types.Any
+                   @ GHC.Types.Any
+                   @ 'Foreign.R.Type.Any
+                   Foreign.R.Type.$fSingISEXPTYPEAny1
+                     `cast`
+                   (Sym (Foreign.R.Type.D:R:SingSEXPTYPEz0[0]) <'Foreign.R.Type.Any>_N)) -}
+155aac0ce58f46653dea12e588ab4eb0
+  $fSingKindSEXPTYPE12 ::
+    Data.Singletons.SomeSing Foreign.R.Type.SEXPTYPE
+  {- HasNoCafRefs,
+     Unfolding: (Data.Singletons.SomeSing
+                   @ Foreign.R.Type.SEXPTYPE
+                   @ GHC.Types.Any
+                   @ GHC.Types.Any
+                   @ 'Foreign.R.Type.DotDotDot
+                   Foreign.R.Type.$fSingISEXPTYPEDotDotDot1
+                     `cast`
+                   (Sym (Foreign.R.Type.D:R:SingSEXPTYPEz0[0]) <'Foreign.R.Type.DotDotDot>_N)) -}
+155aac0ce58f46653dea12e588ab4eb0
+  $fSingKindSEXPTYPE13 ::
+    Data.Singletons.SomeSing Foreign.R.Type.SEXPTYPE
+  {- HasNoCafRefs,
+     Unfolding: (Data.Singletons.SomeSing
+                   @ Foreign.R.Type.SEXPTYPE
+                   @ GHC.Types.Any
+                   @ GHC.Types.Any
+                   @ 'Foreign.R.Type.String
+                   Foreign.R.Type.$fSingISEXPTYPEString1
+                     `cast`
+                   (Sym (Foreign.R.Type.D:R:SingSEXPTYPEz0[0]) <'Foreign.R.Type.String>_N)) -}
+155aac0ce58f46653dea12e588ab4eb0
+  $fSingKindSEXPTYPE14 ::
+    Data.Singletons.SomeSing Foreign.R.Type.SEXPTYPE
+  {- HasNoCafRefs,
+     Unfolding: (Data.Singletons.SomeSing
+                   @ Foreign.R.Type.SEXPTYPE
+                   @ GHC.Types.Any
+                   @ GHC.Types.Any
+                   @ 'Foreign.R.Type.Complex
+                   Foreign.R.Type.$fSingISEXPTYPEComplex1
+                     `cast`
+                   (Sym (Foreign.R.Type.D:R:SingSEXPTYPEz0[0]) <'Foreign.R.Type.Complex>_N)) -}
+155aac0ce58f46653dea12e588ab4eb0
+  $fSingKindSEXPTYPE15 ::
+    Data.Singletons.SomeSing Foreign.R.Type.SEXPTYPE
+  {- HasNoCafRefs,
+     Unfolding: (Data.Singletons.SomeSing
+                   @ Foreign.R.Type.SEXPTYPE
+                   @ GHC.Types.Any
+                   @ GHC.Types.Any
+                   @ 'Foreign.R.Type.Real
+                   Foreign.R.Type.$fSingISEXPTYPEReal1
+                     `cast`
+                   (Sym (Foreign.R.Type.D:R:SingSEXPTYPEz0[0]) <'Foreign.R.Type.Real>_N)) -}
+155aac0ce58f46653dea12e588ab4eb0
+  $fSingKindSEXPTYPE16 ::
+    Data.Singletons.SomeSing Foreign.R.Type.SEXPTYPE
+  {- HasNoCafRefs,
+     Unfolding: (Data.Singletons.SomeSing
+                   @ Foreign.R.Type.SEXPTYPE
+                   @ GHC.Types.Any
+                   @ GHC.Types.Any
+                   @ 'Foreign.R.Type.Int
+                   Foreign.R.Type.$fSingISEXPTYPEInt1
+                     `cast`
+                   (Sym (Foreign.R.Type.D:R:SingSEXPTYPEz0[0]) <'Foreign.R.Type.Int>_N)) -}
+155aac0ce58f46653dea12e588ab4eb0
+  $fSingKindSEXPTYPE17 ::
+    Data.Singletons.SomeSing Foreign.R.Type.SEXPTYPE
+  {- HasNoCafRefs,
+     Unfolding: (Data.Singletons.SomeSing
+                   @ Foreign.R.Type.SEXPTYPE
+                   @ GHC.Types.Any
+                   @ GHC.Types.Any
+                   @ 'Foreign.R.Type.Logical
+                   Foreign.R.Type.$fSingISEXPTYPELogical1
+                     `cast`
+                   (Sym (Foreign.R.Type.D:R:SingSEXPTYPEz0[0]) <'Foreign.R.Type.Logical>_N)) -}
+155aac0ce58f46653dea12e588ab4eb0
+  $fSingKindSEXPTYPE18 ::
+    Data.Singletons.SomeSing Foreign.R.Type.SEXPTYPE
+  {- HasNoCafRefs,
+     Unfolding: (Data.Singletons.SomeSing
+                   @ Foreign.R.Type.SEXPTYPE
+                   @ GHC.Types.Any
+                   @ GHC.Types.Any
+                   @ 'Foreign.R.Type.Char
+                   Foreign.R.Type.$fSingISEXPTYPEChar1
+                     `cast`
+                   (Sym (Foreign.R.Type.D:R:SingSEXPTYPEz0[0]) <'Foreign.R.Type.Char>_N)) -}
+155aac0ce58f46653dea12e588ab4eb0
+  $fSingKindSEXPTYPE19 ::
+    Data.Singletons.SomeSing Foreign.R.Type.SEXPTYPE
+  {- HasNoCafRefs,
+     Unfolding: (Data.Singletons.SomeSing
+                   @ Foreign.R.Type.SEXPTYPE
+                   @ GHC.Types.Any
+                   @ GHC.Types.Any
+                   @ 'Foreign.R.Type.Builtin
+                   Foreign.R.Type.$fSingISEXPTYPEBuiltin1
+                     `cast`
+                   (Sym (Foreign.R.Type.D:R:SingSEXPTYPEz0[0]) <'Foreign.R.Type.Builtin>_N)) -}
+155aac0ce58f46653dea12e588ab4eb0
+  $fSingKindSEXPTYPE2 ::
+    Data.Singletons.SomeSing Foreign.R.Type.SEXPTYPE
+  {- HasNoCafRefs,
+     Unfolding: (Data.Singletons.SomeSing
+                   @ Foreign.R.Type.SEXPTYPE
+                   @ GHC.Types.Any
+                   @ GHC.Types.Any
+                   @ 'Foreign.R.Type.Free
+                   Foreign.R.Type.$fSingISEXPTYPEFree1
+                     `cast`
+                   (Sym (Foreign.R.Type.D:R:SingSEXPTYPEz0[0]) <'Foreign.R.Type.Free>_N)) -}
+155aac0ce58f46653dea12e588ab4eb0
+  $fSingKindSEXPTYPE20 ::
+    Data.Singletons.SomeSing Foreign.R.Type.SEXPTYPE
+  {- HasNoCafRefs,
+     Unfolding: (Data.Singletons.SomeSing
+                   @ Foreign.R.Type.SEXPTYPE
+                   @ GHC.Types.Any
+                   @ GHC.Types.Any
+                   @ 'Foreign.R.Type.Special
+                   Foreign.R.Type.$fSingISEXPTYPESpecial1
+                     `cast`
+                   (Sym (Foreign.R.Type.D:R:SingSEXPTYPEz0[0]) <'Foreign.R.Type.Special>_N)) -}
+155aac0ce58f46653dea12e588ab4eb0
+  $fSingKindSEXPTYPE21 ::
+    Data.Singletons.SomeSing Foreign.R.Type.SEXPTYPE
+  {- HasNoCafRefs,
+     Unfolding: (Data.Singletons.SomeSing
+                   @ Foreign.R.Type.SEXPTYPE
+                   @ GHC.Types.Any
+                   @ GHC.Types.Any
+                   @ 'Foreign.R.Type.Lang
+                   Foreign.R.Type.$fSingISEXPTYPELang1
+                     `cast`
+                   (Sym (Foreign.R.Type.D:R:SingSEXPTYPEz0[0]) <'Foreign.R.Type.Lang>_N)) -}
+155aac0ce58f46653dea12e588ab4eb0
+  $fSingKindSEXPTYPE22 ::
+    Data.Singletons.SomeSing Foreign.R.Type.SEXPTYPE
+  {- HasNoCafRefs,
+     Unfolding: (Data.Singletons.SomeSing
+                   @ Foreign.R.Type.SEXPTYPE
+                   @ GHC.Types.Any
+                   @ GHC.Types.Any
+                   @ 'Foreign.R.Type.Promise
+                   Foreign.R.Type.$fSingISEXPTYPEPromise1
+                     `cast`
+                   (Sym (Foreign.R.Type.D:R:SingSEXPTYPEz0[0]) <'Foreign.R.Type.Promise>_N)) -}
+155aac0ce58f46653dea12e588ab4eb0
+  $fSingKindSEXPTYPE23 ::
+    Data.Singletons.SomeSing Foreign.R.Type.SEXPTYPE
+  {- HasNoCafRefs,
+     Unfolding: (Data.Singletons.SomeSing
+                   @ Foreign.R.Type.SEXPTYPE
+                   @ GHC.Types.Any
+                   @ GHC.Types.Any
+                   @ 'Foreign.R.Type.Env
+                   Foreign.R.Type.$fSingISEXPTYPEEnv1
+                     `cast`
+                   (Sym (Foreign.R.Type.D:R:SingSEXPTYPEz0[0]) <'Foreign.R.Type.Env>_N)) -}
+155aac0ce58f46653dea12e588ab4eb0
+  $fSingKindSEXPTYPE24 ::
+    Data.Singletons.SomeSing Foreign.R.Type.SEXPTYPE
+  {- HasNoCafRefs,
+     Unfolding: (Data.Singletons.SomeSing
+                   @ Foreign.R.Type.SEXPTYPE
+                   @ GHC.Types.Any
+                   @ GHC.Types.Any
+                   @ 'Foreign.R.Type.Closure
+                   Foreign.R.Type.$fSingISEXPTYPEClosure1
+                     `cast`
+                   (Sym (Foreign.R.Type.D:R:SingSEXPTYPEz0[0]) <'Foreign.R.Type.Closure>_N)) -}
+155aac0ce58f46653dea12e588ab4eb0
+  $fSingKindSEXPTYPE25 ::
+    Data.Singletons.SomeSing Foreign.R.Type.SEXPTYPE
+  {- HasNoCafRefs,
+     Unfolding: (Data.Singletons.SomeSing
+                   @ Foreign.R.Type.SEXPTYPE
+                   @ GHC.Types.Any
+                   @ GHC.Types.Any
+                   @ 'Foreign.R.Type.List
+                   Foreign.R.Type.$fSingISEXPTYPEList1
+                     `cast`
+                   (Sym (Foreign.R.Type.D:R:SingSEXPTYPEz0[0]) <'Foreign.R.Type.List>_N)) -}
+155aac0ce58f46653dea12e588ab4eb0
+  $fSingKindSEXPTYPE26 ::
+    Data.Singletons.SomeSing Foreign.R.Type.SEXPTYPE
+  {- HasNoCafRefs,
+     Unfolding: (Data.Singletons.SomeSing
+                   @ Foreign.R.Type.SEXPTYPE
+                   @ GHC.Types.Any
+                   @ GHC.Types.Any
+                   @ 'Foreign.R.Type.Symbol
+                   Foreign.R.Type.$fSingISEXPTYPESymbol1
+                     `cast`
+                   (Sym (Foreign.R.Type.D:R:SingSEXPTYPEz0[0]) <'Foreign.R.Type.Symbol>_N)) -}
+155aac0ce58f46653dea12e588ab4eb0
+  $fSingKindSEXPTYPE27 ::
+    Data.Singletons.SomeSing Foreign.R.Type.SEXPTYPE
+  {- HasNoCafRefs,
+     Unfolding: (Data.Singletons.SomeSing
+                   @ Foreign.R.Type.SEXPTYPE
+                   @ GHC.Types.Any
+                   @ GHC.Types.Any
+                   @ 'Foreign.R.Type.Nil
+                   Foreign.R.Type.$fSingISEXPTYPENil1
+                     `cast`
+                   (Sym (Foreign.R.Type.D:R:SingSEXPTYPEz0[0]) <'Foreign.R.Type.Nil>_N)) -}
+155aac0ce58f46653dea12e588ab4eb0
+  $fSingKindSEXPTYPE3 ::
+    Data.Singletons.SomeSing Foreign.R.Type.SEXPTYPE
+  {- HasNoCafRefs,
+     Unfolding: (Data.Singletons.SomeSing
+                   @ Foreign.R.Type.SEXPTYPE
+                   @ GHC.Types.Any
+                   @ GHC.Types.Any
+                   @ 'Foreign.R.Type.New
+                   Foreign.R.Type.$fSingISEXPTYPENew1
+                     `cast`
+                   (Sym (Foreign.R.Type.D:R:SingSEXPTYPEz0[0]) <'Foreign.R.Type.New>_N)) -}
+155aac0ce58f46653dea12e588ab4eb0
+  $fSingKindSEXPTYPE4 ::
+    Data.Singletons.SomeSing Foreign.R.Type.SEXPTYPE
+  {- HasNoCafRefs,
+     Unfolding: (Data.Singletons.SomeSing
+                   @ Foreign.R.Type.SEXPTYPE
+                   @ GHC.Types.Any
+                   @ GHC.Types.Any
+                   @ 'Foreign.R.Type.S4
+                   Foreign.R.Type.$fSingISEXPTYPES1
+                     `cast`
+                   (Sym (Foreign.R.Type.D:R:SingSEXPTYPEz0[0]) <'Foreign.R.Type.S4>_N)) -}
+155aac0ce58f46653dea12e588ab4eb0
+  $fSingKindSEXPTYPE5 ::
+    Data.Singletons.SomeSing Foreign.R.Type.SEXPTYPE
+  {- HasNoCafRefs,
+     Unfolding: (Data.Singletons.SomeSing
+                   @ Foreign.R.Type.SEXPTYPE
+                   @ GHC.Types.Any
+                   @ GHC.Types.Any
+                   @ 'Foreign.R.Type.Raw
+                   Foreign.R.Type.$fSingISEXPTYPERaw1
+                     `cast`
+                   (Sym (Foreign.R.Type.D:R:SingSEXPTYPEz0[0]) <'Foreign.R.Type.Raw>_N)) -}
+155aac0ce58f46653dea12e588ab4eb0
+  $fSingKindSEXPTYPE6 ::
+    Data.Singletons.SomeSing Foreign.R.Type.SEXPTYPE
+  {- HasNoCafRefs,
+     Unfolding: (Data.Singletons.SomeSing
+                   @ Foreign.R.Type.SEXPTYPE
+                   @ GHC.Types.Any
+                   @ GHC.Types.Any
+                   @ 'Foreign.R.Type.WeakRef
+                   Foreign.R.Type.$fSingISEXPTYPEWeakRef1
+                     `cast`
+                   (Sym (Foreign.R.Type.D:R:SingSEXPTYPEz0[0]) <'Foreign.R.Type.WeakRef>_N)) -}
+155aac0ce58f46653dea12e588ab4eb0
+  $fSingKindSEXPTYPE7 ::
+    Data.Singletons.SomeSing Foreign.R.Type.SEXPTYPE
+  {- HasNoCafRefs,
+     Unfolding: (Data.Singletons.SomeSing
+                   @ Foreign.R.Type.SEXPTYPE
+                   @ GHC.Types.Any
+                   @ GHC.Types.Any
+                   @ 'Foreign.R.Type.ExtPtr
+                   Foreign.R.Type.$fSingISEXPTYPEExtPtr1
+                     `cast`
+                   (Sym (Foreign.R.Type.D:R:SingSEXPTYPEz0[0]) <'Foreign.R.Type.ExtPtr>_N)) -}
+155aac0ce58f46653dea12e588ab4eb0
+  $fSingKindSEXPTYPE8 ::
+    Data.Singletons.SomeSing Foreign.R.Type.SEXPTYPE
+  {- HasNoCafRefs,
+     Unfolding: (Data.Singletons.SomeSing
+                   @ Foreign.R.Type.SEXPTYPE
+                   @ GHC.Types.Any
+                   @ GHC.Types.Any
+                   @ 'Foreign.R.Type.Bytecode
+                   Foreign.R.Type.$fSingISEXPTYPEBytecode1
+                     `cast`
+                   (Sym (Foreign.R.Type.D:R:SingSEXPTYPEz0[0]) <'Foreign.R.Type.Bytecode>_N)) -}
+155aac0ce58f46653dea12e588ab4eb0
+  $fSingKindSEXPTYPE9 ::
+    Data.Singletons.SomeSing Foreign.R.Type.SEXPTYPE
+  {- HasNoCafRefs,
+     Unfolding: (Data.Singletons.SomeSing
+                   @ Foreign.R.Type.SEXPTYPE
+                   @ GHC.Types.Any
+                   @ GHC.Types.Any
+                   @ 'Foreign.R.Type.Expr
+                   Foreign.R.Type.$fSingISEXPTYPEExpr1
+                     `cast`
+                   (Sym (Foreign.R.Type.D:R:SingSEXPTYPEz0[0]) <'Foreign.R.Type.Expr>_N)) -}
+155aac0ce58f46653dea12e588ab4eb0
+  $fSingKindSEXPTYPE_$cfromSing ::
+    Data.Singletons.Sing a
+    -> Data.Singletons.Demote Foreign.R.Type.SEXPTYPE
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U> -}
+155aac0ce58f46653dea12e588ab4eb0
+  $fSingKindSEXPTYPE_$ctoSing ::
+    Data.Singletons.Demote Foreign.R.Type.SEXPTYPE
+    -> Data.Singletons.SomeSing Foreign.R.Type.SEXPTYPE
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>,
+     Unfolding: (\ (ds :: Data.Singletons.Demote
+                            Foreign.R.Type.SEXPTYPE) ->
+                 case ds
+                        `cast`
+                      (Sub (Foreign.R.Type.D:R:DemoteSEXPTYPE[0])) of wild {
+                   Foreign.R.Type.Nil -> Foreign.R.Type.$fSingKindSEXPTYPE27
+                   Foreign.R.Type.Symbol -> Foreign.R.Type.$fSingKindSEXPTYPE26
+                   Foreign.R.Type.List -> Foreign.R.Type.$fSingKindSEXPTYPE25
+                   Foreign.R.Type.Closure -> Foreign.R.Type.$fSingKindSEXPTYPE24
+                   Foreign.R.Type.Env -> Foreign.R.Type.$fSingKindSEXPTYPE23
+                   Foreign.R.Type.Promise -> Foreign.R.Type.$fSingKindSEXPTYPE22
+                   Foreign.R.Type.Lang -> Foreign.R.Type.$fSingKindSEXPTYPE21
+                   Foreign.R.Type.Special -> Foreign.R.Type.$fSingKindSEXPTYPE20
+                   Foreign.R.Type.Builtin -> Foreign.R.Type.$fSingKindSEXPTYPE19
+                   Foreign.R.Type.Char -> Foreign.R.Type.$fSingKindSEXPTYPE18
+                   Foreign.R.Type.Logical -> Foreign.R.Type.$fSingKindSEXPTYPE17
+                   Foreign.R.Type.Int -> Foreign.R.Type.$fSingKindSEXPTYPE16
+                   Foreign.R.Type.Real -> Foreign.R.Type.$fSingKindSEXPTYPE15
+                   Foreign.R.Type.Complex -> Foreign.R.Type.$fSingKindSEXPTYPE14
+                   Foreign.R.Type.String -> Foreign.R.Type.$fSingKindSEXPTYPE13
+                   Foreign.R.Type.DotDotDot -> Foreign.R.Type.$fSingKindSEXPTYPE12
+                   Foreign.R.Type.Any -> Foreign.R.Type.$fSingKindSEXPTYPE11
+                   Foreign.R.Type.Vector -> Foreign.R.Type.$fSingKindSEXPTYPE10
+                   Foreign.R.Type.Expr -> Foreign.R.Type.$fSingKindSEXPTYPE9
+                   Foreign.R.Type.Bytecode -> Foreign.R.Type.$fSingKindSEXPTYPE8
+                   Foreign.R.Type.ExtPtr -> Foreign.R.Type.$fSingKindSEXPTYPE7
+                   Foreign.R.Type.WeakRef -> Foreign.R.Type.$fSingKindSEXPTYPE6
+                   Foreign.R.Type.Raw -> Foreign.R.Type.$fSingKindSEXPTYPE5
+                   Foreign.R.Type.S4 -> Foreign.R.Type.$fSingKindSEXPTYPE4
+                   Foreign.R.Type.New -> Foreign.R.Type.$fSingKindSEXPTYPE3
+                   Foreign.R.Type.Free -> Foreign.R.Type.$fSingKindSEXPTYPE2
+                   Foreign.R.Type.Fun -> Foreign.R.Type.$fSingKindSEXPTYPE1 }) -}
+1780ac06eb92df8fe8d6ec65362cd7e7
+  $fStorableLogical ::
+    Foreign.Storable.Storable Foreign.R.Type.Logical
+  DFunId
+  {- Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ Foreign.R.Type.Logical
+                  Foreign.R.Type.$fStorableLogical_$calignment
+                  Foreign.R.Type.$fStorableLogical_$calignment
+                  Foreign.R.Type.$fStorableLogical7
+                    `cast`
+                  (<GHC.Ptr.Ptr Foreign.R.Type.Logical>_R
+                   ->_R <GHC.Types.Int>_R
+                   ->_R Sym (GHC.Types.N:IO[0] <Foreign.R.Type.Logical>_R))
+                  Foreign.R.Type.$fStorableLogical6
+                    `cast`
+                  (<GHC.Ptr.Ptr Foreign.R.Type.Logical>_R
+                   ->_R <GHC.Types.Int>_R
+                   ->_R <Foreign.R.Type.Logical>_R
+                   ->_R Sym (GHC.Types.N:IO[0] <()>_R))
+                  Foreign.R.Type.$fStorableLogical5
+                    `cast`
+                  (forall (b :: <*>_N).
+                   <GHC.Ptr.Ptr b>_R
+                   ->_R <GHC.Types.Int>_R
+                   ->_R Sym (GHC.Types.N:IO[0] <Foreign.R.Type.Logical>_R))
+                  Foreign.R.Type.$fStorableLogical4
+                    `cast`
+                  (forall (b :: <*>_N).
+                   <GHC.Ptr.Ptr b>_R
+                   ->_R <GHC.Types.Int>_R
+                   ->_R <Foreign.R.Type.Logical>_R
+                   ->_R Sym (GHC.Types.N:IO[0] <()>_R))
+                  Foreign.R.Type.$fStorableLogical2
+                    `cast`
+                  (<GHC.Ptr.Ptr Foreign.R.Type.Logical>_R
+                   ->_R Sym (GHC.Types.N:IO[0] <Foreign.R.Type.Logical>_R))
+                  Foreign.R.Type.$fStorableLogical1
+                    `cast`
+                  (<GHC.Ptr.Ptr Foreign.R.Type.Logical>_R
+                   ->_R <Foreign.R.Type.Logical>_R
+                   ->_R Sym (GHC.Types.N:IO[0] <()>_R)) -}
+1780ac06eb92df8fe8d6ec65362cd7e7
+  $fStorableLogical1 ::
+    GHC.Ptr.Ptr Foreign.R.Type.Logical
+    -> Foreign.R.Type.Logical
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+  {- Arity: 3, HasNoCafRefs, Strictness: <S(S),1*U(U)><S,1*U><S,U>,
+     Unfolding: InlineRule (3, True, False)
+                (\ (ptr :: GHC.Ptr.Ptr Foreign.R.Type.Logical)
+                   (ds :: Foreign.R.Type.Logical)
+                   (eta :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                 case ds of wild {
+                   Foreign.R.Type.FALSE
+                   -> case ptr
+                             `cast`
+                           (GHC.Ptr.Ptr
+                              <Foreign.R.Type.Logical, GHC.Int.Int32>)_R of wild1 { GHC.Ptr.Ptr a ->
+                      case GHC.Prim.writeInt32OffAddr#
+                             @ GHC.Prim.RealWorld
+                             a
+                             0#
+                             0#
+                             eta of s2 { DEFAULT ->
+                      (# s2, GHC.Tuple.() #) } }
+                   Foreign.R.Type.TRUE
+                   -> case ptr
+                             `cast`
+                           (GHC.Ptr.Ptr
+                              <Foreign.R.Type.Logical, GHC.Int.Int32>)_R of wild1 { GHC.Ptr.Ptr a ->
+                      case GHC.Prim.writeInt32OffAddr#
+                             @ GHC.Prim.RealWorld
+                             a
+                             0#
+                             1#
+                             eta of s2 { DEFAULT ->
+                      (# s2, GHC.Tuple.() #) } }
+                   Foreign.R.Type.NA
+                   -> case ptr
+                             `cast`
+                           (GHC.Ptr.Ptr
+                              <Foreign.R.Type.Logical, GHC.Int.Int32>)_R of wild1 { GHC.Ptr.Ptr a ->
+                      case GHC.Prim.writeInt32OffAddr#
+                             @ GHC.Prim.RealWorld
+                             a
+                             0#
+                             -2147483648#
+                             eta of s2 { DEFAULT ->
+                      (# s2, GHC.Tuple.() #) } } }) -}
+1780ac06eb92df8fe8d6ec65362cd7e7
+  $fStorableLogical2 ::
+    GHC.Ptr.Ptr Foreign.R.Type.Logical
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, Foreign.R.Type.Logical #)
+  {- Arity: 2, Strictness: <S(S),1*U(U)><S,U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (ptr :: GHC.Ptr.Ptr Foreign.R.Type.Logical)
+                   (s :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                 case ptr
+                        `cast`
+                      (GHC.Ptr.Ptr
+                         <Foreign.R.Type.Logical, GHC.Int.Int32>)_R of wild { GHC.Ptr.Ptr a ->
+                 case GHC.Prim.readInt32OffAddr#
+                        @ GHC.Prim.RealWorld
+                        a
+                        0#
+                        s of ds2 { (#,#) ipv ipv1 ->
+                 case ipv1 of wild1 {
+                   DEFAULT
+                   -> case Foreign.R.Type.$fStorableLogical3
+                      ret_ty (# GHC.Prim.State# GHC.Prim.RealWorld,
+                                Foreign.R.Type.Logical #)
+                      of {}
+                   -2147483648# -> (# ipv, Foreign.R.Type.NA #)
+                   0# -> (# ipv, Foreign.R.Type.FALSE #)
+                   1# -> (# ipv, Foreign.R.Type.TRUE #) } } }) -}
+1780ac06eb92df8fe8d6ec65362cd7e7
+  $fStorableLogical3 :: GHC.Types.IO Foreign.R.Type.Logical
+  {- Strictness: x -}
+1780ac06eb92df8fe8d6ec65362cd7e7
+  $fStorableLogical4 ::
+    GHC.Ptr.Ptr b
+    -> GHC.Types.Int
+    -> Foreign.R.Type.Logical
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+  {- Arity: 4, HasNoCafRefs,
+     Strictness: <S(S),1*U(U)><S(S),1*U(U)><S,1*U><S,U>,
+     Unfolding: InlineRule (4, True, False)
+                (\ @ b
+                   (ptr :: GHC.Ptr.Ptr b)
+                   (off :: GHC.Types.Int)
+                   (eta :: Foreign.R.Type.Logical)
+                   (eta1 :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                 case eta of wild {
+                   Foreign.R.Type.FALSE
+                   -> case ptr of wild1 { GHC.Ptr.Ptr addr ->
+                      case off of wild2 { GHC.Types.I# d ->
+                      case GHC.Prim.writeInt32OffAddr#
+                             @ GHC.Prim.RealWorld
+                             (GHC.Prim.plusAddr# addr d)
+                             0#
+                             0#
+                             eta1 of s2 { DEFAULT ->
+                      (# s2, GHC.Tuple.() #) } } }
+                   Foreign.R.Type.TRUE
+                   -> case ptr of wild1 { GHC.Ptr.Ptr addr ->
+                      case off of wild2 { GHC.Types.I# d ->
+                      case GHC.Prim.writeInt32OffAddr#
+                             @ GHC.Prim.RealWorld
+                             (GHC.Prim.plusAddr# addr d)
+                             0#
+                             1#
+                             eta1 of s2 { DEFAULT ->
+                      (# s2, GHC.Tuple.() #) } } }
+                   Foreign.R.Type.NA
+                   -> case ptr of wild1 { GHC.Ptr.Ptr addr ->
+                      case off of wild2 { GHC.Types.I# d ->
+                      case GHC.Prim.writeInt32OffAddr#
+                             @ GHC.Prim.RealWorld
+                             (GHC.Prim.plusAddr# addr d)
+                             0#
+                             -2147483648#
+                             eta1 of s2 { DEFAULT ->
+                      (# s2, GHC.Tuple.() #) } } } }) -}
+1780ac06eb92df8fe8d6ec65362cd7e7
+  $fStorableLogical5 ::
+    GHC.Ptr.Ptr b
+    -> GHC.Types.Int
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, Foreign.R.Type.Logical #)
+  {- Arity: 3, Strictness: <S(S),1*U(U)><S(S),1*U(U)><S,U>,
+     Unfolding: InlineRule (3, True, False)
+                (\ @ b
+                   (ptr :: GHC.Ptr.Ptr b)
+                   (off :: GHC.Types.Int)
+                   (eta :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                 case ptr of wild { GHC.Ptr.Ptr addr ->
+                 case off of wild1 { GHC.Types.I# d ->
+                 case GHC.Prim.readInt32OffAddr#
+                        @ GHC.Prim.RealWorld
+                        (GHC.Prim.plusAddr# addr d)
+                        0#
+                        eta of ds2 { (#,#) ipv ipv1 ->
+                 case ipv1 of wild2 {
+                   DEFAULT
+                   -> case Foreign.R.Type.$fStorableLogical3
+                      ret_ty (# GHC.Prim.State# GHC.Prim.RealWorld,
+                                Foreign.R.Type.Logical #)
+                      of {}
+                   -2147483648# -> (# ipv, Foreign.R.Type.NA #)
+                   0# -> (# ipv, Foreign.R.Type.FALSE #)
+                   1# -> (# ipv, Foreign.R.Type.TRUE #) } } } }) -}
+1780ac06eb92df8fe8d6ec65362cd7e7
+  $fStorableLogical6 ::
+    GHC.Ptr.Ptr Foreign.R.Type.Logical
+    -> GHC.Types.Int
+    -> Foreign.R.Type.Logical
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+  {- Arity: 4, HasNoCafRefs,
+     Strictness: <S(S),1*U(U)><S(S),1*U(U)><S,1*U><S,U>,
+     Unfolding: InlineRule (4, True, False)
+                (\ (ptr :: GHC.Ptr.Ptr Foreign.R.Type.Logical)
+                   (off :: GHC.Types.Int)
+                   (val :: Foreign.R.Type.Logical)
+                   (eta :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                 case val of wild {
+                   Foreign.R.Type.FALSE
+                   -> case ptr of wild1 { GHC.Ptr.Ptr addr ->
+                      case off of wild2 { GHC.Types.I# x ->
+                      case GHC.Prim.writeInt32OffAddr#
+                             @ GHC.Prim.RealWorld
+                             (GHC.Prim.plusAddr# addr (GHC.Prim.*# x 4#))
+                             0#
+                             0#
+                             eta of s2 { DEFAULT ->
+                      (# s2, GHC.Tuple.() #) } } }
+                   Foreign.R.Type.TRUE
+                   -> case ptr of wild1 { GHC.Ptr.Ptr addr ->
+                      case off of wild2 { GHC.Types.I# x ->
+                      case GHC.Prim.writeInt32OffAddr#
+                             @ GHC.Prim.RealWorld
+                             (GHC.Prim.plusAddr# addr (GHC.Prim.*# x 4#))
+                             0#
+                             1#
+                             eta of s2 { DEFAULT ->
+                      (# s2, GHC.Tuple.() #) } } }
+                   Foreign.R.Type.NA
+                   -> case ptr of wild1 { GHC.Ptr.Ptr addr ->
+                      case off of wild2 { GHC.Types.I# x ->
+                      case GHC.Prim.writeInt32OffAddr#
+                             @ GHC.Prim.RealWorld
+                             (GHC.Prim.plusAddr# addr (GHC.Prim.*# x 4#))
+                             0#
+                             -2147483648#
+                             eta of s2 { DEFAULT ->
+                      (# s2, GHC.Tuple.() #) } } } }) -}
+1780ac06eb92df8fe8d6ec65362cd7e7
+  $fStorableLogical7 ::
+    GHC.Ptr.Ptr Foreign.R.Type.Logical
+    -> GHC.Types.Int
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, Foreign.R.Type.Logical #)
+  {- Arity: 3, Strictness: <S(S),1*U(U)><S(S),1*U(U)><S,U>,
+     Unfolding: InlineRule (3, True, False)
+                (\ (ptr :: GHC.Ptr.Ptr Foreign.R.Type.Logical)
+                   (off :: GHC.Types.Int)
+                   (eta :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                 case ptr of wild { GHC.Ptr.Ptr addr ->
+                 case off of wild1 { GHC.Types.I# x ->
+                 case GHC.Prim.readInt32OffAddr#
+                        @ GHC.Prim.RealWorld
+                        (GHC.Prim.plusAddr# addr (GHC.Prim.*# x 4#))
+                        0#
+                        eta of ds2 { (#,#) ipv ipv1 ->
+                 case ipv1 of wild2 {
+                   DEFAULT
+                   -> case Foreign.R.Type.$fStorableLogical3
+                      ret_ty (# GHC.Prim.State# GHC.Prim.RealWorld,
+                                Foreign.R.Type.Logical #)
+                      of {}
+                   -2147483648# -> (# ipv, Foreign.R.Type.NA #)
+                   0# -> (# ipv, Foreign.R.Type.FALSE #)
+                   1# -> (# ipv, Foreign.R.Type.TRUE #) } } } }) -}
+1780ac06eb92df8fe8d6ec65362cd7e7
+  $fStorableLogical_$calignment ::
+    Foreign.R.Type.Logical -> GHC.Types.Int
+  {- Arity: 1, HasNoCafRefs, Strictness: <L,A>m,
+     Unfolding: InlineRule (1, True, True)
+                (\ (ds :: Foreign.R.Type.Logical) ->
+                 Foreign.Storable.$fStorableBool7) -}
+196d8e35835cb10470c470ace97a3046
+  $tc'Any :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   13719537199869972487##
+                   3325928363971155817##
+                   Foreign.R.Type.$trModule
+                   Foreign.R.Type.$tc'Any2
+                   0#
+                   Foreign.R.Type.$tc'Any1) -}
+f06fd730cb0e6032a0a020a9c9171962
+  $tc'Any1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m1, Inline: [~] -}
+053819547acb859012829b6350fc6c31
+  $tc'Any2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Foreign.R.Type.$tc'Any3) -}
+3e22fb687b4451ddc51d499c1c51e70c
+  $tc'Any3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'Any"#) -}
+8161e8cbdac485ffeeff961ebaf13a34
+  $tc'Builtin :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   10676705713053491419##
+                   7496048600018164502##
+                   Foreign.R.Type.$trModule
+                   Foreign.R.Type.$tc'Builtin1
+                   0#
+                   Foreign.R.Type.$tc'Any1) -}
+085598d6167595509966bcc4256fce2b
+  $tc'Builtin1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Foreign.R.Type.$tc'Builtin2) -}
+a9ffb9b871024265ea1267da08188720
+  $tc'Builtin2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'Builtin"#) -}
+26987d0e2adf2f9d4cec5dccd304040b
+  $tc'Bytecode :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   15842022968123242745##
+                   15479878707143053621##
+                   Foreign.R.Type.$trModule
+                   Foreign.R.Type.$tc'Bytecode1
+                   0#
+                   Foreign.R.Type.$tc'Any1) -}
+e6a4701524a103c3b61bc58cd0cd986d
+  $tc'Bytecode1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Foreign.R.Type.$tc'Bytecode2) -}
+fbb75c5ecd0e72cc094d4a253daa383f
+  $tc'Bytecode2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'Bytecode"#) -}
+23de35b88020b69ef6c78d335b04f9e1
+  $tc'Char :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   3795909310489133699##
+                   17527776939679545360##
+                   Foreign.R.Type.$trModule
+                   Foreign.R.Type.$tc'Char1
+                   0#
+                   Foreign.R.Type.$tc'Any1) -}
+b33f05f91c210d0ac14076dff0d74328
+  $tc'Char1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Foreign.R.Type.$tc'Char2) -}
+3d6357680adfbb30a2e46f34ad359c60
+  $tc'Char2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'Char"#) -}
+c798a53ecf710d72b96004b6de39a8f7
+  $tc'Closure :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   3635258916553537986##
+                   8047367865574973192##
+                   Foreign.R.Type.$trModule
+                   Foreign.R.Type.$tc'Closure1
+                   0#
+                   Foreign.R.Type.$tc'Any1) -}
+97015f0f76cfd6816b69cff490fa5569
+  $tc'Closure1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Foreign.R.Type.$tc'Closure2) -}
+403db236c31eeadbd66c2d341fb7601a
+  $tc'Closure2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'Closure"#) -}
+90366516a65b210cb3185382b3d728ea
+  $tc'Complex :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   1194746838583993436##
+                   2833677349440171945##
+                   Foreign.R.Type.$trModule
+                   Foreign.R.Type.$tc'Complex1
+                   0#
+                   Foreign.R.Type.$tc'Any1) -}
+0c8a527ef422e387778898bf128c655a
+  $tc'Complex1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Foreign.R.Type.$tc'Complex2) -}
+beddfd6f3f3c1c352d761ebc6edfc6ad
+  $tc'Complex2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'Complex"#) -}
+03a686c835489922fde7e351ed525f8e
+  $tc'DotDotDot :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   5308285399396093265##
+                   10169365743340433431##
+                   Foreign.R.Type.$trModule
+                   Foreign.R.Type.$tc'DotDotDot1
+                   0#
+                   Foreign.R.Type.$tc'Any1) -}
+24f34516adbe78a2e976ebcbc6d00b33
+  $tc'DotDotDot1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Foreign.R.Type.$tc'DotDotDot2) -}
+83daf3eaf4bc45eb45042814f54f6f1d
+  $tc'DotDotDot2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'DotDotDot"#) -}
+0dc9dc71cdc387a03cfd498deaef5d17
+  $tc'Env :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   15901952147485719549##
+                   13955668482065246095##
+                   Foreign.R.Type.$trModule
+                   Foreign.R.Type.$tc'Env1
+                   0#
+                   Foreign.R.Type.$tc'Any1) -}
+a05d37de39b0831e8ba9484ddd858756
+  $tc'Env1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Foreign.R.Type.$tc'Env2) -}
+0366f4e7f456d08c67ee1e37ef7a9bb3
+  $tc'Env2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'Env"#) -}
+d90d6a4fb40c94ff41a5e58bfc88f17e
+  $tc'Expr :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   1186085361149978369##
+                   10316759865162195647##
+                   Foreign.R.Type.$trModule
+                   Foreign.R.Type.$tc'Expr1
+                   0#
+                   Foreign.R.Type.$tc'Any1) -}
+24ad204455f91827c004a30742a68655
+  $tc'Expr1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Foreign.R.Type.$tc'Expr2) -}
+ea8f14f634494559c7f6bc7ecad1e9c8
+  $tc'Expr2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'Expr"#) -}
+24d99f313901b9f0e0fff798224db274
+  $tc'ExtPtr :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   1225222850624273879##
+                   9153321476920186148##
+                   Foreign.R.Type.$trModule
+                   Foreign.R.Type.$tc'ExtPtr1
+                   0#
+                   Foreign.R.Type.$tc'Any1) -}
+cf6cb684e84a8b0ec933ff5d5b24f50e
+  $tc'ExtPtr1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Foreign.R.Type.$tc'ExtPtr2) -}
+b7c6d35dd7d03c9df3f9f9f9c86612c0
+  $tc'ExtPtr2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'ExtPtr"#) -}
+9b49f6cdd6e66414b7bdf6e8a6db213c
+  $tc'FALSE :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   2461222419751428164##
+                   15879229585792281835##
+                   Foreign.R.Type.$trModule
+                   Foreign.R.Type.$tc'FALSE2
+                   0#
+                   Foreign.R.Type.$tc'FALSE1) -}
+248d72a28778704d71359bfad32d28be
+  $tc'FALSE1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m1, Inline: [~] -}
+682763e4c89cba2f7e1f04493899965f
+  $tc'FALSE2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Foreign.R.Type.$tc'FALSE3) -}
+a400574748233b4884dec3ee49bc2274
+  $tc'FALSE3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'FALSE"#) -}
+c50673ce5f6ddda8e85a9244ac85df16
+  $tc'Free :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   13368563812367583160##
+                   11477445582528746550##
+                   Foreign.R.Type.$trModule
+                   Foreign.R.Type.$tc'Free1
+                   0#
+                   Foreign.R.Type.$tc'Any1) -}
+be6061b7526965220cefd41cb475e3b9
+  $tc'Free1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Foreign.R.Type.$tc'Free2) -}
+1876553bc20d4b61cd3622f36e299d86
+  $tc'Free2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'Free"#) -}
+24f3c7a4f76ef1c7f7c4d45e521a8739
+  $tc'Fun :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   6384619768856504307##
+                   9381198080956936998##
+                   Foreign.R.Type.$trModule
+                   Foreign.R.Type.$tc'Fun1
+                   0#
+                   Foreign.R.Type.$tc'Any1) -}
+978ceb30706e810ebbf0e40313ef585e
+  $tc'Fun1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Foreign.R.Type.$tc'Fun2) -}
+de75ce9148918d9382d448f1357d8dab
+  $tc'Fun2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'Fun"#) -}
+011911308e6e0f4b454a80ae9c7e3785
+  $tc'Int :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   3914119287575794590##
+                   17629472373666403220##
+                   Foreign.R.Type.$trModule
+                   Foreign.R.Type.$tc'Int1
+                   0#
+                   Foreign.R.Type.$tc'Any1) -}
+86605cf941b7cde67ee7809e771a5152
+  $tc'Int1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Foreign.R.Type.$tc'Int2) -}
+e2c9fef23917c70b102775182d549f5c
+  $tc'Int2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'Int"#) -}
+4eb65750b7e8cb7696787168a6cc0959
+  $tc'Lang :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   2421725954979344164##
+                   12718449606336980897##
+                   Foreign.R.Type.$trModule
+                   Foreign.R.Type.$tc'Lang1
+                   0#
+                   Foreign.R.Type.$tc'Any1) -}
+4127ab1de96858d2c6e418d27d0dd727
+  $tc'Lang1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Foreign.R.Type.$tc'Lang2) -}
+ba134eb0d31aef5884855ffedf1e6d28
+  $tc'Lang2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'Lang"#) -}
+1fa57cd08e8ef94007392804d50b826a
+  $tc'List :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   13502004826129439939##
+                   1918602969114467109##
+                   Foreign.R.Type.$trModule
+                   Foreign.R.Type.$tc'List1
+                   0#
+                   Foreign.R.Type.$tc'Any1) -}
+cf967644e4113c5b88d4cb21c0729985
+  $tc'List1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Foreign.R.Type.$tc'List2) -}
+766b37148c297620b9e0f86fc78a8838
+  $tc'List2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'List"#) -}
+5f9696c98a4f9f749b5b72e9419cf42b
+  $tc'Logical :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   12912548771296413060##
+                   17493923364381104547##
+                   Foreign.R.Type.$trModule
+                   Foreign.R.Type.$tc'Logical1
+                   0#
+                   Foreign.R.Type.$tc'Any1) -}
+165c61d12fedb71200de547dc0151bcd
+  $tc'Logical1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Foreign.R.Type.$tc'Logical2) -}
+1fcb0ecbc849d649b9ad05717331f3a6
+  $tc'Logical2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'Logical"#) -}
+371f295e89e84fdd04b5dd74e8c9365d
+  $tc'NA :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   1873621483841871839##
+                   4600457017920148385##
+                   Foreign.R.Type.$trModule
+                   Foreign.R.Type.$tc'NA1
+                   0#
+                   Foreign.R.Type.$tc'FALSE1) -}
+27559d917f192ec81f27960c5638523d
+  $tc'NA1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Foreign.R.Type.$tc'NA2) -}
+601eb6147e3be8e1fa133bb0c0fc9acf
+  $tc'NA2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'NA"#) -}
+34fd12c096f862106ed5ba0b79c7f3c0
+  $tc'New :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   2801655317832980957##
+                   14995410949574983011##
+                   Foreign.R.Type.$trModule
+                   Foreign.R.Type.$tc'New1
+                   0#
+                   Foreign.R.Type.$tc'Any1) -}
+e009d99767aa1dfedc7a69a2732489e2
+  $tc'New1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Foreign.R.Type.$tc'New2) -}
+ce70cbedcc78e80ab2405ea029f08b71
+  $tc'New2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'New"#) -}
+c7b14eff0e9ed556b294a803336d72ec
+  $tc'Nil :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   1968070719957209774##
+                   13546491118692797089##
+                   Foreign.R.Type.$trModule
+                   Foreign.R.Type.$tc'Nil1
+                   0#
+                   Foreign.R.Type.$tc'Any1) -}
+50c807894f8b2cd68f7b88a8dd74ce41
+  $tc'Nil1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Foreign.R.Type.$tc'Nil2) -}
+18e283473ab454c16c083845d3cf9887
+  $tc'Nil2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'Nil"#) -}
+d1fe4cae418b9e3df1677d79b50ae21e
+  $tc'Promise :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   3257633109426080456##
+                   11697819151195784101##
+                   Foreign.R.Type.$trModule
+                   Foreign.R.Type.$tc'Promise1
+                   0#
+                   Foreign.R.Type.$tc'Any1) -}
+02505b11535c020fe9b2559504f0b61f
+  $tc'Promise1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Foreign.R.Type.$tc'Promise2) -}
+bf6d1735bb85883d16e6c6d0bb5e604a
+  $tc'Promise2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'Promise"#) -}
+8cb6e30894cef7e60180b4fa80236dea
+  $tc'Raw :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   12861892593931929552##
+                   18116605084539315565##
+                   Foreign.R.Type.$trModule
+                   Foreign.R.Type.$tc'Raw1
+                   0#
+                   Foreign.R.Type.$tc'Any1) -}
+5e16e3b6d294d1ba45bd24f937018744
+  $tc'Raw1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Foreign.R.Type.$tc'Raw2) -}
+80488e050a349fe88b5718d72a504446
+  $tc'Raw2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'Raw"#) -}
+80c119ad2201bb2a2cff26807b3eff72
+  $tc'Real :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   12924787516985008537##
+                   9357344520147023647##
+                   Foreign.R.Type.$trModule
+                   Foreign.R.Type.$tc'Real1
+                   0#
+                   Foreign.R.Type.$tc'Any1) -}
+d849cce178ad4e4e6f4109815ab2d961
+  $tc'Real1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Foreign.R.Type.$tc'Real2) -}
+b0f98d7357ec1dd63e1831a591e0bcba
+  $tc'Real2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'Real"#) -}
+a23c0853490bc2655278950b0bad0372
+  $tc'S1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Foreign.R.Type.$tc'S2) -}
+2aa5a626e72765105d831aa7b960f8d5
+  $tc'S2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'S4"#) -}
+d45f55b82f4a69e6caa9f2cf4ae5b4c3
+  $tc'S4 :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   15827991307750834683##
+                   17282954825113661447##
+                   Foreign.R.Type.$trModule
+                   Foreign.R.Type.$tc'S1
+                   0#
+                   Foreign.R.Type.$tc'Any1) -}
+cc6ac4eb0766e320014f2f1e8b1de7ce
+  $tc'SAny :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   15784473256034888488##
+                   8853607628286650350##
+                   Foreign.R.Type.$trModule
+                   Foreign.R.Type.$tc'SAny2
+                   1#
+                   Foreign.R.Type.$tc'SAny1) -}
+e1be59599b9c449af98e59cda0aa62c3
+  $tc'SAny1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+6e8f5cc3db62bebc384c2b97de2e9b13
+  $tc'SAny2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Foreign.R.Type.$tc'SAny3) -}
+5bc994f789e724c34754838fc1ecea6a
+  $tc'SAny3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'SAny"#) -}
+a2ccb1a5f973139a7ac706a284da8f6b
+  $tc'SBuiltin :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   9243414260271690865##
+                   10161408703511006134##
+                   Foreign.R.Type.$trModule
+                   Foreign.R.Type.$tc'SBuiltin2
+                   1#
+                   Foreign.R.Type.$tc'SBuiltin1) -}
+e3eed459dd324b189c35ba8b6a67c57a
+  $tc'SBuiltin1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+dc50e169ee8b3086361f591ab373f842
+  $tc'SBuiltin2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Foreign.R.Type.$tc'SBuiltin3) -}
+40b7765c1ffec8953f4633432344433d
+  $tc'SBuiltin3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'SBuiltin"#) -}
+b0dc48f5f12f07f833a1d81595bdf6fe
+  $tc'SBytecode :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   14672143507897411018##
+                   10466483989503988042##
+                   Foreign.R.Type.$trModule
+                   Foreign.R.Type.$tc'SBytecode2
+                   1#
+                   Foreign.R.Type.$tc'SBytecode1) -}
+7839444748448983241446a7dcd3a5d8
+  $tc'SBytecode1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+548fb71da7918e5d03ac974b07d3639e
+  $tc'SBytecode2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Foreign.R.Type.$tc'SBytecode3) -}
+f022ba80e3141924c016cf6bd78d6c53
+  $tc'SBytecode3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'SBytecode"#) -}
+ed23345a9b0c1d02db6b2d2795d6faec
+  $tc'SChar :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   6253709529040084696##
+                   14393476512302950002##
+                   Foreign.R.Type.$trModule
+                   Foreign.R.Type.$tc'SChar2
+                   1#
+                   Foreign.R.Type.$tc'SChar1) -}
+a4be50699f858d60716d02ef0ec9f37a
+  $tc'SChar1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+3a77782f1cc7927d397c09d837af5af3
+  $tc'SChar2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Foreign.R.Type.$tc'SChar3) -}
+91bcd0d228635d9b77d270a38cdfa238
+  $tc'SChar3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'SChar"#) -}
+d0323582330f92a433522f0eeb8e8992
+  $tc'SClosure :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   13223421787723965113##
+                   4111501801013181965##
+                   Foreign.R.Type.$trModule
+                   Foreign.R.Type.$tc'SClosure2
+                   1#
+                   Foreign.R.Type.$tc'SClosure1) -}
+0dccffee18453a42e02668a76645abe5
+  $tc'SClosure1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+0150c8ce65bb0d420ce03715ed3f8a50
+  $tc'SClosure2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Foreign.R.Type.$tc'SClosure3) -}
+37aa647e43e23122b20cbc6db6e544d2
+  $tc'SClosure3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'SClosure"#) -}
+09966b95bbe95b78c587f4450edbf382
+  $tc'SComplex :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   1070111257084774826##
+                   698922642005356335##
+                   Foreign.R.Type.$trModule
+                   Foreign.R.Type.$tc'SComplex2
+                   1#
+                   Foreign.R.Type.$tc'SComplex1) -}
+5642f0cd0e56aa3e0b7f14e64f249e69
+  $tc'SComplex1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+da003aafc89a46bff6b58fe7eb63469d
+  $tc'SComplex2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Foreign.R.Type.$tc'SComplex3) -}
+e99b7e4077eca84839a9da3157bb9b8c
+  $tc'SComplex3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'SComplex"#) -}
+4602519d53c2258586a074a61fe8ab9c
+  $tc'SDotDotDot :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   12968545012535697947##
+                   6256898017085369408##
+                   Foreign.R.Type.$trModule
+                   Foreign.R.Type.$tc'SDotDotDot2
+                   1#
+                   Foreign.R.Type.$tc'SDotDotDot1) -}
+efd72cc5593aa7c506f8dea5a9ef2d8f
+  $tc'SDotDotDot1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+f2eb47fe4d6e40b55c8078d9b7e10b2d
+  $tc'SDotDotDot2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Foreign.R.Type.$tc'SDotDotDot3) -}
+a5fb0e10a24e0b3c1ffc2da3cd93b2c1
+  $tc'SDotDotDot3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'SDotDotDot"#) -}
+bc17114014d3194aa697d06acd95a84e
+  $tc'SEnv :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   4068322300682011771##
+                   13336486646189831671##
+                   Foreign.R.Type.$trModule
+                   Foreign.R.Type.$tc'SEnv2
+                   1#
+                   Foreign.R.Type.$tc'SEnv1) -}
+24647a09b35069becde28a259e93b205
+  $tc'SEnv1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+748c521563cd0914ac0e03b3b02f40ab
+  $tc'SEnv2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Foreign.R.Type.$tc'SEnv3) -}
+56dee219972b70c61870d7ee13eaa766
+  $tc'SEnv3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'SEnv"#) -}
+b18fbe7cf7a913e55dca0cb7a5b75056
+  $tc'SExpr :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   14060941565071199633##
+                   15013623427415609095##
+                   Foreign.R.Type.$trModule
+                   Foreign.R.Type.$tc'SExpr2
+                   1#
+                   Foreign.R.Type.$tc'SExpr1) -}
+0a469080ccc1c898ef259a6e917b5e31
+  $tc'SExpr1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+50bee93dce2f284ebd32ceb89ffa4543
+  $tc'SExpr2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Foreign.R.Type.$tc'SExpr3) -}
+68dc11b5bd731070aeb824f422907f45
+  $tc'SExpr3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'SExpr"#) -}
+55b08cfac299b72bd732448cf5d305a5
+  $tc'SExtPtr :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   15798311977455071966##
+                   12862483851411504813##
+                   Foreign.R.Type.$trModule
+                   Foreign.R.Type.$tc'SExtPtr2
+                   1#
+                   Foreign.R.Type.$tc'SExtPtr1) -}
+24c08d0310ae45aa05f5f3d9ed817ec2
+  $tc'SExtPtr1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+05bbe194255a8af67d2c980bd175e151
+  $tc'SExtPtr2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Foreign.R.Type.$tc'SExtPtr3) -}
+a4505cbfaa542c23f45559965036930e
+  $tc'SExtPtr3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'SExtPtr"#) -}
+89821a171dae654bfb17d2d6a489f164
+  $tc'SFree :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   5980784463292001856##
+                   6789353025261705746##
+                   Foreign.R.Type.$trModule
+                   Foreign.R.Type.$tc'SFree2
+                   1#
+                   Foreign.R.Type.$tc'SFree1) -}
+6c797feeaf1cd4bcdafcde6d1bf1e384
+  $tc'SFree1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+bbe27bf9bec0984b90779f6b4251b095
+  $tc'SFree2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Foreign.R.Type.$tc'SFree3) -}
+8383faa020cda88137a7b9da029215cf
+  $tc'SFree3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'SFree"#) -}
+3b9c1a6bd6b4ba520d433a0e65eafcc3
+  $tc'SFun :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   8096173924992562772##
+                   4038759045038545862##
+                   Foreign.R.Type.$trModule
+                   Foreign.R.Type.$tc'SFun2
+                   1#
+                   Foreign.R.Type.$tc'SFun1) -}
+3ee192efa38319e89369d1192f8eb8c0
+  $tc'SFun1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+aa81f8393472a86b8a626da43f01101f
+  $tc'SFun2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Foreign.R.Type.$tc'SFun3) -}
+70cb2209ad69908257e243c65b2744d5
+  $tc'SFun3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'SFun"#) -}
+b521bd100e3b1145e88f4b24256c0646
+  $tc'SInt :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   12442457660722711279##
+                   2290218681524464953##
+                   Foreign.R.Type.$trModule
+                   Foreign.R.Type.$tc'SInt2
+                   1#
+                   Foreign.R.Type.$tc'SInt1) -}
+5fc5d35122fe647bd7718acaa179a2b3
+  $tc'SInt1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+529cbbd06fdfa0f5ae9f891db07db722
+  $tc'SInt2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Foreign.R.Type.$tc'SInt3) -}
+b6d2d8566cbad165a0f96fd5ed7853c6
+  $tc'SInt3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'SInt"#) -}
+d546dd418af50cde202452fa6384bbd2
+  $tc'SLang :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   11461451794477761856##
+                   879286743807838611##
+                   Foreign.R.Type.$trModule
+                   Foreign.R.Type.$tc'SLang2
+                   1#
+                   Foreign.R.Type.$tc'SLang1) -}
+786ab6b629b8fb9373989f3e1c524a40
+  $tc'SLang1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+452126b2755ca2a39191cbb2f8fd94cc
+  $tc'SLang2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Foreign.R.Type.$tc'SLang3) -}
+0f7f01f17f968679fead26db179b60f6
+  $tc'SLang3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'SLang"#) -}
+5ed1c838b17fb80ae9e4ef969014b656
+  $tc'SList :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   4156842599957561970##
+                   1273775936582848858##
+                   Foreign.R.Type.$trModule
+                   Foreign.R.Type.$tc'SList2
+                   1#
+                   Foreign.R.Type.$tc'SList1) -}
+864ada90c9ce103b10b44fb473e19070
+  $tc'SList1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+d09a161604fa41fc4fc3d8f0963665c8
+  $tc'SList2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Foreign.R.Type.$tc'SList3) -}
+c5bee0b41a2acc575ad122ea661e9a88
+  $tc'SList3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'SList"#) -}
+1c843ecd3dd42438d9f0a955cd7e84ff
+  $tc'SLogical :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   6412896710286270499##
+                   2900607229792788921##
+                   Foreign.R.Type.$trModule
+                   Foreign.R.Type.$tc'SLogical2
+                   1#
+                   Foreign.R.Type.$tc'SLogical1) -}
+8cc5777829239b0b77a8369986c9ce0b
+  $tc'SLogical1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+97dcd23875add2f523b8ad02fbbe70b4
+  $tc'SLogical2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Foreign.R.Type.$tc'SLogical3) -}
+72f5ec598442c76a7d1049019d9ea85f
+  $tc'SLogical3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'SLogical"#) -}
+f6bc91f5708dbec5c50b9bf3ad9417f9
+  $tc'SNew :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   9832393070094606484##
+                   1713533332941959590##
+                   Foreign.R.Type.$trModule
+                   Foreign.R.Type.$tc'SNew2
+                   1#
+                   Foreign.R.Type.$tc'SNew1) -}
+dfe0ae57b4a433902c72fd2ccec34fdf
+  $tc'SNew1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+d5786338f39499890a88c0681d45801c
+  $tc'SNew2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Foreign.R.Type.$tc'SNew3) -}
+a4ad6026d002ff9e59d37c0afece4870
+  $tc'SNew3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'SNew"#) -}
+044bfc28ae2f1318c26f17a1e7fc71eb
+  $tc'SNil :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   690230758599280723##
+                   8116515392763068971##
+                   Foreign.R.Type.$trModule
+                   Foreign.R.Type.$tc'SNil2
+                   1#
+                   Foreign.R.Type.$tc'SNil1) -}
+4835be6bf4395413c1c6d273e052cc6e
+  $tc'SNil1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+8f096bff2a45a9ec4edd23c6a0b4f6e5
+  $tc'SNil2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Foreign.R.Type.$tc'SNil3) -}
+7f6e83a6c0e4b325d16b8276bd674dd7
+  $tc'SNil3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'SNil"#) -}
+60c8e5905e50458b28c72391d9262279
+  $tc'SPromise :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   11359748934539255122##
+                   1617188572150740511##
+                   Foreign.R.Type.$trModule
+                   Foreign.R.Type.$tc'SPromise2
+                   1#
+                   Foreign.R.Type.$tc'SPromise1) -}
+47fb257988dc2f89d2db7f80f8b1882b
+  $tc'SPromise1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+da0c4c5f9c3c5c9c08b4771ad4f08be9
+  $tc'SPromise2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Foreign.R.Type.$tc'SPromise3) -}
+139cfe0f52016eb5a75f230ffe9dfd1c
+  $tc'SPromise3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'SPromise"#) -}
+0cdb317775f56ccf5c3883d98d199b9c
+  $tc'SRaw :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   1706354065572503413##
+                   3708687868295654141##
+                   Foreign.R.Type.$trModule
+                   Foreign.R.Type.$tc'SRaw2
+                   1#
+                   Foreign.R.Type.$tc'SRaw1) -}
+42e004a41f714f57119397e5d98a7d99
+  $tc'SRaw1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+07a36884f873a71a16183b0d64a0d8f3
+  $tc'SRaw2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Foreign.R.Type.$tc'SRaw3) -}
+4492085cbbd49ddab91c657bf1be1588
+  $tc'SRaw3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'SRaw"#) -}
+0d921468297752dc9c6617efdff0591e
+  $tc'SReal :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   3985253403364162420##
+                   17636407536530407686##
+                   Foreign.R.Type.$trModule
+                   Foreign.R.Type.$tc'SReal2
+                   1#
+                   Foreign.R.Type.$tc'SReal1) -}
+7649f4473388d0503e67f43a2730349b
+  $tc'SReal1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+3e92c896cf22e933c6f333d81d3d0e0a
+  $tc'SReal2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Foreign.R.Type.$tc'SReal3) -}
+a439750e2814d2691d22a347bd165660
+  $tc'SReal3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'SReal"#) -}
+12bc0d811ca95f58949381b6a34573eb
+  $tc'SS1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+49dd9ee447965048756927f7fecc736c
+  $tc'SS2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Foreign.R.Type.$tc'SS3) -}
+922abda00ee18af62555b68db6831779
+  $tc'SS3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'SS4"#) -}
+8a84932668d5cb53029d6e8eea1c4848
+  $tc'SS4 :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   8837012017998704435##
+                   9255946818496192038##
+                   Foreign.R.Type.$trModule
+                   Foreign.R.Type.$tc'SS2
+                   1#
+                   Foreign.R.Type.$tc'SS1) -}
+de37cee06a3cc8417e7078f607193ade
+  $tc'SSpecial :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   9568387000058635014##
+                   895882016927006223##
+                   Foreign.R.Type.$trModule
+                   Foreign.R.Type.$tc'SSpecial2
+                   1#
+                   Foreign.R.Type.$tc'SSpecial1) -}
+5097cfdcf47a5961b8d582eee2fb753b
+  $tc'SSpecial1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+ab6ebc43f741c270b320c3d71ecb5e38
+  $tc'SSpecial2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Foreign.R.Type.$tc'SSpecial3) -}
+b5bafd370b23e1371ae3f3a30f6ecf36
+  $tc'SSpecial3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'SSpecial"#) -}
+b82a6e398d7a0c938ec57035734330ec
+  $tc'SString :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   17544978746671842703##
+                   8402216055604456105##
+                   Foreign.R.Type.$trModule
+                   Foreign.R.Type.$tc'SString2
+                   1#
+                   Foreign.R.Type.$tc'SString1) -}
+0e2a4b8e799622b1f9f97f601e5f2feb
+  $tc'SString1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+eae2a97b6540bf30da9299816ab214b3
+  $tc'SString2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Foreign.R.Type.$tc'SString3) -}
+bec512dc5f5eb32e3c5f7b89f9d5d712
+  $tc'SString3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'SString"#) -}
+3986c0a5e3ea42b569d78d2370cfe246
+  $tc'SSymbol :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   18318396438704733081##
+                   14836873238554337149##
+                   Foreign.R.Type.$trModule
+                   Foreign.R.Type.$tc'SSymbol2
+                   1#
+                   Foreign.R.Type.$tc'SSymbol1) -}
+ecfd46bdf030ba781acc709ee0de665b
+  $tc'SSymbol1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+a89eadb235c266d410ce666168160bd8
+  $tc'SSymbol2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Foreign.R.Type.$tc'SSymbol3) -}
+4edaa3bc0b76975f25dd1eac828ef1df
+  $tc'SSymbol3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'SSymbol"#) -}
+2f4c5c3e8b0d76d3d362e54fd0ad490e
+  $tc'SVector :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   7240927575631431528##
+                   15682148941110864394##
+                   Foreign.R.Type.$trModule
+                   Foreign.R.Type.$tc'SVector2
+                   1#
+                   Foreign.R.Type.$tc'SVector1) -}
+d88b97930637f20cba8c7f0ae7db2ff3
+  $tc'SVector1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+f551078faa000e76ad96a4528e98c49c
+  $tc'SVector2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Foreign.R.Type.$tc'SVector3) -}
+439973cb47dcf6bed9c8a977d5780cff
+  $tc'SVector3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'SVector"#) -}
+09ce8867b9f0c8a7445b322fedbbbf0d
+  $tc'SWeakRef :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   7964033710914805162##
+                   7263309596966728096##
+                   Foreign.R.Type.$trModule
+                   Foreign.R.Type.$tc'SWeakRef2
+                   1#
+                   Foreign.R.Type.$tc'SWeakRef1) -}
+dabadf3f0a18168d5f5babac800b0ff9
+  $tc'SWeakRef1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+959e9bb040ad131707bd5b3cbb10539d
+  $tc'SWeakRef2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Foreign.R.Type.$tc'SWeakRef3) -}
+47278754b7427635ac2018e02ec432e6
+  $tc'SWeakRef3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'SWeakRef"#) -}
+cbcbfbe73156f6e845a698d55a3f4b28
+  $tc'Special :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   13908047348832895127##
+                   16626874096252725980##
+                   Foreign.R.Type.$trModule
+                   Foreign.R.Type.$tc'Special1
+                   0#
+                   Foreign.R.Type.$tc'Any1) -}
+9c397fb3edf371ef4aedd0dc5a860485
+  $tc'Special1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Foreign.R.Type.$tc'Special2) -}
+f3d0538a492d865f4e3db0e95f982622
+  $tc'Special2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'Special"#) -}
+59ad176dca9cf2c573ef8de4a75c7ef9
+  $tc'String :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   3046870221718195301##
+                   17817004764558292522##
+                   Foreign.R.Type.$trModule
+                   Foreign.R.Type.$tc'String1
+                   0#
+                   Foreign.R.Type.$tc'Any1) -}
+c889f066c7b881979fb03db6f5c8e0f5
+  $tc'String1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Foreign.R.Type.$tc'String2) -}
+31bedd4453afa3c45c1cbc5781e4d51a
+  $tc'String2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'String"#) -}
+6ad35efcfe70d0701da009c654f09c48
+  $tc'Symbol :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   8717804813996938131##
+                   10770055033708483189##
+                   Foreign.R.Type.$trModule
+                   Foreign.R.Type.$tc'Symbol1
+                   0#
+                   Foreign.R.Type.$tc'Any1) -}
+f4fd85772ad7cced7ec3c2aeacacca4f
+  $tc'Symbol1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Foreign.R.Type.$tc'Symbol2) -}
+0b5c848ece64deae443a523962b9d3e6
+  $tc'Symbol2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'Symbol"#) -}
+eee196ea674c883b631337e4b6a05267
+  $tc'TRUE :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   3098923785935864652##
+                   14019814570223145863##
+                   Foreign.R.Type.$trModule
+                   Foreign.R.Type.$tc'TRUE1
+                   0#
+                   Foreign.R.Type.$tc'FALSE1) -}
+38317cf5b7482bba7003427b5e54250c
+  $tc'TRUE1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Foreign.R.Type.$tc'TRUE2) -}
+ca4f0310beafe227b41b17060edf8495
+  $tc'TRUE2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'TRUE"#) -}
+86f4bb260293648c7370ac754f1c7a3b
+  $tc'Vector :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   296523924819759408##
+                   5253515566781204663##
+                   Foreign.R.Type.$trModule
+                   Foreign.R.Type.$tc'Vector1
+                   0#
+                   Foreign.R.Type.$tc'Any1) -}
+735abd125b1f73e93d9c9f8c02b90763
+  $tc'Vector1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Foreign.R.Type.$tc'Vector2) -}
+e324700e06e2ffd703727be3391bebc2
+  $tc'Vector2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'Vector"#) -}
+aa83f06f6bb32db1fcb81bb29dd037ce
+  $tc'WeakRef :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   7990668527593182740##
+                   18345065769170401408##
+                   Foreign.R.Type.$trModule
+                   Foreign.R.Type.$tc'WeakRef1
+                   0#
+                   Foreign.R.Type.$tc'Any1) -}
+c8eda1534b04d689766868f11f9cb8c6
+  $tc'WeakRef1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Foreign.R.Type.$tc'WeakRef2) -}
+8c302a646e96680bfa5dfa0259440f09
+  $tc'WeakRef2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'WeakRef"#) -}
+85062c310df271efee078339665edb6f
+  $tcLogical :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   11244621969751311131##
+                   17963735914271198318##
+                   Foreign.R.Type.$trModule
+                   Foreign.R.Type.$tcLogical1
+                   0#
+                   GHC.Types.krep$*) -}
+6b884069df58c38dec7dc5a561d1b4ca
+  $tcLogical1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Foreign.R.Type.$fLiftSEXPTYPE36) -}
+d8746b1068ca543114329a1f614dbbce
+  $tcSEXPTYPE :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   9928589591418024239##
+                   8424826634554584533##
+                   Foreign.R.Type.$trModule
+                   Foreign.R.Type.$tcSEXPTYPE1
+                   0#
+                   GHC.Types.krep$*) -}
+a4d0dd88231f2b347d6b21322482e710
+  $tcSEXPTYPE1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Foreign.R.Type.$tcSEXPTYPE2) -}
+b013d8bd014a2f6286be0db2ed9ad6a7
+  $tcSEXPTYPE2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("SEXPTYPE"#) -}
+4a6d9f70036f9b74fed016ddfa95a686
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module
+                   Foreign.R.Type.$trModule3
+                   Foreign.R.Type.$trModule1) -}
+4fa6efd092b2e3c636e16489df6a43e6
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Foreign.R.Type.$trModule2) -}
+d367afeedeb6a17ffa7ab370d890774f
+  $trModule2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Foreign.R.Type"#) -}
+9b38055c0537970aa032867ae643eb5f
+  $trModule3 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Foreign.R.Type.$trModule4) -}
+19737e8e540d76022e1d0a31bf91c5f0
+  $trModule4 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("inline-r-0.9.0.2-CmRL2Hikuao7dNZScoizZz"#) -}
+155aac0ce58f46653dea12e588ab4eb0
+  $w$cfromEnum :: Foreign.R.Type.SEXPTYPE -> GHC.Prim.Int#
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>, Inline: [0],
+     Unfolding: (\ (w :: Foreign.R.Type.SEXPTYPE) ->
+                 case w of wild {
+                   Foreign.R.Type.Nil -> 0#
+                   Foreign.R.Type.Symbol -> 1#
+                   Foreign.R.Type.List -> 2#
+                   Foreign.R.Type.Closure -> 3#
+                   Foreign.R.Type.Env -> 4#
+                   Foreign.R.Type.Promise -> 5#
+                   Foreign.R.Type.Lang -> 6#
+                   Foreign.R.Type.Special -> 7#
+                   Foreign.R.Type.Builtin -> 8#
+                   Foreign.R.Type.Char -> 9#
+                   Foreign.R.Type.Logical -> 10#
+                   Foreign.R.Type.Int -> 13#
+                   Foreign.R.Type.Real -> 14#
+                   Foreign.R.Type.Complex -> 15#
+                   Foreign.R.Type.String -> 16#
+                   Foreign.R.Type.DotDotDot -> 17#
+                   Foreign.R.Type.Any -> 18#
+                   Foreign.R.Type.Vector -> 19#
+                   Foreign.R.Type.Expr -> 20#
+                   Foreign.R.Type.Bytecode -> 21#
+                   Foreign.R.Type.ExtPtr -> 22#
+                   Foreign.R.Type.WeakRef -> 23#
+                   Foreign.R.Type.Raw -> 24#
+                   Foreign.R.Type.S4 -> 25#
+                   Foreign.R.Type.New -> 30#
+                   Foreign.R.Type.Free -> 31#
+                   Foreign.R.Type.Fun -> 99# }) -}
+1780ac06eb92df8fe8d6ec65362cd7e7
+  $w$cshowsPrec ::
+    Foreign.R.Type.Logical -> GHC.Base.String -> GHC.Base.String
+  {- Arity: 2, Strictness: <S,1*U><L,1*U>, Inline: [0],
+     Unfolding: (\ (w :: Foreign.R.Type.Logical)
+                   (w1 :: GHC.Base.String) ->
+                 case w of wild {
+                   Foreign.R.Type.FALSE
+                   -> GHC.Base.++ @ GHC.Types.Char Foreign.R.Type.$fShowLogical5 w1
+                   Foreign.R.Type.TRUE
+                   -> GHC.Base.++ @ GHC.Types.Char Foreign.R.Type.$fShowLogical3 w1
+                   Foreign.R.Type.NA
+                   -> GHC.Base.++
+                        @ GHC.Types.Char
+                        Foreign.R.Type.$fShowLogical1
+                        w1 }) -}
+155aac0ce58f46653dea12e588ab4eb0
+  $w$cshowsPrec1 ::
+    Foreign.R.Type.SEXPTYPE -> GHC.Base.String -> GHC.Base.String
+  {- Arity: 2, Strictness: <S,1*U><L,1*U>, Inline: [0] -}
+155aac0ce58f46653dea12e588ab4eb0
+  $w$ctoEnum :: GHC.Prim.Int# -> Foreign.R.Type.SEXPTYPE
+  {- Arity: 1, Strictness: <S,1*U>, Inline: [0],
+     Unfolding: (\ (ww :: GHC.Prim.Int#) ->
+                 case ww of ds {
+                   DEFAULT -> Foreign.R.Type.$fEnumSEXPTYPE28
+                   0# -> Foreign.R.Type.Nil
+                   1# -> Foreign.R.Type.Symbol
+                   2# -> Foreign.R.Type.List
+                   3# -> Foreign.R.Type.Closure
+                   4# -> Foreign.R.Type.Env
+                   5# -> Foreign.R.Type.Promise
+                   6# -> Foreign.R.Type.Lang
+                   7# -> Foreign.R.Type.Special
+                   8# -> Foreign.R.Type.Builtin
+                   9# -> Foreign.R.Type.Char
+                   10# -> Foreign.R.Type.Logical
+                   13# -> Foreign.R.Type.Int
+                   14# -> Foreign.R.Type.Real
+                   15# -> Foreign.R.Type.Complex
+                   16# -> Foreign.R.Type.String
+                   17# -> Foreign.R.Type.DotDotDot
+                   18# -> Foreign.R.Type.Any
+                   19# -> Foreign.R.Type.Vector
+                   20# -> Foreign.R.Type.Expr
+                   21# -> Foreign.R.Type.Bytecode
+                   22# -> Foreign.R.Type.ExtPtr
+                   23# -> Foreign.R.Type.WeakRef
+                   24# -> Foreign.R.Type.Raw
+                   25# -> Foreign.R.Type.S4
+                   30# -> Foreign.R.Type.New
+                   31# -> Foreign.R.Type.Free
+                   99# -> Foreign.R.Type.Fun }) -}
+33689fd10295ebc795188a991a46ab8a
+  type AnySym0 = 'Foreign.R.Type.Any :: Foreign.R.Type.SEXPTYPE
+733fb81f075271795022844b5863ff1b
+  type BuiltinSym0 =
+    'Foreign.R.Type.Builtin :: Foreign.R.Type.SEXPTYPE
+5ee58c9e9e1e37c6e4ff310e11d1fbd3
+  type BytecodeSym0 =
+    'Foreign.R.Type.Bytecode :: Foreign.R.Type.SEXPTYPE
+95d84e0f1ad5383d1bed8b8497284e30
+  type CharSym0 = 'Foreign.R.Type.Char :: Foreign.R.Type.SEXPTYPE
+204d6c1c4511e8db1ae967d8cd6fb85b
+  type ClosureSym0 =
+    'Foreign.R.Type.Closure :: Foreign.R.Type.SEXPTYPE
+8ff72c943e6741b80da04cb34946f16e
+  type ComplexSym0 =
+    'Foreign.R.Type.Complex :: Foreign.R.Type.SEXPTYPE
+155aac0ce58f46653dea12e588ab4eb0
+  axiom Foreign.R.Type.D:R:DemoteSEXPTYPE::
+      Data.Singletons.Demote Foreign.R.Type.SEXPTYPE
+        = Foreign.R.Type.SEXPTYPE
+155aac0ce58f46653dea12e588ab4eb0
+  axiom Foreign.R.Type.D:R:SingSEXPTYPEz0::
+      Data.Singletons.Sing Foreign.R.Type.SEXPTYPE
+        = Foreign.R.Type.R:SingSEXPTYPEz
+e5a1d4c3cd07893a4b294b2586f3a537
+  type DotDotDotSym0 =
+    'Foreign.R.Type.DotDotDot :: Foreign.R.Type.SEXPTYPE
+d754ee170cd934a1f96762e0d5070e17
+  type EnvSym0 = 'Foreign.R.Type.Env :: Foreign.R.Type.SEXPTYPE
+184b31028958907cd9bb29e559ee0368
+  type ExprSym0 = 'Foreign.R.Type.Expr :: Foreign.R.Type.SEXPTYPE
+a9a4d26140e36189ca7ceae9e882c8d1
+  type ExtPtrSym0 = 'Foreign.R.Type.ExtPtr :: Foreign.R.Type.SEXPTYPE
+95a5eda6cb30a67ec5d7f1ec717938c7
+  type FreeSym0 = 'Foreign.R.Type.Free :: Foreign.R.Type.SEXPTYPE
+d8e5d3d854c1fc7214eb1673a8562a3b
+  type FunSym0 = 'Foreign.R.Type.Fun :: Foreign.R.Type.SEXPTYPE
+2408d61c0515443961ba8eb826b911e6
+  type IntSym0 = 'Foreign.R.Type.Int :: Foreign.R.Type.SEXPTYPE
+402475b9f6dc18d1b68b5d637838b242
+  type IsExpression (a :: Foreign.R.Type.SEXPTYPE) =
+    (Data.Singletons.SingI a,
+     a
+     Foreign.R.Constraints.:∈ '['Foreign.R.Type.Lang,
+                                'Foreign.R.Type.Expr, 'Foreign.R.Type.Symbol])
+    :: GHC.Types.Constraint
+9b8b4266821ee7521c582a2ca6f62df4
+  type IsGenericVector (a :: Foreign.R.Type.SEXPTYPE) =
+    (Data.Singletons.SingI a,
+     a
+     Foreign.R.Constraints.:∈ '['Foreign.R.Type.Vector,
+                                'Foreign.R.Type.Expr, 'Foreign.R.Type.WeakRef])
+    :: GHC.Types.Constraint
+79ee776d98b5cb9442857638854ccbe9
+  type IsList (a :: Foreign.R.Type.SEXPTYPE) =
+    (Data.Singletons.SingI a,
+     a
+     Foreign.R.Constraints.:∈ '['Foreign.R.Type.Char,
+                                'Foreign.R.Type.Logical, 'Foreign.R.Type.Int, 'Foreign.R.Type.Real,
+                                'Foreign.R.Type.Complex, 'Foreign.R.Type.String,
+                                'Foreign.R.Type.Vector, 'Foreign.R.Type.Expr,
+                                'Foreign.R.Type.WeakRef, 'Foreign.R.Type.Raw,
+                                'Foreign.R.Type.List])
+    :: GHC.Types.Constraint
+1be6a0cd0b2fbe0b9527b58b8b9eb862
+  type IsPairList (a :: Foreign.R.Type.SEXPTYPE) =
+    (Data.Singletons.SingI a,
+     a
+     Foreign.R.Constraints.:∈ '['Foreign.R.Type.List,
+                                'Foreign.R.Type.Nil])
+    :: GHC.Types.Constraint
+dd85b2d9ae3c40d713f260e06d8370c5
+  type IsVector (a :: Foreign.R.Type.SEXPTYPE) =
+    (Data.Singletons.SingI a,
+     a
+     Foreign.R.Constraints.:∈ '['Foreign.R.Type.Char,
+                                'Foreign.R.Type.Logical, 'Foreign.R.Type.Int, 'Foreign.R.Type.Real,
+                                'Foreign.R.Type.Complex, 'Foreign.R.Type.String,
+                                'Foreign.R.Type.Vector, 'Foreign.R.Type.Expr,
+                                'Foreign.R.Type.WeakRef, 'Foreign.R.Type.Raw])
+    :: GHC.Types.Constraint
+d68061810b7c9ff2b8d01e7873402642
+  type LangSym0 = 'Foreign.R.Type.Lang :: Foreign.R.Type.SEXPTYPE
+8599de52dd81efe7416e8291d8997657
+  type ListSym0 = 'Foreign.R.Type.List :: Foreign.R.Type.SEXPTYPE
+1780ac06eb92df8fe8d6ec65362cd7e7
+  data Logical = FALSE | TRUE | NA
+a72dcf9438e15611a607cce2b1849323
+  type LogicalSym0 =
+    'Foreign.R.Type.Logical :: Foreign.R.Type.SEXPTYPE
+85071e956aeadd397725833dafb35d2b
+  type NewSym0 = 'Foreign.R.Type.New :: Foreign.R.Type.SEXPTYPE
+7f71a026d32e52c2224927eddc2d586f
+  type NilSym0 = 'Foreign.R.Type.Nil :: Foreign.R.Type.SEXPTYPE
+1382565466437cd771e87d89c8655759
+  type PairList = 'Foreign.R.Type.List :: Foreign.R.Type.SEXPTYPE
+10e553f064b8e328638c469a2fa08d07
+  type PromiseSym0 =
+    'Foreign.R.Type.Promise :: Foreign.R.Type.SEXPTYPE
+155aac0ce58f46653dea12e588ab4eb0
+  data instance Data.Singletons.Sing z where
+    SNil :: (z :: Foreign.R.Type.SEXPTYPE)
+            Data.Type.Equality.~
+            ('Foreign.R.Type.Nil :: Foreign.R.Type.SEXPTYPE) =>
+            Data.Singletons.Sing z
+    SSymbol :: (z :: Foreign.R.Type.SEXPTYPE)
+               Data.Type.Equality.~
+               ('Foreign.R.Type.Symbol :: Foreign.R.Type.SEXPTYPE) =>
+               Data.Singletons.Sing z
+    SList :: (z :: Foreign.R.Type.SEXPTYPE)
+             Data.Type.Equality.~
+             ('Foreign.R.Type.List :: Foreign.R.Type.SEXPTYPE) =>
+             Data.Singletons.Sing z
+    SClosure :: (z :: Foreign.R.Type.SEXPTYPE)
+                Data.Type.Equality.~
+                ('Foreign.R.Type.Closure :: Foreign.R.Type.SEXPTYPE) =>
+                Data.Singletons.Sing z
+    SEnv :: (z :: Foreign.R.Type.SEXPTYPE)
+            Data.Type.Equality.~
+            ('Foreign.R.Type.Env :: Foreign.R.Type.SEXPTYPE) =>
+            Data.Singletons.Sing z
+    SPromise :: (z :: Foreign.R.Type.SEXPTYPE)
+                Data.Type.Equality.~
+                ('Foreign.R.Type.Promise :: Foreign.R.Type.SEXPTYPE) =>
+                Data.Singletons.Sing z
+    SLang :: (z :: Foreign.R.Type.SEXPTYPE)
+             Data.Type.Equality.~
+             ('Foreign.R.Type.Lang :: Foreign.R.Type.SEXPTYPE) =>
+             Data.Singletons.Sing z
+    SSpecial :: (z :: Foreign.R.Type.SEXPTYPE)
+                Data.Type.Equality.~
+                ('Foreign.R.Type.Special :: Foreign.R.Type.SEXPTYPE) =>
+                Data.Singletons.Sing z
+    SBuiltin :: (z :: Foreign.R.Type.SEXPTYPE)
+                Data.Type.Equality.~
+                ('Foreign.R.Type.Builtin :: Foreign.R.Type.SEXPTYPE) =>
+                Data.Singletons.Sing z
+    SChar :: (z :: Foreign.R.Type.SEXPTYPE)
+             Data.Type.Equality.~
+             ('Foreign.R.Type.Char :: Foreign.R.Type.SEXPTYPE) =>
+             Data.Singletons.Sing z
+    SLogical :: (z :: Foreign.R.Type.SEXPTYPE)
+                Data.Type.Equality.~
+                ('Foreign.R.Type.Logical :: Foreign.R.Type.SEXPTYPE) =>
+                Data.Singletons.Sing z
+    SInt :: (z :: Foreign.R.Type.SEXPTYPE)
+            Data.Type.Equality.~
+            ('Foreign.R.Type.Int :: Foreign.R.Type.SEXPTYPE) =>
+            Data.Singletons.Sing z
+    SReal :: (z :: Foreign.R.Type.SEXPTYPE)
+             Data.Type.Equality.~
+             ('Foreign.R.Type.Real :: Foreign.R.Type.SEXPTYPE) =>
+             Data.Singletons.Sing z
+    SComplex :: (z :: Foreign.R.Type.SEXPTYPE)
+                Data.Type.Equality.~
+                ('Foreign.R.Type.Complex :: Foreign.R.Type.SEXPTYPE) =>
+                Data.Singletons.Sing z
+    SString :: (z :: Foreign.R.Type.SEXPTYPE)
+               Data.Type.Equality.~
+               ('Foreign.R.Type.String :: Foreign.R.Type.SEXPTYPE) =>
+               Data.Singletons.Sing z
+    SDotDotDot :: (z :: Foreign.R.Type.SEXPTYPE)
+                  Data.Type.Equality.~
+                  ('Foreign.R.Type.DotDotDot :: Foreign.R.Type.SEXPTYPE) =>
+                  Data.Singletons.Sing z
+    SAny :: (z :: Foreign.R.Type.SEXPTYPE)
+            Data.Type.Equality.~
+            ('Foreign.R.Type.Any :: Foreign.R.Type.SEXPTYPE) =>
+            Data.Singletons.Sing z
+    SVector :: (z :: Foreign.R.Type.SEXPTYPE)
+               Data.Type.Equality.~
+               ('Foreign.R.Type.Vector :: Foreign.R.Type.SEXPTYPE) =>
+               Data.Singletons.Sing z
+    SExpr :: (z :: Foreign.R.Type.SEXPTYPE)
+             Data.Type.Equality.~
+             ('Foreign.R.Type.Expr :: Foreign.R.Type.SEXPTYPE) =>
+             Data.Singletons.Sing z
+    SBytecode :: (z :: Foreign.R.Type.SEXPTYPE)
+                 Data.Type.Equality.~
+                 ('Foreign.R.Type.Bytecode :: Foreign.R.Type.SEXPTYPE) =>
+                 Data.Singletons.Sing z
+    SExtPtr :: (z :: Foreign.R.Type.SEXPTYPE)
+               Data.Type.Equality.~
+               ('Foreign.R.Type.ExtPtr :: Foreign.R.Type.SEXPTYPE) =>
+               Data.Singletons.Sing z
+    SWeakRef :: (z :: Foreign.R.Type.SEXPTYPE)
+                Data.Type.Equality.~
+                ('Foreign.R.Type.WeakRef :: Foreign.R.Type.SEXPTYPE) =>
+                Data.Singletons.Sing z
+    SRaw :: (z :: Foreign.R.Type.SEXPTYPE)
+            Data.Type.Equality.~
+            ('Foreign.R.Type.Raw :: Foreign.R.Type.SEXPTYPE) =>
+            Data.Singletons.Sing z
+    SS4 :: (z :: Foreign.R.Type.SEXPTYPE)
+           Data.Type.Equality.~
+           ('Foreign.R.Type.S4 :: Foreign.R.Type.SEXPTYPE) =>
+           Data.Singletons.Sing z
+    SNew :: (z :: Foreign.R.Type.SEXPTYPE)
+            Data.Type.Equality.~
+            ('Foreign.R.Type.New :: Foreign.R.Type.SEXPTYPE) =>
+            Data.Singletons.Sing z
+    SFree :: (z :: Foreign.R.Type.SEXPTYPE)
+             Data.Type.Equality.~
+             ('Foreign.R.Type.Free :: Foreign.R.Type.SEXPTYPE) =>
+             Data.Singletons.Sing z
+    SFun :: (z :: Foreign.R.Type.SEXPTYPE)
+            Data.Type.Equality.~
+            ('Foreign.R.Type.Fun :: Foreign.R.Type.SEXPTYPE) =>
+            Data.Singletons.Sing z
+3e6bd924ce951174ff5c17cb6d1507d8
+  type RawSym0 = 'Foreign.R.Type.Raw :: Foreign.R.Type.SEXPTYPE
+9d44b7677505f33c10f97dfbaffdbeb7
+  type RealSym0 = 'Foreign.R.Type.Real :: Foreign.R.Type.SEXPTYPE
+f14b8eb930b8ac37dfc9d2d88deeda2c
+  type S4Sym0 = 'Foreign.R.Type.S4 :: Foreign.R.Type.SEXPTYPE
+155aac0ce58f46653dea12e588ab4eb0
+  data SEXPTYPE
+    = Nil
+    | Symbol
+    | List
+    | Closure
+    | Env
+    | Promise
+    | Lang
+    | Special
+    | Builtin
+    | Char
+    | Logical
+    | Int
+    | Real
+    | Complex
+    | String
+    | DotDotDot
+    | Any
+    | Vector
+    | Expr
+    | Bytecode
+    | ExtPtr
+    | WeakRef
+    | Raw
+    | S4
+    | New
+    | Free
+    | Fun
+01bde09c1432a58c48c6a6c3ae653c47
+  type SSEXPTYPE =
+    Data.Singletons.Sing :: Foreign.R.Type.SEXPTYPE -> *
+7dfc529c9c58e6fca426468590313279
+  type SpecialSym0 =
+    'Foreign.R.Type.Special :: Foreign.R.Type.SEXPTYPE
+79dac53ade4c7fd657d85b472c569665
+  type StringSym0 = 'Foreign.R.Type.String :: Foreign.R.Type.SEXPTYPE
+a92bac90054c73af118dc832c4750145
+  type SymbolSym0 = 'Foreign.R.Type.Symbol :: Foreign.R.Type.SEXPTYPE
+13ef1c9175939737c5ca3ebcf5b3479f
+  type VectorSym0 = 'Foreign.R.Type.Vector :: Foreign.R.Type.SEXPTYPE
+9ad06de24fc50ab8eff8d29db126e545
+  type WeakRefSym0 =
+    'Foreign.R.Type.WeakRef :: Foreign.R.Type.SEXPTYPE
+instance GHC.Enum.Enum [Foreign.R.Type.SEXPTYPE]
+  = Foreign.R.Type.$fEnumSEXPTYPE
+instance GHC.Classes.Eq [Foreign.R.Type.Logical]
+  = Foreign.R.Type.$fEqLogical
+instance GHC.Classes.Eq [Foreign.R.Type.SEXPTYPE]
+  = Foreign.R.Type.$fEqSEXPTYPE
+instance Language.Haskell.TH.Syntax.Lift [Foreign.R.Type.SEXPTYPE]
+  = Foreign.R.Type.$fLiftSEXPTYPE
+instance Control.DeepSeq.NFData [Foreign.R.Type.SEXPTYPE]
+  = Foreign.R.Type.$fNFDataSEXPTYPE
+instance GHC.Classes.Ord [Foreign.R.Type.Logical]
+  = Foreign.R.Type.$fOrdLogical
+instance GHC.Classes.Ord [Foreign.R.Type.SEXPTYPE]
+  = Foreign.R.Type.$fOrdSEXPTYPE
+instance GHC.Show.Show [Foreign.R.Type.Logical]
+  = Foreign.R.Type.$fShowLogical
+instance GHC.Show.Show [Foreign.R.Type.SEXPTYPE]
+  = Foreign.R.Type.$fShowSEXPTYPE
+instance Data.Singletons.SingI [Foreign.R.Type.SEXPTYPE,
+                                Foreign.R.Type.Any]
+  = Foreign.R.Type.$fSingISEXPTYPEAny
+instance Data.Singletons.SingI [Foreign.R.Type.SEXPTYPE,
+                                Foreign.R.Type.Builtin]
+  = Foreign.R.Type.$fSingISEXPTYPEBuiltin
+instance Data.Singletons.SingI [Foreign.R.Type.SEXPTYPE,
+                                Foreign.R.Type.Bytecode]
+  = Foreign.R.Type.$fSingISEXPTYPEBytecode
+instance Data.Singletons.SingI [Foreign.R.Type.SEXPTYPE,
+                                Foreign.R.Type.Char]
+  = Foreign.R.Type.$fSingISEXPTYPEChar
+instance Data.Singletons.SingI [Foreign.R.Type.SEXPTYPE,
+                                Foreign.R.Type.Closure]
+  = Foreign.R.Type.$fSingISEXPTYPEClosure
+instance Data.Singletons.SingI [Foreign.R.Type.SEXPTYPE,
+                                Foreign.R.Type.Complex]
+  = Foreign.R.Type.$fSingISEXPTYPEComplex
+instance Data.Singletons.SingI [Foreign.R.Type.SEXPTYPE,
+                                Foreign.R.Type.DotDotDot]
+  = Foreign.R.Type.$fSingISEXPTYPEDotDotDot
+instance Data.Singletons.SingI [Foreign.R.Type.SEXPTYPE,
+                                Foreign.R.Type.Env]
+  = Foreign.R.Type.$fSingISEXPTYPEEnv
+instance Data.Singletons.SingI [Foreign.R.Type.SEXPTYPE,
+                                Foreign.R.Type.Expr]
+  = Foreign.R.Type.$fSingISEXPTYPEExpr
+instance Data.Singletons.SingI [Foreign.R.Type.SEXPTYPE,
+                                Foreign.R.Type.ExtPtr]
+  = Foreign.R.Type.$fSingISEXPTYPEExtPtr
+instance Data.Singletons.SingI [Foreign.R.Type.SEXPTYPE,
+                                Foreign.R.Type.Free]
+  = Foreign.R.Type.$fSingISEXPTYPEFree
+instance Data.Singletons.SingI [Foreign.R.Type.SEXPTYPE,
+                                Foreign.R.Type.Fun]
+  = Foreign.R.Type.$fSingISEXPTYPEFun
+instance Data.Singletons.SingI [Foreign.R.Type.SEXPTYPE,
+                                Foreign.R.Type.Int]
+  = Foreign.R.Type.$fSingISEXPTYPEInt
+instance Data.Singletons.SingI [Foreign.R.Type.SEXPTYPE,
+                                Foreign.R.Type.Lang]
+  = Foreign.R.Type.$fSingISEXPTYPELang
+instance Data.Singletons.SingI [Foreign.R.Type.SEXPTYPE,
+                                Foreign.R.Type.List]
+  = Foreign.R.Type.$fSingISEXPTYPEList
+instance Data.Singletons.SingI [Foreign.R.Type.SEXPTYPE,
+                                Foreign.R.Type.Logical]
+  = Foreign.R.Type.$fSingISEXPTYPELogical
+instance Data.Singletons.SingI [Foreign.R.Type.SEXPTYPE,
+                                Foreign.R.Type.New]
+  = Foreign.R.Type.$fSingISEXPTYPENew
+instance Data.Singletons.SingI [Foreign.R.Type.SEXPTYPE,
+                                Foreign.R.Type.Nil]
+  = Foreign.R.Type.$fSingISEXPTYPENil
+instance Data.Singletons.SingI [Foreign.R.Type.SEXPTYPE,
+                                Foreign.R.Type.Promise]
+  = Foreign.R.Type.$fSingISEXPTYPEPromise
+instance Data.Singletons.SingI [Foreign.R.Type.SEXPTYPE,
+                                Foreign.R.Type.Raw]
+  = Foreign.R.Type.$fSingISEXPTYPERaw
+instance Data.Singletons.SingI [Foreign.R.Type.SEXPTYPE,
+                                Foreign.R.Type.Real]
+  = Foreign.R.Type.$fSingISEXPTYPEReal
+instance Data.Singletons.SingI [Foreign.R.Type.SEXPTYPE,
+                                Foreign.R.Type.S4]
+  = Foreign.R.Type.$fSingISEXPTYPES4
+instance Data.Singletons.SingI [Foreign.R.Type.SEXPTYPE,
+                                Foreign.R.Type.Special]
+  = Foreign.R.Type.$fSingISEXPTYPESpecial
+instance Data.Singletons.SingI [Foreign.R.Type.SEXPTYPE,
+                                Foreign.R.Type.String]
+  = Foreign.R.Type.$fSingISEXPTYPEString
+instance Data.Singletons.SingI [Foreign.R.Type.SEXPTYPE,
+                                Foreign.R.Type.Symbol]
+  = Foreign.R.Type.$fSingISEXPTYPESymbol
+instance Data.Singletons.SingI [Foreign.R.Type.SEXPTYPE,
+                                Foreign.R.Type.Vector]
+  = Foreign.R.Type.$fSingISEXPTYPEVector
+instance Data.Singletons.SingI [Foreign.R.Type.SEXPTYPE,
+                                Foreign.R.Type.WeakRef]
+  = Foreign.R.Type.$fSingISEXPTYPEWeakRef
+instance Data.Singletons.SingKind [Foreign.R.Type.SEXPTYPE]
+  = Foreign.R.Type.$fSingKindSEXPTYPE
+instance Foreign.Storable.Storable [Foreign.R.Type.Logical]
+  = Foreign.R.Type.$fStorableLogical
+family instance Data.Singletons.Demote [Foreign.R.Type.SEXPTYPE]
+  = Foreign.R.Type.D:R:DemoteSEXPTYPE
+family instance Data.Singletons.Sing [Foreign.R.Type.SEXPTYPE]
+  = Foreign.R.Type.D:R:SingSEXPTYPEz0
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: none
+require own pkg trusted: False
+

@@ -1,0 +1,844 @@
+
+==================== FINAL INTERFACE ====================
+2017-12-28 08:02:58.53208 UTC
+
+interface inline-r-0.9.0.2-GXEXrsxC4K8OTVxhqWwxs:Language.R.Internal [boot] 8002
+  interface hash: 654bcbc5f59871a0038927647bad94c7
+  ABI hash: d9b874767c7b176e1c6b78d61a395719
+  export-list hash: c85048407525dc61515cf739c3e7bebc
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: 47664ef46a294ffb8be684a5ed9a6466
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Language.R.Internal.installIO
+  Language.R.Internal.r1
+  Language.R.Internal.r2
+module dependencies: Control.Memory.Region Foreign.R
+                     Foreign.R.Constraints Foreign.R.Internal Foreign.R.Type
+                     Internal.Error Language.R.HExp [boot]
+package dependencies: array-0.5.1.1@array-0.5.1.1 base-4.9.1.0
+                      binary-0.8.3.0@binary-0.8.3.0
+                      bytestring-0.10.8.1@bytestring-0.10.8.1
+                      containers-0.5.7.1@containers-0.5.7.1
+                      deepseq-1.4.2.0@deepseq-1.4.2.0 ghc-boot-th-8.0.2@ghc-boot-th-8.0.2
+                      ghc-prim-0.5.0.0 integer-gmp-1.0.0.1
+                      mtl-2.2.1@mtl-2.2.1-BLKBelFsPB3BoFeSWSOYj6
+                      pretty-1.1.3.3@pretty-1.1.3.3
+                      primitive-0.6.2.0@primitive-0.6.2.0-4578caNkWQ54Gt1mxLF2Yh
+                      safe-0.3.15@safe-0.3.15-2Yd45VWFfdcKqKyispOifY
+                      singletons-2.2@singletons-2.2-F6aalBFPo1F9ebvy1Wkuj3
+                      syb-0.7@syb-0.7-4OKdCpwGutyB1rNRmoa0ya template-haskell-2.11.1.0
+                      text-1.2.2.2@text-1.2.2.2-9UQZjEJZQFSGMffj1Z5g00
+                      th-desugar-1.6@th-desugar-1.6-4xe2xTMQQiAGUPVUAkAZhp
+                      th-expand-syns-0.4.3.0@th-expand-syns-0.4.3.0-A2GRp9XTxmBCMfV7DnYdn0
+                      th-lift-0.7.7@th-lift-0.7.7-JWI9Gh7wB0MC9Q5wqv5aoI
+                      th-lift-instances-0.1.11@th-lift-instances-0.1.11-A7sWuFC2KLsFTBmLagoRSX
+                      th-orphans-0.13.4@th-orphans-0.13.4-IGsCpZ5u2Ab1MvGd5biF2z
+                      th-reify-many-0.1.8@th-reify-many-0.1.8-5ZNbfXxMl3y5DMJznTzmN9
+                      transformers-0.5.2.0@transformers-0.5.2.0
+                      vector-0.12.0.1@vector-0.12.0.1-692PQMDMB6pIQ1uGwefDcQ
+orphans: base-4.9.1.0:GHC.Base base-4.9.1.0:GHC.Float
+         binary-0.8.3.0@binary-0.8.3.0:Data.Binary.Generic
+         bytestring-0.10.8.1@bytestring-0.10.8.1:Data.ByteString.Builder
+         singletons-2.2@singletons-2.2-F6aalBFPo1F9ebvy1Wkuj3:Data.Singletons.Decide
+         singletons-2.2@singletons-2.2-F6aalBFPo1F9ebvy1Wkuj3:Data.Singletons.Prelude.Instances
+         singletons-2.2@singletons-2.2-F6aalBFPo1F9ebvy1Wkuj3:Data.Singletons.TypeLits
+         singletons-2.2@singletons-2.2-F6aalBFPo1F9ebvy1Wkuj3:Data.Singletons.TypeLits.Internal
+         syb-0.7@syb-0.7-4OKdCpwGutyB1rNRmoa0ya:Data.Generics.Instances
+         text-1.2.2.2@text-1.2.2.2-9UQZjEJZQFSGMffj1Z5g00:Data.Text
+         text-1.2.2.2@text-1.2.2.2-9UQZjEJZQFSGMffj1Z5g00:Data.Text.Lazy
+         text-1.2.2.2@text-1.2.2.2-9UQZjEJZQFSGMffj1Z5g00:Data.Text.Show
+         th-lift-0.7.7@th-lift-0.7.7-JWI9Gh7wB0MC9Q5wqv5aoI:Language.Haskell.TH.Lift
+         th-lift-instances-0.1.11@th-lift-instances-0.1.11-A7sWuFC2KLsFTBmLagoRSX:Instances.TH.Lift
+         th-orphans-0.13.4@th-orphans-0.13.4-IGsCpZ5u2Ab1MvGd5biF2z:Language.Haskell.TH.Instances
+         transformers-0.5.2.0@transformers-0.5.2.0:Control.Monad.Trans.Error
+         vector-0.12.0.1@vector-0.12.0.1-692PQMDMB6pIQ1uGwefDcQ:Data.Vector.Fusion.Bundle
+         vector-0.12.0.1@vector-0.12.0.1-692PQMDMB6pIQ1uGwefDcQ:Data.Vector.Unboxed
+family instance modules: base-4.9.1.0:Control.Applicative
+                         base-4.9.1.0:Data.Complex base-4.9.1.0:Data.Either
+                         base-4.9.1.0:Data.Functor.Const base-4.9.1.0:Data.Functor.Identity
+                         base-4.9.1.0:Data.List.NonEmpty base-4.9.1.0:Data.Monoid
+                         base-4.9.1.0:Data.Semigroup base-4.9.1.0:Data.Type.Equality
+                         base-4.9.1.0:Data.Version base-4.9.1.0:Data.Void
+                         base-4.9.1.0:GHC.Exts base-4.9.1.0:GHC.Generics
+                         base-4.9.1.0:GHC.IO.Exception base-4.9.1.0:GHC.TypeLits
+                         containers-0.5.7.1@containers-0.5.7.1:Data.IntMap.Base
+                         containers-0.5.7.1@containers-0.5.7.1:Data.IntSet.Base
+                         containers-0.5.7.1@containers-0.5.7.1:Data.Map.Base
+                         containers-0.5.7.1@containers-0.5.7.1:Data.Sequence
+                         containers-0.5.7.1@containers-0.5.7.1:Data.Set.Base
+                         ghc-boot-th-8.0.2@ghc-boot-th-8.0.2:GHC.LanguageExtensions.Type
+                         inline-r-0.9.0.2-GXEXrsxC4K8OTVxhqWwxs:Control.Memory.Region
+                         inline-r-0.9.0.2-GXEXrsxC4K8OTVxhqWwxs:Foreign.R.Type
+                         pretty-1.1.3.3@pretty-1.1.3.3:Text.PrettyPrint.Annotated.HughesPJ
+                         pretty-1.1.3.3@pretty-1.1.3.3:Text.PrettyPrint.HughesPJ
+                         primitive-0.6.2.0@primitive-0.6.2.0-4578caNkWQ54Gt1mxLF2Yh:Control.Monad.Primitive
+                         primitive-0.6.2.0@primitive-0.6.2.0-4578caNkWQ54Gt1mxLF2Yh:Data.Primitive.Array
+                         singletons-2.2@singletons-2.2-F6aalBFPo1F9ebvy1Wkuj3:Data.Singletons
+                         singletons-2.2@singletons-2.2-F6aalBFPo1F9ebvy1Wkuj3:Data.Singletons.Prelude.Bool
+                         singletons-2.2@singletons-2.2-F6aalBFPo1F9ebvy1Wkuj3:Data.Singletons.Prelude.Eq
+                         singletons-2.2@singletons-2.2-F6aalBFPo1F9ebvy1Wkuj3:Data.Singletons.Prelude.Instances
+                         singletons-2.2@singletons-2.2-F6aalBFPo1F9ebvy1Wkuj3:Data.Singletons.Prelude.Num
+                         singletons-2.2@singletons-2.2-F6aalBFPo1F9ebvy1Wkuj3:Data.Singletons.Prelude.Ord
+                         singletons-2.2@singletons-2.2-F6aalBFPo1F9ebvy1Wkuj3:Data.Singletons.Syntax
+                         singletons-2.2@singletons-2.2-F6aalBFPo1F9ebvy1Wkuj3:Data.Singletons.TypeLits.Internal
+                         template-haskell-2.11.1.0:Language.Haskell.TH.Syntax
+                         text-1.2.2.2@text-1.2.2.2-9UQZjEJZQFSGMffj1Z5g00:Data.Text
+                         text-1.2.2.2@text-1.2.2.2-9UQZjEJZQFSGMffj1Z5g00:Data.Text.Lazy
+                         th-desugar-1.6@th-desugar-1.6-4xe2xTMQQiAGUPVUAkAZhp:Language.Haskell.TH.Desugar.Core
+                         vector-0.12.0.1@vector-0.12.0.1-692PQMDMB6pIQ1uGwefDcQ:Data.Vector
+                         vector-0.12.0.1@vector-0.12.0.1-692PQMDMB6pIQ1uGwefDcQ:Data.Vector.Primitive
+                         vector-0.12.0.1@vector-0.12.0.1-692PQMDMB6pIQ1uGwefDcQ:Data.Vector.Storable
+                         vector-0.12.0.1@vector-0.12.0.1-692PQMDMB6pIQ1uGwefDcQ:Data.Vector.Unboxed
+                         vector-0.12.0.1@vector-0.12.0.1-692PQMDMB6pIQ1uGwefDcQ:Data.Vector.Unboxed.Base
+import  -/  base-4.9.1.0:GHC.Base c4231c43c07e46080a26bf94094c7aa1
+import  -/  base-4.9.1.0:Prelude 22dd289b8469a8fa8dc81cab7b237771
+import  -/  bytestring-0.10.8.1@bytestring-0.10.8.1:Data.ByteString 43e99fdac51908da414a28958688da64
+import  -/  bytestring-0.10.8.1@bytestring-0.10.8.1:Data.ByteString.Internal 89cda42ec946d9d6577dd41ab95d523e
+import  -/  ghc-prim-0.5.0.0:GHC.Types 89f8de4f08018c9177c98d979eae0e45
+import  -/  Control.Memory.Region 308182c83bf046edf073fad284bcd617
+  exports: 0c21e32b92bdaf94d0d4d90814626648
+  V 761191645162463b83c4dd72888da9ec
+import  -/  Foreign.R 76af03c75eee17c66f999e9a2952a2da
+  exports: 48f78775472e7fa46d6f356ef53096ba
+import  -/  Foreign.R.Internal 94b91017c41283795b0b9850baa548e1
+  SEXP e854911eaf3995eafd7923a39be3730e
+  SomeSEXP 2d223e0ee1874a597046c351c68c0d5d
+import  -/  Foreign.R.Type 87886be580abef21e3eb082d49bd5e09
+  exports: 4a9e8ba576dbff5e9a94102d7ea58a6b
+  Symbol d255e2f2703d9aa2d62ec00a540bd8d4
+16f6caceaac2ddede1abf0028b17d5a9
+  $trModule :: GHC.Types.Module
+4196165008ee337848d3d01e238813ef
+  installIO ::
+    GHC.Base.String
+    -> GHC.Types.IO
+         (Foreign.R.Internal.SEXP
+            Control.Memory.Region.V 'Foreign.R.Type.Symbol)
+491a0b9cc04b5533b70a344fb4348766
+  r1 ::
+    Data.ByteString.Internal.ByteString
+    -> Foreign.R.Internal.SEXP s a
+    -> GHC.Types.IO
+         (Foreign.R.Internal.SomeSEXP Control.Memory.Region.V)
+39f9e0d7d493365a2b5939953af80146
+  r2 ::
+    Data.ByteString.Internal.ByteString
+    -> Foreign.R.Internal.SEXP s a
+    -> Foreign.R.Internal.SEXP s b
+    -> GHC.Types.IO
+         (Foreign.R.Internal.SomeSEXP Control.Memory.Region.V)
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: none
+require own pkg trusted: False
+
+
+==================== FINAL INTERFACE ====================
+2017-12-28 08:03:06.034216 UTC
+
+interface inline-r-0.9.0.2-GXEXrsxC4K8OTVxhqWwxs:Language.R.Internal 8002
+  interface hash: 7f19dbf54576ddbba1a97510519f3e2f
+  ABI hash: 92287b8bd458182c986237913ab0835c
+  export-list hash: 092522a78f519054c8abb67a9bca3832
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: ab17ab003ca8cf67a4e815248a331632
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Language.R.Internal.installIO
+  Language.R.Internal.r1
+  Language.R.Internal.r2
+module dependencies: Control.Memory.Region Control.Monad.R.Class
+                     Control.Monad.R.Internal Data.Vector.SEXP Data.Vector.SEXP.Base
+                     Data.Vector.SEXP.Mutable Data.Vector.SEXP.Mutable.Internal
+                     Foreign.R Foreign.R.Constraints Foreign.R.Embedded Foreign.R.Error
+                     Foreign.R.EventLoop Foreign.R.Internal Foreign.R.Parse
+                     Foreign.R.Type Internal.Error Language.R Language.R.GC
+                     Language.R.Globals Language.R.HExp Language.R.Instance
+                     Language.R.Internal.FunWrappers Language.R.Internal.FunWrappers.TH
+                     Language.R.Literal
+package dependencies: array-0.5.1.1@array-0.5.1.1 base-4.9.1.0
+                      binary-0.8.3.0@binary-0.8.3.0
+                      bytestring-0.10.8.1@bytestring-0.10.8.1
+                      containers-0.5.7.1@containers-0.5.7.1
+                      data-default-class-0.1.2.0@data-default-class-0.1.2.0-GsXqKN6o1X9jr0fF5qCVD
+                      deepseq-1.4.2.0@deepseq-1.4.2.0
+                      exceptions-0.8.3@exceptions-0.8.3-ADEDRATtUrMK1JW4zMQ9U
+                      ghc-boot-th-8.0.2@ghc-boot-th-8.0.2 ghc-prim-0.5.0.0
+                      integer-gmp-1.0.0.1 mtl-2.2.1@mtl-2.2.1-BLKBelFsPB3BoFeSWSOYj6
+                      pretty-1.1.3.3@pretty-1.1.3.3
+                      primitive-0.6.2.0@primitive-0.6.2.0-4578caNkWQ54Gt1mxLF2Yh
+                      process-1.4.3.0@process-1.4.3.0
+                      reflection-2.1.2@reflection-2.1.2-Bem12O1xFGSHr4C2Hyu1c4
+                      safe-0.3.15@safe-0.3.15-2Yd45VWFfdcKqKyispOifY
+                      setenv-0.1.1.3@setenv-0.1.1.3-8dEhk6JWvlmCmVyBammSpu
+                      singletons-2.2@singletons-2.2-F6aalBFPo1F9ebvy1Wkuj3
+                      stm-2.4.4.1@stm-2.4.4.1-JQn4hNPyYjP5m9AcbI88Ve
+                      syb-0.7@syb-0.7-4OKdCpwGutyB1rNRmoa0ya template-haskell-2.11.1.0
+                      text-1.2.2.2@text-1.2.2.2-9UQZjEJZQFSGMffj1Z5g00
+                      th-desugar-1.6@th-desugar-1.6-4xe2xTMQQiAGUPVUAkAZhp
+                      th-expand-syns-0.4.3.0@th-expand-syns-0.4.3.0-A2GRp9XTxmBCMfV7DnYdn0
+                      th-lift-0.7.7@th-lift-0.7.7-JWI9Gh7wB0MC9Q5wqv5aoI
+                      th-lift-instances-0.1.11@th-lift-instances-0.1.11-A7sWuFC2KLsFTBmLagoRSX
+                      th-orphans-0.13.4@th-orphans-0.13.4-IGsCpZ5u2Ab1MvGd5biF2z
+                      th-reify-many-0.1.8@th-reify-many-0.1.8-5ZNbfXxMl3y5DMJznTzmN9
+                      transformers-0.5.2.0@transformers-0.5.2.0 unix-2.7.2.1@unix-2.7.2.1
+                      vector-0.12.0.1@vector-0.12.0.1-692PQMDMB6pIQ1uGwefDcQ
+orphans: base-4.9.1.0:GHC.Base base-4.9.1.0:GHC.Float
+         binary-0.8.3.0@binary-0.8.3.0:Data.Binary.Generic
+         bytestring-0.10.8.1@bytestring-0.10.8.1:Data.ByteString.Builder
+         reflection-2.1.2@reflection-2.1.2-Bem12O1xFGSHr4C2Hyu1c4:Data.Reflection
+         singletons-2.2@singletons-2.2-F6aalBFPo1F9ebvy1Wkuj3:Data.Singletons.Decide
+         singletons-2.2@singletons-2.2-F6aalBFPo1F9ebvy1Wkuj3:Data.Singletons.Prelude.Instances
+         singletons-2.2@singletons-2.2-F6aalBFPo1F9ebvy1Wkuj3:Data.Singletons.TypeLits
+         singletons-2.2@singletons-2.2-F6aalBFPo1F9ebvy1Wkuj3:Data.Singletons.TypeLits.Internal
+         stm-2.4.4.1@stm-2.4.4.1-JQn4hNPyYjP5m9AcbI88Ve:Control.Monad.STM
+         syb-0.7@syb-0.7-4OKdCpwGutyB1rNRmoa0ya:Data.Generics.Instances
+         text-1.2.2.2@text-1.2.2.2-9UQZjEJZQFSGMffj1Z5g00:Data.Text
+         text-1.2.2.2@text-1.2.2.2-9UQZjEJZQFSGMffj1Z5g00:Data.Text.Lazy
+         text-1.2.2.2@text-1.2.2.2-9UQZjEJZQFSGMffj1Z5g00:Data.Text.Show
+         th-lift-0.7.7@th-lift-0.7.7-JWI9Gh7wB0MC9Q5wqv5aoI:Language.Haskell.TH.Lift
+         th-lift-instances-0.1.11@th-lift-instances-0.1.11-A7sWuFC2KLsFTBmLagoRSX:Instances.TH.Lift
+         th-orphans-0.13.4@th-orphans-0.13.4-IGsCpZ5u2Ab1MvGd5biF2z:Language.Haskell.TH.Instances
+         transformers-0.5.2.0@transformers-0.5.2.0:Control.Monad.Trans.Error
+         vector-0.12.0.1@vector-0.12.0.1-692PQMDMB6pIQ1uGwefDcQ:Data.Vector.Fusion.Bundle
+         vector-0.12.0.1@vector-0.12.0.1-692PQMDMB6pIQ1uGwefDcQ:Data.Vector.Unboxed
+family instance modules: base-4.9.1.0:Control.Applicative
+                         base-4.9.1.0:Data.Complex base-4.9.1.0:Data.Either
+                         base-4.9.1.0:Data.Functor.Const base-4.9.1.0:Data.Functor.Identity
+                         base-4.9.1.0:Data.List.NonEmpty base-4.9.1.0:Data.Monoid
+                         base-4.9.1.0:Data.Semigroup base-4.9.1.0:Data.Type.Equality
+                         base-4.9.1.0:Data.Version base-4.9.1.0:Data.Void
+                         base-4.9.1.0:GHC.Exts base-4.9.1.0:GHC.Generics
+                         base-4.9.1.0:GHC.IO.Exception base-4.9.1.0:GHC.TypeLits
+                         containers-0.5.7.1@containers-0.5.7.1:Data.IntMap.Base
+                         containers-0.5.7.1@containers-0.5.7.1:Data.IntSet.Base
+                         containers-0.5.7.1@containers-0.5.7.1:Data.Map.Base
+                         containers-0.5.7.1@containers-0.5.7.1:Data.Sequence
+                         containers-0.5.7.1@containers-0.5.7.1:Data.Set.Base
+                         ghc-boot-th-8.0.2@ghc-boot-th-8.0.2:GHC.LanguageExtensions.Type
+                         inline-r-0.9.0.2-GXEXrsxC4K8OTVxhqWwxs:Control.Memory.Region
+                         inline-r-0.9.0.2-GXEXrsxC4K8OTVxhqWwxs:Data.Vector.SEXP
+                         inline-r-0.9.0.2-GXEXrsxC4K8OTVxhqWwxs:Foreign.R.Type
+                         inline-r-0.9.0.2-GXEXrsxC4K8OTVxhqWwxs:Language.R.Instance
+                         pretty-1.1.3.3@pretty-1.1.3.3:Text.PrettyPrint.Annotated.HughesPJ
+                         pretty-1.1.3.3@pretty-1.1.3.3:Text.PrettyPrint.HughesPJ
+                         primitive-0.6.2.0@primitive-0.6.2.0-4578caNkWQ54Gt1mxLF2Yh:Control.Monad.Primitive
+                         primitive-0.6.2.0@primitive-0.6.2.0-4578caNkWQ54Gt1mxLF2Yh:Data.Primitive.Array
+                         singletons-2.2@singletons-2.2-F6aalBFPo1F9ebvy1Wkuj3:Data.Singletons
+                         singletons-2.2@singletons-2.2-F6aalBFPo1F9ebvy1Wkuj3:Data.Singletons.Prelude.Bool
+                         singletons-2.2@singletons-2.2-F6aalBFPo1F9ebvy1Wkuj3:Data.Singletons.Prelude.Eq
+                         singletons-2.2@singletons-2.2-F6aalBFPo1F9ebvy1Wkuj3:Data.Singletons.Prelude.Instances
+                         singletons-2.2@singletons-2.2-F6aalBFPo1F9ebvy1Wkuj3:Data.Singletons.Prelude.Num
+                         singletons-2.2@singletons-2.2-F6aalBFPo1F9ebvy1Wkuj3:Data.Singletons.Prelude.Ord
+                         singletons-2.2@singletons-2.2-F6aalBFPo1F9ebvy1Wkuj3:Data.Singletons.Syntax
+                         singletons-2.2@singletons-2.2-F6aalBFPo1F9ebvy1Wkuj3:Data.Singletons.TypeLits.Internal
+                         template-haskell-2.11.1.0:Language.Haskell.TH.Syntax
+                         text-1.2.2.2@text-1.2.2.2-9UQZjEJZQFSGMffj1Z5g00:Data.Text
+                         text-1.2.2.2@text-1.2.2.2-9UQZjEJZQFSGMffj1Z5g00:Data.Text.Lazy
+                         th-desugar-1.6@th-desugar-1.6-4xe2xTMQQiAGUPVUAkAZhp:Language.Haskell.TH.Desugar.Core
+                         vector-0.12.0.1@vector-0.12.0.1-692PQMDMB6pIQ1uGwefDcQ:Data.Vector
+                         vector-0.12.0.1@vector-0.12.0.1-692PQMDMB6pIQ1uGwefDcQ:Data.Vector.Primitive
+                         vector-0.12.0.1@vector-0.12.0.1-692PQMDMB6pIQ1uGwefDcQ:Data.Vector.Storable
+                         vector-0.12.0.1@vector-0.12.0.1-692PQMDMB6pIQ1uGwefDcQ:Data.Vector.Unboxed
+                         vector-0.12.0.1@vector-0.12.0.1-692PQMDMB6pIQ1uGwefDcQ:Data.Vector.Unboxed.Base
+import  -/  base-4.9.1.0:Foreign.C.String b924799565cbc1299cb1e113052a7304
+import  -/  base-4.9.1.0:GHC.Base c4231c43c07e46080a26bf94094c7aa1
+import  -/  base-4.9.1.0:Prelude 22dd289b8469a8fa8dc81cab7b237771
+import  -/  bytestring-0.10.8.1@bytestring-0.10.8.1:Data.ByteString 43e99fdac51908da414a28958688da64
+import  -/  bytestring-0.10.8.1@bytestring-0.10.8.1:Data.ByteString.Internal 89cda42ec946d9d6577dd41ab95d523e
+import  -/  ghc-prim-0.5.0.0:GHC.Types 89f8de4f08018c9177c98d979eae0e45
+import  -/  Control.Memory.Region 308182c83bf046edf073fad284bcd617
+  exports: 0c21e32b92bdaf94d0d4d90814626648
+  V 761191645162463b83c4dd72888da9ec
+import  -/  Foreign.R 76af03c75eee17c66f999e9a2952a2da
+  exports: 48f78775472e7fa46d6f356ef53096ba
+  install 395c56c1b149ebf0c90df54649cce2c0
+  lang2 56ef702f6f5e057a7dfd3e63ccde48c3
+  lang3 033ae739c668f408f75aefa3cd12fd40
+  withProtected c6d380aac0f4491df5a9e0d7bb15dac7
+import  -/  Foreign.R.Internal 94b91017c41283795b0b9850baa548e1
+  SEXP e854911eaf3995eafd7923a39be3730e
+  SomeSEXP 2d223e0ee1874a597046c351c68c0d5d
+  release 5116a27e38d30bf46ba100a28ca95c3e
+import  -/  Foreign.R.Type 87886be580abef21e3eb082d49bd5e09
+  Symbol d255e2f2703d9aa2d62ec00a540bd8d4
+import  -/  Language.R 1957c2c3ceebade8737f65380577a2a1
+  exports: 435533e272ec090bd643268ea3c2761b
+  eval 612874ae8b70a0ec1461c21ce317258e
+import  -/  Language.R.Instance a0b299dbe1f879a75a4772ba281059aa
+  R 74115e3d17bc6506da54d03835c71928
+  unsafeRunRegion ddd1b411860efaabd12cbe1c70b87418
+345b8f542291e7c10d6b0cfd9f8c8bef
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module
+                   Language.R.Internal.$trModule2
+                   Language.R.Internal.$trModule1) -}
+6e2a21da0e041b8067c29246daf5058f
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "Language.R.Internal"#) -}
+266302f2a255778965c8ab666ca07e55
+  $trModule2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   "inline-r-0.9.0.2-GXEXrsxC4K8OTVxhqWwxs"#) -}
+f78ab7f96e06f7518a94037e99e3fbe7
+  $wr1 ::
+    GHC.Prim.Addr#
+    -> GHC.ForeignPtr.ForeignPtrContents
+    -> GHC.Prim.Int#
+    -> GHC.Prim.Int#
+    -> Foreign.R.Internal.SEXP s a
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+          Foreign.R.Internal.SomeSEXP
+            (Control.Monad.R.Class.Region
+               (Language.R.Instance.R Control.Memory.Region.V)) #)
+  {- Arity: 6, Strictness: <S,U><L,U><S,U><S,U><L,1*U(U)><S,U>,
+     Inline: [0],
+     Unfolding: (\ @ s
+                   @ (a :: Foreign.R.Type.SEXPTYPE)
+                   (ww :: GHC.Prim.Addr#)
+                   (ww1 :: GHC.ForeignPtr.ForeignPtrContents)
+                   (ww2 :: GHC.Prim.Int#)
+                   (ww3 :: GHC.Prim.Int#)
+                   (w :: Foreign.R.Internal.SEXP s a)
+                   (w1 :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                 case GHC.Prim.newPinnedByteArray#
+                        @ GHC.Prim.RealWorld
+                        (GHC.Prim.+# ww3 1#)
+                        w1 of ds1 { (#,#) ipv ipv1 ->
+                 case GHC.Prim.unsafeFreezeByteArray#
+                        @ GHC.Prim.RealWorld
+                        ipv1
+                        ipv of ds2 { (#,#) ipv2 ipv3 ->
+                 let {
+                   buf :: GHC.Prim.Addr# = GHC.Prim.byteArrayContents# ipv3
+                 } in
+                 case {__pkg_ccall bytestring-0.10.8.1@bytestring-0.10.8.1 memcpy GHC.Prim.Addr#
+                                                                                  -> GHC.Prim.Addr#
+                                                                                  -> GHC.Prim.Word#
+                                                                                  -> GHC.Prim.State#
+                                                                                       GHC.Prim.RealWorld
+                                                                                  -> (# GHC.Prim.State#
+                                                                                          GHC.Prim.RealWorld,
+                                                                                        GHC.Prim.Addr# #)}
+                        buf
+                        (GHC.Prim.plusAddr# ww ww2)
+                        (GHC.Prim.int2Word# ww3)
+                        ipv2 of wild1 { (#,#) ds4 ds5 ->
+                 case GHC.Prim.writeWord8OffAddr#
+                        @ GHC.Prim.RealWorld
+                        (GHC.Prim.plusAddr# buf ww3)
+                        0#
+                        0##
+                        ds4 of s2 { DEFAULT ->
+                 case {__pkg_ccall_GC inline-r-0.9.0.2-GXEXrsxC4K8OTVxhqWwxs Rf_install GHC.Prim.Addr#
+                                                                                        -> GHC.Prim.State#
+                                                                                             GHC.Prim.RealWorld
+                                                                                        -> (# GHC.Prim.State#
+                                                                                                GHC.Prim.RealWorld,
+                                                                                              GHC.Prim.Addr# #)}
+                        buf
+                        s2 of wild { (#,#) ds7 ds3 ->
+                 case GHC.Prim.getMaskingState# ds7 of ds { (#,#) ipv4 ipv5 ->
+                 case ipv5 of ds8 {
+                   DEFAULT
+                   -> case w `cast`
+                           (Trans
+                                (Foreign.R.Internal.N:SEXP[0] <s>_P <a>_P)
+                                (GHC.Ptr.Ptr
+                                   <Language.R.HExp.HExp
+                                      s
+                                      a, Foreign.R.Internal.SEXPREC>)_R) of ds9 { GHC.Ptr.Ptr ds10 ->
+                      case {__pkg_ccall_GC inline-r-0.9.0.2-GXEXrsxC4K8OTVxhqWwxs Rf_lang2 GHC.Prim.Addr#
+                                                                                           -> GHC.Prim.Addr#
+                                                                                           -> GHC.Prim.State#
+                                                                                                GHC.Prim.RealWorld
+                                                                                           -> (# GHC.Prim.State#
+                                                                                                   GHC.Prim.RealWorld,
+                                                                                                 GHC.Prim.Addr# #)}
+                             ds3
+                             ds10
+                             ipv4 of wild2 { (#,#) ds11 ds12 ->
+                      case {__pkg_ccall_GC inline-r-0.9.0.2-GXEXrsxC4K8OTVxhqWwxs Rf_protect GHC.Prim.Addr#
+                                                                                             -> GHC.Prim.State#
+                                                                                                  GHC.Prim.RealWorld
+                                                                                             -> (# GHC.Prim.State#
+                                                                                                     GHC.Prim.RealWorld,
+                                                                                                   GHC.Prim.Addr# #)}
+                             ds12
+                             ds11 of wild3 { (#,#) ds13 ds6 ->
+                      case GHC.Prim.catch#
+                             @ (Foreign.R.Internal.SomeSEXP
+                                  (Control.Monad.R.Class.Region
+                                     (Language.R.Instance.R Control.Memory.Region.V)))
+                             @ GHC.Exception.SomeException
+                             (GHC.Magic.lazy
+                                @ (GHC.Types.IO
+                                     (Foreign.R.Internal.SomeSEXP
+                                        (Control.Monad.R.Class.Region
+                                           (Language.R.Instance.R Control.Memory.Region.V))))
+                                (GHC.Prim.maskAsyncExceptions#
+                                   @ (Foreign.R.Internal.SomeSEXP
+                                        (Control.Monad.R.Class.Region
+                                           (Language.R.Instance.R Control.Memory.Region.V)))
+                                   (\ (eta :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                                    Language.R.Instance.runRegion2
+                                      @ (Foreign.R.Internal.SomeSEXP
+                                           (Control.Monad.R.Class.Region
+                                              (Language.R.Instance.R Control.Memory.Region.V)))
+                                      @ Control.Memory.Region.V
+                                      (Foreign.R.Internal.$fNFDataSomeSEXP_$crnf
+                                         @ Control.Memory.Region.Void)
+                                        `cast`
+                                      (Sym (Control.DeepSeq.N:NFData[0]
+                                                (Foreign.R.Internal.SomeSEXP
+                                                   (Language.R.Instance.D:R:PrimStateR[0]
+                                                        <Control.Memory.Region.Void>_N))_N))
+                                      (Language.R.$wevalEnv
+                                         @ (Language.R.Instance.R Control.Memory.Region.V)
+                                         @ GHC.Prim.Any
+                                         @ 'Foreign.R.Type.Lang
+                                         (Language.R.Instance.$fMonadRR
+                                            @ Control.Memory.Region.Void)
+                                         ds12
+                                         Language.R.Globals.globalEnv
+                                           `cast`
+                                         (Trans
+                                              (Foreign.R.Internal.N:SEXP[0]
+                                                   <Control.Memory.Region.G>_P
+                                                   <'Foreign.R.Type.Env>_P)
+                                              (Trans
+                                                   (GHC.Ptr.Ptr
+                                                      <Language.R.HExp.HExp
+                                                         Control.Memory.Region.G
+                                                         'Foreign.R.Type.Env, Language.R.HExp.HExp
+                                                                                GHC.Prim.Any
+                                                                                'Foreign.R.Type.Env>)_R
+                                                   (Sym (Foreign.R.Internal.N:SEXP[0]
+                                                             <GHC.Prim.Any>_P
+                                                             <'Foreign.R.Type.Env>_P)))))
+                                      eta))
+                                  `cast`
+                                (Sym (GHC.Types.N:IO[0]
+                                          <Foreign.R.Internal.SomeSEXP
+                                             (Control.Monad.R.Class.Region
+                                                (Language.R.Instance.R
+                                                   Control.Memory.Region.V))>_R)))
+                               `cast`
+                             (GHC.Types.N:IO[0]
+                                  <Foreign.R.Internal.SomeSEXP
+                                     (Control.Monad.R.Class.Region
+                                        (Language.R.Instance.R Control.Memory.Region.V))>_R)
+                             (Foreign.R.withProtected2
+                                @ (Foreign.R.Internal.SomeSEXP
+                                     (Control.Monad.R.Class.Region
+                                        (Language.R.Instance.R Control.Memory.Region.V))))
+                             ds13 of ds14 { (#,#) ipv6 ipv7 ->
+                      case {__pkg_ccall_GC inline-r-0.9.0.2-GXEXrsxC4K8OTVxhqWwxs Rf_unprotect GHC.Prim.Int#
+                                                                                               -> GHC.Prim.State#
+                                                                                                    GHC.Prim.RealWorld
+                                                                                               -> (# GHC.Prim.State#
+                                                                                                       GHC.Prim.RealWorld #)}
+                             1#
+                             ipv6 of wild4 { Unit# ds15 ->
+                      case GHC.Prim.touch#
+                             @ 'GHC.Types.PtrRepLifted
+                             @ GHC.ForeignPtr.ForeignPtrContents
+                             ww1
+                             ds15 of s' { DEFAULT ->
+                      case GHC.Prim.touch#
+                             @ 'GHC.Types.PtrRepUnlifted
+                             @ GHC.Prim.ByteArray#
+                             ipv3
+                             s' of s4 { DEFAULT ->
+                      (# s4, ipv7 #) } } } } } } }
+                   0#
+                   -> case GHC.Prim.maskAsyncExceptions#
+                             @ (Foreign.R.Internal.SomeSEXP
+                                  (Control.Monad.R.Class.Region
+                                     (Language.R.Instance.R Control.Memory.Region.V)))
+                             (\ (eta1 :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                              case w `cast`
+                                   (Trans
+                                        (Foreign.R.Internal.N:SEXP[0] <s>_P <a>_P)
+                                        (GHC.Ptr.Ptr
+                                           <Language.R.HExp.HExp
+                                              s
+                                              a, Foreign.R.Internal.SEXPREC>)_R) of ds9 { GHC.Ptr.Ptr ds10 ->
+                              case {__pkg_ccall_GC inline-r-0.9.0.2-GXEXrsxC4K8OTVxhqWwxs Rf_lang2 GHC.Prim.Addr#
+                                                                                                   -> GHC.Prim.Addr#
+                                                                                                   -> GHC.Prim.State#
+                                                                                                        GHC.Prim.RealWorld
+                                                                                                   -> (# GHC.Prim.State#
+                                                                                                           GHC.Prim.RealWorld,
+                                                                                                         GHC.Prim.Addr# #)}
+                                     ds3
+                                     ds10
+                                     eta1 of wild2 { (#,#) ds11 ds12 ->
+                              case {__pkg_ccall_GC inline-r-0.9.0.2-GXEXrsxC4K8OTVxhqWwxs Rf_protect GHC.Prim.Addr#
+                                                                                                     -> GHC.Prim.State#
+                                                                                                          GHC.Prim.RealWorld
+                                                                                                     -> (# GHC.Prim.State#
+                                                                                                             GHC.Prim.RealWorld,
+                                                                                                           GHC.Prim.Addr# #)}
+                                     ds12
+                                     ds11 of wild3 { (#,#) ds13 ds6 ->
+                              case GHC.Prim.catch#
+                                     @ (Foreign.R.Internal.SomeSEXP
+                                          (Control.Monad.R.Class.Region
+                                             (Language.R.Instance.R Control.Memory.Region.V)))
+                                     @ GHC.Exception.SomeException
+                                     (GHC.Magic.lazy
+                                        @ (GHC.Types.IO
+                                             (Foreign.R.Internal.SomeSEXP
+                                                (Control.Monad.R.Class.Region
+                                                   (Language.R.Instance.R
+                                                      Control.Memory.Region.V))))
+                                        (GHC.Prim.unmaskAsyncExceptions#
+                                           @ (Foreign.R.Internal.SomeSEXP
+                                                (Control.Monad.R.Class.Region
+                                                   (Language.R.Instance.R Control.Memory.Region.V)))
+                                           (\ (eta :: GHC.Prim.State#
+                                                        GHC.Prim.RealWorld)[OneShot] ->
+                                            Language.R.Instance.runRegion2
+                                              @ (Foreign.R.Internal.SomeSEXP
+                                                   (Control.Monad.R.Class.Region
+                                                      (Language.R.Instance.R
+                                                         Control.Memory.Region.V)))
+                                              @ Control.Memory.Region.V
+                                              (Foreign.R.Internal.$fNFDataSomeSEXP_$crnf
+                                                 @ Control.Memory.Region.Void)
+                                                `cast`
+                                              (Sym (Control.DeepSeq.N:NFData[0]
+                                                        (Foreign.R.Internal.SomeSEXP
+                                                           (Language.R.Instance.D:R:PrimStateR[0]
+                                                                <Control.Memory.Region.Void>_N))_N))
+                                              (Language.R.$wevalEnv
+                                                 @ (Language.R.Instance.R Control.Memory.Region.V)
+                                                 @ GHC.Prim.Any
+                                                 @ 'Foreign.R.Type.Lang
+                                                 (Language.R.Instance.$fMonadRR
+                                                    @ Control.Memory.Region.Void)
+                                                 ds12
+                                                 Language.R.Globals.globalEnv
+                                                   `cast`
+                                                 (Trans
+                                                      (Foreign.R.Internal.N:SEXP[0]
+                                                           <Control.Memory.Region.G>_P
+                                                           <'Foreign.R.Type.Env>_P)
+                                                      (Trans
+                                                           (GHC.Ptr.Ptr
+                                                              <Language.R.HExp.HExp
+                                                                 Control.Memory.Region.G
+                                                                 'Foreign.R.Type.Env, Language.R.HExp.HExp
+                                                                                        GHC.Prim.Any
+                                                                                        'Foreign.R.Type.Env>)_R
+                                                           (Sym (Foreign.R.Internal.N:SEXP[0]
+                                                                     <GHC.Prim.Any>_P
+                                                                     <'Foreign.R.Type.Env>_P)))))
+                                              eta))
+                                          `cast`
+                                        (Sym (GHC.Types.N:IO[0]
+                                                  <Foreign.R.Internal.SomeSEXP
+                                                     (Control.Monad.R.Class.Region
+                                                        (Language.R.Instance.R
+                                                           Control.Memory.Region.V))>_R)))
+                                       `cast`
+                                     (GHC.Types.N:IO[0]
+                                          <Foreign.R.Internal.SomeSEXP
+                                             (Control.Monad.R.Class.Region
+                                                (Language.R.Instance.R Control.Memory.Region.V))>_R)
+                                     (Foreign.R.withProtected2
+                                        @ (Foreign.R.Internal.SomeSEXP
+                                             (Control.Monad.R.Class.Region
+                                                (Language.R.Instance.R Control.Memory.Region.V))))
+                                     ds13 of ds14 { (#,#) ipv6 ipv7 ->
+                              case {__pkg_ccall_GC inline-r-0.9.0.2-GXEXrsxC4K8OTVxhqWwxs Rf_unprotect GHC.Prim.Int#
+                                                                                                       -> GHC.Prim.State#
+                                                                                                            GHC.Prim.RealWorld
+                                                                                                       -> (# GHC.Prim.State#
+                                                                                                               GHC.Prim.RealWorld #)}
+                                     1#
+                                     ipv6 of wild4 { Unit# ds15 ->
+                              (# ds15, ipv7 #) } } } } })
+                             ipv4 of ds9 { (#,#) ipv6 ipv7 ->
+                      case GHC.Prim.touch#
+                             @ 'GHC.Types.PtrRepLifted
+                             @ GHC.ForeignPtr.ForeignPtrContents
+                             ww1
+                             ipv6 of s' { DEFAULT ->
+                      case GHC.Prim.touch#
+                             @ 'GHC.Types.PtrRepUnlifted
+                             @ GHC.Prim.ByteArray#
+                             ipv3
+                             s' of s4 { DEFAULT ->
+                      (# s4, ipv7 #) } } }
+                   1#
+                   -> case w `cast`
+                           (Trans
+                                (Foreign.R.Internal.N:SEXP[0] <s>_P <a>_P)
+                                (GHC.Ptr.Ptr
+                                   <Language.R.HExp.HExp
+                                      s
+                                      a, Foreign.R.Internal.SEXPREC>)_R) of ds9 { GHC.Ptr.Ptr ds10 ->
+                      case {__pkg_ccall_GC inline-r-0.9.0.2-GXEXrsxC4K8OTVxhqWwxs Rf_lang2 GHC.Prim.Addr#
+                                                                                           -> GHC.Prim.Addr#
+                                                                                           -> GHC.Prim.State#
+                                                                                                GHC.Prim.RealWorld
+                                                                                           -> (# GHC.Prim.State#
+                                                                                                   GHC.Prim.RealWorld,
+                                                                                                 GHC.Prim.Addr# #)}
+                             ds3
+                             ds10
+                             ipv4 of wild2 { (#,#) ds11 ds12 ->
+                      case {__pkg_ccall_GC inline-r-0.9.0.2-GXEXrsxC4K8OTVxhqWwxs Rf_protect GHC.Prim.Addr#
+                                                                                             -> GHC.Prim.State#
+                                                                                                  GHC.Prim.RealWorld
+                                                                                             -> (# GHC.Prim.State#
+                                                                                                     GHC.Prim.RealWorld,
+                                                                                                   GHC.Prim.Addr# #)}
+                             ds12
+                             ds11 of wild3 { (#,#) ds13 ds6 ->
+                      case GHC.Prim.catch#
+                             @ (Foreign.R.Internal.SomeSEXP
+                                  (Control.Monad.R.Class.Region
+                                     (Language.R.Instance.R Control.Memory.Region.V)))
+                             @ GHC.Exception.SomeException
+                             (GHC.Magic.lazy
+                                @ (GHC.Types.IO
+                                     (Foreign.R.Internal.SomeSEXP
+                                        (Control.Monad.R.Class.Region
+                                           (Language.R.Instance.R Control.Memory.Region.V))))
+                                (GHC.Prim.maskUninterruptible#
+                                   @ (Foreign.R.Internal.SomeSEXP
+                                        (Control.Monad.R.Class.Region
+                                           (Language.R.Instance.R Control.Memory.Region.V)))
+                                   (\ (eta :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                                    Language.R.Instance.runRegion2
+                                      @ (Foreign.R.Internal.SomeSEXP
+                                           (Control.Monad.R.Class.Region
+                                              (Language.R.Instance.R Control.Memory.Region.V)))
+                                      @ Control.Memory.Region.V
+                                      (Foreign.R.Internal.$fNFDataSomeSEXP_$crnf
+                                         @ Control.Memory.Region.Void)
+                                        `cast`
+                                      (Sym (Control.DeepSeq.N:NFData[0]
+                                                (Foreign.R.Internal.SomeSEXP
+                                                   (Language.R.Instance.D:R:PrimStateR[0]
+                                                        <Control.Memory.Region.Void>_N))_N))
+                                      (Language.R.$wevalEnv
+                                         @ (Language.R.Instance.R Control.Memory.Region.V)
+                                         @ GHC.Prim.Any
+                                         @ 'Foreign.R.Type.Lang
+                                         (Language.R.Instance.$fMonadRR
+                                            @ Control.Memory.Region.Void)
+                                         ds12
+                                         Language.R.Globals.globalEnv
+                                           `cast`
+                                         (Trans
+                                              (Foreign.R.Internal.N:SEXP[0]
+                                                   <Control.Memory.Region.G>_P
+                                                   <'Foreign.R.Type.Env>_P)
+                                              (Trans
+                                                   (GHC.Ptr.Ptr
+                                                      <Language.R.HExp.HExp
+                                                         Control.Memory.Region.G
+                                                         'Foreign.R.Type.Env, Language.R.HExp.HExp
+                                                                                GHC.Prim.Any
+                                                                                'Foreign.R.Type.Env>)_R
+                                                   (Sym (Foreign.R.Internal.N:SEXP[0]
+                                                             <GHC.Prim.Any>_P
+                                                             <'Foreign.R.Type.Env>_P)))))
+                                      eta))
+                                  `cast`
+                                (Sym (GHC.Types.N:IO[0]
+                                          <Foreign.R.Internal.SomeSEXP
+                                             (Control.Monad.R.Class.Region
+                                                (Language.R.Instance.R
+                                                   Control.Memory.Region.V))>_R)))
+                               `cast`
+                             (GHC.Types.N:IO[0]
+                                  <Foreign.R.Internal.SomeSEXP
+                                     (Control.Monad.R.Class.Region
+                                        (Language.R.Instance.R Control.Memory.Region.V))>_R)
+                             (Foreign.R.withProtected2
+                                @ (Foreign.R.Internal.SomeSEXP
+                                     (Control.Monad.R.Class.Region
+                                        (Language.R.Instance.R Control.Memory.Region.V))))
+                             ds13 of ds14 { (#,#) ipv6 ipv7 ->
+                      case {__pkg_ccall_GC inline-r-0.9.0.2-GXEXrsxC4K8OTVxhqWwxs Rf_unprotect GHC.Prim.Int#
+                                                                                               -> GHC.Prim.State#
+                                                                                                    GHC.Prim.RealWorld
+                                                                                               -> (# GHC.Prim.State#
+                                                                                                       GHC.Prim.RealWorld #)}
+                             1#
+                             ipv6 of wild4 { Unit# ds15 ->
+                      case GHC.Prim.touch#
+                             @ 'GHC.Types.PtrRepLifted
+                             @ GHC.ForeignPtr.ForeignPtrContents
+                             ww1
+                             ds15 of s' { DEFAULT ->
+                      case GHC.Prim.touch#
+                             @ 'GHC.Types.PtrRepUnlifted
+                             @ GHC.Prim.ByteArray#
+                             ipv3
+                             s' of s4 { DEFAULT ->
+                      (# s4, ipv7 #) } } } } } } } } } } } } } }) -}
+af19cf21a5f5b193fd7966026678506e
+  $wr2 ::
+    GHC.Prim.Addr#
+    -> GHC.ForeignPtr.ForeignPtrContents
+    -> GHC.Prim.Int#
+    -> GHC.Prim.Int#
+    -> Foreign.R.Internal.SEXP s a
+    -> Foreign.R.Internal.SEXP s b
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+          Foreign.R.Internal.SomeSEXP
+            (Control.Monad.R.Class.Region
+               (Language.R.Instance.R Control.Memory.Region.V)) #)
+  {- Arity: 7,
+     Strictness: <S,U><L,U><S,U><S,U><L,1*U(U)><L,1*U(U)><S,U>,
+     Inline: [0] -}
+ef1994c28de0ede814848ec3e4895853
+  installIO ::
+    GHC.Base.String
+    -> GHC.Types.IO
+         (Foreign.R.Internal.SEXP
+            Control.Memory.Region.V 'Foreign.R.Type.Symbol)
+  {- Arity: 2, Strictness: <L,U><S,U>,
+     Unfolding: InlineRule (0, True, True)
+                Language.R.Internal.installIO1
+                  `cast`
+                (<GHC.Base.String>_R
+                 ->_R Sym (GHC.Types.N:IO[0]
+                               <Foreign.R.Internal.SEXP
+                                  Control.Memory.Region.V 'Foreign.R.Type.Symbol>_R)) -}
+066f6517d415e4801ff4e91d516f009d
+  installIO1 ::
+    GHC.Base.String
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+          Foreign.R.Internal.SEXP
+            Control.Memory.Region.V 'Foreign.R.Type.Symbol #)
+  {- Arity: 2, Strictness: <L,U><S,U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (str :: GHC.Base.String)
+                   (eta :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                 case GHC.IO.Encoding.getForeignEncoding1 of wild { (,) getForeignEncoding5 setForeignEncoding1 ->
+                 case getForeignEncoding5
+                        `cast`
+                      (GHC.Types.N:IO[0] <GHC.IO.Encoding.Types.TextEncoding>_R)
+                        eta of ds1 { (#,#) ipv ipv1 ->
+                 GHC.Foreign.charIsRepresentable3
+                   @ (Foreign.R.Internal.SEXP
+                        Control.Memory.Region.V 'Foreign.R.Type.Symbol)
+                   ipv1
+                   str
+                   Foreign.R.install1
+                     `cast`
+                   (<Foreign.C.String.CString>_R
+                    ->_R Sym (GHC.Types.N:IO[0]
+                                  <Foreign.R.Internal.SEXP
+                                     Control.Memory.Region.V 'Foreign.R.Type.Symbol>_R))
+                   ipv } }) -}
+0fa78c8acbf38c4011c103ee5cd53a70
+  r1 ::
+    Data.ByteString.Internal.ByteString
+    -> Foreign.R.Internal.SEXP s a
+    -> GHC.Types.IO
+         (Foreign.R.Internal.SomeSEXP Control.Memory.Region.V)
+  {- Arity: 3, Strictness: <S(SLSS),1*U(U,U,U,U)><L,1*U(U)><S,U>,
+     Unfolding: InlineRule (0, True, True)
+                Language.R.Internal.r4
+                  `cast`
+                (forall (s :: <GHC.Types.*>_N) (a :: <Foreign.R.Type.SEXPTYPE>_N).
+                 <Data.ByteString.Internal.ByteString>_R
+                 ->_R <Foreign.R.Internal.SEXP s a>_R
+                 ->_R Sym (GHC.Types.N:IO[0]
+                               (Foreign.R.Internal.SomeSEXP
+                                  <Control.Memory.Region.Void, Control.Monad.Primitive.PrimState
+                                                                 (Language.R.Instance.R
+                                                                    Control.Memory.Region.V)>)_R)) -}
+905a988e9793e7735b3b3936686b465b
+  r2 ::
+    Data.ByteString.Internal.ByteString
+    -> Foreign.R.Internal.SEXP s a
+    -> Foreign.R.Internal.SEXP s b
+    -> GHC.Types.IO
+         (Foreign.R.Internal.SomeSEXP Control.Memory.Region.V)
+  {- Arity: 4,
+     Strictness: <S(SLSS),1*U(U,U,U,U)><L,1*U(U)><L,1*U(U)><S,U>,
+     Unfolding: InlineRule (0, True, True)
+                Language.R.Internal.r5
+                  `cast`
+                (forall (s :: <GHC.Types.*>_N) (a :: <Foreign.R.Type.SEXPTYPE>_N) (b :: <Foreign.R.Type.SEXPTYPE>_N).
+                 <Data.ByteString.Internal.ByteString>_R
+                 ->_R <Foreign.R.Internal.SEXP s a>_R
+                 ->_R <Foreign.R.Internal.SEXP s b>_R
+                 ->_R Sym (GHC.Types.N:IO[0]
+                               (Foreign.R.Internal.SomeSEXP
+                                  <Control.Memory.Region.Void, Control.Monad.Primitive.PrimState
+                                                                 (Language.R.Instance.R
+                                                                    Control.Memory.Region.V)>)_R)) -}
+e1e6d9068bd7cfe6a27cbc086d8b64a3
+  r4 ::
+    Data.ByteString.Internal.ByteString
+    -> Foreign.R.Internal.SEXP s a
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+          Foreign.R.Internal.SomeSEXP
+            (Control.Monad.R.Class.Region
+               (Language.R.Instance.R Control.Memory.Region.V)) #)
+  {- Arity: 3, Strictness: <S(SLSS),1*U(U,U,U,U)><L,1*U(U)><S,U>,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (3, True, False)
+                (\ @ s
+                   @ (a :: Foreign.R.Type.SEXPTYPE)
+                   (w :: Data.ByteString.Internal.ByteString)
+                   (w1 :: Foreign.R.Internal.SEXP s a)
+                   (w2 :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                 case w of ww { Data.ByteString.Internal.PS ww1 ww2 ww3 ww4 ->
+                 Language.R.Internal.$wr1 @ s @ a ww1 ww2 ww3 ww4 w1 w2 }) -}
+678da5526ca8268af1012417d9184df6
+  r5 ::
+    Data.ByteString.Internal.ByteString
+    -> Foreign.R.Internal.SEXP s a
+    -> Foreign.R.Internal.SEXP s b
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+          Foreign.R.Internal.SomeSEXP
+            (Control.Monad.R.Class.Region
+               (Language.R.Instance.R Control.Memory.Region.V)) #)
+  {- Arity: 4,
+     Strictness: <S(SLSS),1*U(U,U,U,U)><L,1*U(U)><L,1*U(U)><S,U>,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (4, True, False)
+                (\ @ s
+                   @ (a :: Foreign.R.Type.SEXPTYPE)
+                   @ (b :: Foreign.R.Type.SEXPTYPE)
+                   (w :: Data.ByteString.Internal.ByteString)
+                   (w1 :: Foreign.R.Internal.SEXP s a)
+                   (w2 :: Foreign.R.Internal.SEXP s b)
+                   (w3 :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                 case w of ww { Data.ByteString.Internal.PS ww1 ww2 ww3 ww4 ->
+                 Language.R.Internal.$wr2 @ s @ a @ b ww1 ww2 ww3 ww4 w1 w2 w3 }) -}
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: none
+require own pkg trusted: False
+

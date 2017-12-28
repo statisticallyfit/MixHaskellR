@@ -1,0 +1,49 @@
+Configuring inline-r-0.9.0.2...
+Preprocessing library for inline-r-0.9.0.2..
+HExp.hsc:90:0: warning: "hsc_alignment" redefined [enabled by default]
+In file included from .stack-work/dist/x86_64-linux/Cabal-2.0.1.0/build/Language/R/HExp_hsc_make.c:1:0:
+/datascience/bin/stack/programs/x86_64-linux/ghc-8.2.2/lib/ghc-8.2.2/template-hsc.h:91:0: note: this is the location of the previous definition
+ #define hsc_alignment(x...)                                           \
+ ^
+EventLoop.hsc:30:0: warning: "hsc_alignment" redefined [enabled by default]
+In file included from .stack-work/dist/x86_64-linux/Cabal-2.0.1.0/build/Foreign/R/EventLoop_hsc_make.c:1:0:
+/datascience/bin/stack/programs/x86_64-linux/ghc-8.2.2/lib/ghc-8.2.2/template-hsc.h:91:0: note: this is the location of the previous definition
+ #define hsc_alignment(x...)                                           \
+ ^
+Building library for inline-r-0.9.0.2..
+[ 1 of 34] Compiling Control.Memory.Region ( src/Control/Memory/Region.hs, .stack-work/dist/x86_64-linux/Cabal-2.0.1.0/build/Control/Memory/Region.o )
+[ 2 of 34] Compiling Foreign.R.Embedded ( .stack-work/dist/x86_64-linux/Cabal-2.0.1.0/build/Foreign/R/Embedded.hs, .stack-work/dist/x86_64-linux/Cabal-2.0.1.0/build/Foreign/R/Embedded.o )
+[ 3 of 34] Compiling Foreign.R.Error  ( .stack-work/dist/x86_64-linux/Cabal-2.0.1.0/build/Foreign/R/Error.hs, .stack-work/dist/x86_64-linux/Cabal-2.0.1.0/build/Foreign/R/Error.o )
+[ 4 of 34] Compiling Foreign.R.EventLoop ( .stack-work/dist/x86_64-linux/Cabal-2.0.1.0/build/Foreign/R/EventLoop.hs, .stack-work/dist/x86_64-linux/Cabal-2.0.1.0/build/Foreign/R/EventLoop.o )
+[ 5 of 34] Compiling Foreign.R.Type[boot] ( .stack-work/dist/x86_64-linux/Cabal-2.0.1.0/build/Foreign/R/Type.hs-boot, .stack-work/dist/x86_64-linux/Cabal-2.0.1.0/build/Foreign/R/Type.o-boot )
+[ 6 of 34] Compiling Foreign.R.Constraints ( src/Foreign/R/Constraints.hs, .stack-work/dist/x86_64-linux/Cabal-2.0.1.0/build/Foreign/R/Constraints.o )
+[ 7 of 34] Compiling Internal.Error   ( src/Internal/Error.hs, .stack-work/dist/x86_64-linux/Cabal-2.0.1.0/build/Internal/Error.o )
+[ 8 of 34] Compiling Foreign.R.Type   ( .stack-work/dist/x86_64-linux/Cabal-2.0.1.0/build/Foreign/R/Type.hs, .stack-work/dist/x86_64-linux/Cabal-2.0.1.0/build/Foreign/R/Type.o )
+[ 9 of 34] Compiling Language.R.HExp[boot] ( .stack-work/dist/x86_64-linux/Cabal-2.0.1.0/build/Language/R/HExp.hs-boot, .stack-work/dist/x86_64-linux/Cabal-2.0.1.0/build/Language/R/HExp.o-boot )
+[10 of 34] Compiling Foreign.R.Internal ( .stack-work/dist/x86_64-linux/Cabal-2.0.1.0/build/Foreign/R/Internal.hs, .stack-work/dist/x86_64-linux/Cabal-2.0.1.0/build/Foreign/R/Internal.o )
+[11 of 34] Compiling Foreign.R        ( .stack-work/dist/x86_64-linux/Cabal-2.0.1.0/build/Foreign/R.hs, .stack-work/dist/x86_64-linux/Cabal-2.0.1.0/build/Foreign/R.o )
+[12 of 34] Compiling Language.R.Globals ( src/Language/R/Globals.hs, .stack-work/dist/x86_64-linux/Cabal-2.0.1.0/build/Language/R/Globals.o )
+[13 of 34] Compiling Foreign.R.Parse  ( .stack-work/dist/x86_64-linux/Cabal-2.0.1.0/build/Foreign/R/Parse.hs, .stack-work/dist/x86_64-linux/Cabal-2.0.1.0/build/Foreign/R/Parse.o )
+[14 of 34] Compiling Data.Vector.SEXP.Base ( src/Data/Vector/SEXP/Base.hs, .stack-work/dist/x86_64-linux/Cabal-2.0.1.0/build/Data/Vector/SEXP/Base.o )
+[15 of 34] Compiling Control.Monad.R.Class ( src/Control/Monad/R/Class.hs, .stack-work/dist/x86_64-linux/Cabal-2.0.1.0/build/Control/Monad/R/Class.o )
+[16 of 34] Compiling Language.R.GC    ( src/Language/R/GC.hs, .stack-work/dist/x86_64-linux/Cabal-2.0.1.0/build/Language/R/GC.o )
+[17 of 34] Compiling Language.R.Event ( src/Language/R/Event.hs, .stack-work/dist/x86_64-linux/Cabal-2.0.1.0/build/Language/R/Event.o )
+[18 of 34] Compiling Control.Monad.R.Internal ( src/Control/Monad/R/Internal.hs, .stack-work/dist/x86_64-linux/Cabal-2.0.1.0/build/Control/Monad/R/Internal.o )
+[19 of 34] Compiling Data.Vector.SEXP.Mutable.Internal ( src/Data/Vector/SEXP/Mutable/Internal.hs, .stack-work/dist/x86_64-linux/Cabal-2.0.1.0/build/Data/Vector/SEXP/Mutable/Internal.o )
+[20 of 34] Compiling Data.Vector.SEXP.Mutable ( src/Data/Vector/SEXP/Mutable.hs, .stack-work/dist/x86_64-linux/Cabal-2.0.1.0/build/Data/Vector/SEXP/Mutable.o )
+[21 of 34] Compiling Data.Vector.SEXP ( src/Data/Vector/SEXP.hs, .stack-work/dist/x86_64-linux/Cabal-2.0.1.0/build/Data/Vector/SEXP.o )
+[22 of 34] Compiling Language.R.HExp  ( .stack-work/dist/x86_64-linux/Cabal-2.0.1.0/build/Language/R/HExp.hs, .stack-work/dist/x86_64-linux/Cabal-2.0.1.0/build/Language/R/HExp.o )
+[23 of 34] Compiling Language.R.Debug ( src/Language/R/Debug.hs, .stack-work/dist/x86_64-linux/Cabal-2.0.1.0/build/Language/R/Debug.o )
+[24 of 34] Compiling Language.R.Instance ( src/Language/R/Instance.hs, .stack-work/dist/x86_64-linux/Cabal-2.0.1.0/build/Language/R/Instance.o )
+[25 of 34] Compiling Language.R.Internal[boot] ( src/Language/R/Internal.hs-boot, .stack-work/dist/x86_64-linux/Cabal-2.0.1.0/build/Language/R/Internal.o-boot )
+[26 of 34] Compiling Language.R.Internal.FunWrappers.TH ( src/Language/R/Internal/FunWrappers/TH.hs, .stack-work/dist/x86_64-linux/Cabal-2.0.1.0/build/Language/R/Internal/FunWrappers/TH.o )
+[27 of 34] Compiling Language.R.Internal.FunWrappers ( src/Language/R/Internal/FunWrappers.hs, .stack-work/dist/x86_64-linux/Cabal-2.0.1.0/build/Language/R/Internal/FunWrappers.o )
+[28 of 34] Compiling Language.R.Literal ( src/Language/R/Literal.hs, .stack-work/dist/x86_64-linux/Cabal-2.0.1.0/build/Language/R/Literal.o )
+[29 of 34] Compiling Language.R       ( src/Language/R.hs, .stack-work/dist/x86_64-linux/Cabal-2.0.1.0/build/Language/R.o )
+[30 of 34] Compiling Language.R.Internal ( src/Language/R/Internal.hs, .stack-work/dist/x86_64-linux/Cabal-2.0.1.0/build/Language/R/Internal.o )
+[31 of 34] Compiling Language.R.QQ    ( src/Language/R/QQ.hs, .stack-work/dist/x86_64-linux/Cabal-2.0.1.0/build/Language/R/QQ.o )
+[32 of 34] Compiling H.Prelude        ( src/H/Prelude.hs, .stack-work/dist/x86_64-linux/Cabal-2.0.1.0/build/H/Prelude.o )
+[33 of 34] Compiling Language.R.Matcher ( src/Language/R/Matcher.hs, .stack-work/dist/x86_64-linux/Cabal-2.0.1.0/build/Language/R/Matcher.o )
+[34 of 34] Compiling H.Prelude.Interactive ( src/H/Prelude/Interactive.hs, .stack-work/dist/x86_64-linux/Cabal-2.0.1.0/build/H/Prelude/Interactive.o )
+Installing library in /datascience/bin/stack/snapshots/x86_64-linux/lts-10.1/8.2.2/lib/x86_64-linux-ghc-8.2.2/inline-r-0.9.0.2-EmBGSHPJbS23A5UJeBKyRJ
+Registering library for inline-r-0.9.0.2..

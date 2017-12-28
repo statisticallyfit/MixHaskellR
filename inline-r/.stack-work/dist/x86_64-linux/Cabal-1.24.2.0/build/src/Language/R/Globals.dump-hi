@@ -1,0 +1,579 @@
+
+==================== FINAL INTERFACE ====================
+2017-12-28 08:02:50.04184 UTC
+
+interface inline-r-0.9.0.2-GXEXrsxC4K8OTVxhqWwxs:Language.R.Globals 8002
+  interface hash: f3fec7cbd66514fa196e0f7a9bd532a0
+  ABI hash: 727a60bd96cf801e88bef214649657f2
+  export-list hash: b49c6114bd9b47465af7425ddde25637
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: 4e34c9a7c99165fb19a7b928f2ee8221
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Language.R.Globals.baseEnv
+  Language.R.Globals.emptyEnv
+  Language.R.Globals.globalEnv
+  Language.R.Globals.inputHandlers
+  Language.R.Globals.isRInteractive
+  Language.R.Globals.missingArg
+  Language.R.Globals.nilValue
+  Language.R.Globals.pokeRVariables
+  Language.R.Globals.signalHandlersPtr
+  Language.R.Globals.unboundValue
+module dependencies: Control.Memory.Region Foreign.R
+                     Foreign.R.Constraints Foreign.R.EventLoop Foreign.R.Internal
+                     Foreign.R.Type Internal.Error Language.R.HExp [boot]
+package dependencies: array-0.5.1.1@array-0.5.1.1 base-4.9.1.0
+                      binary-0.8.3.0@binary-0.8.3.0
+                      bytestring-0.10.8.1@bytestring-0.10.8.1
+                      containers-0.5.7.1@containers-0.5.7.1
+                      deepseq-1.4.2.0@deepseq-1.4.2.0 ghc-boot-th-8.0.2@ghc-boot-th-8.0.2
+                      ghc-prim-0.5.0.0 integer-gmp-1.0.0.1
+                      mtl-2.2.1@mtl-2.2.1-BLKBelFsPB3BoFeSWSOYj6
+                      pretty-1.1.3.3@pretty-1.1.3.3
+                      primitive-0.6.2.0@primitive-0.6.2.0-4578caNkWQ54Gt1mxLF2Yh
+                      safe-0.3.15@safe-0.3.15-2Yd45VWFfdcKqKyispOifY
+                      singletons-2.2@singletons-2.2-F6aalBFPo1F9ebvy1Wkuj3
+                      syb-0.7@syb-0.7-4OKdCpwGutyB1rNRmoa0ya template-haskell-2.11.1.0
+                      text-1.2.2.2@text-1.2.2.2-9UQZjEJZQFSGMffj1Z5g00
+                      th-desugar-1.6@th-desugar-1.6-4xe2xTMQQiAGUPVUAkAZhp
+                      th-expand-syns-0.4.3.0@th-expand-syns-0.4.3.0-A2GRp9XTxmBCMfV7DnYdn0
+                      th-lift-0.7.7@th-lift-0.7.7-JWI9Gh7wB0MC9Q5wqv5aoI
+                      th-lift-instances-0.1.11@th-lift-instances-0.1.11-A7sWuFC2KLsFTBmLagoRSX
+                      th-orphans-0.13.4@th-orphans-0.13.4-IGsCpZ5u2Ab1MvGd5biF2z
+                      th-reify-many-0.1.8@th-reify-many-0.1.8-5ZNbfXxMl3y5DMJznTzmN9
+                      transformers-0.5.2.0@transformers-0.5.2.0
+                      vector-0.12.0.1@vector-0.12.0.1-692PQMDMB6pIQ1uGwefDcQ
+orphans: base-4.9.1.0:GHC.Base base-4.9.1.0:GHC.Float
+         binary-0.8.3.0@binary-0.8.3.0:Data.Binary.Generic
+         bytestring-0.10.8.1@bytestring-0.10.8.1:Data.ByteString.Builder
+         singletons-2.2@singletons-2.2-F6aalBFPo1F9ebvy1Wkuj3:Data.Singletons.Decide
+         singletons-2.2@singletons-2.2-F6aalBFPo1F9ebvy1Wkuj3:Data.Singletons.Prelude.Instances
+         singletons-2.2@singletons-2.2-F6aalBFPo1F9ebvy1Wkuj3:Data.Singletons.TypeLits
+         singletons-2.2@singletons-2.2-F6aalBFPo1F9ebvy1Wkuj3:Data.Singletons.TypeLits.Internal
+         syb-0.7@syb-0.7-4OKdCpwGutyB1rNRmoa0ya:Data.Generics.Instances
+         text-1.2.2.2@text-1.2.2.2-9UQZjEJZQFSGMffj1Z5g00:Data.Text
+         text-1.2.2.2@text-1.2.2.2-9UQZjEJZQFSGMffj1Z5g00:Data.Text.Lazy
+         text-1.2.2.2@text-1.2.2.2-9UQZjEJZQFSGMffj1Z5g00:Data.Text.Show
+         th-lift-0.7.7@th-lift-0.7.7-JWI9Gh7wB0MC9Q5wqv5aoI:Language.Haskell.TH.Lift
+         th-lift-instances-0.1.11@th-lift-instances-0.1.11-A7sWuFC2KLsFTBmLagoRSX:Instances.TH.Lift
+         th-orphans-0.13.4@th-orphans-0.13.4-IGsCpZ5u2Ab1MvGd5biF2z:Language.Haskell.TH.Instances
+         transformers-0.5.2.0@transformers-0.5.2.0:Control.Monad.Trans.Error
+         vector-0.12.0.1@vector-0.12.0.1-692PQMDMB6pIQ1uGwefDcQ:Data.Vector.Fusion.Bundle
+         vector-0.12.0.1@vector-0.12.0.1-692PQMDMB6pIQ1uGwefDcQ:Data.Vector.Unboxed
+family instance modules: base-4.9.1.0:Control.Applicative
+                         base-4.9.1.0:Data.Complex base-4.9.1.0:Data.Either
+                         base-4.9.1.0:Data.Functor.Const base-4.9.1.0:Data.Functor.Identity
+                         base-4.9.1.0:Data.List.NonEmpty base-4.9.1.0:Data.Monoid
+                         base-4.9.1.0:Data.Semigroup base-4.9.1.0:Data.Type.Equality
+                         base-4.9.1.0:Data.Version base-4.9.1.0:Data.Void
+                         base-4.9.1.0:GHC.Exts base-4.9.1.0:GHC.Generics
+                         base-4.9.1.0:GHC.IO.Exception base-4.9.1.0:GHC.TypeLits
+                         containers-0.5.7.1@containers-0.5.7.1:Data.IntMap.Base
+                         containers-0.5.7.1@containers-0.5.7.1:Data.IntSet.Base
+                         containers-0.5.7.1@containers-0.5.7.1:Data.Map.Base
+                         containers-0.5.7.1@containers-0.5.7.1:Data.Sequence
+                         containers-0.5.7.1@containers-0.5.7.1:Data.Set.Base
+                         ghc-boot-th-8.0.2@ghc-boot-th-8.0.2:GHC.LanguageExtensions.Type
+                         inline-r-0.9.0.2-GXEXrsxC4K8OTVxhqWwxs:Control.Memory.Region
+                         inline-r-0.9.0.2-GXEXrsxC4K8OTVxhqWwxs:Foreign.R.Type
+                         pretty-1.1.3.3@pretty-1.1.3.3:Text.PrettyPrint.Annotated.HughesPJ
+                         pretty-1.1.3.3@pretty-1.1.3.3:Text.PrettyPrint.HughesPJ
+                         primitive-0.6.2.0@primitive-0.6.2.0-4578caNkWQ54Gt1mxLF2Yh:Control.Monad.Primitive
+                         primitive-0.6.2.0@primitive-0.6.2.0-4578caNkWQ54Gt1mxLF2Yh:Data.Primitive.Array
+                         singletons-2.2@singletons-2.2-F6aalBFPo1F9ebvy1Wkuj3:Data.Singletons
+                         singletons-2.2@singletons-2.2-F6aalBFPo1F9ebvy1Wkuj3:Data.Singletons.Prelude.Bool
+                         singletons-2.2@singletons-2.2-F6aalBFPo1F9ebvy1Wkuj3:Data.Singletons.Prelude.Eq
+                         singletons-2.2@singletons-2.2-F6aalBFPo1F9ebvy1Wkuj3:Data.Singletons.Prelude.Instances
+                         singletons-2.2@singletons-2.2-F6aalBFPo1F9ebvy1Wkuj3:Data.Singletons.Prelude.Num
+                         singletons-2.2@singletons-2.2-F6aalBFPo1F9ebvy1Wkuj3:Data.Singletons.Prelude.Ord
+                         singletons-2.2@singletons-2.2-F6aalBFPo1F9ebvy1Wkuj3:Data.Singletons.Syntax
+                         singletons-2.2@singletons-2.2-F6aalBFPo1F9ebvy1Wkuj3:Data.Singletons.TypeLits.Internal
+                         template-haskell-2.11.1.0:Language.Haskell.TH.Syntax
+                         text-1.2.2.2@text-1.2.2.2-9UQZjEJZQFSGMffj1Z5g00:Data.Text
+                         text-1.2.2.2@text-1.2.2.2-9UQZjEJZQFSGMffj1Z5g00:Data.Text.Lazy
+                         th-desugar-1.6@th-desugar-1.6-4xe2xTMQQiAGUPVUAkAZhp:Language.Haskell.TH.Desugar.Core
+                         vector-0.12.0.1@vector-0.12.0.1-692PQMDMB6pIQ1uGwefDcQ:Data.Vector
+                         vector-0.12.0.1@vector-0.12.0.1-692PQMDMB6pIQ1uGwefDcQ:Data.Vector.Primitive
+                         vector-0.12.0.1@vector-0.12.0.1-692PQMDMB6pIQ1uGwefDcQ:Data.Vector.Storable
+                         vector-0.12.0.1@vector-0.12.0.1-692PQMDMB6pIQ1uGwefDcQ:Data.Vector.Unboxed
+                         vector-0.12.0.1@vector-0.12.0.1-692PQMDMB6pIQ1uGwefDcQ:Data.Vector.Unboxed.Base
+import  -/  base-4.9.1.0:Control.Monad a6784c5dab0d75c63dabec5a37843f98
+import  -/  base-4.9.1.0:Foreign b4bee334aade4f33021057fdecf4a495
+import  -/  base-4.9.1.0:Foreign.C.Types bf568ee9a3ec4aa42333a0da5f4345de
+import  -/  base-4.9.1.0:Foreign.Storable 085c8d7f42ceec1dbb4e818f06339b9d
+import  -/  base-4.9.1.0:GHC.Base c4231c43c07e46080a26bf94094c7aa1
+import  -/  base-4.9.1.0:GHC.IO.Unsafe 1c057c642b0e201f55a24585d3d94564
+import  -/  base-4.9.1.0:GHC.Ptr 427a6ad9312f04edb98e0f5b7c4e2596
+import  -/  base-4.9.1.0:GHC.Stable d3d209f6f57f87901692462db3297376
+import  -/  base-4.9.1.0:Prelude 22dd289b8469a8fa8dc81cab7b237771
+import  -/  base-4.9.1.0:System.IO.Unsafe 1e3c5b8dd8cf6850ae43cce967bb46cd
+import  -/  ghc-prim-0.5.0.0:GHC.Types 89f8de4f08018c9177c98d979eae0e45
+import  -/  Control.Memory.Region 308182c83bf046edf073fad284bcd617
+  exports: 0c21e32b92bdaf94d0d4d90814626648
+  G 5206da058dee6b52317e30a2eceb5c81
+import  -/  Foreign.R 76af03c75eee17c66f999e9a2952a2da
+  exports: 48f78775472e7fa46d6f356ef53096ba
+import  -/  Foreign.R.EventLoop 49f9ca72c40ef8ed7f46ab8983a64653
+  exports: 2a2c7226490f0f9bdf298c44509e88b2
+  InputHandler 5baf842a5d612b2516b5ea0be2857a6c
+import  -/  Foreign.R.Internal 94b91017c41283795b0b9850baa548e1
+  SEXP e854911eaf3995eafd7923a39be3730e
+import  -/  Foreign.R.Type 87886be580abef21e3eb082d49bd5e09
+  Env bef9e3e9269a52cbeb1c06d7ded3b526
+  Nil 212555b06d565953b4a32f21b70b2d75
+  Symbol d255e2f2703d9aa2d62ec00a540bd8d4
+addDependentFile "/datascience/bin/stack/programs/x86_64-linux/ghc-8.0.2/lib/ghc-8.0.2/include/ghcversion.h"
+addDependentFile ".stack-work/dist/x86_64-linux/Cabal-1.24.2.0/build/autogen/cabal_macros.h"
+addDependentFile "/usr/include/stdc-predef.h"
+3bc673d95f4f6b9446569928a9900b83
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module
+                   Language.R.Globals.$trModule2
+                   Language.R.Globals.$trModule1) -}
+8d12be3c8bd507434a51382c2824e92a
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "Language.R.Globals"#) -}
+6577273ca410209a763efb704dd5c386
+  $trModule2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   "inline-r-0.9.0.2-GXEXrsxC4K8OTVxhqWwxs"#) -}
+8eaae66c1e2509d5351be90f3cb750e9
+  type RVariables =
+    (GHC.Ptr.Ptr
+       (Foreign.R.Internal.SEXP
+          Control.Memory.Region.G 'Foreign.R.Type.Env),
+     GHC.Ptr.Ptr
+       (Foreign.R.Internal.SEXP
+          Control.Memory.Region.G 'Foreign.R.Type.Env),
+     GHC.Ptr.Ptr
+       (Foreign.R.Internal.SEXP
+          Control.Memory.Region.G 'Foreign.R.Type.Env),
+     GHC.Ptr.Ptr
+       (Foreign.R.Internal.SEXP
+          Control.Memory.Region.G 'Foreign.R.Type.Nil),
+     GHC.Ptr.Ptr
+       (Foreign.R.Internal.SEXP
+          Control.Memory.Region.G 'Foreign.R.Type.Symbol),
+     GHC.Ptr.Ptr
+       (Foreign.R.Internal.SEXP
+          Control.Memory.Region.G 'Foreign.R.Type.Symbol),
+     GHC.Ptr.Ptr Foreign.C.Types.CInt, GHC.Ptr.Ptr Foreign.C.Types.CInt,
+     GHC.Ptr.Ptr (GHC.Ptr.Ptr Foreign.R.EventLoop.InputHandler))
+45b15cfbd78b1a9ac307b9cac49d0fb8
+  baseEnv ::
+    Foreign.R.Internal.SEXP Control.Memory.Region.G 'Foreign.R.Type.Env
+  {- Unfolding: (case GHC.Magic.runRW#
+                        @ 'GHC.Types.PtrRepLifted
+                        @ (Foreign.R.Internal.SEXP
+                             Control.Memory.Region.G 'Foreign.R.Type.Env)
+                        Language.R.Globals.baseEnv1 of ds { (#,#) ipv ipv1 ->
+                 ipv1 }) -}
+a90a14c900e430400d851636b9855a54
+  baseEnv1 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+          Foreign.R.Internal.SEXP
+            Control.Memory.Region.G 'Foreign.R.Type.Env #)
+  {- Arity: 1,
+     Unfolding: (\ (s :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                 case GHC.Prim.noDuplicate# s of s' { DEFAULT ->
+                 case Language.R.Globals.baseEnv2 of wild { (,,,,,,,,) baseEnvPtr emptyEnvPtr globalEnvPtr nilValuePtr unboundValuePtr missingArgPtr isRInteractive1 signalHandlersPtr1 inputHandlersPtr ->
+                 case baseEnvPtr
+                        `cast`
+                      (GHC.Ptr.Ptr
+                         <Foreign.R.Internal.SEXP
+                            GHC.Prim.RealWorld 'Foreign.R.Type.Env, GHC.Ptr.Ptr
+                                                                      (Language.R.HExp.HExp
+                                                                         GHC.Prim.RealWorld
+                                                                         'Foreign.R.Type.Env)>)_R of wild1 { GHC.Ptr.Ptr a1 ->
+                 case GHC.Prim.readAddrOffAddr#
+                        @ GHC.Prim.RealWorld
+                        a1
+                        0#
+                        s' of ds2 { (#,#) ipv ipv1 ->
+                 (# ipv,
+                    GHC.Ptr.Ptr
+                      @ (Language.R.HExp.HExp GHC.Prim.RealWorld 'Foreign.R.Type.Env)
+                      ipv1 #)
+                   `cast`
+                 ((#,#)
+                    <'GHC.Types.VoidRep>_R
+                    <'GHC.Types.PtrRepLifted>_R
+                    <GHC.Prim.State# GHC.Prim.RealWorld>_R
+                    (Sym (Foreign.R.Internal.N:SEXP[0]
+                              <GHC.Prim.RealWorld>_P <'Foreign.R.Type.Env>_P)))_R } } } }) -}
+5fb06823c7d4d563f871a5b51fd57da3
+  baseEnv2 ::
+    (GHC.Ptr.Ptr
+       (Foreign.R.Internal.SEXP
+          Control.Memory.Region.G 'Foreign.R.Type.Env),
+     GHC.Ptr.Ptr
+       (Foreign.R.Internal.SEXP
+          Control.Memory.Region.G 'Foreign.R.Type.Env),
+     GHC.Ptr.Ptr
+       (Foreign.R.Internal.SEXP
+          Control.Memory.Region.G 'Foreign.R.Type.Env),
+     GHC.Ptr.Ptr
+       (Foreign.R.Internal.SEXP
+          Control.Memory.Region.G 'Foreign.R.Type.Nil),
+     GHC.Ptr.Ptr
+       (Foreign.R.Internal.SEXP
+          Control.Memory.Region.G 'Foreign.R.Type.Symbol),
+     GHC.Ptr.Ptr
+       (Foreign.R.Internal.SEXP
+          Control.Memory.Region.G 'Foreign.R.Type.Symbol),
+     GHC.Ptr.Ptr Foreign.C.Types.CInt, GHC.Ptr.Ptr Foreign.C.Types.CInt,
+     GHC.Ptr.Ptr (GHC.Ptr.Ptr Foreign.R.EventLoop.InputHandler))
+  {- Unfolding: (case GHC.Magic.runRW#
+                        @ 'GHC.Types.PtrRepLifted
+                        @ Language.R.Globals.RVariables
+                        Language.R.Globals.baseEnv3 of ds { (#,#) ipv ipv1 ->
+                 ipv1 }) -}
+493a708b264b9100c596ebb9a14e0f6f
+  baseEnv3 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+          Language.R.Globals.RVariables #)
+  {- Arity: 1, HasNoCafRefs,
+     Unfolding: (\ (s :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                 case GHC.Prim.noDuplicate# s of s' { DEFAULT ->
+                 case GHC.Prim.readStablePtrOffAddr#
+                        @ GHC.Prim.RealWorld
+                        @ (GHC.Ptr.Ptr
+                             (Foreign.R.Internal.SEXP
+                                Control.Memory.Region.G 'Foreign.R.Type.Env),
+                           GHC.Ptr.Ptr
+                             (Foreign.R.Internal.SEXP
+                                Control.Memory.Region.G 'Foreign.R.Type.Env),
+                           GHC.Ptr.Ptr
+                             (Foreign.R.Internal.SEXP
+                                Control.Memory.Region.G 'Foreign.R.Type.Env),
+                           GHC.Ptr.Ptr
+                             (Foreign.R.Internal.SEXP
+                                Control.Memory.Region.G 'Foreign.R.Type.Nil),
+                           GHC.Ptr.Ptr
+                             (Foreign.R.Internal.SEXP
+                                Control.Memory.Region.G 'Foreign.R.Type.Symbol),
+                           GHC.Ptr.Ptr
+                             (Foreign.R.Internal.SEXP
+                                Control.Memory.Region.G 'Foreign.R.Type.Symbol),
+                           GHC.Ptr.Ptr Foreign.C.Types.CInt, GHC.Ptr.Ptr Foreign.C.Types.CInt,
+                           GHC.Ptr.Ptr (GHC.Ptr.Ptr Foreign.R.EventLoop.InputHandler))
+                        __label "rVariables" (data)
+                        0#
+                        s' of ds2 { (#,#) ipv ipv1 ->
+                 GHC.Prim.deRefStablePtr#
+                   @ Language.R.Globals.RVariables
+                   ipv1
+                   ipv } }) -}
+0193349f307afaba354b332606ac7d69
+  emptyEnv ::
+    Foreign.R.Internal.SEXP Control.Memory.Region.G 'Foreign.R.Type.Env
+  {- Unfolding: (case GHC.Magic.runRW#
+                        @ 'GHC.Types.PtrRepLifted
+                        @ (Foreign.R.Internal.SEXP
+                             Control.Memory.Region.G 'Foreign.R.Type.Env)
+                        Language.R.Globals.emptyEnv1 of ds { (#,#) ipv ipv1 ->
+                 ipv1 }) -}
+d70575fd0f0ef73e220ffff2fcde42f5
+  emptyEnv1 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+          Foreign.R.Internal.SEXP
+            Control.Memory.Region.G 'Foreign.R.Type.Env #)
+  {- Arity: 1,
+     Unfolding: (\ (s :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                 case GHC.Prim.noDuplicate# s of s' { DEFAULT ->
+                 case Language.R.Globals.baseEnv2 of wild { (,,,,,,,,) baseEnvPtr emptyEnvPtr globalEnvPtr nilValuePtr unboundValuePtr missingArgPtr isRInteractive1 signalHandlersPtr1 inputHandlersPtr ->
+                 case emptyEnvPtr
+                        `cast`
+                      (GHC.Ptr.Ptr
+                         <Foreign.R.Internal.SEXP
+                            GHC.Prim.RealWorld 'Foreign.R.Type.Env, GHC.Ptr.Ptr
+                                                                      (Language.R.HExp.HExp
+                                                                         GHC.Prim.RealWorld
+                                                                         'Foreign.R.Type.Env)>)_R of wild1 { GHC.Ptr.Ptr a1 ->
+                 case GHC.Prim.readAddrOffAddr#
+                        @ GHC.Prim.RealWorld
+                        a1
+                        0#
+                        s' of ds2 { (#,#) ipv ipv1 ->
+                 (# ipv,
+                    GHC.Ptr.Ptr
+                      @ (Language.R.HExp.HExp GHC.Prim.RealWorld 'Foreign.R.Type.Env)
+                      ipv1 #)
+                   `cast`
+                 ((#,#)
+                    <'GHC.Types.VoidRep>_R
+                    <'GHC.Types.PtrRepLifted>_R
+                    <GHC.Prim.State# GHC.Prim.RealWorld>_R
+                    (Sym (Foreign.R.Internal.N:SEXP[0]
+                              <GHC.Prim.RealWorld>_P <'Foreign.R.Type.Env>_P)))_R } } } }) -}
+b8f58f2bc36e66e430d9285c6979838b
+  globalEnv ::
+    Foreign.R.Internal.SEXP Control.Memory.Region.G 'Foreign.R.Type.Env
+  {- Unfolding: (case GHC.Magic.runRW#
+                        @ 'GHC.Types.PtrRepLifted
+                        @ (Foreign.R.Internal.SEXP
+                             Control.Memory.Region.G 'Foreign.R.Type.Env)
+                        Language.R.Globals.globalEnv1 of ds { (#,#) ipv ipv1 ->
+                 ipv1 }) -}
+86caa199e7aed435c14a1544076e5fb6
+  globalEnv1 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+          Foreign.R.Internal.SEXP
+            Control.Memory.Region.G 'Foreign.R.Type.Env #)
+  {- Arity: 1,
+     Unfolding: (\ (s :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                 case GHC.Prim.noDuplicate# s of s' { DEFAULT ->
+                 case Language.R.Globals.baseEnv2 of wild { (,,,,,,,,) baseEnvPtr emptyEnvPtr globalEnvPtr nilValuePtr unboundValuePtr missingArgPtr isRInteractive1 signalHandlersPtr1 inputHandlersPtr ->
+                 case globalEnvPtr
+                        `cast`
+                      (GHC.Ptr.Ptr
+                         <Foreign.R.Internal.SEXP
+                            GHC.Prim.RealWorld 'Foreign.R.Type.Env, GHC.Ptr.Ptr
+                                                                      (Language.R.HExp.HExp
+                                                                         GHC.Prim.RealWorld
+                                                                         'Foreign.R.Type.Env)>)_R of wild1 { GHC.Ptr.Ptr a1 ->
+                 case GHC.Prim.readAddrOffAddr#
+                        @ GHC.Prim.RealWorld
+                        a1
+                        0#
+                        s' of ds2 { (#,#) ipv ipv1 ->
+                 (# ipv,
+                    GHC.Ptr.Ptr
+                      @ (Language.R.HExp.HExp GHC.Prim.RealWorld 'Foreign.R.Type.Env)
+                      ipv1 #)
+                   `cast`
+                 ((#,#)
+                    <'GHC.Types.VoidRep>_R
+                    <'GHC.Types.PtrRepLifted>_R
+                    <GHC.Prim.State# GHC.Prim.RealWorld>_R
+                    (Sym (Foreign.R.Internal.N:SEXP[0]
+                              <GHC.Prim.RealWorld>_P <'Foreign.R.Type.Env>_P)))_R } } } }) -}
+49d9f3c2e8da4d61b2c8dd10142c9bfb
+  inputHandlers :: GHC.Ptr.Ptr Foreign.R.EventLoop.InputHandler
+  {- Unfolding: (case GHC.Magic.runRW#
+                        @ 'GHC.Types.PtrRepLifted
+                        @ (GHC.Ptr.Ptr Foreign.R.EventLoop.InputHandler)
+                        Language.R.Globals.inputHandlers1 of ds { (#,#) ipv ipv1 ->
+                 ipv1 }) -}
+84e8d30c66d0a84db9ced9ba26b9645c
+  inputHandlers1 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+          GHC.Ptr.Ptr Foreign.R.EventLoop.InputHandler #)
+  {- Arity: 1,
+     Unfolding: (\ (s :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                 case GHC.Prim.noDuplicate# s of s' { DEFAULT ->
+                 case Language.R.Globals.baseEnv2 of wild { (,,,,,,,,) baseEnvPtr emptyEnvPtr globalEnvPtr nilValuePtr unboundValuePtr missingArgPtr isRInteractive1 signalHandlersPtr1 inputHandlersPtr ->
+                 case inputHandlersPtr of wild1 { GHC.Ptr.Ptr a1 ->
+                 case GHC.Prim.readAddrOffAddr#
+                        @ GHC.Prim.RealWorld
+                        a1
+                        0#
+                        s' of ds2 { (#,#) ipv ipv1 ->
+                 (# ipv,
+                    GHC.Ptr.Ptr @ Foreign.R.EventLoop.InputHandler ipv1 #) } } } }) -}
+164d73d5be8c7ad7d8c45204a5146457
+  isRInteractive :: GHC.Ptr.Ptr Foreign.C.Types.CInt
+  {- Unfolding: (case Language.R.Globals.baseEnv2 of wild { (,,,,,,,,) baseEnvPtr emptyEnvPtr globalEnvPtr nilValuePtr unboundValuePtr missingArgPtr isRInteractive1 signalHandlersPtr1 inputHandlersPtr ->
+                 isRInteractive1 }) -}
+015692a97ec624c07a28a832e1a89fe2
+  missingArg ::
+    Foreign.R.Internal.SEXP
+      Control.Memory.Region.G 'Foreign.R.Type.Symbol
+  {- Unfolding: (case GHC.Magic.runRW#
+                        @ 'GHC.Types.PtrRepLifted
+                        @ (Foreign.R.Internal.SEXP
+                             Control.Memory.Region.G 'Foreign.R.Type.Symbol)
+                        Language.R.Globals.missingArg1 of ds { (#,#) ipv ipv1 ->
+                 ipv1 }) -}
+2f668413083dc085e571523621ea681f
+  missingArg1 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+          Foreign.R.Internal.SEXP
+            Control.Memory.Region.G 'Foreign.R.Type.Symbol #)
+  {- Arity: 1,
+     Unfolding: (\ (s :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                 case GHC.Prim.noDuplicate# s of s' { DEFAULT ->
+                 case Language.R.Globals.baseEnv2 of wild { (,,,,,,,,) baseEnvPtr emptyEnvPtr globalEnvPtr nilValuePtr unboundValuePtr missingArgPtr isRInteractive1 signalHandlersPtr1 inputHandlersPtr ->
+                 case missingArgPtr
+                        `cast`
+                      (GHC.Ptr.Ptr
+                         <Foreign.R.Internal.SEXP
+                            GHC.Prim.RealWorld 'Foreign.R.Type.Symbol, GHC.Ptr.Ptr
+                                                                         (Language.R.HExp.HExp
+                                                                            GHC.Prim.RealWorld
+                                                                            'Foreign.R.Type.Symbol)>)_R of wild1 { GHC.Ptr.Ptr a1 ->
+                 case GHC.Prim.readAddrOffAddr#
+                        @ GHC.Prim.RealWorld
+                        a1
+                        0#
+                        s' of ds2 { (#,#) ipv ipv1 ->
+                 (# ipv,
+                    GHC.Ptr.Ptr
+                      @ (Language.R.HExp.HExp GHC.Prim.RealWorld 'Foreign.R.Type.Symbol)
+                      ipv1 #)
+                   `cast`
+                 ((#,#)
+                    <'GHC.Types.VoidRep>_R
+                    <'GHC.Types.PtrRepLifted>_R
+                    <GHC.Prim.State# GHC.Prim.RealWorld>_R
+                    (Sym (Foreign.R.Internal.N:SEXP[0]
+                              <GHC.Prim.RealWorld>_P <'Foreign.R.Type.Symbol>_P)))_R } } } }) -}
+e96e7a0452e11fb5aa455cb6e7eb4b14
+  nilValue ::
+    Foreign.R.Internal.SEXP Control.Memory.Region.G 'Foreign.R.Type.Nil
+  {- Unfolding: (case GHC.Magic.runRW#
+                        @ 'GHC.Types.PtrRepLifted
+                        @ (Foreign.R.Internal.SEXP
+                             Control.Memory.Region.G 'Foreign.R.Type.Nil)
+                        Language.R.Globals.nilValue1 of ds { (#,#) ipv ipv1 ->
+                 ipv1 }) -}
+bedc3f4dce3d593c8d9e7e57b1b7d36d
+  nilValue1 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+          Foreign.R.Internal.SEXP
+            Control.Memory.Region.G 'Foreign.R.Type.Nil #)
+  {- Arity: 1,
+     Unfolding: (\ (s :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                 case GHC.Prim.noDuplicate# s of s' { DEFAULT ->
+                 case Language.R.Globals.baseEnv2 of wild { (,,,,,,,,) baseEnvPtr emptyEnvPtr globalEnvPtr nilValuePtr unboundValuePtr missingArgPtr isRInteractive1 signalHandlersPtr1 inputHandlersPtr ->
+                 case nilValuePtr
+                        `cast`
+                      (GHC.Ptr.Ptr
+                         <Foreign.R.Internal.SEXP
+                            GHC.Prim.RealWorld 'Foreign.R.Type.Nil, GHC.Ptr.Ptr
+                                                                      (Language.R.HExp.HExp
+                                                                         GHC.Prim.RealWorld
+                                                                         'Foreign.R.Type.Nil)>)_R of wild1 { GHC.Ptr.Ptr a1 ->
+                 case GHC.Prim.readAddrOffAddr#
+                        @ GHC.Prim.RealWorld
+                        a1
+                        0#
+                        s' of ds2 { (#,#) ipv ipv1 ->
+                 (# ipv,
+                    GHC.Ptr.Ptr
+                      @ (Language.R.HExp.HExp GHC.Prim.RealWorld 'Foreign.R.Type.Nil)
+                      ipv1 #)
+                   `cast`
+                 ((#,#)
+                    <'GHC.Types.VoidRep>_R
+                    <'GHC.Types.PtrRepLifted>_R
+                    <GHC.Prim.State# GHC.Prim.RealWorld>_R
+                    (Sym (Foreign.R.Internal.N:SEXP[0]
+                              <GHC.Prim.RealWorld>_P <'Foreign.R.Type.Nil>_P)))_R } } } }) -}
+493e9d6d1541d118fa3467f049729c12
+  pokeRVariables :: Language.R.Globals.RVariables -> GHC.Types.IO ()
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,U><S,U>,
+     Unfolding: InlineRule (0, True, True)
+                Language.R.Globals.pokeRVariables1
+                  `cast`
+                (<Language.R.Globals.RVariables>_R
+                 ->_R Sym (GHC.Types.N:IO[0] <()>_R)) -}
+184d93b532f369b9924655a729d66b8e
+  pokeRVariables1 ::
+    Language.R.Globals.RVariables
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,U><S,U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (eta2 :: Language.R.Globals.RVariables)
+                   (s :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                 case GHC.Prim.makeStablePtr#
+                        @ Language.R.Globals.RVariables
+                        eta2
+                        s of ds { (#,#) ipv ipv1 ->
+                 case GHC.Prim.writeStablePtrOffAddr#
+                        @ (GHC.Ptr.Ptr
+                             (Foreign.R.Internal.SEXP
+                                Control.Memory.Region.G 'Foreign.R.Type.Env),
+                           GHC.Ptr.Ptr
+                             (Foreign.R.Internal.SEXP
+                                Control.Memory.Region.G 'Foreign.R.Type.Env),
+                           GHC.Ptr.Ptr
+                             (Foreign.R.Internal.SEXP
+                                Control.Memory.Region.G 'Foreign.R.Type.Env),
+                           GHC.Ptr.Ptr
+                             (Foreign.R.Internal.SEXP
+                                Control.Memory.Region.G 'Foreign.R.Type.Nil),
+                           GHC.Ptr.Ptr
+                             (Foreign.R.Internal.SEXP
+                                Control.Memory.Region.G 'Foreign.R.Type.Symbol),
+                           GHC.Ptr.Ptr
+                             (Foreign.R.Internal.SEXP
+                                Control.Memory.Region.G 'Foreign.R.Type.Symbol),
+                           GHC.Ptr.Ptr Foreign.C.Types.CInt, GHC.Ptr.Ptr Foreign.C.Types.CInt,
+                           GHC.Ptr.Ptr (GHC.Ptr.Ptr Foreign.R.EventLoop.InputHandler))
+                        @ GHC.Prim.RealWorld
+                        __label "rVariables" (data)
+                        0#
+                        ipv1
+                        ipv of s2 { DEFAULT ->
+                 (# s2, GHC.Tuple.() #) } }) -}
+e3e5185ea02970bd3fae4bab5549d88d
+  signalHandlersPtr :: GHC.Ptr.Ptr Foreign.C.Types.CInt
+  {- Unfolding: (case Language.R.Globals.baseEnv2 of wild { (,,,,,,,,) baseEnvPtr emptyEnvPtr globalEnvPtr nilValuePtr unboundValuePtr missingArgPtr isRInteractive1 signalHandlersPtr1 inputHandlersPtr ->
+                 signalHandlersPtr1 }) -}
+50eb94fc6a9d975f9fa275aa3895f3aa
+  unboundValue ::
+    Foreign.R.Internal.SEXP
+      Control.Memory.Region.G 'Foreign.R.Type.Symbol
+  {- Unfolding: (case GHC.Magic.runRW#
+                        @ 'GHC.Types.PtrRepLifted
+                        @ (Foreign.R.Internal.SEXP
+                             Control.Memory.Region.G 'Foreign.R.Type.Symbol)
+                        Language.R.Globals.unboundValue1 of ds { (#,#) ipv ipv1 ->
+                 ipv1 }) -}
+7c297e2cac2f69c922710e0c4abe6bbb
+  unboundValue1 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+          Foreign.R.Internal.SEXP
+            Control.Memory.Region.G 'Foreign.R.Type.Symbol #)
+  {- Arity: 1,
+     Unfolding: (\ (s :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                 case GHC.Prim.noDuplicate# s of s' { DEFAULT ->
+                 case Language.R.Globals.baseEnv2 of wild { (,,,,,,,,) baseEnvPtr emptyEnvPtr globalEnvPtr nilValuePtr unboundValuePtr missingArgPtr isRInteractive1 signalHandlersPtr1 inputHandlersPtr ->
+                 case unboundValuePtr
+                        `cast`
+                      (GHC.Ptr.Ptr
+                         <Foreign.R.Internal.SEXP
+                            GHC.Prim.RealWorld 'Foreign.R.Type.Symbol, GHC.Ptr.Ptr
+                                                                         (Language.R.HExp.HExp
+                                                                            GHC.Prim.RealWorld
+                                                                            'Foreign.R.Type.Symbol)>)_R of wild1 { GHC.Ptr.Ptr a1 ->
+                 case GHC.Prim.readAddrOffAddr#
+                        @ GHC.Prim.RealWorld
+                        a1
+                        0#
+                        s' of ds2 { (#,#) ipv ipv1 ->
+                 (# ipv,
+                    GHC.Ptr.Ptr
+                      @ (Language.R.HExp.HExp GHC.Prim.RealWorld 'Foreign.R.Type.Symbol)
+                      ipv1 #)
+                   `cast`
+                 ((#,#)
+                    <'GHC.Types.VoidRep>_R
+                    <'GHC.Types.PtrRepLifted>_R
+                    <GHC.Prim.State# GHC.Prim.RealWorld>_R
+                    (Sym (Foreign.R.Internal.N:SEXP[0]
+                              <GHC.Prim.RealWorld>_P <'Foreign.R.Type.Symbol>_P)))_R } } } }) -}
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: none
+require own pkg trusted: False
+

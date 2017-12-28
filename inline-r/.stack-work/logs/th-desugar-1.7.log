@@ -1,0 +1,13 @@
+Configuring th-desugar-1.7...
+Preprocessing library for th-desugar-1.7..
+Building library for th-desugar-1.7..
+[1 of 8] Compiling Language.Haskell.TH.Desugar.Util ( Language/Haskell/TH/Desugar/Util.hs, .stack-work/dist/x86_64-linux/Cabal-2.0.1.0/build/Language/Haskell/TH/Desugar/Util.o )
+[2 of 8] Compiling Language.Haskell.TH.Desugar.Reify ( Language/Haskell/TH/Desugar/Reify.hs, .stack-work/dist/x86_64-linux/Cabal-2.0.1.0/build/Language/Haskell/TH/Desugar/Reify.o )
+[3 of 8] Compiling Language.Haskell.TH.Desugar.Core ( Language/Haskell/TH/Desugar/Core.hs, .stack-work/dist/x86_64-linux/Cabal-2.0.1.0/build/Language/Haskell/TH/Desugar/Core.o )
+[4 of 8] Compiling Language.Haskell.TH.Desugar.Sweeten ( Language/Haskell/TH/Desugar/Sweeten.hs, .stack-work/dist/x86_64-linux/Cabal-2.0.1.0/build/Language/Haskell/TH/Desugar/Sweeten.o )
+[5 of 8] Compiling Language.Haskell.TH.Desugar.Match ( Language/Haskell/TH/Desugar/Match.hs, .stack-work/dist/x86_64-linux/Cabal-2.0.1.0/build/Language/Haskell/TH/Desugar/Match.o )
+[6 of 8] Compiling Language.Haskell.TH.Desugar.Expand ( Language/Haskell/TH/Desugar/Expand.hs, .stack-work/dist/x86_64-linux/Cabal-2.0.1.0/build/Language/Haskell/TH/Desugar/Expand.o )
+[7 of 8] Compiling Language.Haskell.TH.Desugar ( Language/Haskell/TH/Desugar.hs, .stack-work/dist/x86_64-linux/Cabal-2.0.1.0/build/Language/Haskell/TH/Desugar.o )
+[8 of 8] Compiling Language.Haskell.TH.Desugar.Lift ( Language/Haskell/TH/Desugar/Lift.hs, .stack-work/dist/x86_64-linux/Cabal-2.0.1.0/build/Language/Haskell/TH/Desugar/Lift.o )
+Installing library in /datascience/bin/stack/snapshots/x86_64-linux/lts-10.1/8.2.2/lib/x86_64-linux-ghc-8.2.2/th-desugar-1.7-BEeP7YfdbuBDD8SbPj30im
+Registering library for th-desugar-1.7..

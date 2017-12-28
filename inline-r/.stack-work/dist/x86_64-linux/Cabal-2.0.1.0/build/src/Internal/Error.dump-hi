@@ -1,0 +1,509 @@
+
+==================== FINAL INTERFACE ====================
+2017-12-28 08:49:01.119439 UTC
+
+interface inline-r-0.9.0.2-CmRL2Hikuao7dNZScoizZz:Internal.Error 8022
+  interface hash: 8d443af465231ecdb5a1a4fed11cc4ea
+  ABI hash: 740162e156c3d9ec6fcb98a35435f6ce
+  export-list hash: 13dcfd343f68bd642398afc1dc7f61a0
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: a56f70981cb9f7e743ec2e6213b950b6
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Internal.Error.failure
+  Internal.Error.impossible
+  Internal.Error.unimplemented
+  Internal.Error.violation
+module dependencies:
+package dependencies: base-4.10.1.0* ghc-prim-0.5.1.1
+                      integer-gmp-1.0.1.0
+orphans: base-4.10.1.0:GHC.Float base-4.10.1.0:GHC.Base
+family instance modules: base-4.10.1.0:Control.Applicative
+                         base-4.10.1.0:Data.Either base-4.10.1.0:Data.Functor.Const
+                         base-4.10.1.0:Data.Functor.Identity base-4.10.1.0:Data.Monoid
+                         base-4.10.1.0:Data.Type.Equality base-4.10.1.0:GHC.Generics
+                         base-4.10.1.0:GHC.IO.Exception base-4.10.1.0:GHC.TypeLits
+                         base-4.10.1.0:GHC.TypeNats
+import  -/  base-4.10.1.0:Control.Exception c134ea327d158f2eebf26e12a1d4ad47
+import  -/  base-4.10.1.0:Data.Typeable 3291e9b95e37ffc276f1f4c39c7b8372
+import  -/  base-4.10.1.0:Data.Typeable.Internal b31684019ac02e3213b270a8482ac844
+import  -/  base-4.10.1.0:GHC.Base 782fd99b5e36f3698a26179a49afca64
+import  -/  base-4.10.1.0:GHC.Exception 471142a05c31a6533c10399f8190de35
+import  -/  base-4.10.1.0:GHC.Show 0a8ce2b5e533d1c2cfb7954e6736be45
+import  -/  base-4.10.1.0:Prelude 31945b7d0084063347fc52506d3a4020
+4e242b11b8c919eaab6d700b618165df
+  $fExceptionFailure ::
+    GHC.Exception.Exception Internal.Error.Failure
+  DFunId
+  {- Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ Internal.Error.Failure
+                  Internal.Error.$fExceptionFailure2
+                    `cast`
+                  (Sym (Data.Typeable.Internal.N:Typeable[0]) <*>_N <Internal.Error.Failure>_N)
+                  Internal.Error.$fShowFailure
+                  Internal.Error.$fExceptionFailure_$ctoException
+                  Internal.Error.$fExceptionFailure_$cfromException
+                  Internal.Error.$fExceptionFailure_$cshow -}
+7e84db0e4f240e27f3495750b2eacc51
+  $fExceptionFailure1 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: (":"#) -}
+4e242b11b8c919eaab6d700b618165df
+  $fExceptionFailure2 ::
+    Data.Typeable.Internal.TypeRep Internal.Error.Failure
+  {- Unfolding: (case GHC.Magic.noinline
+                        @ ([GHC.Fingerprint.Type.Fingerprint]
+                           -> GHC.Fingerprint.Type.Fingerprint)
+                        GHC.Fingerprint.fingerprintFingerprints
+                        Internal.Error.$fExceptionFailure3 of dt { GHC.Fingerprint.Type.Fingerprint dt1 dt2 ->
+                 Data.Typeable.Internal.TrTyCon
+                   @ *
+                   @ Internal.Error.Failure
+                   dt1
+                   dt2
+                   Internal.Error.$tcFailure
+                   (GHC.Types.[] @ Data.Typeable.Internal.SomeTypeRep) }) -}
+6b5f7b745629ac6923736d19fceed03f
+  $fExceptionFailure3 :: [GHC.Fingerprint.Type.Fingerprint]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Fingerprint.Type.Fingerprint
+                   Internal.Error.$fExceptionFailure5
+                   Internal.Error.$fExceptionFailure4) -}
+20793367dc84f94182a714a67fa19044
+  $fExceptionFailure4 :: [GHC.Fingerprint.Type.Fingerprint]
+  {- Unfolding: (GHC.Base.map
+                   @ Data.Typeable.Internal.SomeTypeRep
+                   @ GHC.Fingerprint.Type.Fingerprint
+                   Data.Typeable.Internal.someTypeRepFingerprint
+                   (GHC.Types.[] @ Data.Typeable.Internal.SomeTypeRep)) -}
+d61466e9628ce05ed57ec7762736473b
+  $fExceptionFailure5 :: GHC.Fingerprint.Type.Fingerprint
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Fingerprint.Type.Fingerprint
+                   12403447627135623958##
+                   947203288926589795##) -}
+4e242b11b8c919eaab6d700b618165df
+  $fExceptionFailure_$cfromException ::
+    GHC.Exception.SomeException
+    -> GHC.Base.Maybe Internal.Error.Failure
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: (\ (ds :: GHC.Exception.SomeException) ->
+                 case ds of wild { GHC.Exception.SomeException e1 $dException1 e2 ->
+                 case Data.Typeable.Internal.eqTypeRep
+                        @ *
+                        @ *
+                        @ e1
+                        @ Internal.Error.Failure
+                        (GHC.Exception.$p1Exception @ e1 $dException1)
+                          `cast`
+                        (Data.Typeable.Internal.N:Typeable[0] <*>_N <e1>_N)
+                        Internal.Error.$fExceptionFailure2 of wild1 {
+                   GHC.Base.Nothing -> GHC.Base.Nothing @ Internal.Error.Failure
+                   GHC.Base.Just ds1
+                   -> case ds1 of wild2 { Data.Type.Equality.HRefl cobox cobox1 ->
+                      (GHC.Base.Just @ e1 e2)
+                        `cast`
+                      (GHC.Base.Maybe (Sub (Sym cobox1)))_R } } }) -}
+4e242b11b8c919eaab6d700b618165df
+  $fExceptionFailure_$cshow ::
+    Internal.Error.Failure -> GHC.Base.String
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(SL),1*U(1*U,U)>,
+     Inline: [0],
+     Unfolding: InlineRule (1, True, False)
+                (\ (w :: Internal.Error.Failure) ->
+                 case w of ww { Internal.Error.Failure ww1 ww2 ->
+                 Internal.Error.$w$cshow ww1 ww2 }) -}
+4e242b11b8c919eaab6d700b618165df
+  $fExceptionFailure_$ctoException ::
+    Internal.Error.Failure -> GHC.Exception.SomeException
+  {- Arity: 1 -}
+d1a8b1af48b4a1b3f58220f41fc3a140
+  $fExceptionViolation ::
+    GHC.Exception.Exception Internal.Error.Violation
+  DFunId
+  {- Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ Internal.Error.Violation
+                  Internal.Error.$fExceptionViolation3
+                    `cast`
+                  (Sym (Data.Typeable.Internal.N:Typeable[0]) <*>_N <Internal.Error.Violation>_N)
+                  Internal.Error.$fShowViolation
+                  Internal.Error.$fExceptionViolation_$ctoException
+                  Internal.Error.$fExceptionViolation_$cfromException
+                  Internal.Error.$fExceptionViolation_$cshow -}
+dec3d26b9d875fd9f31ea760f9d21b18
+  $fExceptionViolation1 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: (", please report: "#) -}
+7cc823badbc6e8d6e64a329c648e5944
+  $fExceptionViolation2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Bug in "#) -}
+d1a8b1af48b4a1b3f58220f41fc3a140
+  $fExceptionViolation3 ::
+    Data.Typeable.Internal.TypeRep Internal.Error.Violation
+  {- Unfolding: (case GHC.Magic.noinline
+                        @ ([GHC.Fingerprint.Type.Fingerprint]
+                           -> GHC.Fingerprint.Type.Fingerprint)
+                        GHC.Fingerprint.fingerprintFingerprints
+                        Internal.Error.$fExceptionViolation4 of dt { GHC.Fingerprint.Type.Fingerprint dt1 dt2 ->
+                 Data.Typeable.Internal.TrTyCon
+                   @ *
+                   @ Internal.Error.Violation
+                   dt1
+                   dt2
+                   Internal.Error.$tcViolation
+                   (GHC.Types.[] @ Data.Typeable.Internal.SomeTypeRep) }) -}
+b455b41a03c61be0739c8a36e47d3806
+  $fExceptionViolation4 :: [GHC.Fingerprint.Type.Fingerprint]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Fingerprint.Type.Fingerprint
+                   Internal.Error.$fExceptionViolation5
+                   Internal.Error.$fExceptionFailure4) -}
+077e2b8fc22adf40cda37f007132cdd6
+  $fExceptionViolation5 :: GHC.Fingerprint.Type.Fingerprint
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Fingerprint.Type.Fingerprint
+                   13993597574016379794##
+                   11367255088466424991##) -}
+d1a8b1af48b4a1b3f58220f41fc3a140
+  $fExceptionViolation_$cfromException ::
+    GHC.Exception.SomeException
+    -> GHC.Base.Maybe Internal.Error.Violation
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: (\ (ds :: GHC.Exception.SomeException) ->
+                 case ds of wild { GHC.Exception.SomeException e1 $dException1 e2 ->
+                 case Data.Typeable.Internal.eqTypeRep
+                        @ *
+                        @ *
+                        @ e1
+                        @ Internal.Error.Violation
+                        (GHC.Exception.$p1Exception @ e1 $dException1)
+                          `cast`
+                        (Data.Typeable.Internal.N:Typeable[0] <*>_N <e1>_N)
+                        Internal.Error.$fExceptionViolation3 of wild1 {
+                   GHC.Base.Nothing -> GHC.Base.Nothing @ Internal.Error.Violation
+                   GHC.Base.Just ds1
+                   -> case ds1 of wild2 { Data.Type.Equality.HRefl cobox cobox1 ->
+                      (GHC.Base.Just @ e1 e2)
+                        `cast`
+                      (GHC.Base.Maybe (Sub (Sym cobox1)))_R } } }) -}
+d1a8b1af48b4a1b3f58220f41fc3a140
+  $fExceptionViolation_$cshow ::
+    Internal.Error.Violation -> GHC.Base.String
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U(1*U,U)>, Inline: [0],
+     Unfolding: InlineRule (1, True, False)
+                (\ (w :: Internal.Error.Violation) ->
+                 case w of ww { Internal.Error.Violation ww1 ww2 ->
+                 Internal.Error.$w$cshow1 ww1 ww2 }) -}
+d1a8b1af48b4a1b3f58220f41fc3a140
+  $fExceptionViolation_$ctoException ::
+    Internal.Error.Violation -> GHC.Exception.SomeException
+  {- Arity: 1 -}
+4e242b11b8c919eaab6d700b618165df
+  $fShowFailure :: GHC.Show.Show Internal.Error.Failure
+  DFunId
+  {- HasNoCafRefs, Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ Internal.Error.Failure
+                  Internal.Error.$fShowFailure_$cshowsPrec
+                  Internal.Error.$fExceptionFailure_$cshow
+                  Internal.Error.$fShowFailure_$cshowList -}
+4e242b11b8c919eaab6d700b618165df
+  $fShowFailure1 ::
+    Internal.Error.Failure -> GHC.Base.String -> [GHC.Types.Char]
+  {- Arity: 2, HasNoCafRefs, Strictness: <S(SL),1*U(1*U,1*U)><L,1*U>,
+     Inline: [0],
+     Unfolding: InlineRule (2, True, False)
+                (\ (w :: Internal.Error.Failure) (w1 :: GHC.Base.String) ->
+                 case w of ww { Internal.Error.Failure ww1 ww2 ->
+                 Internal.Error.$wlvl ww1 ww2 w1 }) -}
+4e242b11b8c919eaab6d700b618165df
+  $fShowFailure_$cshowList ::
+    [Internal.Error.Failure] -> GHC.Show.ShowS
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><L,U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (ls :: [Internal.Error.Failure]) (s :: GHC.Base.String) ->
+                 GHC.Show.showList__
+                   @ Internal.Error.Failure
+                   Internal.Error.$fShowFailure1
+                   ls
+                   s) -}
+4e242b11b8c919eaab6d700b618165df
+  $fShowFailure_$cshowsPrec ::
+    GHC.Types.Int -> Internal.Error.Failure -> GHC.Show.ShowS
+  {- Arity: 3, HasNoCafRefs,
+     Strictness: <L,A><S(SL),1*U(1*U,1*U)><L,1*U>, Inline: [0],
+     Unfolding: InlineRule (3, True, False)
+                (\ (w :: GHC.Types.Int)
+                   (w1 :: Internal.Error.Failure)
+                   (w2 :: GHC.Base.String) ->
+                 case w1 of ww { Internal.Error.Failure ww1 ww2 ->
+                 Internal.Error.$w$cshowsPrec ww1 ww2 w2 }) -}
+d1a8b1af48b4a1b3f58220f41fc3a140
+  $fShowViolation :: GHC.Show.Show Internal.Error.Violation
+  DFunId
+  {- HasNoCafRefs, Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ Internal.Error.Violation
+                  Internal.Error.$fShowViolation_$cshowsPrec
+                  Internal.Error.$fExceptionViolation_$cshow
+                  Internal.Error.$fShowViolation_$cshowList -}
+d1a8b1af48b4a1b3f58220f41fc3a140
+  $fShowViolation1 ::
+    Internal.Error.Violation -> GHC.Base.String -> [GHC.Types.Char]
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U(1*U,1*U)><L,1*U>,
+     Inline: [0],
+     Unfolding: InlineRule (2, True, False)
+                (\ (w :: Internal.Error.Violation) (w1 :: GHC.Base.String) ->
+                 case w of ww { Internal.Error.Violation ww1 ww2 ->
+                 Internal.Error.$wlvl1 ww1 ww2 w1 }) -}
+d1a8b1af48b4a1b3f58220f41fc3a140
+  $fShowViolation_$cshowList ::
+    [Internal.Error.Violation] -> GHC.Show.ShowS
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><L,U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (ls :: [Internal.Error.Violation]) (s :: GHC.Base.String) ->
+                 GHC.Show.showList__
+                   @ Internal.Error.Violation
+                   Internal.Error.$fShowViolation1
+                   ls
+                   s) -}
+d1a8b1af48b4a1b3f58220f41fc3a140
+  $fShowViolation_$cshowsPrec ::
+    GHC.Types.Int -> Internal.Error.Violation -> GHC.Show.ShowS
+  {- Arity: 3, HasNoCafRefs,
+     Strictness: <L,A><S,1*U(1*U,1*U)><L,1*U>, Inline: [0],
+     Unfolding: InlineRule (3, True, False)
+                (\ (w :: GHC.Types.Int)
+                   (w1 :: Internal.Error.Violation)
+                   (w2 :: GHC.Base.String) ->
+                 case w1 of ww { Internal.Error.Violation ww1 ww2 ->
+                 Internal.Error.$w$cshowsPrec1 ww1 ww2 w2 }) -}
+4ed0b0c5fd4c4b1165ae57971f8394c8
+  $tc'Failure :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   15523004956380345776##
+                   3968342607022936738##
+                   Internal.Error.$trModule
+                   Internal.Error.$tc'Failure2
+                   0#
+                   Internal.Error.$tc'Failure1) -}
+460dfb3124bf2589e8545970748f037f
+  $tc'Failure1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+4f98c0622a0ad6f97cbb65f014db95ba
+  $tc'Failure2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Internal.Error.$tc'Failure3) -}
+95d25160fe3b97e3d4d4aada44258f88
+  $tc'Failure3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'Failure"#) -}
+04128910ab1e07fec8993599fce5a681
+  $tc'Violation :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   5874585981766279251##
+                   16054855794660045983##
+                   Internal.Error.$trModule
+                   Internal.Error.$tc'Violation2
+                   0#
+                   Internal.Error.$tc'Violation1) -}
+3fd150b2bfd87075fc0da534bb9c998a
+  $tc'Violation1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+1a552fa4dbb080a65afeae02822fa4c1
+  $tc'Violation2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Internal.Error.$tc'Violation3) -}
+d4f5af3373c72de30cebb061ee676731
+  $tc'Violation3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'Violation"#) -}
+ffc51e28bde3786b4c9b1ac9446b7d16
+  $tcFailure :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   12403447627135623958##
+                   947203288926589795##
+                   Internal.Error.$trModule
+                   Internal.Error.$tcFailure1
+                   0#
+                   GHC.Types.krep$*) -}
+06b1f83cbc7cf65446a6d3cf18ed29a8
+  $tcFailure1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Internal.Error.$tcFailure2) -}
+e05063a4999637dd9fa43074f9757f4b
+  $tcFailure2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Failure"#) -}
+25e70c6b7424795e664224b354520bfa
+  $tcViolation :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   13993597574016379794##
+                   11367255088466424991##
+                   Internal.Error.$trModule
+                   Internal.Error.$tcViolation1
+                   0#
+                   GHC.Types.krep$*) -}
+109fc521a50549a0f084e087a2557b4b
+  $tcViolation1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Internal.Error.$tcViolation2) -}
+5ec7483458cf4b516c49714fe7df7509
+  $tcViolation2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Violation"#) -}
+ba42a0f17b280042c5c6cd7ada398706
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module
+                   Internal.Error.$trModule3
+                   Internal.Error.$trModule1) -}
+279e9a49ab7f9d166f8e9165ff35e50f
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Internal.Error.$trModule2) -}
+149eeaae6bd21a0e4699bce4d1d0f433
+  $trModule2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Internal.Error"#) -}
+a60cfd9e1fc42211932a01b3007889da
+  $trModule3 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Internal.Error.$trModule4) -}
+afe65845bc617c69500aa61c77cd7977
+  $trModule4 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("inline-r-0.9.0.2-CmRL2Hikuao7dNZScoizZz"#) -}
+075113080136ce90140742431a807d32
+  $w$cshow :: GHC.Base.String -> GHC.Base.String -> GHC.Base.String
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><L,U>, Inline: [0],
+     Unfolding: (\ (ww :: GHC.Base.String) (ww1 :: GHC.Base.String) ->
+                 GHC.Base.++
+                   @ GHC.Types.Char
+                   ww
+                   (GHC.CString.unpackAppendCString#
+                      Internal.Error.$fExceptionFailure1
+                      ww1)) -}
+c10eb9a8ae77368ded7e827d40a43ca9
+  $w$cshow1 :: GHC.Base.String -> GHC.Base.String -> GHC.Base.String
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,1*U><L,U>, Inline: [0],
+     Unfolding: (\ (ww :: GHC.Base.String) (ww1 :: GHC.Base.String) ->
+                 GHC.CString.unpackAppendCString#
+                   Internal.Error.$fExceptionViolation2
+                   (GHC.Base.++
+                      @ GHC.Types.Char
+                      ww
+                      (GHC.CString.unpackAppendCString#
+                         Internal.Error.$fExceptionViolation1
+                         ww1))) -}
+def2b283f79b526db12418e75c08db43
+  $w$cshowsPrec ::
+    GHC.Base.String
+    -> GHC.Base.String -> GHC.Base.String -> [GHC.Types.Char]
+  {- Arity: 3, HasNoCafRefs, Strictness: <S,1*U><L,1*U><L,1*U>,
+     Inline: [0],
+     Unfolding: (\ (ww :: GHC.Base.String)
+                   (ww1 :: GHC.Base.String)
+                   (w :: GHC.Base.String) ->
+                 GHC.Base.++
+                   @ GHC.Types.Char
+                   ww
+                   (GHC.CString.unpackAppendCString#
+                      Internal.Error.$fExceptionFailure1
+                      (GHC.Base.++ @ GHC.Types.Char ww1 w))) -}
+64273cafe6f9eb0e4cab242d59829f06
+  $w$cshowsPrec1 ::
+    GHC.Base.String
+    -> GHC.Base.String -> GHC.Base.String -> [GHC.Types.Char]
+  {- Arity: 3, HasNoCafRefs, Strictness: <L,1*U><L,1*U><L,1*U>,
+     Inline: [0],
+     Unfolding: (\ (ww :: GHC.Base.String)
+                   (ww1 :: GHC.Base.String)
+                   (w :: GHC.Base.String) ->
+                 GHC.CString.unpackAppendCString#
+                   Internal.Error.$fExceptionViolation2
+                   (GHC.Base.++
+                      @ GHC.Types.Char
+                      ww
+                      (GHC.CString.unpackAppendCString#
+                         Internal.Error.$fExceptionViolation1
+                         (GHC.Base.++ @ GHC.Types.Char ww1 w)))) -}
+31d9c7126af62d50ae7f7cccfea956ea
+  $wlvl ::
+    GHC.Base.String
+    -> GHC.Base.String -> GHC.Base.String -> [GHC.Types.Char]
+  {- Arity: 3, HasNoCafRefs, Strictness: <S,1*U><L,1*U><L,1*U>,
+     Inline: [0],
+     Unfolding: (\ (ww :: GHC.Base.String)
+                   (ww1 :: GHC.Base.String)
+                   (w :: GHC.Base.String) ->
+                 GHC.Base.++
+                   @ GHC.Types.Char
+                   ww
+                   (GHC.CString.unpackAppendCString#
+                      Internal.Error.$fExceptionFailure1
+                      (GHC.Base.++ @ GHC.Types.Char ww1 w))) -}
+76a6127df7dd20095551a0e7bf250c3c
+  $wlvl1 ::
+    GHC.Base.String
+    -> GHC.Base.String -> GHC.Base.String -> [GHC.Types.Char]
+  {- Arity: 3, HasNoCafRefs, Strictness: <L,1*U><L,1*U><L,1*U>,
+     Inline: [0],
+     Unfolding: (\ (ww :: GHC.Base.String)
+                   (ww1 :: GHC.Base.String)
+                   (w :: GHC.Base.String) ->
+                 GHC.CString.unpackAppendCString#
+                   Internal.Error.$fExceptionViolation2
+                   (GHC.Base.++
+                      @ GHC.Types.Char
+                      ww
+                      (GHC.CString.unpackAppendCString#
+                         Internal.Error.$fExceptionViolation1
+                         (GHC.Base.++ @ GHC.Types.Char ww1 w)))) -}
+4e242b11b8c919eaab6d700b618165df
+  data Failure = Failure GHC.Base.String GHC.Base.String
+d1a8b1af48b4a1b3f58220f41fc3a140
+  data Violation = Violation GHC.Base.String GHC.Base.String
+1195b0f2e62fb52c3773907c4a230d1e
+  failure :: GHC.Base.String -> GHC.Base.String -> a
+  {- Arity: 2, Strictness: <B,U><B,U>x,
+     Unfolding: InlineRule (2, True, True)
+                (\ @ a (f :: GHC.Base.String) (msg :: GHC.Base.String) ->
+                 Internal.Error.failure1 @ a msg f) -}
+ff6d7df2d99a33cd56bf1be1e37992fd
+  failure1 :: GHC.Base.String -> GHC.Base.String -> a
+  {- Arity: 2, Strictness: <B,U><B,U>x -}
+a4c52844231a41b3412f8e2cbb31b1ac
+  impossible :: GHC.Base.String -> a
+  {- Arity: 1, Strictness: <B,U>x -}
+8b7f071ba26c09d6b472c8188a7279bf
+  unimplemented :: GHC.Base.String -> a
+  {- Arity: 1, Strictness: <B,U>x -}
+b8d3d6683e7c01fa74a453c2d484fb85
+  violation :: GHC.Base.String -> GHC.Base.String -> a
+  {- Arity: 2, Strictness: <B,U><B,U>x,
+     Unfolding: InlineRule (2, True, True)
+                (\ @ a (f :: GHC.Base.String) (msg :: GHC.Base.String) ->
+                 Internal.Error.violation1 @ a msg f) -}
+f8d085d798c68bd8fa4bb1c59db08195
+  violation1 :: GHC.Base.String -> GHC.Base.String -> a
+  {- Arity: 2, Strictness: <B,U><B,U>x -}
+instance [safe] GHC.Exception.Exception [Internal.Error.Failure]
+  = Internal.Error.$fExceptionFailure
+instance [safe] GHC.Exception.Exception [Internal.Error.Violation]
+  = Internal.Error.$fExceptionViolation
+instance [safe] GHC.Show.Show [Internal.Error.Failure]
+  = Internal.Error.$fShowFailure
+instance [safe] GHC.Show.Show [Internal.Error.Violation]
+  = Internal.Error.$fShowViolation
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: safe
+require own pkg trusted: False
+

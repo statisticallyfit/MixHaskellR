@@ -1,0 +1,694 @@
+
+==================== FINAL INTERFACE ====================
+2017-12-28 08:49:55.812291 UTC
+
+interface inline-r-0.9.0.2-CmRL2Hikuao7dNZScoizZz:Language.R.QQ 8022
+  interface hash: 6f59ab5d38d9706c9adfdcb009289ea1
+  ABI hash: 1885758794873fa7a90ccf5c301146fd
+  export-list hash: cd05ca24125485d9ba6a737b20f78c8d
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: 0332a617cd141b1ea5627f5429cc2dd4
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Language.R.QQ.r
+  Language.R.QQ.rsafe
+module dependencies: Control.Memory.Region Control.Monad.R.Class
+                     Control.Monad.R.Internal Data.Vector.SEXP Data.Vector.SEXP.Base
+                     Data.Vector.SEXP.Mutable Data.Vector.SEXP.Mutable.Internal
+                     Foreign.R Foreign.R.Constraints Foreign.R.Embedded Foreign.R.Error
+                     Foreign.R.EventLoop Foreign.R.Internal Foreign.R.Parse
+                     Foreign.R.Type Internal.Error Language.R Language.R.GC
+                     Language.R.Globals Language.R.HExp Language.R.Instance
+                     Language.R.Internal [boot] Language.R.Internal.FunWrappers
+                     Language.R.Internal.FunWrappers.TH Language.R.Literal
+package dependencies: array-0.5.2.0 base-4.10.1.0 binary-0.8.5.1
+                      bytestring-0.10.8.2 containers-0.5.10.2 data-default-class-0.1.2.0
+                      deepseq-1.4.3.0 exceptions-0.8.3 ghc-boot-th-8.2.2 ghc-prim-0.5.1.1
+                      integer-gmp-1.0.1.0 mtl-2.2.1 pretty-1.1.3.3 primitive-0.6.2.0
+                      process-1.6.1.0 reflection-2.1.2 safe-0.3.15 setenv-0.1.1.3
+                      singletons-2.3.1 stm-2.4.4.1 syb-0.7 template-haskell-2.12.0.0
+                      text-1.2.2.2 th-desugar-1.7 th-expand-syns-0.4.3.0 th-lift-0.7.7
+                      th-lift-instances-0.1.11 th-orphans-0.13.4 th-reify-many-0.1.8
+                      transformers-0.5.2.0 unix-2.7.2.2 vector-0.12.0.1
+orphans: reflection-2.1.2:Data.Reflection
+         stm-2.4.4.1:Control.Monad.STM
+         singletons-2.3.1:Data.Singletons.TypeLits
+         singletons-2.3.1:Data.Singletons.TypeLits.Internal
+         singletons-2.3.1:Data.Singletons.Prelude.Instances
+         singletons-2.3.1:Data.Singletons.Decide
+         th-orphans-0.13.4:Language.Haskell.TH.Instances
+         th-lift-instances-0.1.11:Instances.TH.Lift
+         th-lift-0.7.7:Language.Haskell.TH.Lift text-1.2.2.2:Data.Text.Lazy
+         text-1.2.2.2:Data.Text binary-0.8.5.1:Data.Binary.Generic
+         bytestring-0.10.8.2:Data.ByteString.Builder
+         text-1.2.2.2:Data.Text.Show vector-0.12.0.1:Data.Vector.Unboxed
+         vector-0.12.0.1:Data.Vector.Fusion.Bundle
+         transformers-0.5.2.0:Control.Monad.Trans.Error
+         syb-0.7:Data.Generics.Instances base-4.10.1.0:GHC.Float
+         base-4.10.1.0:GHC.Base
+family instance modules: base-4.10.1.0:Control.Applicative
+                         base-4.10.1.0:Data.Complex base-4.10.1.0:Data.Either
+                         base-4.10.1.0:Data.Functor.Compose base-4.10.1.0:Data.Functor.Const
+                         base-4.10.1.0:Data.Functor.Identity
+                         base-4.10.1.0:Data.Functor.Product base-4.10.1.0:Data.Functor.Sum
+                         base-4.10.1.0:Data.List.NonEmpty base-4.10.1.0:Data.Monoid
+                         base-4.10.1.0:Data.Semigroup base-4.10.1.0:Data.Type.Equality
+                         base-4.10.1.0:Data.Version base-4.10.1.0:Data.Void
+                         base-4.10.1.0:GHC.Exts base-4.10.1.0:GHC.Generics
+                         base-4.10.1.0:GHC.IO.Exception base-4.10.1.0:GHC.TypeLits
+                         base-4.10.1.0:GHC.TypeNats containers-0.5.10.2:Data.IntMap.Internal
+                         containers-0.5.10.2:Data.IntSet.Internal
+                         containers-0.5.10.2:Data.Map.Internal
+                         containers-0.5.10.2:Data.Sequence.Internal
+                         containers-0.5.10.2:Data.Set.Internal containers-0.5.10.2:Data.Tree
+                         ghc-boot-th-8.2.2:GHC.ForeignSrcLang.Type
+                         ghc-boot-th-8.2.2:GHC.LanguageExtensions.Type
+                         inline-r-0.9.0.2-CmRL2Hikuao7dNZScoizZz:Control.Memory.Region
+                         inline-r-0.9.0.2-CmRL2Hikuao7dNZScoizZz:Data.Vector.SEXP
+                         inline-r-0.9.0.2-CmRL2Hikuao7dNZScoizZz:Foreign.R.Type
+                         inline-r-0.9.0.2-CmRL2Hikuao7dNZScoizZz:Language.R.Instance
+                         pretty-1.1.3.3:Text.PrettyPrint.Annotated.HughesPJ
+                         pretty-1.1.3.3:Text.PrettyPrint.HughesPJ
+                         primitive-0.6.2.0:Control.Monad.Primitive
+                         primitive-0.6.2.0:Data.Primitive.Array
+                         singletons-2.3.1:Data.Singletons
+                         singletons-2.3.1:Data.Singletons.Prelude.Bool
+                         singletons-2.3.1:Data.Singletons.Prelude.Eq
+                         singletons-2.3.1:Data.Singletons.Prelude.Instances
+                         singletons-2.3.1:Data.Singletons.Prelude.Num
+                         singletons-2.3.1:Data.Singletons.Prelude.Ord
+                         singletons-2.3.1:Data.Singletons.Syntax
+                         singletons-2.3.1:Data.Singletons.TypeLits
+                         singletons-2.3.1:Data.Singletons.TypeLits.Internal
+                         template-haskell-2.12.0.0:Language.Haskell.TH.Syntax
+                         text-1.2.2.2:Data.Text text-1.2.2.2:Data.Text.Lazy
+                         th-desugar-1.7:Language.Haskell.TH.Desugar.Core
+                         vector-0.12.0.1:Data.Vector vector-0.12.0.1:Data.Vector.Primitive
+                         vector-0.12.0.1:Data.Vector.Storable
+                         vector-0.12.0.1:Data.Vector.Unboxed
+                         vector-0.12.0.1:Data.Vector.Unboxed.Base
+import  -/  base-4.10.1.0:Control.Concurrent 54b4f33006223552c60861a4a302d698
+import  -/  base-4.10.1.0:Control.Concurrent.MVar d59f7bf8c22359a853225b02e3e23e9e
+import  -/  base-4.10.1.0:Control.Exception c134ea327d158f2eebf26e12a1d4ad47
+import  -/  base-4.10.1.0:Control.Monad ebed2e8e7444944e0c1d827c6faf40a4
+import  -/  base-4.10.1.0:Data.Foldable 9ed87455d68e87ff2b5b8725eae9897e
+import  -/  base-4.10.1.0:Data.Functor 2ffda4f936b8f474394d93205750aff3
+import  -/  base-4.10.1.0:Data.List 4ab7fa2a1b87502b23af891a384f0506
+import  -/  base-4.10.1.0:Data.OldList 555420b092ca8cf0a8f9666bc0e07dcf
+import  -/  base-4.10.1.0:Data.Traversable 60ea7c2973e63de7d08d5d0269f96e67
+import  -/  base-4.10.1.0:Foreign 6e1e49cc01b9f846dbcb01cc4a57d323
+import  -/  base-4.10.1.0:Foreign.C.String 77a609cc1f3a7c50c3bbf1134c105acc
+import  -/  base-4.10.1.0:Foreign.Marshal.Alloc e54e11de29230f1b8b6bcaebfff7f8a0
+import  -/  base-4.10.1.0:Foreign.Storable c463817097bdd1b4c7f7c325680a9964
+import  -/  base-4.10.1.0:GHC.Base 782fd99b5e36f3698a26179a49afca64
+import  -/  base-4.10.1.0:GHC.Enum 5a1ba50c23f92f669e01f8955f202337
+import  -/  base-4.10.1.0:GHC.Err 514b3a24b22e9d7d731c2d0d02d10842
+import  -/  base-4.10.1.0:GHC.IO e261d8b68ccf81a359626fa520b57d1d
+import  -/  base-4.10.1.0:GHC.IO.Unsafe 0aa7e5adc396c9f651baef415ce018da
+import  -/  base-4.10.1.0:GHC.List e3060fbeb44ce0038e6b4dedf2dd9cf1
+import  -/  base-4.10.1.0:GHC.MVar b1970e54b4c552d660c9a97d807961dc
+import  -/  base-4.10.1.0:GHC.Num 6e1dc5d36d99a802edb39b92bb1923b8
+import  -/  base-4.10.1.0:GHC.Real 3c62834bc25e762eabc44149c4cc142d
+import  -/  base-4.10.1.0:Prelude 31945b7d0084063347fc52506d3a4020
+import  -/  base-4.10.1.0:System.IO.Unsafe 00b3b8853d06169d9bfd9af46118ba88
+import  -/  containers-0.5.10.2:Data.Set e0f44b836a00cf82340abfec45686444
+import  -/  containers-0.5.10.2:Data.Set.Internal b207250e4d0053f17172bfafbcd5c82f
+import  -/  ghc-prim-0.5.1.1:GHC.Classes 93e2660065dce9329577e83d76d8f0d4
+import  -/  ghc-prim-0.5.1.1:GHC.Types b1fd0716441595db508c1a74387bf394
+import  -/  Control.Memory.Region bd2f465c2e25d1f80c1a2e359d1309ef
+  exports: d60c5e1550fee34b0484ba752c6d17b8
+  V 541302cd07c279e1266bc49e9f25f5fc
+import  -/  Control.Monad.R.Class e5a0c4056d91754aa90b5adf4bc59248
+  exports: ebb323240982ac39e80db1d6fb39a690
+  io dcc175ea7fefcdd9812fba741a117c5c
+import  -/  Data.Vector.SEXP 1ba3b4d0f52c5e1239a58edb94ac6587
+  exports: ba6781c44342a369931119b5db2f7524
+  toList 3476d9bcd1360fdfad479ca1a02d99fb
+  toString 89db6b8b39a587c28a1fdeb77939331d
+import  -/  Foreign.R 51460710da704a1aff942901939ab83a
+  exports: 66604cef250b707139e6d39041287043
+  eval aa65e18845a9616858dbd312dc742a10
+  lcons 2b3e525aa34f16f22748012bcd15823c
+  mkString d21655fa28f708034cde49119514c7f5
+  preserveObject 34e41626d593a0da0620f1015c4639f6
+  protect 9d62708a46a0cadab0ad0a511a77c60d
+  readVector 9c77d4bd312ac1a92f5cfc88da2bc630
+  unprotectPtr c945ccbe83a78a9ea8aadc1074e1106a
+  withProtected ee6067e4d5f6ac7496f0966c08f7bc06
+import  -/  Foreign.R.Error 01dac5f36b0f41d1f5189560b4d35018
+  exports: c511d821dc594cc406fead0ca4018992
+  RError 99f4bddf4f28c2047b27d506c43cd566
+import  -/  Foreign.R.Internal 0950ef2cc999f128080e9690ff115a12
+  SEXP 8e71af79acc64eda5f9cb7291bf461df
+  SomeSEXP d3242a05a97056d0f4278da347cae3e8
+  release 47626d4fe9a76c8454cdf7c4f29723b0
+  unSomeSEXP 281bb9a3641a0911876f51032cac10a5
+  unsafeCoerce fd24c6a04fe85cae12472829ca64771e
+import  -/  Foreign.R.Parse 3175c1082e4a6a2c2f0190a08a8571d9
+  exports: b4935d66b416aef34375b665eb20f691
+  PARSE_OK 4e6bc738ab2b5ec5fa4326fb064e4898
+  parseVector d04c1e6d8e14110db6a54fe32eebc2b3
+import  -/  Foreign.R.Type c66cc062d80b456888eb0e05aa6a4002
+  Char 1eeae3bbb682357f0ba159402f19e108
+  Expr 436bad07c9b16edb50cb6c3f0bb45e34
+import  -/  Internal.Error 740162e156c3d9ec6fcb98a35435f6ce
+  exports: 13dcfd343f68bd642398afc1dc7f61a0
+  unimplemented 8b7f071ba26c09d6b472c8188a7279bf
+import  -/  Language.R e598fe485b33abac7367c6e28d8b9814
+  exports: 6f6368ee8835888ab254eb95ca529a4e
+  eval 35419e25c1010c60ae0e3293fcde72aa
+import  -/  Language.R.GC bd8b69fb86c1cbb08a45dc86d421758c
+  exports: 8f6738e99e5e80c5146d3eb1d3c8b6dc
+  automaticSome c69f705d8f2704013539e55c355712ff
+import  -/  Language.R.Globals 6466af466952ec50029e279d952209f8
+  exports: d382aabb26fa46ceafcdf718d6d966c6
+  globalEnv 455cad03e3b75d0ad52a422efeb42644
+  nilValue 6fd3b3a9ae25de3a8024897c909e667c
+import  -/  Language.R.HExp 65742348049316c593051d25bc8cd9c6
+  exports: c8c11e48e2f3de692b7c0633951e2386
+  Char 580fe987e5b9f944444503249b3ba7ea
+  Closure 88275f05ae0956dc8a72318709121ee4
+  Expr e58e2ffee6e2a2ed0855e8206e05b9fc
+  Lang 194e787388653e6e58af52f98aae478b
+  List 78a926d23c6d60b2ad213d44a3d3c6b6
+  Symbol a2e76fda143312ec2bb3ff827f019621
+  Vector d5ee8726a05c153bd8d37d8319332ac2
+  hexp 4c1fd9e46ec95c8e40058dd387b6e55d
+import  -/  Language.R.Instance 7c21de0bbc964770a1fa7d8ec3cc550d
+  exports: 0ac609f07d5111ef46783c8e10754d9e
+  defaultConfig fdfc12415565a97b2b77145794386dda
+  initialize 0bb585adde0352cbc7c787a47ad470c6
+  runRegion a0fe844b688f6e8a1c70db7a955b9c30
+import  -/  Language.R.Literal ad8f87454366c7ad983921c1f51fd824
+  exports: 09926bbdfbf4502e7f2f6ef4b9b693bb
+  mkSEXPIO 8b56f2090f83b737a0bcbaec79526a43
+import  -/  template-haskell-2.12.0.0:Language.Haskell.TH d7e4e65d21f6d5a32dbf1c79a4ca2723
+import  -/  template-haskell-2.12.0.0:Language.Haskell.TH.Lib bda195ec35e92c198ea9974455154870
+import  -/  template-haskell-2.12.0.0:Language.Haskell.TH.Quote 4987ce74cf76f15c057de9b71e0e5441
+import  -/  template-haskell-2.12.0.0:Language.Haskell.TH.Syntax 89a468ec90271d2f2ee599dc8318cc79
+addDependentFile "/datascience/bin/stack/programs/x86_64-linux/ghc-8.2.2/lib/ghc-8.2.2/include/ghcversion.h"
+addDependentFile ".stack-work/dist/x86_64-linux/Cabal-2.0.1.0/build/autogen/cabal_macros.h"
+addDependentFile "/usr/include/stdc-predef.h"
+cce5e582bae6acd7e31c3fd09e5cd2d6
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module
+                   Language.R.QQ.$trModule3
+                   Language.R.QQ.$trModule1) -}
+5c5c2cf223eafe1e6a377b9b4039052d
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Language.R.QQ.$trModule2) -}
+6c78d274cbd6632b1cb7c89dd2dee3e9
+  $trModule2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Language.R.QQ"#) -}
+3eeb35b59a5c8851e36142735e612f06
+  $trModule3 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Language.R.QQ.$trModule4) -}
+e635ed2eb5b9da137cda403a5cd4359d
+  $trModule4 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("inline-r-0.9.0.2-CmRL2Hikuao7dNZScoizZz"#) -}
+a98702f82f53e74112c85982d098bac2
+  parse ::
+    GHC.Base.String
+    -> GHC.Types.IO
+         (Foreign.R.Internal.SEXP
+            Control.Memory.Region.V 'Foreign.R.Type.Expr)
+  {- Arity: 2, Strictness: <L,U><S,U>,
+     Unfolding: InlineRule (0, True, True)
+                Language.R.QQ.parse1
+                  `cast`
+                (<GHC.Base.String>_R
+                 ->_R Sym (GHC.Types.N:IO[0]
+                               <Foreign.R.Internal.SEXP
+                                  Control.Memory.Region.V 'Foreign.R.Type.Expr>_R)) -}
+754bdbba905cd09fb6de1a633872e735
+  parse1 ::
+    GHC.Base.String
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+          Foreign.R.Internal.SEXP
+            Control.Memory.Region.V 'Foreign.R.Type.Expr #)
+  {- Arity: 2, Strictness: <L,U><S,U> -}
+13688a5adf726ad665fdb3f6b3f09e27
+  r :: Language.Haskell.TH.Quote.QuasiQuoter
+  {- Strictness: m,
+     Unfolding: (Language.Haskell.TH.Quote.QuasiQuoter
+                   Language.R.QQ.r4
+                     `cast`
+                   (<GHC.Base.String>_R
+                    ->_R Sym (Language.Haskell.TH.Syntax.N:Q[0]
+                                  <Language.Haskell.TH.Syntax.Exp>_N))
+                   Language.R.QQ.r3
+                   Language.R.QQ.r2
+                   Language.R.QQ.r1) -}
+bb997f62fe938626ab3ae5772b948f3b
+  r1 ::
+    GHC.Base.String
+    -> Language.Haskell.TH.Syntax.Q [Language.Haskell.TH.Syntax.Dec]
+  {- Strictness: x -}
+7cff920cd036e4690b6d1d158918113e
+  r10 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("GHC.Base"#) -}
+cf1a3343bf6fbb46a3fe5f67a7a62c54
+  r11 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# Language.R.QQ.r12) -}
+4c293ac5bf1a829d0f88718c7905b19f
+  r12 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("base"#) -}
+a1d0b82a13e7c846e76afda8757b51bd
+  r13 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# Language.R.QQ.r14) -}
+057e7e3838304c1216374d7c98b0a187
+  r14 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("=<<"#) -}
+ee9484342d3722e927fa837d29a8edee
+  r15 :: GHC.Base.Maybe Language.Haskell.TH.Lib.ExpQ
+  {- Strictness: m2,
+     Unfolding: (GHC.Base.Just
+                   @ Language.Haskell.TH.Lib.ExpQ
+                   Language.R.QQ.r16
+                     `cast`
+                   (Sym (Language.Haskell.TH.Syntax.N:Q[0]
+                             <Language.Haskell.TH.Syntax.Exp>_N))) -}
+d3fd413848f36f469fec576973ea2e08
+  r16 ::
+    Language.Haskell.TH.Syntax.Quasi m =>
+    m Language.Haskell.TH.Syntax.Exp
+  {- Arity: 1,
+     Unfolding: (Language.Haskell.TH.Lib.varE1 Language.R.QQ.r17) -}
+a6bc5cadc0767d8652187ca806d51e88
+  r17 :: Language.Haskell.TH.Syntax.Name
+  {- Strictness: m,
+     Unfolding: (Language.Haskell.TH.Syntax.Name
+                   Language.R.QQ.r22
+                     `cast`
+                   (Sym (Language.Haskell.TH.Syntax.N:OccName[0]))
+                   Language.R.QQ.r18) -}
+d7e2db2cb9ddce85db34edde3e6a8ba3
+  r18 :: Language.Haskell.TH.Syntax.NameFlavour
+  {- Strictness: m5,
+     Unfolding: (Language.Haskell.TH.Syntax.NameG
+                   Language.Haskell.TH.Syntax.VarName
+                   Language.R.QQ.r21
+                     `cast`
+                   (Sym (Language.Haskell.TH.Syntax.N:PkgName[0]))
+                   Language.R.QQ.r19
+                     `cast`
+                   (Sym (Language.Haskell.TH.Syntax.N:ModName[0]))) -}
+5ae3b51c38317f4cbc3481698a7efa8e
+  r19 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# Language.R.QQ.r20) -}
+a6ee79bee88c11c2f08f8df48bf8c894
+  r2 ::
+    GHC.Base.String
+    -> Language.Haskell.TH.Syntax.Q Language.Haskell.TH.Syntax.Type
+  {- Strictness: x -}
+3ac8b3d5ec62a3e7d6b67b8a726f57b4
+  r20 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Language.R"#) -}
+ac9d24e5ab827af3fd5f93e6de5df940
+  r21 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   Language.R.QQ.$trModule4) -}
+bf40d945b432378072348d1af3461392
+  r22 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# Language.R.QQ.r23) -}
+35969e503ddf993cd590b98ecc276dd5
+  r23 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("eval"#) -}
+45f5eba7c24d2132bff3774b9a3ea893
+  r3 ::
+    GHC.Base.String
+    -> Language.Haskell.TH.Syntax.Q Language.Haskell.TH.Syntax.Pat
+  {- Strictness: x -}
+7dbf3b854e31d023893af5c3d8301614
+  r4 ::
+    GHC.Base.String
+    -> forall (m :: * -> *).
+       Language.Haskell.TH.Syntax.Quasi m =>
+       m Language.Haskell.TH.Syntax.Exp
+  {- Arity: 2,
+     Strictness: <L,U><S(S(S(LC(C(S))LLL)L)LLLLLLLLLLLLLLLLLLLLL),U(U(U(U(U,U,U,U,U,U),U,U,U,U),U),U,U,U,U,U,U,U,U,U,U,U,U,U,U,U,U,U,U,U,U,U)>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (txt :: GHC.Base.String)
+                   @ m :: * -> *
+                   (eta :: Language.Haskell.TH.Syntax.Quasi m) ->
+                 Language.Haskell.TH.Lib.infixApp2
+                   Language.R.QQ.r15
+                   Language.R.QQ.r6
+                     `cast`
+                   (Sym (Language.Haskell.TH.Syntax.N:Q[0]
+                             <Language.Haskell.TH.Syntax.Exp>_N))
+                   (GHC.Base.Just
+                      @ Language.Haskell.TH.Lib.ExpQ
+                      (Language.R.QQ.r5 txt)
+                        `cast`
+                      (Sym (Language.Haskell.TH.Syntax.N:Q[0]
+                                <Language.Haskell.TH.Syntax.Exp>_N)))
+                   @ m
+                   eta) -}
+e970b503203831137d11a2f4b7f6012b
+  r5 ::
+    GHC.Base.String
+    -> forall (m :: * -> *).
+       Language.Haskell.TH.Syntax.Quasi m =>
+       m Language.Haskell.TH.Syntax.Exp
+  {- Arity: 2,
+     Strictness: <L,U><S(S(S(LC(C(S))LLL)L)LLLLLLLLLLLLLLLLLLLLL),U(U(U(U(U(U,U),U,U,U,U,U),U,U,U,U),U),U,U,U,U,U,U,U,U,U,U,U,U,U,U,U,U,U,U,U,U,U)> -}
+6702f377916b59d823eba656996d5b31
+  r6 ::
+    Language.Haskell.TH.Syntax.Quasi m =>
+    m Language.Haskell.TH.Syntax.Exp
+  {- Arity: 1,
+     Unfolding: (Language.Haskell.TH.Lib.varE1 Language.R.QQ.r7) -}
+eb71e1c5297d6ad36ad11f6cf0199067
+  r7 :: Language.Haskell.TH.Syntax.Name
+  {- Strictness: m,
+     Unfolding: (Language.Haskell.TH.Syntax.Name
+                   Language.R.QQ.r13
+                     `cast`
+                   (Sym (Language.Haskell.TH.Syntax.N:OccName[0]))
+                   Language.R.QQ.r8) -}
+27a7953cc30b759ff9220e1d4261bc80
+  r8 :: Language.Haskell.TH.Syntax.NameFlavour
+  {- Strictness: m5,
+     Unfolding: (Language.Haskell.TH.Syntax.NameG
+                   Language.Haskell.TH.Syntax.VarName
+                   Language.R.QQ.r11
+                     `cast`
+                   (Sym (Language.Haskell.TH.Syntax.N:PkgName[0]))
+                   Language.R.QQ.r9
+                     `cast`
+                   (Sym (Language.Haskell.TH.Syntax.N:ModName[0]))) -}
+e360b1829cceb2d166e1e5c3fe203a31
+  r9 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# Language.R.QQ.r10) -}
+e90a08f3111348cf2208f1372b5360a3
+  rsafe :: Language.Haskell.TH.Quote.QuasiQuoter
+  {- Strictness: m,
+     Unfolding: (Language.Haskell.TH.Quote.QuasiQuoter
+                   Language.R.QQ.rsafe1
+                     `cast`
+                   (<GHC.Base.String>_R
+                    ->_R Sym (Language.Haskell.TH.Syntax.N:Q[0]
+                                  <Language.Haskell.TH.Syntax.Exp>_N))
+                   Language.R.QQ.r3
+                   Language.R.QQ.r2
+                   Language.R.QQ.r1) -}
+a04a1048ce6726f03187a4d92e05e085
+  rsafe1 ::
+    GHC.Base.String
+    -> forall (m :: * -> *).
+       Language.Haskell.TH.Syntax.Quasi m =>
+       m Language.Haskell.TH.Syntax.Exp
+  {- Arity: 2,
+     Strictness: <L,U><S(S(S(LC(C(S))LLL)L)LLLLLLLLLLLLLLLLLLLLL),U(U(U(U(U,U,U,U,U,U),U,U,U,U),U),U,U,U,U,U,U,U,U,U,U,U,U,U,U,U,U,U,U,U,U,U)>,
+     Unfolding: (\ (txt :: GHC.Base.String)
+                   @ m :: * -> *
+                   (eta :: Language.Haskell.TH.Syntax.Quasi m) ->
+                 let {
+                   z15 :: forall (m1 :: * -> *).
+                          Language.Haskell.TH.Syntax.Quasi m1 =>
+                          m1 Language.Haskell.TH.Syntax.Exp
+                     {- Arity: 1 -}
+                   = Language.R.QQ.r5 txt
+                 } in
+                 let {
+                   lvl74 :: GHC.Base.Maybe Language.Haskell.TH.Lib.ExpQ
+                   = GHC.Base.Just
+                       @ Language.Haskell.TH.Lib.ExpQ
+                       z15
+                         `cast`
+                       (Sym (Language.Haskell.TH.Syntax.N:Q[0]
+                                 <Language.Haskell.TH.Syntax.Exp>_N))
+                 } in
+                 let {
+                   z16 :: forall (m1 :: * -> *).
+                          Language.Haskell.TH.Syntax.Quasi m1 =>
+                          m1 Language.Haskell.TH.Syntax.Exp
+                     {- Arity: 1,
+                        Strictness: <S(S(S(LC(C(S))LLL)L)LLLLLLLLLLLLLLLLLLLLL),U(U(U(U(U,U,U,U,U,U),U,U,U,U),U),U,U,U,U,U,U,U,U,U,U,U,U,U,U,U,U,U,U,U,U,U)>,
+                        Unfolding: InlineRule (1, True, False)
+                                   (\ @ m1 :: * -> *
+                                      (eta1 :: Language.Haskell.TH.Syntax.Quasi m1) ->
+                                    Language.Haskell.TH.Lib.infixApp2
+                                      Language.R.QQ.r15
+                                      Language.R.QQ.r6
+                                        `cast`
+                                      (Sym (Language.Haskell.TH.Syntax.N:Q[0]
+                                                <Language.Haskell.TH.Syntax.Exp>_N))
+                                      lvl74
+                                      @ m1
+                                      eta1) -}
+                   = \ @ m1 :: * -> * (eta1 :: Language.Haskell.TH.Syntax.Quasi m1) ->
+                     Language.Haskell.TH.Lib.infixApp2
+                       Language.R.QQ.r15
+                       Language.R.QQ.r6
+                         `cast`
+                       (Sym (Language.Haskell.TH.Syntax.N:Q[0]
+                                 <Language.Haskell.TH.Syntax.Exp>_N))
+                       lvl74
+                       @ m1
+                       eta1
+                 } in
+                 let {
+                   lvl75 :: GHC.Base.Maybe Language.Haskell.TH.Lib.ExpQ
+                   = GHC.Base.Just
+                       @ Language.Haskell.TH.Lib.ExpQ
+                       z16
+                         `cast`
+                       (Sym (Language.Haskell.TH.Syntax.N:Q[0]
+                                 <Language.Haskell.TH.Syntax.Exp>_N))
+                 } in
+                 let {
+                   z17 :: forall (m1 :: * -> *).
+                          Language.Haskell.TH.Syntax.Quasi m1 =>
+                          m1 Language.Haskell.TH.Syntax.Exp
+                     {- Arity: 1,
+                        Strictness: <S(S(S(LC(C(S))LLL)L)LLLLLLLLLLLLLLLLLLLLL),U(U(U(U(U,U,U,U,U,U),U,U,U,U),U),U,U,U,U,U,U,U,U,U,U,U,U,U,U,U,U,U,U,U,U,U)>,
+                        Unfolding: InlineRule (1, True, False)
+                                   (\ @ m1 :: * -> *
+                                      (eta1 :: Language.Haskell.TH.Syntax.Quasi m1) ->
+                                    Language.Haskell.TH.Lib.infixApp2
+                                      Language.R.QQ.rsafe22
+                                      Language.R.QQ.r6
+                                        `cast`
+                                      (Sym (Language.Haskell.TH.Syntax.N:Q[0]
+                                                <Language.Haskell.TH.Syntax.Exp>_N))
+                                      lvl75
+                                      @ m1
+                                      eta1) -}
+                   = \ @ m1 :: * -> * (eta1 :: Language.Haskell.TH.Syntax.Quasi m1) ->
+                     Language.Haskell.TH.Lib.infixApp2
+                       Language.R.QQ.rsafe22
+                       Language.R.QQ.r6
+                         `cast`
+                       (Sym (Language.Haskell.TH.Syntax.N:Q[0]
+                                 <Language.Haskell.TH.Syntax.Exp>_N))
+                       lvl75
+                       @ m1
+                       eta1
+                 } in
+                 let {
+                   lvl76 :: GHC.Base.Maybe Language.Haskell.TH.Lib.ExpQ
+                   = GHC.Base.Just
+                       @ Language.Haskell.TH.Lib.ExpQ
+                       z17
+                         `cast`
+                       (Sym (Language.Haskell.TH.Syntax.N:Q[0]
+                                 <Language.Haskell.TH.Syntax.Exp>_N))
+                 } in
+                 Language.Haskell.TH.Lib.infixApp2
+                   Language.R.QQ.rsafe14
+                   Language.R.QQ.rsafe10
+                     `cast`
+                   (Sym (Language.Haskell.TH.Syntax.N:Q[0]
+                             <Language.Haskell.TH.Syntax.Exp>_N))
+                   (GHC.Base.Just
+                      @ Language.Haskell.TH.Lib.ExpQ
+                      (\ @ m1 :: * -> * (eta1 :: Language.Haskell.TH.Syntax.Quasi m1) ->
+                       Language.Haskell.TH.Lib.infixApp2
+                         Language.R.QQ.rsafe2
+                         Language.R.QQ.rsafe10
+                           `cast`
+                         (Sym (Language.Haskell.TH.Syntax.N:Q[0]
+                                   <Language.Haskell.TH.Syntax.Exp>_N))
+                         lvl76
+                         @ m1
+                         eta1)
+                        `cast`
+                      (Sym (Language.Haskell.TH.Syntax.N:Q[0]
+                                <Language.Haskell.TH.Syntax.Exp>_N)))
+                   @ m
+                   eta) -}
+4b9f700395ed08b98b2f078f6e3c6f3a
+  rsafe10 ::
+    Language.Haskell.TH.Syntax.Quasi m =>
+    m Language.Haskell.TH.Syntax.Exp
+  {- Arity: 1,
+     Unfolding: (Language.Haskell.TH.Lib.varE1 Language.R.QQ.rsafe11) -}
+d03d27bf58e60fedb2f953f81cc611f8
+  rsafe11 :: Language.Haskell.TH.Syntax.Name
+  {- Strictness: m,
+     Unfolding: (Language.Haskell.TH.Syntax.Name
+                   Language.R.QQ.rsafe12
+                     `cast`
+                   (Sym (Language.Haskell.TH.Syntax.N:OccName[0]))
+                   Language.R.QQ.r8) -}
+aec510ea44fd4a6237dd417982addf58
+  rsafe12 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# Language.R.QQ.rsafe13) -}
+c8f50ebe6dc216bacb02d6a7fa10a609
+  rsafe13 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("$"#) -}
+55663d27f50dfc5e84464e344ea8f412
+  rsafe14 :: GHC.Base.Maybe Language.Haskell.TH.Lib.ExpQ
+  {- Strictness: m2,
+     Unfolding: (GHC.Base.Just
+                   @ Language.Haskell.TH.Lib.ExpQ
+                   Language.R.QQ.rsafe15
+                     `cast`
+                   (Sym (Language.Haskell.TH.Syntax.N:Q[0]
+                             <Language.Haskell.TH.Syntax.Exp>_N))) -}
+7fbd8137f047d371a1fb5ef00a4bf367
+  rsafe15 ::
+    Language.Haskell.TH.Syntax.Quasi m =>
+    m Language.Haskell.TH.Syntax.Exp
+  {- Arity: 1,
+     Unfolding: (Language.Haskell.TH.Lib.varE1 Language.R.QQ.rsafe16) -}
+1875ffc55638dc0130e3a9d0ab1fde85
+  rsafe16 :: Language.Haskell.TH.Syntax.Name
+  {- Strictness: m,
+     Unfolding: (Language.Haskell.TH.Syntax.Name
+                   Language.R.QQ.rsafe20
+                     `cast`
+                   (Sym (Language.Haskell.TH.Syntax.N:OccName[0]))
+                   Language.R.QQ.rsafe17) -}
+95a5ba6948ffd0e596e0a3eae892e895
+  rsafe17 :: Language.Haskell.TH.Syntax.NameFlavour
+  {- Strictness: m5,
+     Unfolding: (Language.Haskell.TH.Syntax.NameG
+                   Language.Haskell.TH.Syntax.VarName
+                   Language.R.QQ.r11
+                     `cast`
+                   (Sym (Language.Haskell.TH.Syntax.N:PkgName[0]))
+                   Language.R.QQ.rsafe18
+                     `cast`
+                   (Sym (Language.Haskell.TH.Syntax.N:ModName[0]))) -}
+736444b7f722eb690138baa24f56f06c
+  rsafe18 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# Language.R.QQ.rsafe19) -}
+814e9307e713e201cd4ee0fee32a4658
+  rsafe19 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("GHC.IO.Unsafe"#) -}
+908b19df7866085061a813a74969a431
+  rsafe2 :: GHC.Base.Maybe Language.Haskell.TH.Lib.ExpQ
+  {- Strictness: m2,
+     Unfolding: (GHC.Base.Just
+                   @ Language.Haskell.TH.Lib.ExpQ
+                   Language.R.QQ.rsafe3
+                     `cast`
+                   (Sym (Language.Haskell.TH.Syntax.N:Q[0]
+                             <Language.Haskell.TH.Syntax.Exp>_N))) -}
+e4703476dc7f2ddc918a9ed4c2229663
+  rsafe20 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# Language.R.QQ.rsafe21) -}
+4d8a9747da92f98d54b6deaa2598f043
+  rsafe21 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("unsafePerformIO"#) -}
+7e9ddcf60e55301bc726c32a8ba45554
+  rsafe22 :: GHC.Base.Maybe Language.Haskell.TH.Lib.ExpQ
+  {- Strictness: m2,
+     Unfolding: (GHC.Base.Just
+                   @ Language.Haskell.TH.Lib.ExpQ
+                   Language.R.QQ.rsafe23
+                     `cast`
+                   (Sym (Language.Haskell.TH.Syntax.N:Q[0]
+                             <Language.Haskell.TH.Syntax.Exp>_N))) -}
+44958ad542f4f078a7ff7723940569b7
+  rsafe23 ::
+    Language.Haskell.TH.Syntax.Quasi m =>
+    m Language.Haskell.TH.Syntax.Exp
+  {- Arity: 1,
+     Unfolding: (Language.Haskell.TH.Lib.varE1 Language.R.QQ.rsafe24) -}
+6db7f9f416b7f8b9ef7d2d14eff61bd9
+  rsafe24 :: Language.Haskell.TH.Syntax.Name
+  {- Strictness: m,
+     Unfolding: (Language.Haskell.TH.Syntax.Name
+                   Language.R.QQ.rsafe28
+                     `cast`
+                   (Sym (Language.Haskell.TH.Syntax.N:OccName[0]))
+                   Language.R.QQ.rsafe25) -}
+4d28e0215df5c83bb464eee9aef9d927
+  rsafe25 :: Language.Haskell.TH.Syntax.NameFlavour
+  {- Strictness: m5,
+     Unfolding: (Language.Haskell.TH.Syntax.NameG
+                   Language.Haskell.TH.Syntax.VarName
+                   Language.R.QQ.r21
+                     `cast`
+                   (Sym (Language.Haskell.TH.Syntax.N:PkgName[0]))
+                   Language.R.QQ.rsafe26
+                     `cast`
+                   (Sym (Language.Haskell.TH.Syntax.N:ModName[0]))) -}
+1adc8fa37dc640e2f0ff57b4258b2086
+  rsafe26 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# Language.R.QQ.rsafe27) -}
+c264b7111cc62ea36a914a64de66c296
+  rsafe27 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Language.R.GC"#) -}
+32ec1fe7dedf08309122bc2d468cddb5
+  rsafe28 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# Language.R.QQ.rsafe29) -}
+adf654af7ea056fe05b4ff66d9217631
+  rsafe29 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("automaticSome"#) -}
+0b00f3b49e350b83a8d82c6d986b7212
+  rsafe3 ::
+    Language.Haskell.TH.Syntax.Quasi m =>
+    m Language.Haskell.TH.Syntax.Exp
+  {- Arity: 1,
+     Unfolding: (Language.Haskell.TH.Lib.varE1 Language.R.QQ.rsafe4) -}
+9fec4609545d9d4f6590e631bfbacb76
+  rsafe4 :: Language.Haskell.TH.Syntax.Name
+  {- Strictness: m,
+     Unfolding: (Language.Haskell.TH.Syntax.Name
+                   Language.R.QQ.rsafe8
+                     `cast`
+                   (Sym (Language.Haskell.TH.Syntax.N:OccName[0]))
+                   Language.R.QQ.rsafe5) -}
+ab0bfde0edb50a1dd87a5c7b14069c56
+  rsafe5 :: Language.Haskell.TH.Syntax.NameFlavour
+  {- Strictness: m5,
+     Unfolding: (Language.Haskell.TH.Syntax.NameG
+                   Language.Haskell.TH.Syntax.VarName
+                   Language.R.QQ.r21
+                     `cast`
+                   (Sym (Language.Haskell.TH.Syntax.N:PkgName[0]))
+                   Language.R.QQ.rsafe6
+                     `cast`
+                   (Sym (Language.Haskell.TH.Syntax.N:ModName[0]))) -}
+73d8e6182c475e5a98ced48642582617
+  rsafe6 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# Language.R.QQ.rsafe7) -}
+32f206954e005d88e814bb4186de0a6b
+  rsafe7 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Language.R.Instance"#) -}
+12d13e3b65bce6015dc32bd19cc542f6
+  rsafe8 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# Language.R.QQ.rsafe9) -}
+ff09be40fd7c37ab509066f2cf7a4191
+  rsafe9 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("runRegion"#) -}
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: none
+require own pkg trusted: False
+

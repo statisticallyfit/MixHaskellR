@@ -1,0 +1,267 @@
+
+==================== FINAL INTERFACE ====================
+2017-12-28 08:49:08.610813 UTC
+
+interface inline-r-0.9.0.2-CmRL2Hikuao7dNZScoizZz:Language.R.GC 8022
+  interface hash: 6c9cf75be2f2cd9d3589dd685fae2118
+  ABI hash: bd8b69fb86c1cbb08a45dc86d421758c
+  export-list hash: 8f6738e99e5e80c5146d3eb1d3c8b6dc
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: 24b93ee4a94ad7dce66fce3cdb626fae
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Language.R.GC.automatic
+  Language.R.GC.automaticSome
+module dependencies: Control.Memory.Region Control.Monad.R.Class
+                     Foreign.R Foreign.R.Constraints Foreign.R.Internal Foreign.R.Type
+                     Internal.Error Language.R.HExp [boot]
+package dependencies: array-0.5.2.0 base-4.10.1.0 binary-0.8.5.1
+                      bytestring-0.10.8.2 containers-0.5.10.2 deepseq-1.4.3.0
+                      exceptions-0.8.3 ghc-boot-th-8.2.2 ghc-prim-0.5.1.1
+                      integer-gmp-1.0.1.0 mtl-2.2.1 pretty-1.1.3.3 primitive-0.6.2.0
+                      safe-0.3.15 singletons-2.3.1 stm-2.4.4.1 syb-0.7
+                      template-haskell-2.12.0.0 text-1.2.2.2 th-desugar-1.7
+                      th-expand-syns-0.4.3.0 th-lift-0.7.7 th-lift-instances-0.1.11
+                      th-orphans-0.13.4 th-reify-many-0.1.8 transformers-0.5.2.0
+                      vector-0.12.0.1
+orphans: stm-2.4.4.1:Control.Monad.STM
+         singletons-2.3.1:Data.Singletons.TypeLits
+         singletons-2.3.1:Data.Singletons.TypeLits.Internal
+         singletons-2.3.1:Data.Singletons.Prelude.Instances
+         singletons-2.3.1:Data.Singletons.Decide
+         th-orphans-0.13.4:Language.Haskell.TH.Instances
+         th-lift-instances-0.1.11:Instances.TH.Lift
+         th-lift-0.7.7:Language.Haskell.TH.Lift text-1.2.2.2:Data.Text.Lazy
+         text-1.2.2.2:Data.Text binary-0.8.5.1:Data.Binary.Generic
+         bytestring-0.10.8.2:Data.ByteString.Builder
+         text-1.2.2.2:Data.Text.Show vector-0.12.0.1:Data.Vector.Unboxed
+         vector-0.12.0.1:Data.Vector.Fusion.Bundle
+         transformers-0.5.2.0:Control.Monad.Trans.Error
+         syb-0.7:Data.Generics.Instances base-4.10.1.0:GHC.Float
+         base-4.10.1.0:GHC.Base
+family instance modules: base-4.10.1.0:Control.Applicative
+                         base-4.10.1.0:Data.Complex base-4.10.1.0:Data.Either
+                         base-4.10.1.0:Data.Functor.Compose base-4.10.1.0:Data.Functor.Const
+                         base-4.10.1.0:Data.Functor.Identity
+                         base-4.10.1.0:Data.Functor.Product base-4.10.1.0:Data.Functor.Sum
+                         base-4.10.1.0:Data.List.NonEmpty base-4.10.1.0:Data.Monoid
+                         base-4.10.1.0:Data.Semigroup base-4.10.1.0:Data.Type.Equality
+                         base-4.10.1.0:Data.Version base-4.10.1.0:Data.Void
+                         base-4.10.1.0:GHC.Exts base-4.10.1.0:GHC.Generics
+                         base-4.10.1.0:GHC.IO.Exception base-4.10.1.0:GHC.TypeLits
+                         base-4.10.1.0:GHC.TypeNats containers-0.5.10.2:Data.IntMap.Internal
+                         containers-0.5.10.2:Data.IntSet.Internal
+                         containers-0.5.10.2:Data.Map.Internal
+                         containers-0.5.10.2:Data.Sequence.Internal
+                         containers-0.5.10.2:Data.Set.Internal containers-0.5.10.2:Data.Tree
+                         ghc-boot-th-8.2.2:GHC.ForeignSrcLang.Type
+                         ghc-boot-th-8.2.2:GHC.LanguageExtensions.Type
+                         inline-r-0.9.0.2-CmRL2Hikuao7dNZScoizZz:Control.Memory.Region
+                         inline-r-0.9.0.2-CmRL2Hikuao7dNZScoizZz:Foreign.R.Type
+                         pretty-1.1.3.3:Text.PrettyPrint.Annotated.HughesPJ
+                         pretty-1.1.3.3:Text.PrettyPrint.HughesPJ
+                         primitive-0.6.2.0:Control.Monad.Primitive
+                         primitive-0.6.2.0:Data.Primitive.Array
+                         singletons-2.3.1:Data.Singletons
+                         singletons-2.3.1:Data.Singletons.Prelude.Bool
+                         singletons-2.3.1:Data.Singletons.Prelude.Eq
+                         singletons-2.3.1:Data.Singletons.Prelude.Instances
+                         singletons-2.3.1:Data.Singletons.Prelude.Num
+                         singletons-2.3.1:Data.Singletons.Prelude.Ord
+                         singletons-2.3.1:Data.Singletons.Syntax
+                         singletons-2.3.1:Data.Singletons.TypeLits
+                         singletons-2.3.1:Data.Singletons.TypeLits.Internal
+                         template-haskell-2.12.0.0:Language.Haskell.TH.Syntax
+                         text-1.2.2.2:Data.Text text-1.2.2.2:Data.Text.Lazy
+                         th-desugar-1.7:Language.Haskell.TH.Desugar.Core
+                         vector-0.12.0.1:Data.Vector vector-0.12.0.1:Data.Vector.Primitive
+                         vector-0.12.0.1:Data.Vector.Storable
+                         vector-0.12.0.1:Data.Vector.Unboxed
+                         vector-0.12.0.1:Data.Vector.Unboxed.Base
+import  -/  base-4.10.1.0:GHC.Base 782fd99b5e36f3698a26179a49afca64
+import  -/  base-4.10.1.0:Prelude 31945b7d0084063347fc52506d3a4020
+import  -/  base-4.10.1.0:System.Mem.Weak 9f512a33c970630935eaba029edf27f0
+import  -/  Control.Memory.Region bd2f465c2e25d1f80c1a2e359d1309ef
+  exports: d60c5e1550fee34b0484ba752c6d17b8
+  G 3ce3fee8a04a17dabda37b338439be4c
+import  -/  Control.Monad.R.Class e5a0c4056d91754aa90b5adf4bc59248
+  exports: ebb323240982ac39e80db1d6fb39a690
+  MonadR 3b2bb150f2b80e2d32d08e5e9fb3cdc6
+  io dcc175ea7fefcdd9812fba741a117c5c
+import  -/  Foreign.R 51460710da704a1aff942901939ab83a
+  exports: 66604cef250b707139e6d39041287043
+  preserveObject 34e41626d593a0da0620f1015c4639f6
+  releaseObject 52382e257f200bc9836022da38a6820d
+import  -/  Foreign.R.Internal 0950ef2cc999f128080e9690ff115a12
+  SEXP 8e71af79acc64eda5f9cb7291bf461df
+  SomeSEXP d3242a05a97056d0f4278da347cae3e8
+  SomeSEXP 870de88561703105d28633d6a8e2294b
+  unsafeRelease 947c5de2985d3c51da4d5b3a8811624f
+5605c49e18d4be67cf8bb09548928dfd
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module
+                   Language.R.GC.$trModule3
+                   Language.R.GC.$trModule1) -}
+01aaa5b386a7613c993fa5afbf6e72c2
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Language.R.GC.$trModule2) -}
+01d05c393d244b70a69c269171e64b86
+  $trModule2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Language.R.GC"#) -}
+7fa3d9e9cdba839cde85ca4eb6403717
+  $trModule3 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Language.R.GC.$trModule4) -}
+5aebb91bcf3f86da4436a427f427a502
+  $trModule4 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("inline-r-0.9.0.2-CmRL2Hikuao7dNZScoizZz"#) -}
+ade4102b0aa174a68e3e8f62228f58a7
+  automatic ::
+    Control.Monad.R.Class.MonadR m =>
+    Foreign.R.Internal.SEXP s a
+    -> m (Foreign.R.Internal.SEXP Control.Memory.Region.G a)
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <S(LLLLLC(S)LLL),1*U(A,A,A,A,A,1*C1(U),A,A,A)><L,U(U)>,
+     Unfolding: (\ @ m :: * -> *
+                   @ s
+                   @ a :: Foreign.R.Type.SEXPTYPE
+                   ($dMonadR :: Control.Monad.R.Class.MonadR m)
+                   (s1 :: Foreign.R.Internal.SEXP s a) ->
+                 Control.Monad.R.Class.io
+                   @ m
+                   $dMonadR
+                   @ (Foreign.R.Internal.SEXP Control.Memory.Region.G a)
+                   (\ (s2 :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                    case s1
+                           `cast`
+                         (Trans
+                              (Foreign.R.Internal.N:SEXP[0] <s>_P <a>_P)
+                              (GHC.Ptr.Ptr
+                                 <Language.R.HExp.HExp
+                                    s a, Foreign.R.Internal.SEXPREC>)_R) of ds { GHC.Ptr.Ptr ds1 ->
+                    case {__pkg_ccall_GC inline-r-0.9.0.2-CmRL2Hikuao7dNZScoizZz GHC.Prim.Addr#
+                                                                                 -> GHC.Prim.State#
+                                                                                      GHC.Prim.RealWorld
+                                                                                 -> (# GHC.Prim.State#
+                                                                                         GHC.Prim.RealWorld #)}
+                           ds1
+                           s2 of wild { Unit# ds2 ->
+                    case GHC.Prim.mkWeak#
+                           @ 'GHC.Types.LiftedRep
+                           @ (Foreign.R.Internal.SEXP GHC.Types.Any a)
+                           @ (Foreign.R.Internal.SEXP GHC.Types.Any a)
+                           @ ()
+                           ds
+                             `cast`
+                           (Trans
+                                (GHC.Ptr.Ptr
+                                   <Foreign.R.Internal.SEXPREC, Language.R.HExp.HExp
+                                                                  GHC.Types.Any a>)_R
+                                (Sym (Foreign.R.Internal.N:SEXP[0] <GHC.Types.Any>_P <a>_P)))
+                           ds
+                             `cast`
+                           (Trans
+                                (GHC.Ptr.Ptr
+                                   <Foreign.R.Internal.SEXPREC, Language.R.HExp.HExp
+                                                                  GHC.Types.Any a>)_R
+                                (Sym (Foreign.R.Internal.N:SEXP[0] <GHC.Types.Any>_P <a>_P)))
+                           (\ (s3 :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                            case {__pkg_ccall_GC inline-r-0.9.0.2-CmRL2Hikuao7dNZScoizZz GHC.Prim.Addr#
+                                                                                         -> GHC.Prim.State#
+                                                                                              GHC.Prim.RealWorld
+                                                                                         -> (# GHC.Prim.State#
+                                                                                                 GHC.Prim.RealWorld #)}
+                                   ds1
+                                   s3 of wild1 { Unit# ds4 ->
+                            (# ds4, GHC.Tuple.() #) })
+                           ds2 of ds4 { (#,#) ipv ipv1 ->
+                    (# ipv,
+                       ds
+                         `cast`
+                       (Trans
+                            (GHC.Ptr.Ptr
+                               <Foreign.R.Internal.SEXPREC, Language.R.HExp.HExp
+                                                              Control.Memory.Region.G a>)_R
+                            (Sym (Foreign.R.Internal.N:SEXP[0]
+                                      <Control.Memory.Region.G>_P <a>_P))) #) } } })
+                     `cast`
+                   (Sym (GHC.Types.N:IO[0]
+                             <Foreign.R.Internal.SEXP Control.Memory.Region.G a>_R))) -}
+c69f705d8f2704013539e55c355712ff
+  automaticSome ::
+    Control.Monad.R.Class.MonadR m =>
+    Foreign.R.Internal.SomeSEXP s
+    -> m (Foreign.R.Internal.SomeSEXP Control.Memory.Region.G)
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <S(LLLLLC(S)LLL),1*U(A,A,A,A,A,1*C1(U),A,A,A)><S,1*U>,
+     Unfolding: (\ @ m :: * -> *
+                   @ s
+                   ($dMonadR :: Control.Monad.R.Class.MonadR m)
+                   (ds :: Foreign.R.Internal.SomeSEXP s) ->
+                 case ds of wild { Foreign.R.Internal.SomeSEXP a dt ->
+                 let {
+                   s' :: GHC.Ptr.Ptr (Language.R.HExp.HExp s a)
+                   = GHC.Ptr.Ptr @ (Language.R.HExp.HExp s a) dt
+                 } in
+                 Control.Monad.R.Class.io
+                   @ m
+                   $dMonadR
+                   @ (Foreign.R.Internal.SomeSEXP Control.Memory.Region.G)
+                   (\ (s1 :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                    case {__pkg_ccall_GC inline-r-0.9.0.2-CmRL2Hikuao7dNZScoizZz GHC.Prim.Addr#
+                                                                                 -> GHC.Prim.State#
+                                                                                      GHC.Prim.RealWorld
+                                                                                 -> (# GHC.Prim.State#
+                                                                                         GHC.Prim.RealWorld #)}
+                           dt
+                           s1 of wild1 { Unit# ds2 ->
+                    case GHC.Prim.mkWeak#
+                           @ 'GHC.Types.LiftedRep
+                           @ (Foreign.R.Internal.SEXP GHC.Types.Any a)
+                           @ (Foreign.R.Internal.SEXP GHC.Types.Any a)
+                           @ ()
+                           s'
+                             `cast`
+                           (Trans
+                                (GHC.Ptr.Ptr
+                                   <Language.R.HExp.HExp s a, Language.R.HExp.HExp
+                                                                GHC.Types.Any a>)_R
+                                (Sym (Foreign.R.Internal.N:SEXP[0] <GHC.Types.Any>_P <a>_P)))
+                           s'
+                             `cast`
+                           (Trans
+                                (GHC.Ptr.Ptr
+                                   <Language.R.HExp.HExp s a, Language.R.HExp.HExp
+                                                                GHC.Types.Any a>)_R
+                                (Sym (Foreign.R.Internal.N:SEXP[0] <GHC.Types.Any>_P <a>_P)))
+                           (\ (s2 :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                            case {__pkg_ccall_GC inline-r-0.9.0.2-CmRL2Hikuao7dNZScoizZz GHC.Prim.Addr#
+                                                                                         -> GHC.Prim.State#
+                                                                                              GHC.Prim.RealWorld
+                                                                                         -> (# GHC.Prim.State#
+                                                                                                 GHC.Prim.RealWorld #)}
+                                   dt
+                                   s2 of wild2 { Unit# ds1 ->
+                            (# ds1, GHC.Tuple.() #) })
+                           ds2 of ds1 { (#,#) ipv ipv1 ->
+                    (# ipv,
+                       Foreign.R.Internal.SomeSEXP
+                         @ Control.Memory.Region.G
+                         @ a
+                         dt #) } })
+                     `cast`
+                   (Sym (GHC.Types.N:IO[0]
+                             <Foreign.R.Internal.SomeSEXP Control.Memory.Region.G>_R)) }) -}
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: none
+require own pkg trusted: False
+

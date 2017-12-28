@@ -1,0 +1,83 @@
+
+==================== FINAL INTERFACE ====================
+2017-12-28 08:02:19.346026 UTC
+
+interface inline-r-0.9.0.2-GXEXrsxC4K8OTVxhqWwxs:Foreign.R.Constraints 8002
+  interface hash: fd77ae78378b2a8f55b0deaca64b49bd
+  ABI hash: 117f6342e1010bca9ef8536e7a487b7b
+  export-list hash: 34af2f96967277c4ae9b0b9ab908040c
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: e00185d8918adbe60036e03a8ecb3cde
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Foreign.R.Constraints.:∈
+  Foreign.R.Constraints.In
+module dependencies: Foreign.R.Type [boot]
+package dependencies: base-4.9.1.0 ghc-prim-0.5.0.0
+                      integer-gmp-1.0.0.1
+orphans: base-4.9.1.0:GHC.Base base-4.9.1.0:GHC.Float
+family instance modules: base-4.9.1.0:Control.Applicative
+                         base-4.9.1.0:Data.Either base-4.9.1.0:Data.Functor.Const
+                         base-4.9.1.0:Data.Monoid base-4.9.1.0:Data.Type.Equality
+                         base-4.9.1.0:Data.Version base-4.9.1.0:GHC.Exts
+                         base-4.9.1.0:GHC.Generics base-4.9.1.0:GHC.IO.Exception
+                         base-4.9.1.0:GHC.TypeLits
+import  -/  base-4.9.1.0:GHC.Exts 26da1d42716da321d2d8df514b70012a
+import  -/  base-4.9.1.0:Prelude 22dd289b8469a8fa8dc81cab7b237771
+import  -/  Foreign.R.Type 5ae11880c2ca9b0ace5de34b20ff28cb
+  exports: 2f9daf88ad725846c6c275311abb6234
+  Any f0bbb211ab7714d8ee07dd75eaa7dcc1
+  SEXPTYPE 6912b1c65b9cd50865cc1c4ae6d50bdb
+fixities infix 1 :∈
+ea17d963793a3cfee53c9da1fb22fa87
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module
+                   Foreign.R.Constraints.$trModule2
+                   Foreign.R.Constraints.$trModule1) -}
+2f2352596ec98cbd6d955daa51b36863
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "Foreign.R.Constraints"#) -}
+292b2d6f63c25658cf0d71aa59e3fa4d
+  $trModule2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   "inline-r-0.9.0.2-GXEXrsxC4K8OTVxhqWwxs"#) -}
+0289ea1e47df28016facfc4ec64ee371
+  type family (:∈) (a :: Foreign.R.Type.SEXPTYPE)
+                   (as :: [Foreign.R.Type.SEXPTYPE])
+              :: GHC.Types.Constraint
+    where
+      [(as :: [Foreign.R.Type.SEXPTYPE])]
+        (:∈) 'Foreign.R.Type.Any as = ()
+      [(as :: [Foreign.R.Type.SEXPTYPE]), (a :: Foreign.R.Type.SEXPTYPE)]
+        (:∈) a (a : as) = ()
+      [(as :: [Foreign.R.Type.SEXPTYPE]), (b :: Foreign.R.Type.SEXPTYPE),
+       (a :: Foreign.R.Type.SEXPTYPE)]
+        (:∈) a (b : as) = a Foreign.R.Constraints.:∈ as
+      axiom Foreign.R.Constraints.D:R::∈
+0289ea1e47df28016facfc4ec64ee371
+  axiom D:R::∈::
+    [(as :: [Foreign.R.Type.SEXPTYPE])]
+      Foreign.R.Constraints.:∈ 'Foreign.R.Type.Any as = ()
+    [(as :: [Foreign.R.Type.SEXPTYPE]), (a :: Foreign.R.Type.SEXPTYPE)]
+      Foreign.R.Constraints.:∈ a (a : as) = ()
+    [(as :: [Foreign.R.Type.SEXPTYPE]), (b :: Foreign.R.Type.SEXPTYPE),
+     (a :: Foreign.R.Type.SEXPTYPE)]
+      Foreign.R.Constraints.:∈ a (b : as) = a Foreign.R.Constraints.:∈ as
+      (incompatible indices: [1, 0])
+c5253a221ebf2d95c667ad51ad99844e
+  type In (a :: Foreign.R.Type.SEXPTYPE)
+          (b :: [Foreign.R.Type.SEXPTYPE]) =
+    a Foreign.R.Constraints.:∈ b :: GHC.Types.Constraint
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: none
+require own pkg trusted: False
+

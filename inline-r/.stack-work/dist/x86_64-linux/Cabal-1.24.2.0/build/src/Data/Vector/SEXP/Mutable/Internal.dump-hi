@@ -1,0 +1,3036 @@
+
+==================== FINAL INTERFACE ====================
+2017-12-28 08:02:24.414347 UTC
+
+interface inline-r-0.9.0.2-GXEXrsxC4K8OTVxhqWwxs:Data.Vector.SEXP.Mutable.Internal 8002
+  interface hash: caa4e854541b4311a6921895aa59b92d
+  ABI hash: 294a79ed9866077cadcc4d24a50cf544
+  export-list hash: 2b5a2e3df559b634f76cebea6fa4dda5
+  orphan hash: 71f37fe1ea3f2f9ee1ed411c8bb63d4d
+  flag hash: 6f1ef830cbab2de557f30a95141e1bd4
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Data.Vector.SEXP.Mutable.Internal.proxyW
+  Data.Vector.SEXP.Mutable.Internal.release
+  Data.Vector.SEXP.Mutable.Internal.unsafeRelease
+  Data.Vector.SEXP.Mutable.Internal.unsafeToPtr
+  Data.Vector.SEXP.Mutable.Internal.withW
+  Data.Vector.SEXP.Mutable.Internal.MVector{Data.Vector.SEXP.Mutable.Internal.MVector mvectorBase mvectorLength mvectorOffset}
+  Data.Vector.SEXP.Mutable.Internal.W{Data.Vector.SEXP.Mutable.Internal.W unW}
+module dependencies: Control.Memory.Region Control.Monad.R.Class
+                     Control.Monad.R.Internal Data.Vector.SEXP.Base Foreign.R
+                     Foreign.R.Constraints Foreign.R.Internal Foreign.R.Type
+                     Internal.Error Language.R.HExp [boot]
+package dependencies: array-0.5.1.1@array-0.5.1.1 base-4.9.1.0
+                      binary-0.8.3.0@binary-0.8.3.0
+                      bytestring-0.10.8.1@bytestring-0.10.8.1
+                      containers-0.5.7.1@containers-0.5.7.1
+                      deepseq-1.4.2.0@deepseq-1.4.2.0
+                      exceptions-0.8.3@exceptions-0.8.3-ADEDRATtUrMK1JW4zMQ9U
+                      ghc-boot-th-8.0.2@ghc-boot-th-8.0.2 ghc-prim-0.5.0.0
+                      integer-gmp-1.0.0.1 mtl-2.2.1@mtl-2.2.1-BLKBelFsPB3BoFeSWSOYj6
+                      pretty-1.1.3.3@pretty-1.1.3.3
+                      primitive-0.6.2.0@primitive-0.6.2.0-4578caNkWQ54Gt1mxLF2Yh
+                      reflection-2.1.2@reflection-2.1.2-Bem12O1xFGSHr4C2Hyu1c4
+                      safe-0.3.15@safe-0.3.15-2Yd45VWFfdcKqKyispOifY
+                      singletons-2.2@singletons-2.2-F6aalBFPo1F9ebvy1Wkuj3
+                      stm-2.4.4.1@stm-2.4.4.1-JQn4hNPyYjP5m9AcbI88Ve
+                      syb-0.7@syb-0.7-4OKdCpwGutyB1rNRmoa0ya template-haskell-2.11.1.0
+                      text-1.2.2.2@text-1.2.2.2-9UQZjEJZQFSGMffj1Z5g00
+                      th-desugar-1.6@th-desugar-1.6-4xe2xTMQQiAGUPVUAkAZhp
+                      th-expand-syns-0.4.3.0@th-expand-syns-0.4.3.0-A2GRp9XTxmBCMfV7DnYdn0
+                      th-lift-0.7.7@th-lift-0.7.7-JWI9Gh7wB0MC9Q5wqv5aoI
+                      th-lift-instances-0.1.11@th-lift-instances-0.1.11-A7sWuFC2KLsFTBmLagoRSX
+                      th-orphans-0.13.4@th-orphans-0.13.4-IGsCpZ5u2Ab1MvGd5biF2z
+                      th-reify-many-0.1.8@th-reify-many-0.1.8-5ZNbfXxMl3y5DMJznTzmN9
+                      transformers-0.5.2.0@transformers-0.5.2.0
+                      vector-0.12.0.1@vector-0.12.0.1-692PQMDMB6pIQ1uGwefDcQ
+orphans: base-4.9.1.0:GHC.Base base-4.9.1.0:GHC.Float
+         binary-0.8.3.0@binary-0.8.3.0:Data.Binary.Generic
+         bytestring-0.10.8.1@bytestring-0.10.8.1:Data.ByteString.Builder
+         reflection-2.1.2@reflection-2.1.2-Bem12O1xFGSHr4C2Hyu1c4:Data.Reflection
+         singletons-2.2@singletons-2.2-F6aalBFPo1F9ebvy1Wkuj3:Data.Singletons.Decide
+         singletons-2.2@singletons-2.2-F6aalBFPo1F9ebvy1Wkuj3:Data.Singletons.Prelude.Instances
+         singletons-2.2@singletons-2.2-F6aalBFPo1F9ebvy1Wkuj3:Data.Singletons.TypeLits
+         singletons-2.2@singletons-2.2-F6aalBFPo1F9ebvy1Wkuj3:Data.Singletons.TypeLits.Internal
+         stm-2.4.4.1@stm-2.4.4.1-JQn4hNPyYjP5m9AcbI88Ve:Control.Monad.STM
+         syb-0.7@syb-0.7-4OKdCpwGutyB1rNRmoa0ya:Data.Generics.Instances
+         text-1.2.2.2@text-1.2.2.2-9UQZjEJZQFSGMffj1Z5g00:Data.Text
+         text-1.2.2.2@text-1.2.2.2-9UQZjEJZQFSGMffj1Z5g00:Data.Text.Lazy
+         text-1.2.2.2@text-1.2.2.2-9UQZjEJZQFSGMffj1Z5g00:Data.Text.Show
+         th-lift-0.7.7@th-lift-0.7.7-JWI9Gh7wB0MC9Q5wqv5aoI:Language.Haskell.TH.Lift
+         th-lift-instances-0.1.11@th-lift-instances-0.1.11-A7sWuFC2KLsFTBmLagoRSX:Instances.TH.Lift
+         th-orphans-0.13.4@th-orphans-0.13.4-IGsCpZ5u2Ab1MvGd5biF2z:Language.Haskell.TH.Instances
+         transformers-0.5.2.0@transformers-0.5.2.0:Control.Monad.Trans.Error
+         vector-0.12.0.1@vector-0.12.0.1-692PQMDMB6pIQ1uGwefDcQ:Data.Vector.Fusion.Bundle
+         vector-0.12.0.1@vector-0.12.0.1-692PQMDMB6pIQ1uGwefDcQ:Data.Vector.Unboxed
+family instance modules: base-4.9.1.0:Control.Applicative
+                         base-4.9.1.0:Data.Complex base-4.9.1.0:Data.Either
+                         base-4.9.1.0:Data.Functor.Const base-4.9.1.0:Data.Functor.Identity
+                         base-4.9.1.0:Data.List.NonEmpty base-4.9.1.0:Data.Monoid
+                         base-4.9.1.0:Data.Semigroup base-4.9.1.0:Data.Type.Equality
+                         base-4.9.1.0:Data.Version base-4.9.1.0:Data.Void
+                         base-4.9.1.0:GHC.Exts base-4.9.1.0:GHC.Generics
+                         base-4.9.1.0:GHC.IO.Exception base-4.9.1.0:GHC.TypeLits
+                         containers-0.5.7.1@containers-0.5.7.1:Data.IntMap.Base
+                         containers-0.5.7.1@containers-0.5.7.1:Data.IntSet.Base
+                         containers-0.5.7.1@containers-0.5.7.1:Data.Map.Base
+                         containers-0.5.7.1@containers-0.5.7.1:Data.Sequence
+                         containers-0.5.7.1@containers-0.5.7.1:Data.Set.Base
+                         ghc-boot-th-8.0.2@ghc-boot-th-8.0.2:GHC.LanguageExtensions.Type
+                         inline-r-0.9.0.2-GXEXrsxC4K8OTVxhqWwxs:Control.Memory.Region
+                         inline-r-0.9.0.2-GXEXrsxC4K8OTVxhqWwxs:Foreign.R.Type
+                         pretty-1.1.3.3@pretty-1.1.3.3:Text.PrettyPrint.Annotated.HughesPJ
+                         pretty-1.1.3.3@pretty-1.1.3.3:Text.PrettyPrint.HughesPJ
+                         primitive-0.6.2.0@primitive-0.6.2.0-4578caNkWQ54Gt1mxLF2Yh:Control.Monad.Primitive
+                         primitive-0.6.2.0@primitive-0.6.2.0-4578caNkWQ54Gt1mxLF2Yh:Data.Primitive.Array
+                         singletons-2.2@singletons-2.2-F6aalBFPo1F9ebvy1Wkuj3:Data.Singletons
+                         singletons-2.2@singletons-2.2-F6aalBFPo1F9ebvy1Wkuj3:Data.Singletons.Prelude.Bool
+                         singletons-2.2@singletons-2.2-F6aalBFPo1F9ebvy1Wkuj3:Data.Singletons.Prelude.Eq
+                         singletons-2.2@singletons-2.2-F6aalBFPo1F9ebvy1Wkuj3:Data.Singletons.Prelude.Instances
+                         singletons-2.2@singletons-2.2-F6aalBFPo1F9ebvy1Wkuj3:Data.Singletons.Prelude.Num
+                         singletons-2.2@singletons-2.2-F6aalBFPo1F9ebvy1Wkuj3:Data.Singletons.Prelude.Ord
+                         singletons-2.2@singletons-2.2-F6aalBFPo1F9ebvy1Wkuj3:Data.Singletons.Syntax
+                         singletons-2.2@singletons-2.2-F6aalBFPo1F9ebvy1Wkuj3:Data.Singletons.TypeLits.Internal
+                         template-haskell-2.11.1.0:Language.Haskell.TH.Syntax
+                         text-1.2.2.2@text-1.2.2.2-9UQZjEJZQFSGMffj1Z5g00:Data.Text
+                         text-1.2.2.2@text-1.2.2.2-9UQZjEJZQFSGMffj1Z5g00:Data.Text.Lazy
+                         th-desugar-1.6@th-desugar-1.6-4xe2xTMQQiAGUPVUAkAZhp:Language.Haskell.TH.Desugar.Core
+                         vector-0.12.0.1@vector-0.12.0.1-692PQMDMB6pIQ1uGwefDcQ:Data.Vector
+                         vector-0.12.0.1@vector-0.12.0.1-692PQMDMB6pIQ1uGwefDcQ:Data.Vector.Primitive
+                         vector-0.12.0.1@vector-0.12.0.1-692PQMDMB6pIQ1uGwefDcQ:Data.Vector.Storable
+                         vector-0.12.0.1@vector-0.12.0.1-692PQMDMB6pIQ1uGwefDcQ:Data.Vector.Unboxed
+                         vector-0.12.0.1@vector-0.12.0.1-692PQMDMB6pIQ1uGwefDcQ:Data.Vector.Unboxed.Base
+import  -/  base-4.9.1.0:Data.Int 07f5a36c488acfe0ac32e81c7536b8ff
+import  -/  base-4.9.1.0:Data.Proxy d7f87a37cf7ec5ca87c59c8d2859031f
+import  -/  base-4.9.1.0:Foreign b4bee334aade4f33021057fdecf4a495
+import  -/  base-4.9.1.0:Foreign.Marshal.Array 63114b8be90ae825866d45b38d8798ce
+import  -/  base-4.9.1.0:Foreign.Storable 085c8d7f42ceec1dbb4e818f06339b9d
+import  -/  base-4.9.1.0:GHC.Base c4231c43c07e46080a26bf94094c7aa1
+import  -/  base-4.9.1.0:GHC.Int e6f85fcab22769385fba2b5fce0acb40
+import  -/  base-4.9.1.0:GHC.Num 00bfaa7b2f9d6084913c0697a8a49ec8
+import  -/  base-4.9.1.0:GHC.Ptr 427a6ad9312f04edb98e0f5b7c4e2596
+import  -/  base-4.9.1.0:GHC.Real 82e4e59051a13dba1da63e1e970a69e6
+import  -/  base-4.9.1.0:Prelude 22dd289b8469a8fa8dc81cab7b237771
+import  -/  ghc-prim-0.5.0.0:GHC.Classes 0bdf3d057a415ec1b84a7b1994efbe47
+import  -/  Control.Memory.Region 308182c83bf046edf073fad284bcd617
+  exports: 0c21e32b92bdaf94d0d4d90814626648
+  <= df3db98a1597214f8a687757612a22d5
+import  -/  Control.Monad.R.Internal e86ff55415b5cf4a4b45773ec8435141
+  exports: 7d4cac02ee004d8eaf6eeb6af347c8eb
+  AcquireIO 5a9f026e88c0b6cd8569f0af1dc562d3
+  AcquireIO c39851170d1b482f78433de5d5762977
+import  -/  Data.Vector.SEXP.Base 4fee69f30bb73a3bab2a9c4037daa643
+  exports: aa30f1c2f3261c65181cdb6d644559bf
+  VECTOR 93c7fea9b59e1a69c8899e0c05cdaf3f
+import  -/  Foreign.R 76af03c75eee17c66f999e9a2952a2da
+  exports: 48f78775472e7fa46d6f356ef53096ba
+  allocVector baae24e9e27a16a83e3d16cb75aa5f5d
+import  -/  Foreign.R.Internal 94b91017c41283795b0b9850baa548e1
+  SEXP e854911eaf3995eafd7923a39be3730e
+  unsafeRelease 9fd97ad066a257ca40faf80b46003d47
+  unsafeSEXPToVectorPtr ad9529ee338bb707cc43d0da4de9d170
+import  -/  Foreign.R.Type 87886be580abef21e3eb082d49bd5e09
+  exports: 4a9e8ba576dbff5e9a94102d7ea58a6b
+  Char 5a1ac22d2987bdd3eece5f743d2cb5f4
+  SSEXPTYPE 86bcbd3d4f0ba71e6665b69a8de66c05
+import  -/  Internal.Error 4ff915c9ecc9112f8c436f5ab8665640
+  exports: 1cf446c8d06e4ccec0c56e44b9f9480d
+  failure efc8a89e7e01a2173cf015a15f491325
+import  -/  primitive-0.6.2.0@primitive-0.6.2.0-4578caNkWQ54Gt1mxLF2Yh:Control.Monad.Primitive 6f29f7c5aeee7400d08244e0179fc37e
+import  -/  reflection-2.1.2@reflection-2.1.2-Bem12O1xFGSHr4C2Hyu1c4:Data.Reflection e8ed21fc086f07e13656de2c3828f8a9
+import  -/  singletons-2.2@singletons-2.2-F6aalBFPo1F9ebvy1Wkuj3:Data.Singletons 96f581fbb6b163dc76612f9ad2e8eb18
+import  -/  vector-0.12.0.1@vector-0.12.0.1-692PQMDMB6pIQ1uGwefDcQ:Data.Vector.Generic.Mutable c96042d36416e177dccaa53d194ed45c
+import  -/  vector-0.12.0.1@vector-0.12.0.1-692PQMDMB6pIQ1uGwefDcQ:Data.Vector.Generic.Mutable.Base 8a2e6d400f73e59e3e07e138aec6487c
+addDependentFile "/datascience/bin/stack/programs/x86_64-linux/ghc-8.0.2/lib/ghc-8.0.2/include/ghcversion.h"
+addDependentFile ".stack-work/dist/x86_64-linux/Cabal-1.24.2.0/build/autogen/cabal_macros.h"
+addDependentFile "/usr/include/stdc-predef.h"
+c809a609adf266113603d7eff94a84d1
+  $fMVectorWa ::
+    (Data.Reflection.Reifies t (Control.Monad.R.Internal.AcquireIO s),
+     Data.Vector.SEXP.Base.VECTOR s ty a) =>
+    Data.Vector.Generic.Mutable.Base.MVector
+      (Data.Vector.SEXP.Mutable.Internal.W t ty) a
+  DFunId
+  {- Arity: 2, Strictness: <L,C(C1(C1(U)))><L,U(U,U,A,U(U))>,
+     Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun: @ t
+                      @ s
+                      @ (ty :: Foreign.R.Type.SEXPTYPE)
+                      @ a
+                      ($dReifies :: Data.Reflection.Reifies
+                                      t (Control.Monad.R.Internal.AcquireIO s))
+                      ($d(%,,,%) :: Data.Vector.SEXP.Base.VECTOR s ty a).
+                  @ (Data.Vector.SEXP.Mutable.Internal.W t ty)
+                  @ a
+                  (Data.Vector.SEXP.Mutable.Internal.$fMVectorWa_$cbasicLength
+                     @ t
+                     @ s
+                     @ ty
+                     @ a
+                     $dReifies
+                     $d(%,,,%))
+                  (Data.Vector.SEXP.Mutable.Internal.$fMVectorWa_$cbasicUnsafeSlice
+                     @ t
+                     @ s
+                     @ ty
+                     @ a
+                     $dReifies
+                     $d(%,,,%))
+                  (Data.Vector.SEXP.Mutable.Internal.$fMVectorWa_$cbasicOverlaps
+                     @ t
+                     @ s
+                     @ ty
+                     @ a
+                     $dReifies
+                     $d(%,,,%))
+                  (Data.Vector.SEXP.Mutable.Internal.$fMVectorWa_$cbasicUnsafeNew
+                     @ t
+                     @ s
+                     @ ty
+                     @ a
+                     $dReifies
+                     $d(%,,,%))
+                  (Data.Vector.SEXP.Mutable.Internal.$fMVectorWa_$cbasicInitialize
+                     @ t
+                     @ s
+                     @ ty
+                     @ a
+                     $dReifies
+                     $d(%,,,%))
+                  (Data.Vector.SEXP.Mutable.Internal.$fMVectorWa_$cbasicUnsafeReplicate
+                     @ t
+                     @ s
+                     @ ty
+                     @ a
+                     $dReifies
+                     $d(%,,,%))
+                  (Data.Vector.SEXP.Mutable.Internal.$fMVectorWa_$cbasicUnsafeRead
+                     @ t
+                     @ s
+                     @ ty
+                     @ a
+                     $dReifies
+                     $d(%,,,%))
+                  (Data.Vector.SEXP.Mutable.Internal.$fMVectorWa_$cbasicUnsafeWrite
+                     @ t
+                     @ s
+                     @ ty
+                     @ a
+                     $dReifies
+                     $d(%,,,%))
+                  (Data.Vector.SEXP.Mutable.Internal.$fMVectorWa_$cbasicInitialize
+                     @ t
+                     @ s
+                     @ ty
+                     @ a
+                     $dReifies
+                     $d(%,,,%))
+                  (Data.Vector.SEXP.Mutable.Internal.$fMVectorWa_$cbasicSet
+                     @ t
+                     @ s
+                     @ ty
+                     @ a
+                     $dReifies
+                     $d(%,,,%))
+                  (Data.Vector.SEXP.Mutable.Internal.$fMVectorWa_$cbasicUnsafeCopy
+                     @ t
+                     @ s
+                     @ ty
+                     @ a
+                     $dReifies
+                     $d(%,,,%))
+                  (Data.Vector.SEXP.Mutable.Internal.$fMVectorWa_$cbasicUnsafeMove
+                     @ t
+                     @ s
+                     @ ty
+                     @ a
+                     $dReifies
+                     $d(%,,,%))
+                  (Data.Vector.SEXP.Mutable.Internal.$fMVectorWa_$cbasicUnsafeGrow
+                     @ t
+                     @ s
+                     @ ty
+                     @ a
+                     $dReifies
+                     $d(%,,,%)) -}
+c809a609adf266113603d7eff94a84d1
+  $fMVectorWa_$cbasicInitialize ::
+    (Data.Reflection.Reifies t (Control.Monad.R.Internal.AcquireIO s),
+     Data.Vector.SEXP.Base.VECTOR s ty a) =>
+    forall (m :: * -> *).
+    Control.Monad.Primitive.PrimMonad m =>
+    Data.Vector.SEXP.Mutable.Internal.W
+      t ty (Control.Monad.Primitive.PrimState m) a
+    -> m ()
+  {- Arity: 4, HasNoCafRefs,
+     Strictness: <L,A><S(LLLS(S)),1*U(A,A,A,1*U(1*U))><S(S(LLLC(S)L)L),1*U(1*U(A,A,A,1*C1(U),A),A)><L,A>,
+     Unfolding: InlineRule (4, True, False)
+                (\ @ t
+                   @ s
+                   @ (ty :: Foreign.R.Type.SEXPTYPE)
+                   @ a
+                   ($dReifies :: Data.Reflection.Reifies
+                                   t (Control.Monad.R.Internal.AcquireIO s))
+                   ($d(%,,,%) :: Data.Vector.SEXP.Base.VECTOR s ty a)
+                   @ (m :: * -> *)
+                   (eta :: Control.Monad.Primitive.PrimMonad m)
+                   (eta1 :: Data.Vector.SEXP.Mutable.Internal.W
+                              t ty (Control.Monad.Primitive.PrimState m) a) ->
+                 case GHC.Types.HEq_sc
+                        @ *
+                        @ *
+                        @ (Data.Vector.SEXP.Base.ElemRep s ty)
+                        @ a
+                        (GHC.Classes.$p4(%,,,%)
+                           @ (Foreign.Storable.Storable a)
+                           @ (Foreign.R.Type.IsVector ty)
+                           @ (Data.Singletons.SingI ty)
+                           @ (Data.Vector.SEXP.Base.ElemRep s ty Data.Type.Equality.~ a)
+                           $d(%,,,%))
+                          `cast`
+                        (Data.Type.Equality.N:~[0] <*>_N <Data.Vector.SEXP.Base.ElemRep
+                                                            s ty>_N <a>_N) of cobox0 { DEFAULT ->
+                 GHC.Base.return
+                   @ m
+                   (Control.Monad.Primitive.$p1PrimMonad @ m eta)
+                   @ ()
+                   GHC.Tuple.() }) -}
+c809a609adf266113603d7eff94a84d1
+  $fMVectorWa_$cbasicLength ::
+    (Data.Reflection.Reifies t (Control.Monad.R.Internal.AcquireIO s),
+     Data.Vector.SEXP.Base.VECTOR s ty a) =>
+    forall s1.
+    Data.Vector.SEXP.Mutable.Internal.W t ty s1 a -> GHC.Types.Int
+  {- Arity: 3, HasNoCafRefs,
+     Strictness: <L,A><S(LLLS(S)),1*U(A,A,A,1*U(1*U))><S(LLS),1*U(A,A,U)>m,
+     Inline: INLINE (sat-args=1),
+     Unfolding: InlineRule (3, False, False)
+                (\ @ t
+                   @ s
+                   @ (ty :: Foreign.R.Type.SEXPTYPE)
+                   @ a
+                   ($dReifies :: Data.Reflection.Reifies
+                                   t (Control.Monad.R.Internal.AcquireIO s))
+                   ($d(%,,,%) :: Data.Vector.SEXP.Base.VECTOR s ty a)
+                   @ s1
+                   (eta :: Data.Vector.SEXP.Mutable.Internal.W t ty s1 a) ->
+                 case GHC.Types.HEq_sc
+                        @ *
+                        @ *
+                        @ (Data.Vector.SEXP.Base.ElemRep s ty)
+                        @ a
+                        (GHC.Classes.$p4(%,,,%)
+                           @ (Foreign.Storable.Storable a)
+                           @ (Foreign.R.Type.IsVector ty)
+                           @ (Data.Singletons.SingI ty)
+                           @ (Data.Vector.SEXP.Base.ElemRep s ty Data.Type.Equality.~ a)
+                           $d(%,,,%))
+                          `cast`
+                        (Data.Type.Equality.N:~[0] <*>_N <Data.Vector.SEXP.Base.ElemRep
+                                                            s ty>_N <a>_N) of cobox0 { DEFAULT ->
+                 case Data.Vector.SEXP.Mutable.Internal.unW
+                        @ t
+                        @ ty
+                        @ s1
+                        @ a
+                        eta of wild { Data.Vector.SEXP.Mutable.Internal.MVector dt dt1 dt2 ->
+                 GHC.Base.id @ GHC.Types.Int (GHC.Types.I# dt2) } }) -}
+c809a609adf266113603d7eff94a84d1
+  $fMVectorWa_$cbasicOverlaps ::
+    (Data.Reflection.Reifies t (Control.Monad.R.Internal.AcquireIO s),
+     Data.Vector.SEXP.Base.VECTOR s ty a) =>
+    forall s1.
+    Data.Vector.SEXP.Mutable.Internal.W t ty s1 a
+    -> Data.Vector.SEXP.Mutable.Internal.W t ty s1 a -> GHC.Types.Bool
+  {- Arity: 4, HasNoCafRefs,
+     Strictness: <L,A><S(LLLS(S)),1*U(A,A,A,1*U(1*U))><S(SLL),1*U(U,U,U)><S(SLL),1*U(U,U,U)>,
+     Inline: INLINE (sat-args=2),
+     Unfolding: InlineRule (4, False, False)
+                (\ @ t
+                   @ s
+                   @ (ty :: Foreign.R.Type.SEXPTYPE)
+                   @ a
+                   ($dReifies :: Data.Reflection.Reifies
+                                   t (Control.Monad.R.Internal.AcquireIO s))
+                   ($d(%,,,%) :: Data.Vector.SEXP.Base.VECTOR s ty a)
+                   @ s1
+                   (eta :: Data.Vector.SEXP.Mutable.Internal.W t ty s1 a)
+                   (eta1 :: Data.Vector.SEXP.Mutable.Internal.W t ty s1 a) ->
+                 case GHC.Types.HEq_sc
+                        @ *
+                        @ *
+                        @ (Data.Vector.SEXP.Base.ElemRep s ty)
+                        @ a
+                        (GHC.Classes.$p4(%,,,%)
+                           @ (Foreign.Storable.Storable a)
+                           @ (Foreign.R.Type.IsVector ty)
+                           @ (Data.Singletons.SingI ty)
+                           @ (Data.Vector.SEXP.Base.ElemRep s ty Data.Type.Equality.~ a)
+                           $d(%,,,%))
+                          `cast`
+                        (Data.Type.Equality.N:~[0] <*>_N <Data.Vector.SEXP.Base.ElemRep
+                                                            s ty>_N <a>_N) of cobox0 { DEFAULT ->
+                 case Data.Vector.SEXP.Mutable.Internal.unW
+                        @ t
+                        @ ty
+                        @ s1
+                        @ a
+                        eta of wild { Data.Vector.SEXP.Mutable.Internal.MVector dt dt1 dt2 ->
+                 let {
+                   off1 :: GHC.Int.Int32 = GHC.Int.I32# dt1
+                 } in
+                 case Data.Vector.SEXP.Mutable.Internal.unW
+                        @ t
+                        @ ty
+                        @ s1
+                        @ a
+                        eta1 of wild1 { Data.Vector.SEXP.Mutable.Internal.MVector dt3 dt4 dt5 ->
+                 let {
+                   off2 :: GHC.Int.Int32 = GHC.Int.I32# dt4
+                 } in
+                 GHC.Classes.&&
+                   (Foreign.R.Internal.$fEqSEXP_$c==
+                      @ s1
+                      @ ty
+                      (GHC.Ptr.Ptr @ (Language.R.HExp.HExp s1 ty) dt)
+                        `cast`
+                      (Sym (Foreign.R.Internal.N:SEXP[0] <s1>_P <ty>_P))
+                      (GHC.Ptr.Ptr @ (Language.R.HExp.HExp s1 ty) dt3)
+                        `cast`
+                      (Sym (Foreign.R.Internal.N:SEXP[0] <s1>_P <ty>_P)))
+                   (GHC.Classes.||
+                      (GHC.Int.ltInt32
+                         off2
+                         (GHC.Int.$fNumInt32_$c+ off1 (GHC.Int.I32# dt2)))
+                      (GHC.Int.ltInt32
+                         off1
+                         (GHC.Int.$fNumInt32_$c+ off2 (GHC.Int.I32# dt5)))) } } }) -}
+c809a609adf266113603d7eff94a84d1
+  $fMVectorWa_$cbasicSet ::
+    (Data.Reflection.Reifies t (Control.Monad.R.Internal.AcquireIO s),
+     Data.Vector.SEXP.Base.VECTOR s ty a) =>
+    forall (m :: * -> *).
+    Control.Monad.Primitive.PrimMonad m =>
+    Data.Vector.SEXP.Mutable.Internal.W
+      t ty (Control.Monad.Primitive.PrimState m) a
+    -> a -> m ()
+  {- Arity: 4,
+     Strictness: <L,C(C1(C1(U)))><S(LLLS(S)),U(U,U,A,U(U))><L,U(U,U)><L,U(U,U,U)>,
+     Inline: INLINE (sat-args=2),
+     Unfolding: InlineRule (4, False, False)
+                (\ @ t
+                   @ s
+                   @ (ty :: Foreign.R.Type.SEXPTYPE)
+                   @ a
+                   ($dReifies :: Data.Reflection.Reifies
+                                   t (Control.Monad.R.Internal.AcquireIO s))
+                   ($d(%,,,%) :: Data.Vector.SEXP.Base.VECTOR s ty a)
+                   @ (m :: * -> *)
+                   (eta :: Control.Monad.Primitive.PrimMonad m)
+                   (eta1 :: Data.Vector.SEXP.Mutable.Internal.W
+                              t ty (Control.Monad.Primitive.PrimState m) a)
+                   (eta2 :: a) ->
+                 case GHC.Types.HEq_sc
+                        @ *
+                        @ *
+                        @ (Data.Vector.SEXP.Base.ElemRep s ty)
+                        @ a
+                        (GHC.Classes.$p4(%,,,%)
+                           @ (Foreign.Storable.Storable a)
+                           @ (Foreign.R.Type.IsVector ty)
+                           @ (Data.Singletons.SingI ty)
+                           @ (Data.Vector.SEXP.Base.ElemRep s ty Data.Type.Equality.~ a)
+                           $d(%,,,%))
+                          `cast`
+                        (Data.Type.Equality.N:~[0] <*>_N <Data.Vector.SEXP.Base.ElemRep
+                                                            s ty>_N <a>_N) of cobox0 { DEFAULT ->
+                 let {
+                   $dMonad :: GHC.Base.Monad m
+                   = Control.Monad.Primitive.$p1PrimMonad @ m eta
+                 } in
+                 case eta1
+                        `cast`
+                      (Data.Vector.SEXP.Mutable.Internal.N:W[0]
+                           <t>_P
+                           <ty>_P
+                           <Control.Monad.Primitive.PrimState
+                              m>_P <a>_N) of nt { Data.Vector.SEXP.Mutable.Internal.MVector ipv ipv1 ipv2 ->
+                 case GHC.Types.HEq_sc
+                        @ *
+                        @ *
+                        @ (Data.Vector.SEXP.Base.ElemRep s ty)
+                        @ a
+                        (GHC.Classes.$p4(%,,,%)
+                           @ (Foreign.Storable.Storable a)
+                           @ (Foreign.R.Type.IsVector ty)
+                           @ (Data.Singletons.SingI ty)
+                           @ (Data.Vector.SEXP.Base.ElemRep s ty Data.Type.Equality.~ a)
+                           $d(%,,,%))
+                          `cast`
+                        (Data.Type.Equality.N:~[0] <*>_N <Data.Vector.SEXP.Base.ElemRep
+                                                            s ty>_N <a>_N) of cobox1 { DEFAULT ->
+                 case Data.Vector.SEXP.Mutable.Internal.unW
+                        @ t
+                        @ ty
+                        @ (Control.Monad.Primitive.PrimState m)
+                        @ a
+                        nt
+                          `cast`
+                        (Sym (Data.Vector.SEXP.Mutable.Internal.N:W[0]
+                                  <t>_P
+                                  <ty>_P
+                                  <Control.Monad.Primitive.PrimState
+                                     m>_P) <a>_N) of wild { Data.Vector.SEXP.Mutable.Internal.MVector dt dt1 dt2 ->
+                 case GHC.Base.id
+                        @ GHC.Types.Int
+                        (GHC.Types.I# dt2) of n { GHC.Types.I# ipv3 ->
+                 letrec {
+                   do_set :: GHC.Types.Int -> m () {- Arity: 1 -}
+                   = \ (i :: GHC.Types.Int) ->
+                     case GHC.Classes.ltInt
+                            (GHC.Num.$fNumInt_$c* (GHC.Types.I# 2#) i)
+                            n of wild1 {
+                       GHC.Types.False
+                       -> let {
+                            eta3 :: Data.Vector.SEXP.Mutable.Internal.W
+                                      t ty (Control.Monad.Primitive.PrimState m) a
+                            = case GHC.Types.HEq_sc
+                                     @ *
+                                     @ *
+                                     @ (Data.Vector.SEXP.Base.ElemRep s ty)
+                                     @ a
+                                     (GHC.Classes.$p4(%,,,%)
+                                        @ (Foreign.Storable.Storable a)
+                                        @ (Foreign.R.Type.IsVector ty)
+                                        @ (Data.Singletons.SingI ty)
+                                        @ (Data.Vector.SEXP.Base.ElemRep s ty
+                                           Data.Type.Equality.~ a)
+                                        $d(%,,,%))
+                                       `cast`
+                                     (Data.Type.Equality.N:~[0] <*>_N <Data.Vector.SEXP.Base.ElemRep
+                                                                         s
+                                                                         ty>_N <a>_N) of cobox2 { DEFAULT ->
+                              case Data.Vector.SEXP.Mutable.Internal.unW
+                                     @ t
+                                     @ ty
+                                     @ (Control.Monad.Primitive.PrimState m)
+                                     @ a
+                                     nt
+                                       `cast`
+                                     (Sym (Data.Vector.SEXP.Mutable.Internal.N:W[0]
+                                               <t>_P
+                                               <ty>_P
+                                               <Control.Monad.Primitive.PrimState
+                                                  m>_P) <a>_N) of wild2 { Data.Vector.SEXP.Mutable.Internal.MVector dt3 dt4 dt5 ->
+                              GHC.Base.$
+                                @ 'GHC.Types.PtrRepLifted
+                                @ (Data.Vector.SEXP.Mutable.Internal.MVector
+                                     (Control.Monad.Primitive.PrimState m) ty a)
+                                @ (Data.Vector.SEXP.Mutable.Internal.W
+                                     t ty (Control.Monad.Primitive.PrimState m) a)
+                                (\ (tpl :: Data.Vector.SEXP.Mutable.Internal.MVector
+                                             (Control.Monad.Primitive.PrimState m) ty a) ->
+                                 tpl)
+                                  `cast`
+                                (<Data.Vector.SEXP.Mutable.Internal.MVector
+                                    (Control.Monad.Primitive.PrimState m) ty a>_R
+                                 ->_R Sym (Data.Vector.SEXP.Mutable.Internal.N:W[0]
+                                               <t>_P
+                                               <ty>_P
+                                               <Control.Monad.Primitive.PrimState m>_P) <a>_N)
+                                (case GHC.Base.id @ GHC.Types.Int i of wild3 { GHC.Types.I# x# ->
+                                 case GHC.Int.$fNumInt32_$c+
+                                        (GHC.Int.I32# dt4)
+                                        (GHC.Int.I32#
+                                           (GHC.Prim.narrow32Int# x#)) of dt6 { GHC.Int.I32# dt7 ->
+                                 case GHC.Base.id
+                                        @ GHC.Types.Int
+                                        (GHC.Num.$fNumInt_$c- n i) of wild4 { GHC.Types.I# x#1 ->
+                                 Data.Vector.SEXP.Mutable.Internal.MVector
+                                   @ (Control.Monad.Primitive.PrimState m)
+                                   @ ty
+                                   @ a
+                                   dt3
+                                   dt7
+                                   (GHC.Prim.narrow32Int# x#1) } } }) } }
+                          } in
+                          case GHC.Types.HEq_sc
+                                 @ *
+                                 @ *
+                                 @ (Data.Vector.SEXP.Base.ElemRep s ty)
+                                 @ a
+                                 (GHC.Classes.$p4(%,,,%)
+                                    @ (Foreign.Storable.Storable a)
+                                    @ (Foreign.R.Type.IsVector ty)
+                                    @ (Data.Singletons.SingI ty)
+                                    @ (Data.Vector.SEXP.Base.ElemRep s ty Data.Type.Equality.~ a)
+                                    $d(%,,,%))
+                                   `cast`
+                                 (Data.Type.Equality.N:~[0] <*>_N <Data.Vector.SEXP.Base.ElemRep
+                                                                     s
+                                                                     ty>_N <a>_N) of cobox2 { DEFAULT ->
+                          let {
+                            $dStorable :: Foreign.Storable.Storable a
+                            = GHC.Classes.$p1(%,,,%)
+                                @ (Foreign.Storable.Storable a)
+                                @ (Foreign.R.Type.IsVector ty)
+                                @ (Data.Singletons.SingI ty)
+                                @ (Data.Vector.SEXP.Base.ElemRep s ty Data.Type.Equality.~ a)
+                                $d(%,,,%)
+                          } in
+                          GHC.Base.$
+                            @ 'GHC.Types.PtrRepLifted
+                            @ (GHC.Types.IO ())
+                            @ (m ())
+                            (Control.Monad.Primitive.unsafePrimToPrim
+                               @ GHC.Types.IO
+                               @ m
+                               @ ()
+                               Control.Monad.Primitive.$fPrimBaseIO
+                               eta)
+                            (Foreign.Marshal.Array.copyArray
+                               @ a
+                               $dStorable
+                               (Data.Vector.SEXP.Mutable.Internal.unsafeToPtr
+                                  @ a
+                                  @ (Control.Monad.Primitive.PrimState m)
+                                  @ ty
+                                  $dStorable
+                                  (Data.Vector.SEXP.Mutable.Internal.unW
+                                     @ t
+                                     @ ty
+                                     @ (Control.Monad.Primitive.PrimState m)
+                                     @ a
+                                     eta3))
+                               (case GHC.Types.HEq_sc
+                                       @ *
+                                       @ *
+                                       @ (Data.Vector.SEXP.Base.ElemRep s ty)
+                                       @ a
+                                       (GHC.Classes.$p4(%,,,%)
+                                          @ (Foreign.Storable.Storable a)
+                                          @ (Foreign.R.Type.IsVector ty)
+                                          @ (Data.Singletons.SingI ty)
+                                          @ (Data.Vector.SEXP.Base.ElemRep s ty
+                                             Data.Type.Equality.~ a)
+                                          $d(%,,,%))
+                                         `cast`
+                                       (Data.Type.Equality.N:~[0]
+                                            <*>_N <Data.Vector.SEXP.Base.ElemRep
+                                                     s ty>_N <a>_N) of cobox3 { DEFAULT ->
+                                case Data.Vector.SEXP.Mutable.Internal.unW
+                                       @ t
+                                       @ ty
+                                       @ (Control.Monad.Primitive.PrimState m)
+                                       @ a
+                                       nt
+                                         `cast`
+                                       (Sym (Data.Vector.SEXP.Mutable.Internal.N:W[0]
+                                                 <t>_P
+                                                 <ty>_P
+                                                 <Control.Monad.Primitive.PrimState
+                                                    m>_P) <a>_N) of wild2 { Data.Vector.SEXP.Mutable.Internal.MVector dt3 dt4 dt5 ->
+                                Data.Vector.SEXP.Mutable.Internal.unsafeToPtr
+                                  @ a
+                                  @ (Control.Monad.Primitive.PrimState m)
+                                  @ ty
+                                  $dStorable
+                                  (Data.Vector.SEXP.Mutable.Internal.unW
+                                     @ t
+                                     @ ty
+                                     @ (Control.Monad.Primitive.PrimState m)
+                                     @ a
+                                     (GHC.Base.$
+                                        @ 'GHC.Types.PtrRepLifted
+                                        @ (Data.Vector.SEXP.Mutable.Internal.MVector
+                                             (Control.Monad.Primitive.PrimState m) ty a)
+                                        @ (Data.Vector.SEXP.Mutable.Internal.W
+                                             t ty (Control.Monad.Primitive.PrimState m) a)
+                                        (\ (tpl :: Data.Vector.SEXP.Mutable.Internal.MVector
+                                                     (Control.Monad.Primitive.PrimState m) ty a) ->
+                                         tpl)
+                                          `cast`
+                                        (<Data.Vector.SEXP.Mutable.Internal.MVector
+                                            (Control.Monad.Primitive.PrimState m) ty a>_R
+                                         ->_R Sym (Data.Vector.SEXP.Mutable.Internal.N:W[0]
+                                                       <t>_P
+                                                       <ty>_P
+                                                       <Control.Monad.Primitive.PrimState
+                                                          m>_P) <a>_N)
+                                        (case GHC.Base.id
+                                                @ GHC.Types.Int
+                                                (GHC.Types.I# 0#) of wild3 { GHC.Types.I# x# ->
+                                         case GHC.Int.$fNumInt32_$c+
+                                                (GHC.Int.I32# dt4)
+                                                (GHC.Int.I32#
+                                                   (GHC.Prim.narrow32Int#
+                                                      x#)) of dt6 { GHC.Int.I32# dt7 ->
+                                         case GHC.Base.id
+                                                @ GHC.Types.Int
+                                                (GHC.Num.$fNumInt_$c-
+                                                   n
+                                                   i) of wild4 { GHC.Types.I# x#1 ->
+                                         Data.Vector.SEXP.Mutable.Internal.MVector
+                                           @ (Control.Monad.Primitive.PrimState m)
+                                           @ ty
+                                           @ a
+                                           dt3
+                                           dt7
+                                           (GHC.Prim.narrow32Int# x#1) } } }))) } })
+                               (Data.Vector.SEXP.Mutable.Internal.$fMVectorWa_$cbasicLength
+                                  @ t
+                                  @ s
+                                  @ ty
+                                  @ a
+                                  $dReifies
+                                  $d(%,,,%)
+                                  @ (Control.Monad.Primitive.PrimState m)
+                                  eta3)) }
+                       GHC.Types.True
+                       -> GHC.Base.>>
+                            @ m
+                            $dMonad
+                            @ ()
+                            @ ()
+                            (let {
+                               eta3 :: Data.Vector.SEXP.Mutable.Internal.W
+                                         t ty (Control.Monad.Primitive.PrimState m) a
+                               = case GHC.Types.HEq_sc
+                                        @ *
+                                        @ *
+                                        @ (Data.Vector.SEXP.Base.ElemRep s ty)
+                                        @ a
+                                        (GHC.Classes.$p4(%,,,%)
+                                           @ (Foreign.Storable.Storable a)
+                                           @ (Foreign.R.Type.IsVector ty)
+                                           @ (Data.Singletons.SingI ty)
+                                           @ (Data.Vector.SEXP.Base.ElemRep s ty
+                                              Data.Type.Equality.~ a)
+                                           $d(%,,,%))
+                                          `cast`
+                                        (Data.Type.Equality.N:~[0]
+                                             <*>_N <Data.Vector.SEXP.Base.ElemRep
+                                                      s ty>_N <a>_N) of cobox2 { DEFAULT ->
+                                 case Data.Vector.SEXP.Mutable.Internal.unW
+                                        @ t
+                                        @ ty
+                                        @ (Control.Monad.Primitive.PrimState m)
+                                        @ a
+                                        nt
+                                          `cast`
+                                        (Sym (Data.Vector.SEXP.Mutable.Internal.N:W[0]
+                                                  <t>_P
+                                                  <ty>_P
+                                                  <Control.Monad.Primitive.PrimState
+                                                     m>_P) <a>_N) of wild2 { Data.Vector.SEXP.Mutable.Internal.MVector dt3 dt4 dt5 ->
+                                 GHC.Base.$
+                                   @ 'GHC.Types.PtrRepLifted
+                                   @ (Data.Vector.SEXP.Mutable.Internal.MVector
+                                        (Control.Monad.Primitive.PrimState m) ty a)
+                                   @ (Data.Vector.SEXP.Mutable.Internal.W
+                                        t ty (Control.Monad.Primitive.PrimState m) a)
+                                   (\ (tpl :: Data.Vector.SEXP.Mutable.Internal.MVector
+                                                (Control.Monad.Primitive.PrimState m) ty a) ->
+                                    tpl)
+                                     `cast`
+                                   (<Data.Vector.SEXP.Mutable.Internal.MVector
+                                       (Control.Monad.Primitive.PrimState m) ty a>_R
+                                    ->_R Sym (Data.Vector.SEXP.Mutable.Internal.N:W[0]
+                                                  <t>_P
+                                                  <ty>_P
+                                                  <Control.Monad.Primitive.PrimState m>_P) <a>_N)
+                                   (case GHC.Base.id @ GHC.Types.Int i of wild3 { GHC.Types.I# x# ->
+                                    case GHC.Int.$fNumInt32_$c+
+                                           (GHC.Int.I32# dt4)
+                                           (GHC.Int.I32#
+                                              (GHC.Prim.narrow32Int#
+                                                 x#)) of dt6 { GHC.Int.I32# dt7 ->
+                                    case GHC.Base.id
+                                           @ GHC.Types.Int
+                                           i of wild4 { GHC.Types.I# x#1 ->
+                                    Data.Vector.SEXP.Mutable.Internal.MVector
+                                      @ (Control.Monad.Primitive.PrimState m)
+                                      @ ty
+                                      @ a
+                                      dt3
+                                      dt7
+                                      (GHC.Prim.narrow32Int# x#1) } } }) } }
+                             } in
+                             case GHC.Types.HEq_sc
+                                    @ *
+                                    @ *
+                                    @ (Data.Vector.SEXP.Base.ElemRep s ty)
+                                    @ a
+                                    (GHC.Classes.$p4(%,,,%)
+                                       @ (Foreign.Storable.Storable a)
+                                       @ (Foreign.R.Type.IsVector ty)
+                                       @ (Data.Singletons.SingI ty)
+                                       @ (Data.Vector.SEXP.Base.ElemRep s ty Data.Type.Equality.~ a)
+                                       $d(%,,,%))
+                                      `cast`
+                                    (Data.Type.Equality.N:~[0] <*>_N <Data.Vector.SEXP.Base.ElemRep
+                                                                        s
+                                                                        ty>_N <a>_N) of cobox2 { DEFAULT ->
+                             let {
+                               $dStorable :: Foreign.Storable.Storable a
+                               = GHC.Classes.$p1(%,,,%)
+                                   @ (Foreign.Storable.Storable a)
+                                   @ (Foreign.R.Type.IsVector ty)
+                                   @ (Data.Singletons.SingI ty)
+                                   @ (Data.Vector.SEXP.Base.ElemRep s ty Data.Type.Equality.~ a)
+                                   $d(%,,,%)
+                             } in
+                             GHC.Base.$
+                               @ 'GHC.Types.PtrRepLifted
+                               @ (GHC.Types.IO ())
+                               @ (m ())
+                               (Control.Monad.Primitive.unsafePrimToPrim
+                                  @ GHC.Types.IO
+                                  @ m
+                                  @ ()
+                                  Control.Monad.Primitive.$fPrimBaseIO
+                                  eta)
+                               (Foreign.Marshal.Array.copyArray
+                                  @ a
+                                  $dStorable
+                                  (Data.Vector.SEXP.Mutable.Internal.unsafeToPtr
+                                     @ a
+                                     @ (Control.Monad.Primitive.PrimState m)
+                                     @ ty
+                                     $dStorable
+                                     (Data.Vector.SEXP.Mutable.Internal.unW
+                                        @ t
+                                        @ ty
+                                        @ (Control.Monad.Primitive.PrimState m)
+                                        @ a
+                                        eta3))
+                                  (case GHC.Types.HEq_sc
+                                          @ *
+                                          @ *
+                                          @ (Data.Vector.SEXP.Base.ElemRep s ty)
+                                          @ a
+                                          (GHC.Classes.$p4(%,,,%)
+                                             @ (Foreign.Storable.Storable a)
+                                             @ (Foreign.R.Type.IsVector ty)
+                                             @ (Data.Singletons.SingI ty)
+                                             @ (Data.Vector.SEXP.Base.ElemRep s ty
+                                                Data.Type.Equality.~ a)
+                                             $d(%,,,%))
+                                            `cast`
+                                          (Data.Type.Equality.N:~[0]
+                                               <*>_N <Data.Vector.SEXP.Base.ElemRep
+                                                        s ty>_N <a>_N) of cobox3 { DEFAULT ->
+                                   case Data.Vector.SEXP.Mutable.Internal.unW
+                                          @ t
+                                          @ ty
+                                          @ (Control.Monad.Primitive.PrimState m)
+                                          @ a
+                                          nt
+                                            `cast`
+                                          (Sym (Data.Vector.SEXP.Mutable.Internal.N:W[0]
+                                                    <t>_P
+                                                    <ty>_P
+                                                    <Control.Monad.Primitive.PrimState
+                                                       m>_P) <a>_N) of wild2 { Data.Vector.SEXP.Mutable.Internal.MVector dt3 dt4 dt5 ->
+                                   Data.Vector.SEXP.Mutable.Internal.unsafeToPtr
+                                     @ a
+                                     @ (Control.Monad.Primitive.PrimState m)
+                                     @ ty
+                                     $dStorable
+                                     (Data.Vector.SEXP.Mutable.Internal.unW
+                                        @ t
+                                        @ ty
+                                        @ (Control.Monad.Primitive.PrimState m)
+                                        @ a
+                                        (GHC.Base.$
+                                           @ 'GHC.Types.PtrRepLifted
+                                           @ (Data.Vector.SEXP.Mutable.Internal.MVector
+                                                (Control.Monad.Primitive.PrimState m) ty a)
+                                           @ (Data.Vector.SEXP.Mutable.Internal.W
+                                                t ty (Control.Monad.Primitive.PrimState m) a)
+                                           (\ (tpl :: Data.Vector.SEXP.Mutable.Internal.MVector
+                                                        (Control.Monad.Primitive.PrimState m)
+                                                        ty
+                                                        a) ->
+                                            tpl)
+                                             `cast`
+                                           (<Data.Vector.SEXP.Mutable.Internal.MVector
+                                               (Control.Monad.Primitive.PrimState m) ty a>_R
+                                            ->_R Sym (Data.Vector.SEXP.Mutable.Internal.N:W[0]
+                                                          <t>_P
+                                                          <ty>_P
+                                                          <Control.Monad.Primitive.PrimState
+                                                             m>_P) <a>_N)
+                                           (case GHC.Base.id
+                                                   @ GHC.Types.Int
+                                                   (GHC.Types.I# 0#) of wild3 { GHC.Types.I# x# ->
+                                            case GHC.Int.$fNumInt32_$c+
+                                                   (GHC.Int.I32# dt4)
+                                                   (GHC.Int.I32#
+                                                      (GHC.Prim.narrow32Int#
+                                                         x#)) of dt6 { GHC.Int.I32# dt7 ->
+                                            case GHC.Base.id
+                                                   @ GHC.Types.Int
+                                                   i of wild4 { GHC.Types.I# x#1 ->
+                                            Data.Vector.SEXP.Mutable.Internal.MVector
+                                              @ (Control.Monad.Primitive.PrimState m)
+                                              @ ty
+                                              @ a
+                                              dt3
+                                              dt7
+                                              (GHC.Prim.narrow32Int# x#1) } } }))) } })
+                                  (case GHC.Types.HEq_sc
+                                          @ *
+                                          @ *
+                                          @ (Data.Vector.SEXP.Base.ElemRep s ty)
+                                          @ a
+                                          (GHC.Classes.$p4(%,,,%)
+                                             @ (Foreign.Storable.Storable a)
+                                             @ (Foreign.R.Type.IsVector ty)
+                                             @ (Data.Singletons.SingI ty)
+                                             @ (Data.Vector.SEXP.Base.ElemRep s ty
+                                                Data.Type.Equality.~ a)
+                                             $d(%,,,%))
+                                            `cast`
+                                          (Data.Type.Equality.N:~[0]
+                                               <*>_N <Data.Vector.SEXP.Base.ElemRep
+                                                        s ty>_N <a>_N) of cobox3 { DEFAULT ->
+                                   case Data.Vector.SEXP.Mutable.Internal.unW
+                                          @ t
+                                          @ ty
+                                          @ (Control.Monad.Primitive.PrimState m)
+                                          @ a
+                                          eta3 of wild2 { Data.Vector.SEXP.Mutable.Internal.MVector dt3 dt4 dt5 ->
+                                   GHC.Base.id @ GHC.Types.Int (GHC.Types.I# dt5) } })) })
+                            (do_set (GHC.Num.$fNumInt_$c* (GHC.Types.I# 2#) i)) }
+                 } in
+                 case GHC.Classes.eqInt n (GHC.Types.I# 0#) of wild1 {
+                   GHC.Types.False
+                   -> GHC.Base.>>
+                        @ m
+                        $dMonad
+                        @ ()
+                        @ ()
+                        (case GHC.Types.HEq_sc
+                                @ *
+                                @ *
+                                @ (Data.Vector.SEXP.Base.ElemRep s ty)
+                                @ a
+                                (GHC.Classes.$p4(%,,,%)
+                                   @ (Foreign.Storable.Storable a)
+                                   @ (Foreign.R.Type.IsVector ty)
+                                   @ (Data.Singletons.SingI ty)
+                                   @ (Data.Vector.SEXP.Base.ElemRep s ty Data.Type.Equality.~ a)
+                                   $d(%,,,%))
+                                  `cast`
+                                (Data.Type.Equality.N:~[0] <*>_N <Data.Vector.SEXP.Base.ElemRep
+                                                                    s
+                                                                    ty>_N <a>_N) of cobox2 { DEFAULT ->
+                         let {
+                           $dStorable :: Foreign.Storable.Storable a
+                           = GHC.Classes.$p1(%,,,%)
+                               @ (Foreign.Storable.Storable a)
+                               @ (Foreign.R.Type.IsVector ty)
+                               @ (Data.Singletons.SingI ty)
+                               @ (Data.Vector.SEXP.Base.ElemRep s ty Data.Type.Equality.~ a)
+                               $d(%,,,%)
+                         } in
+                         GHC.Base.$
+                           @ 'GHC.Types.PtrRepLifted
+                           @ (GHC.Types.IO ())
+                           @ (m ())
+                           (Control.Monad.Primitive.unsafePrimToPrim
+                              @ GHC.Types.IO
+                              @ m
+                              @ ()
+                              Control.Monad.Primitive.$fPrimBaseIO
+                              eta)
+                           (Foreign.Storable.pokeElemOff
+                              @ a
+                              $dStorable
+                              (Data.Vector.SEXP.Mutable.Internal.unsafeToPtr
+                                 @ a
+                                 @ (Control.Monad.Primitive.PrimState m)
+                                 @ ty
+                                 $dStorable
+                                 (Data.Vector.SEXP.Mutable.Internal.unW
+                                    @ t
+                                    @ ty
+                                    @ (Control.Monad.Primitive.PrimState m)
+                                    @ a
+                                    nt
+                                      `cast`
+                                    (Sym (Data.Vector.SEXP.Mutable.Internal.N:W[0]
+                                              <t>_P
+                                              <ty>_P
+                                              <Control.Monad.Primitive.PrimState m>_P) <a>_N)))
+                              (GHC.Types.I# 0#)
+                              eta2) })
+                        (do_set (GHC.Types.I# 1#))
+                   GHC.Types.True
+                   -> GHC.Base.return @ m $dMonad @ () GHC.Tuple.() } } } } } }) -}
+c809a609adf266113603d7eff94a84d1
+  $fMVectorWa_$cbasicUnsafeCopy ::
+    (Data.Reflection.Reifies t (Control.Monad.R.Internal.AcquireIO s),
+     Data.Vector.SEXP.Base.VECTOR s ty a) =>
+    forall (m :: * -> *).
+    Control.Monad.Primitive.PrimMonad m =>
+    Data.Vector.SEXP.Mutable.Internal.W
+      t ty (Control.Monad.Primitive.PrimState m) a
+    -> Data.Vector.SEXP.Mutable.Internal.W
+         t ty (Control.Monad.Primitive.PrimState m) a
+    -> m ()
+  {- Arity: 5,
+     Strictness: <L,A><S(LLLS(S)),U(1*U,A,A,U(U))><S(LC(S)),1*U(A,1*C1(U))><L,U(U,U,U)><L,U(U,U,A)>,
+     Inline: INLINE (sat-args=2),
+     Unfolding: InlineRule (4, False, False)
+                (\ @ t
+                   @ s
+                   @ (ty :: Foreign.R.Type.SEXPTYPE)
+                   @ a
+                   ($dReifies :: Data.Reflection.Reifies
+                                   t (Control.Monad.R.Internal.AcquireIO s))
+                   ($d(%,,,%) :: Data.Vector.SEXP.Base.VECTOR s ty a)
+                   @ (m :: * -> *)
+                   (eta :: Control.Monad.Primitive.PrimMonad m)
+                   (eta1 :: Data.Vector.SEXP.Mutable.Internal.W
+                              t ty (Control.Monad.Primitive.PrimState m) a)
+                   (eta2 :: Data.Vector.SEXP.Mutable.Internal.W
+                              t ty (Control.Monad.Primitive.PrimState m) a) ->
+                 case GHC.Types.HEq_sc
+                        @ *
+                        @ *
+                        @ (Data.Vector.SEXP.Base.ElemRep s ty)
+                        @ a
+                        (GHC.Classes.$p4(%,,,%)
+                           @ (Foreign.Storable.Storable a)
+                           @ (Foreign.R.Type.IsVector ty)
+                           @ (Data.Singletons.SingI ty)
+                           @ (Data.Vector.SEXP.Base.ElemRep s ty Data.Type.Equality.~ a)
+                           $d(%,,,%))
+                          `cast`
+                        (Data.Type.Equality.N:~[0] <*>_N <Data.Vector.SEXP.Base.ElemRep
+                                                            s ty>_N <a>_N) of cobox0 { DEFAULT ->
+                 let {
+                   $dStorable :: Foreign.Storable.Storable a
+                   = GHC.Classes.$p1(%,,,%)
+                       @ (Foreign.Storable.Storable a)
+                       @ (Foreign.R.Type.IsVector ty)
+                       @ (Data.Singletons.SingI ty)
+                       @ (Data.Vector.SEXP.Base.ElemRep s ty Data.Type.Equality.~ a)
+                       $d(%,,,%)
+                 } in
+                 GHC.Base.$
+                   @ 'GHC.Types.PtrRepLifted
+                   @ (GHC.Types.IO ())
+                   @ (m ())
+                   (Control.Monad.Primitive.unsafePrimToPrim
+                      @ GHC.Types.IO
+                      @ m
+                      @ ()
+                      Control.Monad.Primitive.$fPrimBaseIO
+                      eta)
+                   (Foreign.Marshal.Array.copyArray
+                      @ a
+                      $dStorable
+                      (Data.Vector.SEXP.Mutable.Internal.unsafeToPtr
+                         @ a
+                         @ (Control.Monad.Primitive.PrimState m)
+                         @ ty
+                         $dStorable
+                         (Data.Vector.SEXP.Mutable.Internal.unW
+                            @ t
+                            @ ty
+                            @ (Control.Monad.Primitive.PrimState m)
+                            @ a
+                            eta1))
+                      (Data.Vector.SEXP.Mutable.Internal.unsafeToPtr
+                         @ a
+                         @ (Control.Monad.Primitive.PrimState m)
+                         @ ty
+                         $dStorable
+                         (Data.Vector.SEXP.Mutable.Internal.unW
+                            @ t
+                            @ ty
+                            @ (Control.Monad.Primitive.PrimState m)
+                            @ a
+                            eta2))
+                      (Data.Vector.SEXP.Mutable.Internal.$fMVectorWa_$cbasicLength
+                         @ t
+                         @ s
+                         @ ty
+                         @ a
+                         $dReifies
+                         $d(%,,,%)
+                         @ (Control.Monad.Primitive.PrimState m)
+                         eta1)) }) -}
+c809a609adf266113603d7eff94a84d1
+  $fMVectorWa_$cbasicUnsafeGrow ::
+    (Data.Reflection.Reifies t (Control.Monad.R.Internal.AcquireIO s),
+     Data.Vector.SEXP.Base.VECTOR s ty a) =>
+    forall (m :: * -> *).
+    Control.Monad.Primitive.PrimMonad m =>
+    Data.Vector.SEXP.Mutable.Internal.W
+      t ty (Control.Monad.Primitive.PrimState m) a
+    -> GHC.Types.Int
+    -> m (Data.Vector.SEXP.Mutable.Internal.W
+            t ty (Control.Monad.Primitive.PrimState m) a)
+  {- Arity: 4,
+     Strictness: <L,C(C1(C1(U)))><S(LLLS(S)),U(U,U,A,U(U))><L,U(U,U)><L,U>,
+     Inline: INLINE (sat-args=2),
+     Unfolding: InlineRule (4, False, False)
+                (\ @ t
+                   @ s
+                   @ (ty :: Foreign.R.Type.SEXPTYPE)
+                   @ a
+                   ($dReifies :: Data.Reflection.Reifies
+                                   t (Control.Monad.R.Internal.AcquireIO s))
+                   ($d(%,,,%) :: Data.Vector.SEXP.Base.VECTOR s ty a)
+                   @ (m :: * -> *)
+                   (eta :: Control.Monad.Primitive.PrimMonad m)
+                   (eta1 :: Data.Vector.SEXP.Mutable.Internal.W
+                              t ty (Control.Monad.Primitive.PrimState m) a)
+                   (eta2 :: GHC.Types.Int) ->
+                 case GHC.Types.HEq_sc
+                        @ *
+                        @ *
+                        @ (Data.Vector.SEXP.Base.ElemRep s ty)
+                        @ a
+                        (GHC.Classes.$p4(%,,,%)
+                           @ (Foreign.Storable.Storable a)
+                           @ (Foreign.R.Type.IsVector ty)
+                           @ (Data.Singletons.SingI ty)
+                           @ (Data.Vector.SEXP.Base.ElemRep s ty Data.Type.Equality.~ a)
+                           $d(%,,,%))
+                          `cast`
+                        (Data.Type.Equality.N:~[0] <*>_N <Data.Vector.SEXP.Base.ElemRep
+                                                            s ty>_N <a>_N) of cobox0 { DEFAULT ->
+                 let {
+                   $dMonad :: GHC.Base.Monad m
+                   = Control.Monad.Primitive.$p1PrimMonad @ m eta
+                 } in
+                 let {
+                   n :: GHC.Types.Int
+                   = case GHC.Types.HEq_sc
+                            @ *
+                            @ *
+                            @ (Data.Vector.SEXP.Base.ElemRep s ty)
+                            @ a
+                            (GHC.Classes.$p4(%,,,%)
+                               @ (Foreign.Storable.Storable a)
+                               @ (Foreign.R.Type.IsVector ty)
+                               @ (Data.Singletons.SingI ty)
+                               @ (Data.Vector.SEXP.Base.ElemRep s ty Data.Type.Equality.~ a)
+                               $d(%,,,%))
+                              `cast`
+                            (Data.Type.Equality.N:~[0] <*>_N <Data.Vector.SEXP.Base.ElemRep
+                                                                s
+                                                                ty>_N <a>_N) of cobox1 { DEFAULT ->
+                     case Data.Vector.SEXP.Mutable.Internal.unW
+                            @ t
+                            @ ty
+                            @ (Control.Monad.Primitive.PrimState m)
+                            @ a
+                            eta1 of wild { Data.Vector.SEXP.Mutable.Internal.MVector dt dt1 dt2 ->
+                     GHC.Base.id @ GHC.Types.Int (GHC.Types.I# dt2) } }
+                 } in
+                 GHC.Base.>>=
+                   @ m
+                   $dMonad
+                   @ (Data.Vector.SEXP.Mutable.Internal.W
+                        t ty (Control.Monad.Primitive.PrimState m) a)
+                   @ (Data.Vector.SEXP.Mutable.Internal.W
+                        t ty (Control.Monad.Primitive.PrimState m) a)
+                   (let {
+                      eta3 :: GHC.Types.Int = GHC.Num.$fNumInt_$c+ n eta2
+                    } in
+                    case GHC.Types.HEq_sc
+                           @ *
+                           @ *
+                           @ (Data.Vector.SEXP.Base.ElemRep s ty)
+                           @ a
+                           (GHC.Classes.$p4(%,,,%)
+                              @ (Foreign.Storable.Storable a)
+                              @ (Foreign.R.Type.IsVector ty)
+                              @ (Data.Singletons.SingI ty)
+                              @ (Data.Vector.SEXP.Base.ElemRep s ty Data.Type.Equality.~ a)
+                              $d(%,,,%))
+                             `cast`
+                           (Data.Type.Equality.N:~[0] <*>_N <Data.Vector.SEXP.Base.ElemRep
+                                                               s ty>_N <a>_N) of cobox1 { DEFAULT ->
+                    let {
+                      $d(%,%) :: Foreign.R.Type.IsVector ty
+                      = GHC.Classes.$p2(%,,,%)
+                          @ (Foreign.Storable.Storable a)
+                          @ (Foreign.R.Type.IsVector ty)
+                          @ (Data.Singletons.SingI ty)
+                          @ (Data.Vector.SEXP.Base.ElemRep s ty Data.Type.Equality.~ a)
+                          $d(%,,,%)
+                    } in
+                    let {
+                      $dSingI :: Data.Singletons.SingI ty
+                      = GHC.Classes.$p1(%,%)
+                          @ (Data.Singletons.SingI ty)
+                          @ (ty
+                             Foreign.R.Constraints.:∈ '['Foreign.R.Type.Char,
+                                                        'Foreign.R.Type.Logical,
+                                                        'Foreign.R.Type.Int, 'Foreign.R.Type.Real,
+                                                        'Foreign.R.Type.Complex,
+                                                        'Foreign.R.Type.String,
+                                                        'Foreign.R.Type.Vector,
+                                                        'Foreign.R.Type.Expr,
+                                                        'Foreign.R.Type.WeakRef,
+                                                        'Foreign.R.Type.Raw])
+                          $d(%,%)
+                    } in
+                    let {
+                      $dMonad1 :: GHC.Base.Monad m
+                      = Control.Monad.Primitive.$p1PrimMonad @ m eta
+                    } in
+                    case Foreign.R.Type.$fEqSEXPTYPE_$c==
+                           (Foreign.R.Type.$fSingKindSEXPTYPE_$cfromSing
+                              @ ty
+                              $dSingI
+                                `cast`
+                              (Data.Singletons.N:SingI[0] <Foreign.R.Type.SEXPTYPE>_N <ty>_N))
+                             `cast`
+                           (Sub (Foreign.R.Type.D:R:DemoteRepSEXPTYPE[0]))
+                           Foreign.R.Type.Char of wild {
+                      GHC.Types.False
+                      -> GHC.Base.>>=
+                           @ m
+                           $dMonad1
+                           @ (Foreign.R.Internal.SEXP s ty)
+                           @ (Data.Vector.SEXP.Mutable.Internal.W
+                                t ty (Control.Monad.Primitive.PrimState m) a)
+                           (Control.Monad.Primitive.primitive
+                              @ m
+                              eta
+                              @ (Foreign.R.Internal.SEXP s ty)
+                              (Data.Vector.SEXP.Mutable.Internal.$fMVectorWa_$s=<<
+                                 @ (Foreign.R.Internal.SEXP Control.Memory.Region.V ty)
+                                 @ (Foreign.R.Internal.SEXP s ty)
+                                 (($dReifies
+                                     `cast`
+                                   (Data.Reflection.N:Reifies[0]
+                                        <*>_N <t>_N <Control.Monad.R.Internal.AcquireIO s>_N)
+                                     @ Data.Proxy.Proxy
+                                     (Data.Proxy.Proxy @ * @ t))
+                                    `cast`
+                                  (Control.Monad.R.Internal.N:AcquireIO[0] <s>_P)
+                                    @ ty)
+                                 (Foreign.R.allocVector
+                                    @ ty
+                                    $d(%,%)
+                                    $dSingI
+                                      `cast`
+                                    (Data.Singletons.N:SingI[0] <Foreign.R.Type.SEXPTYPE>_N <ty>_N)
+                                    eta3))
+                                `cast`
+                              (Trans
+                                   (GHC.Types.N:IO[0] <Foreign.R.Internal.SEXP s ty>_R)
+                                   ((GHC.Prim.State#
+                                       (Trans
+                                            (Sym (Control.Monad.Primitive.D:R:PrimStateIO[0]))
+                                            (Control.Monad.Primitive.PrimState
+                                               (UnsafeCo nominal GHC.Types.IO m))_N))_R
+                                    ->_R ((#,#)
+                                            <'GHC.Types.VoidRep>_R
+                                            <'GHC.Types.PtrRepLifted>_R
+                                            (GHC.Prim.State#
+                                               (Trans
+                                                    (Sym (Control.Monad.Primitive.D:R:PrimStateIO[0]))
+                                                    (Control.Monad.Primitive.PrimState
+                                                       (UnsafeCo nominal GHC.Types.IO m))_N))_R
+                                            <Foreign.R.Internal.SEXP s ty>_R)_R)))
+                           (\ (sx :: Foreign.R.Internal.SEXP s ty) ->
+                            GHC.Base.$
+                              @ 'GHC.Types.PtrRepLifted
+                              @ (Data.Vector.SEXP.Mutable.Internal.W
+                                   t ty (Control.Monad.Primitive.PrimState m) a)
+                              @ (m (Data.Vector.SEXP.Mutable.Internal.W
+                                      t ty (Control.Monad.Primitive.PrimState m) a))
+                              (GHC.Base.return
+                                 @ m
+                                 $dMonad1
+                                 @ (Data.Vector.SEXP.Mutable.Internal.W
+                                      t ty (Control.Monad.Primitive.PrimState m) a))
+                              (GHC.Base.$
+                                 @ 'GHC.Types.PtrRepLifted
+                                 @ (Data.Vector.SEXP.Mutable.Internal.MVector
+                                      (Control.Monad.Primitive.PrimState m) ty a)
+                                 @ (Data.Vector.SEXP.Mutable.Internal.W
+                                      t ty (Control.Monad.Primitive.PrimState m) a)
+                                 (\ (tpl :: Data.Vector.SEXP.Mutable.Internal.MVector
+                                              (Control.Monad.Primitive.PrimState m) ty a) ->
+                                  tpl)
+                                   `cast`
+                                 (<Data.Vector.SEXP.Mutable.Internal.MVector
+                                     (Control.Monad.Primitive.PrimState m) ty a>_R
+                                  ->_R Sym (Data.Vector.SEXP.Mutable.Internal.N:W[0]
+                                                <t>_P
+                                                <ty>_P
+                                                <Control.Monad.Primitive.PrimState m>_P) <a>_N)
+                                 (case (Foreign.R.Internal.unsafeRelease
+                                          @ s
+                                          @ ty
+                                          @ (Control.Monad.Primitive.PrimState m)
+                                          sx)
+                                         `cast`
+                                       (Foreign.R.Internal.N:SEXP[0]
+                                            <Control.Monad.Primitive.PrimState m>_P
+                                            <ty>_P) of dt { GHC.Ptr.Ptr dt1 ->
+                                  case GHC.Int.$fBitsInt32_$cfromInteger
+                                         0 of dt2 { GHC.Int.I32# dt3 ->
+                                  case GHC.Base.id
+                                         @ GHC.Types.Int
+                                         eta3 of wild1 { GHC.Types.I# x# ->
+                                  Data.Vector.SEXP.Mutable.Internal.MVector
+                                    @ (Control.Monad.Primitive.PrimState m)
+                                    @ ty
+                                    @ a
+                                    dt1
+                                    dt3
+                                    (GHC.Prim.narrow32Int# x#) } } })))
+                      GHC.Types.True
+                      -> Internal.Error.failure
+                           @ (m (Data.Vector.SEXP.Mutable.Internal.W
+                                   t ty (Control.Monad.Primitive.PrimState m) a))
+                           (GHC.Base.build
+                              @ GHC.Types.Char
+                              (\ @ b ->
+                               GHC.CString.unpackFoldrCString#
+                                 @ b
+                                 "Data.Vector.SEXP.Mutable.new"#))
+                           (GHC.Base.build
+                              @ GHC.Types.Char
+                              (\ @ b ->
+                               GHC.CString.unpackFoldrCString#
+                                 @ b
+                                 "R character vectors are immutable and globally cached. Use 'mkChar' instead."#)) } })
+                   (\ (v' :: Data.Vector.SEXP.Mutable.Internal.W
+                               t ty (Control.Monad.Primitive.PrimState m) a) ->
+                    GHC.Base.>>
+                      @ m
+                      $dMonad
+                      @ ()
+                      @ (Data.Vector.SEXP.Mutable.Internal.W
+                           t ty (Control.Monad.Primitive.PrimState m) a)
+                      (let {
+                         eta3 :: Data.Vector.SEXP.Mutable.Internal.W
+                                   t ty (Control.Monad.Primitive.PrimState m) a
+                         = case GHC.Types.HEq_sc
+                                  @ *
+                                  @ *
+                                  @ (Data.Vector.SEXP.Base.ElemRep s ty)
+                                  @ a
+                                  (GHC.Classes.$p4(%,,,%)
+                                     @ (Foreign.Storable.Storable a)
+                                     @ (Foreign.R.Type.IsVector ty)
+                                     @ (Data.Singletons.SingI ty)
+                                     @ (Data.Vector.SEXP.Base.ElemRep s ty Data.Type.Equality.~ a)
+                                     $d(%,,,%))
+                                    `cast`
+                                  (Data.Type.Equality.N:~[0] <*>_N <Data.Vector.SEXP.Base.ElemRep
+                                                                      s
+                                                                      ty>_N <a>_N) of cobox1 { DEFAULT ->
+                           case Data.Vector.SEXP.Mutable.Internal.unW
+                                  @ t
+                                  @ ty
+                                  @ (Control.Monad.Primitive.PrimState m)
+                                  @ a
+                                  v' of wild { Data.Vector.SEXP.Mutable.Internal.MVector dt dt1 dt2 ->
+                           GHC.Base.$
+                             @ 'GHC.Types.PtrRepLifted
+                             @ (Data.Vector.SEXP.Mutable.Internal.MVector
+                                  (Control.Monad.Primitive.PrimState m) ty a)
+                             @ (Data.Vector.SEXP.Mutable.Internal.W
+                                  t ty (Control.Monad.Primitive.PrimState m) a)
+                             (\ (tpl :: Data.Vector.SEXP.Mutable.Internal.MVector
+                                          (Control.Monad.Primitive.PrimState m) ty a) ->
+                              tpl)
+                               `cast`
+                             (<Data.Vector.SEXP.Mutable.Internal.MVector
+                                 (Control.Monad.Primitive.PrimState m) ty a>_R
+                              ->_R Sym (Data.Vector.SEXP.Mutable.Internal.N:W[0]
+                                            <t>_P
+                                            <ty>_P
+                                            <Control.Monad.Primitive.PrimState m>_P) <a>_N)
+                             (case GHC.Base.id
+                                     @ GHC.Types.Int
+                                     (GHC.Types.I# 0#) of wild1 { GHC.Types.I# x# ->
+                              case GHC.Int.$fNumInt32_$c+
+                                     (GHC.Int.I32# dt1)
+                                     (GHC.Int.I32#
+                                        (GHC.Prim.narrow32Int# x#)) of dt3 { GHC.Int.I32# dt4 ->
+                              case GHC.Base.id @ GHC.Types.Int n of wild2 { GHC.Types.I# x#1 ->
+                              Data.Vector.SEXP.Mutable.Internal.MVector
+                                @ (Control.Monad.Primitive.PrimState m)
+                                @ ty
+                                @ a
+                                dt
+                                dt4
+                                (GHC.Prim.narrow32Int# x#1) } } }) } }
+                       } in
+                       case GHC.Types.HEq_sc
+                              @ *
+                              @ *
+                              @ (Data.Vector.SEXP.Base.ElemRep s ty)
+                              @ a
+                              (GHC.Classes.$p4(%,,,%)
+                                 @ (Foreign.Storable.Storable a)
+                                 @ (Foreign.R.Type.IsVector ty)
+                                 @ (Data.Singletons.SingI ty)
+                                 @ (Data.Vector.SEXP.Base.ElemRep s ty Data.Type.Equality.~ a)
+                                 $d(%,,,%))
+                                `cast`
+                              (Data.Type.Equality.N:~[0] <*>_N <Data.Vector.SEXP.Base.ElemRep
+                                                                  s
+                                                                  ty>_N <a>_N) of cobox1 { DEFAULT ->
+                       let {
+                         $dStorable :: Foreign.Storable.Storable a
+                         = GHC.Classes.$p1(%,,,%)
+                             @ (Foreign.Storable.Storable a)
+                             @ (Foreign.R.Type.IsVector ty)
+                             @ (Data.Singletons.SingI ty)
+                             @ (Data.Vector.SEXP.Base.ElemRep s ty Data.Type.Equality.~ a)
+                             $d(%,,,%)
+                       } in
+                       GHC.Base.$
+                         @ 'GHC.Types.PtrRepLifted
+                         @ (GHC.Types.IO ())
+                         @ (m ())
+                         (Control.Monad.Primitive.unsafePrimToPrim
+                            @ GHC.Types.IO
+                            @ m
+                            @ ()
+                            Control.Monad.Primitive.$fPrimBaseIO
+                            eta)
+                         (Foreign.Marshal.Array.copyArray
+                            @ a
+                            $dStorable
+                            (Data.Vector.SEXP.Mutable.Internal.unsafeToPtr
+                               @ a
+                               @ (Control.Monad.Primitive.PrimState m)
+                               @ ty
+                               $dStorable
+                               (Data.Vector.SEXP.Mutable.Internal.unW
+                                  @ t
+                                  @ ty
+                                  @ (Control.Monad.Primitive.PrimState m)
+                                  @ a
+                                  eta3))
+                            (Data.Vector.SEXP.Mutable.Internal.unsafeToPtr
+                               @ a
+                               @ (Control.Monad.Primitive.PrimState m)
+                               @ ty
+                               $dStorable
+                               (Data.Vector.SEXP.Mutable.Internal.unW
+                                  @ t
+                                  @ ty
+                                  @ (Control.Monad.Primitive.PrimState m)
+                                  @ a
+                                  eta1))
+                            (case GHC.Types.HEq_sc
+                                    @ *
+                                    @ *
+                                    @ (Data.Vector.SEXP.Base.ElemRep s ty)
+                                    @ a
+                                    (GHC.Classes.$p4(%,,,%)
+                                       @ (Foreign.Storable.Storable a)
+                                       @ (Foreign.R.Type.IsVector ty)
+                                       @ (Data.Singletons.SingI ty)
+                                       @ (Data.Vector.SEXP.Base.ElemRep s ty Data.Type.Equality.~ a)
+                                       $d(%,,,%))
+                                      `cast`
+                                    (Data.Type.Equality.N:~[0] <*>_N <Data.Vector.SEXP.Base.ElemRep
+                                                                        s
+                                                                        ty>_N <a>_N) of cobox2 { DEFAULT ->
+                             case Data.Vector.SEXP.Mutable.Internal.unW
+                                    @ t
+                                    @ ty
+                                    @ (Control.Monad.Primitive.PrimState m)
+                                    @ a
+                                    eta3 of wild { Data.Vector.SEXP.Mutable.Internal.MVector dt dt1 dt2 ->
+                             GHC.Base.id @ GHC.Types.Int (GHC.Types.I# dt2) } })) })
+                      (GHC.Base.return
+                         @ m
+                         $dMonad
+                         @ (Data.Vector.SEXP.Mutable.Internal.W
+                              t ty (Control.Monad.Primitive.PrimState m) a)
+                         v')) }) -}
+c809a609adf266113603d7eff94a84d1
+  $fMVectorWa_$cbasicUnsafeMove ::
+    (Data.Reflection.Reifies t (Control.Monad.R.Internal.AcquireIO s),
+     Data.Vector.SEXP.Base.VECTOR s ty a) =>
+    forall (m :: * -> *).
+    Control.Monad.Primitive.PrimMonad m =>
+    Data.Vector.SEXP.Mutable.Internal.W
+      t ty (Control.Monad.Primitive.PrimState m) a
+    -> Data.Vector.SEXP.Mutable.Internal.W
+         t ty (Control.Monad.Primitive.PrimState m) a
+    -> m ()
+  {- Arity: 5,
+     Strictness: <L,A><S(LLLS(S)),U(1*U,A,A,U(U))><S(LC(S)),1*U(A,1*C1(U))><L,U(U,U,U)><L,U(U,U,A)>,
+     Inline: INLINE (sat-args=2),
+     Unfolding: InlineRule (4, False, False)
+                (\ @ t
+                   @ s
+                   @ (ty :: Foreign.R.Type.SEXPTYPE)
+                   @ a
+                   ($dReifies :: Data.Reflection.Reifies
+                                   t (Control.Monad.R.Internal.AcquireIO s))
+                   ($d(%,,,%) :: Data.Vector.SEXP.Base.VECTOR s ty a)
+                   @ (m :: * -> *)
+                   (eta :: Control.Monad.Primitive.PrimMonad m)
+                   (eta1 :: Data.Vector.SEXP.Mutable.Internal.W
+                              t ty (Control.Monad.Primitive.PrimState m) a)
+                   (eta2 :: Data.Vector.SEXP.Mutable.Internal.W
+                              t ty (Control.Monad.Primitive.PrimState m) a) ->
+                 case GHC.Types.HEq_sc
+                        @ *
+                        @ *
+                        @ (Data.Vector.SEXP.Base.ElemRep s ty)
+                        @ a
+                        (GHC.Classes.$p4(%,,,%)
+                           @ (Foreign.Storable.Storable a)
+                           @ (Foreign.R.Type.IsVector ty)
+                           @ (Data.Singletons.SingI ty)
+                           @ (Data.Vector.SEXP.Base.ElemRep s ty Data.Type.Equality.~ a)
+                           $d(%,,,%))
+                          `cast`
+                        (Data.Type.Equality.N:~[0] <*>_N <Data.Vector.SEXP.Base.ElemRep
+                                                            s ty>_N <a>_N) of cobox0 { DEFAULT ->
+                 let {
+                   $dStorable :: Foreign.Storable.Storable a
+                   = GHC.Classes.$p1(%,,,%)
+                       @ (Foreign.Storable.Storable a)
+                       @ (Foreign.R.Type.IsVector ty)
+                       @ (Data.Singletons.SingI ty)
+                       @ (Data.Vector.SEXP.Base.ElemRep s ty Data.Type.Equality.~ a)
+                       $d(%,,,%)
+                 } in
+                 GHC.Base.$
+                   @ 'GHC.Types.PtrRepLifted
+                   @ (GHC.Types.IO ())
+                   @ (m ())
+                   (Control.Monad.Primitive.unsafePrimToPrim
+                      @ GHC.Types.IO
+                      @ m
+                      @ ()
+                      Control.Monad.Primitive.$fPrimBaseIO
+                      eta)
+                   (Foreign.Marshal.Array.moveArray
+                      @ a
+                      $dStorable
+                      (Data.Vector.SEXP.Mutable.Internal.unsafeToPtr
+                         @ a
+                         @ (Control.Monad.Primitive.PrimState m)
+                         @ ty
+                         $dStorable
+                         (Data.Vector.SEXP.Mutable.Internal.unW
+                            @ t
+                            @ ty
+                            @ (Control.Monad.Primitive.PrimState m)
+                            @ a
+                            eta1))
+                      (Data.Vector.SEXP.Mutable.Internal.unsafeToPtr
+                         @ a
+                         @ (Control.Monad.Primitive.PrimState m)
+                         @ ty
+                         $dStorable
+                         (Data.Vector.SEXP.Mutable.Internal.unW
+                            @ t
+                            @ ty
+                            @ (Control.Monad.Primitive.PrimState m)
+                            @ a
+                            eta2))
+                      (Data.Vector.SEXP.Mutable.Internal.$fMVectorWa_$cbasicLength
+                         @ t
+                         @ s
+                         @ ty
+                         @ a
+                         $dReifies
+                         $d(%,,,%)
+                         @ (Control.Monad.Primitive.PrimState m)
+                         eta1)) }) -}
+c809a609adf266113603d7eff94a84d1
+  $fMVectorWa_$cbasicUnsafeNew ::
+    (Data.Reflection.Reifies t (Control.Monad.R.Internal.AcquireIO s),
+     Data.Vector.SEXP.Base.VECTOR s ty a) =>
+    forall (m :: * -> *).
+    Control.Monad.Primitive.PrimMonad m =>
+    GHC.Types.Int
+    -> m (Data.Vector.SEXP.Mutable.Internal.W
+            t ty (Control.Monad.Primitive.PrimState m) a)
+  {- Arity: 4,
+     Strictness: <L,C(C1(C1(U)))><S(LSLS(S)),U(A,1*U,A,1*U(1*U))><S(SL),U(1*U,1*C1(U))><L,U(U)>,
+     Inline: INLINE (sat-args=1),
+     Unfolding: InlineRule (3, False, False)
+                (\ @ t
+                   @ s
+                   @ (ty :: Foreign.R.Type.SEXPTYPE)
+                   @ a
+                   ($dReifies :: Data.Reflection.Reifies
+                                   t (Control.Monad.R.Internal.AcquireIO s))
+                   ($d(%,,,%) :: Data.Vector.SEXP.Base.VECTOR s ty a)
+                   @ (m :: * -> *)
+                   (eta :: Control.Monad.Primitive.PrimMonad m)
+                   (eta1 :: GHC.Types.Int) ->
+                 case GHC.Types.HEq_sc
+                        @ *
+                        @ *
+                        @ (Data.Vector.SEXP.Base.ElemRep s ty)
+                        @ a
+                        (GHC.Classes.$p4(%,,,%)
+                           @ (Foreign.Storable.Storable a)
+                           @ (Foreign.R.Type.IsVector ty)
+                           @ (Data.Singletons.SingI ty)
+                           @ (Data.Vector.SEXP.Base.ElemRep s ty Data.Type.Equality.~ a)
+                           $d(%,,,%))
+                          `cast`
+                        (Data.Type.Equality.N:~[0] <*>_N <Data.Vector.SEXP.Base.ElemRep
+                                                            s ty>_N <a>_N) of cobox0 { DEFAULT ->
+                 let {
+                   $d(%,%) :: Foreign.R.Type.IsVector ty
+                   = GHC.Classes.$p2(%,,,%)
+                       @ (Foreign.Storable.Storable a)
+                       @ (Foreign.R.Type.IsVector ty)
+                       @ (Data.Singletons.SingI ty)
+                       @ (Data.Vector.SEXP.Base.ElemRep s ty Data.Type.Equality.~ a)
+                       $d(%,,,%)
+                 } in
+                 let {
+                   $dSingI :: Data.Singletons.SingI ty
+                   = GHC.Classes.$p1(%,%)
+                       @ (Data.Singletons.SingI ty)
+                       @ (ty
+                          Foreign.R.Constraints.:∈ '['Foreign.R.Type.Char,
+                                                     'Foreign.R.Type.Logical, 'Foreign.R.Type.Int,
+                                                     'Foreign.R.Type.Real, 'Foreign.R.Type.Complex,
+                                                     'Foreign.R.Type.String, 'Foreign.R.Type.Vector,
+                                                     'Foreign.R.Type.Expr, 'Foreign.R.Type.WeakRef,
+                                                     'Foreign.R.Type.Raw])
+                       $d(%,%)
+                 } in
+                 let {
+                   $dMonad :: GHC.Base.Monad m
+                   = Control.Monad.Primitive.$p1PrimMonad @ m eta
+                 } in
+                 case Foreign.R.Type.$fEqSEXPTYPE_$c==
+                        (Foreign.R.Type.$fSingKindSEXPTYPE_$cfromSing
+                           @ ty
+                           $dSingI
+                             `cast`
+                           (Data.Singletons.N:SingI[0] <Foreign.R.Type.SEXPTYPE>_N <ty>_N))
+                          `cast`
+                        (Sub (Foreign.R.Type.D:R:DemoteRepSEXPTYPE[0]))
+                        Foreign.R.Type.Char of wild {
+                   GHC.Types.False
+                   -> GHC.Base.>>=
+                        @ m
+                        $dMonad
+                        @ (Foreign.R.Internal.SEXP s ty)
+                        @ (Data.Vector.SEXP.Mutable.Internal.W
+                             t ty (Control.Monad.Primitive.PrimState m) a)
+                        (Control.Monad.Primitive.primitive
+                           @ m
+                           eta
+                           @ (Foreign.R.Internal.SEXP s ty)
+                           (Data.Vector.SEXP.Mutable.Internal.$fMVectorWa_$s=<<
+                              @ (Foreign.R.Internal.SEXP Control.Memory.Region.V ty)
+                              @ (Foreign.R.Internal.SEXP s ty)
+                              (($dReifies
+                                  `cast`
+                                (Data.Reflection.N:Reifies[0]
+                                     <*>_N <t>_N <Control.Monad.R.Internal.AcquireIO s>_N)
+                                  @ Data.Proxy.Proxy
+                                  (Data.Proxy.Proxy @ * @ t))
+                                 `cast`
+                               (Control.Monad.R.Internal.N:AcquireIO[0] <s>_P)
+                                 @ ty)
+                              (Foreign.R.allocVector
+                                 @ ty
+                                 $d(%,%)
+                                 $dSingI
+                                   `cast`
+                                 (Data.Singletons.N:SingI[0] <Foreign.R.Type.SEXPTYPE>_N <ty>_N)
+                                 eta1))
+                             `cast`
+                           (Trans
+                                (GHC.Types.N:IO[0] <Foreign.R.Internal.SEXP s ty>_R)
+                                ((GHC.Prim.State#
+                                    (Trans
+                                         (Sym (Control.Monad.Primitive.D:R:PrimStateIO[0]))
+                                         (Control.Monad.Primitive.PrimState
+                                            (UnsafeCo nominal GHC.Types.IO m))_N))_R
+                                 ->_R ((#,#)
+                                         <'GHC.Types.VoidRep>_R
+                                         <'GHC.Types.PtrRepLifted>_R
+                                         (GHC.Prim.State#
+                                            (Trans
+                                                 (Sym (Control.Monad.Primitive.D:R:PrimStateIO[0]))
+                                                 (Control.Monad.Primitive.PrimState
+                                                    (UnsafeCo nominal GHC.Types.IO m))_N))_R
+                                         <Foreign.R.Internal.SEXP s ty>_R)_R)))
+                        (\ (sx :: Foreign.R.Internal.SEXP s ty) ->
+                         GHC.Base.$
+                           @ 'GHC.Types.PtrRepLifted
+                           @ (Data.Vector.SEXP.Mutable.Internal.W
+                                t ty (Control.Monad.Primitive.PrimState m) a)
+                           @ (m (Data.Vector.SEXP.Mutable.Internal.W
+                                   t ty (Control.Monad.Primitive.PrimState m) a))
+                           (GHC.Base.return
+                              @ m
+                              $dMonad
+                              @ (Data.Vector.SEXP.Mutable.Internal.W
+                                   t ty (Control.Monad.Primitive.PrimState m) a))
+                           (GHC.Base.$
+                              @ 'GHC.Types.PtrRepLifted
+                              @ (Data.Vector.SEXP.Mutable.Internal.MVector
+                                   (Control.Monad.Primitive.PrimState m) ty a)
+                              @ (Data.Vector.SEXP.Mutable.Internal.W
+                                   t ty (Control.Monad.Primitive.PrimState m) a)
+                              (\ (tpl :: Data.Vector.SEXP.Mutable.Internal.MVector
+                                           (Control.Monad.Primitive.PrimState m) ty a) ->
+                               tpl)
+                                `cast`
+                              (<Data.Vector.SEXP.Mutable.Internal.MVector
+                                  (Control.Monad.Primitive.PrimState m) ty a>_R
+                               ->_R Sym (Data.Vector.SEXP.Mutable.Internal.N:W[0]
+                                             <t>_P
+                                             <ty>_P
+                                             <Control.Monad.Primitive.PrimState m>_P) <a>_N)
+                              (case (Foreign.R.Internal.unsafeRelease
+                                       @ s
+                                       @ ty
+                                       @ (Control.Monad.Primitive.PrimState m)
+                                       sx)
+                                      `cast`
+                                    (Foreign.R.Internal.N:SEXP[0]
+                                         <Control.Monad.Primitive.PrimState m>_P
+                                         <ty>_P) of dt { GHC.Ptr.Ptr dt1 ->
+                               case GHC.Int.$fBitsInt32_$cfromInteger
+                                      0 of dt2 { GHC.Int.I32# dt3 ->
+                               case GHC.Base.id @ GHC.Types.Int eta1 of wild1 { GHC.Types.I# x# ->
+                               Data.Vector.SEXP.Mutable.Internal.MVector
+                                 @ (Control.Monad.Primitive.PrimState m)
+                                 @ ty
+                                 @ a
+                                 dt1
+                                 dt3
+                                 (GHC.Prim.narrow32Int# x#) } } })))
+                   GHC.Types.True
+                   -> Internal.Error.failure
+                        @ (m (Data.Vector.SEXP.Mutable.Internal.W
+                                t ty (Control.Monad.Primitive.PrimState m) a))
+                        (GHC.Base.build
+                           @ GHC.Types.Char
+                           (\ @ b ->
+                            GHC.CString.unpackFoldrCString#
+                              @ b
+                              "Data.Vector.SEXP.Mutable.new"#))
+                        (GHC.Base.build
+                           @ GHC.Types.Char
+                           (\ @ b ->
+                            GHC.CString.unpackFoldrCString#
+                              @ b
+                              "R character vectors are immutable and globally cached. Use 'mkChar' instead."#)) } }) -}
+c809a609adf266113603d7eff94a84d1
+  $fMVectorWa_$cbasicUnsafeRead ::
+    (Data.Reflection.Reifies t (Control.Monad.R.Internal.AcquireIO s),
+     Data.Vector.SEXP.Base.VECTOR s ty a) =>
+    forall (m :: * -> *).
+    Control.Monad.Primitive.PrimMonad m =>
+    Data.Vector.SEXP.Mutable.Internal.W
+      t ty (Control.Monad.Primitive.PrimState m) a
+    -> GHC.Types.Int -> m a
+  {- Arity: 5,
+     Strictness: <L,A><S(LLLS(S)),U(1*U,A,A,1*U(1*U))><S(LC(S)),1*U(A,1*C1(U))><L,1*U(U,U,A)><L,U>,
+     Inline: INLINE (sat-args=2),
+     Unfolding: InlineRule (4, False, False)
+                (\ @ t
+                   @ s
+                   @ (ty :: Foreign.R.Type.SEXPTYPE)
+                   @ a
+                   ($dReifies :: Data.Reflection.Reifies
+                                   t (Control.Monad.R.Internal.AcquireIO s))
+                   ($d(%,,,%) :: Data.Vector.SEXP.Base.VECTOR s ty a)
+                   @ (m :: * -> *)
+                   (eta :: Control.Monad.Primitive.PrimMonad m)
+                   (eta1 :: Data.Vector.SEXP.Mutable.Internal.W
+                              t ty (Control.Monad.Primitive.PrimState m) a)
+                   (eta2 :: GHC.Types.Int) ->
+                 case GHC.Types.HEq_sc
+                        @ *
+                        @ *
+                        @ (Data.Vector.SEXP.Base.ElemRep s ty)
+                        @ a
+                        (GHC.Classes.$p4(%,,,%)
+                           @ (Foreign.Storable.Storable a)
+                           @ (Foreign.R.Type.IsVector ty)
+                           @ (Data.Singletons.SingI ty)
+                           @ (Data.Vector.SEXP.Base.ElemRep s ty Data.Type.Equality.~ a)
+                           $d(%,,,%))
+                          `cast`
+                        (Data.Type.Equality.N:~[0] <*>_N <Data.Vector.SEXP.Base.ElemRep
+                                                            s ty>_N <a>_N) of cobox0 { DEFAULT ->
+                 let {
+                   $dStorable :: Foreign.Storable.Storable a
+                   = GHC.Classes.$p1(%,,,%)
+                       @ (Foreign.Storable.Storable a)
+                       @ (Foreign.R.Type.IsVector ty)
+                       @ (Data.Singletons.SingI ty)
+                       @ (Data.Vector.SEXP.Base.ElemRep s ty Data.Type.Equality.~ a)
+                       $d(%,,,%)
+                 } in
+                 GHC.Base.$
+                   @ 'GHC.Types.PtrRepLifted
+                   @ (GHC.Types.IO a)
+                   @ (m a)
+                   (Control.Monad.Primitive.unsafePrimToPrim
+                      @ GHC.Types.IO
+                      @ m
+                      @ a
+                      Control.Monad.Primitive.$fPrimBaseIO
+                      eta)
+                   (Foreign.Storable.peekElemOff
+                      @ a
+                      $dStorable
+                      (Data.Vector.SEXP.Mutable.Internal.unsafeToPtr
+                         @ a
+                         @ (Control.Monad.Primitive.PrimState m)
+                         @ ty
+                         $dStorable
+                         (Data.Vector.SEXP.Mutable.Internal.unW
+                            @ t
+                            @ ty
+                            @ (Control.Monad.Primitive.PrimState m)
+                            @ a
+                            eta1))
+                      eta2) }) -}
+c809a609adf266113603d7eff94a84d1
+  $fMVectorWa_$cbasicUnsafeReplicate ::
+    (Data.Reflection.Reifies t (Control.Monad.R.Internal.AcquireIO s),
+     Data.Vector.SEXP.Base.VECTOR s ty a) =>
+    forall (m :: * -> *).
+    Control.Monad.Primitive.PrimMonad m =>
+    GHC.Types.Int
+    -> a
+    -> m (Data.Vector.SEXP.Mutable.Internal.W
+            t ty (Control.Monad.Primitive.PrimState m) a)
+  {- Arity: 4,
+     Strictness: <L,C(C1(C1(U)))><S(LLLS(S)),U(U,U,A,U(U))><L,U(U,U)><L,U>,
+     Inline: INLINE (sat-args=2),
+     Unfolding: InlineRule (4, False, False)
+                (\ @ t
+                   @ s
+                   @ (ty :: Foreign.R.Type.SEXPTYPE)
+                   @ a
+                   ($dReifies :: Data.Reflection.Reifies
+                                   t (Control.Monad.R.Internal.AcquireIO s))
+                   ($d(%,,,%) :: Data.Vector.SEXP.Base.VECTOR s ty a)
+                   @ (m :: * -> *)
+                   (eta :: Control.Monad.Primitive.PrimMonad m)
+                   (eta1 :: GHC.Types.Int)
+                   (eta2 :: a) ->
+                 case GHC.Types.HEq_sc
+                        @ *
+                        @ *
+                        @ (Data.Vector.SEXP.Base.ElemRep s ty)
+                        @ a
+                        (GHC.Classes.$p4(%,,,%)
+                           @ (Foreign.Storable.Storable a)
+                           @ (Foreign.R.Type.IsVector ty)
+                           @ (Data.Singletons.SingI ty)
+                           @ (Data.Vector.SEXP.Base.ElemRep s ty Data.Type.Equality.~ a)
+                           $d(%,,,%))
+                          `cast`
+                        (Data.Type.Equality.N:~[0] <*>_N <Data.Vector.SEXP.Base.ElemRep
+                                                            s ty>_N <a>_N) of cobox0 { DEFAULT ->
+                 let {
+                   $dMonad :: GHC.Base.Monad m
+                   = Control.Monad.Primitive.$p1PrimMonad @ m eta
+                 } in
+                 GHC.Base.>>=
+                   @ m
+                   $dMonad
+                   @ (Data.Vector.SEXP.Mutable.Internal.W
+                        t ty (Control.Monad.Primitive.PrimState m) a)
+                   @ (Data.Vector.SEXP.Mutable.Internal.W
+                        t ty (Control.Monad.Primitive.PrimState m) a)
+                   (case GHC.Types.HEq_sc
+                           @ *
+                           @ *
+                           @ (Data.Vector.SEXP.Base.ElemRep s ty)
+                           @ a
+                           (GHC.Classes.$p4(%,,,%)
+                              @ (Foreign.Storable.Storable a)
+                              @ (Foreign.R.Type.IsVector ty)
+                              @ (Data.Singletons.SingI ty)
+                              @ (Data.Vector.SEXP.Base.ElemRep s ty Data.Type.Equality.~ a)
+                              $d(%,,,%))
+                             `cast`
+                           (Data.Type.Equality.N:~[0] <*>_N <Data.Vector.SEXP.Base.ElemRep
+                                                               s ty>_N <a>_N) of cobox1 { DEFAULT ->
+                    let {
+                      $d(%,%) :: Foreign.R.Type.IsVector ty
+                      = GHC.Classes.$p2(%,,,%)
+                          @ (Foreign.Storable.Storable a)
+                          @ (Foreign.R.Type.IsVector ty)
+                          @ (Data.Singletons.SingI ty)
+                          @ (Data.Vector.SEXP.Base.ElemRep s ty Data.Type.Equality.~ a)
+                          $d(%,,,%)
+                    } in
+                    let {
+                      $dSingI :: Data.Singletons.SingI ty
+                      = GHC.Classes.$p1(%,%)
+                          @ (Data.Singletons.SingI ty)
+                          @ (ty
+                             Foreign.R.Constraints.:∈ '['Foreign.R.Type.Char,
+                                                        'Foreign.R.Type.Logical,
+                                                        'Foreign.R.Type.Int, 'Foreign.R.Type.Real,
+                                                        'Foreign.R.Type.Complex,
+                                                        'Foreign.R.Type.String,
+                                                        'Foreign.R.Type.Vector,
+                                                        'Foreign.R.Type.Expr,
+                                                        'Foreign.R.Type.WeakRef,
+                                                        'Foreign.R.Type.Raw])
+                          $d(%,%)
+                    } in
+                    let {
+                      $dMonad1 :: GHC.Base.Monad m
+                      = Control.Monad.Primitive.$p1PrimMonad @ m eta
+                    } in
+                    case Foreign.R.Type.$fEqSEXPTYPE_$c==
+                           (Foreign.R.Type.$fSingKindSEXPTYPE_$cfromSing
+                              @ ty
+                              $dSingI
+                                `cast`
+                              (Data.Singletons.N:SingI[0] <Foreign.R.Type.SEXPTYPE>_N <ty>_N))
+                             `cast`
+                           (Sub (Foreign.R.Type.D:R:DemoteRepSEXPTYPE[0]))
+                           Foreign.R.Type.Char of wild {
+                      GHC.Types.False
+                      -> GHC.Base.>>=
+                           @ m
+                           $dMonad1
+                           @ (Foreign.R.Internal.SEXP s ty)
+                           @ (Data.Vector.SEXP.Mutable.Internal.W
+                                t ty (Control.Monad.Primitive.PrimState m) a)
+                           (Control.Monad.Primitive.primitive
+                              @ m
+                              eta
+                              @ (Foreign.R.Internal.SEXP s ty)
+                              (Data.Vector.SEXP.Mutable.Internal.$fMVectorWa_$s=<<
+                                 @ (Foreign.R.Internal.SEXP Control.Memory.Region.V ty)
+                                 @ (Foreign.R.Internal.SEXP s ty)
+                                 (($dReifies
+                                     `cast`
+                                   (Data.Reflection.N:Reifies[0]
+                                        <*>_N <t>_N <Control.Monad.R.Internal.AcquireIO s>_N)
+                                     @ Data.Proxy.Proxy
+                                     (Data.Proxy.Proxy @ * @ t))
+                                    `cast`
+                                  (Control.Monad.R.Internal.N:AcquireIO[0] <s>_P)
+                                    @ ty)
+                                 (Foreign.R.allocVector
+                                    @ ty
+                                    $d(%,%)
+                                    $dSingI
+                                      `cast`
+                                    (Data.Singletons.N:SingI[0] <Foreign.R.Type.SEXPTYPE>_N <ty>_N)
+                                    eta1))
+                                `cast`
+                              (Trans
+                                   (GHC.Types.N:IO[0] <Foreign.R.Internal.SEXP s ty>_R)
+                                   ((GHC.Prim.State#
+                                       (Trans
+                                            (Sym (Control.Monad.Primitive.D:R:PrimStateIO[0]))
+                                            (Control.Monad.Primitive.PrimState
+                                               (UnsafeCo nominal GHC.Types.IO m))_N))_R
+                                    ->_R ((#,#)
+                                            <'GHC.Types.VoidRep>_R
+                                            <'GHC.Types.PtrRepLifted>_R
+                                            (GHC.Prim.State#
+                                               (Trans
+                                                    (Sym (Control.Monad.Primitive.D:R:PrimStateIO[0]))
+                                                    (Control.Monad.Primitive.PrimState
+                                                       (UnsafeCo nominal GHC.Types.IO m))_N))_R
+                                            <Foreign.R.Internal.SEXP s ty>_R)_R)))
+                           (\ (sx :: Foreign.R.Internal.SEXP s ty) ->
+                            GHC.Base.$
+                              @ 'GHC.Types.PtrRepLifted
+                              @ (Data.Vector.SEXP.Mutable.Internal.W
+                                   t ty (Control.Monad.Primitive.PrimState m) a)
+                              @ (m (Data.Vector.SEXP.Mutable.Internal.W
+                                      t ty (Control.Monad.Primitive.PrimState m) a))
+                              (GHC.Base.return
+                                 @ m
+                                 $dMonad1
+                                 @ (Data.Vector.SEXP.Mutable.Internal.W
+                                      t ty (Control.Monad.Primitive.PrimState m) a))
+                              (GHC.Base.$
+                                 @ 'GHC.Types.PtrRepLifted
+                                 @ (Data.Vector.SEXP.Mutable.Internal.MVector
+                                      (Control.Monad.Primitive.PrimState m) ty a)
+                                 @ (Data.Vector.SEXP.Mutable.Internal.W
+                                      t ty (Control.Monad.Primitive.PrimState m) a)
+                                 (\ (tpl :: Data.Vector.SEXP.Mutable.Internal.MVector
+                                              (Control.Monad.Primitive.PrimState m) ty a) ->
+                                  tpl)
+                                   `cast`
+                                 (<Data.Vector.SEXP.Mutable.Internal.MVector
+                                     (Control.Monad.Primitive.PrimState m) ty a>_R
+                                  ->_R Sym (Data.Vector.SEXP.Mutable.Internal.N:W[0]
+                                                <t>_P
+                                                <ty>_P
+                                                <Control.Monad.Primitive.PrimState m>_P) <a>_N)
+                                 (case (Foreign.R.Internal.unsafeRelease
+                                          @ s
+                                          @ ty
+                                          @ (Control.Monad.Primitive.PrimState m)
+                                          sx)
+                                         `cast`
+                                       (Foreign.R.Internal.N:SEXP[0]
+                                            <Control.Monad.Primitive.PrimState m>_P
+                                            <ty>_P) of dt { GHC.Ptr.Ptr dt1 ->
+                                  case GHC.Int.$fBitsInt32_$cfromInteger
+                                         0 of dt2 { GHC.Int.I32# dt3 ->
+                                  case GHC.Base.id
+                                         @ GHC.Types.Int
+                                         eta1 of wild1 { GHC.Types.I# x# ->
+                                  Data.Vector.SEXP.Mutable.Internal.MVector
+                                    @ (Control.Monad.Primitive.PrimState m)
+                                    @ ty
+                                    @ a
+                                    dt1
+                                    dt3
+                                    (GHC.Prim.narrow32Int# x#) } } })))
+                      GHC.Types.True
+                      -> Internal.Error.failure
+                           @ (m (Data.Vector.SEXP.Mutable.Internal.W
+                                   t ty (Control.Monad.Primitive.PrimState m) a))
+                           (GHC.Base.build
+                              @ GHC.Types.Char
+                              (\ @ b ->
+                               GHC.CString.unpackFoldrCString#
+                                 @ b
+                                 "Data.Vector.SEXP.Mutable.new"#))
+                           (GHC.Base.build
+                              @ GHC.Types.Char
+                              (\ @ b ->
+                               GHC.CString.unpackFoldrCString#
+                                 @ b
+                                 "R character vectors are immutable and globally cached. Use 'mkChar' instead."#)) } })
+                   (\ (v1 :: Data.Vector.SEXP.Mutable.Internal.W
+                               t ty (Control.Monad.Primitive.PrimState m) a) ->
+                    GHC.Base.>>
+                      @ m
+                      $dMonad
+                      @ ()
+                      @ (Data.Vector.SEXP.Mutable.Internal.W
+                           t ty (Control.Monad.Primitive.PrimState m) a)
+                      (case GHC.Types.HEq_sc
+                              @ *
+                              @ *
+                              @ (Data.Vector.SEXP.Base.ElemRep s ty)
+                              @ a
+                              (GHC.Classes.$p4(%,,,%)
+                                 @ (Foreign.Storable.Storable a)
+                                 @ (Foreign.R.Type.IsVector ty)
+                                 @ (Data.Singletons.SingI ty)
+                                 @ (Data.Vector.SEXP.Base.ElemRep s ty Data.Type.Equality.~ a)
+                                 $d(%,,,%))
+                                `cast`
+                              (Data.Type.Equality.N:~[0] <*>_N <Data.Vector.SEXP.Base.ElemRep
+                                                                  s
+                                                                  ty>_N <a>_N) of cobox1 { DEFAULT ->
+                       let {
+                         $dMonad1 :: GHC.Base.Monad m
+                         = Control.Monad.Primitive.$p1PrimMonad @ m eta
+                       } in
+                       case v1
+                              `cast`
+                            (Data.Vector.SEXP.Mutable.Internal.N:W[0]
+                                 <t>_P
+                                 <ty>_P
+                                 <Control.Monad.Primitive.PrimState
+                                    m>_P <a>_N) of nt { Data.Vector.SEXP.Mutable.Internal.MVector ipv ipv1 ipv2 ->
+                       case GHC.Types.HEq_sc
+                              @ *
+                              @ *
+                              @ (Data.Vector.SEXP.Base.ElemRep s ty)
+                              @ a
+                              (GHC.Classes.$p4(%,,,%)
+                                 @ (Foreign.Storable.Storable a)
+                                 @ (Foreign.R.Type.IsVector ty)
+                                 @ (Data.Singletons.SingI ty)
+                                 @ (Data.Vector.SEXP.Base.ElemRep s ty Data.Type.Equality.~ a)
+                                 $d(%,,,%))
+                                `cast`
+                              (Data.Type.Equality.N:~[0] <*>_N <Data.Vector.SEXP.Base.ElemRep
+                                                                  s
+                                                                  ty>_N <a>_N) of cobox2 { DEFAULT ->
+                       case Data.Vector.SEXP.Mutable.Internal.unW
+                              @ t
+                              @ ty
+                              @ (Control.Monad.Primitive.PrimState m)
+                              @ a
+                              nt
+                                `cast`
+                              (Sym (Data.Vector.SEXP.Mutable.Internal.N:W[0]
+                                        <t>_P
+                                        <ty>_P
+                                        <Control.Monad.Primitive.PrimState
+                                           m>_P) <a>_N) of wild { Data.Vector.SEXP.Mutable.Internal.MVector dt dt1 dt2 ->
+                       case GHC.Base.id
+                              @ GHC.Types.Int
+                              (GHC.Types.I# dt2) of n { GHC.Types.I# ipv3 ->
+                       letrec {
+                         do_set :: GHC.Types.Int -> m () {- Arity: 1 -}
+                         = \ (i :: GHC.Types.Int) ->
+                           case GHC.Classes.ltInt
+                                  (GHC.Num.$fNumInt_$c* (GHC.Types.I# 2#) i)
+                                  n of wild1 {
+                             GHC.Types.False
+                             -> let {
+                                  eta3 :: Data.Vector.SEXP.Mutable.Internal.W
+                                            t ty (Control.Monad.Primitive.PrimState m) a
+                                  = case GHC.Types.HEq_sc
+                                           @ *
+                                           @ *
+                                           @ (Data.Vector.SEXP.Base.ElemRep s ty)
+                                           @ a
+                                           (GHC.Classes.$p4(%,,,%)
+                                              @ (Foreign.Storable.Storable a)
+                                              @ (Foreign.R.Type.IsVector ty)
+                                              @ (Data.Singletons.SingI ty)
+                                              @ (Data.Vector.SEXP.Base.ElemRep s ty
+                                                 Data.Type.Equality.~ a)
+                                              $d(%,,,%))
+                                             `cast`
+                                           (Data.Type.Equality.N:~[0]
+                                                <*>_N <Data.Vector.SEXP.Base.ElemRep
+                                                         s ty>_N <a>_N) of cobox3 { DEFAULT ->
+                                    case Data.Vector.SEXP.Mutable.Internal.unW
+                                           @ t
+                                           @ ty
+                                           @ (Control.Monad.Primitive.PrimState m)
+                                           @ a
+                                           nt
+                                             `cast`
+                                           (Sym (Data.Vector.SEXP.Mutable.Internal.N:W[0]
+                                                     <t>_P
+                                                     <ty>_P
+                                                     <Control.Monad.Primitive.PrimState
+                                                        m>_P) <a>_N) of wild2 { Data.Vector.SEXP.Mutable.Internal.MVector dt3 dt4 dt5 ->
+                                    GHC.Base.$
+                                      @ 'GHC.Types.PtrRepLifted
+                                      @ (Data.Vector.SEXP.Mutable.Internal.MVector
+                                           (Control.Monad.Primitive.PrimState m) ty a)
+                                      @ (Data.Vector.SEXP.Mutable.Internal.W
+                                           t ty (Control.Monad.Primitive.PrimState m) a)
+                                      (\ (tpl :: Data.Vector.SEXP.Mutable.Internal.MVector
+                                                   (Control.Monad.Primitive.PrimState m) ty a) ->
+                                       tpl)
+                                        `cast`
+                                      (<Data.Vector.SEXP.Mutable.Internal.MVector
+                                          (Control.Monad.Primitive.PrimState m) ty a>_R
+                                       ->_R Sym (Data.Vector.SEXP.Mutable.Internal.N:W[0]
+                                                     <t>_P
+                                                     <ty>_P
+                                                     <Control.Monad.Primitive.PrimState m>_P) <a>_N)
+                                      (case GHC.Base.id
+                                              @ GHC.Types.Int
+                                              i of wild3 { GHC.Types.I# x# ->
+                                       case GHC.Int.$fNumInt32_$c+
+                                              (GHC.Int.I32# dt4)
+                                              (GHC.Int.I32#
+                                                 (GHC.Prim.narrow32Int#
+                                                    x#)) of dt6 { GHC.Int.I32# dt7 ->
+                                       case GHC.Base.id
+                                              @ GHC.Types.Int
+                                              (GHC.Num.$fNumInt_$c-
+                                                 n
+                                                 i) of wild4 { GHC.Types.I# x#1 ->
+                                       Data.Vector.SEXP.Mutable.Internal.MVector
+                                         @ (Control.Monad.Primitive.PrimState m)
+                                         @ ty
+                                         @ a
+                                         dt3
+                                         dt7
+                                         (GHC.Prim.narrow32Int# x#1) } } }) } }
+                                } in
+                                case GHC.Types.HEq_sc
+                                       @ *
+                                       @ *
+                                       @ (Data.Vector.SEXP.Base.ElemRep s ty)
+                                       @ a
+                                       (GHC.Classes.$p4(%,,,%)
+                                          @ (Foreign.Storable.Storable a)
+                                          @ (Foreign.R.Type.IsVector ty)
+                                          @ (Data.Singletons.SingI ty)
+                                          @ (Data.Vector.SEXP.Base.ElemRep s ty
+                                             Data.Type.Equality.~ a)
+                                          $d(%,,,%))
+                                         `cast`
+                                       (Data.Type.Equality.N:~[0]
+                                            <*>_N <Data.Vector.SEXP.Base.ElemRep
+                                                     s ty>_N <a>_N) of cobox3 { DEFAULT ->
+                                let {
+                                  $dStorable :: Foreign.Storable.Storable a
+                                  = GHC.Classes.$p1(%,,,%)
+                                      @ (Foreign.Storable.Storable a)
+                                      @ (Foreign.R.Type.IsVector ty)
+                                      @ (Data.Singletons.SingI ty)
+                                      @ (Data.Vector.SEXP.Base.ElemRep s ty Data.Type.Equality.~ a)
+                                      $d(%,,,%)
+                                } in
+                                GHC.Base.$
+                                  @ 'GHC.Types.PtrRepLifted
+                                  @ (GHC.Types.IO ())
+                                  @ (m ())
+                                  (Control.Monad.Primitive.unsafePrimToPrim
+                                     @ GHC.Types.IO
+                                     @ m
+                                     @ ()
+                                     Control.Monad.Primitive.$fPrimBaseIO
+                                     eta)
+                                  (Foreign.Marshal.Array.copyArray
+                                     @ a
+                                     $dStorable
+                                     (Data.Vector.SEXP.Mutable.Internal.unsafeToPtr
+                                        @ a
+                                        @ (Control.Monad.Primitive.PrimState m)
+                                        @ ty
+                                        $dStorable
+                                        (Data.Vector.SEXP.Mutable.Internal.unW
+                                           @ t
+                                           @ ty
+                                           @ (Control.Monad.Primitive.PrimState m)
+                                           @ a
+                                           eta3))
+                                     (case GHC.Types.HEq_sc
+                                             @ *
+                                             @ *
+                                             @ (Data.Vector.SEXP.Base.ElemRep s ty)
+                                             @ a
+                                             (GHC.Classes.$p4(%,,,%)
+                                                @ (Foreign.Storable.Storable a)
+                                                @ (Foreign.R.Type.IsVector ty)
+                                                @ (Data.Singletons.SingI ty)
+                                                @ (Data.Vector.SEXP.Base.ElemRep s ty
+                                                   Data.Type.Equality.~ a)
+                                                $d(%,,,%))
+                                               `cast`
+                                             (Data.Type.Equality.N:~[0]
+                                                  <*>_N <Data.Vector.SEXP.Base.ElemRep
+                                                           s ty>_N <a>_N) of cobox4 { DEFAULT ->
+                                      case Data.Vector.SEXP.Mutable.Internal.unW
+                                             @ t
+                                             @ ty
+                                             @ (Control.Monad.Primitive.PrimState m)
+                                             @ a
+                                             nt
+                                               `cast`
+                                             (Sym (Data.Vector.SEXP.Mutable.Internal.N:W[0]
+                                                       <t>_P
+                                                       <ty>_P
+                                                       <Control.Monad.Primitive.PrimState
+                                                          m>_P) <a>_N) of wild2 { Data.Vector.SEXP.Mutable.Internal.MVector dt3 dt4 dt5 ->
+                                      Data.Vector.SEXP.Mutable.Internal.unsafeToPtr
+                                        @ a
+                                        @ (Control.Monad.Primitive.PrimState m)
+                                        @ ty
+                                        $dStorable
+                                        (Data.Vector.SEXP.Mutable.Internal.unW
+                                           @ t
+                                           @ ty
+                                           @ (Control.Monad.Primitive.PrimState m)
+                                           @ a
+                                           (GHC.Base.$
+                                              @ 'GHC.Types.PtrRepLifted
+                                              @ (Data.Vector.SEXP.Mutable.Internal.MVector
+                                                   (Control.Monad.Primitive.PrimState m) ty a)
+                                              @ (Data.Vector.SEXP.Mutable.Internal.W
+                                                   t ty (Control.Monad.Primitive.PrimState m) a)
+                                              (\ (tpl :: Data.Vector.SEXP.Mutable.Internal.MVector
+                                                           (Control.Monad.Primitive.PrimState m)
+                                                           ty
+                                                           a) ->
+                                               tpl)
+                                                `cast`
+                                              (<Data.Vector.SEXP.Mutable.Internal.MVector
+                                                  (Control.Monad.Primitive.PrimState m) ty a>_R
+                                               ->_R Sym (Data.Vector.SEXP.Mutable.Internal.N:W[0]
+                                                             <t>_P
+                                                             <ty>_P
+                                                             <Control.Monad.Primitive.PrimState
+                                                                m>_P) <a>_N)
+                                              (case GHC.Base.id
+                                                      @ GHC.Types.Int
+                                                      (GHC.Types.I#
+                                                         0#) of wild3 { GHC.Types.I# x# ->
+                                               case GHC.Int.$fNumInt32_$c+
+                                                      (GHC.Int.I32# dt4)
+                                                      (GHC.Int.I32#
+                                                         (GHC.Prim.narrow32Int#
+                                                            x#)) of dt6 { GHC.Int.I32# dt7 ->
+                                               case GHC.Base.id
+                                                      @ GHC.Types.Int
+                                                      (GHC.Num.$fNumInt_$c-
+                                                         n
+                                                         i) of wild4 { GHC.Types.I# x#1 ->
+                                               Data.Vector.SEXP.Mutable.Internal.MVector
+                                                 @ (Control.Monad.Primitive.PrimState m)
+                                                 @ ty
+                                                 @ a
+                                                 dt3
+                                                 dt7
+                                                 (GHC.Prim.narrow32Int# x#1) } } }))) } })
+                                     (Data.Vector.SEXP.Mutable.Internal.$fMVectorWa_$cbasicLength
+                                        @ t
+                                        @ s
+                                        @ ty
+                                        @ a
+                                        $dReifies
+                                        $d(%,,,%)
+                                        @ (Control.Monad.Primitive.PrimState m)
+                                        eta3)) }
+                             GHC.Types.True
+                             -> GHC.Base.>>
+                                  @ m
+                                  $dMonad1
+                                  @ ()
+                                  @ ()
+                                  (let {
+                                     eta3 :: Data.Vector.SEXP.Mutable.Internal.W
+                                               t ty (Control.Monad.Primitive.PrimState m) a
+                                     = case GHC.Types.HEq_sc
+                                              @ *
+                                              @ *
+                                              @ (Data.Vector.SEXP.Base.ElemRep s ty)
+                                              @ a
+                                              (GHC.Classes.$p4(%,,,%)
+                                                 @ (Foreign.Storable.Storable a)
+                                                 @ (Foreign.R.Type.IsVector ty)
+                                                 @ (Data.Singletons.SingI ty)
+                                                 @ (Data.Vector.SEXP.Base.ElemRep s ty
+                                                    Data.Type.Equality.~ a)
+                                                 $d(%,,,%))
+                                                `cast`
+                                              (Data.Type.Equality.N:~[0]
+                                                   <*>_N <Data.Vector.SEXP.Base.ElemRep
+                                                            s ty>_N <a>_N) of cobox3 { DEFAULT ->
+                                       case Data.Vector.SEXP.Mutable.Internal.unW
+                                              @ t
+                                              @ ty
+                                              @ (Control.Monad.Primitive.PrimState m)
+                                              @ a
+                                              nt
+                                                `cast`
+                                              (Sym (Data.Vector.SEXP.Mutable.Internal.N:W[0]
+                                                        <t>_P
+                                                        <ty>_P
+                                                        <Control.Monad.Primitive.PrimState
+                                                           m>_P) <a>_N) of wild2 { Data.Vector.SEXP.Mutable.Internal.MVector dt3 dt4 dt5 ->
+                                       GHC.Base.$
+                                         @ 'GHC.Types.PtrRepLifted
+                                         @ (Data.Vector.SEXP.Mutable.Internal.MVector
+                                              (Control.Monad.Primitive.PrimState m) ty a)
+                                         @ (Data.Vector.SEXP.Mutable.Internal.W
+                                              t ty (Control.Monad.Primitive.PrimState m) a)
+                                         (\ (tpl :: Data.Vector.SEXP.Mutable.Internal.MVector
+                                                      (Control.Monad.Primitive.PrimState m) ty a) ->
+                                          tpl)
+                                           `cast`
+                                         (<Data.Vector.SEXP.Mutable.Internal.MVector
+                                             (Control.Monad.Primitive.PrimState m) ty a>_R
+                                          ->_R Sym (Data.Vector.SEXP.Mutable.Internal.N:W[0]
+                                                        <t>_P
+                                                        <ty>_P
+                                                        <Control.Monad.Primitive.PrimState
+                                                           m>_P) <a>_N)
+                                         (case GHC.Base.id
+                                                 @ GHC.Types.Int
+                                                 i of wild3 { GHC.Types.I# x# ->
+                                          case GHC.Int.$fNumInt32_$c+
+                                                 (GHC.Int.I32# dt4)
+                                                 (GHC.Int.I32#
+                                                    (GHC.Prim.narrow32Int#
+                                                       x#)) of dt6 { GHC.Int.I32# dt7 ->
+                                          case GHC.Base.id
+                                                 @ GHC.Types.Int
+                                                 i of wild4 { GHC.Types.I# x#1 ->
+                                          Data.Vector.SEXP.Mutable.Internal.MVector
+                                            @ (Control.Monad.Primitive.PrimState m)
+                                            @ ty
+                                            @ a
+                                            dt3
+                                            dt7
+                                            (GHC.Prim.narrow32Int# x#1) } } }) } }
+                                   } in
+                                   case GHC.Types.HEq_sc
+                                          @ *
+                                          @ *
+                                          @ (Data.Vector.SEXP.Base.ElemRep s ty)
+                                          @ a
+                                          (GHC.Classes.$p4(%,,,%)
+                                             @ (Foreign.Storable.Storable a)
+                                             @ (Foreign.R.Type.IsVector ty)
+                                             @ (Data.Singletons.SingI ty)
+                                             @ (Data.Vector.SEXP.Base.ElemRep s ty
+                                                Data.Type.Equality.~ a)
+                                             $d(%,,,%))
+                                            `cast`
+                                          (Data.Type.Equality.N:~[0]
+                                               <*>_N <Data.Vector.SEXP.Base.ElemRep
+                                                        s ty>_N <a>_N) of cobox3 { DEFAULT ->
+                                   let {
+                                     $dStorable :: Foreign.Storable.Storable a
+                                     = GHC.Classes.$p1(%,,,%)
+                                         @ (Foreign.Storable.Storable a)
+                                         @ (Foreign.R.Type.IsVector ty)
+                                         @ (Data.Singletons.SingI ty)
+                                         @ (Data.Vector.SEXP.Base.ElemRep s ty
+                                            Data.Type.Equality.~ a)
+                                         $d(%,,,%)
+                                   } in
+                                   GHC.Base.$
+                                     @ 'GHC.Types.PtrRepLifted
+                                     @ (GHC.Types.IO ())
+                                     @ (m ())
+                                     (Control.Monad.Primitive.unsafePrimToPrim
+                                        @ GHC.Types.IO
+                                        @ m
+                                        @ ()
+                                        Control.Monad.Primitive.$fPrimBaseIO
+                                        eta)
+                                     (Foreign.Marshal.Array.copyArray
+                                        @ a
+                                        $dStorable
+                                        (Data.Vector.SEXP.Mutable.Internal.unsafeToPtr
+                                           @ a
+                                           @ (Control.Monad.Primitive.PrimState m)
+                                           @ ty
+                                           $dStorable
+                                           (Data.Vector.SEXP.Mutable.Internal.unW
+                                              @ t
+                                              @ ty
+                                              @ (Control.Monad.Primitive.PrimState m)
+                                              @ a
+                                              eta3))
+                                        (case GHC.Types.HEq_sc
+                                                @ *
+                                                @ *
+                                                @ (Data.Vector.SEXP.Base.ElemRep s ty)
+                                                @ a
+                                                (GHC.Classes.$p4(%,,,%)
+                                                   @ (Foreign.Storable.Storable a)
+                                                   @ (Foreign.R.Type.IsVector ty)
+                                                   @ (Data.Singletons.SingI ty)
+                                                   @ (Data.Vector.SEXP.Base.ElemRep s ty
+                                                      Data.Type.Equality.~ a)
+                                                   $d(%,,,%))
+                                                  `cast`
+                                                (Data.Type.Equality.N:~[0]
+                                                     <*>_N <Data.Vector.SEXP.Base.ElemRep
+                                                              s ty>_N <a>_N) of cobox4 { DEFAULT ->
+                                         case Data.Vector.SEXP.Mutable.Internal.unW
+                                                @ t
+                                                @ ty
+                                                @ (Control.Monad.Primitive.PrimState m)
+                                                @ a
+                                                nt
+                                                  `cast`
+                                                (Sym (Data.Vector.SEXP.Mutable.Internal.N:W[0]
+                                                          <t>_P
+                                                          <ty>_P
+                                                          <Control.Monad.Primitive.PrimState
+                                                             m>_P) <a>_N) of wild2 { Data.Vector.SEXP.Mutable.Internal.MVector dt3 dt4 dt5 ->
+                                         Data.Vector.SEXP.Mutable.Internal.unsafeToPtr
+                                           @ a
+                                           @ (Control.Monad.Primitive.PrimState m)
+                                           @ ty
+                                           $dStorable
+                                           (Data.Vector.SEXP.Mutable.Internal.unW
+                                              @ t
+                                              @ ty
+                                              @ (Control.Monad.Primitive.PrimState m)
+                                              @ a
+                                              (GHC.Base.$
+                                                 @ 'GHC.Types.PtrRepLifted
+                                                 @ (Data.Vector.SEXP.Mutable.Internal.MVector
+                                                      (Control.Monad.Primitive.PrimState m) ty a)
+                                                 @ (Data.Vector.SEXP.Mutable.Internal.W
+                                                      t ty (Control.Monad.Primitive.PrimState m) a)
+                                                 (\ (tpl :: Data.Vector.SEXP.Mutable.Internal.MVector
+                                                              (Control.Monad.Primitive.PrimState m)
+                                                              ty
+                                                              a) ->
+                                                  tpl)
+                                                   `cast`
+                                                 (<Data.Vector.SEXP.Mutable.Internal.MVector
+                                                     (Control.Monad.Primitive.PrimState m) ty a>_R
+                                                  ->_R Sym (Data.Vector.SEXP.Mutable.Internal.N:W[0]
+                                                                <t>_P
+                                                                <ty>_P
+                                                                <Control.Monad.Primitive.PrimState
+                                                                   m>_P) <a>_N)
+                                                 (case GHC.Base.id
+                                                         @ GHC.Types.Int
+                                                         (GHC.Types.I#
+                                                            0#) of wild3 { GHC.Types.I# x# ->
+                                                  case GHC.Int.$fNumInt32_$c+
+                                                         (GHC.Int.I32# dt4)
+                                                         (GHC.Int.I32#
+                                                            (GHC.Prim.narrow32Int#
+                                                               x#)) of dt6 { GHC.Int.I32# dt7 ->
+                                                  case GHC.Base.id
+                                                         @ GHC.Types.Int
+                                                         i of wild4 { GHC.Types.I# x#1 ->
+                                                  Data.Vector.SEXP.Mutable.Internal.MVector
+                                                    @ (Control.Monad.Primitive.PrimState m)
+                                                    @ ty
+                                                    @ a
+                                                    dt3
+                                                    dt7
+                                                    (GHC.Prim.narrow32Int# x#1) } } }))) } })
+                                        (case GHC.Types.HEq_sc
+                                                @ *
+                                                @ *
+                                                @ (Data.Vector.SEXP.Base.ElemRep s ty)
+                                                @ a
+                                                (GHC.Classes.$p4(%,,,%)
+                                                   @ (Foreign.Storable.Storable a)
+                                                   @ (Foreign.R.Type.IsVector ty)
+                                                   @ (Data.Singletons.SingI ty)
+                                                   @ (Data.Vector.SEXP.Base.ElemRep s ty
+                                                      Data.Type.Equality.~ a)
+                                                   $d(%,,,%))
+                                                  `cast`
+                                                (Data.Type.Equality.N:~[0]
+                                                     <*>_N <Data.Vector.SEXP.Base.ElemRep
+                                                              s ty>_N <a>_N) of cobox4 { DEFAULT ->
+                                         case Data.Vector.SEXP.Mutable.Internal.unW
+                                                @ t
+                                                @ ty
+                                                @ (Control.Monad.Primitive.PrimState m)
+                                                @ a
+                                                eta3 of wild2 { Data.Vector.SEXP.Mutable.Internal.MVector dt3 dt4 dt5 ->
+                                         GHC.Base.id @ GHC.Types.Int (GHC.Types.I# dt5) } })) })
+                                  (do_set (GHC.Num.$fNumInt_$c* (GHC.Types.I# 2#) i)) }
+                       } in
+                       case GHC.Classes.eqInt n (GHC.Types.I# 0#) of wild1 {
+                         GHC.Types.False
+                         -> GHC.Base.>>
+                              @ m
+                              $dMonad1
+                              @ ()
+                              @ ()
+                              (case GHC.Types.HEq_sc
+                                      @ *
+                                      @ *
+                                      @ (Data.Vector.SEXP.Base.ElemRep s ty)
+                                      @ a
+                                      (GHC.Classes.$p4(%,,,%)
+                                         @ (Foreign.Storable.Storable a)
+                                         @ (Foreign.R.Type.IsVector ty)
+                                         @ (Data.Singletons.SingI ty)
+                                         @ (Data.Vector.SEXP.Base.ElemRep s ty
+                                            Data.Type.Equality.~ a)
+                                         $d(%,,,%))
+                                        `cast`
+                                      (Data.Type.Equality.N:~[0]
+                                           <*>_N <Data.Vector.SEXP.Base.ElemRep
+                                                    s ty>_N <a>_N) of cobox3 { DEFAULT ->
+                               let {
+                                 $dStorable :: Foreign.Storable.Storable a
+                                 = GHC.Classes.$p1(%,,,%)
+                                     @ (Foreign.Storable.Storable a)
+                                     @ (Foreign.R.Type.IsVector ty)
+                                     @ (Data.Singletons.SingI ty)
+                                     @ (Data.Vector.SEXP.Base.ElemRep s ty Data.Type.Equality.~ a)
+                                     $d(%,,,%)
+                               } in
+                               GHC.Base.$
+                                 @ 'GHC.Types.PtrRepLifted
+                                 @ (GHC.Types.IO ())
+                                 @ (m ())
+                                 (Control.Monad.Primitive.unsafePrimToPrim
+                                    @ GHC.Types.IO
+                                    @ m
+                                    @ ()
+                                    Control.Monad.Primitive.$fPrimBaseIO
+                                    eta)
+                                 (Foreign.Storable.pokeElemOff
+                                    @ a
+                                    $dStorable
+                                    (Data.Vector.SEXP.Mutable.Internal.unsafeToPtr
+                                       @ a
+                                       @ (Control.Monad.Primitive.PrimState m)
+                                       @ ty
+                                       $dStorable
+                                       (Data.Vector.SEXP.Mutable.Internal.unW
+                                          @ t
+                                          @ ty
+                                          @ (Control.Monad.Primitive.PrimState m)
+                                          @ a
+                                          nt
+                                            `cast`
+                                          (Sym (Data.Vector.SEXP.Mutable.Internal.N:W[0]
+                                                    <t>_P
+                                                    <ty>_P
+                                                    <Control.Monad.Primitive.PrimState
+                                                       m>_P) <a>_N)))
+                                    (GHC.Types.I# 0#)
+                                    eta2) })
+                              (do_set (GHC.Types.I# 1#))
+                         GHC.Types.True
+                         -> GHC.Base.return @ m $dMonad1 @ () GHC.Tuple.() } } } } } })
+                      (GHC.Base.return
+                         @ m
+                         $dMonad
+                         @ (Data.Vector.SEXP.Mutable.Internal.W
+                              t ty (Control.Monad.Primitive.PrimState m) a)
+                         v1)) }) -}
+c809a609adf266113603d7eff94a84d1
+  $fMVectorWa_$cbasicUnsafeSlice ::
+    (Data.Reflection.Reifies t (Control.Monad.R.Internal.AcquireIO s),
+     Data.Vector.SEXP.Base.VECTOR s ty a) =>
+    forall s1.
+    GHC.Types.Int
+    -> GHC.Types.Int
+    -> Data.Vector.SEXP.Mutable.Internal.W t ty s1 a
+    -> Data.Vector.SEXP.Mutable.Internal.W t ty s1 a
+  {- Arity: 5, HasNoCafRefs,
+     Strictness: <L,A><S(LLLS(S)),1*U(A,A,A,1*U(1*U))><S(S),1*U(U)><S(S),1*U(U)><S(SSL),1*U(U,U,A)>m,
+     Inline: INLINE (sat-args=3),
+     Unfolding: InlineRule (5, False, False)
+                (\ @ t
+                   @ s
+                   @ (ty :: Foreign.R.Type.SEXPTYPE)
+                   @ a
+                   ($dReifies :: Data.Reflection.Reifies
+                                   t (Control.Monad.R.Internal.AcquireIO s))
+                   ($d(%,,,%) :: Data.Vector.SEXP.Base.VECTOR s ty a)
+                   @ s1
+                   (eta :: GHC.Types.Int)
+                   (eta1 :: GHC.Types.Int)
+                   (eta2 :: Data.Vector.SEXP.Mutable.Internal.W t ty s1 a) ->
+                 case GHC.Types.HEq_sc
+                        @ *
+                        @ *
+                        @ (Data.Vector.SEXP.Base.ElemRep s ty)
+                        @ a
+                        (GHC.Classes.$p4(%,,,%)
+                           @ (Foreign.Storable.Storable a)
+                           @ (Foreign.R.Type.IsVector ty)
+                           @ (Data.Singletons.SingI ty)
+                           @ (Data.Vector.SEXP.Base.ElemRep s ty Data.Type.Equality.~ a)
+                           $d(%,,,%))
+                          `cast`
+                        (Data.Type.Equality.N:~[0] <*>_N <Data.Vector.SEXP.Base.ElemRep
+                                                            s ty>_N <a>_N) of cobox0 { DEFAULT ->
+                 case Data.Vector.SEXP.Mutable.Internal.unW
+                        @ t
+                        @ ty
+                        @ s1
+                        @ a
+                        eta2 of wild { Data.Vector.SEXP.Mutable.Internal.MVector dt dt1 dt2 ->
+                 GHC.Base.$
+                   @ 'GHC.Types.PtrRepLifted
+                   @ (Data.Vector.SEXP.Mutable.Internal.MVector s1 ty a)
+                   @ (Data.Vector.SEXP.Mutable.Internal.W t ty s1 a)
+                   (\ (tpl :: Data.Vector.SEXP.Mutable.Internal.MVector s1 ty a) ->
+                    tpl)
+                     `cast`
+                   (<Data.Vector.SEXP.Mutable.Internal.MVector s1 ty a>_R
+                    ->_R Sym (Data.Vector.SEXP.Mutable.Internal.N:W[0]
+                                  <t>_P <ty>_P <s1>_P) <a>_N)
+                   (case GHC.Base.id @ GHC.Types.Int eta of wild1 { GHC.Types.I# x# ->
+                    case GHC.Int.$fNumInt32_$c+
+                           (GHC.Int.I32# dt1)
+                           (GHC.Int.I32#
+                              (GHC.Prim.narrow32Int# x#)) of dt3 { GHC.Int.I32# dt4 ->
+                    case GHC.Base.id
+                           @ GHC.Types.Int
+                           eta1 of wild2 { GHC.Types.I# x#1 ->
+                    Data.Vector.SEXP.Mutable.Internal.MVector
+                      @ s1
+                      @ ty
+                      @ a
+                      dt
+                      dt4
+                      (GHC.Prim.narrow32Int# x#1) } } }) } }) -}
+c809a609adf266113603d7eff94a84d1
+  $fMVectorWa_$cbasicUnsafeWrite ::
+    (Data.Reflection.Reifies t (Control.Monad.R.Internal.AcquireIO s),
+     Data.Vector.SEXP.Base.VECTOR s ty a) =>
+    forall (m :: * -> *).
+    Control.Monad.Primitive.PrimMonad m =>
+    Data.Vector.SEXP.Mutable.Internal.W
+      t ty (Control.Monad.Primitive.PrimState m) a
+    -> GHC.Types.Int -> a -> m ()
+  {- Arity: 6,
+     Strictness: <L,A><S(LLLS(S)),U(1*U,A,A,1*U(1*U))><S(LC(S)),1*U(A,1*C1(U))><L,1*U(U,U,A)><L,U><L,U>,
+     Inline: INLINE (sat-args=3),
+     Unfolding: InlineRule (5, False, False)
+                (\ @ t
+                   @ s
+                   @ (ty :: Foreign.R.Type.SEXPTYPE)
+                   @ a
+                   ($dReifies :: Data.Reflection.Reifies
+                                   t (Control.Monad.R.Internal.AcquireIO s))
+                   ($d(%,,,%) :: Data.Vector.SEXP.Base.VECTOR s ty a)
+                   @ (m :: * -> *)
+                   (eta :: Control.Monad.Primitive.PrimMonad m)
+                   (eta1 :: Data.Vector.SEXP.Mutable.Internal.W
+                              t ty (Control.Monad.Primitive.PrimState m) a)
+                   (eta2 :: GHC.Types.Int)
+                   (eta3 :: a) ->
+                 case GHC.Types.HEq_sc
+                        @ *
+                        @ *
+                        @ (Data.Vector.SEXP.Base.ElemRep s ty)
+                        @ a
+                        (GHC.Classes.$p4(%,,,%)
+                           @ (Foreign.Storable.Storable a)
+                           @ (Foreign.R.Type.IsVector ty)
+                           @ (Data.Singletons.SingI ty)
+                           @ (Data.Vector.SEXP.Base.ElemRep s ty Data.Type.Equality.~ a)
+                           $d(%,,,%))
+                          `cast`
+                        (Data.Type.Equality.N:~[0] <*>_N <Data.Vector.SEXP.Base.ElemRep
+                                                            s ty>_N <a>_N) of cobox0 { DEFAULT ->
+                 let {
+                   $dStorable :: Foreign.Storable.Storable a
+                   = GHC.Classes.$p1(%,,,%)
+                       @ (Foreign.Storable.Storable a)
+                       @ (Foreign.R.Type.IsVector ty)
+                       @ (Data.Singletons.SingI ty)
+                       @ (Data.Vector.SEXP.Base.ElemRep s ty Data.Type.Equality.~ a)
+                       $d(%,,,%)
+                 } in
+                 GHC.Base.$
+                   @ 'GHC.Types.PtrRepLifted
+                   @ (GHC.Types.IO ())
+                   @ (m ())
+                   (Control.Monad.Primitive.unsafePrimToPrim
+                      @ GHC.Types.IO
+                      @ m
+                      @ ()
+                      Control.Monad.Primitive.$fPrimBaseIO
+                      eta)
+                   (Foreign.Storable.pokeElemOff
+                      @ a
+                      $dStorable
+                      (Data.Vector.SEXP.Mutable.Internal.unsafeToPtr
+                         @ a
+                         @ (Control.Monad.Primitive.PrimState m)
+                         @ ty
+                         $dStorable
+                         (Data.Vector.SEXP.Mutable.Internal.unW
+                            @ t
+                            @ ty
+                            @ (Control.Monad.Primitive.PrimState m)
+                            @ a
+                            eta1))
+                      eta2
+                      eta3) }) -}
+cfaa46919756c7a0286b7d13cba190bc
+  $fMVectorWa_$s=<< ::
+    (a -> GHC.Types.IO b) -> GHC.Types.IO a -> GHC.Types.IO b
+  {- Arity: 3, HasNoCafRefs,
+     Strictness: <L,C(C1(U(U,U)))><L,C(U(U,U))>,
+     Unfolding: InlineRule (2, True, True)
+                (\ @ a
+                   @ b
+                   (f :: a -> GHC.Types.IO b)
+                   (x :: GHC.Types.IO a)
+                   (eta :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                 (GHC.Base.bindIO @ a @ b x f) `cast` (GHC.Types.N:IO[0] <b>_R) eta)
+                  `cast`
+                (forall (a :: <*>_N) (b :: <*>_N).
+                 <a -> GHC.Types.IO b>_R
+                 ->_R <GHC.Types.IO a>_R
+                 ->_R Sym (GHC.Types.N:IO[0] <b>_R)) -}
+df64cb4488a2fbb2c6519bff022aa5db
+  $tc'MVector :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   10543549580308624825##
+                   16147814958219351265##
+                   Data.Vector.SEXP.Mutable.Internal.$trModule
+                   Data.Vector.SEXP.Mutable.Internal.$tc'MVector1) -}
+2683316ac08aef73f77531d76fdf5657
+  $tc'MVector1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'MVector"#) -}
+7043158d2a72a7cc822801e5d44da6cf
+  $tc'W :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   14670946780101652927##
+                   6515485780379036314##
+                   Data.Vector.SEXP.Mutable.Internal.$trModule
+                   Data.Vector.SEXP.Mutable.Internal.$tc'W1) -}
+4e393ccd69d752165c949943eb6aa6b7
+  $tc'W1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'W"#) -}
+28aa503de10004daa770c4b7e61c5887
+  $tcMVector :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   7358484225492068678##
+                   1964043765452371144##
+                   Data.Vector.SEXP.Mutable.Internal.$trModule
+                   Data.Vector.SEXP.Mutable.Internal.$tcMVector1) -}
+8677ae3718d5f9df1b087bb567c2c845
+  $tcMVector1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "MVector"#) -}
+72565340e53179c7080216981a7b6413
+  $tcW :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   1797669314742854934##
+                   6539589263212825729##
+                   Data.Vector.SEXP.Mutable.Internal.$trModule
+                   Data.Vector.SEXP.Mutable.Internal.$tcW1) -}
+72fe460c6539e44d141eca7c56957f8a
+  $tcW1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "W"#) -}
+3cd97cb3ac3209e3eeeb5c572358aad0
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module
+                   Data.Vector.SEXP.Mutable.Internal.$trModule2
+                   Data.Vector.SEXP.Mutable.Internal.$trModule1) -}
+740a301b29b1599bf22f933a3e628259
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   "Data.Vector.SEXP.Mutable.Internal"#) -}
+5518715ec21124c6ceaab8a7cff79401
+  $trModule2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   "inline-r-0.9.0.2-GXEXrsxC4K8OTVxhqWwxs"#) -}
+058ff4e1ccef46a392b9d8c04bf76ce0
+  type role MVector phantom phantom phantom
+  data MVector s (ty :: Foreign.R.Type.SEXPTYPE) a
+    = MVector {mvectorBase :: ! {-# UNPACK #-}(Foreign.R.Internal.N:SEXP[0]
+                                                   <s>_P <ty>_P)Foreign.R.Internal.SEXP s ty,
+               mvectorOffset :: {-# UNPACK #-}GHC.Int.Int32,
+               mvectorLength :: {-# UNPACK #-}GHC.Int.Int32}
+c809a609adf266113603d7eff94a84d1
+  type role W phantom phantom phantom phantom
+  newtype W t (ty :: Foreign.R.Type.SEXPTYPE) s a
+    = W {unW :: Data.Vector.SEXP.Mutable.Internal.MVector s ty a}
+6aa73c417b74826c67450d186ebf9a53
+  mvectorBase ::
+    Data.Vector.SEXP.Mutable.Internal.MVector s ty a
+    -> Foreign.R.Internal.SEXP s ty
+  RecSel Left Data.Vector.SEXP.Mutable.Internal.MVector
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(SLL),1*U(U,A,A)>m,
+     Unfolding: InlineRule (1, True, False)
+                (\ @ s
+                   @ (ty :: Foreign.R.Type.SEXPTYPE)
+                   @ a
+                   (ds :: Data.Vector.SEXP.Mutable.Internal.MVector s ty a) ->
+                 case ds of wild { Data.Vector.SEXP.Mutable.Internal.MVector dt dt1 dt2 ->
+                 (GHC.Ptr.Ptr @ (Language.R.HExp.HExp s ty) dt)
+                   `cast`
+                 (Sym (Foreign.R.Internal.N:SEXP[0] <s>_P <ty>_P)) }) -}
+b3adfe0543ed53d29e8763f165622717
+  mvectorLength ::
+    Data.Vector.SEXP.Mutable.Internal.MVector s ty a -> GHC.Int.Int32
+  RecSel Left Data.Vector.SEXP.Mutable.Internal.MVector
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(LLS),1*U(A,A,U)>m,
+     Unfolding: InlineRule (1, True, False)
+                (\ @ s
+                   @ (ty :: Foreign.R.Type.SEXPTYPE)
+                   @ a
+                   (ds :: Data.Vector.SEXP.Mutable.Internal.MVector s ty a) ->
+                 case ds of wild { Data.Vector.SEXP.Mutable.Internal.MVector dt dt1 dt2 ->
+                 GHC.Int.I32# dt2 }) -}
+d3a9d4c78f8b74a80fb890aa9cc946c7
+  mvectorOffset ::
+    Data.Vector.SEXP.Mutable.Internal.MVector s ty a -> GHC.Int.Int32
+  RecSel Left Data.Vector.SEXP.Mutable.Internal.MVector
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(LSL),1*U(A,U,A)>m,
+     Unfolding: InlineRule (1, True, False)
+                (\ @ s
+                   @ (ty :: Foreign.R.Type.SEXPTYPE)
+                   @ a
+                   (ds :: Data.Vector.SEXP.Mutable.Internal.MVector s ty a) ->
+                 case ds of wild { Data.Vector.SEXP.Mutable.Internal.MVector dt dt1 dt2 ->
+                 GHC.Int.I32# dt1 }) -}
+b558f1f833137be47549c0774449c602
+  proxyW ::
+    GHC.Base.Monad m =>
+    m (Data.Vector.SEXP.Mutable.Internal.W t ty s a)
+    -> proxy t -> m (Data.Vector.SEXP.Mutable.Internal.MVector s ty a)
+  {- Arity: 3, HasNoCafRefs,
+     Strictness: <S(S(S(C(C(S))L)LLLL)LLLL),1*U(1*U(1*U(1*C1(C1(U)),A),A,A,A,A),A,A,A,A)><L,U><L,A>,
+     Unfolding: InlineRule (3, True, False)
+                (\ @ (m :: * -> *)
+                   @ t
+                   @ (ty :: Foreign.R.Type.SEXPTYPE)
+                   @ s
+                   @ a
+                   @ (proxy :: * -> *)
+                   ($dMonad :: GHC.Base.Monad m)
+                   (eta :: m (Data.Vector.SEXP.Mutable.Internal.W t ty s a))
+                   (eta1 :: proxy t) ->
+                 GHC.Base.fmap
+                   @ m
+                   (GHC.Base.$p1Applicative @ m (GHC.Base.$p1Monad @ m $dMonad))
+                   @ (Data.Vector.SEXP.Mutable.Internal.W t ty s a)
+                   @ (Data.Vector.SEXP.Mutable.Internal.MVector s ty a)
+                   (Data.Vector.SEXP.Mutable.Internal.unW1 @ t @ ty @ s @ a)
+                     `cast`
+                   (<Data.Vector.SEXP.Mutable.Internal.W t ty s a>_R
+                    ->_R Data.Vector.SEXP.Mutable.Internal.N:W[0]
+                             <t>_P <ty>_P <s>_P <a>_N)
+                   eta) -}
+18c0086ff684e97b748c90f34a3dd768
+  release ::
+    s' Control.Memory.Region.<= s =>
+    Data.Vector.SEXP.Mutable.Internal.MVector s ty a
+    -> Data.Vector.SEXP.Mutable.Internal.MVector s' ty a
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,A>,
+     Unfolding: InlineRule (1, True, True)
+                (\ @ s'
+                   @ s
+                   @ (ty :: Foreign.R.Type.SEXPTYPE)
+                   @ a
+                   (irred :: s' Control.Memory.Region.<= s)
+                   (eta :: Data.Vector.SEXP.Mutable.Internal.MVector s ty a) ->
+                 Data.Vector.SEXP.Mutable.Internal.unsafeRelease
+                   @ s
+                   @ ty
+                   @ a
+                   @ s'
+                   eta) -}
+c809a609adf266113603d7eff94a84d1
+  unW ::
+    Data.Vector.SEXP.Mutable.Internal.W t ty s a
+    -> Data.Vector.SEXP.Mutable.Internal.MVector s ty a
+  RecSel Left Data.Vector.SEXP.Mutable.Internal.W
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U(U,U,U)>m,
+     Unfolding: InlineRule (0, True, True)
+                Data.Vector.SEXP.Mutable.Internal.unW1
+                  `cast`
+                (forall (t :: <*>_N) (ty :: <Foreign.R.Type.SEXPTYPE>_N) (s :: <GHC.Types.*>_N) (a :: <*>_N).
+                 <Data.Vector.SEXP.Mutable.Internal.W t ty s a>_R
+                 ->_R Data.Vector.SEXP.Mutable.Internal.N:W[0]
+                          <t>_P <ty>_P <s>_P <a>_N) -}
+c809a609adf266113603d7eff94a84d1
+  unW1 ::
+    Data.Vector.SEXP.Mutable.Internal.W t ty s a
+    -> Data.Vector.SEXP.Mutable.Internal.W t ty s a
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U(U,U,U)>m,
+     Unfolding: InlineRule (1, True, True)
+                (\ @ t
+                   @ (ty :: Foreign.R.Type.SEXPTYPE)
+                   @ s
+                   @ a
+                   (ds :: Data.Vector.SEXP.Mutable.Internal.W t ty s a) ->
+                 ds) -}
+6a9c16c3587e0f414675d7db547a6d78
+  unsafeRelease ::
+    Data.Vector.SEXP.Mutable.Internal.MVector s ty a
+    -> Data.Vector.SEXP.Mutable.Internal.MVector s' ty a
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(SSS),1*U(U,U,U)>m,
+     Unfolding: InlineRule (1, True, False)
+                (\ @ s
+                   @ (ty :: Foreign.R.Type.SEXPTYPE)
+                   @ a
+                   @ s'
+                   (ds :: Data.Vector.SEXP.Mutable.Internal.MVector s ty a) ->
+                 case ds of wild { Data.Vector.SEXP.Mutable.Internal.MVector dt dt1 dt2 ->
+                 Data.Vector.SEXP.Mutable.Internal.MVector
+                   @ s'
+                   @ ty
+                   @ a
+                   dt
+                   dt1
+                   dt2 }) -}
+d36fc1d26e6a8b372d0dd6942e30f2c8
+  unsafeToPtr ::
+    Foreign.Storable.Storable a =>
+    Data.Vector.SEXP.Mutable.Internal.MVector s ty a -> GHC.Ptr.Ptr a
+  {- Arity: 2,
+     Strictness: <S(C(S(S))LLLLLLL),1*U(1*C1(U(U)),A,A,A,A,A,A,A)><S(SSL),1*U(U,U,A)>m,
+     Unfolding: InlineRule (2, True, False)
+                (\ @ a
+                   @ s
+                   @ (ty :: Foreign.R.Type.SEXPTYPE)
+                   ($dStorable :: Foreign.Storable.Storable a)
+                   (ds :: Data.Vector.SEXP.Mutable.Internal.MVector s ty a) ->
+                 case ds of wild { Data.Vector.SEXP.Mutable.Internal.MVector dt dt1 dt2 ->
+                 case Foreign.Storable.sizeOf
+                        @ a
+                        $dStorable
+                        (Foreign.Marshal.Array.advancePtr1
+                           @ a) of wild2 { GHC.Types.I# y ->
+                 GHC.Ptr.Ptr
+                   @ a
+                   (GHC.Prim.plusAddr#
+                      (GHC.Prim.plusAddr# dt 40#)
+                      (GHC.Prim.*# dt1 y)) } }) -}
+7b9ecde0bdb8722405d39293d8d3f53b
+  withW ::
+    proxy t
+    -> Data.Vector.SEXP.Mutable.Internal.MVector s ty a
+    -> Data.Vector.SEXP.Mutable.Internal.W t ty s a
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,A><S,1*U(U,U,U)>m,
+     Unfolding: InlineRule (0, True, True)
+                Data.Vector.SEXP.Mutable.Internal.withW1
+                  `cast`
+                (forall (proxy :: <*
+                                   -> *>_N) (t :: <*>_N) (s :: <GHC.Types.*>_N) (ty :: <Foreign.R.Type.SEXPTYPE>_N) (a :: <*>_N).
+                 <proxy t>_R
+                 ->_R <Data.Vector.SEXP.Mutable.Internal.MVector s ty a>_R
+                 ->_R Sym (Data.Vector.SEXP.Mutable.Internal.N:W[0]
+                               <t>_P <ty>_P <s>_P) <a>_N) -}
+406c2be1735fbc93fb15bb39d4fe28a0
+  withW1 ::
+    proxy t
+    -> Data.Vector.SEXP.Mutable.Internal.MVector s ty a
+    -> Data.Vector.SEXP.Mutable.Internal.MVector s ty a
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,A><S,1*U(U,U,U)>m,
+     Unfolding: InlineRule (2, True, True)
+                (\ @ (proxy :: * -> *)
+                   @ t
+                   @ s
+                   @ (ty :: Foreign.R.Type.SEXPTYPE)
+                   @ a
+                   (ds :: proxy t)
+                   (v :: Data.Vector.SEXP.Mutable.Internal.MVector s ty a) ->
+                 v) -}
+instance Data.Vector.Generic.Mutable.Base.MVector [Data.Vector.SEXP.Mutable.Internal.W,
+                                                   .]
+  = Data.Vector.SEXP.Mutable.Internal.$fMVectorWa
+"SPEC/Data.Vector.SEXP.Mutable.Internal =<< @ IO _ _" [ALWAYS] forall @ a
+                                                                      @ b
+                                                                      ($dMonad :: GHC.Base.Monad
+                                                                                    GHC.Types.IO)
+  GHC.Base.=<< @ GHC.Types.IO @ a @ b $dMonad
+  = Data.Vector.SEXP.Mutable.Internal.$fMVectorWa_$s=<< @ a @ b
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: none
+require own pkg trusted: False
+

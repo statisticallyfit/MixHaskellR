@@ -1,0 +1,3271 @@
+
+==================== FINAL INTERFACE ====================
+2017-12-28 08:49:58.400596 UTC
+
+interface inline-r-0.9.0.2-CmRL2Hikuao7dNZScoizZz:Language.R.Matcher [family instance module] 8022
+  interface hash: cff37f50953cc738abe17b0846a8edfd
+  ABI hash: 9fefc6919a78fd5d1d54005d38565026
+  export-list hash: 5046a8d35684ed6337dd3f67562f41b7
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: 18ec00e46fe3967dbc40b811a7d4a7d4
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Language.R.Matcher.attribute
+  Language.R.Matcher.attributes
+  Language.R.Matcher.charList
+  Language.R.Matcher.choice
+  Language.R.Matcher.dim
+  Language.R.Matcher.dimnames
+  Language.R.Matcher.factor
+  Language.R.Matcher.getS3Class
+  Language.R.Matcher.guardType
+  Language.R.Matcher.hexp
+  Language.R.Matcher.list
+  Language.R.Matcher.lookupAttribute
+  Language.R.Matcher.matchOnly
+  Language.R.Matcher.names
+  Language.R.Matcher.null
+  Language.R.Matcher.rownames
+  Language.R.Matcher.s3
+  Language.R.Matcher.s4
+  Language.R.Matcher.sexp
+  Language.R.Matcher.someAttribute
+  Language.R.Matcher.somesexp
+  Language.R.Matcher.typeOf
+  Language.R.Matcher.with
+  Language.R.Matcher.Matcher{Language.R.Matcher.Matcher runMatcher}
+module dependencies: Control.Memory.Region Control.Monad.R.Class
+                     Control.Monad.R.Internal Data.Vector.SEXP Data.Vector.SEXP.Base
+                     Data.Vector.SEXP.Mutable Data.Vector.SEXP.Mutable.Internal
+                     Foreign.R Foreign.R.Constraints Foreign.R.Embedded Foreign.R.Error
+                     Foreign.R.EventLoop Foreign.R.Internal Foreign.R.Parse
+                     Foreign.R.Type H.Prelude Internal.Error Language.R Language.R.Event
+                     Language.R.GC Language.R.Globals Language.R.HExp
+                     Language.R.Instance Language.R.Internal [boot]
+                     Language.R.Internal.FunWrappers Language.R.Internal.FunWrappers.TH
+                     Language.R.Literal Language.R.QQ
+package dependencies: array-0.5.2.0 base-4.10.1.0 binary-0.8.5.1
+                      bytestring-0.10.8.2 containers-0.5.10.2 data-default-class-0.1.2.0
+                      deepseq-1.4.3.0 exceptions-0.8.3 ghc-boot-th-8.2.2 ghc-prim-0.5.1.1
+                      integer-gmp-1.0.1.0 mtl-2.2.1 pretty-1.1.3.3 primitive-0.6.2.0
+                      process-1.6.1.0 reflection-2.1.2 safe-0.3.15 setenv-0.1.1.3
+                      singletons-2.3.1 stm-2.4.4.1 syb-0.7 template-haskell-2.12.0.0
+                      text-1.2.2.2 th-desugar-1.7 th-expand-syns-0.4.3.0 th-lift-0.7.7
+                      th-lift-instances-0.1.11 th-orphans-0.13.4 th-reify-many-0.1.8
+                      transformers-0.5.2.0 unix-2.7.2.2 vector-0.12.0.1
+orphans: reflection-2.1.2:Data.Reflection
+         stm-2.4.4.1:Control.Monad.STM
+         singletons-2.3.1:Data.Singletons.TypeLits
+         singletons-2.3.1:Data.Singletons.TypeLits.Internal
+         singletons-2.3.1:Data.Singletons.Prelude.Instances
+         singletons-2.3.1:Data.Singletons.Decide
+         th-orphans-0.13.4:Language.Haskell.TH.Instances
+         th-lift-instances-0.1.11:Instances.TH.Lift
+         th-lift-0.7.7:Language.Haskell.TH.Lift text-1.2.2.2:Data.Text.Lazy
+         text-1.2.2.2:Data.Text binary-0.8.5.1:Data.Binary.Generic
+         bytestring-0.10.8.2:Data.ByteString.Builder
+         text-1.2.2.2:Data.Text.Show vector-0.12.0.1:Data.Vector.Unboxed
+         vector-0.12.0.1:Data.Vector.Fusion.Bundle
+         transformers-0.5.2.0:Control.Monad.Trans.Error
+         syb-0.7:Data.Generics.Instances base-4.10.1.0:GHC.Float
+         base-4.10.1.0:GHC.Base
+family instance modules: base-4.10.1.0:Control.Applicative
+                         base-4.10.1.0:Data.Complex base-4.10.1.0:Data.Either
+                         base-4.10.1.0:Data.Functor.Compose base-4.10.1.0:Data.Functor.Const
+                         base-4.10.1.0:Data.Functor.Identity
+                         base-4.10.1.0:Data.Functor.Product base-4.10.1.0:Data.Functor.Sum
+                         base-4.10.1.0:Data.List.NonEmpty base-4.10.1.0:Data.Monoid
+                         base-4.10.1.0:Data.Semigroup base-4.10.1.0:Data.Type.Equality
+                         base-4.10.1.0:Data.Version base-4.10.1.0:Data.Void
+                         base-4.10.1.0:GHC.Exts base-4.10.1.0:GHC.Generics
+                         base-4.10.1.0:GHC.IO.Exception base-4.10.1.0:GHC.TypeLits
+                         base-4.10.1.0:GHC.TypeNats containers-0.5.10.2:Data.IntMap.Internal
+                         containers-0.5.10.2:Data.IntSet.Internal
+                         containers-0.5.10.2:Data.Map.Internal
+                         containers-0.5.10.2:Data.Sequence.Internal
+                         containers-0.5.10.2:Data.Set.Internal containers-0.5.10.2:Data.Tree
+                         ghc-boot-th-8.2.2:GHC.ForeignSrcLang.Type
+                         ghc-boot-th-8.2.2:GHC.LanguageExtensions.Type
+                         inline-r-0.9.0.2-CmRL2Hikuao7dNZScoizZz:Control.Memory.Region
+                         inline-r-0.9.0.2-CmRL2Hikuao7dNZScoizZz:Data.Vector.SEXP
+                         inline-r-0.9.0.2-CmRL2Hikuao7dNZScoizZz:Foreign.R.Type
+                         inline-r-0.9.0.2-CmRL2Hikuao7dNZScoizZz:Language.R.Instance
+                         pretty-1.1.3.3:Text.PrettyPrint.Annotated.HughesPJ
+                         pretty-1.1.3.3:Text.PrettyPrint.HughesPJ
+                         primitive-0.6.2.0:Control.Monad.Primitive
+                         primitive-0.6.2.0:Data.Primitive.Array
+                         singletons-2.3.1:Data.Singletons
+                         singletons-2.3.1:Data.Singletons.Prelude.Bool
+                         singletons-2.3.1:Data.Singletons.Prelude.Eq
+                         singletons-2.3.1:Data.Singletons.Prelude.Instances
+                         singletons-2.3.1:Data.Singletons.Prelude.Num
+                         singletons-2.3.1:Data.Singletons.Prelude.Ord
+                         singletons-2.3.1:Data.Singletons.Syntax
+                         singletons-2.3.1:Data.Singletons.TypeLits
+                         singletons-2.3.1:Data.Singletons.TypeLits.Internal
+                         template-haskell-2.12.0.0:Language.Haskell.TH.Syntax
+                         text-1.2.2.2:Data.Text text-1.2.2.2:Data.Text.Lazy
+                         th-desugar-1.7:Language.Haskell.TH.Desugar.Core
+                         vector-0.12.0.1:Data.Vector vector-0.12.0.1:Data.Vector.Primitive
+                         vector-0.12.0.1:Data.Vector.Storable
+                         vector-0.12.0.1:Data.Vector.Unboxed
+                         vector-0.12.0.1:Data.Vector.Unboxed.Base
+import  -/  base-4.10.1.0:Control.Applicative 99577a9c463ffe4790a1d37547a345bd
+import  -/  base-4.10.1.0:Control.Exception c134ea327d158f2eebf26e12a1d4ad47
+import  -/  base-4.10.1.0:Control.Monad ebed2e8e7444944e0c1d827c6faf40a4
+import  -/  base-4.10.1.0:Data.Either d7dae5d9bf298dee616e465c14b5d60e
+import  -/  base-4.10.1.0:Data.Foldable 9ed87455d68e87ff2b5b8725eae9897e
+import  -/  base-4.10.1.0:Data.Functor 2ffda4f936b8f474394d93205750aff3
+import  -/  base-4.10.1.0:Data.Maybe 07738c5485acb328136bb15596f8b845
+import  -/  base-4.10.1.0:Data.Traversable 60ea7c2973e63de7d08d5d0269f96e67
+import  -/  base-4.10.1.0:Data.Typeable 3291e9b95e37ffc276f1f4c39c7b8372
+import  -/  base-4.10.1.0:Data.Typeable.Internal b31684019ac02e3213b270a8482ac844
+import  -/  base-4.10.1.0:Foreign 6e1e49cc01b9f846dbcb01cc4a57d323
+import  -/  base-4.10.1.0:Foreign.C.String 77a609cc1f3a7c50c3bbf1134c105acc
+import  -/  base-4.10.1.0:GHC.Base 782fd99b5e36f3698a26179a49afca64
+import  -/  base-4.10.1.0:GHC.Err 514b3a24b22e9d7d731c2d0d02d10842
+import  -/  base-4.10.1.0:GHC.Generics c2a8006cab1f0055555a6c72607a574b
+import  -/  base-4.10.1.0:GHC.IO e261d8b68ccf81a359626fa520b57d1d
+import  -/  base-4.10.1.0:GHC.IO.Unsafe 0aa7e5adc396c9f651baef415ce018da
+import  -/  base-4.10.1.0:GHC.List e3060fbeb44ce0038e6b4dedf2dd9cf1
+import  -/  base-4.10.1.0:GHC.Num 6e1dc5d36d99a802edb39b92bb1923b8
+import  -/  base-4.10.1.0:GHC.Real 3c62834bc25e762eabc44149c4cc142d
+import  -/  base-4.10.1.0:GHC.Show 0a8ce2b5e533d1c2cfb7954e6736be45
+import  -/  base-4.10.1.0:Prelude 31945b7d0084063347fc52506d3a4020
+import  -/  base-4.10.1.0:System.IO.Unsafe 00b3b8853d06169d9bfd9af46118ba88
+import  -/  deepseq-1.4.3.0:Control.DeepSeq 9eeb1cba615a0eb5ceba9a811a507265
+import  -/  ghc-prim-0.5.1.1:GHC.Classes 93e2660065dce9329577e83d76d8f0d4
+import  -/  Control.Monad.R.Class e5a0c4056d91754aa90b5adf4bc59248
+  MonadR 3b2bb150f2b80e2d32d08e5e9fb3cdc6
+import  -/  Data.Vector.SEXP 1ba3b4d0f52c5e1239a58edb94ac6587
+  exports: ba6781c44342a369931119b5db2f7524
+  toList 3476d9bcd1360fdfad479ca1a02d99fb
+  toString 89db6b8b39a587c28a1fdeb77939331d
+import  -/  Foreign.R 51460710da704a1aff942901939ab83a
+  exports: 66604cef250b707139e6d39041287043
+  install e4e5ace4396c039f161b20e02876c4be
+import  -/  Foreign.R.Internal 0950ef2cc999f128080e9690ff115a12
+  SEXP 8e71af79acc64eda5f9cb7291bf461df
+  SomeSEXP d3242a05a97056d0f4278da347cae3e8
+  SomeSEXP 870de88561703105d28633d6a8e2294b
+  getAttribute 0942c3317b59817b1fd3393ca57e999c
+  getAttributes 3a756b0150a1a8de093445b277f682b7
+  isS4 37b54554ede8c76aa379dd05db75a6f6
+  typeOf 7afee6af5a3ea33aea03a8fcb3ded45f
+  unsafeCoerce fd24c6a04fe85cae12472829ca64771e
+import  -/  Foreign.R.Type c66cc062d80b456888eb0e05aa6a4002
+  Int 846c6444255f487e6112f24053a1fef2
+  Nil 36bcb069ae5a9368ced2bacefcf86560
+  S4 a63fd9c03461594588296f40f69465d8
+  SEXPTYPE 155aac0ce58f46653dea12e588ab4eb0
+  SInt 001399ba1c28fe61edbe1d614287223f
+  SList 6e45be3ff359ca189d9327881ebbd170
+  SNil 6d08615b3ab8746a590a1cbb0f728031
+  SSEXPTYPE 01bde09c1432a58c48c6a6c3ae653c47
+  SString 56984696029fcbe5895cd691b7443206
+  SVector 2f7d34a186d57b0a9cdca22c990831f7
+  String e0243b21c36f7ea25c758c04c63f25ed
+import  -/  H.Prelude e36d2c9f12de64ccb9a431bc0e48e285
+  exports: f83776fce9a8ddea2fd8efd456dea58a
+import  -/  Language.R.HExp 65742348049316c593051d25bc8cd9c6
+  Char 580fe987e5b9f944444503249b3ba7ea
+  HExp 433c4132461aebffaa9ab039f602c411
+  Int 858608b86e02608eb274851ea8c590e6
+  List 78a926d23c6d60b2ad213d44a3d3c6b6
+  String 19a08976f38b34ad047913f7156cdb66
+  Vector d5ee8726a05c153bd8d37d8319332ac2
+  hexp 4c1fd9e46ec95c8e40058dd387b6e55d
+import  -/  singletons-2.3.1:Data.Singletons 9da68ca382f47f0899b26cbacf532ec5
+5b63f51fe76527e6ec9eaee8713534f4
+  $fAlternativeMatcher ::
+    GHC.Base.Alternative (Language.R.Matcher.Matcher s)
+  DFunId
+  {- Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun: @ s.
+                  @ (Language.R.Matcher.Matcher s)
+                  (Language.R.Matcher.$fApplicativeMatcher @ s)
+                  (Language.R.Matcher.$fAlternativeMatcher6 @ s)
+                    `cast`
+                  (forall (a :: <*>_N).
+                   Sym (Language.R.Matcher.N:Matcher[0] <s>_P <a>_R))
+                  (Language.R.Matcher.$fAlternativeMatcher3 @ s)
+                    `cast`
+                  (forall (a :: <*>_N).
+                   <Language.R.Matcher.Matcher s a>_R
+                   ->_R <Language.R.Matcher.Matcher s a>_R
+                   ->_R Sym (Language.R.Matcher.N:Matcher[0] <s>_P <a>_R))
+                  (Language.R.Matcher.$fAlternativeMatcher2 @ s)
+                    `cast`
+                  (forall (a :: <*>_N).
+                   <Language.R.Matcher.Matcher s a>_R
+                   ->_R Sym (Language.R.Matcher.N:Matcher[0] <s>_P <[a]>_R))
+                  (Language.R.Matcher.$fAlternativeMatcher1 @ s)
+                    `cast`
+                  (forall (a :: <*>_N).
+                   <Language.R.Matcher.Matcher s a>_R
+                   ->_R Sym (Language.R.Matcher.N:Matcher[0] <s>_P <[a]>_R)) -}
+5b63f51fe76527e6ec9eaee8713534f4
+  $fAlternativeMatcher1 ::
+    Language.R.Matcher.Matcher s a
+    -> forall r.
+       Foreign.R.Internal.SomeSEXP s
+       -> ([a] -> r) -> (Language.R.Matcher.MatcherError s -> r) -> r
+  {- Arity: 4, HasNoCafRefs,
+     Strictness: <C(C(C(S))),C(C1(C1(U)))><L,U><L,C(U)><L,A>,
+     Inline: [0],
+     Unfolding: InlineRule (4, True, True)
+                (\ @ s
+                   @ a
+                   (w :: Language.R.Matcher.Matcher s a)
+                   @ r
+                   (w1 :: Foreign.R.Internal.SomeSEXP s)
+                   (w2 :: [a] -> r)
+                   (w3 :: Language.R.Matcher.MatcherError s -> r) ->
+                 Language.R.Matcher.$w$cmany @ s @ a w @ r w1 w2) -}
+5b63f51fe76527e6ec9eaee8713534f4
+  $fAlternativeMatcher2 ::
+    Language.R.Matcher.Matcher s a
+    -> forall r.
+       Foreign.R.Internal.SomeSEXP s
+       -> ([a] -> r) -> (Language.R.Matcher.MatcherError s -> r) -> r
+  {- Arity: 4, HasNoCafRefs,
+     Strictness: <C(C(C(S))),C(C1(C1(U)))><L,U><L,C(U)><L,U>,
+     Unfolding: (\ @ s
+                   @ a
+                   (v :: Language.R.Matcher.Matcher s a)
+                   @ r
+                   (eta :: Foreign.R.Internal.SomeSEXP s)
+                   (eta1 :: [a] -> r)
+                   (eta2 :: Language.R.Matcher.MatcherError s -> r) ->
+                 letrec {
+                   some_v :: forall r1.
+                             Foreign.R.Internal.SomeSEXP s
+                             -> ([a] -> r1) -> (Language.R.Matcher.MatcherError s -> r1) -> r1
+                     {- Arity: 3, Strictness: <L,U><L,C(U)><L,U> -}
+                   = \ @ r1
+                       (eta3 :: Foreign.R.Internal.SomeSEXP s)
+                       (eta4 :: [a] -> r1)
+                       (eta5 :: Language.R.Matcher.MatcherError s -> r1) ->
+                     v `cast` (Language.R.Matcher.N:Matcher[0] <s>_P <a>_R)
+                       @ r1
+                       eta3
+                       (\ (o :: a) ->
+                        let {
+                          lvl18 :: r1 = eta4 (GHC.Types.: @ a o (GHC.Types.[] @ a))
+                        } in
+                        some_v
+                          @ r1
+                          eta3
+                          (\ (o1 :: [a]) -> eta4 (GHC.Types.: @ a o o1))
+                          (\ (e' :: Language.R.Matcher.MatcherError s) -> lvl18))
+                       eta5
+                 } in
+                 some_v @ r eta eta1 eta2) -}
+5b63f51fe76527e6ec9eaee8713534f4
+  $fAlternativeMatcher3 ::
+    Language.R.Matcher.Matcher s a
+    -> Language.R.Matcher.Matcher s a
+    -> forall r.
+       Foreign.R.Internal.SomeSEXP s
+       -> (a -> r) -> (Language.R.Matcher.MatcherError s -> r) -> r
+  {- Arity: 5,
+     Strictness: <C(C(C(S))),1*C1(C1(C1(U)))><L,C(C1(C1(U)))><L,U><L,U><L,C(U)>,
+     Unfolding: (\ @ s
+                   @ a
+                   (f :: Language.R.Matcher.Matcher s a)
+                   (g :: Language.R.Matcher.Matcher s a)
+                   @ r
+                   (s6 :: Foreign.R.Internal.SomeSEXP s)
+                   (ok :: a -> r)
+                   (err :: Language.R.Matcher.MatcherError s -> r) ->
+                 f `cast` (Language.R.Matcher.N:Matcher[0] <s>_P <a>_R)
+                   @ r
+                   s6
+                   ok
+                   (\ (e' :: Language.R.Matcher.MatcherError s) ->
+                    g `cast` (Language.R.Matcher.N:Matcher[0] <s>_P <a>_R)
+                      @ r
+                      s6
+                      ok
+                      (\ (x :: Language.R.Matcher.MatcherError s) ->
+                       err
+                         (Language.R.Matcher.$fAlternativeMatcher_$cmappend @ s e' x)))) -}
+25da2a1632be0f41811a1f9d168085e7
+  $fAlternativeMatcher4 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   Language.R.Matcher.$fAlternativeMatcher5) -}
+f497a1bc5d77a3e00f081564e97bbdfe
+  $fAlternativeMatcher5 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("empty"#) -}
+55b5ae6b1da837edd09818aac25a68ef
+  $fAlternativeMatcher6 ::
+    Foreign.R.Internal.SomeSEXP s
+    -> (a -> r) -> (Language.R.Matcher.MatcherError s -> r) -> r
+  {- Arity: 3, Strictness: <L,A><L,A><C(S),1*C1(U)>,
+     Unfolding: InlineRule (3, True, True)
+                (\ @ s
+                   @ a
+                   @ r
+                   (ds2 :: Foreign.R.Internal.SomeSEXP s)
+                   (ds3 :: a -> r)
+                   (err :: Language.R.Matcher.MatcherError s -> r) ->
+                 err (Language.R.Matcher.$fAlternativeMatcher_$cmempty @ s)) -}
+c8a0d9370b0a2d7ccba981f847b4260c
+  $fAlternativeMatcher_$cmappend ::
+    Language.R.Matcher.MatcherError s
+    -> Language.R.Matcher.MatcherError s
+    -> Language.R.Matcher.MatcherError s
+  {- Arity: 2, Strictness: <L,1*U><S,1*U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ @ s
+                   (a :: Language.R.Matcher.MatcherError s)
+                   (ds2 :: Language.R.Matcher.MatcherError s) ->
+                 case ds2 of wild {
+                   DEFAULT -> wild
+                   Language.R.Matcher.MatcherError ds3
+                   -> case GHC.Base.eqString
+                             ds3
+                             Language.R.Matcher.$fAlternativeMatcher4 of wild1 {
+                        GHC.Types.False -> wild GHC.Types.True -> a } }) -}
+c8a0d9370b0a2d7ccba981f847b4260c
+  $fAlternativeMatcher_$cmempty :: Language.R.Matcher.MatcherError s
+  {- Strictness: m1,
+     Unfolding: (\ @ s ->
+                 Language.R.Matcher.MatcherError
+                   @ s
+                   Language.R.Matcher.$fAlternativeMatcher4) -}
+5b63f51fe76527e6ec9eaee8713534f4
+  $fApplicativeMatcher ::
+    GHC.Base.Applicative (Language.R.Matcher.Matcher s)
+  DFunId
+  {- Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun: @ s.
+                  @ (Language.R.Matcher.Matcher s)
+                  (Language.R.Matcher.$fFunctorMatcher @ s)
+                  (Language.R.Matcher.$fApplicativeMatcher5 @ s)
+                    `cast`
+                  (forall (a :: <*>_N).
+                   <a>_R ->_R Sym (Language.R.Matcher.N:Matcher[0] <s>_P <a>_R))
+                  (\ @ a @ b -> Language.R.Matcher.$fApplicativeMatcher4 @ a @ s @ b)
+                    `cast`
+                  (forall (a :: <*>_N) (b :: <*>_N).
+                   <Language.R.Matcher.Matcher s (a -> b)>_R
+                   ->_R <Language.R.Matcher.Matcher s a>_R
+                   ->_R Sym (Language.R.Matcher.N:Matcher[0] <s>_P <b>_R))
+                  (Language.R.Matcher.$fApplicativeMatcher3 @ s)
+                    `cast`
+                  (forall (a :: <*>_N) (b :: <*>_N) (c :: <*>_N).
+                   <a -> b -> c>_R
+                   ->_R <Language.R.Matcher.Matcher s a>_R
+                   ->_R <Language.R.Matcher.Matcher s b>_R
+                   ->_R Sym (Language.R.Matcher.N:Matcher[0] <s>_P <c>_R))
+                  (Language.R.Matcher.$fApplicativeMatcher2 @ s)
+                    `cast`
+                  (forall (a :: <*>_N) (b :: <*>_N).
+                   <Language.R.Matcher.Matcher s a>_R
+                   ->_R <Language.R.Matcher.Matcher s b>_R
+                   ->_R Sym (Language.R.Matcher.N:Matcher[0] <s>_P <b>_R))
+                  (\ @ a @ b -> Language.R.Matcher.$fApplicativeMatcher1 @ b @ s @ a)
+                    `cast`
+                  (forall (a :: <*>_N) (b :: <*>_N).
+                   <Language.R.Matcher.Matcher s a>_R
+                   ->_R <Language.R.Matcher.Matcher s b>_R
+                   ->_R Sym (Language.R.Matcher.N:Matcher[0] <s>_P <a>_R)) -}
+5b63f51fe76527e6ec9eaee8713534f4
+  $fApplicativeMatcher1 ::
+    Language.R.Matcher.Matcher s a
+    -> Language.R.Matcher.Matcher s b
+    -> forall r.
+       Foreign.R.Internal.SomeSEXP s
+       -> (a -> r) -> (Language.R.Matcher.MatcherError s -> r) -> r
+  {- Arity: 5, HasNoCafRefs,
+     Strictness: <C(C(C(S))),1*C1(C1(C1(U)))><L,C(C1(C1(U)))><L,U><L,C(U)><L,U>,
+     Unfolding: (\ @ b
+                   @ s
+                   @ a
+                   (x :: Language.R.Matcher.Matcher s a)
+                   (eta :: Language.R.Matcher.Matcher s b)
+                   @ r
+                   (eta1 :: Foreign.R.Internal.SomeSEXP s)
+                   (eta2 :: a -> r)
+                   (eta3 :: Language.R.Matcher.MatcherError s -> r) ->
+                 x `cast` (Language.R.Matcher.N:Matcher[0] <s>_P <a>_R)
+                   @ r
+                   eta1
+                   (\ (o :: a) ->
+                    let {
+                      lvl18 :: r = eta2 o
+                    } in
+                    eta `cast` (Language.R.Matcher.N:Matcher[0] <s>_P <b>_R)
+                      @ r
+                      eta1
+                      (\ (o1 :: b) -> lvl18)
+                      eta3)
+                   eta3) -}
+5b63f51fe76527e6ec9eaee8713534f4
+  $fApplicativeMatcher2 ::
+    Language.R.Matcher.Matcher s a
+    -> Language.R.Matcher.Matcher s b
+    -> forall r.
+       Foreign.R.Internal.SomeSEXP s
+       -> (b -> r) -> (Language.R.Matcher.MatcherError s -> r) -> r
+  {- Arity: 5, HasNoCafRefs,
+     Strictness: <C(C(C(S))),1*C1(C1(C1(U)))><L,1*C1(C1(C1(U)))><L,U><L,C(U)><L,U>,
+     Unfolding: (\ @ s
+                   @ a
+                   @ b
+                   (a1 :: Language.R.Matcher.Matcher s a)
+                   (a2 :: Language.R.Matcher.Matcher s b)
+                   @ r
+                   (eta :: Foreign.R.Internal.SomeSEXP s)
+                   (eta1 :: b -> r)
+                   (eta2 :: Language.R.Matcher.MatcherError s -> r) ->
+                 let {
+                   lvl18 :: r
+                   = a2 `cast` (Language.R.Matcher.N:Matcher[0] <s>_P <b>_R)
+                       @ r
+                       eta
+                       (\ (o :: b) -> eta1 o)
+                       eta2
+                 } in
+                 a1 `cast` (Language.R.Matcher.N:Matcher[0] <s>_P <a>_R)
+                   @ r
+                   eta
+                   (\ (o :: a) -> lvl18)
+                   eta2) -}
+5b63f51fe76527e6ec9eaee8713534f4
+  $fApplicativeMatcher3 ::
+    (a -> b -> c)
+    -> Language.R.Matcher.Matcher s a
+    -> Language.R.Matcher.Matcher s b
+    -> forall r.
+       Foreign.R.Internal.SomeSEXP s
+       -> (c -> r) -> (Language.R.Matcher.MatcherError s -> r) -> r
+  {- Arity: 6, HasNoCafRefs,
+     Strictness: <L,C(C(U))><C(C(C(S))),1*C1(C1(C1(U)))><L,C(C1(C1(U)))><L,U><L,C(U)><L,U>,
+     Unfolding: (\ @ s
+                   @ a
+                   @ b
+                   @ c
+                   (f1 :: a -> b -> c)
+                   (x :: Language.R.Matcher.Matcher s a)
+                   (eta :: Language.R.Matcher.Matcher s b)
+                   @ r
+                   (eta1 :: Foreign.R.Internal.SomeSEXP s)
+                   (eta2 :: c -> r)
+                   (eta3 :: Language.R.Matcher.MatcherError s -> r) ->
+                 x `cast` (Language.R.Matcher.N:Matcher[0] <s>_P <a>_R)
+                   @ r
+                   eta1
+                   (\ (o :: a) ->
+                    let {
+                      o1 :: b -> c = f1 o
+                    } in
+                    eta `cast` (Language.R.Matcher.N:Matcher[0] <s>_P <b>_R)
+                      @ r
+                      eta1
+                      (\ (o2 :: b) -> eta2 (o1 o2))
+                      eta3)
+                   eta3) -}
+5b63f51fe76527e6ec9eaee8713534f4
+  $fApplicativeMatcher4 ::
+    Language.R.Matcher.Matcher s (a -> b)
+    -> Language.R.Matcher.Matcher s a
+    -> forall r.
+       Foreign.R.Internal.SomeSEXP s
+       -> (b -> r) -> (Language.R.Matcher.MatcherError s -> r) -> r
+  {- Arity: 5, HasNoCafRefs,
+     Strictness: <C(C(C(S))),1*C1(C1(C1(U)))><L,C(C1(C1(U)))><L,U><L,C(U)><L,U>,
+     Unfolding: (\ @ a
+                   @ s
+                   @ b
+                   (m1 :: Language.R.Matcher.Matcher s (a -> b))
+                   (m2 :: Language.R.Matcher.Matcher s a)
+                   @ r
+                   (s6 :: Foreign.R.Internal.SomeSEXP s)
+                   (ok :: b -> r)
+                   (err :: Language.R.Matcher.MatcherError s -> r) ->
+                 m1 `cast` (Language.R.Matcher.N:Matcher[0] <s>_P <a -> b>_R)
+                   @ r
+                   s6
+                   (\ (o :: a -> b) ->
+                    m2 `cast` (Language.R.Matcher.N:Matcher[0] <s>_P <a>_R)
+                      @ r
+                      s6
+                      (\ (o1 :: a) -> ok (o o1))
+                      err)
+                   err) -}
+1bea8ae289fde03a73f669f5a0951286
+  $fApplicativeMatcher5 ::
+    a
+    -> forall r.
+       Foreign.R.Internal.SomeSEXP s
+       -> (a -> r) -> (Language.R.Matcher.MatcherError s -> r) -> r
+  {- Arity: 4, HasNoCafRefs,
+     Strictness: <L,U><L,A><C(S),1*C1(U)><L,A>,
+     Unfolding: InlineRule (4, True, True)
+                (\ @ s
+                   @ a
+                   (x :: a)
+                   @ r
+                   (ds2 :: Foreign.R.Internal.SomeSEXP s)
+                   (f :: a -> r)
+                   (ds3 :: Language.R.Matcher.MatcherError s -> r) ->
+                 f x) -}
+5b63f51fe76527e6ec9eaee8713534f4
+  $fFunctorMatcher :: GHC.Base.Functor (Language.R.Matcher.Matcher s)
+  DFunId
+  {- Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun: @ s.
+                  @ (Language.R.Matcher.Matcher s)
+                  (\ @ a @ b -> Language.R.Matcher.$fFunctorMatcher2 @ a @ s @ b)
+                    `cast`
+                  (forall (a :: <*>_N) (b :: <*>_N).
+                   <a -> b>_R
+                   ->_R <Language.R.Matcher.Matcher s a>_R
+                   ->_R Sym (Language.R.Matcher.N:Matcher[0] <s>_P <b>_R))
+                  (Language.R.Matcher.$fFunctorMatcher1 @ s)
+                    `cast`
+                  (forall (a :: <*>_N) (b :: <*>_N).
+                   <a>_R
+                   ->_R <Language.R.Matcher.Matcher s b>_R
+                   ->_R Sym (Language.R.Matcher.N:Matcher[0] <s>_P <a>_R)) -}
+5b63f51fe76527e6ec9eaee8713534f4
+  $fFunctorMatcher1 ::
+    a
+    -> Language.R.Matcher.Matcher s b
+    -> forall r.
+       Foreign.R.Internal.SomeSEXP s
+       -> (a -> r) -> (Language.R.Matcher.MatcherError s -> r) -> r
+  {- Arity: 5, HasNoCafRefs,
+     Strictness: <L,U><C(C(C(S))),1*C1(C1(C1(U)))><L,U><L,1*C1(U)><L,U>,
+     Unfolding: InlineRule (5, True, False)
+                (\ @ s
+                   @ a
+                   @ b
+                   (x :: a)
+                   (eta :: Language.R.Matcher.Matcher s b)
+                   @ r
+                   (eta1 :: Foreign.R.Internal.SomeSEXP s)
+                   (eta2 :: a -> r)
+                   (eta3 :: Language.R.Matcher.MatcherError s -> r) ->
+                 let {
+                   lvl18 :: r = eta2 x
+                 } in
+                 eta `cast` (Language.R.Matcher.N:Matcher[0] <s>_P <b>_R)
+                   @ r
+                   eta1
+                   (\ (o :: b) -> lvl18)
+                   eta3) -}
+5b63f51fe76527e6ec9eaee8713534f4
+  $fFunctorMatcher2 ::
+    (a -> b)
+    -> Language.R.Matcher.Matcher s a
+    -> forall r.
+       Foreign.R.Internal.SomeSEXP s
+       -> (b -> r) -> (Language.R.Matcher.MatcherError s -> r) -> r
+  {- Arity: 5, HasNoCafRefs,
+     Strictness: <L,C(U)><C(C(C(S))),1*C1(C1(C1(U)))><L,U><L,C(U)><L,U>,
+     Unfolding: InlineRule (5, True, False)
+                (\ @ a
+                   @ s
+                   @ b
+                   (f :: a -> b)
+                   (m1 :: Language.R.Matcher.Matcher s a)
+                   @ r
+                   (s6 :: Foreign.R.Internal.SomeSEXP s)
+                   (ok :: b -> r)
+                   (err :: Language.R.Matcher.MatcherError s -> r) ->
+                 m1 `cast` (Language.R.Matcher.N:Matcher[0] <s>_P <a>_R)
+                   @ r
+                   s6
+                   (\ (o :: a) -> ok (f o))
+                   err) -}
+c8a0d9370b0a2d7ccba981f847b4260c
+  $fGenericMatcherError ::
+    GHC.Generics.Generic (Language.R.Matcher.MatcherError s)
+  DFunId
+  {- HasNoCafRefs, Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun: @ s.
+                  @ (Language.R.Matcher.MatcherError s)
+                  (Language.R.Matcher.$fGenericMatcherError1 @ s)
+                    `cast`
+                  (forall (x :: <*>_N).
+                   <Language.R.Matcher.MatcherError s>_R
+                   ->_R Trans
+                            (Sym (GHC.Generics.N:M1[0]
+                                      <*>_N
+                                      <GHC.Generics.D>_P
+                                      <'GHC.Generics.MetaData
+                                         "MatcherError"
+                                         "Language.R.Matcher"
+                                         "inline-r-0.9.0.2-CmRL2Hikuao7dNZScoizZz"
+                                         'GHC.Types.False>_P
+                                      <GHC.Generics.M1
+                                         GHC.Generics.C
+                                         ('GHC.Generics.MetaCons
+                                            "MatcherError" 'GHC.Generics.PrefixI 'GHC.Types.False)
+                                         (GHC.Generics.M1
+                                            GHC.Generics.S
+                                            ('GHC.Generics.MetaSel
+                                               'GHC.Base.Nothing
+                                               'GHC.Generics.NoSourceUnpackedness
+                                               'GHC.Generics.NoSourceStrictness
+                                               'GHC.Generics.DecidedLazy)
+                                            (GHC.Generics.K1 GHC.Generics.R GHC.Base.String))
+                                       GHC.Generics.:+: (GHC.Generics.M1
+                                                           GHC.Generics.C
+                                                           ('GHC.Generics.MetaCons
+                                                              "TypeMissmatch"
+                                                              'GHC.Generics.PrefixI
+                                                              'GHC.Types.False)
+                                                           (GHC.Generics.M1
+                                                              GHC.Generics.S
+                                                              ('GHC.Generics.MetaSel
+                                                                 'GHC.Base.Nothing
+                                                                 'GHC.Generics.NoSourceUnpackedness
+                                                                 'GHC.Generics.NoSourceStrictness
+                                                                 'GHC.Generics.DecidedLazy)
+                                                              (GHC.Generics.K1
+                                                                 GHC.Generics.R
+                                                                 (Foreign.R.Internal.SomeSEXP s))
+                                                            GHC.Generics.:*: (GHC.Generics.M1
+                                                                                GHC.Generics.S
+                                                                                ('GHC.Generics.MetaSel
+                                                                                   'GHC.Base.Nothing
+                                                                                   'GHC.Generics.NoSourceUnpackedness
+                                                                                   'GHC.Generics.NoSourceStrictness
+                                                                                   'GHC.Generics.DecidedLazy)
+                                                                                (GHC.Generics.K1
+                                                                                   GHC.Generics.R
+                                                                                   Foreign.R.Type.SEXPTYPE)
+                                                                              GHC.Generics.:*: GHC.Generics.M1
+                                                                                                 GHC.Generics.S
+                                                                                                 ('GHC.Generics.MetaSel
+                                                                                                    'GHC.Base.Nothing
+                                                                                                    'GHC.Generics.NoSourceUnpackedness
+                                                                                                    'GHC.Generics.NoSourceStrictness
+                                                                                                    'GHC.Generics.DecidedLazy)
+                                                                                                 (GHC.Generics.K1
+                                                                                                    GHC.Generics.R
+                                                                                                    Foreign.R.Type.SEXPTYPE)))
+                                                         GHC.Generics.:+: GHC.Generics.M1
+                                                                            GHC.Generics.C
+                                                                            ('GHC.Generics.MetaCons
+                                                                               "NoSuchAttribute"
+                                                                               'GHC.Generics.PrefixI
+                                                                               'GHC.Types.False)
+                                                                            (GHC.Generics.M1
+                                                                               GHC.Generics.S
+                                                                               ('GHC.Generics.MetaSel
+                                                                                  'GHC.Base.Nothing
+                                                                                  'GHC.Generics.NoSourceUnpackedness
+                                                                                  'GHC.Generics.NoSourceStrictness
+                                                                                  'GHC.Generics.DecidedLazy)
+                                                                               (GHC.Generics.K1
+                                                                                  GHC.Generics.R
+                                                                                  (Foreign.R.Internal.SomeSEXP
+                                                                                     s))
+                                                                             GHC.Generics.:*: GHC.Generics.M1
+                                                                                                GHC.Generics.S
+                                                                                                ('GHC.Generics.MetaSel
+                                                                                                   'GHC.Base.Nothing
+                                                                                                   'GHC.Generics.NoSourceUnpackedness
+                                                                                                   'GHC.Generics.NoSourceStrictness
+                                                                                                   'GHC.Generics.DecidedLazy)
+                                                                                                (GHC.Generics.K1
+                                                                                                   GHC.Generics.R
+                                                                                                   GHC.Base.String)))>_R))
+                            (Sub (Sym (Language.R.Matcher.Rep_MatcherError[0] <s>_N))) <x>_N)
+                  (Language.R.Matcher.$fGenericMatcherError_$cto @ s) -}
+c8a0d9370b0a2d7ccba981f847b4260c
+  $fGenericMatcherError1 ::
+    Language.R.Matcher.MatcherError s
+    -> (GHC.Generics.:+:)
+         (GHC.Generics.M1
+            GHC.Generics.C
+            ('GHC.Generics.MetaCons
+               "MatcherError" 'GHC.Generics.PrefixI 'GHC.Types.False)
+            (GHC.Generics.M1
+               GHC.Generics.S
+               ('GHC.Generics.MetaSel
+                  'GHC.Base.Nothing
+                  'GHC.Generics.NoSourceUnpackedness
+                  'GHC.Generics.NoSourceStrictness
+                  'GHC.Generics.DecidedLazy)
+               (GHC.Generics.K1 GHC.Generics.R GHC.Base.String)))
+         (GHC.Generics.M1
+            GHC.Generics.C
+            ('GHC.Generics.MetaCons
+               "TypeMissmatch" 'GHC.Generics.PrefixI 'GHC.Types.False)
+            (GHC.Generics.M1
+               GHC.Generics.S
+               ('GHC.Generics.MetaSel
+                  'GHC.Base.Nothing
+                  'GHC.Generics.NoSourceUnpackedness
+                  'GHC.Generics.NoSourceStrictness
+                  'GHC.Generics.DecidedLazy)
+               (GHC.Generics.K1 GHC.Generics.R (Foreign.R.Internal.SomeSEXP s))
+             GHC.Generics.:*: (GHC.Generics.M1
+                                 GHC.Generics.S
+                                 ('GHC.Generics.MetaSel
+                                    'GHC.Base.Nothing
+                                    'GHC.Generics.NoSourceUnpackedness
+                                    'GHC.Generics.NoSourceStrictness
+                                    'GHC.Generics.DecidedLazy)
+                                 (GHC.Generics.K1 GHC.Generics.R Foreign.R.Type.SEXPTYPE)
+                               GHC.Generics.:*: GHC.Generics.M1
+                                                  GHC.Generics.S
+                                                  ('GHC.Generics.MetaSel
+                                                     'GHC.Base.Nothing
+                                                     'GHC.Generics.NoSourceUnpackedness
+                                                     'GHC.Generics.NoSourceStrictness
+                                                     'GHC.Generics.DecidedLazy)
+                                                  (GHC.Generics.K1
+                                                     GHC.Generics.R Foreign.R.Type.SEXPTYPE)))
+          GHC.Generics.:+: GHC.Generics.M1
+                             GHC.Generics.C
+                             ('GHC.Generics.MetaCons
+                                "NoSuchAttribute" 'GHC.Generics.PrefixI 'GHC.Types.False)
+                             (GHC.Generics.M1
+                                GHC.Generics.S
+                                ('GHC.Generics.MetaSel
+                                   'GHC.Base.Nothing
+                                   'GHC.Generics.NoSourceUnpackedness
+                                   'GHC.Generics.NoSourceStrictness
+                                   'GHC.Generics.DecidedLazy)
+                                (GHC.Generics.K1 GHC.Generics.R (Foreign.R.Internal.SomeSEXP s))
+                              GHC.Generics.:*: GHC.Generics.M1
+                                                 GHC.Generics.S
+                                                 ('GHC.Generics.MetaSel
+                                                    'GHC.Base.Nothing
+                                                    'GHC.Generics.NoSourceUnpackedness
+                                                    'GHC.Generics.NoSourceStrictness
+                                                    'GHC.Generics.DecidedLazy)
+                                                 (GHC.Generics.K1 GHC.Generics.R GHC.Base.String)))
+         x
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>,
+     Unfolding: (\ @ s @ x (x1 :: Language.R.Matcher.MatcherError s) ->
+                 case x1 of wild {
+                   Language.R.Matcher.MatcherError g1
+                   -> GHC.Generics.L1
+                        @ *
+                        @ (GHC.Generics.M1
+                             GHC.Generics.C
+                             ('GHC.Generics.MetaCons
+                                "MatcherError" 'GHC.Generics.PrefixI 'GHC.Types.False)
+                             (GHC.Generics.M1
+                                GHC.Generics.S
+                                ('GHC.Generics.MetaSel
+                                   'GHC.Base.Nothing
+                                   'GHC.Generics.NoSourceUnpackedness
+                                   'GHC.Generics.NoSourceStrictness
+                                   'GHC.Generics.DecidedLazy)
+                                (GHC.Generics.K1 GHC.Generics.R GHC.Base.String)))
+                        @ (GHC.Generics.M1
+                             GHC.Generics.C
+                             ('GHC.Generics.MetaCons
+                                "TypeMissmatch" 'GHC.Generics.PrefixI 'GHC.Types.False)
+                             (GHC.Generics.M1
+                                GHC.Generics.S
+                                ('GHC.Generics.MetaSel
+                                   'GHC.Base.Nothing
+                                   'GHC.Generics.NoSourceUnpackedness
+                                   'GHC.Generics.NoSourceStrictness
+                                   'GHC.Generics.DecidedLazy)
+                                (GHC.Generics.K1 GHC.Generics.R (Foreign.R.Internal.SomeSEXP s))
+                              GHC.Generics.:*: (GHC.Generics.M1
+                                                  GHC.Generics.S
+                                                  ('GHC.Generics.MetaSel
+                                                     'GHC.Base.Nothing
+                                                     'GHC.Generics.NoSourceUnpackedness
+                                                     'GHC.Generics.NoSourceStrictness
+                                                     'GHC.Generics.DecidedLazy)
+                                                  (GHC.Generics.K1
+                                                     GHC.Generics.R Foreign.R.Type.SEXPTYPE)
+                                                GHC.Generics.:*: GHC.Generics.M1
+                                                                   GHC.Generics.S
+                                                                   ('GHC.Generics.MetaSel
+                                                                      'GHC.Base.Nothing
+                                                                      'GHC.Generics.NoSourceUnpackedness
+                                                                      'GHC.Generics.NoSourceStrictness
+                                                                      'GHC.Generics.DecidedLazy)
+                                                                   (GHC.Generics.K1
+                                                                      GHC.Generics.R
+                                                                      Foreign.R.Type.SEXPTYPE)))
+                           GHC.Generics.:+: GHC.Generics.M1
+                                              GHC.Generics.C
+                                              ('GHC.Generics.MetaCons
+                                                 "NoSuchAttribute"
+                                                 'GHC.Generics.PrefixI
+                                                 'GHC.Types.False)
+                                              (GHC.Generics.M1
+                                                 GHC.Generics.S
+                                                 ('GHC.Generics.MetaSel
+                                                    'GHC.Base.Nothing
+                                                    'GHC.Generics.NoSourceUnpackedness
+                                                    'GHC.Generics.NoSourceStrictness
+                                                    'GHC.Generics.DecidedLazy)
+                                                 (GHC.Generics.K1
+                                                    GHC.Generics.R (Foreign.R.Internal.SomeSEXP s))
+                                               GHC.Generics.:*: GHC.Generics.M1
+                                                                  GHC.Generics.S
+                                                                  ('GHC.Generics.MetaSel
+                                                                     'GHC.Base.Nothing
+                                                                     'GHC.Generics.NoSourceUnpackedness
+                                                                     'GHC.Generics.NoSourceStrictness
+                                                                     'GHC.Generics.DecidedLazy)
+                                                                  (GHC.Generics.K1
+                                                                     GHC.Generics.R
+                                                                     GHC.Base.String)))
+                        @ x
+                        g1
+                          `cast`
+                        (Trans
+                             (Sym (GHC.Generics.N:K1[0]
+                                       <*>_N <GHC.Generics.R>_P <GHC.Base.String>_R <x>_P))
+                             (Trans
+                                  (Sym (GHC.Generics.N:M1[0]
+                                            <*>_N
+                                            <GHC.Generics.S>_P
+                                            <'GHC.Generics.MetaSel
+                                               'GHC.Base.Nothing
+                                               'GHC.Generics.NoSourceUnpackedness
+                                               'GHC.Generics.NoSourceStrictness
+                                               'GHC.Generics.DecidedLazy>_P
+                                            <GHC.Generics.K1 GHC.Generics.R GHC.Base.String>_R))
+                                  (Sym (GHC.Generics.N:M1[0]
+                                            <*>_N
+                                            <GHC.Generics.C>_P
+                                            <'GHC.Generics.MetaCons
+                                               "MatcherError"
+                                               'GHC.Generics.PrefixI
+                                               'GHC.Types.False>_P
+                                            <GHC.Generics.M1
+                                               GHC.Generics.S
+                                               ('GHC.Generics.MetaSel
+                                                  'GHC.Base.Nothing
+                                                  'GHC.Generics.NoSourceUnpackedness
+                                                  'GHC.Generics.NoSourceStrictness
+                                                  'GHC.Generics.DecidedLazy)
+                                               (GHC.Generics.K1
+                                                  GHC.Generics.R GHC.Base.String)>_R)) <x>_N))
+                   Language.R.Matcher.TypeMissmatch g1 g2 g3
+                   -> GHC.Generics.R1
+                        @ *
+                        @ (GHC.Generics.M1
+                             GHC.Generics.C
+                             ('GHC.Generics.MetaCons
+                                "MatcherError" 'GHC.Generics.PrefixI 'GHC.Types.False)
+                             (GHC.Generics.M1
+                                GHC.Generics.S
+                                ('GHC.Generics.MetaSel
+                                   'GHC.Base.Nothing
+                                   'GHC.Generics.NoSourceUnpackedness
+                                   'GHC.Generics.NoSourceStrictness
+                                   'GHC.Generics.DecidedLazy)
+                                (GHC.Generics.K1 GHC.Generics.R GHC.Base.String)))
+                        @ (GHC.Generics.M1
+                             GHC.Generics.C
+                             ('GHC.Generics.MetaCons
+                                "TypeMissmatch" 'GHC.Generics.PrefixI 'GHC.Types.False)
+                             (GHC.Generics.M1
+                                GHC.Generics.S
+                                ('GHC.Generics.MetaSel
+                                   'GHC.Base.Nothing
+                                   'GHC.Generics.NoSourceUnpackedness
+                                   'GHC.Generics.NoSourceStrictness
+                                   'GHC.Generics.DecidedLazy)
+                                (GHC.Generics.K1 GHC.Generics.R (Foreign.R.Internal.SomeSEXP s))
+                              GHC.Generics.:*: (GHC.Generics.M1
+                                                  GHC.Generics.S
+                                                  ('GHC.Generics.MetaSel
+                                                     'GHC.Base.Nothing
+                                                     'GHC.Generics.NoSourceUnpackedness
+                                                     'GHC.Generics.NoSourceStrictness
+                                                     'GHC.Generics.DecidedLazy)
+                                                  (GHC.Generics.K1
+                                                     GHC.Generics.R Foreign.R.Type.SEXPTYPE)
+                                                GHC.Generics.:*: GHC.Generics.M1
+                                                                   GHC.Generics.S
+                                                                   ('GHC.Generics.MetaSel
+                                                                      'GHC.Base.Nothing
+                                                                      'GHC.Generics.NoSourceUnpackedness
+                                                                      'GHC.Generics.NoSourceStrictness
+                                                                      'GHC.Generics.DecidedLazy)
+                                                                   (GHC.Generics.K1
+                                                                      GHC.Generics.R
+                                                                      Foreign.R.Type.SEXPTYPE)))
+                           GHC.Generics.:+: GHC.Generics.M1
+                                              GHC.Generics.C
+                                              ('GHC.Generics.MetaCons
+                                                 "NoSuchAttribute"
+                                                 'GHC.Generics.PrefixI
+                                                 'GHC.Types.False)
+                                              (GHC.Generics.M1
+                                                 GHC.Generics.S
+                                                 ('GHC.Generics.MetaSel
+                                                    'GHC.Base.Nothing
+                                                    'GHC.Generics.NoSourceUnpackedness
+                                                    'GHC.Generics.NoSourceStrictness
+                                                    'GHC.Generics.DecidedLazy)
+                                                 (GHC.Generics.K1
+                                                    GHC.Generics.R (Foreign.R.Internal.SomeSEXP s))
+                                               GHC.Generics.:*: GHC.Generics.M1
+                                                                  GHC.Generics.S
+                                                                  ('GHC.Generics.MetaSel
+                                                                     'GHC.Base.Nothing
+                                                                     'GHC.Generics.NoSourceUnpackedness
+                                                                     'GHC.Generics.NoSourceStrictness
+                                                                     'GHC.Generics.DecidedLazy)
+                                                                  (GHC.Generics.K1
+                                                                     GHC.Generics.R
+                                                                     GHC.Base.String)))
+                        @ x
+                        (GHC.Generics.L1
+                           @ *
+                           @ (GHC.Generics.M1
+                                GHC.Generics.C
+                                ('GHC.Generics.MetaCons
+                                   "TypeMissmatch" 'GHC.Generics.PrefixI 'GHC.Types.False)
+                                (GHC.Generics.M1
+                                   GHC.Generics.S
+                                   ('GHC.Generics.MetaSel
+                                      'GHC.Base.Nothing
+                                      'GHC.Generics.NoSourceUnpackedness
+                                      'GHC.Generics.NoSourceStrictness
+                                      'GHC.Generics.DecidedLazy)
+                                   (GHC.Generics.K1 GHC.Generics.R (Foreign.R.Internal.SomeSEXP s))
+                                 GHC.Generics.:*: (GHC.Generics.M1
+                                                     GHC.Generics.S
+                                                     ('GHC.Generics.MetaSel
+                                                        'GHC.Base.Nothing
+                                                        'GHC.Generics.NoSourceUnpackedness
+                                                        'GHC.Generics.NoSourceStrictness
+                                                        'GHC.Generics.DecidedLazy)
+                                                     (GHC.Generics.K1
+                                                        GHC.Generics.R Foreign.R.Type.SEXPTYPE)
+                                                   GHC.Generics.:*: GHC.Generics.M1
+                                                                      GHC.Generics.S
+                                                                      ('GHC.Generics.MetaSel
+                                                                         'GHC.Base.Nothing
+                                                                         'GHC.Generics.NoSourceUnpackedness
+                                                                         'GHC.Generics.NoSourceStrictness
+                                                                         'GHC.Generics.DecidedLazy)
+                                                                      (GHC.Generics.K1
+                                                                         GHC.Generics.R
+                                                                         Foreign.R.Type.SEXPTYPE))))
+                           @ (GHC.Generics.M1
+                                GHC.Generics.C
+                                ('GHC.Generics.MetaCons
+                                   "NoSuchAttribute" 'GHC.Generics.PrefixI 'GHC.Types.False)
+                                (GHC.Generics.M1
+                                   GHC.Generics.S
+                                   ('GHC.Generics.MetaSel
+                                      'GHC.Base.Nothing
+                                      'GHC.Generics.NoSourceUnpackedness
+                                      'GHC.Generics.NoSourceStrictness
+                                      'GHC.Generics.DecidedLazy)
+                                   (GHC.Generics.K1 GHC.Generics.R (Foreign.R.Internal.SomeSEXP s))
+                                 GHC.Generics.:*: GHC.Generics.M1
+                                                    GHC.Generics.S
+                                                    ('GHC.Generics.MetaSel
+                                                       'GHC.Base.Nothing
+                                                       'GHC.Generics.NoSourceUnpackedness
+                                                       'GHC.Generics.NoSourceStrictness
+                                                       'GHC.Generics.DecidedLazy)
+                                                    (GHC.Generics.K1
+                                                       GHC.Generics.R GHC.Base.String)))
+                           @ x
+                           (GHC.Generics.:*:
+                              @ *
+                              @ (GHC.Generics.M1
+                                   GHC.Generics.S
+                                   ('GHC.Generics.MetaSel
+                                      'GHC.Base.Nothing
+                                      'GHC.Generics.NoSourceUnpackedness
+                                      'GHC.Generics.NoSourceStrictness
+                                      'GHC.Generics.DecidedLazy)
+                                   (GHC.Generics.K1 GHC.Generics.R (Foreign.R.Internal.SomeSEXP s)))
+                              @ (GHC.Generics.M1
+                                   GHC.Generics.S
+                                   ('GHC.Generics.MetaSel
+                                      'GHC.Base.Nothing
+                                      'GHC.Generics.NoSourceUnpackedness
+                                      'GHC.Generics.NoSourceStrictness
+                                      'GHC.Generics.DecidedLazy)
+                                   (GHC.Generics.K1 GHC.Generics.R Foreign.R.Type.SEXPTYPE)
+                                 GHC.Generics.:*: GHC.Generics.M1
+                                                    GHC.Generics.S
+                                                    ('GHC.Generics.MetaSel
+                                                       'GHC.Base.Nothing
+                                                       'GHC.Generics.NoSourceUnpackedness
+                                                       'GHC.Generics.NoSourceStrictness
+                                                       'GHC.Generics.DecidedLazy)
+                                                    (GHC.Generics.K1
+                                                       GHC.Generics.R Foreign.R.Type.SEXPTYPE))
+                              @ x
+                              g1
+                                `cast`
+                              (Trans
+                                   (Sym (GHC.Generics.N:K1[0]
+                                             <*>_N
+                                             <GHC.Generics.R>_P
+                                             <Foreign.R.Internal.SomeSEXP s>_R
+                                             <x>_P))
+                                   (Sym (GHC.Generics.N:M1[0]
+                                             <*>_N
+                                             <GHC.Generics.S>_P
+                                             <'GHC.Generics.MetaSel
+                                                'GHC.Base.Nothing
+                                                'GHC.Generics.NoSourceUnpackedness
+                                                'GHC.Generics.NoSourceStrictness
+                                                'GHC.Generics.DecidedLazy>_P
+                                             <GHC.Generics.K1
+                                                GHC.Generics.R
+                                                (Foreign.R.Internal.SomeSEXP s)>_R) <x>_N))
+                              (GHC.Generics.:*:
+                                 @ *
+                                 @ (GHC.Generics.M1
+                                      GHC.Generics.S
+                                      ('GHC.Generics.MetaSel
+                                         'GHC.Base.Nothing
+                                         'GHC.Generics.NoSourceUnpackedness
+                                         'GHC.Generics.NoSourceStrictness
+                                         'GHC.Generics.DecidedLazy)
+                                      (GHC.Generics.K1 GHC.Generics.R Foreign.R.Type.SEXPTYPE))
+                                 @ (GHC.Generics.M1
+                                      GHC.Generics.S
+                                      ('GHC.Generics.MetaSel
+                                         'GHC.Base.Nothing
+                                         'GHC.Generics.NoSourceUnpackedness
+                                         'GHC.Generics.NoSourceStrictness
+                                         'GHC.Generics.DecidedLazy)
+                                      (GHC.Generics.K1 GHC.Generics.R Foreign.R.Type.SEXPTYPE))
+                                 @ x
+                                 g2
+                                   `cast`
+                                 (Trans
+                                      (Sym (GHC.Generics.N:K1[0]
+                                                <*>_N
+                                                <GHC.Generics.R>_P
+                                                <Foreign.R.Type.SEXPTYPE>_R
+                                                <x>_P))
+                                      (Sym (GHC.Generics.N:M1[0]
+                                                <*>_N
+                                                <GHC.Generics.S>_P
+                                                <'GHC.Generics.MetaSel
+                                                   'GHC.Base.Nothing
+                                                   'GHC.Generics.NoSourceUnpackedness
+                                                   'GHC.Generics.NoSourceStrictness
+                                                   'GHC.Generics.DecidedLazy>_P
+                                                <GHC.Generics.K1
+                                                   GHC.Generics.R
+                                                   Foreign.R.Type.SEXPTYPE>_R) <x>_N))
+                                 g3
+                                   `cast`
+                                 (Trans
+                                      (Sym (GHC.Generics.N:K1[0]
+                                                <*>_N
+                                                <GHC.Generics.R>_P
+                                                <Foreign.R.Type.SEXPTYPE>_R
+                                                <x>_P))
+                                      (Sym (GHC.Generics.N:M1[0]
+                                                <*>_N
+                                                <GHC.Generics.S>_P
+                                                <'GHC.Generics.MetaSel
+                                                   'GHC.Base.Nothing
+                                                   'GHC.Generics.NoSourceUnpackedness
+                                                   'GHC.Generics.NoSourceStrictness
+                                                   'GHC.Generics.DecidedLazy>_P
+                                                <GHC.Generics.K1
+                                                   GHC.Generics.R
+                                                   Foreign.R.Type.SEXPTYPE>_R) <x>_N))))
+                             `cast`
+                           (Sym (GHC.Generics.N:M1[0]
+                                     <*>_N
+                                     <GHC.Generics.C>_P
+                                     <'GHC.Generics.MetaCons
+                                        "TypeMissmatch" 'GHC.Generics.PrefixI 'GHC.Types.False>_P
+                                     <GHC.Generics.M1
+                                        GHC.Generics.S
+                                        ('GHC.Generics.MetaSel
+                                           'GHC.Base.Nothing
+                                           'GHC.Generics.NoSourceUnpackedness
+                                           'GHC.Generics.NoSourceStrictness
+                                           'GHC.Generics.DecidedLazy)
+                                        (GHC.Generics.K1
+                                           GHC.Generics.R (Foreign.R.Internal.SomeSEXP s))
+                                      GHC.Generics.:*: (GHC.Generics.M1
+                                                          GHC.Generics.S
+                                                          ('GHC.Generics.MetaSel
+                                                             'GHC.Base.Nothing
+                                                             'GHC.Generics.NoSourceUnpackedness
+                                                             'GHC.Generics.NoSourceStrictness
+                                                             'GHC.Generics.DecidedLazy)
+                                                          (GHC.Generics.K1
+                                                             GHC.Generics.R Foreign.R.Type.SEXPTYPE)
+                                                        GHC.Generics.:*: GHC.Generics.M1
+                                                                           GHC.Generics.S
+                                                                           ('GHC.Generics.MetaSel
+                                                                              'GHC.Base.Nothing
+                                                                              'GHC.Generics.NoSourceUnpackedness
+                                                                              'GHC.Generics.NoSourceStrictness
+                                                                              'GHC.Generics.DecidedLazy)
+                                                                           (GHC.Generics.K1
+                                                                              GHC.Generics.R
+                                                                              Foreign.R.Type.SEXPTYPE))>_R) <x>_N))
+                   Language.R.Matcher.NoSuchAttribute g1 g2
+                   -> GHC.Generics.R1
+                        @ *
+                        @ (GHC.Generics.M1
+                             GHC.Generics.C
+                             ('GHC.Generics.MetaCons
+                                "MatcherError" 'GHC.Generics.PrefixI 'GHC.Types.False)
+                             (GHC.Generics.M1
+                                GHC.Generics.S
+                                ('GHC.Generics.MetaSel
+                                   'GHC.Base.Nothing
+                                   'GHC.Generics.NoSourceUnpackedness
+                                   'GHC.Generics.NoSourceStrictness
+                                   'GHC.Generics.DecidedLazy)
+                                (GHC.Generics.K1 GHC.Generics.R GHC.Base.String)))
+                        @ (GHC.Generics.M1
+                             GHC.Generics.C
+                             ('GHC.Generics.MetaCons
+                                "TypeMissmatch" 'GHC.Generics.PrefixI 'GHC.Types.False)
+                             (GHC.Generics.M1
+                                GHC.Generics.S
+                                ('GHC.Generics.MetaSel
+                                   'GHC.Base.Nothing
+                                   'GHC.Generics.NoSourceUnpackedness
+                                   'GHC.Generics.NoSourceStrictness
+                                   'GHC.Generics.DecidedLazy)
+                                (GHC.Generics.K1 GHC.Generics.R (Foreign.R.Internal.SomeSEXP s))
+                              GHC.Generics.:*: (GHC.Generics.M1
+                                                  GHC.Generics.S
+                                                  ('GHC.Generics.MetaSel
+                                                     'GHC.Base.Nothing
+                                                     'GHC.Generics.NoSourceUnpackedness
+                                                     'GHC.Generics.NoSourceStrictness
+                                                     'GHC.Generics.DecidedLazy)
+                                                  (GHC.Generics.K1
+                                                     GHC.Generics.R Foreign.R.Type.SEXPTYPE)
+                                                GHC.Generics.:*: GHC.Generics.M1
+                                                                   GHC.Generics.S
+                                                                   ('GHC.Generics.MetaSel
+                                                                      'GHC.Base.Nothing
+                                                                      'GHC.Generics.NoSourceUnpackedness
+                                                                      'GHC.Generics.NoSourceStrictness
+                                                                      'GHC.Generics.DecidedLazy)
+                                                                   (GHC.Generics.K1
+                                                                      GHC.Generics.R
+                                                                      Foreign.R.Type.SEXPTYPE)))
+                           GHC.Generics.:+: GHC.Generics.M1
+                                              GHC.Generics.C
+                                              ('GHC.Generics.MetaCons
+                                                 "NoSuchAttribute"
+                                                 'GHC.Generics.PrefixI
+                                                 'GHC.Types.False)
+                                              (GHC.Generics.M1
+                                                 GHC.Generics.S
+                                                 ('GHC.Generics.MetaSel
+                                                    'GHC.Base.Nothing
+                                                    'GHC.Generics.NoSourceUnpackedness
+                                                    'GHC.Generics.NoSourceStrictness
+                                                    'GHC.Generics.DecidedLazy)
+                                                 (GHC.Generics.K1
+                                                    GHC.Generics.R (Foreign.R.Internal.SomeSEXP s))
+                                               GHC.Generics.:*: GHC.Generics.M1
+                                                                  GHC.Generics.S
+                                                                  ('GHC.Generics.MetaSel
+                                                                     'GHC.Base.Nothing
+                                                                     'GHC.Generics.NoSourceUnpackedness
+                                                                     'GHC.Generics.NoSourceStrictness
+                                                                     'GHC.Generics.DecidedLazy)
+                                                                  (GHC.Generics.K1
+                                                                     GHC.Generics.R
+                                                                     GHC.Base.String)))
+                        @ x
+                        (GHC.Generics.R1
+                           @ *
+                           @ (GHC.Generics.M1
+                                GHC.Generics.C
+                                ('GHC.Generics.MetaCons
+                                   "TypeMissmatch" 'GHC.Generics.PrefixI 'GHC.Types.False)
+                                (GHC.Generics.M1
+                                   GHC.Generics.S
+                                   ('GHC.Generics.MetaSel
+                                      'GHC.Base.Nothing
+                                      'GHC.Generics.NoSourceUnpackedness
+                                      'GHC.Generics.NoSourceStrictness
+                                      'GHC.Generics.DecidedLazy)
+                                   (GHC.Generics.K1 GHC.Generics.R (Foreign.R.Internal.SomeSEXP s))
+                                 GHC.Generics.:*: (GHC.Generics.M1
+                                                     GHC.Generics.S
+                                                     ('GHC.Generics.MetaSel
+                                                        'GHC.Base.Nothing
+                                                        'GHC.Generics.NoSourceUnpackedness
+                                                        'GHC.Generics.NoSourceStrictness
+                                                        'GHC.Generics.DecidedLazy)
+                                                     (GHC.Generics.K1
+                                                        GHC.Generics.R Foreign.R.Type.SEXPTYPE)
+                                                   GHC.Generics.:*: GHC.Generics.M1
+                                                                      GHC.Generics.S
+                                                                      ('GHC.Generics.MetaSel
+                                                                         'GHC.Base.Nothing
+                                                                         'GHC.Generics.NoSourceUnpackedness
+                                                                         'GHC.Generics.NoSourceStrictness
+                                                                         'GHC.Generics.DecidedLazy)
+                                                                      (GHC.Generics.K1
+                                                                         GHC.Generics.R
+                                                                         Foreign.R.Type.SEXPTYPE))))
+                           @ (GHC.Generics.M1
+                                GHC.Generics.C
+                                ('GHC.Generics.MetaCons
+                                   "NoSuchAttribute" 'GHC.Generics.PrefixI 'GHC.Types.False)
+                                (GHC.Generics.M1
+                                   GHC.Generics.S
+                                   ('GHC.Generics.MetaSel
+                                      'GHC.Base.Nothing
+                                      'GHC.Generics.NoSourceUnpackedness
+                                      'GHC.Generics.NoSourceStrictness
+                                      'GHC.Generics.DecidedLazy)
+                                   (GHC.Generics.K1 GHC.Generics.R (Foreign.R.Internal.SomeSEXP s))
+                                 GHC.Generics.:*: GHC.Generics.M1
+                                                    GHC.Generics.S
+                                                    ('GHC.Generics.MetaSel
+                                                       'GHC.Base.Nothing
+                                                       'GHC.Generics.NoSourceUnpackedness
+                                                       'GHC.Generics.NoSourceStrictness
+                                                       'GHC.Generics.DecidedLazy)
+                                                    (GHC.Generics.K1
+                                                       GHC.Generics.R GHC.Base.String)))
+                           @ x
+                           (GHC.Generics.:*:
+                              @ *
+                              @ (GHC.Generics.M1
+                                   GHC.Generics.S
+                                   ('GHC.Generics.MetaSel
+                                      'GHC.Base.Nothing
+                                      'GHC.Generics.NoSourceUnpackedness
+                                      'GHC.Generics.NoSourceStrictness
+                                      'GHC.Generics.DecidedLazy)
+                                   (GHC.Generics.K1 GHC.Generics.R (Foreign.R.Internal.SomeSEXP s)))
+                              @ (GHC.Generics.M1
+                                   GHC.Generics.S
+                                   ('GHC.Generics.MetaSel
+                                      'GHC.Base.Nothing
+                                      'GHC.Generics.NoSourceUnpackedness
+                                      'GHC.Generics.NoSourceStrictness
+                                      'GHC.Generics.DecidedLazy)
+                                   (GHC.Generics.K1 GHC.Generics.R GHC.Base.String))
+                              @ x
+                              g1
+                                `cast`
+                              (Trans
+                                   (Sym (GHC.Generics.N:K1[0]
+                                             <*>_N
+                                             <GHC.Generics.R>_P
+                                             <Foreign.R.Internal.SomeSEXP s>_R
+                                             <x>_P))
+                                   (Sym (GHC.Generics.N:M1[0]
+                                             <*>_N
+                                             <GHC.Generics.S>_P
+                                             <'GHC.Generics.MetaSel
+                                                'GHC.Base.Nothing
+                                                'GHC.Generics.NoSourceUnpackedness
+                                                'GHC.Generics.NoSourceStrictness
+                                                'GHC.Generics.DecidedLazy>_P
+                                             <GHC.Generics.K1
+                                                GHC.Generics.R
+                                                (Foreign.R.Internal.SomeSEXP s)>_R) <x>_N))
+                              g2
+                                `cast`
+                              (Trans
+                                   (Sym (GHC.Generics.N:K1[0]
+                                             <*>_N <GHC.Generics.R>_P <GHC.Base.String>_R <x>_P))
+                                   (Sym (GHC.Generics.N:M1[0]
+                                             <*>_N
+                                             <GHC.Generics.S>_P
+                                             <'GHC.Generics.MetaSel
+                                                'GHC.Base.Nothing
+                                                'GHC.Generics.NoSourceUnpackedness
+                                                'GHC.Generics.NoSourceStrictness
+                                                'GHC.Generics.DecidedLazy>_P
+                                             <GHC.Generics.K1
+                                                GHC.Generics.R GHC.Base.String>_R) <x>_N)))
+                             `cast`
+                           (Sym (GHC.Generics.N:M1[0]
+                                     <*>_N
+                                     <GHC.Generics.C>_P
+                                     <'GHC.Generics.MetaCons
+                                        "NoSuchAttribute" 'GHC.Generics.PrefixI 'GHC.Types.False>_P
+                                     <GHC.Generics.M1
+                                        GHC.Generics.S
+                                        ('GHC.Generics.MetaSel
+                                           'GHC.Base.Nothing
+                                           'GHC.Generics.NoSourceUnpackedness
+                                           'GHC.Generics.NoSourceStrictness
+                                           'GHC.Generics.DecidedLazy)
+                                        (GHC.Generics.K1
+                                           GHC.Generics.R (Foreign.R.Internal.SomeSEXP s))
+                                      GHC.Generics.:*: GHC.Generics.M1
+                                                         GHC.Generics.S
+                                                         ('GHC.Generics.MetaSel
+                                                            'GHC.Base.Nothing
+                                                            'GHC.Generics.NoSourceUnpackedness
+                                                            'GHC.Generics.NoSourceStrictness
+                                                            'GHC.Generics.DecidedLazy)
+                                                         (GHC.Generics.K1
+                                                            GHC.Generics.R
+                                                            GHC.Base.String)>_R) <x>_N)) }) -}
+c8a0d9370b0a2d7ccba981f847b4260c
+  $fGenericMatcherError_$cto ::
+    GHC.Generics.Rep (Language.R.Matcher.MatcherError s) x
+    -> Language.R.Matcher.MatcherError s
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>,
+     Unfolding: (\ @ s
+                   @ x
+                   (ds2 :: GHC.Generics.Rep (Language.R.Matcher.MatcherError s) x) ->
+                 case ds2
+                        `cast`
+                      (Trans
+                           (Sub (Language.R.Matcher.Rep_MatcherError[0] <s>_N))
+                           (GHC.Generics.N:M1[0]
+                                <*>_N
+                                <GHC.Generics.D>_P
+                                <'GHC.Generics.MetaData
+                                   "MatcherError"
+                                   "Language.R.Matcher"
+                                   "inline-r-0.9.0.2-CmRL2Hikuao7dNZScoizZz"
+                                   'GHC.Types.False>_P
+                                <GHC.Generics.M1
+                                   GHC.Generics.C
+                                   ('GHC.Generics.MetaCons
+                                      "MatcherError" 'GHC.Generics.PrefixI 'GHC.Types.False)
+                                   (GHC.Generics.M1
+                                      GHC.Generics.S
+                                      ('GHC.Generics.MetaSel
+                                         'GHC.Base.Nothing
+                                         'GHC.Generics.NoSourceUnpackedness
+                                         'GHC.Generics.NoSourceStrictness
+                                         'GHC.Generics.DecidedLazy)
+                                      (GHC.Generics.K1 GHC.Generics.R GHC.Base.String))
+                                 GHC.Generics.:+: (GHC.Generics.M1
+                                                     GHC.Generics.C
+                                                     ('GHC.Generics.MetaCons
+                                                        "TypeMissmatch"
+                                                        'GHC.Generics.PrefixI
+                                                        'GHC.Types.False)
+                                                     (GHC.Generics.M1
+                                                        GHC.Generics.S
+                                                        ('GHC.Generics.MetaSel
+                                                           'GHC.Base.Nothing
+                                                           'GHC.Generics.NoSourceUnpackedness
+                                                           'GHC.Generics.NoSourceStrictness
+                                                           'GHC.Generics.DecidedLazy)
+                                                        (GHC.Generics.K1
+                                                           GHC.Generics.R
+                                                           (Foreign.R.Internal.SomeSEXP s))
+                                                      GHC.Generics.:*: (GHC.Generics.M1
+                                                                          GHC.Generics.S
+                                                                          ('GHC.Generics.MetaSel
+                                                                             'GHC.Base.Nothing
+                                                                             'GHC.Generics.NoSourceUnpackedness
+                                                                             'GHC.Generics.NoSourceStrictness
+                                                                             'GHC.Generics.DecidedLazy)
+                                                                          (GHC.Generics.K1
+                                                                             GHC.Generics.R
+                                                                             Foreign.R.Type.SEXPTYPE)
+                                                                        GHC.Generics.:*: GHC.Generics.M1
+                                                                                           GHC.Generics.S
+                                                                                           ('GHC.Generics.MetaSel
+                                                                                              'GHC.Base.Nothing
+                                                                                              'GHC.Generics.NoSourceUnpackedness
+                                                                                              'GHC.Generics.NoSourceStrictness
+                                                                                              'GHC.Generics.DecidedLazy)
+                                                                                           (GHC.Generics.K1
+                                                                                              GHC.Generics.R
+                                                                                              Foreign.R.Type.SEXPTYPE)))
+                                                   GHC.Generics.:+: GHC.Generics.M1
+                                                                      GHC.Generics.C
+                                                                      ('GHC.Generics.MetaCons
+                                                                         "NoSuchAttribute"
+                                                                         'GHC.Generics.PrefixI
+                                                                         'GHC.Types.False)
+                                                                      (GHC.Generics.M1
+                                                                         GHC.Generics.S
+                                                                         ('GHC.Generics.MetaSel
+                                                                            'GHC.Base.Nothing
+                                                                            'GHC.Generics.NoSourceUnpackedness
+                                                                            'GHC.Generics.NoSourceStrictness
+                                                                            'GHC.Generics.DecidedLazy)
+                                                                         (GHC.Generics.K1
+                                                                            GHC.Generics.R
+                                                                            (Foreign.R.Internal.SomeSEXP
+                                                                               s))
+                                                                       GHC.Generics.:*: GHC.Generics.M1
+                                                                                          GHC.Generics.S
+                                                                                          ('GHC.Generics.MetaSel
+                                                                                             'GHC.Base.Nothing
+                                                                                             'GHC.Generics.NoSourceUnpackedness
+                                                                                             'GHC.Generics.NoSourceStrictness
+                                                                                             'GHC.Generics.DecidedLazy)
+                                                                                          (GHC.Generics.K1
+                                                                                             GHC.Generics.R
+                                                                                             GHC.Base.String)))>_R) <x>_N) of wild {
+                   GHC.Generics.L1 ds3
+                   -> Language.R.Matcher.MatcherError
+                        @ s
+                        ds3
+                          `cast`
+                        (Trans
+                             (Trans
+                                  (GHC.Generics.N:M1[0]
+                                       <*>_N
+                                       <GHC.Generics.C>_P
+                                       <'GHC.Generics.MetaCons
+                                          "MatcherError" 'GHC.Generics.PrefixI 'GHC.Types.False>_P
+                                       <GHC.Generics.M1
+                                          GHC.Generics.S
+                                          ('GHC.Generics.MetaSel
+                                             'GHC.Base.Nothing
+                                             'GHC.Generics.NoSourceUnpackedness
+                                             'GHC.Generics.NoSourceStrictness
+                                             'GHC.Generics.DecidedLazy)
+                                          (GHC.Generics.K1 GHC.Generics.R GHC.Base.String)>_R)
+                                  (GHC.Generics.N:M1[0]
+                                       <*>_N
+                                       <GHC.Generics.S>_P
+                                       <'GHC.Generics.MetaSel
+                                          'GHC.Base.Nothing
+                                          'GHC.Generics.NoSourceUnpackedness
+                                          'GHC.Generics.NoSourceStrictness
+                                          'GHC.Generics.DecidedLazy>_P
+                                       <GHC.Generics.K1 GHC.Generics.R GHC.Base.String>_R) <x>_N)
+                             (GHC.Generics.N:K1[0]
+                                  <*>_N <GHC.Generics.R>_P <GHC.Base.String>_R <x>_P))
+                   GHC.Generics.R1 ds3
+                   -> case ds3 of wild1 {
+                        GHC.Generics.L1 ds4
+                        -> case ds4
+                                  `cast`
+                                (GHC.Generics.N:M1[0]
+                                     <*>_N
+                                     <GHC.Generics.C>_P
+                                     <'GHC.Generics.MetaCons
+                                        "TypeMissmatch" 'GHC.Generics.PrefixI 'GHC.Types.False>_P
+                                     <GHC.Generics.M1
+                                        GHC.Generics.S
+                                        ('GHC.Generics.MetaSel
+                                           'GHC.Base.Nothing
+                                           'GHC.Generics.NoSourceUnpackedness
+                                           'GHC.Generics.NoSourceStrictness
+                                           'GHC.Generics.DecidedLazy)
+                                        (GHC.Generics.K1
+                                           GHC.Generics.R (Foreign.R.Internal.SomeSEXP s))
+                                      GHC.Generics.:*: (GHC.Generics.M1
+                                                          GHC.Generics.S
+                                                          ('GHC.Generics.MetaSel
+                                                             'GHC.Base.Nothing
+                                                             'GHC.Generics.NoSourceUnpackedness
+                                                             'GHC.Generics.NoSourceStrictness
+                                                             'GHC.Generics.DecidedLazy)
+                                                          (GHC.Generics.K1
+                                                             GHC.Generics.R Foreign.R.Type.SEXPTYPE)
+                                                        GHC.Generics.:*: GHC.Generics.M1
+                                                                           GHC.Generics.S
+                                                                           ('GHC.Generics.MetaSel
+                                                                              'GHC.Base.Nothing
+                                                                              'GHC.Generics.NoSourceUnpackedness
+                                                                              'GHC.Generics.NoSourceStrictness
+                                                                              'GHC.Generics.DecidedLazy)
+                                                                           (GHC.Generics.K1
+                                                                              GHC.Generics.R
+                                                                              Foreign.R.Type.SEXPTYPE))>_R <x>_N) of wild2 { GHC.Generics.:*: ds5 ds6 ->
+                           case ds6 of wild3 { GHC.Generics.:*: ds7 ds8 ->
+                           Language.R.Matcher.TypeMissmatch
+                             @ s
+                             ds5
+                               `cast`
+                             (Trans
+                                  (GHC.Generics.N:M1[0]
+                                       <*>_N
+                                       <GHC.Generics.S>_P
+                                       <'GHC.Generics.MetaSel
+                                          'GHC.Base.Nothing
+                                          'GHC.Generics.NoSourceUnpackedness
+                                          'GHC.Generics.NoSourceStrictness
+                                          'GHC.Generics.DecidedLazy>_P
+                                       <GHC.Generics.K1
+                                          GHC.Generics.R (Foreign.R.Internal.SomeSEXP s)>_R <x>_N)
+                                  (GHC.Generics.N:K1[0]
+                                       <*>_N
+                                       <GHC.Generics.R>_P
+                                       <Foreign.R.Internal.SomeSEXP s>_R
+                                       <x>_P))
+                             ds7
+                               `cast`
+                             (Trans
+                                  (GHC.Generics.N:M1[0]
+                                       <*>_N
+                                       <GHC.Generics.S>_P
+                                       <'GHC.Generics.MetaSel
+                                          'GHC.Base.Nothing
+                                          'GHC.Generics.NoSourceUnpackedness
+                                          'GHC.Generics.NoSourceStrictness
+                                          'GHC.Generics.DecidedLazy>_P
+                                       <GHC.Generics.K1
+                                          GHC.Generics.R Foreign.R.Type.SEXPTYPE>_R <x>_N)
+                                  (GHC.Generics.N:K1[0]
+                                       <*>_N <GHC.Generics.R>_P <Foreign.R.Type.SEXPTYPE>_R <x>_P))
+                             ds8
+                               `cast`
+                             (Trans
+                                  (GHC.Generics.N:M1[0]
+                                       <*>_N
+                                       <GHC.Generics.S>_P
+                                       <'GHC.Generics.MetaSel
+                                          'GHC.Base.Nothing
+                                          'GHC.Generics.NoSourceUnpackedness
+                                          'GHC.Generics.NoSourceStrictness
+                                          'GHC.Generics.DecidedLazy>_P
+                                       <GHC.Generics.K1
+                                          GHC.Generics.R Foreign.R.Type.SEXPTYPE>_R <x>_N)
+                                  (GHC.Generics.N:K1[0]
+                                       <*>_N
+                                       <GHC.Generics.R>_P
+                                       <Foreign.R.Type.SEXPTYPE>_R
+                                       <x>_P)) } }
+                        GHC.Generics.R1 ds4
+                        -> case ds4
+                                  `cast`
+                                (GHC.Generics.N:M1[0]
+                                     <*>_N
+                                     <GHC.Generics.C>_P
+                                     <'GHC.Generics.MetaCons
+                                        "NoSuchAttribute" 'GHC.Generics.PrefixI 'GHC.Types.False>_P
+                                     <GHC.Generics.M1
+                                        GHC.Generics.S
+                                        ('GHC.Generics.MetaSel
+                                           'GHC.Base.Nothing
+                                           'GHC.Generics.NoSourceUnpackedness
+                                           'GHC.Generics.NoSourceStrictness
+                                           'GHC.Generics.DecidedLazy)
+                                        (GHC.Generics.K1
+                                           GHC.Generics.R (Foreign.R.Internal.SomeSEXP s))
+                                      GHC.Generics.:*: GHC.Generics.M1
+                                                         GHC.Generics.S
+                                                         ('GHC.Generics.MetaSel
+                                                            'GHC.Base.Nothing
+                                                            'GHC.Generics.NoSourceUnpackedness
+                                                            'GHC.Generics.NoSourceStrictness
+                                                            'GHC.Generics.DecidedLazy)
+                                                         (GHC.Generics.K1
+                                                            GHC.Generics.R
+                                                            GHC.Base.String)>_R <x>_N) of wild2 { GHC.Generics.:*: ds5 ds6 ->
+                           Language.R.Matcher.NoSuchAttribute
+                             @ s
+                             ds5
+                               `cast`
+                             (Trans
+                                  (GHC.Generics.N:M1[0]
+                                       <*>_N
+                                       <GHC.Generics.S>_P
+                                       <'GHC.Generics.MetaSel
+                                          'GHC.Base.Nothing
+                                          'GHC.Generics.NoSourceUnpackedness
+                                          'GHC.Generics.NoSourceStrictness
+                                          'GHC.Generics.DecidedLazy>_P
+                                       <GHC.Generics.K1
+                                          GHC.Generics.R (Foreign.R.Internal.SomeSEXP s)>_R <x>_N)
+                                  (GHC.Generics.N:K1[0]
+                                       <*>_N
+                                       <GHC.Generics.R>_P
+                                       <Foreign.R.Internal.SomeSEXP s>_R
+                                       <x>_P))
+                             ds6
+                               `cast`
+                             (Trans
+                                  (GHC.Generics.N:M1[0]
+                                       <*>_N
+                                       <GHC.Generics.S>_P
+                                       <'GHC.Generics.MetaSel
+                                          'GHC.Base.Nothing
+                                          'GHC.Generics.NoSourceUnpackedness
+                                          'GHC.Generics.NoSourceStrictness
+                                          'GHC.Generics.DecidedLazy>_P
+                                       <GHC.Generics.K1 GHC.Generics.R GHC.Base.String>_R <x>_N)
+                                  (GHC.Generics.N:K1[0]
+                                       <*>_N
+                                       <GHC.Generics.R>_P
+                                       <GHC.Base.String>_R
+                                       <x>_P)) } } }) -}
+5b63f51fe76527e6ec9eaee8713534f4
+  $fMonadMatcher :: GHC.Base.Monad (Language.R.Matcher.Matcher s)
+  DFunId
+  {- Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun: @ s.
+                  @ (Language.R.Matcher.Matcher s)
+                  (Language.R.Matcher.$fApplicativeMatcher @ s)
+                  (Language.R.Matcher.$fMonadMatcher2 @ s)
+                    `cast`
+                  (forall (a :: <*>_N) (b :: <*>_N).
+                   <Language.R.Matcher.Matcher s a>_R
+                   ->_R <a -> Language.R.Matcher.Matcher s b>_R
+                   ->_R Sym (Language.R.Matcher.N:Matcher[0] <s>_P <b>_R))
+                  (Language.R.Matcher.$fMonadMatcher_$c>> @ s)
+                  (Language.R.Matcher.$fApplicativeMatcher5 @ s)
+                    `cast`
+                  (forall (a :: <*>_N).
+                   <a>_R ->_R Sym (Language.R.Matcher.N:Matcher[0] <s>_P <a>_R))
+                  (Language.R.Matcher.$fMonadMatcher1 @ s)
+                    `cast`
+                  (forall (a :: <*>_N).
+                   <GHC.Base.String>_R
+                   ->_R Sym (Language.R.Matcher.N:Matcher[0] <s>_P <a>_R)) -}
+f8393b8f7e3033dcff5e5a6106184436
+  $fMonadMatcher1 ::
+    GHC.Base.String
+    -> forall r.
+       Foreign.R.Internal.SomeSEXP s
+       -> (a -> r) -> (Language.R.Matcher.MatcherError s -> r) -> r
+  {- Arity: 4, HasNoCafRefs,
+     Strictness: <L,U><L,A><L,A><C(S),1*C1(U)>,
+     Unfolding: InlineRule (4, True, False)
+                (\ @ s
+                   @ a
+                   (s6 :: GHC.Base.String)
+                   @ r
+                   (ds2 :: Foreign.R.Internal.SomeSEXP s)
+                   (ds3 :: a -> r)
+                   (err :: Language.R.Matcher.MatcherError s -> r) ->
+                 err (Language.R.Matcher.MatcherError @ s s6)) -}
+5b63f51fe76527e6ec9eaee8713534f4
+  $fMonadMatcher2 ::
+    Language.R.Matcher.Matcher s a
+    -> (a -> Language.R.Matcher.Matcher s b)
+    -> forall r.
+       Foreign.R.Internal.SomeSEXP s
+       -> (b -> r) -> (Language.R.Matcher.MatcherError s -> r) -> r
+  {- Arity: 5, HasNoCafRefs,
+     Strictness: <C(C(C(S))),1*C1(C1(C1(U)))><L,C(C1(C1(C1(U))))><L,U><L,U><L,U>,
+     Unfolding: InlineRule (5, True, False)
+                (\ @ s
+                   @ a
+                   @ b
+                   (ds2 :: Language.R.Matcher.Matcher s a)
+                   (k :: a -> Language.R.Matcher.Matcher s b)
+                   @ r
+                   (s6 :: Foreign.R.Internal.SomeSEXP s)
+                   (ok :: b -> r)
+                   (err :: Language.R.Matcher.MatcherError s -> r) ->
+                 ds2 `cast` (Language.R.Matcher.N:Matcher[0] <s>_P <a>_R)
+                   @ r
+                   s6
+                   (\ (o :: a) ->
+                    (k o) `cast` (Language.R.Matcher.N:Matcher[0] <s>_P <b>_R)
+                      @ r
+                      s6
+                      ok
+                      err)
+                   err) -}
+5b63f51fe76527e6ec9eaee8713534f4
+  $fMonadMatcher_$c>> ::
+    Language.R.Matcher.Matcher s a
+    -> Language.R.Matcher.Matcher s b -> Language.R.Matcher.Matcher s b
+  {- Arity: 5, HasNoCafRefs,
+     Strictness: <C(C(C(S))),1*C1(C1(C1(U)))><L,1*C1(C1(C1(U)))><L,U><L,U><L,U>,
+     Inline: (sat-args=2),
+     Unfolding: InlineRule (2, False, False)
+                (\ @ s
+                   @ a
+                   @ b
+                   (m1 :: Language.R.Matcher.Matcher s a)
+                   (k :: Language.R.Matcher.Matcher s b)
+                   @ r
+                   (s6 :: Foreign.R.Internal.SomeSEXP s)
+                   (ok :: b -> r)
+                   (err :: Language.R.Matcher.MatcherError s -> r) ->
+                 m1 `cast` (Language.R.Matcher.N:Matcher[0] <s>_P <a>_R)
+                   @ r
+                   s6
+                   (\ (o :: a) ->
+                    k `cast` (Language.R.Matcher.N:Matcher[0] <s>_P <b>_R)
+                      @ r
+                      s6
+                      ok
+                      err)
+                   err)
+                  `cast`
+                (forall (s :: <*>_N) (a :: <*>_N) (b :: <*>_N).
+                 <Language.R.Matcher.Matcher s a>_R
+                 ->_R <Language.R.Matcher.Matcher s b>_R
+                 ->_R Sym (Language.R.Matcher.N:Matcher[0] <s>_P <b>_R)) -}
+c8a0d9370b0a2d7ccba981f847b4260c
+  $fMonoidMatcherError ::
+    GHC.Base.Monoid (Language.R.Matcher.MatcherError s)
+  DFunId
+  {- Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun: @ s.
+                  @ (Language.R.Matcher.MatcherError s)
+                  (Language.R.Matcher.$fAlternativeMatcher_$cmempty @ s)
+                  (Language.R.Matcher.$fAlternativeMatcher_$cmappend @ s)
+                  (Language.R.Matcher.$fMonoidMatcherError_go @ s) -}
+c8a0d9370b0a2d7ccba981f847b4260c
+  $fMonoidMatcherError_go ::
+    [Language.R.Matcher.MatcherError s]
+    -> Language.R.Matcher.MatcherError s
+  {- Arity: 1, Strictness: <S,1*U> -}
+c8a0d9370b0a2d7ccba981f847b4260c
+  $fNFDataMatcherError ::
+    Control.DeepSeq.NFData (Language.R.Matcher.MatcherError s)
+  DFunId
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>,
+     Inline: (sat-args=0),
+     Unfolding: InlineRule (0, False, True)
+                Language.R.Matcher.$fNFDataMatcherError_$crnf
+                  `cast`
+                (forall (s :: <*>_N).
+                 Sym (Control.DeepSeq.N:NFData[0]
+                          <Language.R.Matcher.MatcherError s>_N)) -}
+c8a0d9370b0a2d7ccba981f847b4260c
+  $fNFDataMatcherError_$crnf ::
+    Language.R.Matcher.MatcherError s -> ()
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>,
+     Unfolding: (\ @ s (x :: Language.R.Matcher.MatcherError s) ->
+                 case x of wild {
+                   Language.R.Matcher.MatcherError g1
+                   -> Language.R.Matcher.$fNFDataMatcherError_go g1
+                   Language.R.Matcher.TypeMissmatch g1 g2 g3
+                   -> case g1 of ds2 { Foreign.R.Internal.SomeSEXP ipv ipv1 ->
+                      case g2 of ds3 { DEFAULT ->
+                      Foreign.R.Type.$fNFDataSEXPTYPE_$crnf g3 } }
+                   Language.R.Matcher.NoSuchAttribute g1 g2
+                   -> case g1 of ds2 { Foreign.R.Internal.SomeSEXP ipv ipv1 ->
+                      Language.R.Matcher.$fNFDataMatcherError_go g2 } }) -}
+09b0b49c3cc5248255a14a5f050adbe4
+  $fNFDataMatcherError_go :: [GHC.Types.Char] -> ()
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U> -}
+c8a0d9370b0a2d7ccba981f847b4260c
+  $fShowMatcherError ::
+    GHC.Show.Show (Language.R.Matcher.MatcherError s)
+  DFunId
+  {- Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun: @ s.
+                  @ (Language.R.Matcher.MatcherError s)
+                  (Language.R.Matcher.$fShowMatcherError_$cshowsPrec @ s)
+                  (Language.R.Matcher.$fShowMatcherError_$cshow @ s)
+                  (Language.R.Matcher.$fShowMatcherError_$cshowList @ s) -}
+c8a0d9370b0a2d7ccba981f847b4260c
+  $fShowMatcherError1 ::
+    Language.R.Matcher.MatcherError s -> GHC.Show.ShowS
+  {- Arity: 2, Strictness: <S,1*U><L,U>,
+     Unfolding: (\ @ s
+                   (w :: Language.R.Matcher.MatcherError s)
+                   (w1 :: GHC.Base.String) ->
+                 Language.R.Matcher.$w$cshowsPrec @ s 0# w w1) -}
+c34947102d415d60ad733c5ea6af5fa1
+  $fShowMatcherError2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("NoSuchAttribute "#) -}
+7977bdbe8bf280d41cf89ac1c31a711d
+  $fShowMatcherError3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("TypeMissmatch "#) -}
+fafb53f958ac8db83afc9b3e35dd6abe
+  $fShowMatcherError4 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("MatcherError "#) -}
+9f13b232120b96ed760ad5f0519cc098
+  $fShowMatcherError5 :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 0#) -}
+c8a0d9370b0a2d7ccba981f847b4260c
+  $fShowMatcherError_$cshow ::
+    Language.R.Matcher.MatcherError s -> GHC.Base.String
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ @ s (x :: Language.R.Matcher.MatcherError s) ->
+                 Language.R.Matcher.$fShowMatcherError_$cshowsPrec
+                   @ s
+                   Language.R.Matcher.$fShowMatcherError5
+                   x
+                   (GHC.Types.[] @ GHC.Types.Char)) -}
+c8a0d9370b0a2d7ccba981f847b4260c
+  $fShowMatcherError_$cshowList ::
+    [Language.R.Matcher.MatcherError s] -> GHC.Show.ShowS
+  {- Arity: 2,
+     Unfolding: (\ @ s ->
+                 GHC.Show.showList__
+                   @ (Language.R.Matcher.MatcherError s)
+                   (Language.R.Matcher.$fShowMatcherError1 @ s)) -}
+c8a0d9370b0a2d7ccba981f847b4260c
+  $fShowMatcherError_$cshowsPrec ::
+    GHC.Types.Int
+    -> Language.R.Matcher.MatcherError s -> GHC.Show.ShowS
+  {- Arity: 3, Strictness: <S(S),1*U(U)><S,1*U><L,U>, Inline: [0],
+     Unfolding: InlineRule (3, True, False)
+                (\ @ s
+                   (w :: GHC.Types.Int)
+                   (w1 :: Language.R.Matcher.MatcherError s)
+                   (w2 :: GHC.Base.String) ->
+                 case w of ww { GHC.Types.I# ww1 ->
+                 Language.R.Matcher.$w$cshowsPrec @ s ww1 w1 w2 }) -}
+2f2c91bdcdc1b42e453fac45ab0714be
+  $s$WClosure_$d(%,%) ::
+    (Data.Singletons.SingI 'Foreign.R.Type.Any, () :: Constraint)
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: ((Foreign.R.Type.$fSingISEXPTYPEAny1
+                    `cast`
+                  (Trans
+                       (Sym (Foreign.R.Type.D:R:SingSEXPTYPEz0[0]))
+                       (Sym (Data.Singletons.N:SingI[0]) <Foreign.R.Type.SEXPTYPE>_N) <'Foreign.R.Type.Any>_N),
+                  GHC.Classes.C:(%%))) -}
+937339bfefbf5ea873c88d808230043e
+  $s$WSInt_$d~~ ::
+    ('Foreign.R.Type.Int :: Foreign.R.Type.SEXPTYPE)
+    GHC.Types.~~
+    ('Foreign.R.Type.Int :: Foreign.R.Type.SEXPTYPE)
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Eq#
+                   @ Foreign.R.Type.SEXPTYPE
+                   @ Foreign.R.Type.SEXPTYPE
+                   @ 'Foreign.R.Type.Int
+                   @ 'Foreign.R.Type.Int
+                   @~ <'Foreign.R.Type.Int>_N) -}
+a08b841d4316135574fee8111995b86d
+  $s$WSList_$d~~ ::
+    ('Foreign.R.Type.List :: Foreign.R.Type.SEXPTYPE)
+    GHC.Types.~~
+    ('Foreign.R.Type.List :: Foreign.R.Type.SEXPTYPE)
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Eq#
+                   @ Foreign.R.Type.SEXPTYPE
+                   @ Foreign.R.Type.SEXPTYPE
+                   @ 'Foreign.R.Type.List
+                   @ 'Foreign.R.Type.List
+                   @~ <'Foreign.R.Type.List>_N) -}
+f92f4a4782435bb8fc2136080e157a2f
+  $s$WSNil_$d~~ ::
+    ('Foreign.R.Type.Nil :: Foreign.R.Type.SEXPTYPE)
+    GHC.Types.~~
+    ('Foreign.R.Type.Nil :: Foreign.R.Type.SEXPTYPE)
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Eq#
+                   @ Foreign.R.Type.SEXPTYPE
+                   @ Foreign.R.Type.SEXPTYPE
+                   @ 'Foreign.R.Type.Nil
+                   @ 'Foreign.R.Type.Nil
+                   @~ <'Foreign.R.Type.Nil>_N) -}
+89d293f251f4f1f456319269edf9ca52
+  $s$WSString_$d~~ ::
+    ('Foreign.R.Type.String :: Foreign.R.Type.SEXPTYPE)
+    GHC.Types.~~
+    ('Foreign.R.Type.String :: Foreign.R.Type.SEXPTYPE)
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Eq#
+                   @ Foreign.R.Type.SEXPTYPE
+                   @ Foreign.R.Type.SEXPTYPE
+                   @ 'Foreign.R.Type.String
+                   @ 'Foreign.R.Type.String
+                   @~ <'Foreign.R.Type.String>_N) -}
+ee5d62a4b1a8054872e5ee9b907402f1
+  $s$WSVector_$d~~ ::
+    ('Foreign.R.Type.Vector :: Foreign.R.Type.SEXPTYPE)
+    GHC.Types.~~
+    ('Foreign.R.Type.Vector :: Foreign.R.Type.SEXPTYPE)
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Eq#
+                   @ Foreign.R.Type.SEXPTYPE
+                   @ Foreign.R.Type.SEXPTYPE
+                   @ 'Foreign.R.Type.Vector
+                   @ 'Foreign.R.Type.Vector
+                   @~ <'Foreign.R.Type.Vector>_N) -}
+6d5a567dbc99e98ce71c5f173a3ea231
+  $tc'MatcherError :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   5473786155060488458##
+                   8665488141076244186##
+                   Language.R.Matcher.$trModule
+                   Language.R.Matcher.$tc'MatcherError2
+                   1#
+                   Language.R.Matcher.$tc'MatcherError1) -}
+b4f25ee19ed2719066cb14b2fcef3e0f
+  $tc'MatcherError1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+50771732672c61595f3c8c2661f98a38
+  $tc'MatcherError2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Language.R.Matcher.$tc'MatcherError3) -}
+c4c8af1435e92e678868b317b324ec9b
+  $tc'MatcherError3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'MatcherError"#) -}
+732ddc3a7369194c35c1ee052a1d7f67
+  $tc'NoSuchAttribute :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   12524757635657578683##
+                   16262264774428162117##
+                   Language.R.Matcher.$trModule
+                   Language.R.Matcher.$tc'NoSuchAttribute2
+                   1#
+                   Language.R.Matcher.$tc'NoSuchAttribute1) -}
+99986193f9ce21c17989db4210f31fd2
+  $tc'NoSuchAttribute1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+5a50e5dd4628e3794353d2fd09bfb025
+  $tc'NoSuchAttribute2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Language.R.Matcher.$tc'NoSuchAttribute3) -}
+e4a59450c5915a6ad2642b8f64b70ef1
+  $tc'NoSuchAttribute3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'NoSuchAttribute"#) -}
+1d8bd706594821af09323e46195b908f
+  $tc'TypeMissmatch :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   9551223252241641697##
+                   2892587603379968806##
+                   Language.R.Matcher.$trModule
+                   Language.R.Matcher.$tc'TypeMissmatch2
+                   1#
+                   Language.R.Matcher.$tc'TypeMissmatch1) -}
+7ea734d9ed4878ae275457d1dd689b94
+  $tc'TypeMissmatch1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+246ae6a46f74247cb992aaeb64df2785
+  $tc'TypeMissmatch2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Language.R.Matcher.$tc'TypeMissmatch3) -}
+4517a095b5ac491080c3a9af044f9a7a
+  $tc'TypeMissmatch3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'TypeMissmatch"#) -}
+b478e59df7d065cf3ae0c28d55925983
+  $tcMatcher :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   3812222676068889054##
+                   423346741513518479##
+                   Language.R.Matcher.$trModule
+                   Language.R.Matcher.$tcMatcher1
+                   0#
+                   GHC.Types.krep$*->*->*) -}
+988e52c97aa98af83ea719d02749e72d
+  $tcMatcher1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Language.R.Matcher.$tcMatcher2) -}
+ebbd5676d20e28b666bca3318bb4013b
+  $tcMatcher2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Matcher"#) -}
+0d6a3ec5c6dfad5ee6564de503cedbed
+  $tcMatcherError :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   17356324224688273543##
+                   7405067998458228811##
+                   Language.R.Matcher.$trModule
+                   Language.R.Matcher.$tcMatcherError1
+                   0#
+                   GHC.Types.krep$*Arr*) -}
+42ac5d7c9740b4053292bb6263e41b6a
+  $tcMatcherError1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Language.R.Matcher.$tcMatcherError2) -}
+ca4a35b01f7c6fcd6bccad53d6ba966b
+  $tcMatcherError2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("MatcherError"#) -}
+8c0adc5e687acce27817792bdc839548
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module
+                   Language.R.Matcher.$trModule3
+                   Language.R.Matcher.$trModule1) -}
+e98ef5ced6b9516df1f49d2ba586c1e8
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Language.R.Matcher.$trModule2) -}
+5f5cd8e20b05dcb15363eb416e7cf61b
+  $trModule2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Language.R.Matcher"#) -}
+5a2dcf90b06de252555f6c1bae9cd95a
+  $trModule3 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Language.R.Matcher.$trModule4) -}
+e3f55d41add2f5b44916689dcffa2ab3
+  $trModule4 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("inline-r-0.9.0.2-CmRL2Hikuao7dNZScoizZz"#) -}
+5b63f51fe76527e6ec9eaee8713534f4
+  $w$cmany ::
+    Language.R.Matcher.Matcher s a
+    -> forall r. Foreign.R.Internal.SomeSEXP s -> ([a] -> r) -> r
+  {- Arity: 3, HasNoCafRefs,
+     Strictness: <C(C(C(S))),C(C1(C1(U)))><L,U><L,C(U)>, Inline: [0],
+     Unfolding: (\ @ s
+                   @ a
+                   (w :: Language.R.Matcher.Matcher s a)
+                   @ r
+                   (w1 :: Foreign.R.Internal.SomeSEXP s)
+                   (w2 :: [a] -> r) ->
+                 letrec {
+                   $wmany_v :: forall r1.
+                               Foreign.R.Internal.SomeSEXP s -> ([a] -> r1) -> r1
+                     {- Arity: 2, Strictness: <L,U><L,C(U)>, Inline: [0] -}
+                   = \ @ r1 (w3 :: Foreign.R.Internal.SomeSEXP s) (w4 :: [a] -> r1) ->
+                     let {
+                       lvl18 :: r1 = w4 (GHC.Types.[] @ a)
+                     } in
+                     let {
+                       eta :: Language.R.Matcher.MatcherError s -> r1
+                         {- Arity: 1, Strictness: <L,A>,
+                            Unfolding: InlineRule (1, True, True)
+                                       (\ (e' :: Language.R.Matcher.MatcherError s) -> lvl18) -}
+                       = \ (e' :: Language.R.Matcher.MatcherError s) -> lvl18
+                     } in
+                     w `cast` (Language.R.Matcher.N:Matcher[0] <s>_P <a>_R)
+                       @ r1
+                       w3
+                       (\ (o :: a) ->
+                        $wmany_v @ r1 w3 (\ (o1 :: [a]) -> w4 (GHC.Types.: @ a o o1)))
+                       eta
+                 } in
+                 $wmany_v @ r w1 w2) -}
+c8a0d9370b0a2d7ccba981f847b4260c
+  $w$cshowsPrec ::
+    GHC.Prim.Int#
+    -> Language.R.Matcher.MatcherError s
+    -> GHC.Base.String
+    -> GHC.Base.String
+  {- Arity: 3, Strictness: <S,U><S,1*U><L,U>, Inline: [0],
+     Unfolding: (\ @ s
+                   (ww :: GHC.Prim.Int#)
+                   (w :: Language.R.Matcher.MatcherError s)
+                   (w1 :: GHC.Base.String) ->
+                 case w of wild {
+                   Language.R.Matcher.MatcherError b1
+                   -> case GHC.Prim.tagToEnum#
+                             @ GHC.Types.Bool
+                             (GHC.Prim.>=# ww 11#) of wild1 {
+                        GHC.Types.False
+                        -> GHC.CString.unpackAppendCString#
+                             Language.R.Matcher.$fShowMatcherError4
+                             (GHC.Types.:
+                                @ GHC.Types.Char
+                                GHC.Show.$fShow(,)3
+                                (GHC.Show.showLitString
+                                   b1
+                                   (GHC.Types.: @ GHC.Types.Char GHC.Show.$fShow(,)3 w1)))
+                        GHC.Types.True
+                        -> GHC.Types.:
+                             @ GHC.Types.Char
+                             GHC.Show.$fShow(,)4
+                             (GHC.CString.unpackAppendCString#
+                                Language.R.Matcher.$fShowMatcherError4
+                                (GHC.Types.:
+                                   @ GHC.Types.Char
+                                   GHC.Show.$fShow(,)3
+                                   (GHC.Show.showLitString
+                                      b1
+                                      (GHC.Types.:
+                                         @ GHC.Types.Char
+                                         GHC.Show.$fShow(,)3
+                                         (GHC.Types.: @ GHC.Types.Char GHC.Show.$fShow(,)2 w1))))) }
+                   Language.R.Matcher.TypeMissmatch b1 b2 b3
+                   -> let {
+                        p :: GHC.Show.ShowS {- Arity: 1, Strictness: <L,1*U> -}
+                        = \ (x :: GHC.Base.String)[OneShot] ->
+                          GHC.CString.unpackAppendCString#
+                            Language.R.Matcher.$fShowMatcherError3
+                            (case b1 of wild1 { Foreign.R.Internal.SomeSEXP a dt ->
+                             case GHC.Ptr.$w$cshowsPrec
+                                    @ (Language.R.HExp.HExp s a)
+                                    dt
+                                    (GHC.Types.[] @ GHC.Types.Char) of ww2 { (#,#) ww3 ww4 ->
+                             GHC.Base.++
+                               @ GHC.Types.Char
+                               (GHC.Types.: @ GHC.Types.Char ww3 ww4)
+                               (GHC.Types.:
+                                  @ GHC.Types.Char
+                                  GHC.Show.showSpace1
+                                  (Foreign.R.Type.$w$cshowsPrec1
+                                     b2
+                                     (GHC.Types.:
+                                        @ GHC.Types.Char
+                                        GHC.Show.showSpace1
+                                        (Foreign.R.Type.$w$cshowsPrec1 b3 x)))) } })
+                      } in
+                      case GHC.Prim.tagToEnum#
+                             @ GHC.Types.Bool
+                             (GHC.Prim.>=# ww 11#) of wild1 {
+                        GHC.Types.False -> p w1
+                        GHC.Types.True
+                        -> GHC.Types.:
+                             @ GHC.Types.Char
+                             GHC.Show.$fShow(,)4
+                             (p (GHC.Types.: @ GHC.Types.Char GHC.Show.$fShow(,)2 w1)) }
+                   Language.R.Matcher.NoSuchAttribute b1 b2
+                   -> let {
+                        p :: GHC.Show.ShowS {- Arity: 1, Strictness: <L,U> -}
+                        = \ (x :: GHC.Base.String)[OneShot] ->
+                          GHC.CString.unpackAppendCString#
+                            Language.R.Matcher.$fShowMatcherError2
+                            (case b1 of wild1 { Foreign.R.Internal.SomeSEXP a dt ->
+                             case GHC.Ptr.$w$cshowsPrec
+                                    @ (Language.R.HExp.HExp s a)
+                                    dt
+                                    (GHC.Types.[] @ GHC.Types.Char) of ww2 { (#,#) ww3 ww4 ->
+                             GHC.Base.++
+                               @ GHC.Types.Char
+                               (GHC.Types.: @ GHC.Types.Char ww3 ww4)
+                               (GHC.Types.:
+                                  @ GHC.Types.Char
+                                  GHC.Show.showSpace1
+                                  (GHC.Types.:
+                                     @ GHC.Types.Char
+                                     GHC.Show.$fShow(,)3
+                                     (GHC.Show.showLitString
+                                        b2
+                                        (GHC.Types.: @ GHC.Types.Char GHC.Show.$fShow(,)3 x)))) } })
+                      } in
+                      case GHC.Prim.tagToEnum#
+                             @ GHC.Types.Bool
+                             (GHC.Prim.>=# ww 11#) of wild1 {
+                        GHC.Types.False -> p w1
+                        GHC.Types.True
+                        -> GHC.Types.:
+                             @ GHC.Types.Char
+                             GHC.Show.$fShow(,)4
+                             (p (GHC.Types.: @ GHC.Types.Char GHC.Show.$fShow(,)2 w1)) } }) -}
+c0ddea13c969f335bfccf596919dc486
+  $wattributes ::
+    Language.R.Matcher.Matcher s (GHC.Base.Maybe a)
+    -> forall r.
+       Foreign.R.Internal.SomeSEXP s -> ([(GHC.Base.String, a)] -> r) -> r
+  {- Arity: 3, Strictness: <L,C(C1(C1(U)))><S,1*U><L,C(U)>,
+     Inline: [0] -}
+660112f9e22dd3a0f4d3111e933da605
+  $wcharList :: GHC.Prim.Addr# -> [GHC.Base.String]
+  {- Arity: 1, Strictness: <S,U>, Inline: [0] -}
+c547978b1451a02916b0621d38c2437d
+  $wlist ::
+    GHC.Prim.Int#
+    -> Language.R.Matcher.Matcher s a
+    -> forall r.
+       Foreign.R.Internal.SomeSEXP s
+       -> ([a] -> r) -> (Language.R.Matcher.MatcherError s -> r) -> r
+  {- Arity: 5,
+     Strictness: <S,1*U><L,C(C1(C1(U)))><L,1*U><L,U><L,C(U)>,
+     Inline: [0] -}
+1ea77bc48b6531bc7105899fef52d2ae
+  $wlookupAttribute ::
+    GHC.Base.String
+    -> forall r.
+       Foreign.R.Internal.SomeSEXP s
+       -> (GHC.Base.Maybe (Foreign.R.Internal.SomeSEXP s) -> r) -> r
+  {- Arity: 3, Strictness: <L,U><S,1*U><L,C(U)>, Inline: [0],
+     Unfolding: (\ @ s
+                   (w :: GHC.Base.String)
+                   @ r
+                   (w1 :: Foreign.R.Internal.SomeSEXP s)
+                   (w2 :: GHC.Base.Maybe (Foreign.R.Internal.SomeSEXP s) -> r) ->
+                 Language.R.Matcher.lookupAttribute2
+                   @ s
+                   w
+                   @ r
+                   w1
+                   (\ (o :: Foreign.R.Internal.SomeSEXP s)[OneShot] ->
+                    w2 (GHC.Base.Just @ (Foreign.R.Internal.SomeSEXP s) o))
+                   (\ (e' :: Language.R.Matcher.MatcherError s)[OneShot] ->
+                    w2 (GHC.Base.Nothing @ (Foreign.R.Internal.SomeSEXP s)))) -}
+5b63f51fe76527e6ec9eaee8713534f4
+  type role Matcher phantom representational
+  newtype Matcher s a
+    = Matcher {runMatcher :: forall r.
+                             Foreign.R.Internal.SomeSEXP s
+                             -> (a -> r) -> (Language.R.Matcher.MatcherError s -> r) -> r}
+c8a0d9370b0a2d7ccba981f847b4260c
+  type role MatcherError phantom
+  data MatcherError s
+    = MatcherError GHC.Base.String
+    | TypeMissmatch (Foreign.R.Internal.SomeSEXP s)
+                    Foreign.R.Type.SEXPTYPE
+                    Foreign.R.Type.SEXPTYPE
+    | NoSuchAttribute (Foreign.R.Internal.SomeSEXP s) GHC.Base.String
+c8a0d9370b0a2d7ccba981f847b4260c
+  axiom Language.R.Matcher.Rep_MatcherError::
+    [s]
+      GHC.Generics.Rep (Language.R.Matcher.MatcherError s)
+        = GHC.Generics.D1
+            ('GHC.Generics.MetaData
+               "MatcherError"
+               "Language.R.Matcher"
+               "inline-r-0.9.0.2-CmRL2Hikuao7dNZScoizZz"
+               'GHC.Types.False)
+            (GHC.Generics.C1
+               ('GHC.Generics.MetaCons
+                  "MatcherError" 'GHC.Generics.PrefixI 'GHC.Types.False)
+               (GHC.Generics.S1
+                  ('GHC.Generics.MetaSel
+                     'GHC.Base.Nothing
+                     'GHC.Generics.NoSourceUnpackedness
+                     'GHC.Generics.NoSourceStrictness
+                     'GHC.Generics.DecidedLazy)
+                  (GHC.Generics.Rec0 GHC.Base.String))
+             GHC.Generics.:+: (GHC.Generics.C1
+                                 ('GHC.Generics.MetaCons
+                                    "TypeMissmatch" 'GHC.Generics.PrefixI 'GHC.Types.False)
+                                 (GHC.Generics.S1
+                                    ('GHC.Generics.MetaSel
+                                       'GHC.Base.Nothing
+                                       'GHC.Generics.NoSourceUnpackedness
+                                       'GHC.Generics.NoSourceStrictness
+                                       'GHC.Generics.DecidedLazy)
+                                    (GHC.Generics.Rec0 (Foreign.R.Internal.SomeSEXP s))
+                                  GHC.Generics.:*: (GHC.Generics.S1
+                                                      ('GHC.Generics.MetaSel
+                                                         'GHC.Base.Nothing
+                                                         'GHC.Generics.NoSourceUnpackedness
+                                                         'GHC.Generics.NoSourceStrictness
+                                                         'GHC.Generics.DecidedLazy)
+                                                      (GHC.Generics.Rec0 Foreign.R.Type.SEXPTYPE)
+                                                    GHC.Generics.:*: GHC.Generics.S1
+                                                                       ('GHC.Generics.MetaSel
+                                                                          'GHC.Base.Nothing
+                                                                          'GHC.Generics.NoSourceUnpackedness
+                                                                          'GHC.Generics.NoSourceStrictness
+                                                                          'GHC.Generics.DecidedLazy)
+                                                                       (GHC.Generics.Rec0
+                                                                          Foreign.R.Type.SEXPTYPE)))
+                               GHC.Generics.:+: GHC.Generics.C1
+                                                  ('GHC.Generics.MetaCons
+                                                     "NoSuchAttribute"
+                                                     'GHC.Generics.PrefixI
+                                                     'GHC.Types.False)
+                                                  (GHC.Generics.S1
+                                                     ('GHC.Generics.MetaSel
+                                                        'GHC.Base.Nothing
+                                                        'GHC.Generics.NoSourceUnpackedness
+                                                        'GHC.Generics.NoSourceStrictness
+                                                        'GHC.Generics.DecidedLazy)
+                                                     (GHC.Generics.Rec0
+                                                        (Foreign.R.Internal.SomeSEXP s))
+                                                   GHC.Generics.:*: GHC.Generics.S1
+                                                                      ('GHC.Generics.MetaSel
+                                                                         'GHC.Base.Nothing
+                                                                         'GHC.Generics.NoSourceUnpackedness
+                                                                         'GHC.Generics.NoSourceStrictness
+                                                                         'GHC.Generics.DecidedLazy)
+                                                                      (GHC.Generics.Rec0
+                                                                         GHC.Base.String))))
+89e09d17ec73c7bfad18feb6206a78fc
+  attribute ::
+    Foreign.R.Type.SSEXPTYPE a
+    -> GHC.Base.String
+    -> Language.R.Matcher.Matcher s (Foreign.R.Internal.SEXP s a)
+  {- Arity: 5, Strictness: <L,1*U><L,U><S,1*U><L,1*C1(U)><L,C(U)>,
+     Unfolding: InlineRule (0, True, True)
+                Language.R.Matcher.attribute1
+                  `cast`
+                (forall (a :: <Foreign.R.Type.SEXPTYPE>_N) (s :: <*>_N).
+                 <Foreign.R.Type.SSEXPTYPE a>_R
+                 ->_R <GHC.Base.String>_R
+                 ->_R Sym (Language.R.Matcher.N:Matcher[0]
+                               <s>_P <Foreign.R.Internal.SEXP s a>_R)) -}
+739b4fb3e86128fd373d1835e8f73287
+  attribute1 ::
+    Foreign.R.Type.SSEXPTYPE a
+    -> GHC.Base.String
+    -> forall r.
+       Foreign.R.Internal.SomeSEXP s
+       -> (Foreign.R.Internal.SEXP s a -> r)
+       -> (Language.R.Matcher.MatcherError s -> r)
+       -> r
+  {- Arity: 5, Strictness: <L,1*U><L,U><S,1*U><L,1*C1(U)><L,C(U)> -}
+051711d60b593fecea59f14b272d4354
+  attributes ::
+    Language.R.Matcher.Matcher s (GHC.Base.Maybe a)
+    -> Language.R.Matcher.Matcher s [(GHC.Base.String, a)]
+  {- Arity: 4, Strictness: <L,C(C1(C1(U)))><S,1*U><L,C(U)><L,A>,
+     Unfolding: InlineRule (0, True, True)
+                Language.R.Matcher.attributes1
+                  `cast`
+                (forall (s :: <*>_N) (a :: <*>_N).
+                 <Language.R.Matcher.Matcher s (GHC.Base.Maybe a)>_R
+                 ->_R Sym (Language.R.Matcher.N:Matcher[0]
+                               <s>_P <[(GHC.Base.String, a)]>_R)) -}
+e74ab8520ca88f893b3bc421b53afcee
+  attributes1 ::
+    Language.R.Matcher.Matcher s (GHC.Base.Maybe a)
+    -> forall r.
+       Foreign.R.Internal.SomeSEXP s
+       -> ([(GHC.Base.String, a)] -> r)
+       -> (Language.R.Matcher.MatcherError s -> r)
+       -> r
+  {- Arity: 4, Strictness: <L,C(C1(C1(U)))><S,1*U><L,C(U)><L,A>,
+     Inline: [0],
+     Unfolding: InlineRule (4, True, True)
+                (\ @ s
+                   @ a
+                   (w :: Language.R.Matcher.Matcher s (GHC.Base.Maybe a))
+                   @ r
+                   (w1 :: Foreign.R.Internal.SomeSEXP s)
+                   (w2 :: [(GHC.Base.String, a)] -> r)
+                   (w3 :: Language.R.Matcher.MatcherError s -> r) ->
+                 Language.R.Matcher.$wattributes @ s @ a w @ r w1 w2) -}
+7a507463328ece5be9a1d72e948c03cc
+  charList ::
+    Foreign.R.Internal.SEXP s 'Foreign.R.Type.String
+    -> [GHC.Base.String]
+  {- Arity: 1, Strictness: <S(S),1*U(U)>, Inline: [0],
+     Unfolding: InlineRule (1, True, False)
+                (\ @ s (w :: Foreign.R.Internal.SEXP s 'Foreign.R.Type.String) ->
+                 case w `cast`
+                      (Foreign.R.Internal.N:SEXP[0]
+                           <s>_P <'Foreign.R.Type.String>_P) of ww { GHC.Ptr.Ptr ww1 ->
+                 Language.R.Matcher.$wcharList @ s ww1 }) -}
+f6c7450d4dfb3f7e7be62a7e4efc6147
+  choice ::
+    [Language.R.Matcher.Matcher s a] -> Language.R.Matcher.Matcher s a
+  {- Arity: 4, Strictness: <S,1*U><L,U><L,U><L,C(U)>,
+     Unfolding: InlineRule (0, True, True)
+                Language.R.Matcher.choice1
+                  `cast`
+                (forall (s :: <*>_N) (a :: <*>_N).
+                 <[Language.R.Matcher.Matcher s a]>_R
+                 ->_R Sym (Language.R.Matcher.N:Matcher[0] <s>_P <a>_R)) -}
+5bb9fa59d3741caed213312b491292f6
+  choice1 ::
+    [Language.R.Matcher.Matcher s a]
+    -> forall r.
+       Foreign.R.Internal.SomeSEXP s
+       -> (a -> r) -> (Language.R.Matcher.MatcherError s -> r) -> r
+  {- Arity: 4, Strictness: <S,1*U><L,U><L,U><L,C(U)> -}
+b2170929abca8a680af8003ac04ac3a3
+  dim :: Language.R.Matcher.Matcher s [GHC.Types.Int]
+  {- Arity: 3, Strictness: <S,1*U><L,1*C1(U)><L,C(U)>,
+     Unfolding: InlineRule (0, True, True)
+                Language.R.Matcher.dim1
+                  `cast`
+                (forall (s :: <*>_N).
+                 Sym (Language.R.Matcher.N:Matcher[0] <s>_P <[GHC.Types.Int]>_R)) -}
+5ee63aab5d3ce9708bd24b18fa21e2fe
+  dim1 ::
+    Foreign.R.Internal.SomeSEXP s
+    -> ([GHC.Types.Int] -> r)
+    -> (Language.R.Matcher.MatcherError s -> r)
+    -> r
+  {- Arity: 3, Strictness: <S,1*U><L,1*C1(U)><L,C(U)> -}
+602059539bf5553cbfd2285e64ba5dbc
+  dimnames :: Language.R.Matcher.Matcher s [[GHC.Base.String]]
+  {- Arity: 3, Strictness: <S,1*U><L,1*C1(U)><L,C(U)>,
+     Unfolding: InlineRule (0, True, True)
+                Language.R.Matcher.dimnames1
+                  `cast`
+                (forall (s :: <*>_N).
+                 Sym (Language.R.Matcher.N:Matcher[0]
+                          <s>_P <[[GHC.Base.String]]>_R)) -}
+7c3edd841458a45f145339bdee4741dd
+  dimnames1 ::
+    Foreign.R.Internal.SomeSEXP s
+    -> ([[GHC.Base.String]] -> r)
+    -> (Language.R.Matcher.MatcherError s -> r)
+    -> r
+  {- Arity: 3, Strictness: <S,1*U><L,1*C1(U)><L,C(U)> -}
+dc5579c4e8c32d28dfb9f68124da4a27
+  factor :: Language.R.Matcher.Matcher s [GHC.Base.String]
+  {- Arity: 3, Strictness: <S,U><L,U><L,U>,
+     Unfolding: InlineRule (0, True, True)
+                Language.R.Matcher.factor1
+                  `cast`
+                (forall (s :: <*>_N).
+                 Sym (Language.R.Matcher.N:Matcher[0]
+                          <s>_P <[GHC.Base.String]>_R)) -}
+6f36d8aeb9cba8344b4a1bfb07e64e27
+  factor1 ::
+    Foreign.R.Internal.SomeSEXP s
+    -> ([GHC.Base.String] -> r)
+    -> (Language.R.Matcher.MatcherError s -> r)
+    -> r
+  {- Arity: 3, Strictness: <S,U><L,U><L,U>,
+     Unfolding: (\ @ s
+                   @ r
+                   (s6 :: Foreign.R.Internal.SomeSEXP s)
+                   (ok :: [GHC.Base.String] -> r)
+                   (err :: Language.R.Matcher.MatcherError s -> r) ->
+                 Language.R.Matcher.attribute1
+                   @ 'Foreign.R.Type.String
+                   @ s
+                   Language.R.Matcher.factor12
+                     `cast`
+                   (Sym (Foreign.R.Type.D:R:SingSEXPTYPEz0[0]) <'Foreign.R.Type.String>_N)
+                   Language.R.Matcher.factor10
+                   @ r
+                   s6
+                   (\ (o :: Foreign.R.Internal.SEXP
+                              s 'Foreign.R.Type.String)[OneShot] ->
+                    case o `cast`
+                         (Foreign.R.Internal.N:SEXP[0]
+                              <s>_P <'Foreign.R.Type.String>_P) of ww { GHC.Ptr.Ptr ww1 ->
+                    case GHC.Classes.$fEq[]_$s$c==1
+                           Language.R.Matcher.factor7
+                           (Language.R.Matcher.$wcharList @ s ww1) of wild {
+                      GHC.Types.False
+                      -> err (Language.R.Matcher.$fAlternativeMatcher_$cmempty @ s)
+                      GHC.Types.True
+                      -> Language.R.Matcher.attribute1
+                           @ 'Foreign.R.Type.String
+                           @ s
+                           Language.R.Matcher.factor12
+                             `cast`
+                           (Sym (Foreign.R.Type.D:R:SingSEXPTYPEz0[0]) <'Foreign.R.Type.String>_N)
+                           Language.R.Matcher.factor5
+                           @ r
+                           s6
+                           (\ (o1 :: Foreign.R.Internal.SEXP
+                                       s 'Foreign.R.Type.String)[OneShot] ->
+                            let {
+                              o2 :: [GHC.Base.String]
+                              = case o1
+                                       `cast`
+                                     (Foreign.R.Internal.N:SEXP[0]
+                                          <s>_P
+                                          <'Foreign.R.Type.String>_P) of ww2 { GHC.Ptr.Ptr ww3 ->
+                                Language.R.Matcher.$wcharList @ s ww3 }
+                            } in
+                            let {
+                              lvl18 :: GHC.Int.Int32 -> GHC.Base.String
+                                {- Arity: 1, Strictness: <S(S),1*U(U)>,
+                                   Unfolding: InlineRule (1, True, False)
+                                              (\ (i :: GHC.Int.Int32) ->
+                                               case i of wild1 { GHC.Int.I32# x# ->
+                                               GHC.List.$w!!
+                                                 @ GHC.Base.String
+                                                 o2
+                                                 (GHC.Prim.-# x# 1#) }) -}
+                              = \ (i :: GHC.Int.Int32) ->
+                                case i of wild1 { GHC.Int.I32# x# ->
+                                GHC.List.$w!! @ GHC.Base.String o2 (GHC.Prim.-# x# 1#) }
+                            } in
+                            Language.R.Matcher.factor4
+                              @ 'Foreign.R.Type.Int
+                              @ s
+                              @ [GHC.Base.String]
+                              Language.R.Matcher.factor3
+                                `cast`
+                              (Sym (Foreign.R.Type.D:R:SingSEXPTYPEz0[0]) <'Foreign.R.Type.Int>_N)
+                              (\ (ds2 :: Language.R.HExp.HExp s 'Foreign.R.Type.Int)[OneShot]
+                                 @ r1
+                                 (eta :: Foreign.R.Internal.SomeSEXP s)[OneShot]
+                                 (eta1 :: [GHC.Base.String] -> r1)[OneShot]
+                                 (eta2 :: Language.R.Matcher.MatcherError s -> r1)[OneShot] ->
+                               case ds2 of wild1 { Language.R.HExp.Int cobox dt dt1 dt2 dt3 ->
+                               case GHC.Base.map
+                                      @ GHC.Int.Int32
+                                      @ [GHC.Types.Char]
+                                      lvl18
+                                      ((\ @ s7
+                                          ($dReifies :: Data.Reflection.Reifies
+                                                          s7
+                                                          (Control.Monad.R.Internal.AcquireIO
+                                                             s))[OneShot]
+                                          (p :: Data.Proxy.Proxy s7)[OneShot] ->
+                                        letrec {
+                                          $wgo :: GHC.Prim.Int# -> [GHC.Int.Int32]
+                                            {- Arity: 1, Strictness: <S,U>, Inline: [0] -}
+                                          = \ (ww2 :: GHC.Prim.Int#) ->
+                                            case GHC.Prim.tagToEnum#
+                                                   @ GHC.Types.Bool
+                                                   (GHC.Prim.>=# ww2 dt3) of wild2 {
+                                              GHC.Types.False
+                                              -> GHC.Types.:
+                                                   @ GHC.Int.Int32
+                                                   (case GHC.Prim.touch#
+                                                           @ 'GHC.Types.LiftedRep
+                                                           @ GHC.ForeignPtr.ForeignPtrContents
+                                                           dt1
+                                                           GHC.Prim.realWorld# of s' { DEFAULT ->
+                                                    case GHC.Prim.readInt32OffAddr#
+                                                           @ GHC.Prim.RealWorld
+                                                           (GHC.Prim.plusAddr#
+                                                              (GHC.Prim.plusAddr# dt 40#)
+                                                              (GHC.Prim.*# dt2 4#))
+                                                           ww2
+                                                           GHC.Prim.realWorld# of ds3 { (#,#) ipv ipv1 ->
+                                                    GHC.Int.I32# ipv1 } })
+                                                   ($wgo (GHC.Prim.+# ww2 1#))
+                                              GHC.Types.True -> GHC.Types.[] @ GHC.Int.Int32 }
+                                        } in
+                                        $wgo 0#)
+                                         `cast`
+                                       (Trans
+                                            (Sym (Data.Reflection.N:Magic[0]
+                                                      <Control.Monad.R.Internal.AcquireIO s>_N
+                                                      <[GHC.Int.Int32]>_R))
+                                            (UnsafeCo representational (Data.Reflection.Magic
+                                                                          (Control.Monad.R.Internal.AcquireIO
+                                                                             s)
+                                                                          [GHC.Int.Int32]) ((GHC.Types.Any
+                                                                                             -> Control.Monad.R.Internal.AcquireIO
+                                                                                                  s)
+                                                                                            -> Data.Proxy.Proxy
+                                                                                                 GHC.Types.Any
+                                                                                            -> [GHC.Int.Int32])))
+                                         (Language.R.Matcher.factor2 @ s)
+                                           `cast`
+                                         (<GHC.Types.Any>_R
+                                          ->_R Trans
+                                                   (forall (ty1 :: <Foreign.R.Type.SEXPTYPE>_N).
+                                                    <Foreign.R.Internal.SEXP
+                                                       Control.Memory.Region.V ty1>_R
+                                                    ->_R Sym (GHC.Types.N:IO[0]
+                                                                  <Foreign.R.Internal.SEXP
+                                                                     s ty1>_R))
+                                                   (Sym (Control.Monad.R.Internal.N:AcquireIO[0]
+                                                             <s>_P)))
+                                         (Data.Proxy.Proxy
+                                            @ GHC.Types.Any
+                                            @ GHC.Types.Any)) of vx { DEFAULT ->
+                               eta1 vx } })
+                                `cast`
+                              (<Language.R.HExp.HExp s 'Foreign.R.Type.Int>_R
+                               ->_R Sym (Language.R.Matcher.N:Matcher[0]
+                                             <s>_P <[GHC.Base.String]>_R))
+                              @ r
+                              s6
+                              ok
+                              err)
+                           err } })
+                   err) -}
+a045dca83e8060912e3c969b0fdd002f
+  factor10 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   Language.R.Matcher.factor11) -}
+52f865417f03ada30295a67c3cf64396
+  factor11 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("class"#) -}
+ddc207aa0bdafa64b49672ba0479b1b0
+  factor12 :: Foreign.R.Type.R:SingSEXPTYPEz 'Foreign.R.Type.String
+  {- HasNoCafRefs, Strictness: m15,
+     Unfolding: (Foreign.R.Type.SString
+                   @ 'Foreign.R.Type.String
+                   Language.R.Matcher.$s$WSString_$d~~
+                     `cast`
+                   (Sym (Data.Type.Equality.N:~[0]
+                             <Foreign.R.Type.SEXPTYPE>_N) <'Foreign.R.Type.String>_N <'Foreign.R.Type.String>_N)) -}
+6d462f0ff601bbf9ea11f5d7a50827d3
+  factor2 ::
+    GHC.Types.Any
+    -> forall (ty1 :: Foreign.R.Type.SEXPTYPE).
+       Foreign.R.Internal.SEXP Control.Memory.Region.V ty1
+       -> GHC.Prim.State# GHC.Prim.RealWorld
+       -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+             Foreign.R.Internal.SEXP s ty1 #)
+  {- Arity: 3, HasNoCafRefs, Strictness: <L,A><S(S),1*U(U)><S,U>,
+     Unfolding: InlineRule (3, True, False)
+                (\ @ s
+                   (ds2 :: GHC.Types.Any)
+                   @ ty1 :: Foreign.R.Type.SEXPTYPE
+                   (eta :: Foreign.R.Internal.SEXP Control.Memory.Region.V ty1)
+                   (eta1 :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                 case eta
+                        `cast`
+                      (Trans
+                           (Foreign.R.Internal.N:SEXP[0] <Control.Memory.Region.V>_P <ty1>_P)
+                           (GHC.Ptr.Ptr
+                              <Language.R.HExp.HExp
+                                 Control.Memory.Region.V
+                                 ty1, Foreign.R.Internal.SEXPREC>)_R) of ds3 { GHC.Ptr.Ptr ds4 ->
+                 case {__pkg_ccall_GC inline-r-0.9.0.2-CmRL2Hikuao7dNZScoizZz GHC.Prim.Addr#
+                                                                              -> GHC.Prim.State#
+                                                                                   GHC.Prim.RealWorld
+                                                                              -> (# GHC.Prim.State#
+                                                                                      GHC.Prim.RealWorld #)}
+                        ds4
+                        eta1 of wild { Unit# ds5 ->
+                 (# ds5,
+                    ds3
+                      `cast`
+                    (Trans
+                         (GHC.Ptr.Ptr
+                            <Foreign.R.Internal.SEXPREC, Language.R.HExp.HExp s ty1>)_R
+                         (Sym (Foreign.R.Internal.N:SEXP[0] <s>_P <ty1>_P))) #) } }) -}
+77edea562c042df27458af32e737741d
+  factor3 :: Foreign.R.Type.R:SingSEXPTYPEz 'Foreign.R.Type.Int
+  {- HasNoCafRefs, Strictness: m12,
+     Unfolding: (Foreign.R.Type.SInt
+                   @ 'Foreign.R.Type.Int
+                   Language.R.Matcher.$s$WSInt_$d~~
+                     `cast`
+                   (Sym (Data.Type.Equality.N:~[0]
+                             <Foreign.R.Type.SEXPTYPE>_N) <'Foreign.R.Type.Int>_N <'Foreign.R.Type.Int>_N)) -}
+bd810e68eae1ae590d2ef32d1395a858
+  factor4 ::
+    Foreign.R.Type.SSEXPTYPE ty
+    -> (Language.R.HExp.HExp s ty -> Language.R.Matcher.Matcher s a)
+    -> forall r.
+       Foreign.R.Internal.SomeSEXP s
+       -> (a -> r) -> (Language.R.Matcher.MatcherError s -> r) -> r
+  {- Arity: 5,
+     Strictness: <S,1*U><L,1*C1(C1(C1(C1(U))))><S,U><L,U><L,U> -}
+0f52610bb7ca82872348c8c1df6d190d
+  factor5 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   Language.R.Matcher.factor6) -}
+1fedf552c8591e01d037f6c146deda86
+  factor6 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("levels"#) -}
+731bb1e299d203da5aa8f84a8065408a
+  factor7 :: [GHC.Base.String]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Base.String
+                   Language.R.Matcher.factor8
+                   (GHC.Types.[] @ GHC.Base.String)) -}
+44571487580514279604fcdd82506e64
+  factor8 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   Language.R.Matcher.factor9) -}
+d056716ce768be035b6acc69017202e0
+  factor9 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("factor"#) -}
+45af3f60eb1ddcc6c9ad7195bd6eef25
+  getS3Class :: Language.R.Matcher.Matcher s [GHC.Base.String]
+  {- Arity: 3, Strictness: <S,1*U><L,1*C1(U)><L,C(U)>,
+     Unfolding: InlineRule (0, True, True)
+                Language.R.Matcher.getS3Class1
+                  `cast`
+                (forall (s :: <*>_N).
+                 Sym (Language.R.Matcher.N:Matcher[0]
+                          <s>_P <[GHC.Base.String]>_R)) -}
+cef4fb4f532ba4ea285b06e11c26ce17
+  getS3Class1 ::
+    Foreign.R.Internal.SomeSEXP s
+    -> ([GHC.Base.String] -> r)
+    -> (Language.R.Matcher.MatcherError s -> r)
+    -> r
+  {- Arity: 3, Strictness: <S,1*U><L,1*C1(U)><L,C(U)>,
+     Unfolding: (\ @ s
+                   @ r
+                   (s6 :: Foreign.R.Internal.SomeSEXP s)
+                   (ok :: [GHC.Base.String] -> r)
+                   (err :: Language.R.Matcher.MatcherError s -> r) ->
+                 Language.R.Matcher.attribute1
+                   @ 'Foreign.R.Type.String
+                   @ s
+                   Language.R.Matcher.factor12
+                     `cast`
+                   (Sym (Foreign.R.Type.D:R:SingSEXPTYPEz0[0]) <'Foreign.R.Type.String>_N)
+                   Language.R.Matcher.factor10
+                   @ r
+                   s6
+                   (\ (o :: Foreign.R.Internal.SEXP
+                              s 'Foreign.R.Type.String)[OneShot] ->
+                    ok (Language.R.Matcher.charList @ s o))
+                   err) -}
+4743c0c02daec02147e666185829a7bf
+  guardType ::
+    Foreign.R.Type.SEXPTYPE -> Language.R.Matcher.Matcher s ()
+  {- Arity: 4, Strictness: <S,1*U><S,1*U><L,1*C1(U)><L,1*C1(U)>,
+     Unfolding: InlineRule (0, True, True)
+                Language.R.Matcher.guardType1
+                  `cast`
+                (forall (s :: <*>_N).
+                 <Foreign.R.Type.SEXPTYPE>_R
+                 ->_R Sym (Language.R.Matcher.N:Matcher[0] <s>_P <()>_R)) -}
+6d7efa98b6a8cc0c991883c61a8c4f6e
+  guardType1 ::
+    Foreign.R.Type.SEXPTYPE
+    -> forall r.
+       Foreign.R.Internal.SomeSEXP s
+       -> (() -> r) -> (Language.R.Matcher.MatcherError s -> r) -> r
+  {- Arity: 4, Strictness: <S,1*U><S,1*U><L,1*C1(U)><L,1*C1(U)> -}
+68c339c6cc965c0e1ecc445ffca454f2
+  hexp ::
+    Foreign.R.Type.SSEXPTYPE ty
+    -> (Language.R.HExp.HExp s ty -> Language.R.Matcher.Matcher s a)
+    -> Language.R.Matcher.Matcher s a
+  {- Arity: 5,
+     Strictness: <S,1*U><L,1*C1(C1(C1(C1(U))))><S,U><L,U><L,U>,
+     Unfolding: InlineRule (0, True, True)
+                Language.R.Matcher.factor4
+                  `cast`
+                (forall (ty :: <Foreign.R.Type.SEXPTYPE>_N) (s :: <*>_N) (a :: <*>_N).
+                 <Foreign.R.Type.SSEXPTYPE ty>_R
+                 ->_R <Language.R.HExp.HExp s ty
+                       -> Language.R.Matcher.Matcher s a>_R
+                 ->_R Sym (Language.R.Matcher.N:Matcher[0] <s>_P <a>_R)) -}
+7792321fc7f33df4081e929c01d8f27c
+  list ::
+    GHC.Types.Int
+    -> Language.R.Matcher.Matcher s a
+    -> Language.R.Matcher.Matcher s [a]
+  {- Arity: 5,
+     Strictness: <S(S),1*U(1*U)><L,C(C1(C1(U)))><L,1*U><L,U><L,C(U)>,
+     Unfolding: InlineRule (0, True, True)
+                Language.R.Matcher.list1
+                  `cast`
+                (forall (s :: <*>_N) (a :: <*>_N).
+                 <GHC.Types.Int>_R
+                 ->_R <Language.R.Matcher.Matcher s a>_R
+                 ->_R Sym (Language.R.Matcher.N:Matcher[0] <s>_P <[a]>_R)) -}
+428991634b40987873e6023b92174fbe
+  list1 ::
+    GHC.Types.Int
+    -> Language.R.Matcher.Matcher s a
+    -> forall r.
+       Foreign.R.Internal.SomeSEXP s
+       -> ([a] -> r) -> (Language.R.Matcher.MatcherError s -> r) -> r
+  {- Arity: 5,
+     Strictness: <S(S),1*U(1*U)><L,C(C1(C1(U)))><L,1*U><L,U><L,C(U)>,
+     Inline: [0],
+     Unfolding: InlineRule (5, True, False)
+                (\ @ s
+                   @ a
+                   (w :: GHC.Types.Int)
+                   (w1 :: Language.R.Matcher.Matcher s a)
+                   @ r
+                   (w2 :: Foreign.R.Internal.SomeSEXP s)
+                   (w3 :: [a] -> r)
+                   (w4 :: Language.R.Matcher.MatcherError s -> r) ->
+                 case w of ww { GHC.Types.I# ww1 ->
+                 Language.R.Matcher.$wlist @ s @ a ww1 w1 @ r w2 w3 w4 }) -}
+9ff67c03f31ea549bd11d7dd1de3900d
+  lookupAttribute ::
+    GHC.Base.String
+    -> Language.R.Matcher.Matcher
+         s (GHC.Base.Maybe (Foreign.R.Internal.SomeSEXP s))
+  {- Arity: 4, Strictness: <L,U><S,1*U><L,C(U)><L,A>,
+     Unfolding: InlineRule (0, True, True)
+                Language.R.Matcher.lookupAttribute1
+                  `cast`
+                (forall (s :: <*>_N).
+                 <GHC.Base.String>_R
+                 ->_R Sym (Language.R.Matcher.N:Matcher[0]
+                               <s>_P <GHC.Base.Maybe (Foreign.R.Internal.SomeSEXP s)>_R)) -}
+25e09e5379a83d573a0817a109057d2e
+  lookupAttribute1 ::
+    GHC.Base.String
+    -> forall r.
+       Foreign.R.Internal.SomeSEXP s
+       -> (GHC.Base.Maybe (Foreign.R.Internal.SomeSEXP s) -> r)
+       -> (Language.R.Matcher.MatcherError s -> r)
+       -> r
+  {- Arity: 4, Strictness: <L,U><S,1*U><L,C(U)><L,A>, Inline: [0],
+     Unfolding: InlineRule (4, True, True)
+                (\ @ s
+                   (w :: GHC.Base.String)
+                   @ r
+                   (w1 :: Foreign.R.Internal.SomeSEXP s)
+                   (w2 :: GHC.Base.Maybe (Foreign.R.Internal.SomeSEXP s) -> r)
+                   (w3 :: Language.R.Matcher.MatcherError s -> r) ->
+                 Language.R.Matcher.$wlookupAttribute @ s w @ r w1 w2) -}
+714077be490955c8c8fa6c5ce249b150
+  lookupAttribute2 ::
+    GHC.Base.String
+    -> forall r.
+       Foreign.R.Internal.SomeSEXP s
+       -> (Foreign.R.Internal.SomeSEXP s -> r)
+       -> (Language.R.Matcher.MatcherError s -> r)
+       -> r
+  {- Arity: 4, Strictness: <L,U><S,1*U><L,1*C1(U)><L,1*C1(U)> -}
+ee1283101bca21804ecb96e0b0375a48
+  matchOnly ::
+    (Control.Monad.R.Class.MonadR m, Control.DeepSeq.NFData a) =>
+    Language.R.Matcher.Matcher s a
+    -> Foreign.R.Internal.SomeSEXP s
+    -> m (Data.Either.Either (Language.R.Matcher.MatcherError s) a)
+  {- Arity: 4, HasNoCafRefs,
+     Strictness: <L,1*U(A,1*U(1*U(A,A,A,C(U),A),A),A,A,A,A,A,A,A)><L,C(H)><C(C(C(S))),1*C1(C1(C1(U)))><L,U>,
+     Unfolding: (\ @ m :: * -> *
+                   @ a
+                   @ s
+                   ($dMonadR :: Control.Monad.R.Class.MonadR m)
+                   ($dNFData :: Control.DeepSeq.NFData a)
+                   (eta :: Language.R.Matcher.Matcher s a)
+                   (eta1 :: Foreign.R.Internal.SomeSEXP s) ->
+                 let {
+                   $dMonadIO :: Control.Monad.IO.Class.MonadIO m
+                   = Control.Monad.R.Class.$p2MonadR @ m $dMonadR
+                 } in
+                 let {
+                   $dMonad :: GHC.Base.Monad m
+                   = Control.Monad.IO.Class.$p1MonadIO @ m $dMonadIO
+                 } in
+                 eta `cast` (Language.R.Matcher.N:Matcher[0] <s>_P <a>_R)
+                   @ (m (Data.Either.Either (Language.R.Matcher.MatcherError s) a))
+                   eta1
+                   (\ (x :: a) ->
+                    GHC.Base.return
+                      @ m
+                      $dMonad
+                      @ (Data.Either.Either (Language.R.Matcher.MatcherError s) a)
+                      (case $dNFData `cast` (Control.DeepSeq.N:NFData[0] <a>_N)
+                              x of wild { () ->
+                       Data.Either.Right @ (Language.R.Matcher.MatcherError s) @ a x }))
+                   (\ (x :: Language.R.Matcher.MatcherError s) ->
+                    GHC.Base.return
+                      @ m
+                      $dMonad
+                      @ (Data.Either.Either (Language.R.Matcher.MatcherError s) a)
+                      (case Language.R.Matcher.$fNFDataMatcherError_$crnf
+                              @ s
+                              x of wild { () ->
+                       Data.Either.Left
+                         @ (Language.R.Matcher.MatcherError s)
+                         @ a
+                         x }))) -}
+d74930e8e13fd753afb993568373b202
+  names :: Language.R.Matcher.Matcher s [GHC.Base.String]
+  {- Arity: 3, Strictness: <S,1*U><L,1*C1(U)><L,C(U)>,
+     Unfolding: InlineRule (0, True, True)
+                Language.R.Matcher.names1
+                  `cast`
+                (forall (s :: <*>_N).
+                 Sym (Language.R.Matcher.N:Matcher[0]
+                          <s>_P <[GHC.Base.String]>_R)) -}
+75e2236d6647be5164c14405c2641df7
+  names1 ::
+    Foreign.R.Internal.SomeSEXP s
+    -> ([GHC.Base.String] -> r)
+    -> (Language.R.Matcher.MatcherError s -> r)
+    -> r
+  {- Arity: 3, Strictness: <S,1*U><L,1*C1(U)><L,C(U)>,
+     Unfolding: (\ @ s
+                   @ r
+                   (s6 :: Foreign.R.Internal.SomeSEXP s)
+                   (ok :: [GHC.Base.String] -> r)
+                   (err :: Language.R.Matcher.MatcherError s -> r) ->
+                 Language.R.Matcher.attribute1
+                   @ 'Foreign.R.Type.String
+                   @ s
+                   Language.R.Matcher.factor12
+                     `cast`
+                   (Sym (Foreign.R.Type.D:R:SingSEXPTYPEz0[0]) <'Foreign.R.Type.String>_N)
+                   Language.R.Matcher.names2
+                   @ r
+                   s6
+                   (\ (o :: Foreign.R.Internal.SEXP
+                              s 'Foreign.R.Type.String)[OneShot] ->
+                    ok (Language.R.Matcher.charList @ s o))
+                   err) -}
+248e86734f3fb38dc81c047f5f875f3a
+  names2 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   Language.R.Matcher.names3) -}
+29f7b6837bb1d65ffa424c722748d30d
+  names3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("names"#) -}
+4c9bbff5d47852b1b8825b05a5f171c5
+  null :: Language.R.Matcher.Matcher s ()
+  {- Arity: 3, Strictness: <S,1*U><L,1*C1(U)><L,1*C1(U)>,
+     Unfolding: InlineRule (0, True, True)
+                Language.R.Matcher.null1
+                  `cast`
+                (forall (s :: <*>_N).
+                 Sym (Language.R.Matcher.N:Matcher[0] <s>_P <()>_R)) -}
+fd81561bae0558610e1d7bd83bde3263
+  null1 ::
+    Foreign.R.Internal.SomeSEXP s
+    -> (() -> r) -> (Language.R.Matcher.MatcherError s -> r) -> r
+  {- Arity: 3, Strictness: <S,1*U><L,1*C1(U)><L,1*C1(U)>,
+     Unfolding: InlineRule (3, True, False)
+                (\ @ s
+                   @ r
+                   (eta :: Foreign.R.Internal.SomeSEXP s)
+                   (eta1 :: () -> r)
+                   (eta2 :: Language.R.Matcher.MatcherError s -> r) ->
+                 Language.R.Matcher.null3
+                   @ 'Foreign.R.Type.Nil
+                   @ s
+                   Language.R.Matcher.null2
+                     `cast`
+                   (Sym (Foreign.R.Type.D:R:SingSEXPTYPEz0[0]) <'Foreign.R.Type.Nil>_N)
+                   @ r
+                   eta
+                   (\ (o :: Foreign.R.Internal.SEXP s 'Foreign.R.Type.Nil)[OneShot] ->
+                    eta1 GHC.Tuple.())
+                   eta2) -}
+7fcc5501de2ce1c5db2aee4b8d850501
+  null2 :: Foreign.R.Type.R:SingSEXPTYPEz 'Foreign.R.Type.Nil
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (Foreign.R.Type.SNil
+                   @ 'Foreign.R.Type.Nil
+                   Language.R.Matcher.$s$WSNil_$d~~
+                     `cast`
+                   (Sym (Data.Type.Equality.N:~[0]
+                             <Foreign.R.Type.SEXPTYPE>_N) <'Foreign.R.Type.Nil>_N <'Foreign.R.Type.Nil>_N)) -}
+d48059ef5384e565a881f11d55b377d2
+  null3 ::
+    Foreign.R.Type.SSEXPTYPE ty
+    -> forall r.
+       Foreign.R.Internal.SomeSEXP s
+       -> (Foreign.R.Internal.SEXP s ty -> r)
+       -> (Language.R.Matcher.MatcherError s -> r)
+       -> r
+  {- Arity: 4, Strictness: <S,1*U><S,1*U><L,1*C1(U)><L,1*C1(U)>,
+     Unfolding: (\ @ ty :: Foreign.R.Type.SEXPTYPE
+                   @ s
+                   (p :: Foreign.R.Type.SSEXPTYPE ty)
+                   @ r
+                   (ds2 :: Foreign.R.Internal.SomeSEXP s)
+                   (ok :: Foreign.R.Internal.SEXP s ty -> r)
+                   (err :: Language.R.Matcher.MatcherError s -> r) ->
+                 case ds2 of wild { Foreign.R.Internal.SomeSEXP a dt ->
+                 case (Foreign.R.Type.$fSingKindSEXPTYPE_$cfromSing @ ty p)
+                        `cast`
+                      (Sub (Foreign.R.Type.D:R:DemoteSEXPTYPE[0])) of x1 { DEFAULT ->
+                 case {__pkg_ccall inline-r-0.9.0.2-CmRL2Hikuao7dNZScoizZz GHC.Prim.Addr#
+                                                                           -> GHC.Prim.State#
+                                                                                GHC.Prim.RealWorld
+                                                                           -> (# GHC.Prim.State#
+                                                                                   GHC.Prim.RealWorld,
+                                                                                 GHC.Prim.Int# #)}
+                        dt
+                        GHC.Prim.realWorld# of wild1 { (#,#) ds3 ds4 ->
+                 let {
+                   $j :: Foreign.R.Type.SEXPTYPE -> r
+                     <join 1> {- Arity: 1, Strictness: <S,U> -}
+                   = \ (x2 :: Foreign.R.Type.SEXPTYPE)[OneShot] ->
+                     case GHC.Prim.dataToTag#
+                            @ Foreign.R.Type.SEXPTYPE
+                            x1 of a# { DEFAULT ->
+                     case GHC.Prim.dataToTag#
+                            @ Foreign.R.Type.SEXPTYPE
+                            x2 of b# { DEFAULT ->
+                     case GHC.Prim.tagToEnum#
+                            @ GHC.Types.Bool
+                            (GHC.Prim.==# a# b#) of wild2 {
+                       GHC.Types.False
+                       -> err
+                            (Language.R.Matcher.TypeMissmatch
+                               @ s
+                               wild
+                               (Foreign.R.Type.$w$ctoEnum (GHC.Prim.narrow32Int# ds4))
+                               x1)
+                       GHC.Types.True
+                       -> ok
+                            (GHC.Ptr.Ptr @ (Language.R.HExp.HExp s a) dt)
+                              `cast`
+                            (Trans
+                                 (GHC.Ptr.Ptr
+                                    <Language.R.HExp.HExp s a, Language.R.HExp.HExp s ty>)_R
+                                 (Sym (Foreign.R.Internal.N:SEXP[0] <s>_P <ty>_P))) } } }
+                 } in
+                 case GHC.Prim.narrow32Int# ds4 of ds5 {
+                   DEFAULT -> case Foreign.R.Type.$fEnumSEXPTYPE28 ret_ty r of {}
+                   0# -> $j Foreign.R.Type.Nil
+                   1# -> $j Foreign.R.Type.Symbol
+                   2# -> $j Foreign.R.Type.List
+                   3# -> $j Foreign.R.Type.Closure
+                   4# -> $j Foreign.R.Type.Env
+                   5# -> $j Foreign.R.Type.Promise
+                   6# -> $j Foreign.R.Type.Lang
+                   7# -> $j Foreign.R.Type.Special
+                   8# -> $j Foreign.R.Type.Builtin
+                   9# -> $j Foreign.R.Type.Char
+                   10# -> $j Foreign.R.Type.Logical
+                   13# -> $j Foreign.R.Type.Int
+                   14# -> $j Foreign.R.Type.Real
+                   15# -> $j Foreign.R.Type.Complex
+                   16# -> $j Foreign.R.Type.String
+                   17# -> $j Foreign.R.Type.DotDotDot
+                   18# -> $j Foreign.R.Type.Any
+                   19# -> $j Foreign.R.Type.Vector
+                   20# -> $j Foreign.R.Type.Expr
+                   21# -> $j Foreign.R.Type.Bytecode
+                   22# -> $j Foreign.R.Type.ExtPtr
+                   23# -> $j Foreign.R.Type.WeakRef
+                   24# -> $j Foreign.R.Type.Raw
+                   25# -> $j Foreign.R.Type.S4
+                   30# -> $j Foreign.R.Type.New
+                   31# -> $j Foreign.R.Type.Free
+                   99# -> $j Foreign.R.Type.Fun } } } }) -}
+d63a578a33cdb0e79d21144165fe72ad
+  rownames :: Language.R.Matcher.Matcher s [GHC.Base.String]
+  {- Arity: 3, Strictness: <S,1*U><L,1*C1(U)><L,C(U)>,
+     Unfolding: InlineRule (0, True, True)
+                Language.R.Matcher.rownames1
+                  `cast`
+                (forall (s :: <*>_N).
+                 Sym (Language.R.Matcher.N:Matcher[0]
+                          <s>_P <[GHC.Base.String]>_R)) -}
+fb9f9081659f5f9e7e454d890a05e352
+  rownames1 ::
+    Foreign.R.Internal.SomeSEXP s
+    -> ([GHC.Base.String] -> r)
+    -> (Language.R.Matcher.MatcherError s -> r)
+    -> r
+  {- Arity: 3, Strictness: <S,1*U><L,1*C1(U)><L,C(U)>,
+     Unfolding: (\ @ s
+                   @ r
+                   (s6 :: Foreign.R.Internal.SomeSEXP s)
+                   (ok :: [GHC.Base.String] -> r)
+                   (err :: Language.R.Matcher.MatcherError s -> r) ->
+                 Language.R.Matcher.attribute1
+                   @ 'Foreign.R.Type.String
+                   @ s
+                   Language.R.Matcher.factor12
+                     `cast`
+                   (Sym (Foreign.R.Type.D:R:SingSEXPTYPEz0[0]) <'Foreign.R.Type.String>_N)
+                   Language.R.Matcher.rownames2
+                   @ r
+                   s6
+                   (\ (o :: Foreign.R.Internal.SEXP
+                              s 'Foreign.R.Type.String)[OneShot] ->
+                    ok (Language.R.Matcher.charList @ s o))
+                   err) -}
+75d30cb6e0c398403c58e2c0ee4a4f61
+  rownames2 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   Language.R.Matcher.rownames3) -}
+0b80c0883e649447bb69d8fe9be5ffb1
+  rownames3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("row.names"#) -}
+5b63f51fe76527e6ec9eaee8713534f4
+  runMatcher ::
+    Language.R.Matcher.Matcher s a
+    -> forall r.
+       Foreign.R.Internal.SomeSEXP s
+       -> (a -> r) -> (Language.R.Matcher.MatcherError s -> r) -> r
+  RecSel Left Language.R.Matcher.Matcher
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, True)
+                (\ @ s @ a (dk :: Language.R.Matcher.Matcher s a) @ r ->
+                 dk `cast` (Language.R.Matcher.N:Matcher[0] <s>_P <a>_R) @ r) -}
+2445d92b01d02ecf4bd3e3eb47b411b0
+  s1 ::
+    [GHC.Base.String]
+    -> forall r.
+       Foreign.R.Internal.SomeSEXP s
+       -> (() -> r) -> (Language.R.Matcher.MatcherError s -> r) -> r
+  {- Arity: 4, Strictness: <L,1*U><S,1*U><L,1*C1(U)><L,C(U)>,
+     Unfolding: (\ @ s
+                   (ns :: [GHC.Base.String])
+                   @ r
+                   (eta :: Foreign.R.Internal.SomeSEXP s)
+                   (eta1 :: () -> r)
+                   (eta2 :: Language.R.Matcher.MatcherError s -> r) ->
+                 Language.R.Matcher.attribute1
+                   @ 'Foreign.R.Type.String
+                   @ s
+                   Language.R.Matcher.factor12
+                     `cast`
+                   (Sym (Foreign.R.Type.D:R:SingSEXPTYPEz0[0]) <'Foreign.R.Type.String>_N)
+                   Language.R.Matcher.factor10
+                   @ r
+                   eta
+                   (\ (o :: Foreign.R.Internal.SEXP
+                              s 'Foreign.R.Type.String)[OneShot] ->
+                    case o `cast`
+                         (Foreign.R.Internal.N:SEXP[0]
+                              <s>_P <'Foreign.R.Type.String>_P) of ww { GHC.Ptr.Ptr ww1 ->
+                    case GHC.Classes.$fEq[]_$s$c==1
+                           ns
+                           (Language.R.Matcher.$wcharList @ s ww1) of wild {
+                      GHC.Types.False
+                      -> eta2 (Language.R.Matcher.$fAlternativeMatcher_$cmempty @ s)
+                      GHC.Types.True -> eta1 GHC.Tuple.() } })
+                   eta2) -}
+eb79ef9963579d4fb888e54854faad54
+  s2 ::
+    Foreign.R.Internal.SomeSEXP s
+    -> (() -> r) -> (Language.R.Matcher.MatcherError s -> r) -> r
+  {- Arity: 3, Strictness: <S,1*U><L,1*C1(U)><L,1*C1(U)>,
+     Unfolding: (\ @ s
+                   @ r
+                   (ds2 :: Foreign.R.Internal.SomeSEXP s)
+                   (ok :: () -> r)
+                   (err :: Language.R.Matcher.MatcherError s -> r) ->
+                 case ds2 of wild { Foreign.R.Internal.SomeSEXP a dt ->
+                 case {__pkg_ccall inline-r-0.9.0.2-CmRL2Hikuao7dNZScoizZz GHC.Prim.Addr#
+                                                                           -> GHC.Prim.State#
+                                                                                GHC.Prim.RealWorld
+                                                                           -> (# GHC.Prim.State#
+                                                                                   GHC.Prim.RealWorld,
+                                                                                 GHC.Prim.Int# #)}
+                        dt
+                        GHC.Prim.realWorld# of wild1 { (#,#) ds3 ds4 ->
+                 case GHC.Prim.tagToEnum#
+                        @ GHC.Types.Bool
+                        (GHC.Prim.># ds4 0#) of wild2 {
+                   GHC.Types.False
+                   -> err
+                        (Language.R.Matcher.TypeMissmatch
+                           @ s
+                           wild
+                           (case {__pkg_ccall inline-r-0.9.0.2-CmRL2Hikuao7dNZScoizZz GHC.Prim.Addr#
+                                                                                      -> GHC.Prim.State#
+                                                                                           GHC.Prim.RealWorld
+                                                                                      -> (# GHC.Prim.State#
+                                                                                              GHC.Prim.RealWorld,
+                                                                                            GHC.Prim.Int# #)}
+                                   dt
+                                   GHC.Prim.realWorld# of wild3 { (#,#) ds5 ds6 ->
+                            Foreign.R.Type.$w$ctoEnum (GHC.Prim.narrow32Int# ds6) })
+                           Foreign.R.Type.S4)
+                   GHC.Types.True -> ok GHC.Tuple.() } } }) -}
+17acf37dbe0468ff16bf610c19f1ce30
+  s3 :: [GHC.Base.String] -> Language.R.Matcher.Matcher s ()
+  {- Arity: 4, Strictness: <L,1*U><S,1*U><L,1*C1(U)><L,C(U)>,
+     Unfolding: InlineRule (0, True, True)
+                Language.R.Matcher.s1
+                  `cast`
+                (forall (s :: <*>_N).
+                 <[GHC.Base.String]>_R
+                 ->_R Sym (Language.R.Matcher.N:Matcher[0] <s>_P <()>_R)) -}
+5cbe0935ad895b8c3d994bc90f0cf35a
+  s4 :: Language.R.Matcher.Matcher s ()
+  {- Arity: 3, Strictness: <S,1*U><L,1*C1(U)><L,1*C1(U)>,
+     Unfolding: InlineRule (0, True, True)
+                Language.R.Matcher.s2
+                  `cast`
+                (forall (s :: <*>_N).
+                 Sym (Language.R.Matcher.N:Matcher[0] <s>_P <()>_R)) -}
+ffc63033207218118f0f82cc5f56fc85
+  sexp ::
+    Foreign.R.Type.SSEXPTYPE ty
+    -> Language.R.Matcher.Matcher s (Foreign.R.Internal.SEXP s ty)
+  {- Arity: 4, Strictness: <S,1*U><S,1*U><L,1*C1(U)><L,1*C1(U)>,
+     Unfolding: InlineRule (0, True, True)
+                Language.R.Matcher.null3
+                  `cast`
+                (forall (ty :: <Foreign.R.Type.SEXPTYPE>_N) (s :: <*>_N).
+                 <Foreign.R.Type.SSEXPTYPE ty>_R
+                 ->_R Sym (Language.R.Matcher.N:Matcher[0]
+                               <s>_P <Foreign.R.Internal.SEXP s ty>_R)) -}
+77ea788e5be0852a1d4f1c3594c810ea
+  someAttribute ::
+    GHC.Base.String
+    -> Language.R.Matcher.Matcher s (Foreign.R.Internal.SomeSEXP s)
+  {- Arity: 4, Strictness: <L,U><S,1*U><L,1*C1(U)><L,1*C1(U)>,
+     Unfolding: InlineRule (0, True, True)
+                Language.R.Matcher.lookupAttribute2
+                  `cast`
+                (forall (s :: <*>_N).
+                 <GHC.Base.String>_R
+                 ->_R Sym (Language.R.Matcher.N:Matcher[0]
+                               <s>_P <Foreign.R.Internal.SomeSEXP s>_R)) -}
+58cba72c37d37500e027673720d376ff
+  somesexp ::
+    Language.R.Matcher.Matcher s (Foreign.R.Internal.SomeSEXP s)
+  {- Arity: 3, HasNoCafRefs, Strictness: <L,U><C(S),1*C1(U)><L,A>,
+     Unfolding: InlineRule (0, True, True)
+                Language.R.Matcher.somesexp1
+                  `cast`
+                (forall (s :: <*>_N).
+                 Sym (Language.R.Matcher.N:Matcher[0]
+                          <s>_P <Foreign.R.Internal.SomeSEXP s>_R)) -}
+d6711c0470a50cde3b52a9fb5d82278d
+  somesexp1 ::
+    Foreign.R.Internal.SomeSEXP s
+    -> (Foreign.R.Internal.SomeSEXP s -> r)
+    -> (Language.R.Matcher.MatcherError s -> r)
+    -> r
+  {- Arity: 3, HasNoCafRefs, Strictness: <L,U><C(S),1*C1(U)><L,A>,
+     Unfolding: InlineRule (3, True, True)
+                (\ @ s
+                   @ r
+                   (s6 :: Foreign.R.Internal.SomeSEXP s)
+                   (ok :: Foreign.R.Internal.SomeSEXP s -> r)
+                   (ds2 :: Language.R.Matcher.MatcherError s -> r) ->
+                 ok s6) -}
+931a9b542d870a7b8b7294dcf33fd43e
+  typeOf :: Language.R.Matcher.Matcher s Foreign.R.Type.SEXPTYPE
+  {- Arity: 3, Strictness: <L,1*U><C(S),1*C1(U)><L,A>,
+     Unfolding: InlineRule (0, True, True)
+                Language.R.Matcher.typeOf1
+                  `cast`
+                (forall (s :: <*>_N).
+                 Sym (Language.R.Matcher.N:Matcher[0]
+                          <s>_P <Foreign.R.Type.SEXPTYPE>_R)) -}
+31a8245f7a9f465cb57822d6cd2c684e
+  typeOf1 ::
+    Foreign.R.Internal.SomeSEXP s
+    -> (Foreign.R.Type.SEXPTYPE -> r)
+    -> (Language.R.Matcher.MatcherError s -> r)
+    -> r
+  {- Arity: 3, Strictness: <L,1*U><C(S),1*C1(U)><L,A>,
+     Unfolding: InlineRule (3, True, False)
+                (\ @ s
+                   @ r
+                   (s6 :: Foreign.R.Internal.SomeSEXP s)
+                   (ok :: Foreign.R.Type.SEXPTYPE -> r)
+                   (err :: Language.R.Matcher.MatcherError s -> r) ->
+                 ok
+                   (case s6 of wild { Foreign.R.Internal.SomeSEXP a dt ->
+                    case {__pkg_ccall inline-r-0.9.0.2-CmRL2Hikuao7dNZScoizZz GHC.Prim.Addr#
+                                                                              -> GHC.Prim.State#
+                                                                                   GHC.Prim.RealWorld
+                                                                              -> (# GHC.Prim.State#
+                                                                                      GHC.Prim.RealWorld,
+                                                                                    GHC.Prim.Int# #)}
+                           dt
+                           GHC.Prim.realWorld# of wild1 { (#,#) ds2 ds3 ->
+                    Foreign.R.Type.$w$ctoEnum (GHC.Prim.narrow32Int# ds3) } })) -}
+4734f37d4c019b47e186a9e56e93be82
+  with ::
+    Foreign.R.Internal.SomeSEXP s
+    -> Language.R.Matcher.Matcher s a -> Language.R.Matcher.Matcher s a
+  {- Arity: 5, HasNoCafRefs,
+     Strictness: <L,U><C(C(C(S))),1*C1(C1(C1(U)))><L,A><L,U><L,U>,
+     Unfolding: InlineRule (0, True, True)
+                Language.R.Matcher.with1
+                  `cast`
+                (forall (s :: <*>_N) (a :: <*>_N).
+                 <Foreign.R.Internal.SomeSEXP s>_R
+                 ->_R <Language.R.Matcher.Matcher s a>_R
+                 ->_R Sym (Language.R.Matcher.N:Matcher[0] <s>_P <a>_R)) -}
+3bb64881a5340e0b41d3dd03e9a31275
+  with1 ::
+    Foreign.R.Internal.SomeSEXP s
+    -> Language.R.Matcher.Matcher s a
+    -> forall r.
+       Foreign.R.Internal.SomeSEXP s
+       -> (a -> r) -> (Language.R.Matcher.MatcherError s -> r) -> r
+  {- Arity: 5, HasNoCafRefs,
+     Strictness: <L,U><C(C(C(S))),1*C1(C1(C1(U)))><L,A><L,U><L,U>,
+     Unfolding: InlineRule (5, True, True)
+                (\ @ s
+                   @ a
+                   (s6 :: Foreign.R.Internal.SomeSEXP s)
+                   (p :: Language.R.Matcher.Matcher s a)
+                   @ r
+                   (ds2 :: Foreign.R.Internal.SomeSEXP s)
+                   (ok :: a -> r)
+                   (err :: Language.R.Matcher.MatcherError s -> r) ->
+                 p `cast` (Language.R.Matcher.N:Matcher[0] <s>_P <a>_R)
+                   @ r
+                   s6
+                   ok
+                   err) -}
+instance GHC.Base.Alternative [Language.R.Matcher.Matcher]
+  = Language.R.Matcher.$fAlternativeMatcher
+instance GHC.Base.Applicative [Language.R.Matcher.Matcher]
+  = Language.R.Matcher.$fApplicativeMatcher
+instance GHC.Base.Functor [Language.R.Matcher.Matcher]
+  = Language.R.Matcher.$fFunctorMatcher
+instance GHC.Generics.Generic [Language.R.Matcher.MatcherError]
+  = Language.R.Matcher.$fGenericMatcherError
+instance GHC.Base.Monad [Language.R.Matcher.Matcher]
+  = Language.R.Matcher.$fMonadMatcher
+instance GHC.Base.Monoid [Language.R.Matcher.MatcherError]
+  = Language.R.Matcher.$fMonoidMatcherError
+instance Control.DeepSeq.NFData [Language.R.Matcher.MatcherError]
+  = Language.R.Matcher.$fNFDataMatcherError
+instance GHC.Show.Show [Language.R.Matcher.MatcherError]
+  = Language.R.Matcher.$fShowMatcherError
+family instance GHC.Generics.Rep [Language.R.Matcher.MatcherError]
+  = Language.R.Matcher.Rep_MatcherError
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: none
+require own pkg trusted: False
+

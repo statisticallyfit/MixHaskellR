@@ -1,0 +1,2833 @@
+
+==================== FINAL INTERFACE ====================
+2017-12-28 08:49:04.746534 UTC
+
+interface inline-r-0.9.0.2-CmRL2Hikuao7dNZScoizZz:Foreign.R.Internal 8022
+  interface hash: 65e4672dcf635a5c2de859986123c19e
+  ABI hash: 0950ef2cc999f128080e9690ff115a12
+  export-list hash: ebf5f0f68a41d7c6be7eda742c07c975
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: 6bcc5c217b25ae525132e142877fffbd
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Foreign.R.Internal.asTypeOf
+  Foreign.R.Internal.baseEnv
+  Foreign.R.Internal.cAttrib
+  Foreign.R.Internal.cGCCLS
+  Foreign.R.Internal.cGCGEN
+  Foreign.R.Internal.cIntConv
+  Foreign.R.Internal.cIntFromEnum
+  Foreign.R.Internal.cIntToEnum
+  Foreign.R.Internal.cLEVELS
+  Foreign.R.Internal.cMARK
+  Foreign.R.Internal.cNAMED
+  Foreign.R.Internal.cOBJECT
+  Foreign.R.Internal.cRDEBUG
+  Foreign.R.Internal.cRSTEP
+  Foreign.R.Internal.cRTRACE
+  Foreign.R.Internal.cSETLEVELS
+  Foreign.R.Internal.cSET_GCCLS
+  Foreign.R.Internal.cSET_GCGEN
+  Foreign.R.Internal.cSET_MARK
+  Foreign.R.Internal.cSET_NAMED
+  Foreign.R.Internal.cSET_OBJECT
+  Foreign.R.Internal.cSET_RDEBUG
+  Foreign.R.Internal.cSET_RSTEP
+  Foreign.R.Internal.cSET_RTRACE
+  Foreign.R.Internal.cSET_TYPEOF
+  Foreign.R.Internal.cTYPEOF
+  Foreign.R.Internal.cUIntFromSingEnum
+  Foreign.R.Internal.cast
+  Foreign.R.Internal.cgetAttrib
+  Foreign.R.Internal.cisS4
+  Foreign.R.Internal.csetAttrib
+  Foreign.R.Internal.emptyEnv
+  Foreign.R.Internal.getAttribute
+  Foreign.R.Internal.getAttributes
+  Foreign.R.Internal.globalEnv
+  Foreign.R.Internal.interruptsPending
+  Foreign.R.Internal.isRInteractive
+  Foreign.R.Internal.isS4
+  Foreign.R.Internal.length
+  Foreign.R.Internal.mark
+  Foreign.R.Internal.missingArg
+  Foreign.R.Internal.named
+  Foreign.R.Internal.nilValue
+  Foreign.R.Internal.peekInfo
+  Foreign.R.Internal.pokeInfo
+  Foreign.R.Internal.release
+  Foreign.R.Internal.setAttributes
+  Foreign.R.Internal.setCar
+  Foreign.R.Internal.setCdr
+  Foreign.R.Internal.setTag
+  Foreign.R.Internal.sexp
+  Foreign.R.Internal.signalHandlers
+  Foreign.R.Internal.somesexp
+  Foreign.R.Internal.typeOf
+  Foreign.R.Internal.unSomeSEXP
+  Foreign.R.Internal.unboundValue
+  Foreign.R.Internal.unsafeCast
+  Foreign.R.Internal.unsafeCoerce
+  Foreign.R.Internal.unsafeRelease
+  Foreign.R.Internal.unsafeSEXPToVectorPtr
+  Foreign.R.Internal.unsafeVectorPtrToSEXP
+  Foreign.R.Internal.unsexp
+  Foreign.R.Internal.SEXP{Foreign.R.Internal.SEXP unSEXP}
+  Foreign.R.Internal.SEXP0
+  Foreign.R.Internal.SEXPInfo{Foreign.R.Internal.SEXPInfo infoDebug infoGcCls infoGcGen infoGp infoMark infoNamed infoObj infoSpare infoTrace infoType}
+  Foreign.R.Internal.SEXPREC
+  Foreign.R.Internal.SomeSEXP{Foreign.R.Internal.SomeSEXP}
+module dependencies: Control.Memory.Region Foreign.R.Constraints
+                     Foreign.R.Type Internal.Error Language.R.HExp [boot]
+package dependencies: array-0.5.2.0 base-4.10.1.0 binary-0.8.5.1
+                      bytestring-0.10.8.2 containers-0.5.10.2 deepseq-1.4.3.0
+                      ghc-boot-th-8.2.2 ghc-prim-0.5.1.1 integer-gmp-1.0.1.0 mtl-2.2.1
+                      pretty-1.1.3.3 primitive-0.6.2.0 safe-0.3.15 singletons-2.3.1
+                      syb-0.7 template-haskell-2.12.0.0 text-1.2.2.2 th-desugar-1.7
+                      th-expand-syns-0.4.3.0 th-lift-0.7.7 th-lift-instances-0.1.11
+                      th-orphans-0.13.4 th-reify-many-0.1.8 transformers-0.5.2.0
+                      vector-0.12.0.1
+orphans: singletons-2.3.1:Data.Singletons.TypeLits
+         singletons-2.3.1:Data.Singletons.TypeLits.Internal
+         singletons-2.3.1:Data.Singletons.Prelude.Instances
+         singletons-2.3.1:Data.Singletons.Decide
+         th-orphans-0.13.4:Language.Haskell.TH.Instances
+         th-lift-instances-0.1.11:Instances.TH.Lift
+         th-lift-0.7.7:Language.Haskell.TH.Lift text-1.2.2.2:Data.Text.Lazy
+         text-1.2.2.2:Data.Text binary-0.8.5.1:Data.Binary.Generic
+         bytestring-0.10.8.2:Data.ByteString.Builder
+         text-1.2.2.2:Data.Text.Show vector-0.12.0.1:Data.Vector.Unboxed
+         vector-0.12.0.1:Data.Vector.Fusion.Bundle
+         transformers-0.5.2.0:Control.Monad.Trans.Error
+         syb-0.7:Data.Generics.Instances base-4.10.1.0:GHC.Float
+         base-4.10.1.0:GHC.Base
+family instance modules: base-4.10.1.0:Control.Applicative
+                         base-4.10.1.0:Data.Complex base-4.10.1.0:Data.Either
+                         base-4.10.1.0:Data.Functor.Compose base-4.10.1.0:Data.Functor.Const
+                         base-4.10.1.0:Data.Functor.Identity
+                         base-4.10.1.0:Data.Functor.Product base-4.10.1.0:Data.Functor.Sum
+                         base-4.10.1.0:Data.List.NonEmpty base-4.10.1.0:Data.Monoid
+                         base-4.10.1.0:Data.Semigroup base-4.10.1.0:Data.Type.Equality
+                         base-4.10.1.0:Data.Version base-4.10.1.0:Data.Void
+                         base-4.10.1.0:GHC.Exts base-4.10.1.0:GHC.Generics
+                         base-4.10.1.0:GHC.IO.Exception base-4.10.1.0:GHC.TypeLits
+                         base-4.10.1.0:GHC.TypeNats containers-0.5.10.2:Data.IntMap.Internal
+                         containers-0.5.10.2:Data.IntSet.Internal
+                         containers-0.5.10.2:Data.Map.Internal
+                         containers-0.5.10.2:Data.Sequence.Internal
+                         containers-0.5.10.2:Data.Set.Internal containers-0.5.10.2:Data.Tree
+                         ghc-boot-th-8.2.2:GHC.ForeignSrcLang.Type
+                         ghc-boot-th-8.2.2:GHC.LanguageExtensions.Type
+                         inline-r-0.9.0.2-CmRL2Hikuao7dNZScoizZz:Control.Memory.Region
+                         inline-r-0.9.0.2-CmRL2Hikuao7dNZScoizZz:Foreign.R.Type
+                         pretty-1.1.3.3:Text.PrettyPrint.Annotated.HughesPJ
+                         pretty-1.1.3.3:Text.PrettyPrint.HughesPJ
+                         primitive-0.6.2.0:Control.Monad.Primitive
+                         primitive-0.6.2.0:Data.Primitive.Array
+                         singletons-2.3.1:Data.Singletons
+                         singletons-2.3.1:Data.Singletons.Prelude.Bool
+                         singletons-2.3.1:Data.Singletons.Prelude.Eq
+                         singletons-2.3.1:Data.Singletons.Prelude.Instances
+                         singletons-2.3.1:Data.Singletons.Prelude.Num
+                         singletons-2.3.1:Data.Singletons.Prelude.Ord
+                         singletons-2.3.1:Data.Singletons.Syntax
+                         singletons-2.3.1:Data.Singletons.TypeLits
+                         singletons-2.3.1:Data.Singletons.TypeLits.Internal
+                         template-haskell-2.12.0.0:Language.Haskell.TH.Syntax
+                         text-1.2.2.2:Data.Text text-1.2.2.2:Data.Text.Lazy
+                         th-desugar-1.7:Language.Haskell.TH.Desugar.Core
+                         vector-0.12.0.1:Data.Vector vector-0.12.0.1:Data.Vector.Primitive
+                         vector-0.12.0.1:Data.Vector.Storable
+                         vector-0.12.0.1:Data.Vector.Unboxed
+                         vector-0.12.0.1:Data.Vector.Unboxed.Base
+import  -/  base-4.10.1.0:Control.Applicative 99577a9c463ffe4790a1d37547a345bd
+import  -/  base-4.10.1.0:Data.Functor 2ffda4f936b8f474394d93205750aff3
+import  -/  base-4.10.1.0:Foreign 6e1e49cc01b9f846dbcb01cc4a57d323
+import  -/  base-4.10.1.0:Foreign.C f34e348e91247a99e0eb5a41b6102351
+import  -/  base-4.10.1.0:Foreign.C.Types 936c0db027291520097b61fd8686710a
+import  -/  base-4.10.1.0:Foreign.Storable c463817097bdd1b4c7f7c325680a9964
+import  -/  base-4.10.1.0:GHC.Base 782fd99b5e36f3698a26179a49afca64
+import  -/  base-4.10.1.0:GHC.Enum 5a1ba50c23f92f669e01f8955f202337
+import  -/  base-4.10.1.0:GHC.Err 514b3a24b22e9d7d731c2d0d02d10842
+import  -/  base-4.10.1.0:GHC.Ptr f6ff03f1ebd95f085d6be4b1fdb71ff8
+import  -/  base-4.10.1.0:GHC.Real 3c62834bc25e762eabc44149c4cc142d
+import  -/  base-4.10.1.0:GHC.Show 0a8ce2b5e533d1c2cfb7954e6736be45
+import  -/  base-4.10.1.0:Prelude 31945b7d0084063347fc52506d3a4020
+import  -/  deepseq-1.4.3.0:Control.DeepSeq 9eeb1cba615a0eb5ceba9a811a507265
+import  -/  ghc-prim-0.5.1.1:GHC.Classes 93e2660065dce9329577e83d76d8f0d4
+import  -/  ghc-prim-0.5.1.1:GHC.Types b1fd0716441595db508c1a74387bf394
+import  -/  Control.Memory.Region bd2f465c2e25d1f80c1a2e359d1309ef
+  exports: d60c5e1550fee34b0484ba752c6d17b8
+  <= 1ba7814c92b0c18077a114946a184b95
+  G 3ce3fee8a04a17dabda37b338439be4c
+import  -/  Foreign.R.Type c66cc062d80b456888eb0e05aa6a4002
+  exports: 5754d5cde3f2758aa360e9e8b66ebc71
+  Env e1a632c9d1d6cbdbf86e3a47e2532589
+  IsVector dd85b2d9ae3c40d713f260e06d8370c5
+  Nil 36bcb069ae5a9368ced2bacefcf86560
+  SEXPTYPE 155aac0ce58f46653dea12e588ab4eb0
+  SSEXPTYPE 01bde09c1432a58c48c6a6c3ae653c47
+  Symbol b075a8e4ed98a88def156c76f406cf71
+import  -/  Language.R.HExp 8da1953fd15113c7b035ce87337813bb
+  exports: 51e0a6288db3a7c2e94eec6b3f9a17a5
+  HExp a2955c107a6d49c1260dd3641993e4da
+import  -/  primitive-0.6.2.0:Control.Monad.Primitive 51a1d708ce9627dfc5884be7480b4b76
+import  -/  singletons-2.3.1:Data.Singletons 9da68ca382f47f0899b26cbacf532ec5
+addDependentFile "src/Foreign/R/Internal.hsc"
+addDependentFile "/datascience/bin/stack/programs/x86_64-linux/ghc-8.2.2/lib/ghc-8.2.2/include/ghcversion.h"
+addDependentFile ".stack-work/dist/x86_64-linux/Cabal-2.0.1.0/build/autogen/cabal_macros.h"
+addDependentFile "/usr/include/stdc-predef.h"
+8e71af79acc64eda5f9cb7291bf461df
+  $fEqSEXP :: GHC.Classes.Eq (Foreign.R.Internal.SEXP s a)
+  DFunId
+  {- HasNoCafRefs, Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun: @ s @ a :: Foreign.R.Type.SEXPTYPE.
+                  @ (Foreign.R.Internal.SEXP s a)
+                  (GHC.Ptr.$fEqPtr_$c== @ (Language.R.HExp.HExp s a))
+                    `cast`
+                  (Sym (Foreign.R.Internal.N:SEXP[0] <s>_P <a>_P)
+                   ->_R Sym (Foreign.R.Internal.N:SEXP[0] <s>_P <a>_P)
+                   ->_R <GHC.Types.Bool>_R)
+                  (GHC.Ptr.$fEqPtr_$c/= @ (Language.R.HExp.HExp s a))
+                    `cast`
+                  (Sym (Foreign.R.Internal.N:SEXP[0] <s>_P <a>_P)
+                   ->_R Sym (Foreign.R.Internal.N:SEXP[0] <s>_P <a>_P)
+                   ->_R <GHC.Types.Bool>_R) -}
+8e71af79acc64eda5f9cb7291bf461df
+  $fNFDataSEXP ::
+    Control.DeepSeq.NFData (Foreign.R.Internal.SEXP s a)
+  DFunId
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*H>,
+     Inline: (sat-args=0),
+     Unfolding: InlineRule (0, False, True)
+                Foreign.R.Internal.$fNFDataSEXP_$crnf
+                  `cast`
+                (forall (s :: <*>_N) (a :: <Foreign.R.Type.SEXPTYPE>_N).
+                 Sym (Control.DeepSeq.N:NFData[0]
+                          <Foreign.R.Internal.SEXP s a>_N)) -}
+8e71af79acc64eda5f9cb7291bf461df
+  $fNFDataSEXP_$crnf :: Foreign.R.Internal.SEXP s a -> ()
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*H>,
+     Unfolding: InlineRule (1, True, False)
+                (\ @ s
+                   @ a :: Foreign.R.Type.SEXPTYPE
+                   (ds :: Foreign.R.Internal.SEXP s a) ->
+                 case ds
+                        `cast`
+                      (Foreign.R.Internal.N:SEXP[0]
+                           <s>_P <a>_P) of nt { GHC.Ptr.Ptr ipv ->
+                 GHC.Tuple.() }) -}
+870de88561703105d28633d6a8e2294b
+  $fNFDataSomeSEXP ::
+    Control.DeepSeq.NFData (Foreign.R.Internal.SomeSEXP s)
+  DFunId
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>,
+     Inline: (sat-args=0),
+     Unfolding: InlineRule (0, False, True)
+                Foreign.R.Internal.$fNFDataSomeSEXP_$crnf
+                  `cast`
+                (forall (s :: <*>_N).
+                 Sym (Control.DeepSeq.N:NFData[0]
+                          <Foreign.R.Internal.SomeSEXP s>_N)) -}
+870de88561703105d28633d6a8e2294b
+  $fNFDataSomeSEXP_$crnf :: Foreign.R.Internal.SomeSEXP s -> ()
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ @ s (ds :: Foreign.R.Internal.SomeSEXP s) ->
+                 case ds of ds1 { Foreign.R.Internal.SomeSEXP ipv ipv1 ->
+                 GHC.Tuple.() }) -}
+8e71af79acc64eda5f9cb7291bf461df
+  $fOrdSEXP :: GHC.Classes.Ord (Foreign.R.Internal.SEXP s a)
+  DFunId
+  {- HasNoCafRefs, Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun: @ s @ a :: Foreign.R.Type.SEXPTYPE.
+                  @ (Foreign.R.Internal.SEXP s a)
+                  (Foreign.R.Internal.$fEqSEXP @ s @ a)
+                  (GHC.Ptr.$fOrdPtr_$ccompare @ (Language.R.HExp.HExp s a))
+                    `cast`
+                  (Sym (Foreign.R.Internal.N:SEXP[0] <s>_P <a>_P)
+                   ->_R Sym (Foreign.R.Internal.N:SEXP[0] <s>_P <a>_P)
+                   ->_R <GHC.Types.Ordering>_R)
+                  (GHC.Ptr.$fOrdPtr_$c< @ (Language.R.HExp.HExp s a))
+                    `cast`
+                  (Sym (Foreign.R.Internal.N:SEXP[0] <s>_P <a>_P)
+                   ->_R Sym (Foreign.R.Internal.N:SEXP[0] <s>_P <a>_P)
+                   ->_R <GHC.Types.Bool>_R)
+                  (GHC.Ptr.$fOrdPtr_$c<= @ (Language.R.HExp.HExp s a))
+                    `cast`
+                  (Sym (Foreign.R.Internal.N:SEXP[0] <s>_P <a>_P)
+                   ->_R Sym (Foreign.R.Internal.N:SEXP[0] <s>_P <a>_P)
+                   ->_R <GHC.Types.Bool>_R)
+                  (GHC.Ptr.$fOrdPtr_$c> @ (Language.R.HExp.HExp s a))
+                    `cast`
+                  (Sym (Foreign.R.Internal.N:SEXP[0] <s>_P <a>_P)
+                   ->_R Sym (Foreign.R.Internal.N:SEXP[0] <s>_P <a>_P)
+                   ->_R <GHC.Types.Bool>_R)
+                  (GHC.Ptr.$fOrdPtr_$c>= @ (Language.R.HExp.HExp s a))
+                    `cast`
+                  (Sym (Foreign.R.Internal.N:SEXP[0] <s>_P <a>_P)
+                   ->_R Sym (Foreign.R.Internal.N:SEXP[0] <s>_P <a>_P)
+                   ->_R <GHC.Types.Bool>_R)
+                  (GHC.Ptr.$fOrdPtr_$cmax @ (Language.R.HExp.HExp s a))
+                    `cast`
+                  (Sym (Foreign.R.Internal.N:SEXP[0] <s>_P <a>_P)
+                   ->_R Sym (Foreign.R.Internal.N:SEXP[0] <s>_P <a>_P)
+                   ->_R Sym (Foreign.R.Internal.N:SEXP[0] <s>_P <a>_P))
+                  (GHC.Ptr.$fOrdPtr_$cmin @ (Language.R.HExp.HExp s a))
+                    `cast`
+                  (Sym (Foreign.R.Internal.N:SEXP[0] <s>_P <a>_P)
+                   ->_R Sym (Foreign.R.Internal.N:SEXP[0] <s>_P <a>_P)
+                   ->_R Sym (Foreign.R.Internal.N:SEXP[0] <s>_P <a>_P)) -}
+8e71af79acc64eda5f9cb7291bf461df
+  $fShowSEXP :: GHC.Show.Show (Foreign.R.Internal.SEXP s a)
+  DFunId
+  {- Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun: @ s @ a :: Foreign.R.Type.SEXPTYPE.
+                  @ (Foreign.R.Internal.SEXP s a)
+                  (Foreign.R.Internal.$fShowSEXP_$cshowsPrec @ s @ a)
+                  (Foreign.R.Internal.$fShowSEXP_$cshow @ s @ a)
+                  (Foreign.R.Internal.$fShowSEXP_$cshowList @ s @ a) -}
+8e71af79acc64eda5f9cb7291bf461df
+  $fShowSEXP1 ::
+    Foreign.R.Internal.SEXP s a -> GHC.Base.String -> [GHC.Types.Char]
+  {- Arity: 2, Strictness: <S(S),1*U(U)><L,1*U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ @ s
+                   @ a :: Foreign.R.Type.SEXPTYPE
+                   (x :: Foreign.R.Internal.SEXP s a)
+                   (s1 :: GHC.Base.String)[OneShot] ->
+                 case x `cast`
+                      (Foreign.R.Internal.N:SEXP[0]
+                           <s>_P <a>_P) of ww { GHC.Ptr.Ptr ww1 ->
+                 case GHC.Ptr.$w$cshowsPrec
+                        @ (Language.R.HExp.HExp s a)
+                        ww1
+                        (GHC.Types.[] @ GHC.Types.Char) of ww2 { (#,#) ww3 ww4 ->
+                 GHC.Base.augment
+                   @ GHC.Types.Char
+                   (\ @ b
+                      (c :: GHC.Types.Char -> b -> b)[OneShot]
+                      (n :: b)[OneShot] ->
+                    GHC.Base.foldr
+                      @ GHC.Types.Char
+                      @ b
+                      c
+                      n
+                      (GHC.Types.: @ GHC.Types.Char ww3 ww4))
+                   s1 } }) -}
+d987a3d74a29c27a7f56da4895135b7b
+  $fShowSEXPInfo :: GHC.Show.Show Foreign.R.Internal.SEXPInfo
+  DFunId
+  {- Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ Foreign.R.Internal.SEXPInfo
+                  Foreign.R.Internal.$fShowSEXPInfo_$cshowsPrec
+                  Foreign.R.Internal.$fShowSEXPInfo_$cshow
+                  Foreign.R.Internal.$fShowSEXPInfo_$cshowList -}
+d987a3d74a29c27a7f56da4895135b7b
+  $fShowSEXPInfo1 :: Foreign.R.Internal.SEXPInfo -> GHC.Show.ShowS
+  {- Arity: 2,
+     Unfolding: (Foreign.R.Internal.$fShowSEXPInfo_$cshowsPrec
+                   Foreign.R.Internal.$fShowSEXPInfo2) -}
+adf690d372fbff23bd4c8a203287c447
+  $fShowSEXPInfo2 :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 0#) -}
+d987a3d74a29c27a7f56da4895135b7b
+  $fShowSEXPInfo_$cshow ::
+    Foreign.R.Internal.SEXPInfo -> GHC.Base.String
+  {- Arity: 1,
+     Strictness: <S,1*U(1*U,1*U,1*U(U),1*U(U),1*U,1*U,1*U,1*U,1*U(U),1*U(U))>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (x :: Foreign.R.Internal.SEXPInfo) ->
+                 Foreign.R.Internal.$fShowSEXPInfo_$cshowsPrec
+                   Foreign.R.Internal.$fShowSEXPInfo2
+                   x
+                   (GHC.Types.[] @ GHC.Types.Char)) -}
+d987a3d74a29c27a7f56da4895135b7b
+  $fShowSEXPInfo_$cshowList ::
+    [Foreign.R.Internal.SEXPInfo] -> GHC.Show.ShowS
+  {- Arity: 2,
+     Unfolding: (GHC.Show.showList__
+                   @ Foreign.R.Internal.SEXPInfo
+                   Foreign.R.Internal.$fShowSEXPInfo1) -}
+d987a3d74a29c27a7f56da4895135b7b
+  $fShowSEXPInfo_$cshowsPrec ::
+    GHC.Types.Int -> Foreign.R.Internal.SEXPInfo -> GHC.Show.ShowS
+  {- Arity: 3,
+     Strictness: <S(S),1*U(U)><S,1*U(1*U,1*U,1*U(U),1*U(U),1*U,1*U,1*U,1*U,1*U(U),1*U(U))><L,U> -}
+8e71af79acc64eda5f9cb7291bf461df
+  $fShowSEXP_$cshow :: Foreign.R.Internal.SEXP s a -> GHC.Base.String
+  {- Arity: 1, Strictness: <S(S),1*U(U)>m2,
+     Unfolding: InlineRule (1, True, True)
+                (\ @ s
+                   @ a :: Foreign.R.Type.SEXPTYPE
+                   (ds :: Foreign.R.Internal.SEXP s a) ->
+                 GHC.Ptr.$fShowPtr_$cshow
+                   @ (Language.R.HExp.HExp s a)
+                   ds `cast` (Foreign.R.Internal.N:SEXP[0] <s>_P <a>_P)) -}
+8e71af79acc64eda5f9cb7291bf461df
+  $fShowSEXP_$cshowList ::
+    [Foreign.R.Internal.SEXP s a] -> GHC.Show.ShowS
+  {- Arity: 2, Strictness: <S,1*U><L,U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ @ s
+                   @ a :: Foreign.R.Type.SEXPTYPE
+                   (ls :: [Foreign.R.Internal.SEXP s a])
+                   (s1 :: GHC.Base.String) ->
+                 GHC.Show.showList__
+                   @ (Foreign.R.Internal.SEXP s a)
+                   (Foreign.R.Internal.$fShowSEXP1 @ s @ a)
+                   ls
+                   s1) -}
+8e71af79acc64eda5f9cb7291bf461df
+  $fShowSEXP_$cshowsPrec ::
+    GHC.Types.Int -> Foreign.R.Internal.SEXP s a -> GHC.Show.ShowS
+  {- Arity: 3, Strictness: <L,A><S(S),1*U(U)><L,1*U>,
+     Unfolding: InlineRule (3, True, False)
+                (\ @ s
+                   @ a :: Foreign.R.Type.SEXPTYPE
+                   (ds :: GHC.Types.Int)
+                   (x :: Foreign.R.Internal.SEXP s a)
+                   (s1 :: GHC.Base.String) ->
+                 case x `cast`
+                      (Foreign.R.Internal.N:SEXP[0]
+                           <s>_P <a>_P) of ww { GHC.Ptr.Ptr ww1 ->
+                 case GHC.Ptr.$w$cshowsPrec
+                        @ (Language.R.HExp.HExp s a)
+                        ww1
+                        (GHC.Types.[] @ GHC.Types.Char) of ww2 { (#,#) ww3 ww4 ->
+                 GHC.Base.augment
+                   @ GHC.Types.Char
+                   (\ @ b
+                      (c :: GHC.Types.Char -> b -> b)[OneShot]
+                      (n :: b)[OneShot] ->
+                    GHC.Base.foldr
+                      @ GHC.Types.Char
+                      @ b
+                      c
+                      n
+                      (GHC.Types.: @ GHC.Types.Char ww3 ww4))
+                   s1 } }) -}
+870de88561703105d28633d6a8e2294b
+  $fShowSomeSEXP :: GHC.Show.Show (Foreign.R.Internal.SomeSEXP s)
+  DFunId
+  {- Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun: @ s.
+                  @ (Foreign.R.Internal.SomeSEXP s)
+                  (Foreign.R.Internal.$fShowSomeSEXP_$cshowsPrec @ s)
+                  (Foreign.R.Internal.$fShowSomeSEXP_$cshow @ s)
+                  (Foreign.R.Internal.$fShowSomeSEXP_$cshowList @ s) -}
+870de88561703105d28633d6a8e2294b
+  $fShowSomeSEXP1 ::
+    Foreign.R.Internal.SomeSEXP s
+    -> GHC.Base.String -> [GHC.Types.Char]
+  {- Arity: 2, Strictness: <S,1*U><L,1*U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ @ s
+                   (x :: Foreign.R.Internal.SomeSEXP s)
+                   (s1 :: GHC.Base.String)[OneShot] ->
+                 case x of wild { Foreign.R.Internal.SomeSEXP a dt ->
+                 case GHC.Ptr.$w$cshowsPrec
+                        @ (Language.R.HExp.HExp s a)
+                        dt
+                        (GHC.Types.[] @ GHC.Types.Char) of ww2 { (#,#) ww3 ww4 ->
+                 GHC.Base.augment
+                   @ GHC.Types.Char
+                   (\ @ b
+                      (c :: GHC.Types.Char -> b -> b)[OneShot]
+                      (n :: b)[OneShot] ->
+                    GHC.Base.foldr
+                      @ GHC.Types.Char
+                      @ b
+                      c
+                      n
+                      (GHC.Types.: @ GHC.Types.Char ww3 ww4))
+                   s1 } }) -}
+870de88561703105d28633d6a8e2294b
+  $fShowSomeSEXP_$cshow ::
+    Foreign.R.Internal.SomeSEXP s -> GHC.Base.String
+  {- Arity: 1, Strictness: <S,1*U>m2,
+     Unfolding: InlineRule (1, True, False)
+                (\ @ s (s1 :: Foreign.R.Internal.SomeSEXP s) ->
+                 case s1 of wild { Foreign.R.Internal.SomeSEXP a dt ->
+                 case GHC.Ptr.$w$cshowsPrec
+                        @ (Language.R.HExp.HExp s a)
+                        dt
+                        (GHC.Types.[] @ GHC.Types.Char) of ww2 { (#,#) ww3 ww4 ->
+                 GHC.Types.: @ GHC.Types.Char ww3 ww4 } }) -}
+870de88561703105d28633d6a8e2294b
+  $fShowSomeSEXP_$cshowList ::
+    [Foreign.R.Internal.SomeSEXP s] -> GHC.Show.ShowS
+  {- Arity: 2, Strictness: <S,1*U><L,U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ @ s
+                   (ls :: [Foreign.R.Internal.SomeSEXP s])
+                   (s1 :: GHC.Base.String) ->
+                 GHC.Show.showList__
+                   @ (Foreign.R.Internal.SomeSEXP s)
+                   (Foreign.R.Internal.$fShowSomeSEXP1 @ s)
+                   ls
+                   s1) -}
+870de88561703105d28633d6a8e2294b
+  $fShowSomeSEXP_$cshowsPrec ::
+    GHC.Types.Int -> Foreign.R.Internal.SomeSEXP s -> GHC.Show.ShowS
+  {- Arity: 3, Strictness: <L,A><S,1*U><L,1*U>,
+     Unfolding: InlineRule (3, True, False)
+                (\ @ s
+                   (ds :: GHC.Types.Int)
+                   (x :: Foreign.R.Internal.SomeSEXP s)
+                   (s1 :: GHC.Base.String) ->
+                 case x of wild { Foreign.R.Internal.SomeSEXP a dt ->
+                 case GHC.Ptr.$w$cshowsPrec
+                        @ (Language.R.HExp.HExp s a)
+                        dt
+                        (GHC.Types.[] @ GHC.Types.Char) of ww2 { (#,#) ww3 ww4 ->
+                 GHC.Base.augment
+                   @ GHC.Types.Char
+                   (\ @ b
+                      (c :: GHC.Types.Char -> b -> b)[OneShot]
+                      (n :: b)[OneShot] ->
+                    GHC.Base.foldr
+                      @ GHC.Types.Char
+                      @ b
+                      c
+                      n
+                      (GHC.Types.: @ GHC.Types.Char ww3 ww4))
+                   s1 } }) -}
+8e71af79acc64eda5f9cb7291bf461df
+  $fStorableSEXP ::
+    Foreign.Storable.Storable (Foreign.R.Internal.SEXP s a)
+  DFunId
+  {- HasNoCafRefs, Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun: @ s @ a :: Foreign.R.Type.SEXPTYPE.
+                  @ (Foreign.R.Internal.SEXP s a)
+                  (Foreign.Storable.$fStorablePtr_$calignment
+                     @ (Language.R.HExp.HExp s a))
+                    `cast`
+                  (Sym (Foreign.R.Internal.N:SEXP[0] <s>_P <a>_P)
+                   ->_R <GHC.Types.Int>_R)
+                  (Foreign.Storable.$fStorablePtr_$calignment
+                     @ (Language.R.HExp.HExp s a))
+                    `cast`
+                  (Sym (Foreign.R.Internal.N:SEXP[0] <s>_P <a>_P)
+                   ->_R <GHC.Types.Int>_R)
+                  (GHC.Storable.readPtrOffPtr1 @ (Language.R.HExp.HExp s a))
+                    `cast`
+                  (Trans
+                       (<GHC.Ptr.Ptr (GHC.Ptr.Ptr (Language.R.HExp.HExp s a))>_R
+                        ->_R <GHC.Types.Int>_R
+                        ->_R Sym (GHC.Types.N:IO[0]
+                                      <GHC.Ptr.Ptr (Language.R.HExp.HExp s a)>_R))
+                       ((GHC.Ptr.Ptr
+                           <GHC.Ptr.Ptr (Language.R.HExp.HExp s a), Foreign.R.Internal.SEXP
+                                                                      s a>)_R
+                        ->_R <GHC.Types.Int>_R
+                        ->_R (GHC.Types.IO
+                                (Sym (Foreign.R.Internal.N:SEXP[0] <s>_P <a>_P)))_R))
+                  (GHC.Storable.writePtrOffPtr1 @ (Language.R.HExp.HExp s a))
+                    `cast`
+                  (Trans
+                       (<GHC.Ptr.Ptr (GHC.Ptr.Ptr (Language.R.HExp.HExp s a))>_R
+                        ->_R <GHC.Types.Int>_R
+                        ->_R <GHC.Ptr.Ptr (Language.R.HExp.HExp s a)>_R
+                        ->_R Sym (GHC.Types.N:IO[0] <()>_R))
+                       ((GHC.Ptr.Ptr
+                           <GHC.Ptr.Ptr (Language.R.HExp.HExp s a), Foreign.R.Internal.SEXP
+                                                                      s a>)_R
+                        ->_R <GHC.Types.Int>_R
+                        ->_R Sym (Foreign.R.Internal.N:SEXP[0] <s>_P <a>_P)
+                        ->_R <GHC.Types.IO ()>_R))
+                  (Foreign.Storable.$fStorablePtr4 @ (Language.R.HExp.HExp s a))
+                    `cast`
+                  (forall (b :: <*>_N).
+                   Trans
+                       (<GHC.Ptr.Ptr b>_R
+                        ->_R <GHC.Types.Int>_R
+                        ->_R Sym (GHC.Types.N:IO[0]
+                                      <GHC.Ptr.Ptr (Language.R.HExp.HExp s a)>_R))
+                       (<GHC.Ptr.Ptr b>_R
+                        ->_R <GHC.Types.Int>_R
+                        ->_R (GHC.Types.IO
+                                (Sym (Foreign.R.Internal.N:SEXP[0] <s>_P <a>_P)))_R))
+                  (Foreign.Storable.$fStorablePtr3 @ (Language.R.HExp.HExp s a))
+                    `cast`
+                  (forall (b :: <*>_N).
+                   Trans
+                       (<GHC.Ptr.Ptr b>_R
+                        ->_R <GHC.Types.Int>_R
+                        ->_R <GHC.Ptr.Ptr (Language.R.HExp.HExp s a)>_R
+                        ->_R Sym (GHC.Types.N:IO[0] <()>_R))
+                       (<GHC.Ptr.Ptr b>_R
+                        ->_R <GHC.Types.Int>_R
+                        ->_R Sym (Foreign.R.Internal.N:SEXP[0] <s>_P <a>_P)
+                        ->_R <GHC.Types.IO ()>_R))
+                  (Foreign.Storable.$fStorablePtr2 @ (Language.R.HExp.HExp s a))
+                    `cast`
+                  (Trans
+                       (<GHC.Ptr.Ptr (GHC.Ptr.Ptr (Language.R.HExp.HExp s a))>_R
+                        ->_R Sym (GHC.Types.N:IO[0]
+                                      <GHC.Ptr.Ptr (Language.R.HExp.HExp s a)>_R))
+                       ((GHC.Ptr.Ptr
+                           <GHC.Ptr.Ptr (Language.R.HExp.HExp s a), Foreign.R.Internal.SEXP
+                                                                      s a>)_R
+                        ->_R (GHC.Types.IO
+                                (Sym (Foreign.R.Internal.N:SEXP[0] <s>_P <a>_P)))_R))
+                  (Foreign.Storable.$fStorablePtr1 @ (Language.R.HExp.HExp s a))
+                    `cast`
+                  (Trans
+                       (<GHC.Ptr.Ptr (GHC.Ptr.Ptr (Language.R.HExp.HExp s a))>_R
+                        ->_R <GHC.Ptr.Ptr (Language.R.HExp.HExp s a)>_R
+                        ->_R Sym (GHC.Types.N:IO[0] <()>_R))
+                       ((GHC.Ptr.Ptr
+                           <GHC.Ptr.Ptr (Language.R.HExp.HExp s a), Foreign.R.Internal.SEXP
+                                                                      s a>)_R
+                        ->_R Sym (Foreign.R.Internal.N:SEXP[0] <s>_P <a>_P)
+                        ->_R <GHC.Types.IO ()>_R)) -}
+870de88561703105d28633d6a8e2294b
+  $fStorableSomeSEXP ::
+    Foreign.Storable.Storable (Foreign.R.Internal.SomeSEXP s)
+  DFunId
+  {- HasNoCafRefs, Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun: @ s.
+                  @ (Foreign.R.Internal.SomeSEXP s)
+                  (Foreign.R.Internal.$fStorableSomeSEXP_$csizeOf @ s)
+                  (Foreign.R.Internal.$fStorableSomeSEXP_$csizeOf @ s)
+                  (Foreign.R.Internal.$fStorableSomeSEXP6 @ s)
+                    `cast`
+                  (<GHC.Ptr.Ptr (Foreign.R.Internal.SomeSEXP s)>_R
+                   ->_R <GHC.Types.Int>_R
+                   ->_R Sym (GHC.Types.N:IO[0] <Foreign.R.Internal.SomeSEXP s>_R))
+                  (Foreign.R.Internal.$fStorableSomeSEXP5 @ s)
+                    `cast`
+                  (<GHC.Ptr.Ptr (Foreign.R.Internal.SomeSEXP s)>_R
+                   ->_R <GHC.Types.Int>_R
+                   ->_R <Foreign.R.Internal.SomeSEXP s>_R
+                   ->_R Sym (GHC.Types.N:IO[0] <()>_R))
+                  (Foreign.R.Internal.$fStorableSomeSEXP4 @ s)
+                    `cast`
+                  (forall (b :: <*>_N).
+                   <GHC.Ptr.Ptr b>_R
+                   ->_R <GHC.Types.Int>_R
+                   ->_R Sym (GHC.Types.N:IO[0] <Foreign.R.Internal.SomeSEXP s>_R))
+                  (Foreign.R.Internal.$fStorableSomeSEXP3 @ s)
+                    `cast`
+                  (forall (b :: <*>_N).
+                   <GHC.Ptr.Ptr b>_R
+                   ->_R <GHC.Types.Int>_R
+                   ->_R <Foreign.R.Internal.SomeSEXP s>_R
+                   ->_R Sym (GHC.Types.N:IO[0] <()>_R))
+                  (Foreign.R.Internal.$fStorableSomeSEXP2 @ s)
+                    `cast`
+                  (<GHC.Ptr.Ptr (Foreign.R.Internal.SomeSEXP s)>_R
+                   ->_R Sym (GHC.Types.N:IO[0] <Foreign.R.Internal.SomeSEXP s>_R))
+                  (Foreign.R.Internal.$fStorableSomeSEXP1 @ s)
+                    `cast`
+                  (<GHC.Ptr.Ptr (Foreign.R.Internal.SomeSEXP s)>_R
+                   ->_R <Foreign.R.Internal.SomeSEXP s>_R
+                   ->_R Sym (GHC.Types.N:IO[0] <()>_R)) -}
+870de88561703105d28633d6a8e2294b
+  $fStorableSomeSEXP1 ::
+    GHC.Ptr.Ptr (Foreign.R.Internal.SomeSEXP s)
+    -> Foreign.R.Internal.SomeSEXP s
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+  {- Arity: 3, HasNoCafRefs, Strictness: <S(S),1*U(U)><S,1*U><S,U>,
+     Unfolding: InlineRule (3, True, False)
+                (\ @ s
+                   (ptr :: GHC.Ptr.Ptr (Foreign.R.Internal.SomeSEXP s))
+                   (ds :: Foreign.R.Internal.SomeSEXP s)
+                   (eta :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                 case ds of wild { Foreign.R.Internal.SomeSEXP a dt ->
+                 case ptr
+                        `cast`
+                      (GHC.Ptr.Ptr
+                         <Foreign.R.Internal.SomeSEXP s, GHC.Ptr.Ptr
+                                                           (Language.R.HExp.HExp
+                                                              s a)>)_R of wild1 { GHC.Ptr.Ptr a1 ->
+                 case GHC.Prim.writeAddrOffAddr#
+                        @ GHC.Prim.RealWorld
+                        a1
+                        0#
+                        dt
+                        eta of s2 { DEFAULT ->
+                 (# s2, GHC.Tuple.() #) } } }) -}
+870de88561703105d28633d6a8e2294b
+  $fStorableSomeSEXP2 ::
+    GHC.Ptr.Ptr (Foreign.R.Internal.SomeSEXP s)
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+          Foreign.R.Internal.SomeSEXP s #)
+  {- Arity: 2, HasNoCafRefs, Strictness: <S(S),1*U(U)><S,U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ @ s
+                   (ptr :: GHC.Ptr.Ptr (Foreign.R.Internal.SomeSEXP s))
+                   (s1 :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                 case ptr
+                        `cast`
+                      (GHC.Ptr.Ptr
+                         <Foreign.R.Internal.SomeSEXP s, GHC.Ptr.Ptr
+                                                           (Language.R.HExp.HExp
+                                                              s
+                                                              GHC.Types.Any)>)_R of wild { GHC.Ptr.Ptr a1 ->
+                 case GHC.Prim.readAddrOffAddr#
+                        @ GHC.Prim.RealWorld
+                        a1
+                        0#
+                        s1 of ds2 { (#,#) ipv ipv1 ->
+                 (# ipv,
+                    Foreign.R.Internal.SomeSEXP @ s @ GHC.Types.Any ipv1 #) } }) -}
+870de88561703105d28633d6a8e2294b
+  $fStorableSomeSEXP3 ::
+    GHC.Ptr.Ptr b
+    -> GHC.Types.Int
+    -> Foreign.R.Internal.SomeSEXP s
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+  {- Arity: 4, HasNoCafRefs,
+     Strictness: <S(S),1*U(U)><S(S),1*U(U)><S,1*U><S,U>,
+     Unfolding: InlineRule (4, True, False)
+                (\ @ s
+                   @ b
+                   (ptr :: GHC.Ptr.Ptr b)
+                   (off :: GHC.Types.Int)
+                   (eta :: Foreign.R.Internal.SomeSEXP s)
+                   (eta1 :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                 case eta of wild { Foreign.R.Internal.SomeSEXP a dt ->
+                 case ptr of wild1 { GHC.Ptr.Ptr addr ->
+                 case off of wild2 { GHC.Types.I# d ->
+                 case GHC.Prim.writeAddrOffAddr#
+                        @ GHC.Prim.RealWorld
+                        (GHC.Prim.plusAddr# addr d)
+                        0#
+                        dt
+                        eta1 of s2 { DEFAULT ->
+                 (# s2, GHC.Tuple.() #) } } } }) -}
+870de88561703105d28633d6a8e2294b
+  $fStorableSomeSEXP4 ::
+    GHC.Ptr.Ptr b
+    -> GHC.Types.Int
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+          Foreign.R.Internal.SomeSEXP s #)
+  {- Arity: 3, HasNoCafRefs,
+     Strictness: <S(S),1*U(U)><S(S),1*U(U)><S,U>,
+     Unfolding: InlineRule (3, True, False)
+                (\ @ s
+                   @ b
+                   (ptr :: GHC.Ptr.Ptr b)
+                   (off :: GHC.Types.Int)
+                   (s1 :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                 case ptr of wild { GHC.Ptr.Ptr addr ->
+                 case off of wild1 { GHC.Types.I# d ->
+                 case GHC.Prim.readAddrOffAddr#
+                        @ GHC.Prim.RealWorld
+                        (GHC.Prim.plusAddr# addr d)
+                        0#
+                        s1 of ds2 { (#,#) ipv ipv1 ->
+                 (# ipv,
+                    Foreign.R.Internal.SomeSEXP @ s @ GHC.Types.Any ipv1 #) } } }) -}
+870de88561703105d28633d6a8e2294b
+  $fStorableSomeSEXP5 ::
+    GHC.Ptr.Ptr (Foreign.R.Internal.SomeSEXP s)
+    -> GHC.Types.Int
+    -> Foreign.R.Internal.SomeSEXP s
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+  {- Arity: 4, HasNoCafRefs,
+     Strictness: <S(S),1*U(U)><S(S),1*U(U)><S,1*U><S,U>,
+     Unfolding: InlineRule (4, True, False)
+                (\ @ s
+                   (ptr :: GHC.Ptr.Ptr (Foreign.R.Internal.SomeSEXP s))
+                   (off :: GHC.Types.Int)
+                   (val :: Foreign.R.Internal.SomeSEXP s)
+                   (eta :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                 case val of wild { Foreign.R.Internal.SomeSEXP a dt ->
+                 case ptr of wild1 { GHC.Ptr.Ptr addr ->
+                 case off of wild2 { GHC.Types.I# x ->
+                 case GHC.Prim.writeAddrOffAddr#
+                        @ GHC.Prim.RealWorld
+                        (GHC.Prim.plusAddr# addr (GHC.Prim.*# x 8#))
+                        0#
+                        dt
+                        eta of s2 { DEFAULT ->
+                 (# s2, GHC.Tuple.() #) } } } }) -}
+870de88561703105d28633d6a8e2294b
+  $fStorableSomeSEXP6 ::
+    GHC.Ptr.Ptr (Foreign.R.Internal.SomeSEXP s)
+    -> GHC.Types.Int
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+          Foreign.R.Internal.SomeSEXP s #)
+  {- Arity: 3, HasNoCafRefs,
+     Strictness: <S(S),1*U(U)><S(S),1*U(U)><S,U>,
+     Unfolding: InlineRule (3, True, False)
+                (\ @ s
+                   (ptr :: GHC.Ptr.Ptr (Foreign.R.Internal.SomeSEXP s))
+                   (off :: GHC.Types.Int)
+                   (eta :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                 case ptr of wild { GHC.Ptr.Ptr addr ->
+                 case off of wild1 { GHC.Types.I# x ->
+                 case GHC.Prim.readAddrOffAddr#
+                        @ GHC.Prim.RealWorld
+                        (GHC.Prim.plusAddr# addr (GHC.Prim.*# x 8#))
+                        0#
+                        eta of ds2 { (#,#) ipv ipv1 ->
+                 (# ipv,
+                    Foreign.R.Internal.SomeSEXP @ s @ GHC.Types.Any ipv1 #) } } }) -}
+870de88561703105d28633d6a8e2294b
+  $fStorableSomeSEXP_$csizeOf ::
+    Foreign.R.Internal.SomeSEXP s -> GHC.Types.Int
+  {- Arity: 1, HasNoCafRefs, Strictness: <L,A>m,
+     Unfolding: InlineRule (1, True, True)
+                (\ @ s (ds :: Foreign.R.Internal.SomeSEXP s) ->
+                 Foreign.Storable.$fStorableDouble5) -}
+6bf23108ebf40dd0850585ef9252eace
+  $tc'SEXP :: GHC.Types.TyCon
+  {- Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   15471003031906280315##
+                   13780789759200873462##
+                   Foreign.R.Internal.$trModule
+                   Foreign.R.Internal.$tc'SEXP2
+                   2#
+                   Foreign.R.Internal.$tc'SEXP1) -}
+21d8effbe6def59fce804f6ce8735038
+  $tc'SEXP1 :: GHC.Types.KindRep
+  {- Strictness: m4, Inline: [~] -}
+51c25bc4103df3cf46327dce7497c762
+  $tc'SEXP2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Foreign.R.Internal.$tc'SEXP3) -}
+bde8fe7c6e34b3942e514fd9d0354c48
+  $tc'SEXP3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'SEXP"#) -}
+71b47117500c88015c833e53f2029061
+  $tc'SEXPInfo :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   12631665150724591913##
+                   12408071467100650099##
+                   Foreign.R.Internal.$trModule
+                   Foreign.R.Internal.$tc'SEXPInfo2
+                   0#
+                   Foreign.R.Internal.$tc'SEXPInfo1) -}
+ff4b08cf1ced8fab920075b339592011
+  $tc'SEXPInfo1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+31b7b474c6bc99fcdbc7f7cbda12d25a
+  $tc'SEXPInfo2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Foreign.R.Internal.$tc'SEXPInfo3) -}
+e2d1bf1a2b6b67c4c1548c2e35c15a24
+  $tc'SEXPInfo3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'SEXPInfo"#) -}
+6ab2723f9db08ba1f0a353d3cbc9f596
+  $tc'SomeSEXP :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   9856721788636614610##
+                   2294268097700227277##
+                   Foreign.R.Internal.$trModule
+                   Foreign.R.Internal.$tc'SomeSEXP2
+                   2#
+                   Foreign.R.Internal.$tc'SomeSEXP1) -}
+35025861199a5ea667f7ce4de1a22737
+  $tc'SomeSEXP1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+461a30087541962768f7dcf2226f0531
+  $tc'SomeSEXP2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Foreign.R.Internal.$tc'SomeSEXP3) -}
+a016144d16eadfeacbce870f3dbcd3bc
+  $tc'SomeSEXP3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'SomeSEXP"#) -}
+0b5feaec13393c4190a2c89bf18aec07
+  $tcSEXP :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   5785710681250284610##
+                   3355196323655419500##
+                   Foreign.R.Internal.$trModule
+                   Foreign.R.Internal.$tcSEXP2
+                   0#
+                   Foreign.R.Internal.$tcSEXP1) -}
+51bcf48bb8835a0d423a8bc0e0ff8ae5
+  $tcSEXP1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+6b634e5c92857b5d39487cb3944ca587
+  $tcSEXP2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Foreign.R.Internal.$tcSEXP3) -}
+7bb3008c611afd76b11a646310d58875
+  $tcSEXP3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("SEXP"#) -}
+2c7fde33607aaef45c0cde681bda57ad
+  $tcSEXPInfo :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   581591567667901094##
+                   18176582205851955686##
+                   Foreign.R.Internal.$trModule
+                   Foreign.R.Internal.$tcSEXPInfo1
+                   0#
+                   GHC.Types.krep$*) -}
+3627a91cc56c7c492c76856cd96d1866
+  $tcSEXPInfo1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Foreign.R.Internal.$tcSEXPInfo2) -}
+1f08aea41fe0f0cf04ca2feed366faf5
+  $tcSEXPInfo2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("SEXPInfo"#) -}
+3d72043bf267a072d7cc4fecfcd84279
+  $tcSEXPREC :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   17950655825365169326##
+                   14026425757964808080##
+                   Foreign.R.Internal.$trModule
+                   Foreign.R.Internal.$tcSEXPREC1
+                   0#
+                   GHC.Types.krep$*) -}
+3e469d8db58240bba5bd0544665953b5
+  $tcSEXPREC1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Foreign.R.Internal.$tcSEXPREC2) -}
+4d9dbcc4df47e81b3724f69c572703c8
+  $tcSEXPREC2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("SEXPREC"#) -}
+71dd6d504dac2722c4c0cb2415e51cc0
+  $tcSomeSEXP :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   17689956504931443822##
+                   7474753319506966607##
+                   Foreign.R.Internal.$trModule
+                   Foreign.R.Internal.$tcSomeSEXP1
+                   0#
+                   GHC.Types.krep$*Arr*) -}
+5e112d806f309e2c46d6609009d96903
+  $tcSomeSEXP1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Foreign.R.Internal.$tcSomeSEXP2) -}
+3d9b2cc72c7b1bf962e9f03ce5307463
+  $tcSomeSEXP2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("SomeSEXP"#) -}
+a6377497b94ad159f7ab26d70eaaac9d
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module
+                   Foreign.R.Internal.$trModule3
+                   Foreign.R.Internal.$trModule1) -}
+d48d905cb61891dc139cfd323fd605df
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Foreign.R.Internal.$trModule2) -}
+edf94989a3b599e28d4376added3fec3
+  $trModule2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Foreign.R.Internal"#) -}
+5252abfbf573c04b4af804397a9ceec8
+  $trModule3 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Foreign.R.Internal.$trModule4) -}
+aa2ac9ad9fb4413b97ace898cd4fa768
+  $trModule4 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("inline-r-0.9.0.2-CmRL2Hikuao7dNZScoizZz"#) -}
+3ebec20eee1835fcea4420408bd4e659
+  $wpeekInfo ::
+    GHC.Prim.Addr#
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+          Foreign.R.Internal.SEXPInfo #)
+  {- Arity: 2, Strictness: <S,U><S,U>, Inline: [0],
+     Unfolding: (\ @ s
+                   @ a :: Foreign.R.Type.SEXPTYPE
+                   (ww :: GHC.Prim.Addr#)
+                   (w :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                 case {__pkg_ccall inline-r-0.9.0.2-CmRL2Hikuao7dNZScoizZz GHC.Prim.Addr#
+                                                                           -> GHC.Prim.State#
+                                                                                GHC.Prim.RealWorld
+                                                                           -> (# GHC.Prim.State#
+                                                                                   GHC.Prim.RealWorld,
+                                                                                 GHC.Prim.Int# #)}
+                        ww
+                        w of wild { (#,#) ds ds1 ->
+                 case {__pkg_ccall inline-r-0.9.0.2-CmRL2Hikuao7dNZScoizZz GHC.Prim.Addr#
+                                                                           -> GHC.Prim.State#
+                                                                                GHC.Prim.RealWorld
+                                                                           -> (# GHC.Prim.State#
+                                                                                   GHC.Prim.RealWorld,
+                                                                                 GHC.Prim.Int# #)}
+                        ww
+                        ds of wild1 { (#,#) ds2 ds3 ->
+                 case {__pkg_ccall inline-r-0.9.0.2-CmRL2Hikuao7dNZScoizZz GHC.Prim.Addr#
+                                                                           -> GHC.Prim.State#
+                                                                                GHC.Prim.RealWorld
+                                                                           -> (# GHC.Prim.State#
+                                                                                   GHC.Prim.RealWorld,
+                                                                                 GHC.Prim.Int# #)}
+                        ww
+                        ds2 of wild2 { (#,#) ds4 ds5 ->
+                 case {__pkg_ccall inline-r-0.9.0.2-CmRL2Hikuao7dNZScoizZz GHC.Prim.Addr#
+                                                                           -> GHC.Prim.State#
+                                                                                GHC.Prim.RealWorld
+                                                                           -> (# GHC.Prim.State#
+                                                                                   GHC.Prim.RealWorld,
+                                                                                 GHC.Prim.Int# #)}
+                        ww
+                        ds4 of wild3 { (#,#) ds6 ds7 ->
+                 case {__pkg_ccall inline-r-0.9.0.2-CmRL2Hikuao7dNZScoizZz GHC.Prim.Addr#
+                                                                           -> GHC.Prim.State#
+                                                                                GHC.Prim.RealWorld
+                                                                           -> (# GHC.Prim.State#
+                                                                                   GHC.Prim.RealWorld,
+                                                                                 GHC.Prim.Int# #)}
+                        ww
+                        ds6 of wild4 { (#,#) ds8 ds9 ->
+                 case {__pkg_ccall inline-r-0.9.0.2-CmRL2Hikuao7dNZScoizZz GHC.Prim.Addr#
+                                                                           -> GHC.Prim.State#
+                                                                                GHC.Prim.RealWorld
+                                                                           -> (# GHC.Prim.State#
+                                                                                   GHC.Prim.RealWorld,
+                                                                                 GHC.Prim.Int# #)}
+                        ww
+                        ds8 of wild5 { (#,#) ds10 ds11 ->
+                 case {__pkg_ccall inline-r-0.9.0.2-CmRL2Hikuao7dNZScoizZz GHC.Prim.Addr#
+                                                                           -> GHC.Prim.State#
+                                                                                GHC.Prim.RealWorld
+                                                                           -> (# GHC.Prim.State#
+                                                                                   GHC.Prim.RealWorld,
+                                                                                 GHC.Prim.Int# #)}
+                        ww
+                        ds10 of wild6 { (#,#) ds12 ds13 ->
+                 case {__pkg_ccall inline-r-0.9.0.2-CmRL2Hikuao7dNZScoizZz GHC.Prim.Addr#
+                                                                           -> GHC.Prim.State#
+                                                                                GHC.Prim.RealWorld
+                                                                           -> (# GHC.Prim.State#
+                                                                                   GHC.Prim.RealWorld,
+                                                                                 GHC.Prim.Int# #)}
+                        ww
+                        ds12 of wild7 { (#,#) ds14 ds15 ->
+                 case {__pkg_ccall inline-r-0.9.0.2-CmRL2Hikuao7dNZScoizZz GHC.Prim.Addr#
+                                                                           -> GHC.Prim.State#
+                                                                                GHC.Prim.RealWorld
+                                                                           -> (# GHC.Prim.State#
+                                                                                   GHC.Prim.RealWorld,
+                                                                                 GHC.Prim.Int# #)}
+                        ww
+                        ds14 of wild8 { (#,#) ds16 ds17 ->
+                 case {__pkg_ccall inline-r-0.9.0.2-CmRL2Hikuao7dNZScoizZz GHC.Prim.Addr#
+                                                                           -> GHC.Prim.State#
+                                                                                GHC.Prim.RealWorld
+                                                                           -> (# GHC.Prim.State#
+                                                                                   GHC.Prim.RealWorld,
+                                                                                 GHC.Prim.Int# #)}
+                        ww
+                        ds16 of wild9 { (#,#) ds18 ds19 ->
+                 (# ds18,
+                    Foreign.R.Internal.SEXPInfo
+                      (Foreign.R.Type.$w$ctoEnum (GHC.Prim.narrow32Int# ds1))
+                      (case GHC.Prim.narrow32Int# ds3 of wild10 {
+                         DEFAULT -> GHC.Types.True 0# -> GHC.Types.False })
+                      (GHC.Types.I# (GHC.Prim.narrow32Int# ds5))
+                      (GHC.Types.I# (GHC.Prim.narrow32Int# ds7))
+                      (case GHC.Prim.narrow32Int# ds9 of wild10 {
+                         DEFAULT -> GHC.Types.True 0# -> GHC.Types.False })
+                      (case GHC.Prim.narrow32Int# ds11 of wild10 {
+                         DEFAULT -> GHC.Types.True 0# -> GHC.Types.False })
+                      (case GHC.Prim.narrow32Int# ds13 of wild10 {
+                         DEFAULT -> GHC.Types.True 0# -> GHC.Types.False })
+                      (case GHC.Prim.narrow32Int# ds15 of wild10 {
+                         DEFAULT -> GHC.Types.True 0# -> GHC.Types.False })
+                      (GHC.Types.I# (GHC.Prim.narrow32Int# ds17))
+                      (GHC.Types.I#
+                         (GHC.Prim.narrow32Int# ds19)) #) } } } } } } } } } }) -}
+09b2903330f86308ffb8133030bfe3f2
+  $wunsafeCast ::
+    Foreign.R.Type.SEXPTYPE
+    -> Foreign.R.Internal.SomeSEXP s -> GHC.Prim.Addr#
+  {- Arity: 2, Strictness: <S,1*U><S,1*U>, Inline: [0] -}
+8e71af79acc64eda5f9cb7291bf461df
+  type role SEXP phantom phantom
+  newtype SEXP s (a :: Foreign.R.Type.SEXPTYPE)
+    = SEXP {unSEXP :: GHC.Ptr.Ptr (Language.R.HExp.HExp s a)}
+4463b9bafb7d3f193b1c6e0e07d4a950
+  type SEXP0 = GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+d987a3d74a29c27a7f56da4895135b7b
+  data SEXPInfo
+    = SEXPInfo {infoType :: Foreign.R.Type.SEXPTYPE,
+                infoObj :: GHC.Types.Bool,
+                infoNamed :: GHC.Types.Int,
+                infoGp :: GHC.Types.Int,
+                infoMark :: GHC.Types.Bool,
+                infoDebug :: GHC.Types.Bool,
+                infoTrace :: GHC.Types.Bool,
+                infoSpare :: GHC.Types.Bool,
+                infoGcGen :: GHC.Types.Int,
+                infoGcCls :: GHC.Types.Int}
+1b84cbcf09dd7c9dc6af42ec9ebe2b6f
+  data SEXPREC
+    C type: {-# CTYPE "SEXPREC" #-}
+870de88561703105d28633d6a8e2294b
+  type role SomeSEXP phantom
+  data SomeSEXP s where
+    SomeSEXP :: ! {-# UNPACK #-}(Foreign.R.Internal.N:SEXP[0]
+                                     <s>_P <a>_P)(Foreign.R.Internal.SEXP s a)
+                -> SomeSEXP s
+332ff88f4929c8b325f84341607c07ab
+  asTypeOf ::
+    Foreign.R.Internal.SomeSEXP s
+    -> Foreign.R.Internal.SEXP s a -> Foreign.R.Internal.SEXP s a
+  {- Arity: 2, Strictness: <L,1*U><S(S),1*U(U)>m,
+     Unfolding: InlineRule (2, True, False)
+                (\ @ s
+                   @ a :: Foreign.R.Type.SEXPTYPE
+                   (s1 :: Foreign.R.Internal.SomeSEXP s)
+                   (s' :: Foreign.R.Internal.SEXP s a) ->
+                 case s'
+                        `cast`
+                      (Trans
+                           (Foreign.R.Internal.N:SEXP[0] <s>_P <a>_P)
+                           (GHC.Ptr.Ptr
+                              <Language.R.HExp.HExp
+                                 s a, Foreign.R.Internal.SEXPREC>)_R) of ds { GHC.Ptr.Ptr ds1 ->
+                 case {__pkg_ccall inline-r-0.9.0.2-CmRL2Hikuao7dNZScoizZz GHC.Prim.Addr#
+                                                                           -> GHC.Prim.State#
+                                                                                GHC.Prim.RealWorld
+                                                                           -> (# GHC.Prim.State#
+                                                                                   GHC.Prim.RealWorld,
+                                                                                 GHC.Prim.Int# #)}
+                        ds1
+                        GHC.Prim.realWorld# of wild { (#,#) ds2 ds3 ->
+                 Foreign.R.Internal.unsafeCast
+                   @ s
+                   @ a
+                   (Foreign.R.Type.$w$ctoEnum (GHC.Prim.narrow32Int# ds3))
+                   s1 } }) -}
+a680e9f5f2917624e572c068d7f0d17d
+  baseEnv ::
+    GHC.Ptr.Ptr
+      (Foreign.R.Internal.SEXP
+         Control.Memory.Region.G 'Foreign.R.Type.Env)
+  {- Strictness: m,
+     Unfolding: (GHC.Ptr.Ptr
+                   @ (Foreign.R.Internal.SEXP
+                        Control.Memory.Region.G 'Foreign.R.Type.Env)
+                   __label "R_BaseEnv" (data)) -}
+a3924805632c6cf85522cd55430ea204
+  cAttrib ::
+    Foreign.R.Internal.SEXP0 -> GHC.Types.IO Foreign.R.Internal.SEXP0
+  {- Arity: 2, HasNoCafRefs, Strictness: <S(S),1*U(U)><S,U>,
+     Unfolding: InlineRule (1, False, False)
+                (\ (ds :: GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC) ->
+                 case ds of ds1 { GHC.Ptr.Ptr ds2 ->
+                 (\ (ds3 :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                  case {__pkg_ccall inline-r-0.9.0.2-CmRL2Hikuao7dNZScoizZz GHC.Prim.Addr#
+                                                                            -> GHC.Prim.State#
+                                                                                 GHC.Prim.RealWorld
+                                                                            -> (# GHC.Prim.State#
+                                                                                    GHC.Prim.RealWorld,
+                                                                                  GHC.Prim.Addr# #)}
+                         ds2
+                         ds3 of wild { (#,#) ds4 ds5 ->
+                  (# ds4, GHC.Ptr.Ptr @ Foreign.R.Internal.SEXPREC ds5 #) })
+                   `cast`
+                 (Sym (GHC.Types.N:IO[0]
+                           <GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC>_R)) }) -}
+5a5c77d002d17a918fb566708db07316
+  cGCCLS ::
+    Foreign.R.Internal.SEXP0 -> GHC.Types.IO Foreign.C.Types.CInt
+  {- Arity: 2, HasNoCafRefs, Strictness: <S(S),1*U(U)><S,U>,
+     Unfolding: InlineRule (1, False, False)
+                (\ (ds :: GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC) ->
+                 case ds of ds1 { GHC.Ptr.Ptr ds2 ->
+                 (\ (ds3 :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                  case {__pkg_ccall inline-r-0.9.0.2-CmRL2Hikuao7dNZScoizZz GHC.Prim.Addr#
+                                                                            -> GHC.Prim.State#
+                                                                                 GHC.Prim.RealWorld
+                                                                            -> (# GHC.Prim.State#
+                                                                                    GHC.Prim.RealWorld,
+                                                                                  GHC.Prim.Int# #)}
+                         ds2
+                         ds3 of wild { (#,#) ds4 ds5 ->
+                  (# ds4, GHC.Int.I32# (GHC.Prim.narrow32Int# ds5) #) })
+                   `cast`
+                 (Sym (GHC.Types.N:IO[0] <GHC.Int.Int32>_R)) })
+                  `cast`
+                (<GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC>_R
+                 ->_R (GHC.Types.IO (Sym (Foreign.C.Types.N:CInt[0])))_R) -}
+1ce7fa07581fa5c545ab6718e4540dc8
+  cGCGEN ::
+    Foreign.R.Internal.SEXP0 -> GHC.Types.IO Foreign.C.Types.CInt
+  {- Arity: 2, HasNoCafRefs, Strictness: <S(S),1*U(U)><S,U>,
+     Unfolding: InlineRule (1, False, False)
+                (\ (ds :: GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC) ->
+                 case ds of ds1 { GHC.Ptr.Ptr ds2 ->
+                 (\ (ds3 :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                  case {__pkg_ccall inline-r-0.9.0.2-CmRL2Hikuao7dNZScoizZz GHC.Prim.Addr#
+                                                                            -> GHC.Prim.State#
+                                                                                 GHC.Prim.RealWorld
+                                                                            -> (# GHC.Prim.State#
+                                                                                    GHC.Prim.RealWorld,
+                                                                                  GHC.Prim.Int# #)}
+                         ds2
+                         ds3 of wild { (#,#) ds4 ds5 ->
+                  (# ds4, GHC.Int.I32# (GHC.Prim.narrow32Int# ds5) #) })
+                   `cast`
+                 (Sym (GHC.Types.N:IO[0] <GHC.Int.Int32>_R)) })
+                  `cast`
+                (<GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC>_R
+                 ->_R (GHC.Types.IO (Sym (Foreign.C.Types.N:CInt[0])))_R) -}
+63fc65115e8534c73b4e318ba309068f
+  cIntConv :: (GHC.Real.Integral a, GHC.Real.Integral b) => a -> b
+  {- Arity: 3, HasNoCafRefs,
+     Strictness: <L,1*U(A,A,A,A,A,A,A,A,1*C1(U))><S(S(S(LLLLLLC(S))LL)LLLLLLLL),1*U(1*U(1*U(A,A,A,A,A,A,1*C1(U)),A,A),A,A,A,A,A,A,A,A)><L,U>,
+     Unfolding: InlineRule (3, True, False)
+                (\ @ a
+                   @ b
+                   ($dIntegral :: GHC.Real.Integral a)
+                   ($dIntegral1 :: GHC.Real.Integral b)
+                   (eta :: a) ->
+                 GHC.Num.fromInteger
+                   @ b
+                   (GHC.Real.$p1Real @ b (GHC.Real.$p1Integral @ b $dIntegral1))
+                   (GHC.Real.toInteger @ a $dIntegral eta)) -}
+d8147e56756d79b654a40384fc956e28
+  cIntFromEnum :: GHC.Enum.Enum a => a -> Foreign.C.Types.CInt
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <S(LLLC(S(S))LLLL),1*U(A,A,A,1*C1(U(U)),A,A,A,A)><L,U>m,
+     Unfolding: InlineRule (0, True, True)
+                Foreign.R.Internal.cIntFromEnum1
+                  `cast`
+                (forall (a :: <*>_N).
+                 <GHC.Enum.Enum a>_R
+                 ->_R <a>_R
+                 ->_R Sym (Foreign.C.Types.N:CInt[0])) -}
+dba8dc73d532aa56dcc063615bbb2ae0
+  cIntFromEnum1 :: GHC.Enum.Enum a => a -> GHC.Int.Int32
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <S(LLLC(S(S))LLLL),1*U(A,A,A,1*C1(U(U)),A,A,A,A)><L,U>m,
+     Unfolding: InlineRule (2, True, False)
+                (\ @ a ($dEnum :: GHC.Enum.Enum a) (eta :: a) ->
+                 case GHC.Enum.fromEnum @ a $dEnum eta of wild { GHC.Types.I# x# ->
+                 GHC.Int.I32# (GHC.Prim.narrow32Int# x#) }) -}
+8995484ee12f3e39b8b40b2472fea40d
+  cIntToEnum :: GHC.Enum.Enum a => Foreign.C.Types.CInt -> a
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <S(LLC(S)LLLLL),1*U(A,A,1*C1(U),A,A,A,A,A)><L,1*U(U)>,
+     Unfolding: InlineRule (2, True, False)
+                (\ @ a ($dEnum :: GHC.Enum.Enum a) (eta :: Foreign.C.Types.CInt) ->
+                 GHC.Enum.toEnum
+                   @ a
+                   $dEnum
+                   (case eta
+                           `cast`
+                         (Foreign.C.Types.N:CInt[0]) of wild { GHC.Int.I32# x# ->
+                    GHC.Types.I# x# })) -}
+00ec36d9724a5e4cfb65bfd0159e487b
+  cLEVELS ::
+    Foreign.R.Internal.SEXP0 -> GHC.Types.IO Foreign.C.Types.CInt
+  {- Arity: 2, HasNoCafRefs, Strictness: <S(S),1*U(U)><S,U>,
+     Unfolding: InlineRule (1, False, False)
+                (\ (ds :: GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC) ->
+                 case ds of ds1 { GHC.Ptr.Ptr ds2 ->
+                 (\ (ds3 :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                  case {__pkg_ccall inline-r-0.9.0.2-CmRL2Hikuao7dNZScoizZz GHC.Prim.Addr#
+                                                                            -> GHC.Prim.State#
+                                                                                 GHC.Prim.RealWorld
+                                                                            -> (# GHC.Prim.State#
+                                                                                    GHC.Prim.RealWorld,
+                                                                                  GHC.Prim.Int# #)}
+                         ds2
+                         ds3 of wild { (#,#) ds4 ds5 ->
+                  (# ds4, GHC.Int.I32# (GHC.Prim.narrow32Int# ds5) #) })
+                   `cast`
+                 (Sym (GHC.Types.N:IO[0] <GHC.Int.Int32>_R)) })
+                  `cast`
+                (<GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC>_R
+                 ->_R (GHC.Types.IO (Sym (Foreign.C.Types.N:CInt[0])))_R) -}
+f8672bb67464ac6202c78486baf06857
+  cMARK ::
+    Foreign.R.Internal.SEXP0 -> GHC.Types.IO Foreign.C.Types.CInt
+  {- Arity: 2, HasNoCafRefs, Strictness: <S(S),1*U(U)><S,U>,
+     Unfolding: InlineRule (1, False, False)
+                (\ (ds :: GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC) ->
+                 case ds of ds1 { GHC.Ptr.Ptr ds2 ->
+                 (\ (ds3 :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                  case {__pkg_ccall inline-r-0.9.0.2-CmRL2Hikuao7dNZScoizZz GHC.Prim.Addr#
+                                                                            -> GHC.Prim.State#
+                                                                                 GHC.Prim.RealWorld
+                                                                            -> (# GHC.Prim.State#
+                                                                                    GHC.Prim.RealWorld,
+                                                                                  GHC.Prim.Int# #)}
+                         ds2
+                         ds3 of wild { (#,#) ds4 ds5 ->
+                  (# ds4, GHC.Int.I32# (GHC.Prim.narrow32Int# ds5) #) })
+                   `cast`
+                 (Sym (GHC.Types.N:IO[0] <GHC.Int.Int32>_R)) })
+                  `cast`
+                (<GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC>_R
+                 ->_R (GHC.Types.IO (Sym (Foreign.C.Types.N:CInt[0])))_R) -}
+4e85944b89ae4a6f56c9bef67865b5a9
+  cNAMED ::
+    Foreign.R.Internal.SEXP0 -> GHC.Types.IO Foreign.C.Types.CInt
+  {- Arity: 2, HasNoCafRefs, Strictness: <S(S),1*U(U)><S,U>,
+     Unfolding: InlineRule (1, False, False)
+                (\ (ds :: GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC) ->
+                 case ds of ds1 { GHC.Ptr.Ptr ds2 ->
+                 (\ (ds3 :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                  case {__pkg_ccall inline-r-0.9.0.2-CmRL2Hikuao7dNZScoizZz GHC.Prim.Addr#
+                                                                            -> GHC.Prim.State#
+                                                                                 GHC.Prim.RealWorld
+                                                                            -> (# GHC.Prim.State#
+                                                                                    GHC.Prim.RealWorld,
+                                                                                  GHC.Prim.Int# #)}
+                         ds2
+                         ds3 of wild { (#,#) ds4 ds5 ->
+                  (# ds4, GHC.Int.I32# (GHC.Prim.narrow32Int# ds5) #) })
+                   `cast`
+                 (Sym (GHC.Types.N:IO[0] <GHC.Int.Int32>_R)) })
+                  `cast`
+                (<GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC>_R
+                 ->_R (GHC.Types.IO (Sym (Foreign.C.Types.N:CInt[0])))_R) -}
+65468ed9064f4541606a93709f4bb490
+  cOBJECT ::
+    Foreign.R.Internal.SEXP0 -> GHC.Types.IO Foreign.C.Types.CInt
+  {- Arity: 2, HasNoCafRefs, Strictness: <S(S),1*U(U)><S,U>,
+     Unfolding: InlineRule (1, False, False)
+                (\ (ds :: GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC) ->
+                 case ds of ds1 { GHC.Ptr.Ptr ds2 ->
+                 (\ (ds3 :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                  case {__pkg_ccall inline-r-0.9.0.2-CmRL2Hikuao7dNZScoizZz GHC.Prim.Addr#
+                                                                            -> GHC.Prim.State#
+                                                                                 GHC.Prim.RealWorld
+                                                                            -> (# GHC.Prim.State#
+                                                                                    GHC.Prim.RealWorld,
+                                                                                  GHC.Prim.Int# #)}
+                         ds2
+                         ds3 of wild { (#,#) ds4 ds5 ->
+                  (# ds4, GHC.Int.I32# (GHC.Prim.narrow32Int# ds5) #) })
+                   `cast`
+                 (Sym (GHC.Types.N:IO[0] <GHC.Int.Int32>_R)) })
+                  `cast`
+                (<GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC>_R
+                 ->_R (GHC.Types.IO (Sym (Foreign.C.Types.N:CInt[0])))_R) -}
+2b721ab6d889da7dd48ad57bbbb6ca88
+  cRDEBUG ::
+    Foreign.R.Internal.SEXP0 -> GHC.Types.IO Foreign.C.Types.CInt
+  {- Arity: 2, HasNoCafRefs, Strictness: <S(S),1*U(U)><S,U>,
+     Unfolding: InlineRule (1, False, False)
+                (\ (ds :: GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC) ->
+                 case ds of ds1 { GHC.Ptr.Ptr ds2 ->
+                 (\ (ds3 :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                  case {__pkg_ccall inline-r-0.9.0.2-CmRL2Hikuao7dNZScoizZz GHC.Prim.Addr#
+                                                                            -> GHC.Prim.State#
+                                                                                 GHC.Prim.RealWorld
+                                                                            -> (# GHC.Prim.State#
+                                                                                    GHC.Prim.RealWorld,
+                                                                                  GHC.Prim.Int# #)}
+                         ds2
+                         ds3 of wild { (#,#) ds4 ds5 ->
+                  (# ds4, GHC.Int.I32# (GHC.Prim.narrow32Int# ds5) #) })
+                   `cast`
+                 (Sym (GHC.Types.N:IO[0] <GHC.Int.Int32>_R)) })
+                  `cast`
+                (<GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC>_R
+                 ->_R (GHC.Types.IO (Sym (Foreign.C.Types.N:CInt[0])))_R) -}
+28adbb9c15bbcd12c1fc3ca47e503dcf
+  cRSTEP ::
+    Foreign.R.Internal.SEXP0 -> GHC.Types.IO Foreign.C.Types.CInt
+  {- Arity: 2, HasNoCafRefs, Strictness: <S(S),1*U(U)><S,U>,
+     Unfolding: InlineRule (1, False, False)
+                (\ (ds :: GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC) ->
+                 case ds of ds1 { GHC.Ptr.Ptr ds2 ->
+                 (\ (ds3 :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                  case {__pkg_ccall inline-r-0.9.0.2-CmRL2Hikuao7dNZScoizZz GHC.Prim.Addr#
+                                                                            -> GHC.Prim.State#
+                                                                                 GHC.Prim.RealWorld
+                                                                            -> (# GHC.Prim.State#
+                                                                                    GHC.Prim.RealWorld,
+                                                                                  GHC.Prim.Int# #)}
+                         ds2
+                         ds3 of wild { (#,#) ds4 ds5 ->
+                  (# ds4, GHC.Int.I32# (GHC.Prim.narrow32Int# ds5) #) })
+                   `cast`
+                 (Sym (GHC.Types.N:IO[0] <GHC.Int.Int32>_R)) })
+                  `cast`
+                (<GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC>_R
+                 ->_R (GHC.Types.IO (Sym (Foreign.C.Types.N:CInt[0])))_R) -}
+b133ac032fe90e40d96899e71a099852
+  cRTRACE ::
+    Foreign.R.Internal.SEXP0 -> GHC.Types.IO Foreign.C.Types.CInt
+  {- Arity: 2, HasNoCafRefs, Strictness: <S(S),1*U(U)><S,U>,
+     Unfolding: InlineRule (1, False, False)
+                (\ (ds :: GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC) ->
+                 case ds of ds1 { GHC.Ptr.Ptr ds2 ->
+                 (\ (ds3 :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                  case {__pkg_ccall inline-r-0.9.0.2-CmRL2Hikuao7dNZScoizZz GHC.Prim.Addr#
+                                                                            -> GHC.Prim.State#
+                                                                                 GHC.Prim.RealWorld
+                                                                            -> (# GHC.Prim.State#
+                                                                                    GHC.Prim.RealWorld,
+                                                                                  GHC.Prim.Int# #)}
+                         ds2
+                         ds3 of wild { (#,#) ds4 ds5 ->
+                  (# ds4, GHC.Int.I32# (GHC.Prim.narrow32Int# ds5) #) })
+                   `cast`
+                 (Sym (GHC.Types.N:IO[0] <GHC.Int.Int32>_R)) })
+                  `cast`
+                (<GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC>_R
+                 ->_R (GHC.Types.IO (Sym (Foreign.C.Types.N:CInt[0])))_R) -}
+7f4548a322fb49d467fe56b90fe72a81
+  cSETLEVELS ::
+    Foreign.R.Internal.SEXP0 -> Foreign.C.Types.CInt -> GHC.Types.IO ()
+  {- Arity: 3, HasNoCafRefs,
+     Strictness: <S(S),1*U(U)><S(S),1*U(U)><S,U>,
+     Unfolding: InlineRule (2, False, False)
+                (\ (ds :: GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC)
+                   (ds1 :: GHC.Int.Int32) ->
+                 case ds of ds2 { GHC.Ptr.Ptr ds3 ->
+                 case ds1 of ds4 { GHC.Int.I32# ds5 ->
+                 (\ (ds6 :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                  case {__pkg_ccall inline-r-0.9.0.2-CmRL2Hikuao7dNZScoizZz GHC.Prim.Addr#
+                                                                            -> GHC.Prim.Int#
+                                                                            -> GHC.Prim.State#
+                                                                                 GHC.Prim.RealWorld
+                                                                            -> (# GHC.Prim.State#
+                                                                                    GHC.Prim.RealWorld #)}
+                         ds3
+                         ds5
+                         ds6 of wild { Unit# ds7 ->
+                  (# ds7, GHC.Tuple.() #) })
+                   `cast`
+                 (Sym (GHC.Types.N:IO[0] <()>_R)) } })
+                  `cast`
+                (<GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC>_R
+                 ->_R Sym (Foreign.C.Types.N:CInt[0])
+                 ->_R <GHC.Types.IO ()>_R) -}
+bb4dfeba08c15d6dd3a391e6d1edd180
+  cSET_GCCLS ::
+    Foreign.R.Internal.SEXP0 -> Foreign.C.Types.CInt -> GHC.Types.IO ()
+  {- Arity: 3, HasNoCafRefs,
+     Strictness: <S(S),1*U(U)><S(S),1*U(U)><S,U>,
+     Unfolding: InlineRule (2, False, False)
+                (\ (ds :: GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC)
+                   (ds1 :: GHC.Int.Int32) ->
+                 case ds of ds2 { GHC.Ptr.Ptr ds3 ->
+                 case ds1 of ds4 { GHC.Int.I32# ds5 ->
+                 (\ (ds6 :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                  case {__pkg_ccall inline-r-0.9.0.2-CmRL2Hikuao7dNZScoizZz GHC.Prim.Addr#
+                                                                            -> GHC.Prim.Int#
+                                                                            -> GHC.Prim.State#
+                                                                                 GHC.Prim.RealWorld
+                                                                            -> (# GHC.Prim.State#
+                                                                                    GHC.Prim.RealWorld #)}
+                         ds3
+                         ds5
+                         ds6 of wild { Unit# ds7 ->
+                  (# ds7, GHC.Tuple.() #) })
+                   `cast`
+                 (Sym (GHC.Types.N:IO[0] <()>_R)) } })
+                  `cast`
+                (<GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC>_R
+                 ->_R Sym (Foreign.C.Types.N:CInt[0])
+                 ->_R <GHC.Types.IO ()>_R) -}
+14b50c11d5f220899118678c5b2164fd
+  cSET_GCGEN ::
+    Foreign.R.Internal.SEXP0 -> Foreign.C.Types.CInt -> GHC.Types.IO ()
+  {- Arity: 3, HasNoCafRefs,
+     Strictness: <S(S),1*U(U)><S(S),1*U(U)><S,U>,
+     Unfolding: InlineRule (2, False, False)
+                (\ (ds :: GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC)
+                   (ds1 :: GHC.Int.Int32) ->
+                 case ds of ds2 { GHC.Ptr.Ptr ds3 ->
+                 case ds1 of ds4 { GHC.Int.I32# ds5 ->
+                 (\ (ds6 :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                  case {__pkg_ccall inline-r-0.9.0.2-CmRL2Hikuao7dNZScoizZz GHC.Prim.Addr#
+                                                                            -> GHC.Prim.Int#
+                                                                            -> GHC.Prim.State#
+                                                                                 GHC.Prim.RealWorld
+                                                                            -> (# GHC.Prim.State#
+                                                                                    GHC.Prim.RealWorld #)}
+                         ds3
+                         ds5
+                         ds6 of wild { Unit# ds7 ->
+                  (# ds7, GHC.Tuple.() #) })
+                   `cast`
+                 (Sym (GHC.Types.N:IO[0] <()>_R)) } })
+                  `cast`
+                (<GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC>_R
+                 ->_R Sym (Foreign.C.Types.N:CInt[0])
+                 ->_R <GHC.Types.IO ()>_R) -}
+551e72443fe60942cfaef6559aac0bf2
+  cSET_MARK ::
+    Foreign.R.Internal.SEXP0 -> Foreign.C.Types.CInt -> GHC.Types.IO ()
+  {- Arity: 3, HasNoCafRefs,
+     Strictness: <S(S),1*U(U)><S(S),1*U(U)><S,U>,
+     Unfolding: InlineRule (2, False, False)
+                (\ (ds :: GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC)
+                   (ds1 :: GHC.Int.Int32) ->
+                 case ds of ds2 { GHC.Ptr.Ptr ds3 ->
+                 case ds1 of ds4 { GHC.Int.I32# ds5 ->
+                 (\ (ds6 :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                  case {__pkg_ccall inline-r-0.9.0.2-CmRL2Hikuao7dNZScoizZz GHC.Prim.Addr#
+                                                                            -> GHC.Prim.Int#
+                                                                            -> GHC.Prim.State#
+                                                                                 GHC.Prim.RealWorld
+                                                                            -> (# GHC.Prim.State#
+                                                                                    GHC.Prim.RealWorld #)}
+                         ds3
+                         ds5
+                         ds6 of wild { Unit# ds7 ->
+                  (# ds7, GHC.Tuple.() #) })
+                   `cast`
+                 (Sym (GHC.Types.N:IO[0] <()>_R)) } })
+                  `cast`
+                (<GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC>_R
+                 ->_R Sym (Foreign.C.Types.N:CInt[0])
+                 ->_R <GHC.Types.IO ()>_R) -}
+df38b1fa67c0c8b628e34b9e2454627c
+  cSET_NAMED ::
+    Foreign.R.Internal.SEXP0 -> Foreign.C.Types.CInt -> GHC.Types.IO ()
+  {- Arity: 3, HasNoCafRefs,
+     Strictness: <S(S),1*U(U)><S(S),1*U(U)><S,U>,
+     Unfolding: InlineRule (2, False, False)
+                (\ (ds :: GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC)
+                   (ds1 :: GHC.Int.Int32) ->
+                 case ds of ds2 { GHC.Ptr.Ptr ds3 ->
+                 case ds1 of ds4 { GHC.Int.I32# ds5 ->
+                 (\ (ds6 :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                  case {__pkg_ccall inline-r-0.9.0.2-CmRL2Hikuao7dNZScoizZz GHC.Prim.Addr#
+                                                                            -> GHC.Prim.Int#
+                                                                            -> GHC.Prim.State#
+                                                                                 GHC.Prim.RealWorld
+                                                                            -> (# GHC.Prim.State#
+                                                                                    GHC.Prim.RealWorld #)}
+                         ds3
+                         ds5
+                         ds6 of wild { Unit# ds7 ->
+                  (# ds7, GHC.Tuple.() #) })
+                   `cast`
+                 (Sym (GHC.Types.N:IO[0] <()>_R)) } })
+                  `cast`
+                (<GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC>_R
+                 ->_R Sym (Foreign.C.Types.N:CInt[0])
+                 ->_R <GHC.Types.IO ()>_R) -}
+8a84f1e2a56492e44adc26e6d53ab5cf
+  cSET_OBJECT ::
+    Foreign.R.Internal.SEXP0 -> Foreign.C.Types.CInt -> GHC.Types.IO ()
+  {- Arity: 3, HasNoCafRefs,
+     Strictness: <S(S),1*U(U)><S(S),1*U(U)><S,U>,
+     Unfolding: InlineRule (2, False, False)
+                (\ (ds :: GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC)
+                   (ds1 :: GHC.Int.Int32) ->
+                 case ds of ds2 { GHC.Ptr.Ptr ds3 ->
+                 case ds1 of ds4 { GHC.Int.I32# ds5 ->
+                 (\ (ds6 :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                  case {__pkg_ccall inline-r-0.9.0.2-CmRL2Hikuao7dNZScoizZz GHC.Prim.Addr#
+                                                                            -> GHC.Prim.Int#
+                                                                            -> GHC.Prim.State#
+                                                                                 GHC.Prim.RealWorld
+                                                                            -> (# GHC.Prim.State#
+                                                                                    GHC.Prim.RealWorld #)}
+                         ds3
+                         ds5
+                         ds6 of wild { Unit# ds7 ->
+                  (# ds7, GHC.Tuple.() #) })
+                   `cast`
+                 (Sym (GHC.Types.N:IO[0] <()>_R)) } })
+                  `cast`
+                (<GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC>_R
+                 ->_R Sym (Foreign.C.Types.N:CInt[0])
+                 ->_R <GHC.Types.IO ()>_R) -}
+4e14b1ab42196a66f685a32ed01e5bf9
+  cSET_RDEBUG ::
+    Foreign.R.Internal.SEXP0 -> Foreign.C.Types.CInt -> GHC.Types.IO ()
+  {- Arity: 3, HasNoCafRefs,
+     Strictness: <S(S),1*U(U)><S(S),1*U(U)><S,U>,
+     Unfolding: InlineRule (2, False, False)
+                (\ (ds :: GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC)
+                   (ds1 :: GHC.Int.Int32) ->
+                 case ds of ds2 { GHC.Ptr.Ptr ds3 ->
+                 case ds1 of ds4 { GHC.Int.I32# ds5 ->
+                 (\ (ds6 :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                  case {__pkg_ccall inline-r-0.9.0.2-CmRL2Hikuao7dNZScoizZz GHC.Prim.Addr#
+                                                                            -> GHC.Prim.Int#
+                                                                            -> GHC.Prim.State#
+                                                                                 GHC.Prim.RealWorld
+                                                                            -> (# GHC.Prim.State#
+                                                                                    GHC.Prim.RealWorld #)}
+                         ds3
+                         ds5
+                         ds6 of wild { Unit# ds7 ->
+                  (# ds7, GHC.Tuple.() #) })
+                   `cast`
+                 (Sym (GHC.Types.N:IO[0] <()>_R)) } })
+                  `cast`
+                (<GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC>_R
+                 ->_R Sym (Foreign.C.Types.N:CInt[0])
+                 ->_R <GHC.Types.IO ()>_R) -}
+211d3970893ad8ed2528ed40d53d8cdf
+  cSET_RSTEP ::
+    Foreign.R.Internal.SEXP0 -> Foreign.C.Types.CInt -> GHC.Types.IO ()
+  {- Arity: 3, HasNoCafRefs,
+     Strictness: <S(S),1*U(U)><S(S),1*U(U)><S,U>,
+     Unfolding: InlineRule (2, False, False)
+                (\ (ds :: GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC)
+                   (ds1 :: GHC.Int.Int32) ->
+                 case ds of ds2 { GHC.Ptr.Ptr ds3 ->
+                 case ds1 of ds4 { GHC.Int.I32# ds5 ->
+                 (\ (ds6 :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                  case {__pkg_ccall inline-r-0.9.0.2-CmRL2Hikuao7dNZScoizZz GHC.Prim.Addr#
+                                                                            -> GHC.Prim.Int#
+                                                                            -> GHC.Prim.State#
+                                                                                 GHC.Prim.RealWorld
+                                                                            -> (# GHC.Prim.State#
+                                                                                    GHC.Prim.RealWorld #)}
+                         ds3
+                         ds5
+                         ds6 of wild { Unit# ds7 ->
+                  (# ds7, GHC.Tuple.() #) })
+                   `cast`
+                 (Sym (GHC.Types.N:IO[0] <()>_R)) } })
+                  `cast`
+                (<GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC>_R
+                 ->_R Sym (Foreign.C.Types.N:CInt[0])
+                 ->_R <GHC.Types.IO ()>_R) -}
+2ce6f7f3867ae469b9f4a86022f19d06
+  cSET_RTRACE ::
+    Foreign.R.Internal.SEXP0 -> Foreign.C.Types.CInt -> GHC.Types.IO ()
+  {- Arity: 3, HasNoCafRefs,
+     Strictness: <S(S),1*U(U)><S(S),1*U(U)><S,U>,
+     Unfolding: InlineRule (2, False, False)
+                (\ (ds :: GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC)
+                   (ds1 :: GHC.Int.Int32) ->
+                 case ds of ds2 { GHC.Ptr.Ptr ds3 ->
+                 case ds1 of ds4 { GHC.Int.I32# ds5 ->
+                 (\ (ds6 :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                  case {__pkg_ccall inline-r-0.9.0.2-CmRL2Hikuao7dNZScoizZz GHC.Prim.Addr#
+                                                                            -> GHC.Prim.Int#
+                                                                            -> GHC.Prim.State#
+                                                                                 GHC.Prim.RealWorld
+                                                                            -> (# GHC.Prim.State#
+                                                                                    GHC.Prim.RealWorld #)}
+                         ds3
+                         ds5
+                         ds6 of wild { Unit# ds7 ->
+                  (# ds7, GHC.Tuple.() #) })
+                   `cast`
+                 (Sym (GHC.Types.N:IO[0] <()>_R)) } })
+                  `cast`
+                (<GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC>_R
+                 ->_R Sym (Foreign.C.Types.N:CInt[0])
+                 ->_R <GHC.Types.IO ()>_R) -}
+47ca175cf29e17a96dbe4dad5ef70f19
+  cSET_TYPEOF ::
+    Foreign.R.Internal.SEXP0 -> Foreign.C.Types.CInt -> GHC.Types.IO ()
+  {- Arity: 3, HasNoCafRefs,
+     Strictness: <S(S),1*U(U)><S(S),1*U(U)><S,U>,
+     Unfolding: InlineRule (2, False, False)
+                (\ (ds :: GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC)
+                   (ds1 :: GHC.Int.Int32) ->
+                 case ds of ds2 { GHC.Ptr.Ptr ds3 ->
+                 case ds1 of ds4 { GHC.Int.I32# ds5 ->
+                 (\ (ds6 :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                  case {__pkg_ccall inline-r-0.9.0.2-CmRL2Hikuao7dNZScoizZz GHC.Prim.Addr#
+                                                                            -> GHC.Prim.Int#
+                                                                            -> GHC.Prim.State#
+                                                                                 GHC.Prim.RealWorld
+                                                                            -> (# GHC.Prim.State#
+                                                                                    GHC.Prim.RealWorld #)}
+                         ds3
+                         ds5
+                         ds6 of wild { Unit# ds7 ->
+                  (# ds7, GHC.Tuple.() #) })
+                   `cast`
+                 (Sym (GHC.Types.N:IO[0] <()>_R)) } })
+                  `cast`
+                (<GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC>_R
+                 ->_R Sym (Foreign.C.Types.N:CInt[0])
+                 ->_R <GHC.Types.IO ()>_R) -}
+7afb5743e1644f60d2567ca3af051ae4
+  cTYPEOF ::
+    Foreign.R.Internal.SEXP0 -> GHC.Types.IO Foreign.C.Types.CInt
+  {- Arity: 2, HasNoCafRefs, Strictness: <S(S),1*U(U)><S,U>,
+     Unfolding: InlineRule (1, False, False)
+                (\ (ds :: GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC) ->
+                 case ds of ds1 { GHC.Ptr.Ptr ds2 ->
+                 (\ (ds3 :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                  case {__pkg_ccall inline-r-0.9.0.2-CmRL2Hikuao7dNZScoizZz GHC.Prim.Addr#
+                                                                            -> GHC.Prim.State#
+                                                                                 GHC.Prim.RealWorld
+                                                                            -> (# GHC.Prim.State#
+                                                                                    GHC.Prim.RealWorld,
+                                                                                  GHC.Prim.Int# #)}
+                         ds2
+                         ds3 of wild { (#,#) ds4 ds5 ->
+                  (# ds4, GHC.Int.I32# (GHC.Prim.narrow32Int# ds5) #) })
+                   `cast`
+                 (Sym (GHC.Types.N:IO[0] <GHC.Int.Int32>_R)) })
+                  `cast`
+                (<GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC>_R
+                 ->_R (GHC.Types.IO (Sym (Foreign.C.Types.N:CInt[0])))_R) -}
+f159bf96ed5d64c10b80ea379801e466
+  cUIntFromSingEnum ::
+    Foreign.R.Type.SSEXPTYPE a -> Foreign.C.Types.CUInt
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>m,
+     Unfolding: InlineRule (0, True, True)
+                Foreign.R.Internal.cUIntFromSingEnum1
+                  `cast`
+                (forall (a :: <Foreign.R.Type.SEXPTYPE>_N).
+                 <Data.Singletons.Sing a>_R
+                 ->_R Sym (Foreign.C.Types.N:CUInt[0])) -}
+67873a913aa14996ea1d6da8f9196548
+  cUIntFromSingEnum1 :: Data.Singletons.Sing a -> GHC.Word.Word32
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>m,
+     Unfolding: InlineRule (1, True, False)
+                (\ @ a :: Foreign.R.Type.SEXPTYPE (x :: Data.Singletons.Sing a) ->
+                 case Foreign.R.Type.$w$cfromEnum
+                        (Foreign.R.Type.$fSingKindSEXPTYPE_$cfromSing @ a x)
+                          `cast`
+                        (Sub (Foreign.R.Type.D:R:DemoteSEXPTYPE[0])) of ww { DEFAULT ->
+                 GHC.Word.W32#
+                   (GHC.Prim.narrow32Word# (GHC.Prim.int2Word# ww)) }) -}
+b6459dd4ed2a6aeb4d6b884bbf9a0a4b
+  cast ::
+    Foreign.R.Type.SSEXPTYPE a
+    -> Foreign.R.Internal.SomeSEXP s -> Foreign.R.Internal.SEXP s a
+  {- Arity: 2, Strictness: <S,1*U><S,1*U>m,
+     Unfolding: InlineRule (2, True, False)
+                (\ @ a :: Foreign.R.Type.SEXPTYPE
+                   @ s
+                   (ty :: Foreign.R.Type.SSEXPTYPE a)
+                   (s1 :: Foreign.R.Internal.SomeSEXP s) ->
+                 Foreign.R.Internal.unsafeCast
+                   @ s
+                   @ a
+                   (Foreign.R.Type.$fSingKindSEXPTYPE_$cfromSing @ a ty)
+                     `cast`
+                   (Sub (Foreign.R.Type.D:R:DemoteSEXPTYPE[0]))
+                   s1) -}
+769a6d56ef67744219c9ec0108f4ceb8
+  cgetAttrib ::
+    Foreign.R.Internal.SEXP0
+    -> Foreign.R.Internal.SEXP0 -> Foreign.R.Internal.SEXP0
+  {- Arity: 2, HasNoCafRefs, Strictness: <S(S),1*U(U)><S(S),1*U(U)>m,
+     Unfolding: InlineRule (2, False, False)
+                (\ (ds :: GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC)
+                   (ds1 :: GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC) ->
+                 case ds of ds2 { GHC.Ptr.Ptr ds3 ->
+                 case ds1 of ds4 { GHC.Ptr.Ptr ds5 ->
+                 case {__pkg_ccall inline-r-0.9.0.2-CmRL2Hikuao7dNZScoizZz GHC.Prim.Addr#
+                                                                           -> GHC.Prim.Addr#
+                                                                           -> GHC.Prim.State#
+                                                                                GHC.Prim.RealWorld
+                                                                           -> (# GHC.Prim.State#
+                                                                                   GHC.Prim.RealWorld,
+                                                                                 GHC.Prim.Addr# #)}
+                        ds3
+                        ds5
+                        GHC.Prim.realWorld# of wild { (#,#) ds6 ds7 ->
+                 GHC.Ptr.Ptr @ Foreign.R.Internal.SEXPREC ds7 } } }) -}
+61990cc9f7324d7406827ee12d190cb7
+  cisS4 :: Foreign.R.Internal.SEXP0 -> GHC.Types.Int
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(S),1*U(U)>m,
+     Unfolding: InlineRule (1, False, False)
+                (\ (ds :: GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC) ->
+                 case ds of ds1 { GHC.Ptr.Ptr ds2 ->
+                 case {__pkg_ccall inline-r-0.9.0.2-CmRL2Hikuao7dNZScoizZz GHC.Prim.Addr#
+                                                                           -> GHC.Prim.State#
+                                                                                GHC.Prim.RealWorld
+                                                                           -> (# GHC.Prim.State#
+                                                                                   GHC.Prim.RealWorld,
+                                                                                 GHC.Prim.Int# #)}
+                        ds2
+                        GHC.Prim.realWorld# of wild { (#,#) ds3 ds4 ->
+                 GHC.Types.I# ds4 } }) -}
+4d45fb6b1e583b1582203429a130ce94
+  csetAttrib ::
+    Foreign.R.Internal.SEXP0
+    -> Foreign.R.Internal.SEXP0 -> GHC.Types.IO ()
+  {- Arity: 3, HasNoCafRefs,
+     Strictness: <S(S),1*U(U)><S(S),1*U(U)><S,U>,
+     Unfolding: InlineRule (2, False, False)
+                (\ (ds :: GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC)
+                   (ds1 :: GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC) ->
+                 case ds of ds2 { GHC.Ptr.Ptr ds3 ->
+                 case ds1 of ds4 { GHC.Ptr.Ptr ds5 ->
+                 (\ (ds6 :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                  case {__pkg_ccall inline-r-0.9.0.2-CmRL2Hikuao7dNZScoizZz GHC.Prim.Addr#
+                                                                            -> GHC.Prim.Addr#
+                                                                            -> GHC.Prim.State#
+                                                                                 GHC.Prim.RealWorld
+                                                                            -> (# GHC.Prim.State#
+                                                                                    GHC.Prim.RealWorld #)}
+                         ds3
+                         ds5
+                         ds6 of wild { Unit# ds7 ->
+                  (# ds7, GHC.Tuple.() #) })
+                   `cast`
+                 (Sym (GHC.Types.N:IO[0] <()>_R)) } }) -}
+59f0269590597d7aae0adcf5644f7a2e
+  emptyEnv ::
+    GHC.Ptr.Ptr
+      (Foreign.R.Internal.SEXP
+         Control.Memory.Region.G 'Foreign.R.Type.Env)
+  {- Strictness: m,
+     Unfolding: (GHC.Ptr.Ptr
+                   @ (Foreign.R.Internal.SEXP
+                        Control.Memory.Region.G 'Foreign.R.Type.Env)
+                   __label "R_EmptyEnv" (data)) -}
+0942c3317b59817b1fd3393ca57e999c
+  getAttribute ::
+    Foreign.R.Internal.SEXP s a
+    -> Foreign.R.Internal.SEXP s2 b -> Foreign.R.Internal.SEXP s c
+  {- Arity: 2, HasNoCafRefs, Strictness: <S(S),1*U(U)><S(S),1*U(U)>m,
+     Unfolding: InlineRule (0, True, True)
+                Foreign.R.Internal.getAttribute1
+                  `cast`
+                (forall (s :: <*>_N) (a :: <Foreign.R.Type.SEXPTYPE>_N) (s2 :: <*>_N) (b :: <Foreign.R.Type.SEXPTYPE>_N) (c :: <Foreign.R.Type.SEXPTYPE>_N).
+                 <Foreign.R.Internal.SEXP s a>_R
+                 ->_R <Foreign.R.Internal.SEXP s2 b>_R
+                 ->_R Trans
+                          (GHC.Ptr.Ptr
+                             <Foreign.R.Internal.SEXPREC, Language.R.HExp.HExp s c>)_R
+                          (Sym (Foreign.R.Internal.N:SEXP[0] <s>_P <c>_P))) -}
+95f15b611c93d5c9825152ff3752b11e
+  getAttribute1 ::
+    Foreign.R.Internal.SEXP s a
+    -> Foreign.R.Internal.SEXP s2 b
+    -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+  {- Arity: 2, HasNoCafRefs, Strictness: <S(S),1*U(U)><S(S),1*U(U)>m,
+     Unfolding: InlineRule (2, True, False)
+                (\ @ s
+                   @ a :: Foreign.R.Type.SEXPTYPE
+                   @ s2
+                   @ b :: Foreign.R.Type.SEXPTYPE
+                   @ c :: Foreign.R.Type.SEXPTYPE
+                   (a1 :: Foreign.R.Internal.SEXP s a)
+                   (b1 :: Foreign.R.Internal.SEXP s2 b) ->
+                 case a1
+                        `cast`
+                      (Trans
+                           (Foreign.R.Internal.N:SEXP[0] <s>_P <a>_P)
+                           (GHC.Ptr.Ptr
+                              <Language.R.HExp.HExp
+                                 s a, Foreign.R.Internal.SEXPREC>)_R) of ds { GHC.Ptr.Ptr ds1 ->
+                 case b1
+                        `cast`
+                      (Trans
+                           (Foreign.R.Internal.N:SEXP[0] <s2>_P <b>_P)
+                           (GHC.Ptr.Ptr
+                              <Language.R.HExp.HExp
+                                 s2 b, Foreign.R.Internal.SEXPREC>)_R) of ds2 { GHC.Ptr.Ptr ds3 ->
+                 case {__pkg_ccall inline-r-0.9.0.2-CmRL2Hikuao7dNZScoizZz GHC.Prim.Addr#
+                                                                           -> GHC.Prim.Addr#
+                                                                           -> GHC.Prim.State#
+                                                                                GHC.Prim.RealWorld
+                                                                           -> (# GHC.Prim.State#
+                                                                                   GHC.Prim.RealWorld,
+                                                                                 GHC.Prim.Addr# #)}
+                        ds1
+                        ds3
+                        GHC.Prim.realWorld# of wild { (#,#) ds4 ds5 ->
+                 GHC.Ptr.Ptr @ Foreign.R.Internal.SEXPREC ds5 } } }) -}
+3a756b0150a1a8de093445b277f682b7
+  getAttributes ::
+    Foreign.R.Internal.SEXP s a
+    -> GHC.Types.IO (Foreign.R.Internal.SEXP s b)
+  {- Arity: 2, HasNoCafRefs, Strictness: <S(S),1*U(U)><S,U>,
+     Unfolding: InlineRule (0, True, True)
+                Foreign.R.Internal.getAttributes1
+                  `cast`
+                (forall (s :: <*>_N) (a :: <Foreign.R.Type.SEXPTYPE>_N) (b :: <Foreign.R.Type.SEXPTYPE>_N).
+                 <Foreign.R.Internal.SEXP s a>_R
+                 ->_R Sym (GHC.Types.N:IO[0] <Foreign.R.Internal.SEXP s b>_R)) -}
+c910d051084184682299a526e4e76f8d
+  getAttributes1 ::
+    Foreign.R.Internal.SEXP s a
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+          Foreign.R.Internal.SEXP s b #)
+  {- Arity: 2, HasNoCafRefs, Strictness: <S(S),1*U(U)><S,U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ @ s
+                   @ a :: Foreign.R.Type.SEXPTYPE
+                   @ b :: Foreign.R.Type.SEXPTYPE
+                   (s1 :: Foreign.R.Internal.SEXP s a)
+                   (s2 :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                 case s1
+                        `cast`
+                      (Trans
+                           (Foreign.R.Internal.N:SEXP[0] <s>_P <a>_P)
+                           (GHC.Ptr.Ptr
+                              <Language.R.HExp.HExp
+                                 s a, Foreign.R.Internal.SEXPREC>)_R) of ds { GHC.Ptr.Ptr ds1 ->
+                 case {__pkg_ccall inline-r-0.9.0.2-CmRL2Hikuao7dNZScoizZz GHC.Prim.Addr#
+                                                                           -> GHC.Prim.State#
+                                                                                GHC.Prim.RealWorld
+                                                                           -> (# GHC.Prim.State#
+                                                                                   GHC.Prim.RealWorld,
+                                                                                 GHC.Prim.Addr# #)}
+                        ds1
+                        s2 of wild { (#,#) ds2 ds3 ->
+                 (# ds2,
+                    (GHC.Ptr.Ptr @ Foreign.R.Internal.SEXPREC ds3)
+                      `cast`
+                    (Trans
+                         (GHC.Ptr.Ptr
+                            <Foreign.R.Internal.SEXPREC, Language.R.HExp.HExp s b>)_R
+                         (Sym (Foreign.R.Internal.N:SEXP[0] <s>_P <b>_P))) #) } }) -}
+0d7a6614d93859b5512edc6d6bb3a913
+  globalEnv ::
+    GHC.Ptr.Ptr
+      (Foreign.R.Internal.SEXP
+         Control.Memory.Region.G 'Foreign.R.Type.Env)
+  {- Strictness: m,
+     Unfolding: (GHC.Ptr.Ptr
+                   @ (Foreign.R.Internal.SEXP
+                        Control.Memory.Region.G 'Foreign.R.Type.Env)
+                   __label "R_GlobalEnv" (data)) -}
+d987a3d74a29c27a7f56da4895135b7b
+  infoDebug :: Foreign.R.Internal.SEXPInfo -> GHC.Types.Bool
+  RecSel Left Foreign.R.Internal.SEXPInfo
+  {- Arity: 1, HasNoCafRefs,
+     Strictness: <S(LLLLLSLLLL),1*U(A,A,A,A,A,1*U,A,A,A,A)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: Foreign.R.Internal.SEXPInfo) ->
+                 case ds of wild { Foreign.R.Internal.SEXPInfo ds1 ds2 ds3 ds4 ds5 ds6 ds7 ds8 ds9 ds10 ->
+                 ds6 }) -}
+d987a3d74a29c27a7f56da4895135b7b
+  infoGcCls :: Foreign.R.Internal.SEXPInfo -> GHC.Types.Int
+  RecSel Left Foreign.R.Internal.SEXPInfo
+  {- Arity: 1, HasNoCafRefs,
+     Strictness: <S(LLLLLLLLLS),1*U(A,A,A,A,A,A,A,A,A,1*U(U))>m,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: Foreign.R.Internal.SEXPInfo) ->
+                 case ds of wild { Foreign.R.Internal.SEXPInfo ds1 ds2 ds3 ds4 ds5 ds6 ds7 ds8 ds9 ds10 ->
+                 ds10 }) -}
+d987a3d74a29c27a7f56da4895135b7b
+  infoGcGen :: Foreign.R.Internal.SEXPInfo -> GHC.Types.Int
+  RecSel Left Foreign.R.Internal.SEXPInfo
+  {- Arity: 1, HasNoCafRefs,
+     Strictness: <S(LLLLLLLLSL),1*U(A,A,A,A,A,A,A,A,1*U(U),A)>m,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: Foreign.R.Internal.SEXPInfo) ->
+                 case ds of wild { Foreign.R.Internal.SEXPInfo ds1 ds2 ds3 ds4 ds5 ds6 ds7 ds8 ds9 ds10 ->
+                 ds9 }) -}
+d987a3d74a29c27a7f56da4895135b7b
+  infoGp :: Foreign.R.Internal.SEXPInfo -> GHC.Types.Int
+  RecSel Left Foreign.R.Internal.SEXPInfo
+  {- Arity: 1, HasNoCafRefs,
+     Strictness: <S(LLLSLLLLLL),1*U(A,A,A,1*U(U),A,A,A,A,A,A)>m,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: Foreign.R.Internal.SEXPInfo) ->
+                 case ds of wild { Foreign.R.Internal.SEXPInfo ds1 ds2 ds3 ds4 ds5 ds6 ds7 ds8 ds9 ds10 ->
+                 ds4 }) -}
+d987a3d74a29c27a7f56da4895135b7b
+  infoMark :: Foreign.R.Internal.SEXPInfo -> GHC.Types.Bool
+  RecSel Left Foreign.R.Internal.SEXPInfo
+  {- Arity: 1, HasNoCafRefs,
+     Strictness: <S(LLLLSLLLLL),1*U(A,A,A,A,1*U,A,A,A,A,A)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: Foreign.R.Internal.SEXPInfo) ->
+                 case ds of wild { Foreign.R.Internal.SEXPInfo ds1 ds2 ds3 ds4 ds5 ds6 ds7 ds8 ds9 ds10 ->
+                 ds5 }) -}
+d987a3d74a29c27a7f56da4895135b7b
+  infoNamed :: Foreign.R.Internal.SEXPInfo -> GHC.Types.Int
+  RecSel Left Foreign.R.Internal.SEXPInfo
+  {- Arity: 1, HasNoCafRefs,
+     Strictness: <S(LLSLLLLLLL),1*U(A,A,1*U(U),A,A,A,A,A,A,A)>m,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: Foreign.R.Internal.SEXPInfo) ->
+                 case ds of wild { Foreign.R.Internal.SEXPInfo ds1 ds2 ds3 ds4 ds5 ds6 ds7 ds8 ds9 ds10 ->
+                 ds3 }) -}
+d987a3d74a29c27a7f56da4895135b7b
+  infoObj :: Foreign.R.Internal.SEXPInfo -> GHC.Types.Bool
+  RecSel Left Foreign.R.Internal.SEXPInfo
+  {- Arity: 1, HasNoCafRefs,
+     Strictness: <S(LSLLLLLLLL),1*U(A,1*U,A,A,A,A,A,A,A,A)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: Foreign.R.Internal.SEXPInfo) ->
+                 case ds of wild { Foreign.R.Internal.SEXPInfo ds1 ds2 ds3 ds4 ds5 ds6 ds7 ds8 ds9 ds10 ->
+                 ds2 }) -}
+d987a3d74a29c27a7f56da4895135b7b
+  infoSpare :: Foreign.R.Internal.SEXPInfo -> GHC.Types.Bool
+  RecSel Left Foreign.R.Internal.SEXPInfo
+  {- Arity: 1, HasNoCafRefs,
+     Strictness: <S(LLLLLLLSLL),1*U(A,A,A,A,A,A,A,1*U,A,A)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: Foreign.R.Internal.SEXPInfo) ->
+                 case ds of wild { Foreign.R.Internal.SEXPInfo ds1 ds2 ds3 ds4 ds5 ds6 ds7 ds8 ds9 ds10 ->
+                 ds8 }) -}
+d987a3d74a29c27a7f56da4895135b7b
+  infoTrace :: Foreign.R.Internal.SEXPInfo -> GHC.Types.Bool
+  RecSel Left Foreign.R.Internal.SEXPInfo
+  {- Arity: 1, HasNoCafRefs,
+     Strictness: <S(LLLLLLSLLL),1*U(A,A,A,A,A,A,1*U,A,A,A)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: Foreign.R.Internal.SEXPInfo) ->
+                 case ds of wild { Foreign.R.Internal.SEXPInfo ds1 ds2 ds3 ds4 ds5 ds6 ds7 ds8 ds9 ds10 ->
+                 ds7 }) -}
+d987a3d74a29c27a7f56da4895135b7b
+  infoType :: Foreign.R.Internal.SEXPInfo -> Foreign.R.Type.SEXPTYPE
+  RecSel Left Foreign.R.Internal.SEXPInfo
+  {- Arity: 1, HasNoCafRefs,
+     Strictness: <S(SLLLLLLLLL),1*U(1*U,A,A,A,A,A,A,A,A,A)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: Foreign.R.Internal.SEXPInfo) ->
+                 case ds of wild { Foreign.R.Internal.SEXPInfo ds1 ds2 ds3 ds4 ds5 ds6 ds7 ds8 ds9 ds10 ->
+                 ds1 }) -}
+e8debe744c3b278fca2af69d7511748a
+  interruptsPending :: GHC.Ptr.Ptr Foreign.C.Types.CInt
+  {- Strictness: m,
+     Unfolding: (GHC.Ptr.Ptr
+                   @ Foreign.C.Types.CInt
+                   __label "R_interrupts_pending" (data)) -}
+6158f6a4992d67bbb74212ee7fd8b3ad
+  isRInteractive :: GHC.Ptr.Ptr Foreign.C.Types.CInt
+  {- Strictness: m,
+     Unfolding: (GHC.Ptr.Ptr
+                   @ Foreign.C.Types.CInt
+                   __label "R_Interactive" (data)) -}
+37b54554ede8c76aa379dd05db75a6f6
+  isS4 :: Foreign.R.Internal.SEXP s ty -> GHC.Types.Bool
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(S),1*U(U)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ @ s
+                   @ ty :: Foreign.R.Type.SEXPTYPE
+                   (s1 :: Foreign.R.Internal.SEXP s ty) ->
+                 case s1
+                        `cast`
+                      (Trans
+                           (Foreign.R.Internal.N:SEXP[0] <s>_P <ty>_P)
+                           (GHC.Ptr.Ptr
+                              <Language.R.HExp.HExp
+                                 s ty, Foreign.R.Internal.SEXPREC>)_R) of ds { GHC.Ptr.Ptr ds1 ->
+                 case {__pkg_ccall inline-r-0.9.0.2-CmRL2Hikuao7dNZScoizZz GHC.Prim.Addr#
+                                                                           -> GHC.Prim.State#
+                                                                                GHC.Prim.RealWorld
+                                                                           -> (# GHC.Prim.State#
+                                                                                   GHC.Prim.RealWorld,
+                                                                                 GHC.Prim.Int# #)}
+                        ds1
+                        GHC.Prim.realWorld# of wild { (#,#) ds2 ds3 ->
+                 GHC.Prim.tagToEnum# @ GHC.Types.Bool (GHC.Prim.># ds3 0#) } }) -}
+d97165116b64357a957efbb7daa72d55
+  length ::
+    Foreign.R.Type.IsVector a =>
+    Foreign.R.Internal.SEXP s a -> GHC.Types.IO GHC.Types.Int
+  {- Arity: 3, HasNoCafRefs, Strictness: <L,A><S(S),1*U(U)><S,U>,
+     Unfolding: InlineRule (0, True, True)
+                Foreign.R.Internal.length1
+                  `cast`
+                (forall (a :: <Foreign.R.Type.SEXPTYPE>_N) (s :: <*>_N).
+                 <Foreign.R.Type.IsVector a>_R
+                 ->_R <Foreign.R.Internal.SEXP s a>_R
+                 ->_R Sym (GHC.Types.N:IO[0] <GHC.Types.Int>_R)) -}
+d03a3812571361830d80399e39600e65
+  length1 ::
+    Foreign.R.Type.IsVector a =>
+    Foreign.R.Internal.SEXP s a
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, GHC.Types.Int #)
+  {- Arity: 3, HasNoCafRefs, Strictness: <L,A><S(S),1*U(U)><S,U>,
+     Unfolding: InlineRule (3, True, False)
+                (\ @ a :: Foreign.R.Type.SEXPTYPE
+                   @ s
+                   ($d(%,%) :: Foreign.R.Type.IsVector a)
+                   (s1 :: Foreign.R.Internal.SEXP s a)
+                   (s2 :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                 case s1
+                        `cast`
+                      (Trans
+                           (Foreign.R.Internal.N:SEXP[0] <s>_P <a>_P)
+                           (GHC.Ptr.Ptr
+                              <Language.R.HExp.HExp
+                                 s a, Foreign.R.Internal.SEXPREC>)_R) of wild { GHC.Ptr.Ptr addr ->
+                 case GHC.Prim.readInt32OffAddr#
+                        @ GHC.Prim.RealWorld
+                        (GHC.Prim.plusAddr# addr 32#)
+                        0#
+                        s2 of ds2 { (#,#) ipv ipv1 ->
+                 (# ipv, GHC.Types.I# ipv1 #) } }) -}
+acd8b6ca5a13d11a92c84697d26e8f3e
+  mark ::
+    GHC.Types.Bool -> Foreign.R.Internal.SEXP s a -> GHC.Types.IO ()
+  {- Arity: 3, HasNoCafRefs, Strictness: <S,1*U><S(S),1*U(U)><S,U>,
+     Unfolding: InlineRule (0, True, True)
+                Foreign.R.Internal.mark1
+                  `cast`
+                (forall (s :: <*>_N) (a :: <Foreign.R.Type.SEXPTYPE>_N).
+                 <GHC.Types.Bool>_R
+                 ->_R <Foreign.R.Internal.SEXP s a>_R
+                 ->_R Sym (GHC.Types.N:IO[0] <()>_R)) -}
+e0e822c3f0573048afc7fc1a0a57341e
+  mark1 ::
+    GHC.Types.Bool
+    -> Foreign.R.Internal.SEXP s a
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+  {- Arity: 3, HasNoCafRefs, Strictness: <S,1*U><S(S),1*U(U)><S,U>,
+     Unfolding: InlineRule (3, True, False)
+                (\ @ s
+                   @ a :: Foreign.R.Type.SEXPTYPE
+                   (b :: GHC.Types.Bool)
+                   (ts :: Foreign.R.Internal.SEXP s a)
+                   (eta :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                 case ts
+                        `cast`
+                      (Trans
+                           (Foreign.R.Internal.N:SEXP[0] <s>_P <a>_P)
+                           (GHC.Ptr.Ptr
+                              <Language.R.HExp.HExp
+                                 s a, Foreign.R.Internal.SEXPREC>)_R) of ds { GHC.Ptr.Ptr ds1 ->
+                 case b of wild {
+                   GHC.Types.False
+                   -> case {__pkg_ccall inline-r-0.9.0.2-CmRL2Hikuao7dNZScoizZz GHC.Prim.Addr#
+                                                                                -> GHC.Prim.Int#
+                                                                                -> GHC.Prim.State#
+                                                                                     GHC.Prim.RealWorld
+                                                                                -> (# GHC.Prim.State#
+                                                                                        GHC.Prim.RealWorld #)}
+                             ds1
+                             0#
+                             eta of wild1 { Unit# ds2 ->
+                      (# ds2, GHC.Tuple.() #) }
+                   GHC.Types.True
+                   -> case {__pkg_ccall inline-r-0.9.0.2-CmRL2Hikuao7dNZScoizZz GHC.Prim.Addr#
+                                                                                -> GHC.Prim.Int#
+                                                                                -> GHC.Prim.State#
+                                                                                     GHC.Prim.RealWorld
+                                                                                -> (# GHC.Prim.State#
+                                                                                        GHC.Prim.RealWorld #)}
+                             ds1
+                             1#
+                             eta of wild1 { Unit# ds2 ->
+                      (# ds2, GHC.Tuple.() #) } } }) -}
+9effa2dfed55b1f6f364219c9041e206
+  missingArg ::
+    GHC.Ptr.Ptr
+      (Foreign.R.Internal.SEXP
+         Control.Memory.Region.G 'Foreign.R.Type.Symbol)
+  {- Strictness: m,
+     Unfolding: (GHC.Ptr.Ptr
+                   @ (Foreign.R.Internal.SEXP
+                        Control.Memory.Region.G 'Foreign.R.Type.Symbol)
+                   __label "R_MissingArg" (data)) -}
+090520ec256fd1c47c60e5c716507df9
+  named ::
+    GHC.Types.Int -> Foreign.R.Internal.SEXP s a -> GHC.Types.IO ()
+  {- Arity: 3, HasNoCafRefs,
+     Strictness: <S(S),1*U(U)><S(S),1*U(U)><S,U>,
+     Unfolding: InlineRule (0, True, True)
+                Foreign.R.Internal.named1
+                  `cast`
+                (forall (s :: <*>_N) (a :: <Foreign.R.Type.SEXPTYPE>_N).
+                 <GHC.Types.Int>_R
+                 ->_R <Foreign.R.Internal.SEXP s a>_R
+                 ->_R Sym (GHC.Types.N:IO[0] <()>_R)) -}
+30de5386ffd026e58d80d7b3b137a050
+  named1 ::
+    GHC.Types.Int
+    -> Foreign.R.Internal.SEXP s a
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+  {- Arity: 3, HasNoCafRefs,
+     Strictness: <S(S),1*U(U)><S(S),1*U(U)><S,U>,
+     Unfolding: InlineRule (3, True, False)
+                (\ @ s
+                   @ a :: Foreign.R.Type.SEXPTYPE
+                   (v :: GHC.Types.Int)
+                   (ts :: Foreign.R.Internal.SEXP s a)
+                   (eta :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                 case ts
+                        `cast`
+                      (Trans
+                           (Foreign.R.Internal.N:SEXP[0] <s>_P <a>_P)
+                           (GHC.Ptr.Ptr
+                              <Language.R.HExp.HExp
+                                 s a, Foreign.R.Internal.SEXPREC>)_R) of ds { GHC.Ptr.Ptr ds1 ->
+                 case v of wild { GHC.Types.I# x# ->
+                 case {__pkg_ccall inline-r-0.9.0.2-CmRL2Hikuao7dNZScoizZz GHC.Prim.Addr#
+                                                                           -> GHC.Prim.Int#
+                                                                           -> GHC.Prim.State#
+                                                                                GHC.Prim.RealWorld
+                                                                           -> (# GHC.Prim.State#
+                                                                                   GHC.Prim.RealWorld #)}
+                        ds1
+                        (GHC.Prim.narrow32Int# x#)
+                        eta of wild1 { Unit# ds2 ->
+                 (# ds2, GHC.Tuple.() #) } } }) -}
+dbb0c04998edbde00d03609d085348ba
+  nilValue ::
+    GHC.Ptr.Ptr
+      (Foreign.R.Internal.SEXP
+         Control.Memory.Region.G 'Foreign.R.Type.Nil)
+  {- Strictness: m,
+     Unfolding: (GHC.Ptr.Ptr
+                   @ (Foreign.R.Internal.SEXP
+                        Control.Memory.Region.G 'Foreign.R.Type.Nil)
+                   __label "R_NilValue" (data)) -}
+9849ef013bc40682e2d0f6aa549090ad
+  peekInfo ::
+    Foreign.R.Internal.SEXP s a
+    -> GHC.Types.IO Foreign.R.Internal.SEXPInfo
+  {- Arity: 2, Strictness: <S(S),1*U(U)><S,U>,
+     Unfolding: InlineRule (0, True, True)
+                Foreign.R.Internal.peekInfo1
+                  `cast`
+                (forall (s :: <*>_N) (a :: <Foreign.R.Type.SEXPTYPE>_N).
+                 <Foreign.R.Internal.SEXP s a>_R
+                 ->_R Sym (GHC.Types.N:IO[0] <Foreign.R.Internal.SEXPInfo>_R)) -}
+6dffecf8a2e2d727e34f40e1c596d3a6
+  peekInfo1 ::
+    Foreign.R.Internal.SEXP s a
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+          Foreign.R.Internal.SEXPInfo #)
+  {- Arity: 2, Strictness: <S(S),1*U(U)><S,U>, Inline: [0],
+     Unfolding: InlineRule (2, True, False)
+                (\ @ s
+                   @ a :: Foreign.R.Type.SEXPTYPE
+                   (w :: Foreign.R.Internal.SEXP s a)
+                   (w1 :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                 case w `cast`
+                      (Foreign.R.Internal.N:SEXP[0]
+                           <s>_P <a>_P) of ww { GHC.Ptr.Ptr ww1 ->
+                 Foreign.R.Internal.$wpeekInfo @ s @ a ww1 w1 }) -}
+65c11239d9bf6daf7f602c2c1ac9eaf8
+  pokeInfo ::
+    Foreign.R.Internal.SEXP s a
+    -> Foreign.R.Internal.SEXPInfo -> GHC.Types.IO ()
+  {- Arity: 3, HasNoCafRefs,
+     Strictness: <S(S),1*U(U)><S(SSS(S)S(S)SSSSS(S)S(S)),1*U(1*U,1*U,1*U(U),1*U(U),1*U,1*U,1*U,1*U,1*U(U),1*U(U))><S,U>,
+     Unfolding: InlineRule (0, True, True)
+                Foreign.R.Internal.pokeInfo1
+                  `cast`
+                (forall (s :: <*>_N) (a :: <Foreign.R.Type.SEXPTYPE>_N).
+                 <Foreign.R.Internal.SEXP s a>_R
+                 ->_R <Foreign.R.Internal.SEXPInfo>_R
+                 ->_R Sym (GHC.Types.N:IO[0] <()>_R)) -}
+3efc787f424837fc32b56ea38dc818ad
+  pokeInfo1 ::
+    Foreign.R.Internal.SEXP s a
+    -> Foreign.R.Internal.SEXPInfo
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+  {- Arity: 3, HasNoCafRefs,
+     Strictness: <S(S),1*U(U)><S(SSS(S)S(S)SSSSS(S)S(S)),1*U(1*U,1*U,1*U(U),1*U(U),1*U,1*U,1*U,1*U,1*U(U),1*U(U))><S,U>,
+     Unfolding: (\ @ s
+                   @ a :: Foreign.R.Type.SEXPTYPE
+                   (ds :: Foreign.R.Internal.SEXP s a)
+                   (i :: Foreign.R.Internal.SEXPInfo)
+                   (s1 :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                 case ds
+                        `cast`
+                      (Trans
+                           (Foreign.R.Internal.N:SEXP[0] <s>_P <a>_P)
+                           (GHC.Ptr.Ptr
+                              <Language.R.HExp.HExp
+                                 s a, Foreign.R.Internal.SEXPREC>)_R) of ds1 { GHC.Ptr.Ptr ds2 ->
+                 case i of wild { Foreign.R.Internal.SEXPInfo ds3 ds4 ds5 ds6 ds7 ds8 ds9 ds10 ds11 ds12 ->
+                 case Foreign.R.Type.$w$cfromEnum ds3 of ww { DEFAULT ->
+                 case {__pkg_ccall inline-r-0.9.0.2-CmRL2Hikuao7dNZScoizZz GHC.Prim.Addr#
+                                                                           -> GHC.Prim.Int#
+                                                                           -> GHC.Prim.State#
+                                                                                GHC.Prim.RealWorld
+                                                                           -> (# GHC.Prim.State#
+                                                                                   GHC.Prim.RealWorld #)}
+                        ds2
+                        (GHC.Prim.narrow32Int# ww)
+                        s1 of wild1 { Unit# ds13 ->
+                 let {
+                   $j :: GHC.Prim.Int# -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+                     <join 1> {- Arity: 1, Strictness: <S,U> -}
+                   = \ (ds14 :: GHC.Prim.Int#)[OneShot] ->
+                     case {__pkg_ccall inline-r-0.9.0.2-CmRL2Hikuao7dNZScoizZz GHC.Prim.Addr#
+                                                                               -> GHC.Prim.Int#
+                                                                               -> GHC.Prim.State#
+                                                                                    GHC.Prim.RealWorld
+                                                                               -> (# GHC.Prim.State#
+                                                                                       GHC.Prim.RealWorld #)}
+                            ds2
+                            ds14
+                            ds13 of wild2 { Unit# ds15 ->
+                     case ds5 of wild3 { GHC.Types.I# x# ->
+                     case {__pkg_ccall inline-r-0.9.0.2-CmRL2Hikuao7dNZScoizZz GHC.Prim.Addr#
+                                                                               -> GHC.Prim.Int#
+                                                                               -> GHC.Prim.State#
+                                                                                    GHC.Prim.RealWorld
+                                                                               -> (# GHC.Prim.State#
+                                                                                       GHC.Prim.RealWorld #)}
+                            ds2
+                            (GHC.Prim.narrow32Int# x#)
+                            ds15 of wild4 { Unit# ds16 ->
+                     case ds6 of wild5 { GHC.Types.I# x#1 ->
+                     case {__pkg_ccall inline-r-0.9.0.2-CmRL2Hikuao7dNZScoizZz GHC.Prim.Addr#
+                                                                               -> GHC.Prim.Int#
+                                                                               -> GHC.Prim.State#
+                                                                                    GHC.Prim.RealWorld
+                                                                               -> (# GHC.Prim.State#
+                                                                                       GHC.Prim.RealWorld #)}
+                            ds2
+                            (GHC.Prim.narrow32Int# x#1)
+                            ds16 of wild6 { Unit# ds17 ->
+                     let {
+                       $j1 :: GHC.Prim.Int#
+                              -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+                         <join 1> {- Arity: 1, Strictness: <S,U> -}
+                       = \ (ds18 :: GHC.Prim.Int#)[OneShot] ->
+                         case {__pkg_ccall inline-r-0.9.0.2-CmRL2Hikuao7dNZScoizZz GHC.Prim.Addr#
+                                                                                   -> GHC.Prim.Int#
+                                                                                   -> GHC.Prim.State#
+                                                                                        GHC.Prim.RealWorld
+                                                                                   -> (# GHC.Prim.State#
+                                                                                           GHC.Prim.RealWorld #)}
+                                ds2
+                                ds18
+                                ds17 of wild7 { Unit# ds19 ->
+                         let {
+                           $j2 :: GHC.Prim.Int#
+                                  -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+                             <join 1> {- Arity: 1, Strictness: <S,U> -}
+                           = \ (ds20 :: GHC.Prim.Int#)[OneShot] ->
+                             case {__pkg_ccall inline-r-0.9.0.2-CmRL2Hikuao7dNZScoizZz GHC.Prim.Addr#
+                                                                                       -> GHC.Prim.Int#
+                                                                                       -> GHC.Prim.State#
+                                                                                            GHC.Prim.RealWorld
+                                                                                       -> (# GHC.Prim.State#
+                                                                                               GHC.Prim.RealWorld #)}
+                                    ds2
+                                    ds20
+                                    ds19 of wild8 { Unit# ds21 ->
+                             let {
+                               $j3 :: GHC.Prim.Int#
+                                      -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+                                 <join 1> {- Arity: 1, Strictness: <S,U> -}
+                               = \ (ds22 :: GHC.Prim.Int#)[OneShot] ->
+                                 case {__pkg_ccall inline-r-0.9.0.2-CmRL2Hikuao7dNZScoizZz GHC.Prim.Addr#
+                                                                                           -> GHC.Prim.Int#
+                                                                                           -> GHC.Prim.State#
+                                                                                                GHC.Prim.RealWorld
+                                                                                           -> (# GHC.Prim.State#
+                                                                                                   GHC.Prim.RealWorld #)}
+                                        ds2
+                                        ds22
+                                        ds21 of wild9 { Unit# ds23 ->
+                                 let {
+                                   $j4 :: GHC.Prim.Int#
+                                          -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+                                     <join 1> {- Arity: 1, Strictness: <S,U> -}
+                                   = \ (ds24 :: GHC.Prim.Int#)[OneShot] ->
+                                     case {__pkg_ccall inline-r-0.9.0.2-CmRL2Hikuao7dNZScoizZz GHC.Prim.Addr#
+                                                                                               -> GHC.Prim.Int#
+                                                                                               -> GHC.Prim.State#
+                                                                                                    GHC.Prim.RealWorld
+                                                                                               -> (# GHC.Prim.State#
+                                                                                                       GHC.Prim.RealWorld #)}
+                                            ds2
+                                            ds24
+                                            ds23 of wild10 { Unit# ds25 ->
+                                     case ds11 of wild11 { GHC.Types.I# x#2 ->
+                                     case {__pkg_ccall inline-r-0.9.0.2-CmRL2Hikuao7dNZScoizZz GHC.Prim.Addr#
+                                                                                               -> GHC.Prim.Int#
+                                                                                               -> GHC.Prim.State#
+                                                                                                    GHC.Prim.RealWorld
+                                                                                               -> (# GHC.Prim.State#
+                                                                                                       GHC.Prim.RealWorld #)}
+                                            ds2
+                                            (GHC.Prim.narrow32Int# x#2)
+                                            ds25 of wild12 { Unit# ds26 ->
+                                     case ds12 of wild13 { GHC.Types.I# x#3 ->
+                                     case {__pkg_ccall inline-r-0.9.0.2-CmRL2Hikuao7dNZScoizZz GHC.Prim.Addr#
+                                                                                               -> GHC.Prim.Int#
+                                                                                               -> GHC.Prim.State#
+                                                                                                    GHC.Prim.RealWorld
+                                                                                               -> (# GHC.Prim.State#
+                                                                                                       GHC.Prim.RealWorld #)}
+                                            ds2
+                                            (GHC.Prim.narrow32Int# x#3)
+                                            ds26 of wild14 { Unit# ds27 ->
+                                     (# ds27, GHC.Tuple.() #) } } } } }
+                                 } in
+                                 case ds10 of wild10 {
+                                   GHC.Types.False -> $j4 0# GHC.Types.True -> $j4 1# } }
+                             } in
+                             case ds9 of wild9 {
+                               GHC.Types.False -> $j3 0# GHC.Types.True -> $j3 1# } }
+                         } in
+                         case ds8 of wild8 {
+                           GHC.Types.False -> $j2 0# GHC.Types.True -> $j2 1# } }
+                     } in
+                     case ds7 of wild7 {
+                       GHC.Types.False -> $j1 0# GHC.Types.True -> $j1 1# } } } } } }
+                 } in
+                 case ds4 of wild2 {
+                   GHC.Types.False -> $j 0# GHC.Types.True -> $j 1# } } } } }) -}
+47626d4fe9a76c8454cdf7c4f29723b0
+  release ::
+    (t Control.Memory.Region.<= s) =>
+    Foreign.R.Internal.SEXP s a -> Foreign.R.Internal.SEXP t a
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,A>,
+     Unfolding: InlineRule (0, True, True)
+                Foreign.R.Internal.release1
+                  `cast`
+                (forall (t :: <*>_N) (s :: <*>_N) (a :: <Foreign.R.Type.SEXPTYPE>_N).
+                 <t Control.Memory.Region.<= s>_R
+                 ->_R <Foreign.R.Internal.SEXP s a>_R
+                 ->_R Trans
+                          (Foreign.R.Internal.N:SEXP[0] <s>_P <a>_P)
+                          (Trans
+                               (GHC.Ptr.Ptr
+                                  <Language.R.HExp.HExp s a, Language.R.HExp.HExp t a>)_R
+                               (Sym (Foreign.R.Internal.N:SEXP[0] <t>_P <a>_P)))) -}
+5c9ba63368747cbc41d02d97a5ee2ead
+  release1 ::
+    (t Control.Memory.Region.<= s) =>
+    Foreign.R.Internal.SEXP s a -> Foreign.R.Internal.SEXP s a
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,A>,
+     Unfolding: InlineRule (1, True, True)
+                (\ @ t
+                   @ s
+                   @ a :: Foreign.R.Type.SEXPTYPE
+                   (irred :: t Control.Memory.Region.<= s) ->
+                 Foreign.R.Internal.release2 @ a @ s) -}
+db793b68dcbfee80d5bac19d0d3c002a
+  release2 ::
+    Foreign.R.Internal.SEXP s a -> Foreign.R.Internal.SEXP s a
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U(U)>m,
+     Unfolding: InlineRule (1, True, True)
+                (\ @ a :: Foreign.R.Type.SEXPTYPE
+                   @ s
+                   (x :: Foreign.R.Internal.SEXP s a) ->
+                 x) -}
+db94cba949d4ad55aa11f00c69355b5d
+  setAttributes ::
+    Foreign.R.Internal.SEXP s a
+    -> Foreign.R.Internal.SEXP s b -> GHC.Types.IO ()
+  {- Arity: 3, HasNoCafRefs,
+     Strictness: <S(S),1*U(U)><S(S),1*U(U)><S,U>,
+     Unfolding: InlineRule (0, True, True)
+                Foreign.R.Internal.setAttributes1
+                  `cast`
+                (forall (s :: <*>_N) (a :: <Foreign.R.Type.SEXPTYPE>_N) (b :: <Foreign.R.Type.SEXPTYPE>_N).
+                 <Foreign.R.Internal.SEXP s a>_R
+                 ->_R <Foreign.R.Internal.SEXP s b>_R
+                 ->_R Sym (GHC.Types.N:IO[0] <()>_R)) -}
+978d55700766b127d3da96774909e7c1
+  setAttributes1 ::
+    Foreign.R.Internal.SEXP s a
+    -> Foreign.R.Internal.SEXP s b
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+  {- Arity: 3, HasNoCafRefs,
+     Strictness: <S(S),1*U(U)><S(S),1*U(U)><S,U>,
+     Unfolding: InlineRule (3, True, False)
+                (\ @ s
+                   @ a :: Foreign.R.Type.SEXPTYPE
+                   @ b :: Foreign.R.Type.SEXPTYPE
+                   (s1 :: Foreign.R.Internal.SEXP s a)
+                   (v :: Foreign.R.Internal.SEXP s b)
+                   (eta :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                 case s1
+                        `cast`
+                      (Trans
+                           (Foreign.R.Internal.N:SEXP[0] <s>_P <a>_P)
+                           (GHC.Ptr.Ptr
+                              <Language.R.HExp.HExp
+                                 s a, Foreign.R.Internal.SEXPREC>)_R) of ds { GHC.Ptr.Ptr ds1 ->
+                 case v `cast`
+                      (Trans
+                           (Foreign.R.Internal.N:SEXP[0] <s>_P <b>_P)
+                           (GHC.Ptr.Ptr
+                              <Language.R.HExp.HExp
+                                 s b, Foreign.R.Internal.SEXPREC>)_R) of ds2 { GHC.Ptr.Ptr ds3 ->
+                 case {__pkg_ccall inline-r-0.9.0.2-CmRL2Hikuao7dNZScoizZz GHC.Prim.Addr#
+                                                                           -> GHC.Prim.Addr#
+                                                                           -> GHC.Prim.State#
+                                                                                GHC.Prim.RealWorld
+                                                                           -> (# GHC.Prim.State#
+                                                                                   GHC.Prim.RealWorld #)}
+                        ds1
+                        ds3
+                        eta of wild { Unit# ds4 ->
+                 (# ds4, GHC.Tuple.() #) } } }) -}
+ec152320c68dd49dfd782e62af40d151
+  setCar ::
+    Foreign.R.Internal.SEXP s a
+    -> Foreign.R.Internal.SEXP s b -> GHC.Types.IO ()
+  {- Arity: 3, HasNoCafRefs,
+     Strictness: <S(S),1*U(U)><S(S),1*U(U)><S,U>,
+     Unfolding: InlineRule (0, True, True)
+                Foreign.R.Internal.setCar1
+                  `cast`
+                (forall (s :: <*>_N) (a :: <Foreign.R.Type.SEXPTYPE>_N) (b :: <Foreign.R.Type.SEXPTYPE>_N).
+                 <Foreign.R.Internal.SEXP s a>_R
+                 ->_R <Foreign.R.Internal.SEXP s b>_R
+                 ->_R Sym (GHC.Types.N:IO[0] <()>_R)) -}
+cf51aa26d42e4a2fe0e4e08dd967e630
+  setCar1 ::
+    Foreign.R.Internal.SEXP s a
+    -> Foreign.R.Internal.SEXP s b
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+  {- Arity: 3, HasNoCafRefs,
+     Strictness: <S(S),1*U(U)><S(S),1*U(U)><S,U>,
+     Unfolding: InlineRule (3, True, False)
+                (\ @ s
+                   @ a :: Foreign.R.Type.SEXPTYPE
+                   @ b :: Foreign.R.Type.SEXPTYPE
+                   (s1 :: Foreign.R.Internal.SEXP s a)
+                   (s' :: Foreign.R.Internal.SEXP s b)
+                   (eta1 :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                 case s1
+                        `cast`
+                      (Trans
+                           (Foreign.R.Internal.N:SEXP[0] <s>_P <a>_P)
+                           (GHC.Ptr.Ptr
+                              <Language.R.HExp.HExp
+                                 s a, Foreign.R.Internal.SEXPREC>)_R) of wild { GHC.Ptr.Ptr addr ->
+                 case s'
+                        `cast`
+                      (Trans
+                           (Foreign.R.Internal.N:SEXP[0] <s>_P <b>_P)
+                           (GHC.Ptr.Ptr
+                              <Language.R.HExp.HExp
+                                 s b, GHC.Types.Any>)_R) of wild2 { GHC.Ptr.Ptr x ->
+                 case GHC.Prim.writeAddrOffAddr#
+                        @ GHC.Prim.RealWorld
+                        (GHC.Prim.plusAddr# addr 32#)
+                        0#
+                        x
+                        eta1 of s2 { DEFAULT ->
+                 (# s2, GHC.Tuple.() #) } } }) -}
+8cfa7b7f3723547ac742983db92adf95
+  setCdr ::
+    Foreign.R.Internal.SEXP s a
+    -> Foreign.R.Internal.SEXP s b -> GHC.Types.IO ()
+  {- Arity: 3, HasNoCafRefs,
+     Strictness: <S(S),1*U(U)><S(S),1*U(U)><S,U>,
+     Unfolding: InlineRule (0, True, True)
+                Foreign.R.Internal.setCdr1
+                  `cast`
+                (forall (s :: <*>_N) (a :: <Foreign.R.Type.SEXPTYPE>_N) (b :: <Foreign.R.Type.SEXPTYPE>_N).
+                 <Foreign.R.Internal.SEXP s a>_R
+                 ->_R <Foreign.R.Internal.SEXP s b>_R
+                 ->_R Sym (GHC.Types.N:IO[0] <()>_R)) -}
+68409682786cf93b31b3248a647e2a0b
+  setCdr1 ::
+    Foreign.R.Internal.SEXP s a
+    -> Foreign.R.Internal.SEXP s b
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+  {- Arity: 3, HasNoCafRefs,
+     Strictness: <S(S),1*U(U)><S(S),1*U(U)><S,U>,
+     Unfolding: InlineRule (3, True, False)
+                (\ @ s
+                   @ a :: Foreign.R.Type.SEXPTYPE
+                   @ b :: Foreign.R.Type.SEXPTYPE
+                   (s1 :: Foreign.R.Internal.SEXP s a)
+                   (s' :: Foreign.R.Internal.SEXP s b)
+                   (eta1 :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                 case s1
+                        `cast`
+                      (Trans
+                           (Foreign.R.Internal.N:SEXP[0] <s>_P <a>_P)
+                           (GHC.Ptr.Ptr
+                              <Language.R.HExp.HExp
+                                 s a, Foreign.R.Internal.SEXPREC>)_R) of wild { GHC.Ptr.Ptr addr ->
+                 case s'
+                        `cast`
+                      (Trans
+                           (Foreign.R.Internal.N:SEXP[0] <s>_P <b>_P)
+                           (GHC.Ptr.Ptr
+                              <Language.R.HExp.HExp
+                                 s b, GHC.Types.Any>)_R) of wild2 { GHC.Ptr.Ptr x ->
+                 case GHC.Prim.writeAddrOffAddr#
+                        @ GHC.Prim.RealWorld
+                        (GHC.Prim.plusAddr# addr 40#)
+                        0#
+                        x
+                        eta1 of s2 { DEFAULT ->
+                 (# s2, GHC.Tuple.() #) } } }) -}
+1f3ca24c135482f75e5a9222699a59b5
+  setTag ::
+    Foreign.R.Internal.SEXP s a
+    -> Foreign.R.Internal.SEXP s b -> GHC.Types.IO ()
+  {- Arity: 3, HasNoCafRefs,
+     Strictness: <S(S),1*U(U)><S(S),1*U(U)><S,U>,
+     Unfolding: InlineRule (0, True, True)
+                Foreign.R.Internal.setTag1
+                  `cast`
+                (forall (s :: <*>_N) (a :: <Foreign.R.Type.SEXPTYPE>_N) (b :: <Foreign.R.Type.SEXPTYPE>_N).
+                 <Foreign.R.Internal.SEXP s a>_R
+                 ->_R <Foreign.R.Internal.SEXP s b>_R
+                 ->_R Sym (GHC.Types.N:IO[0] <()>_R)) -}
+4c038a70004649f7b326c577857cdcc2
+  setTag1 ::
+    Foreign.R.Internal.SEXP s a
+    -> Foreign.R.Internal.SEXP s b
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+  {- Arity: 3, HasNoCafRefs,
+     Strictness: <S(S),1*U(U)><S(S),1*U(U)><S,U>,
+     Unfolding: InlineRule (3, True, False)
+                (\ @ s
+                   @ a :: Foreign.R.Type.SEXPTYPE
+                   @ b :: Foreign.R.Type.SEXPTYPE
+                   (s1 :: Foreign.R.Internal.SEXP s a)
+                   (s' :: Foreign.R.Internal.SEXP s b)
+                   (eta1 :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                 case s1
+                        `cast`
+                      (Trans
+                           (Foreign.R.Internal.N:SEXP[0] <s>_P <a>_P)
+                           (GHC.Ptr.Ptr
+                              <Language.R.HExp.HExp
+                                 s a, Foreign.R.Internal.SEXPREC>)_R) of wild { GHC.Ptr.Ptr addr ->
+                 case s'
+                        `cast`
+                      (Trans
+                           (Foreign.R.Internal.N:SEXP[0] <s>_P <b>_P)
+                           (GHC.Ptr.Ptr
+                              <Language.R.HExp.HExp
+                                 s b, GHC.Types.Any>)_R) of wild2 { GHC.Ptr.Ptr x ->
+                 case GHC.Prim.writeAddrOffAddr#
+                        @ GHC.Prim.RealWorld
+                        (GHC.Prim.plusAddr# addr 48#)
+                        0#
+                        x
+                        eta1 of s2 { DEFAULT ->
+                 (# s2, GHC.Tuple.() #) } } }) -}
+a96c72508b040bb5e852a135425663e6
+  sexp :: Foreign.R.Internal.SEXP0 -> Foreign.R.Internal.SEXP s a
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U(U)>m,
+     Unfolding: InlineRule (0, True, True)
+                (\ @ s @ a :: Foreign.R.Type.SEXPTYPE -> Foreign.R.Internal.sexp1)
+                  `cast`
+                (forall (s :: <*>_N) (a :: <Foreign.R.Type.SEXPTYPE>_N).
+                 <GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC>_R
+                 ->_R Trans
+                          (GHC.Ptr.Ptr
+                             <Foreign.R.Internal.SEXPREC, Language.R.HExp.HExp s a>)_R
+                          (Sym (Foreign.R.Internal.N:SEXP[0] <s>_P <a>_P))) -}
+4c09e19e1e0ac61a43001735a6aadee8
+  sexp1 ::
+    GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+    -> GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U(U)>m,
+     Unfolding: InlineRule (1, True, True)
+                (\ (x :: GHC.Ptr.Ptr Foreign.R.Internal.SEXPREC) -> x) -}
+225295c78e820c52044b1187e1bc71fc
+  signalHandlers :: GHC.Ptr.Ptr Foreign.C.Types.CInt
+  {- Strictness: m,
+     Unfolding: (GHC.Ptr.Ptr
+                   @ Foreign.C.Types.CInt
+                   __label "R_SignalHandlers" (data)) -}
+efba7eee9369e61aec98274362b1f350
+  somesexp ::
+    Foreign.R.Internal.SEXP0 -> Foreign.R.Internal.SomeSEXP s
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,U>,
+     Unfolding: InlineRule (0, True, True)
+                (\ @ s -> Foreign.R.Internal.$WSomeSEXP @ s @ GHC.Types.Any)
+                  `cast`
+                (forall (s :: <*>_N).
+                 Trans
+                     (Foreign.R.Internal.N:SEXP[0] <s>_P <GHC.Types.Any>_P)
+                     (GHC.Ptr.Ptr
+                        <Language.R.HExp.HExp
+                           s GHC.Types.Any, Foreign.R.Internal.SEXPREC>)_R
+                 ->_R <Foreign.R.Internal.SomeSEXP s>_R) -}
+7afee6af5a3ea33aea03a8fcb3ded45f
+  typeOf :: Foreign.R.Internal.SEXP s a -> Foreign.R.Type.SEXPTYPE
+  {- Arity: 1, Strictness: <S(S),1*U(U)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ @ s
+                   @ a :: Foreign.R.Type.SEXPTYPE
+                   (s1 :: Foreign.R.Internal.SEXP s a) ->
+                 case s1
+                        `cast`
+                      (Trans
+                           (Foreign.R.Internal.N:SEXP[0] <s>_P <a>_P)
+                           (GHC.Ptr.Ptr
+                              <Language.R.HExp.HExp
+                                 s a, Foreign.R.Internal.SEXPREC>)_R) of ds { GHC.Ptr.Ptr ds1 ->
+                 case {__pkg_ccall inline-r-0.9.0.2-CmRL2Hikuao7dNZScoizZz GHC.Prim.Addr#
+                                                                           -> GHC.Prim.State#
+                                                                                GHC.Prim.RealWorld
+                                                                           -> (# GHC.Prim.State#
+                                                                                   GHC.Prim.RealWorld,
+                                                                                 GHC.Prim.Int# #)}
+                        ds1
+                        GHC.Prim.realWorld# of wild { (#,#) ds2 ds3 ->
+                 Foreign.R.Type.$w$ctoEnum (GHC.Prim.narrow32Int# ds3) } }) -}
+8e71af79acc64eda5f9cb7291bf461df
+  unSEXP ::
+    Foreign.R.Internal.SEXP s a
+    -> GHC.Ptr.Ptr (Language.R.HExp.HExp s a)
+  RecSel Left Foreign.R.Internal.SEXP
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U(U)>m,
+     Unfolding: InlineRule (0, True, True)
+                Foreign.R.Internal.unSEXP1
+                  `cast`
+                (forall (s :: <*>_N) (a :: <Foreign.R.Type.SEXPTYPE>_N).
+                 <Foreign.R.Internal.SEXP s a>_R
+                 ->_R Foreign.R.Internal.N:SEXP[0] <s>_P <a>_P) -}
+8e71af79acc64eda5f9cb7291bf461df
+  unSEXP1 ::
+    Foreign.R.Internal.SEXP s a -> Foreign.R.Internal.SEXP s a
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U(U)>m,
+     Unfolding: InlineRule (1, True, True)
+                (\ @ s
+                   @ a :: Foreign.R.Type.SEXPTYPE
+                   (ds :: Foreign.R.Internal.SEXP s a) ->
+                 ds) -}
+281bb9a3641a0911876f51032cac10a5
+  unSomeSEXP ::
+    Foreign.R.Internal.SomeSEXP s
+    -> (forall (a :: Foreign.R.Type.SEXPTYPE).
+        Foreign.R.Internal.SEXP s a -> r)
+    -> r
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><C(S),1*C1(U)>,
+     Unfolding: InlineRule (2, True, False)
+                (\ @ s
+                   @ r
+                   (ds :: Foreign.R.Internal.SomeSEXP s)
+                   (k :: forall (a :: Foreign.R.Type.SEXPTYPE).
+                         Foreign.R.Internal.SEXP s a -> r) ->
+                 case ds of wild { Foreign.R.Internal.SomeSEXP a dt ->
+                 k @ a
+                   (GHC.Ptr.Ptr @ (Language.R.HExp.HExp s a) dt)
+                     `cast`
+                   (Sym (Foreign.R.Internal.N:SEXP[0] <s>_P <a>_P)) }) -}
+02b9d675538771f828aa41d96e155c9a
+  unboundValue ::
+    GHC.Ptr.Ptr
+      (Foreign.R.Internal.SEXP
+         Control.Memory.Region.G 'Foreign.R.Type.Symbol)
+  {- Strictness: m,
+     Unfolding: (GHC.Ptr.Ptr
+                   @ (Foreign.R.Internal.SEXP
+                        Control.Memory.Region.G 'Foreign.R.Type.Symbol)
+                   __label "R_UnboundValue" (data)) -}
+7ab53a9e4ac35a552aa12db9388938c8
+  unsafeCast ::
+    Foreign.R.Type.SEXPTYPE
+    -> Foreign.R.Internal.SomeSEXP s -> Foreign.R.Internal.SEXP s b
+  {- Arity: 2, Strictness: <S,1*U><S,1*U>m, Inline: [0],
+     Unfolding: InlineRule (2, True, False)
+                (\ @ s
+                   @ b :: Foreign.R.Type.SEXPTYPE
+                   (w :: Foreign.R.Type.SEXPTYPE)
+                   (w1 :: Foreign.R.Internal.SomeSEXP s) ->
+                 case Foreign.R.Internal.$wunsafeCast
+                        @ s
+                        @ b
+                        w
+                        w1 of ww { DEFAULT ->
+                 (GHC.Ptr.Ptr @ (Language.R.HExp.HExp s b) ww)
+                   `cast`
+                 (Sym (Foreign.R.Internal.N:SEXP[0] <s>_P <b>_P)) }) -}
+fd24c6a04fe85cae12472829ca64771e
+  unsafeCoerce ::
+    Foreign.R.Internal.SEXP s a -> Foreign.R.Internal.SEXP s b
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U(U)>m,
+     Unfolding: InlineRule (0, True, True)
+                (\ @ s
+                   @ a :: Foreign.R.Type.SEXPTYPE
+                   @ b :: Foreign.R.Type.SEXPTYPE ->
+                 Foreign.R.Internal.release2 @ a @ s)
+                  `cast`
+                (forall (s :: <*>_N) (a :: <Foreign.R.Type.SEXPTYPE>_N) (b :: <Foreign.R.Type.SEXPTYPE>_N).
+                 <Foreign.R.Internal.SEXP s a>_R
+                 ->_R Trans
+                          (Foreign.R.Internal.N:SEXP[0] <s>_P <a>_P)
+                          (Trans
+                               (GHC.Ptr.Ptr
+                                  <Language.R.HExp.HExp s a, Language.R.HExp.HExp s b>)_R
+                               (Sym (Foreign.R.Internal.N:SEXP[0] <s>_P <b>_P)))) -}
+947c5de2985d3c51da4d5b3a8811624f
+  unsafeRelease ::
+    Foreign.R.Internal.SEXP s a -> Foreign.R.Internal.SEXP r a
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U(U)>m,
+     Unfolding: InlineRule (0, True, True)
+                (\ @ s @ a :: Foreign.R.Type.SEXPTYPE @ r ->
+                 Foreign.R.Internal.release2 @ a @ s)
+                  `cast`
+                (forall (s :: <*>_N) (a :: <Foreign.R.Type.SEXPTYPE>_N) (r :: <*>_N).
+                 <Foreign.R.Internal.SEXP s a>_R
+                 ->_R Trans
+                          (Foreign.R.Internal.N:SEXP[0] <s>_P <a>_P)
+                          (Trans
+                               (GHC.Ptr.Ptr
+                                  <Language.R.HExp.HExp s a, Language.R.HExp.HExp r a>)_R
+                               (Sym (Foreign.R.Internal.N:SEXP[0] <r>_P <a>_P)))) -}
+793ad2fe9d7f56fdd17d73e58572c323
+  unsafeSEXPToVectorPtr ::
+    Foreign.R.Internal.SEXP s a -> GHC.Ptr.Ptr ()
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(S),1*U(U)>m,
+     Unfolding: InlineRule (1, True, False)
+                (\ @ s
+                   @ a :: Foreign.R.Type.SEXPTYPE
+                   (s1 :: Foreign.R.Internal.SEXP s a) ->
+                 case s1
+                        `cast`
+                      (Trans
+                           (Foreign.R.Internal.N:SEXP[0] <s>_P <a>_P)
+                           (GHC.Ptr.Ptr
+                              <Language.R.HExp.HExp
+                                 s a, Foreign.R.Internal.SEXPREC>)_R) of wild { GHC.Ptr.Ptr addr ->
+                 GHC.Ptr.Ptr @ () (GHC.Prim.plusAddr# addr 40#) }) -}
+a05c046379766cd8787370ef66edd743
+  unsafeVectorPtrToSEXP ::
+    GHC.Ptr.Ptr a -> Foreign.R.Internal.SomeSEXP s
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(S),1*U(U)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ @ a @ s (s1 :: GHC.Ptr.Ptr a) ->
+                 case s1 of wild { GHC.Ptr.Ptr addr ->
+                 Foreign.R.Internal.SomeSEXP
+                   @ s
+                   @ GHC.Types.Any
+                   (GHC.Prim.plusAddr# addr -40#) }) -}
+456b119a325c68ef328adef52d3b1e7c
+  unsexp :: Foreign.R.Internal.SEXP s a -> Foreign.R.Internal.SEXP0
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U(U)>m,
+     Unfolding: InlineRule (0, True, True)
+                (\ @ s @ a :: Foreign.R.Type.SEXPTYPE ->
+                 Foreign.R.Internal.release2 @ a @ s)
+                  `cast`
+                (forall (s :: <*>_N) (a :: <Foreign.R.Type.SEXPTYPE>_N).
+                 <Foreign.R.Internal.SEXP s a>_R
+                 ->_R Trans
+                          (Foreign.R.Internal.N:SEXP[0] <s>_P <a>_P)
+                          (GHC.Ptr.Ptr
+                             <Language.R.HExp.HExp s a, Foreign.R.Internal.SEXPREC>)_R) -}
+instance GHC.Classes.Eq [Foreign.R.Internal.SEXP]
+  = Foreign.R.Internal.$fEqSEXP
+instance Control.DeepSeq.NFData [Foreign.R.Internal.SEXP]
+  = Foreign.R.Internal.$fNFDataSEXP
+instance Control.DeepSeq.NFData [Foreign.R.Internal.SomeSEXP]
+  = Foreign.R.Internal.$fNFDataSomeSEXP
+instance GHC.Classes.Ord [Foreign.R.Internal.SEXP]
+  = Foreign.R.Internal.$fOrdSEXP
+instance GHC.Show.Show [Foreign.R.Internal.SEXP]
+  = Foreign.R.Internal.$fShowSEXP
+instance GHC.Show.Show [Foreign.R.Internal.SEXPInfo]
+  = Foreign.R.Internal.$fShowSEXPInfo
+instance GHC.Show.Show [Foreign.R.Internal.SomeSEXP]
+  = Foreign.R.Internal.$fShowSomeSEXP
+instance Foreign.Storable.Storable [Foreign.R.Internal.SEXP]
+  = Foreign.R.Internal.$fStorableSEXP
+instance Foreign.Storable.Storable [Foreign.R.Internal.SomeSEXP]
+  = Foreign.R.Internal.$fStorableSomeSEXP
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: none
+require own pkg trusted: False
+

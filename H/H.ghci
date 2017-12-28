@@ -1,0 +1,14 @@
+-- Copyright: (C) 2013 Amgen, Inc.
+:set -fno-ghci-sandbox
+:set -XDataKinds
+:set -XGADTs
+:set -XPartialTypeSignatures
+:set -XOverloadedLists
+:set -XQuasiQuotes
+:set -XScopedTypeVariables
+:set -XTemplateHaskell
+:set -XViewPatterns
+
+import H.Prelude.Interactive as H.Prelude
+
+Language.R.Instance.initialize Language.R.Instance.defaultConfig

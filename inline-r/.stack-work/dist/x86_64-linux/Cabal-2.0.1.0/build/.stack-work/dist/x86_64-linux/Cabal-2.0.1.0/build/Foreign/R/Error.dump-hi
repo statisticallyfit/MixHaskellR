@@ -1,0 +1,246 @@
+
+==================== FINAL INTERFACE ====================
+2017-12-28 08:49:00.47793 UTC
+
+interface inline-r-0.9.0.2-CmRL2Hikuao7dNZScoizZz:Foreign.R.Error 8022
+  interface hash: 084e227170d0256c44b7f7810e9d700a
+  ABI hash: 01dac5f36b0f41d1f5189560b4d35018
+  export-list hash: c511d821dc594cc406fead0ca4018992
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: c463f9a738b422bed6fab510bb56b33e
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Foreign.R.Error.RError{Foreign.R.Error.RError}
+module dependencies:
+package dependencies: base-4.10.1.0* ghc-prim-0.5.1.1
+                      integer-gmp-1.0.1.0
+orphans: base-4.10.1.0:GHC.Float base-4.10.1.0:GHC.Base
+family instance modules: base-4.10.1.0:Control.Applicative
+                         base-4.10.1.0:Data.Either base-4.10.1.0:Data.Functor.Const
+                         base-4.10.1.0:Data.Functor.Identity base-4.10.1.0:Data.Monoid
+                         base-4.10.1.0:Data.Type.Equality base-4.10.1.0:GHC.Generics
+                         base-4.10.1.0:GHC.IO.Exception base-4.10.1.0:GHC.TypeLits
+                         base-4.10.1.0:GHC.TypeNats
+import  -/  base-4.10.1.0:Control.Exception c134ea327d158f2eebf26e12a1d4ad47
+import  -/  base-4.10.1.0:Data.Typeable 3291e9b95e37ffc276f1f4c39c7b8372
+import  -/  base-4.10.1.0:Data.Typeable.Internal b31684019ac02e3213b270a8482ac844
+import  -/  base-4.10.1.0:GHC.Base 782fd99b5e36f3698a26179a49afca64
+import  -/  base-4.10.1.0:GHC.Exception 471142a05c31a6533c10399f8190de35
+import  -/  base-4.10.1.0:GHC.Show 0a8ce2b5e533d1c2cfb7954e6736be45
+import  -/  base-4.10.1.0:Prelude 31945b7d0084063347fc52506d3a4020
+addDependentFile "src/Foreign/R/Error.chs"
+addDependentFile "/datascience/bin/stack/programs/x86_64-linux/ghc-8.2.2/lib/ghc-8.2.2/include/ghcversion.h"
+addDependentFile ".stack-work/dist/x86_64-linux/Cabal-2.0.1.0/build/autogen/cabal_macros.h"
+addDependentFile "/usr/include/stdc-predef.h"
+0adc7fcff0cf410559a960aa0ae4ba25
+  $fExceptionRError :: GHC.Exception.Exception Foreign.R.Error.RError
+  DFunId
+  {- Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ Foreign.R.Error.RError
+                  Foreign.R.Error.$fExceptionRError2
+                    `cast`
+                  (Sym (Data.Typeable.Internal.N:Typeable[0]) <*>_N <Foreign.R.Error.RError>_N)
+                  Foreign.R.Error.$fShowRError
+                  Foreign.R.Error.$fExceptionRError_$ctoException
+                  Foreign.R.Error.$fExceptionRError_$cfromException
+                  Foreign.R.Error.$fExceptionRError_$cshow -}
+edb5e2513d362c11851ea3039d4032fd
+  $fExceptionRError1 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("R Runtime Error: "#) -}
+0adc7fcff0cf410559a960aa0ae4ba25
+  $fExceptionRError2 ::
+    Data.Typeable.Internal.TypeRep Foreign.R.Error.RError
+  {- Unfolding: (case GHC.Magic.noinline
+                        @ ([GHC.Fingerprint.Type.Fingerprint]
+                           -> GHC.Fingerprint.Type.Fingerprint)
+                        GHC.Fingerprint.fingerprintFingerprints
+                        Foreign.R.Error.$fExceptionRError3 of dt { GHC.Fingerprint.Type.Fingerprint dt1 dt2 ->
+                 Data.Typeable.Internal.TrTyCon
+                   @ *
+                   @ Foreign.R.Error.RError
+                   dt1
+                   dt2
+                   Foreign.R.Error.$tcRError
+                   (GHC.Types.[] @ Data.Typeable.Internal.SomeTypeRep) }) -}
+e2e50a2b2f0e8d9d4a04ddea13292d54
+  $fExceptionRError3 :: [GHC.Fingerprint.Type.Fingerprint]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Fingerprint.Type.Fingerprint
+                   Foreign.R.Error.$fExceptionRError5
+                   Foreign.R.Error.$fExceptionRError4) -}
+17ee2c99a70eb369451b5196fe474fa9
+  $fExceptionRError4 :: [GHC.Fingerprint.Type.Fingerprint]
+  {- Unfolding: (GHC.Base.map
+                   @ Data.Typeable.Internal.SomeTypeRep
+                   @ GHC.Fingerprint.Type.Fingerprint
+                   Data.Typeable.Internal.someTypeRepFingerprint
+                   (GHC.Types.[] @ Data.Typeable.Internal.SomeTypeRep)) -}
+1a3ebd3a606086bef3c7b3dc7de24c59
+  $fExceptionRError5 :: GHC.Fingerprint.Type.Fingerprint
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Fingerprint.Type.Fingerprint
+                   8394403872271315941##
+                   8015212558285378892##) -}
+0adc7fcff0cf410559a960aa0ae4ba25
+  $fExceptionRError_$cfromException ::
+    GHC.Exception.SomeException
+    -> GHC.Base.Maybe Foreign.R.Error.RError
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: (\ (ds :: GHC.Exception.SomeException) ->
+                 case ds of wild { GHC.Exception.SomeException e1 $dException1 e2 ->
+                 case Data.Typeable.Internal.eqTypeRep
+                        @ *
+                        @ *
+                        @ e1
+                        @ Foreign.R.Error.RError
+                        (GHC.Exception.$p1Exception @ e1 $dException1)
+                          `cast`
+                        (Data.Typeable.Internal.N:Typeable[0] <*>_N <e1>_N)
+                        Foreign.R.Error.$fExceptionRError2 of wild1 {
+                   GHC.Base.Nothing -> GHC.Base.Nothing @ Foreign.R.Error.RError
+                   GHC.Base.Just ds1
+                   -> case ds1 of wild2 { Data.Type.Equality.HRefl cobox cobox1 ->
+                      (GHC.Base.Just @ e1 e2)
+                        `cast`
+                      (GHC.Base.Maybe (Sub (Sym cobox1)))_R } } }) -}
+0adc7fcff0cf410559a960aa0ae4ba25
+  $fExceptionRError_$cshow ::
+    Foreign.R.Error.RError -> GHC.Base.String
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U(U)>, Inline: [0],
+     Unfolding: InlineRule (1, True, False)
+                (\ (w :: Foreign.R.Error.RError) ->
+                 case w of ww { Foreign.R.Error.RError ww1 ->
+                 Foreign.R.Error.$w$cshow ww1 }) -}
+0adc7fcff0cf410559a960aa0ae4ba25
+  $fExceptionRError_$ctoException ::
+    Foreign.R.Error.RError -> GHC.Exception.SomeException
+  {- Arity: 1 -}
+0adc7fcff0cf410559a960aa0ae4ba25
+  $fShowRError :: GHC.Show.Show Foreign.R.Error.RError
+  DFunId
+  {- HasNoCafRefs, Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ Foreign.R.Error.RError
+                  Foreign.R.Error.$fShowRError_$cshowsPrec
+                  Foreign.R.Error.$fExceptionRError_$cshow
+                  Foreign.R.Error.$fShowRError_$cshowList -}
+0adc7fcff0cf410559a960aa0ae4ba25
+  $fShowRError1 :: Foreign.R.Error.RError -> GHC.Show.ShowS
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U(1*U)><L,1*U>,
+     Unfolding: (\ (w :: Foreign.R.Error.RError)
+                   (w1 :: GHC.Base.String) ->
+                 case w of ww { Foreign.R.Error.RError ww1 ->
+                 Foreign.R.Error.$w$cshowsPrec ww1 w1 }) -}
+0adc7fcff0cf410559a960aa0ae4ba25
+  $fShowRError_$cshowList ::
+    [Foreign.R.Error.RError] -> GHC.Show.ShowS
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><L,U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (ls :: [Foreign.R.Error.RError]) (s :: GHC.Base.String) ->
+                 GHC.Show.showList__
+                   @ Foreign.R.Error.RError
+                   Foreign.R.Error.$fShowRError1
+                   ls
+                   s) -}
+0adc7fcff0cf410559a960aa0ae4ba25
+  $fShowRError_$cshowsPrec ::
+    GHC.Types.Int -> Foreign.R.Error.RError -> GHC.Show.ShowS
+  {- Arity: 3, HasNoCafRefs, Strictness: <L,A><S,1*U(1*U)><L,1*U>,
+     Inline: [0],
+     Unfolding: InlineRule (3, True, False)
+                (\ (w :: GHC.Types.Int)
+                   (w1 :: Foreign.R.Error.RError)
+                   (w2 :: GHC.Base.String) ->
+                 case w1 of ww { Foreign.R.Error.RError ww1 ->
+                 Foreign.R.Error.$w$cshowsPrec ww1 w2 }) -}
+6f598abf534aa2c7508fcf4ce48c07bb
+  $tc'RError :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   955758254358502008##
+                   7022040691142918386##
+                   Foreign.R.Error.$trModule
+                   Foreign.R.Error.$tc'RError2
+                   0#
+                   Foreign.R.Error.$tc'RError1) -}
+cb325c5d4cfabbf864ae139bbddb48dc
+  $tc'RError1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m4, Inline: [~] -}
+19e4e766242cbe111ce8a02ffe17aa4b
+  $tc'RError2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Foreign.R.Error.$tc'RError3) -}
+739bc221ff89735190385e9b3d73cd1e
+  $tc'RError3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'RError"#) -}
+2684a544dd9d336ef85c01155e04bef2
+  $tcRError :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   8394403872271315941##
+                   8015212558285378892##
+                   Foreign.R.Error.$trModule
+                   Foreign.R.Error.$tcRError1
+                   0#
+                   GHC.Types.krep$*) -}
+5fa1f5dd4ab0dcbdea5f2eee9271df25
+  $tcRError1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Foreign.R.Error.$tcRError2) -}
+facb794d73bb42cdae453029c643be4e
+  $tcRError2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("RError"#) -}
+5f90a07f8904a3a63f34a275db822b37
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module
+                   Foreign.R.Error.$trModule3
+                   Foreign.R.Error.$trModule1) -}
+2aafefe5fb3d556b7fa2ec0b6ee4e6f8
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Foreign.R.Error.$trModule2) -}
+2df2c53a618573d3bd3153e1951d125c
+  $trModule2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Foreign.R.Error"#) -}
+dca561f6145e5330b3a39fcb020e23e3
+  $trModule3 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Foreign.R.Error.$trModule4) -}
+c38cc660d5ae7601064688cd38a94197
+  $trModule4 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("inline-r-0.9.0.2-CmRL2Hikuao7dNZScoizZz"#) -}
+53e5df411a97a0c1572dc25f01ba343c
+  $w$cshow :: GHC.Base.String -> GHC.Base.String
+  {- Arity: 1, HasNoCafRefs, Strictness: <L,U>, Inline: [0],
+     Unfolding: (\ (ww :: GHC.Base.String) ->
+                 GHC.CString.unpackAppendCString#
+                   Foreign.R.Error.$fExceptionRError1
+                   ww) -}
+f964c1b250a85ed1f2bb642a0e541263
+  $w$cshowsPrec ::
+    GHC.Base.String -> GHC.Base.String -> [GHC.Types.Char]
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,1*U><L,1*U>, Inline: [0],
+     Unfolding: (\ (ww :: GHC.Base.String) (w :: GHC.Base.String) ->
+                 GHC.CString.unpackAppendCString#
+                   Foreign.R.Error.$fExceptionRError1
+                   (GHC.Base.++ @ GHC.Types.Char ww w)) -}
+0adc7fcff0cf410559a960aa0ae4ba25
+  data RError = RError GHC.Base.String
+instance [safe] GHC.Exception.Exception [Foreign.R.Error.RError]
+  = Foreign.R.Error.$fExceptionRError
+instance [safe] GHC.Show.Show [Foreign.R.Error.RError]
+  = Foreign.R.Error.$fShowRError
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: safe
+require own pkg trusted: False
+

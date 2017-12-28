@@ -1,0 +1,712 @@
+
+==================== FINAL INTERFACE ====================
+2017-12-28 08:49:07.806453 UTC
+
+interface inline-r-0.9.0.2-CmRL2Hikuao7dNZScoizZz:Foreign.R.Parse 8022
+  interface hash: d9b9194d08f19bf6f57fe775d046444a
+  ABI hash: 3175c1082e4a6a2c2f0190a08a8571d9
+  export-list hash: b4935d66b416aef34375b665eb20f691
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: 611ab936029592ebfd89633636e52aff
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Foreign.R.Parse.parseVector
+  Foreign.R.Parse.ParseStatus{Foreign.R.Parse.PARSE_EOF Foreign.R.Parse.PARSE_ERROR Foreign.R.Parse.PARSE_INCOMPLETE Foreign.R.Parse.PARSE_NULL Foreign.R.Parse.PARSE_OK}
+module dependencies: Control.Memory.Region Foreign.R
+                     Foreign.R.Constraints Foreign.R.Internal Foreign.R.Type
+                     Internal.Error Language.R.HExp [boot]
+package dependencies: array-0.5.2.0 base-4.10.1.0 binary-0.8.5.1
+                      bytestring-0.10.8.2 containers-0.5.10.2 deepseq-1.4.3.0
+                      ghc-boot-th-8.2.2 ghc-prim-0.5.1.1 integer-gmp-1.0.1.0 mtl-2.2.1
+                      pretty-1.1.3.3 primitive-0.6.2.0 safe-0.3.15 singletons-2.3.1
+                      syb-0.7 template-haskell-2.12.0.0 text-1.2.2.2 th-desugar-1.7
+                      th-expand-syns-0.4.3.0 th-lift-0.7.7 th-lift-instances-0.1.11
+                      th-orphans-0.13.4 th-reify-many-0.1.8 transformers-0.5.2.0
+                      vector-0.12.0.1
+orphans: singletons-2.3.1:Data.Singletons.TypeLits
+         singletons-2.3.1:Data.Singletons.TypeLits.Internal
+         singletons-2.3.1:Data.Singletons.Prelude.Instances
+         singletons-2.3.1:Data.Singletons.Decide
+         th-orphans-0.13.4:Language.Haskell.TH.Instances
+         th-lift-instances-0.1.11:Instances.TH.Lift
+         th-lift-0.7.7:Language.Haskell.TH.Lift text-1.2.2.2:Data.Text.Lazy
+         text-1.2.2.2:Data.Text binary-0.8.5.1:Data.Binary.Generic
+         bytestring-0.10.8.2:Data.ByteString.Builder
+         text-1.2.2.2:Data.Text.Show vector-0.12.0.1:Data.Vector.Unboxed
+         vector-0.12.0.1:Data.Vector.Fusion.Bundle
+         transformers-0.5.2.0:Control.Monad.Trans.Error
+         syb-0.7:Data.Generics.Instances base-4.10.1.0:GHC.Float
+         base-4.10.1.0:GHC.Base
+family instance modules: base-4.10.1.0:Control.Applicative
+                         base-4.10.1.0:Data.Complex base-4.10.1.0:Data.Either
+                         base-4.10.1.0:Data.Functor.Compose base-4.10.1.0:Data.Functor.Const
+                         base-4.10.1.0:Data.Functor.Identity
+                         base-4.10.1.0:Data.Functor.Product base-4.10.1.0:Data.Functor.Sum
+                         base-4.10.1.0:Data.List.NonEmpty base-4.10.1.0:Data.Monoid
+                         base-4.10.1.0:Data.Semigroup base-4.10.1.0:Data.Type.Equality
+                         base-4.10.1.0:Data.Version base-4.10.1.0:Data.Void
+                         base-4.10.1.0:GHC.Exts base-4.10.1.0:GHC.Generics
+                         base-4.10.1.0:GHC.IO.Exception base-4.10.1.0:GHC.TypeLits
+                         base-4.10.1.0:GHC.TypeNats containers-0.5.10.2:Data.IntMap.Internal
+                         containers-0.5.10.2:Data.IntSet.Internal
+                         containers-0.5.10.2:Data.Map.Internal
+                         containers-0.5.10.2:Data.Sequence.Internal
+                         containers-0.5.10.2:Data.Set.Internal containers-0.5.10.2:Data.Tree
+                         ghc-boot-th-8.2.2:GHC.ForeignSrcLang.Type
+                         ghc-boot-th-8.2.2:GHC.LanguageExtensions.Type
+                         inline-r-0.9.0.2-CmRL2Hikuao7dNZScoizZz:Control.Memory.Region
+                         inline-r-0.9.0.2-CmRL2Hikuao7dNZScoizZz:Foreign.R.Type
+                         pretty-1.1.3.3:Text.PrettyPrint.Annotated.HughesPJ
+                         pretty-1.1.3.3:Text.PrettyPrint.HughesPJ
+                         primitive-0.6.2.0:Control.Monad.Primitive
+                         primitive-0.6.2.0:Data.Primitive.Array
+                         singletons-2.3.1:Data.Singletons
+                         singletons-2.3.1:Data.Singletons.Prelude.Bool
+                         singletons-2.3.1:Data.Singletons.Prelude.Eq
+                         singletons-2.3.1:Data.Singletons.Prelude.Instances
+                         singletons-2.3.1:Data.Singletons.Prelude.Num
+                         singletons-2.3.1:Data.Singletons.Prelude.Ord
+                         singletons-2.3.1:Data.Singletons.Syntax
+                         singletons-2.3.1:Data.Singletons.TypeLits
+                         singletons-2.3.1:Data.Singletons.TypeLits.Internal
+                         template-haskell-2.12.0.0:Language.Haskell.TH.Syntax
+                         text-1.2.2.2:Data.Text text-1.2.2.2:Data.Text.Lazy
+                         th-desugar-1.7:Language.Haskell.TH.Desugar.Core
+                         vector-0.12.0.1:Data.Vector vector-0.12.0.1:Data.Vector.Primitive
+                         vector-0.12.0.1:Data.Vector.Storable
+                         vector-0.12.0.1:Data.Vector.Unboxed
+                         vector-0.12.0.1:Data.Vector.Unboxed.Base
+import  -/  base-4.10.1.0:Foreign 6e1e49cc01b9f846dbcb01cc4a57d323
+import  -/  base-4.10.1.0:Foreign.C f34e348e91247a99e0eb5a41b6102351
+import  -/  base-4.10.1.0:Foreign.C.Types 936c0db027291520097b61fd8686710a
+import  -/  base-4.10.1.0:Foreign.Ptr 2bbd57f0acbb5d9a11c58f4f5d32b343
+import  -/  base-4.10.1.0:GHC.Base 782fd99b5e36f3698a26179a49afca64
+import  -/  base-4.10.1.0:GHC.Enum 5a1ba50c23f92f669e01f8955f202337
+import  -/  base-4.10.1.0:GHC.Err 514b3a24b22e9d7d731c2d0d02d10842
+import  -/  base-4.10.1.0:GHC.Num 6e1dc5d36d99a802edb39b92bb1923b8
+import  -/  base-4.10.1.0:GHC.Ptr f6ff03f1ebd95f085d6be4b1fdb71ff8
+import  -/  base-4.10.1.0:GHC.Real 3c62834bc25e762eabc44149c4cc142d
+import  -/  base-4.10.1.0:GHC.Show 0a8ce2b5e533d1c2cfb7954e6736be45
+import  -/  base-4.10.1.0:Prelude 31945b7d0084063347fc52506d3a4020
+import  -/  ghc-prim-0.5.1.1:GHC.Classes 93e2660065dce9329577e83d76d8f0d4
+import  -/  ghc-prim-0.5.1.1:GHC.Types b1fd0716441595db508c1a74387bf394
+import  -/  Foreign.R 51460710da704a1aff942901939ab83a
+  exports: 66604cef250b707139e6d39041287043
+  SEXP0 1e7c3803f3abb3c979e17a50378d440a
+import  -/  Foreign.R.Constraints 5e190340d29314eb38fd1cdb5ab46fca
+  exports: 441429338cad6caf0808dc7f956d20fa
+  In a3ab9edf9ee091ebae9a88db3482fb02
+import  -/  Foreign.R.Internal 0950ef2cc999f128080e9690ff115a12
+  SEXP 8e71af79acc64eda5f9cb7291bf461df
+  sexp a96c72508b040bb5e852a135425663e6
+  unsexp 456b119a325c68ef328adef52d3b1e7c
+import  -/  Foreign.R.Type c66cc062d80b456888eb0e05aa6a4002
+  Expr 436bad07c9b16edb50cb6c3f0bb45e34
+  Nil 36bcb069ae5a9368ced2bacefcf86560
+  String e0243b21c36f7ea25c758c04c63f25ed
+addDependentFile "src/Foreign/R/Parse.chs"
+addDependentFile "/datascience/bin/stack/programs/x86_64-linux/ghc-8.2.2/lib/ghc-8.2.2/include/ghcversion.h"
+addDependentFile ".stack-work/dist/x86_64-linux/Cabal-2.0.1.0/build/autogen/cabal_macros.h"
+addDependentFile "/usr/include/stdc-predef.h"
+59c56e09ec693e6f8b4344e0e245b785
+  $fEnumParseStatus :: GHC.Enum.Enum Foreign.R.Parse.ParseStatus
+  DFunId
+  {- Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ Foreign.R.Parse.ParseStatus
+                  Foreign.R.Parse.$fEnumParseStatus_$csucc
+                  Foreign.R.Parse.$fEnumParseStatus_$cpred
+                  Foreign.R.Parse.$fEnumParseStatus_$ctoEnum
+                  Foreign.R.Parse.$fEnumParseStatus_$cfromEnum
+                  Foreign.R.Parse.$fEnumParseStatus_$cenumFrom
+                  Foreign.R.Parse.$fEnumParseStatus_$cenumFromThen
+                  Foreign.R.Parse.$fEnumParseStatus_$cenumFromTo
+                  Foreign.R.Parse.$fEnumParseStatus_$cenumFromThenTo -}
+59c56e09ec693e6f8b4344e0e245b785
+  $fEnumParseStatus1 :: [Foreign.R.Parse.ParseStatus]
+  {- Unfolding: (Foreign.R.Parse.$fEnumParseStatus_go5 4#) -}
+59c56e09ec693e6f8b4344e0e245b785
+  $fEnumParseStatus2 :: [Foreign.R.Parse.ParseStatus]
+  {- Unfolding: (Foreign.R.Parse.$fEnumParseStatus_go5 3#) -}
+59c56e09ec693e6f8b4344e0e245b785
+  $fEnumParseStatus3 :: [Foreign.R.Parse.ParseStatus]
+  {- Unfolding: (Foreign.R.Parse.$fEnumParseStatus_go5 2#) -}
+59c56e09ec693e6f8b4344e0e245b785
+  $fEnumParseStatus4 :: [Foreign.R.Parse.ParseStatus]
+  {- Unfolding: (Foreign.R.Parse.$fEnumParseStatus_go5 1#) -}
+59c56e09ec693e6f8b4344e0e245b785
+  $fEnumParseStatus5 :: [Foreign.R.Parse.ParseStatus]
+  {- Unfolding: (Foreign.R.Parse.$fEnumParseStatus_go5 0#) -}
+59c56e09ec693e6f8b4344e0e245b785
+  $fEnumParseStatus6 :: Foreign.R.Parse.ParseStatus
+  {- Strictness: x -}
+59c56e09ec693e6f8b4344e0e245b785
+  $fEnumParseStatus7 :: Foreign.R.Parse.ParseStatus
+  {- Strictness: x -}
+59c56e09ec693e6f8b4344e0e245b785
+  $fEnumParseStatus_$cenumFrom ::
+    Foreign.R.Parse.ParseStatus -> [Foreign.R.Parse.ParseStatus]
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: (\ (a :: Foreign.R.Parse.ParseStatus) ->
+                 case a of wild {
+                   Foreign.R.Parse.PARSE_NULL -> Foreign.R.Parse.$fEnumParseStatus5
+                   Foreign.R.Parse.PARSE_OK -> Foreign.R.Parse.$fEnumParseStatus4
+                   Foreign.R.Parse.PARSE_INCOMPLETE
+                   -> Foreign.R.Parse.$fEnumParseStatus3
+                   Foreign.R.Parse.PARSE_ERROR -> Foreign.R.Parse.$fEnumParseStatus2
+                   Foreign.R.Parse.PARSE_EOF
+                   -> Foreign.R.Parse.$fEnumParseStatus1 }) -}
+59c56e09ec693e6f8b4344e0e245b785
+  $fEnumParseStatus_$cenumFromThen ::
+    Foreign.R.Parse.ParseStatus
+    -> Foreign.R.Parse.ParseStatus -> [Foreign.R.Parse.ParseStatus]
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U> -}
+59c56e09ec693e6f8b4344e0e245b785
+  $fEnumParseStatus_$cenumFromThenTo ::
+    Foreign.R.Parse.ParseStatus
+    -> Foreign.R.Parse.ParseStatus
+    -> Foreign.R.Parse.ParseStatus
+    -> [Foreign.R.Parse.ParseStatus]
+  {- Arity: 3, Strictness: <S,1*U><S,1*U><S,1*U> -}
+59c56e09ec693e6f8b4344e0e245b785
+  $fEnumParseStatus_$cenumFromTo ::
+    Foreign.R.Parse.ParseStatus
+    -> Foreign.R.Parse.ParseStatus -> [Foreign.R.Parse.ParseStatus]
+  {- Arity: 2, Strictness: <S,1*U><S,1*U>,
+     Unfolding: (\ (x :: Foreign.R.Parse.ParseStatus)
+                   (y :: Foreign.R.Parse.ParseStatus) ->
+                 let {
+                   $j :: GHC.Prim.Int# -> [Foreign.R.Parse.ParseStatus]
+                     <join 1> {- Arity: 1, Strictness: <S,U> -}
+                   = \ (a# :: GHC.Prim.Int#)[OneShot] ->
+                     case y of wild {
+                       Foreign.R.Parse.PARSE_NULL
+                       -> case GHC.Prim.tagToEnum#
+                                 @ GHC.Types.Bool
+                                 (GHC.Prim.># a# 0#) of wild1 {
+                            GHC.Types.False -> Foreign.R.Parse.$fEnumParseStatus_go4 a#
+                            GHC.Types.True -> GHC.Types.[] @ Foreign.R.Parse.ParseStatus }
+                       Foreign.R.Parse.PARSE_OK
+                       -> case GHC.Prim.tagToEnum#
+                                 @ GHC.Types.Bool
+                                 (GHC.Prim.># a# 1#) of wild1 {
+                            GHC.Types.False -> Foreign.R.Parse.$fEnumParseStatus_go3 a#
+                            GHC.Types.True -> GHC.Types.[] @ Foreign.R.Parse.ParseStatus }
+                       Foreign.R.Parse.PARSE_INCOMPLETE
+                       -> case GHC.Prim.tagToEnum#
+                                 @ GHC.Types.Bool
+                                 (GHC.Prim.># a# 2#) of wild1 {
+                            GHC.Types.False -> Foreign.R.Parse.$fEnumParseStatus_go2 a#
+                            GHC.Types.True -> GHC.Types.[] @ Foreign.R.Parse.ParseStatus }
+                       Foreign.R.Parse.PARSE_ERROR
+                       -> case GHC.Prim.tagToEnum#
+                                 @ GHC.Types.Bool
+                                 (GHC.Prim.># a# 3#) of wild1 {
+                            GHC.Types.False -> Foreign.R.Parse.$fEnumParseStatus_go1 a#
+                            GHC.Types.True -> GHC.Types.[] @ Foreign.R.Parse.ParseStatus }
+                       Foreign.R.Parse.PARSE_EOF
+                       -> case GHC.Prim.tagToEnum#
+                                 @ GHC.Types.Bool
+                                 (GHC.Prim.># a# 4#) of wild1 {
+                            GHC.Types.False -> Foreign.R.Parse.$fEnumParseStatus_go a#
+                            GHC.Types.True -> GHC.Types.[] @ Foreign.R.Parse.ParseStatus } }
+                 } in
+                 case x of wild {
+                   Foreign.R.Parse.PARSE_NULL -> $j 0#
+                   Foreign.R.Parse.PARSE_OK -> $j 1#
+                   Foreign.R.Parse.PARSE_INCOMPLETE -> $j 2#
+                   Foreign.R.Parse.PARSE_ERROR -> $j 3#
+                   Foreign.R.Parse.PARSE_EOF -> $j 4# }) -}
+59c56e09ec693e6f8b4344e0e245b785
+  $fEnumParseStatus_$cfromEnum ::
+    Foreign.R.Parse.ParseStatus -> GHC.Types.Int
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>m, Inline: [0],
+     Unfolding: InlineRule (1, True, False)
+                (\ (w :: Foreign.R.Parse.ParseStatus) ->
+                 case w of wild {
+                   Foreign.R.Parse.PARSE_NULL -> GHC.Types.I# 0#
+                   Foreign.R.Parse.PARSE_OK -> GHC.Types.I# 1#
+                   Foreign.R.Parse.PARSE_INCOMPLETE -> GHC.Types.I# 2#
+                   Foreign.R.Parse.PARSE_ERROR -> GHC.Types.I# 3#
+                   Foreign.R.Parse.PARSE_EOF -> GHC.Types.I# 4# }) -}
+59c56e09ec693e6f8b4344e0e245b785
+  $fEnumParseStatus_$cpred ::
+    Foreign.R.Parse.ParseStatus -> Foreign.R.Parse.ParseStatus
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (a :: Foreign.R.Parse.ParseStatus) ->
+                 case a of wild {
+                   Foreign.R.Parse.PARSE_NULL -> Foreign.R.Parse.$fEnumParseStatus6
+                   Foreign.R.Parse.PARSE_OK -> Foreign.R.Parse.PARSE_NULL
+                   Foreign.R.Parse.PARSE_INCOMPLETE -> Foreign.R.Parse.PARSE_OK
+                   Foreign.R.Parse.PARSE_ERROR -> Foreign.R.Parse.PARSE_INCOMPLETE
+                   Foreign.R.Parse.PARSE_EOF -> Foreign.R.Parse.PARSE_ERROR }) -}
+59c56e09ec693e6f8b4344e0e245b785
+  $fEnumParseStatus_$csucc ::
+    Foreign.R.Parse.ParseStatus -> Foreign.R.Parse.ParseStatus
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (a :: Foreign.R.Parse.ParseStatus) ->
+                 case a of wild {
+                   Foreign.R.Parse.PARSE_NULL -> Foreign.R.Parse.PARSE_OK
+                   Foreign.R.Parse.PARSE_OK -> Foreign.R.Parse.PARSE_INCOMPLETE
+                   Foreign.R.Parse.PARSE_INCOMPLETE -> Foreign.R.Parse.PARSE_ERROR
+                   Foreign.R.Parse.PARSE_ERROR -> Foreign.R.Parse.PARSE_EOF
+                   Foreign.R.Parse.PARSE_EOF
+                   -> Foreign.R.Parse.$fEnumParseStatus7 }) -}
+59c56e09ec693e6f8b4344e0e245b785
+  $fEnumParseStatus_$ctoEnum ::
+    GHC.Types.Int -> Foreign.R.Parse.ParseStatus
+  {- Arity: 1, Strictness: <S(S),1*U(U)>, Inline: [0],
+     Unfolding: InlineRule (1, True, False)
+                (\ (w :: GHC.Types.Int) ->
+                 case w of ww { GHC.Types.I# ww1 ->
+                 Foreign.R.Parse.$w$ctoEnum ww1 }) -}
+59c56e09ec693e6f8b4344e0e245b785
+  $fEnumParseStatus_go ::
+    GHC.Prim.Int# -> [Foreign.R.Parse.ParseStatus]
+  {- Arity: 1, Strictness: <L,U>m2 -}
+59c56e09ec693e6f8b4344e0e245b785
+  $fEnumParseStatus_go1 ::
+    GHC.Prim.Int# -> [Foreign.R.Parse.ParseStatus]
+  {- Arity: 1, Strictness: <L,U>m2 -}
+59c56e09ec693e6f8b4344e0e245b785
+  $fEnumParseStatus_go2 ::
+    GHC.Prim.Int# -> [Foreign.R.Parse.ParseStatus]
+  {- Arity: 1, Strictness: <L,U>m2 -}
+59c56e09ec693e6f8b4344e0e245b785
+  $fEnumParseStatus_go3 ::
+    GHC.Prim.Int# -> [Foreign.R.Parse.ParseStatus]
+  {- Arity: 1, Strictness: <L,U>m2 -}
+59c56e09ec693e6f8b4344e0e245b785
+  $fEnumParseStatus_go4 ::
+    GHC.Prim.Int# -> [Foreign.R.Parse.ParseStatus]
+  {- Arity: 1, Strictness: <L,U>m2 -}
+59c56e09ec693e6f8b4344e0e245b785
+  $fEnumParseStatus_go5 ::
+    GHC.Prim.Int# -> [Foreign.R.Parse.ParseStatus]
+  {- Arity: 1, HasNoCafRefs, Strictness: <L,U>m2 -}
+59c56e09ec693e6f8b4344e0e245b785
+  $fEqParseStatus :: GHC.Classes.Eq Foreign.R.Parse.ParseStatus
+  DFunId
+  {- HasNoCafRefs, Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ Foreign.R.Parse.ParseStatus
+                  Foreign.R.Parse.$fEqParseStatus_$c==
+                  Foreign.R.Parse.$fEqParseStatus_$c/= -}
+59c56e09ec693e6f8b4344e0e245b785
+  $fEqParseStatus_$c/= ::
+    Foreign.R.Parse.ParseStatus
+    -> Foreign.R.Parse.ParseStatus -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>,
+     Unfolding: (\ (a :: Foreign.R.Parse.ParseStatus)
+                   (b :: Foreign.R.Parse.ParseStatus) ->
+                 case a of wild {
+                   Foreign.R.Parse.PARSE_NULL
+                   -> case b of wild1 {
+                        DEFAULT -> GHC.Types.True
+                        Foreign.R.Parse.PARSE_NULL -> GHC.Types.False }
+                   Foreign.R.Parse.PARSE_OK
+                   -> case b of wild1 {
+                        DEFAULT -> GHC.Types.True
+                        Foreign.R.Parse.PARSE_OK -> GHC.Types.False }
+                   Foreign.R.Parse.PARSE_INCOMPLETE
+                   -> case b of wild1 {
+                        DEFAULT -> GHC.Types.True
+                        Foreign.R.Parse.PARSE_INCOMPLETE -> GHC.Types.False }
+                   Foreign.R.Parse.PARSE_ERROR
+                   -> case b of wild1 {
+                        DEFAULT -> GHC.Types.True
+                        Foreign.R.Parse.PARSE_ERROR -> GHC.Types.False }
+                   Foreign.R.Parse.PARSE_EOF
+                   -> case b of wild1 {
+                        DEFAULT -> GHC.Types.True
+                        Foreign.R.Parse.PARSE_EOF -> GHC.Types.False } }) -}
+59c56e09ec693e6f8b4344e0e245b785
+  $fEqParseStatus_$c== ::
+    Foreign.R.Parse.ParseStatus
+    -> Foreign.R.Parse.ParseStatus -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>,
+     Unfolding: (\ (ds :: Foreign.R.Parse.ParseStatus)
+                   (ds1 :: Foreign.R.Parse.ParseStatus) ->
+                 case ds of wild {
+                   Foreign.R.Parse.PARSE_NULL
+                   -> case ds1 of wild1 {
+                        DEFAULT -> GHC.Types.False
+                        Foreign.R.Parse.PARSE_NULL -> GHC.Types.True }
+                   Foreign.R.Parse.PARSE_OK
+                   -> case ds1 of wild1 {
+                        DEFAULT -> GHC.Types.False
+                        Foreign.R.Parse.PARSE_OK -> GHC.Types.True }
+                   Foreign.R.Parse.PARSE_INCOMPLETE
+                   -> case ds1 of wild1 {
+                        DEFAULT -> GHC.Types.False
+                        Foreign.R.Parse.PARSE_INCOMPLETE -> GHC.Types.True }
+                   Foreign.R.Parse.PARSE_ERROR
+                   -> case ds1 of wild1 {
+                        DEFAULT -> GHC.Types.False
+                        Foreign.R.Parse.PARSE_ERROR -> GHC.Types.True }
+                   Foreign.R.Parse.PARSE_EOF
+                   -> case ds1 of wild1 {
+                        DEFAULT -> GHC.Types.False
+                        Foreign.R.Parse.PARSE_EOF -> GHC.Types.True } }) -}
+59c56e09ec693e6f8b4344e0e245b785
+  $fShowParseStatus :: GHC.Show.Show Foreign.R.Parse.ParseStatus
+  DFunId
+  {- Strictness: m, Inline: CONLIKE,
+     Unfolding: DFun:.
+                  @ Foreign.R.Parse.ParseStatus
+                  Foreign.R.Parse.$fShowParseStatus_$cshowsPrec
+                  Foreign.R.Parse.$fShowParseStatus_$cshow
+                  Foreign.R.Parse.$fShowParseStatus_$cshowList -}
+22584a187f238447c6dc4c921eda7f91
+  $fShowParseStatus1 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   Foreign.R.Parse.$fShowParseStatus2) -}
+74fe61b50450d7a52ed1627d2067508f
+  $fShowParseStatus10 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("PARSE_NULL"#) -}
+e536af764d4863d70e18927bb7afd97e
+  $fShowParseStatus2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("PARSE_EOF"#) -}
+8103de336c2e18bcda786df7ea1c220d
+  $fShowParseStatus3 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   Foreign.R.Parse.$fShowParseStatus4) -}
+8d105e64ffa99a585a3ea122073bd35e
+  $fShowParseStatus4 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("PARSE_ERROR"#) -}
+758c91fcae77d0375a873314d3be9582
+  $fShowParseStatus5 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   Foreign.R.Parse.$fShowParseStatus6) -}
+5c15a097f11f3f9930d35557f891190f
+  $fShowParseStatus6 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("PARSE_INCOMPLETE"#) -}
+5243f24f2fef53546bc5f792df845008
+  $fShowParseStatus7 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   Foreign.R.Parse.$fShowParseStatus8) -}
+f2896456de8d90cb8b924a1590dda813
+  $fShowParseStatus8 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("PARSE_OK"#) -}
+e6fd1a9695b56af3da10b760e1716465
+  $fShowParseStatus9 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   Foreign.R.Parse.$fShowParseStatus10) -}
+59c56e09ec693e6f8b4344e0e245b785
+  $fShowParseStatus_$cshow ::
+    Foreign.R.Parse.ParseStatus -> GHC.Base.String
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (x :: Foreign.R.Parse.ParseStatus) ->
+                 case x of wild {
+                   Foreign.R.Parse.PARSE_NULL -> Foreign.R.Parse.$fShowParseStatus9
+                   Foreign.R.Parse.PARSE_OK -> Foreign.R.Parse.$fShowParseStatus7
+                   Foreign.R.Parse.PARSE_INCOMPLETE
+                   -> Foreign.R.Parse.$fShowParseStatus5
+                   Foreign.R.Parse.PARSE_ERROR -> Foreign.R.Parse.$fShowParseStatus3
+                   Foreign.R.Parse.PARSE_EOF
+                   -> Foreign.R.Parse.$fShowParseStatus1 }) -}
+59c56e09ec693e6f8b4344e0e245b785
+  $fShowParseStatus_$cshowList ::
+    [Foreign.R.Parse.ParseStatus] -> GHC.Show.ShowS
+  {- Arity: 2,
+     Unfolding: (GHC.Show.showList__
+                   @ Foreign.R.Parse.ParseStatus
+                   Foreign.R.Parse.$w$cshowsPrec) -}
+59c56e09ec693e6f8b4344e0e245b785
+  $fShowParseStatus_$cshowsPrec ::
+    GHC.Types.Int -> Foreign.R.Parse.ParseStatus -> GHC.Show.ShowS
+  {- Arity: 3, Strictness: <L,A><S,1*U><L,1*U>, Inline: [0],
+     Unfolding: InlineRule (3, True, True)
+                (\ (w :: GHC.Types.Int)
+                   (w1 :: Foreign.R.Parse.ParseStatus)
+                   (w2 :: GHC.Base.String) ->
+                 Foreign.R.Parse.$w$cshowsPrec w1 w2) -}
+9860d0b46701d4f9913747daa75c2bd4
+  $tc'PARSE_EOF :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   16634839863015629431##
+                   7966201098053973517##
+                   Foreign.R.Parse.$trModule
+                   Foreign.R.Parse.$tc'PARSE_EOF2
+                   0#
+                   Foreign.R.Parse.$tc'PARSE_EOF1) -}
+8c459a8c0d5e24b24afaaf9b76ddef73
+  $tc'PARSE_EOF1 :: GHC.Types.KindRep
+  {- HasNoCafRefs, Strictness: m1, Inline: [~] -}
+d53bf7975cc67203fa52dd26b8f842a4
+  $tc'PARSE_EOF2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Foreign.R.Parse.$tc'PARSE_EOF3) -}
+56c78a7d7b5d2a8fb8432b643b8bc4ef
+  $tc'PARSE_EOF3 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'PARSE_EOF"#) -}
+9e1e032f6c48ced3a8863ad6e7312b56
+  $tc'PARSE_ERROR :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   13755794647543395837##
+                   5876877626965776241##
+                   Foreign.R.Parse.$trModule
+                   Foreign.R.Parse.$tc'PARSE_ERROR1
+                   0#
+                   Foreign.R.Parse.$tc'PARSE_EOF1) -}
+43da0c03b6726ff1500968eb6f905529
+  $tc'PARSE_ERROR1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Foreign.R.Parse.$tc'PARSE_ERROR2) -}
+e705dcda5c83a8e4f0e602d70a0f4cb4
+  $tc'PARSE_ERROR2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'PARSE_ERROR"#) -}
+b6d488d401650705a521a8fa243927a9
+  $tc'PARSE_INCOMPLETE :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   7964270353901937855##
+                   7853134257681637076##
+                   Foreign.R.Parse.$trModule
+                   Foreign.R.Parse.$tc'PARSE_INCOMPLETE1
+                   0#
+                   Foreign.R.Parse.$tc'PARSE_EOF1) -}
+57dfc47a814f57b02a740356892374eb
+  $tc'PARSE_INCOMPLETE1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   Foreign.R.Parse.$tc'PARSE_INCOMPLETE2) -}
+485ada33149fe964ede62daf9b67a748
+  $tc'PARSE_INCOMPLETE2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'PARSE_INCOMPLETE"#) -}
+764bed23ff85c9bf2374ff02cf46800d
+  $tc'PARSE_NULL :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   11526912708728248220##
+                   2914193989961066396##
+                   Foreign.R.Parse.$trModule
+                   Foreign.R.Parse.$tc'PARSE_NULL1
+                   0#
+                   Foreign.R.Parse.$tc'PARSE_EOF1) -}
+cf9d2d8b06b1d74bcbeca5836fb1cc94
+  $tc'PARSE_NULL1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Foreign.R.Parse.$tc'PARSE_NULL2) -}
+b49125b0b36fdb17b5f1c8b4a4b21abd
+  $tc'PARSE_NULL2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'PARSE_NULL"#) -}
+be1f3524f04cd19104b20caa962db7ff
+  $tc'PARSE_OK :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   11390652465058033554##
+                   6828711486540794790##
+                   Foreign.R.Parse.$trModule
+                   Foreign.R.Parse.$tc'PARSE_OK1
+                   0#
+                   Foreign.R.Parse.$tc'PARSE_EOF1) -}
+13a3bd4c8ed8fbd6091afe4451e8c712
+  $tc'PARSE_OK1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Foreign.R.Parse.$tc'PARSE_OK2) -}
+e1e33671e08a0c5eed2b284eac5a61f2
+  $tc'PARSE_OK2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("'PARSE_OK"#) -}
+4de3f7de06bdfbca55ef7af95c22a78b
+  $tcParseStatus :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   10821690574925957024##
+                   3164703634501054735##
+                   Foreign.R.Parse.$trModule
+                   Foreign.R.Parse.$tcParseStatus1
+                   0#
+                   GHC.Types.krep$*) -}
+b803939b0a65b2f2a3ada0a69b57afd7
+  $tcParseStatus1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Foreign.R.Parse.$tcParseStatus2) -}
+f6973171cef253f365d4955568a02327
+  $tcParseStatus2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("ParseStatus"#) -}
+450df2df576e889690f24e9a16657f1d
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module
+                   Foreign.R.Parse.$trModule3
+                   Foreign.R.Parse.$trModule1) -}
+b4e36443a806346dca4f13495ad0c9b7
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Foreign.R.Parse.$trModule2) -}
+6e499693373fe3390d0c024c399946e8
+  $trModule2 :: GHC.Prim.Addr#
+  {- HasNoCafRefs, Unfolding: ("Foreign.R.Parse"#) -}
+dc5e48b20c89b2702a3e4345ccf74456
+  $trModule3 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS Foreign.R.Parse.$trModule4) -}
+4da4d7f578e281c59e226d777e7841bb
+  $trModule4 :: GHC.Prim.Addr#
+  {- HasNoCafRefs,
+     Unfolding: ("inline-r-0.9.0.2-CmRL2Hikuao7dNZScoizZz"#) -}
+59c56e09ec693e6f8b4344e0e245b785
+  $w$cshowsPrec ::
+    Foreign.R.Parse.ParseStatus -> GHC.Base.String -> GHC.Base.String
+  {- Arity: 2, Strictness: <S,1*U><L,1*U>, Inline: [0],
+     Unfolding: (\ (w :: Foreign.R.Parse.ParseStatus)
+                   (w1 :: GHC.Base.String) ->
+                 case w of wild {
+                   Foreign.R.Parse.PARSE_NULL
+                   -> GHC.Base.++
+                        @ GHC.Types.Char
+                        Foreign.R.Parse.$fShowParseStatus9
+                        w1
+                   Foreign.R.Parse.PARSE_OK
+                   -> GHC.Base.++
+                        @ GHC.Types.Char
+                        Foreign.R.Parse.$fShowParseStatus7
+                        w1
+                   Foreign.R.Parse.PARSE_INCOMPLETE
+                   -> GHC.Base.++
+                        @ GHC.Types.Char
+                        Foreign.R.Parse.$fShowParseStatus5
+                        w1
+                   Foreign.R.Parse.PARSE_ERROR
+                   -> GHC.Base.++
+                        @ GHC.Types.Char
+                        Foreign.R.Parse.$fShowParseStatus3
+                        w1
+                   Foreign.R.Parse.PARSE_EOF
+                   -> GHC.Base.++
+                        @ GHC.Types.Char
+                        Foreign.R.Parse.$fShowParseStatus1
+                        w1 }) -}
+59c56e09ec693e6f8b4344e0e245b785
+  $w$ctoEnum :: GHC.Prim.Int# -> Foreign.R.Parse.ParseStatus
+  {- Arity: 1, Strictness: <S,U>, Inline: [0],
+     Unfolding: (\ (ww :: GHC.Prim.Int#) ->
+                 case GHC.Prim.tagToEnum#
+                        @ GHC.Types.Bool
+                        (GHC.Prim.>=# ww 0#) of wild {
+                   GHC.Types.False -> Foreign.R.Parse.$wlvl ww
+                   GHC.Types.True
+                   -> case GHC.Prim.tagToEnum#
+                             @ GHC.Types.Bool
+                             (GHC.Prim.<=# ww 4#) of wild1 {
+                        GHC.Types.False -> Foreign.R.Parse.$wlvl ww
+                        GHC.Types.True
+                        -> GHC.Prim.tagToEnum# @ Foreign.R.Parse.ParseStatus ww } }) -}
+59c56e09ec693e6f8b4344e0e245b785
+  $wlvl :: GHC.Prim.Int# -> Foreign.R.Parse.ParseStatus
+  {- Arity: 1, Strictness: <B,U>x, Inline: [0] -}
+59c56e09ec693e6f8b4344e0e245b785
+  data ParseStatus
+    = PARSE_NULL
+    | PARSE_OK
+    | PARSE_INCOMPLETE
+    | PARSE_ERROR
+    | PARSE_EOF
+d04c1e6d8e14110db6a54fe32eebc2b3
+  parseVector ::
+    Foreign.R.Constraints.In
+      a '['Foreign.R.Type.Nil, 'Foreign.R.Type.String] =>
+    Foreign.R.Internal.SEXP s 'Foreign.R.Type.String
+    -> GHC.Types.Int
+    -> GHC.Ptr.Ptr Foreign.C.Types.CInt
+    -> Foreign.R.Internal.SEXP s a
+    -> GHC.Types.IO (Foreign.R.Internal.SEXP s 'Foreign.R.Type.Expr)
+  {- Arity: 6, HasNoCafRefs,
+     Strictness: <L,A><S(S),1*U(U)><S(S),1*U(U)><S(S),1*U(U)><S(S),1*U(U)><S,U>,
+     Unfolding: InlineRule (0, True, True)
+                Foreign.R.Parse.parseVector1
+                  `cast`
+                (forall (a :: <Foreign.R.Type.SEXPTYPE>_N) (s :: <*>_N).
+                 <Foreign.R.Constraints.In
+                    a '['Foreign.R.Type.Nil, 'Foreign.R.Type.String]>_R
+                 ->_R <Foreign.R.Internal.SEXP s 'Foreign.R.Type.String>_R
+                 ->_R <GHC.Types.Int>_R
+                 ->_R <GHC.Ptr.Ptr Foreign.C.Types.CInt>_R
+                 ->_R <Foreign.R.Internal.SEXP s a>_R
+                 ->_R Sym (GHC.Types.N:IO[0]
+                               <Foreign.R.Internal.SEXP s 'Foreign.R.Type.Expr>_R)) -}
+4e51326b2764389de9008c8927b57fa9
+  parseVector1 ::
+    Foreign.R.Constraints.In
+      a '['Foreign.R.Type.Nil, 'Foreign.R.Type.String] =>
+    Foreign.R.Internal.SEXP s 'Foreign.R.Type.String
+    -> GHC.Types.Int
+    -> GHC.Ptr.Ptr Foreign.C.Types.CInt
+    -> Foreign.R.Internal.SEXP s a
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+          Foreign.R.Internal.SEXP s 'Foreign.R.Type.Expr #)
+  {- Arity: 6, HasNoCafRefs,
+     Strictness: <L,A><S(S),1*U(U)><S(S),1*U(U)><S(S),1*U(U)><S(S),1*U(U)><S,U>,
+     Unfolding: InlineRule (6, True, False)
+                (\ @ a :: Foreign.R.Type.SEXPTYPE
+                   @ s
+                   (irred :: Foreign.R.Constraints.In
+                               a '['Foreign.R.Type.Nil, 'Foreign.R.Type.String])
+                   (a1 :: Foreign.R.Internal.SEXP s 'Foreign.R.Type.String)
+                   (a2 :: GHC.Types.Int)
+                   (a3 :: GHC.Ptr.Ptr Foreign.C.Types.CInt)
+                   (a4 :: Foreign.R.Internal.SEXP s a)
+                   (s1 :: GHC.Prim.State# GHC.Prim.RealWorld) ->
+                 case a1
+                        `cast`
+                      (Trans
+                           (Foreign.R.Internal.N:SEXP[0] <s>_P <'Foreign.R.Type.String>_P)
+                           (GHC.Ptr.Ptr
+                              <Language.R.HExp.HExp
+                                 s
+                                 'Foreign.R.Type.String, Foreign.R.Internal.SEXPREC>)_R) of ds { GHC.Ptr.Ptr ds1 ->
+                 case a2 of wild { GHC.Types.I# x# ->
+                 case a3 of ds2 { GHC.Ptr.Ptr ds3 ->
+                 case a4
+                        `cast`
+                      (Trans
+                           (Foreign.R.Internal.N:SEXP[0] <s>_P <a>_P)
+                           (GHC.Ptr.Ptr
+                              <Language.R.HExp.HExp
+                                 s a, Foreign.R.Internal.SEXPREC>)_R) of ds4 { GHC.Ptr.Ptr ds5 ->
+                 case {__pkg_ccall_GC inline-r-0.9.0.2-CmRL2Hikuao7dNZScoizZz GHC.Prim.Addr#
+                                                                              -> GHC.Prim.Int#
+                                                                              -> GHC.Prim.Addr#
+                                                                              -> GHC.Prim.Addr#
+                                                                              -> GHC.Prim.State#
+                                                                                   GHC.Prim.RealWorld
+                                                                              -> (# GHC.Prim.State#
+                                                                                      GHC.Prim.RealWorld,
+                                                                                    GHC.Prim.Addr# #)}
+                        ds1
+                        (GHC.Prim.narrow32Int# x#)
+                        ds3
+                        ds5
+                        s1 of wild1 { (#,#) ds6 ds7 ->
+                 (# ds6,
+                    (GHC.Ptr.Ptr @ Foreign.R.Internal.SEXPREC ds7)
+                      `cast`
+                    (Trans
+                         (GHC.Ptr.Ptr
+                            <Foreign.R.Internal.SEXPREC, Language.R.HExp.HExp
+                                                           s 'Foreign.R.Type.Expr>)_R
+                         (Sym (Foreign.R.Internal.N:SEXP[0]
+                                   <s>_P <'Foreign.R.Type.Expr>_P))) #) } } } } }) -}
+instance GHC.Enum.Enum [Foreign.R.Parse.ParseStatus]
+  = Foreign.R.Parse.$fEnumParseStatus
+instance GHC.Classes.Eq [Foreign.R.Parse.ParseStatus]
+  = Foreign.R.Parse.$fEqParseStatus
+instance GHC.Show.Show [Foreign.R.Parse.ParseStatus]
+  = Foreign.R.Parse.$fShowParseStatus
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: none
+require own pkg trusted: False
+

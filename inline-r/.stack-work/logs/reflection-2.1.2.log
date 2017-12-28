@@ -1,0 +1,6 @@
+Configuring reflection-2.1.2...
+Preprocessing library for reflection-2.1.2..
+Building library for reflection-2.1.2..
+[1 of 1] Compiling Data.Reflection  ( fast/Data/Reflection.hs, .stack-work/dist/x86_64-linux/Cabal-2.0.1.0/build/Data/Reflection.o )
+Installing library in /datascience/bin/stack/snapshots/x86_64-linux/lts-10.1/8.2.2/lib/x86_64-linux-ghc-8.2.2/reflection-2.1.2-7oiCkUcRKMD9YPFQmblMLa
+Registering library for reflection-2.1.2..

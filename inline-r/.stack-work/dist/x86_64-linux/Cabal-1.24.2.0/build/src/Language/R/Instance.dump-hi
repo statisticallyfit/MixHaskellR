@@ -1,0 +1,2282 @@
+
+==================== FINAL INTERFACE ====================
+2017-12-28 08:02:58.282194 UTC
+
+interface inline-r-0.9.0.2-GXEXrsxC4K8OTVxhqWwxs:Language.R.Instance [family instance module] 8002
+  interface hash: 060298bfa7d1787db86625bddc9f253e
+  ABI hash: a0b299dbe1f879a75a4772ba281059aa
+  export-list hash: 4136f07a3f02476c9104c974aa60153a
+  orphan hash: 9b38cc3b2f821420e4970a2b2687a937
+  flag hash: 1015dd3e6363de5016fd5069031d125f
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Language.R.Instance.defaultConfig
+  Language.R.Instance.finalize
+  Language.R.Instance.initialize
+  Language.R.Instance.runRegion
+  Language.R.Instance.unsafeRunRegion
+  Language.R.Instance.withEmbeddedR
+  Language.R.Instance.Config{Language.R.Instance.Config configArgs configProgName configSignalHandlers}
+  Language.R.Instance.R
+module dependencies: Control.Memory.Region Control.Monad.R.Class
+                     Foreign.R Foreign.R.Constraints Foreign.R.Embedded
+                     Foreign.R.EventLoop Foreign.R.Internal Foreign.R.Type
+                     Internal.Error Language.R.Globals Language.R.HExp [boot]
+package dependencies: array-0.5.1.1@array-0.5.1.1 base-4.9.1.0
+                      binary-0.8.3.0@binary-0.8.3.0
+                      bytestring-0.10.8.1@bytestring-0.10.8.1
+                      containers-0.5.7.1@containers-0.5.7.1
+                      data-default-class-0.1.2.0@data-default-class-0.1.2.0-GsXqKN6o1X9jr0fF5qCVD
+                      deepseq-1.4.2.0@deepseq-1.4.2.0
+                      exceptions-0.8.3@exceptions-0.8.3-ADEDRATtUrMK1JW4zMQ9U
+                      ghc-boot-th-8.0.2@ghc-boot-th-8.0.2 ghc-prim-0.5.0.0
+                      integer-gmp-1.0.0.1 mtl-2.2.1@mtl-2.2.1-BLKBelFsPB3BoFeSWSOYj6
+                      pretty-1.1.3.3@pretty-1.1.3.3
+                      primitive-0.6.2.0@primitive-0.6.2.0-4578caNkWQ54Gt1mxLF2Yh
+                      process-1.4.3.0@process-1.4.3.0
+                      safe-0.3.15@safe-0.3.15-2Yd45VWFfdcKqKyispOifY
+                      setenv-0.1.1.3@setenv-0.1.1.3-8dEhk6JWvlmCmVyBammSpu
+                      singletons-2.2@singletons-2.2-F6aalBFPo1F9ebvy1Wkuj3
+                      stm-2.4.4.1@stm-2.4.4.1-JQn4hNPyYjP5m9AcbI88Ve
+                      syb-0.7@syb-0.7-4OKdCpwGutyB1rNRmoa0ya template-haskell-2.11.1.0
+                      text-1.2.2.2@text-1.2.2.2-9UQZjEJZQFSGMffj1Z5g00
+                      th-desugar-1.6@th-desugar-1.6-4xe2xTMQQiAGUPVUAkAZhp
+                      th-expand-syns-0.4.3.0@th-expand-syns-0.4.3.0-A2GRp9XTxmBCMfV7DnYdn0
+                      th-lift-0.7.7@th-lift-0.7.7-JWI9Gh7wB0MC9Q5wqv5aoI
+                      th-lift-instances-0.1.11@th-lift-instances-0.1.11-A7sWuFC2KLsFTBmLagoRSX
+                      th-orphans-0.13.4@th-orphans-0.13.4-IGsCpZ5u2Ab1MvGd5biF2z
+                      th-reify-many-0.1.8@th-reify-many-0.1.8-5ZNbfXxMl3y5DMJznTzmN9
+                      transformers-0.5.2.0@transformers-0.5.2.0 unix-2.7.2.1@unix-2.7.2.1
+                      vector-0.12.0.1@vector-0.12.0.1-692PQMDMB6pIQ1uGwefDcQ
+orphans: base-4.9.1.0:GHC.Base base-4.9.1.0:GHC.Float
+         binary-0.8.3.0@binary-0.8.3.0:Data.Binary.Generic
+         bytestring-0.10.8.1@bytestring-0.10.8.1:Data.ByteString.Builder
+         singletons-2.2@singletons-2.2-F6aalBFPo1F9ebvy1Wkuj3:Data.Singletons.Decide
+         singletons-2.2@singletons-2.2-F6aalBFPo1F9ebvy1Wkuj3:Data.Singletons.Prelude.Instances
+         singletons-2.2@singletons-2.2-F6aalBFPo1F9ebvy1Wkuj3:Data.Singletons.TypeLits
+         singletons-2.2@singletons-2.2-F6aalBFPo1F9ebvy1Wkuj3:Data.Singletons.TypeLits.Internal
+         stm-2.4.4.1@stm-2.4.4.1-JQn4hNPyYjP5m9AcbI88Ve:Control.Monad.STM
+         syb-0.7@syb-0.7-4OKdCpwGutyB1rNRmoa0ya:Data.Generics.Instances
+         text-1.2.2.2@text-1.2.2.2-9UQZjEJZQFSGMffj1Z5g00:Data.Text
+         text-1.2.2.2@text-1.2.2.2-9UQZjEJZQFSGMffj1Z5g00:Data.Text.Lazy
+         text-1.2.2.2@text-1.2.2.2-9UQZjEJZQFSGMffj1Z5g00:Data.Text.Show
+         th-lift-0.7.7@th-lift-0.7.7-JWI9Gh7wB0MC9Q5wqv5aoI:Language.Haskell.TH.Lift
+         th-lift-instances-0.1.11@th-lift-instances-0.1.11-A7sWuFC2KLsFTBmLagoRSX:Instances.TH.Lift
+         th-orphans-0.13.4@th-orphans-0.13.4-IGsCpZ5u2Ab1MvGd5biF2z:Language.Haskell.TH.Instances
+         transformers-0.5.2.0@transformers-0.5.2.0:Control.Monad.Trans.Error
+         vector-0.12.0.1@vector-0.12.0.1-692PQMDMB6pIQ1uGwefDcQ:Data.Vector.Fusion.Bundle
+         vector-0.12.0.1@vector-0.12.0.1-692PQMDMB6pIQ1uGwefDcQ:Data.Vector.Unboxed
+family instance modules: base-4.9.1.0:Control.Applicative
+                         base-4.9.1.0:Data.Complex base-4.9.1.0:Data.Either
+                         base-4.9.1.0:Data.Functor.Const base-4.9.1.0:Data.Functor.Identity
+                         base-4.9.1.0:Data.List.NonEmpty base-4.9.1.0:Data.Monoid
+                         base-4.9.1.0:Data.Semigroup base-4.9.1.0:Data.Type.Equality
+                         base-4.9.1.0:Data.Version base-4.9.1.0:Data.Void
+                         base-4.9.1.0:GHC.Exts base-4.9.1.0:GHC.Generics
+                         base-4.9.1.0:GHC.IO.Exception base-4.9.1.0:GHC.TypeLits
+                         containers-0.5.7.1@containers-0.5.7.1:Data.IntMap.Base
+                         containers-0.5.7.1@containers-0.5.7.1:Data.IntSet.Base
+                         containers-0.5.7.1@containers-0.5.7.1:Data.Map.Base
+                         containers-0.5.7.1@containers-0.5.7.1:Data.Sequence
+                         containers-0.5.7.1@containers-0.5.7.1:Data.Set.Base
+                         ghc-boot-th-8.0.2@ghc-boot-th-8.0.2:GHC.LanguageExtensions.Type
+                         inline-r-0.9.0.2-GXEXrsxC4K8OTVxhqWwxs:Control.Memory.Region
+                         inline-r-0.9.0.2-GXEXrsxC4K8OTVxhqWwxs:Foreign.R.Type
+                         pretty-1.1.3.3@pretty-1.1.3.3:Text.PrettyPrint.Annotated.HughesPJ
+                         pretty-1.1.3.3@pretty-1.1.3.3:Text.PrettyPrint.HughesPJ
+                         primitive-0.6.2.0@primitive-0.6.2.0-4578caNkWQ54Gt1mxLF2Yh:Control.Monad.Primitive
+                         primitive-0.6.2.0@primitive-0.6.2.0-4578caNkWQ54Gt1mxLF2Yh:Data.Primitive.Array
+                         singletons-2.2@singletons-2.2-F6aalBFPo1F9ebvy1Wkuj3:Data.Singletons
+                         singletons-2.2@singletons-2.2-F6aalBFPo1F9ebvy1Wkuj3:Data.Singletons.Prelude.Bool
+                         singletons-2.2@singletons-2.2-F6aalBFPo1F9ebvy1Wkuj3:Data.Singletons.Prelude.Eq
+                         singletons-2.2@singletons-2.2-F6aalBFPo1F9ebvy1Wkuj3:Data.Singletons.Prelude.Instances
+                         singletons-2.2@singletons-2.2-F6aalBFPo1F9ebvy1Wkuj3:Data.Singletons.Prelude.Num
+                         singletons-2.2@singletons-2.2-F6aalBFPo1F9ebvy1Wkuj3:Data.Singletons.Prelude.Ord
+                         singletons-2.2@singletons-2.2-F6aalBFPo1F9ebvy1Wkuj3:Data.Singletons.Syntax
+                         singletons-2.2@singletons-2.2-F6aalBFPo1F9ebvy1Wkuj3:Data.Singletons.TypeLits.Internal
+                         template-haskell-2.11.1.0:Language.Haskell.TH.Syntax
+                         text-1.2.2.2@text-1.2.2.2-9UQZjEJZQFSGMffj1Z5g00:Data.Text
+                         text-1.2.2.2@text-1.2.2.2-9UQZjEJZQFSGMffj1Z5g00:Data.Text.Lazy
+                         th-desugar-1.6@th-desugar-1.6-4xe2xTMQQiAGUPVUAkAZhp:Language.Haskell.TH.Desugar.Core
+                         vector-0.12.0.1@vector-0.12.0.1-692PQMDMB6pIQ1uGwefDcQ:Data.Vector
+                         vector-0.12.0.1@vector-0.12.0.1-692PQMDMB6pIQ1uGwefDcQ:Data.Vector.Primitive
+                         vector-0.12.0.1@vector-0.12.0.1-692PQMDMB6pIQ1uGwefDcQ:Data.Vector.Storable
+                         vector-0.12.0.1@vector-0.12.0.1-692PQMDMB6pIQ1uGwefDcQ:Data.Vector.Unboxed
+                         vector-0.12.0.1@vector-0.12.0.1-692PQMDMB6pIQ1uGwefDcQ:Data.Vector.Unboxed.Base
+import  -/  base-4.9.1.0:Control.Applicative 32430a90492e727f4bd80db71c28600c
+import  -/  base-4.9.1.0:Control.Concurrent.MVar 1e4f68fc63da1d1a554d5258431dd0c6
+import  -/  base-4.9.1.0:Control.Exception a76dd9666251322fe34dbcca3a0817bf
+import  -/  base-4.9.1.0:Control.Exception.Base 1e106916283856f4d9caeddab92cd861
+import  -/  base-4.9.1.0:Control.Monad a6784c5dab0d75c63dabec5a37843f98
+import  -/  base-4.9.1.0:Control.Monad.IO.Class 1a4384f66ee999caf5366398edb6ca7b
+import  -/  base-4.9.1.0:Control.Monad.ST.Unsafe 1843a5aeb4d12857309c591df70bc7d1
+import  -/  base-4.9.1.0:Data.Foldable 3e0b6967a1da89945d0e2d47266337a2
+import  -/  base-4.9.1.0:Data.Functor 5ab1dc703df5b482e77efb697833ca3c
+import  -/  base-4.9.1.0:Data.IORef 71c87b0b25a8bca3e3f4497725f5e543
+import  -/  base-4.9.1.0:Data.Maybe d876c4ffe4b3c43755a781e8ad860d88
+import  -/  base-4.9.1.0:Data.Monoid 51cc9cd8c130d49ba96b7c2c2406022b
+import  -/  base-4.9.1.0:Data.OldList 27987919d8da2f92e3f472ca81f730f8
+import  -/  base-4.9.1.0:Data.Traversable 556020d7cf3c4a34a774600512918a37
+import  -/  base-4.9.1.0:Foreign b4bee334aade4f33021057fdecf4a495
+import  -/  base-4.9.1.0:Foreign.C.String b924799565cbc1299cb1e113052a7304
+import  -/  base-4.9.1.0:Foreign.C.Types bf568ee9a3ec4aa42333a0da5f4345de
+import  -/  base-4.9.1.0:Foreign.Marshal.Array 63114b8be90ae825866d45b38d8798ce
+import  -/  base-4.9.1.0:Foreign.Storable 085c8d7f42ceec1dbb4e818f06339b9d
+import  -/  base-4.9.1.0:GHC.Base c4231c43c07e46080a26bf94094c7aa1
+import  -/  base-4.9.1.0:GHC.Enum 3811281f7b5f26da514529cf3ed44009
+import  -/  base-4.9.1.0:GHC.Exception e38fa3e73d54022fb9e3ce06477dfd07
+import  -/  base-4.9.1.0:GHC.IO eb504c57b397cf133849f8586f15dafb
+import  -/  base-4.9.1.0:GHC.IO.Handle.FD dbf0d0d4f42ab1465129a88ccf7880ff
+import  -/  base-4.9.1.0:GHC.IO.Handle.Text b65719f3b262b071ab1aabeb72fc9d8b
+import  -/  base-4.9.1.0:GHC.IO.Unsafe 1c057c642b0e201f55a24585d3d94564
+import  -/  base-4.9.1.0:GHC.IORef 306bd532f2f3b000347cbe6316adc20e
+import  -/  base-4.9.1.0:GHC.List ab8c4e523e6c479c549d3bcd5fc4a439
+import  -/  base-4.9.1.0:GHC.MVar 2b6c6f2887cffa9e72fc08229ba0f346
+import  -/  base-4.9.1.0:GHC.Ptr 427a6ad9312f04edb98e0f5b7c4e2596
+import  -/  base-4.9.1.0:Prelude 22dd289b8469a8fa8dc81cab7b237771
+import  -/  base-4.9.1.0:System.Environment 08cb808e8e6a7821e6f8cfa76a977431
+import  -/  base-4.9.1.0:System.IO e4a64a8e3dce8616da54f0ee7104f7db
+import  -/  base-4.9.1.0:System.IO.Unsafe 1e3c5b8dd8cf6850ae43cce967bb46cd
+import  -/  data-default-class-0.1.2.0@data-default-class-0.1.2.0-GsXqKN6o1X9jr0fF5qCVD:Data.Default.Class 9c68cbd95caee85701a573292e4f13b7
+import  -/  deepseq-1.4.2.0@deepseq-1.4.2.0:Control.DeepSeq 3b9ddb93b8ec16cf9a98d6096b46c390
+import  -/  exceptions-0.8.3@exceptions-0.8.3-ADEDRATtUrMK1JW4zMQ9U:Control.Monad.Catch b7c0706f1693a3a340b0c0acefd4e19d
+import  -/  ghc-prim-0.5.0.0:GHC.Classes 0bdf3d057a415ec1b84a7b1994efbe47
+import  -/  ghc-prim-0.5.0.0:GHC.Types 89f8de4f08018c9177c98d979eae0e45
+import  -/  Control.Monad.R.Class cad819d8a5243541d9a0f1421f7ef4d8
+  exports: 7b258842783caee6f8995be87e582334
+  ExecContext ea1f57873ff2b33045fb4132b0014b82
+  MonadR 1f397b618ab35a4d9191d2514797ac03
+import  -/  Foreign.R 76af03c75eee17c66f999e9a2952a2da
+  exports: 48f78775472e7fa46d6f356ef53096ba
+  protect da5d6af0b23aadb157f211119bb4a11b
+  unprotect 1d53930f88b54905b7e5703f6cefc644
+import  -/  Foreign.R.Embedded 013c7700a154a523f56371210465054a
+  exports: 93780f766fbf2bc0461c05e1745bac91
+  endEmbeddedR 30014fa467c40f6ae65276f20d5aff19
+  initEmbeddedR b37382ae146d657aec1a1d96d2a7644d
+import  -/  Foreign.R.EventLoop 49f9ca72c40ef8ed7f46ab8983a64653
+  exports: 2a2c7226490f0f9bdf298c44509e88b2
+  inputHandlers e01dc14426746a041db3444bdac2b258
+import  -/  Foreign.R.Internal 94b91017c41283795b0b9850baa548e1
+  baseEnv 15c2e9caa8d1bf073e2b44b4e3784701
+  emptyEnv a0bcdfbc5bc197c0a1e56ad853aa0d82
+  globalEnv da9dd2c1f6db587a751b529ea3af632f
+  isRInteractive 4cabb6ad3770e8ad5f46b7166c3e60d4
+  missingArg fb827e50ac9e05a6832c735f46e4a6cb
+  nilValue 5ad7899bdebb0f6c79ad98f1ab880349
+  release 5116a27e38d30bf46ba100a28ca95c3e
+  signalHandlers 785763aa1d824117cee651020952d368
+  unboundValue d7e6be1a04080a2cc4c7de2b8a146335
+import  -/  Language.R.Globals 727a60bd96cf801e88bef214649657f2
+  exports: b49c6114bd9b47465af7425ddde25637
+  isRInteractive 164d73d5be8c7ad7d8c45204a5146457
+  pokeRVariables 493e9d6d1541d118fa3467f049729c12
+  signalHandlersPtr e3e5185ea02970bd3fae4bab5549d88d
+import  -/  mtl-2.2.1@mtl-2.2.1-BLKBelFsPB3BoFeSWSOYj6:Control.Monad.Reader 0a25f5000d6974b16ed96a739eacaeb6
+import  -/  primitive-0.6.2.0@primitive-0.6.2.0-4578caNkWQ54Gt1mxLF2Yh:Control.Monad.Primitive 6f29f7c5aeee7400d08244e0179fc37e
+import  -/  process-1.4.3.0@process-1.4.3.0:System.Process 1ee59b956b7cad68338d3f6ab3e772ed
+import  -/  setenv-0.1.1.3@setenv-0.1.1.3-8dEhk6JWvlmCmVyBammSpu:System.SetEnv 6f9212893ac95f9ae4a81c900c2f80ed
+import  -/  transformers-0.5.2.0@transformers-0.5.2.0:Control.Monad.Trans.Class 45530f1305724ee3931a9be21b40ca7e
+import  -/  transformers-0.5.2.0@transformers-0.5.2.0:Control.Monad.Trans.Reader 1b607a084a390ae0e50e8f8dcbf2541a
+import  -/  unix-2.7.2.1@unix-2.7.2.1:System.Posix.Resource a6023962f6269a57b1496eccc6836f77
+addDependentFile "/datascience/bin/stack/programs/x86_64-linux/ghc-8.0.2/lib/ghc-8.0.2/include/ghcversion.h"
+addDependentFile ".stack-work/dist/x86_64-linux/Cabal-1.24.2.0/build/autogen/cabal_macros.h"
+addDependentFile "/usr/include/stdc-predef.h"
+74115e3d17bc6506da54d03835c71928
+  $fApplicativeR :: GHC.Base.Applicative (Language.R.Instance.R s)
+  DFunId
+  {- Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun: @ s.
+                  @ (Language.R.Instance.R s)
+                  (Language.R.Instance.$fFunctorR @ s)
+                  (Language.R.Instance.$fApplicativeR_$creturn @ s)
+                  (Language.R.Instance.$fApplicativeR_$c<*> @ s)
+                  (Language.R.Instance.$fApplicativeR_$c*> @ s)
+                  (Language.R.Instance.$fApplicativeR_$c<* @ s) -}
+22c33bccb92d4bc3f42e2c6c4a233413
+  $fApplicativeR1 ::
+    Control.Monad.Trans.Reader.ReaderT
+      (GHC.IORef.IORef GHC.Types.Int) GHC.Types.IO a
+    -> Control.Monad.Trans.Reader.ReaderT
+         (GHC.IORef.IORef GHC.Types.Int) GHC.Types.IO b
+    -> GHC.IORef.IORef GHC.Types.Int
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, a #)
+  {- Arity: 4, HasNoCafRefs,
+     Strictness: <C(C(S(SL))),1*C1(C1(U(U,U)))><L,1*C1(C1(U(U,A)))><L,U><S,U>,
+     Unfolding: InlineRule (4, True, False)
+                (\ @ b
+                   @ a
+                   (eta :: Control.Monad.Trans.Reader.ReaderT
+                             (GHC.IORef.IORef GHC.Types.Int) GHC.Types.IO a)
+                   (eta1 :: Control.Monad.Trans.Reader.ReaderT
+                              (GHC.IORef.IORef GHC.Types.Int) GHC.Types.IO b)
+                   (eta2 :: GHC.IORef.IORef GHC.Types.Int)
+                   (eta3 :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                 case (eta
+                         `cast`
+                       (Control.Monad.Trans.Reader.N:ReaderT[0]
+                            <*>_N <GHC.IORef.IORef GHC.Types.Int>_R <GHC.Types.IO>_R <a>_N)
+                         eta2)
+                        `cast`
+                      (GHC.Types.N:IO[0] <a>_R)
+                        eta3 of ds { (#,#) ipv ipv1 ->
+                 case (eta1
+                         `cast`
+                       (Control.Monad.Trans.Reader.N:ReaderT[0]
+                            <*>_N <GHC.IORef.IORef GHC.Types.Int>_R <GHC.Types.IO>_R <b>_N)
+                         eta2)
+                        `cast`
+                      (GHC.Types.N:IO[0] <b>_R)
+                        ipv of ds1 { (#,#) ipv2 ipv3 ->
+                 (# ipv2, ipv1 #) } }) -}
+8c8b066eafa234dc0adb1e5c43c02d68
+  $fApplicativeR2 ::
+    Control.Monad.Trans.Reader.ReaderT
+      (GHC.IORef.IORef GHC.Types.Int) GHC.Types.IO a
+    -> Control.Monad.Trans.Reader.ReaderT
+         (GHC.IORef.IORef GHC.Types.Int) GHC.Types.IO b
+    -> GHC.IORef.IORef GHC.Types.Int
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, b #)
+  {- Arity: 4, HasNoCafRefs,
+     Strictness: <C(C(S(SL))),1*C1(C1(U(U,A)))><L,1*C1(C1(U(U,U)))><L,U><S,U>,
+     Unfolding: InlineRule (4, True, False)
+                (\ @ b
+                   @ a
+                   (eta :: Control.Monad.Trans.Reader.ReaderT
+                             (GHC.IORef.IORef GHC.Types.Int) GHC.Types.IO a)
+                   (eta1 :: Control.Monad.Trans.Reader.ReaderT
+                              (GHC.IORef.IORef GHC.Types.Int) GHC.Types.IO b)
+                   (eta2 :: GHC.IORef.IORef GHC.Types.Int)
+                   (eta3 :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                 case (eta
+                         `cast`
+                       (Control.Monad.Trans.Reader.N:ReaderT[0]
+                            <*>_N <GHC.IORef.IORef GHC.Types.Int>_R <GHC.Types.IO>_R <a>_N)
+                         eta2)
+                        `cast`
+                      (GHC.Types.N:IO[0] <a>_R)
+                        eta3 of ds { (#,#) ipv ipv1 ->
+                 (eta1
+                    `cast`
+                  (Control.Monad.Trans.Reader.N:ReaderT[0]
+                       <*>_N <GHC.IORef.IORef GHC.Types.Int>_R <GHC.Types.IO>_R <b>_N)
+                    eta2)
+                   `cast`
+                 (GHC.Types.N:IO[0] <b>_R)
+                   ipv }) -}
+4847ff58ce5a936317711d90f6b4f082
+  $fApplicativeR3 ::
+    a
+    -> GHC.IORef.IORef GHC.Types.Int
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, a #)
+  {- Arity: 3, HasNoCafRefs, Strictness: <L,U><L,A><S,U>,
+     Unfolding: InlineRule (3, True, True)
+                (\ @ a
+                   (eta :: a)
+                   (eta1 :: GHC.IORef.IORef GHC.Types.Int)
+                   (eta2 :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                 (# eta2, eta #)) -}
+74115e3d17bc6506da54d03835c71928
+  $fApplicativeR_$c*> ::
+    Language.R.Instance.R s a
+    -> Language.R.Instance.R s b -> Language.R.Instance.R s b
+  {- Arity: 4, HasNoCafRefs,
+     Strictness: <C(C(S(SL))),1*C1(C1(U(U,A)))><L,1*C1(C1(U(U,U)))><L,U><S,U>,
+     Unfolding: InlineRule (0, True, True)
+                (\ @ s @ a @ b -> Language.R.Instance.$fApplicativeR2 @ b @ a)
+                  `cast`
+                (forall (s :: <*>_N) (a :: <*>_N) (b :: <*>_N).
+                 Sym (Language.R.Instance.N:R[0] <s>_P) <a>_N
+                 ->_R Sym (Language.R.Instance.N:R[0] <s>_P) <b>_N
+                 ->_R Trans
+                          (<GHC.IORef.IORef GHC.Types.Int>_R
+                           ->_R Sym (GHC.Types.N:IO[0] <b>_R))
+                          (Trans
+                               (Sym (Control.Monad.Trans.Reader.N:ReaderT[0]
+                                         <*>_N
+                                         <GHC.IORef.IORef GHC.Types.Int>_R
+                                         <GHC.Types.IO>_R
+                                         <b>_N))
+                               (Sym (Language.R.Instance.N:R[0] <s>_P) <b>_N))) -}
+74115e3d17bc6506da54d03835c71928
+  $fApplicativeR_$c<* ::
+    Language.R.Instance.R s a
+    -> Language.R.Instance.R s b -> Language.R.Instance.R s a
+  {- Arity: 4, HasNoCafRefs,
+     Strictness: <C(C(S(SL))),1*C1(C1(U(U,U)))><L,1*C1(C1(U(U,A)))><L,U><S,U>,
+     Unfolding: InlineRule (0, True, True)
+                (\ @ s @ a @ b -> Language.R.Instance.$fApplicativeR1 @ b @ a)
+                  `cast`
+                (forall (s :: <*>_N) (a :: <*>_N) (b :: <*>_N).
+                 Sym (Language.R.Instance.N:R[0] <s>_P) <a>_N
+                 ->_R Sym (Language.R.Instance.N:R[0] <s>_P) <b>_N
+                 ->_R Trans
+                          (<GHC.IORef.IORef GHC.Types.Int>_R
+                           ->_R Sym (GHC.Types.N:IO[0] <a>_R))
+                          (Trans
+                               (Sym (Control.Monad.Trans.Reader.N:ReaderT[0]
+                                         <*>_N
+                                         <GHC.IORef.IORef GHC.Types.Int>_R
+                                         <GHC.Types.IO>_R
+                                         <a>_N))
+                               (Sym (Language.R.Instance.N:R[0] <s>_P) <a>_N))) -}
+74115e3d17bc6506da54d03835c71928
+  $fApplicativeR_$c<*> ::
+    Language.R.Instance.R s (a -> b)
+    -> Language.R.Instance.R s a -> Language.R.Instance.R s b
+  {- Arity: 4, HasNoCafRefs,
+     Strictness: <C(C(S(SL))),1*C1(C1(U(U,1*C1(U))))><L,1*C1(C1(U(U,U)))><L,U><S,U>,
+     Unfolding: InlineRule (0, True, True)
+                (\ @ s @ a @ b ->
+                 Language.R.Instance.$fApplicativeR_$s$fApplicativeReaderT_$c<*>
+                   @ (GHC.IORef.IORef GHC.Types.Int)
+                   @ a
+                   @ b)
+                  `cast`
+                (forall (s :: <*>_N) (a :: <*>_N) (b :: <*>_N).
+                 Sym (Language.R.Instance.N:R[0] <s>_P) <a -> b>_N
+                 ->_R Sym (Language.R.Instance.N:R[0] <s>_P) <a>_N
+                 ->_R Sym (Language.R.Instance.N:R[0] <s>_P) <b>_N) -}
+74115e3d17bc6506da54d03835c71928
+  $fApplicativeR_$creturn :: a -> Language.R.Instance.R s a
+  {- Arity: 3, HasNoCafRefs, Strictness: <L,U><L,A><S,U>,
+     Unfolding: InlineRule (0, True, True)
+                (\ @ s @ a -> Language.R.Instance.$fApplicativeR3 @ a)
+                  `cast`
+                (forall (s :: <*>_N) (a :: <*>_N).
+                 <a>_R
+                 ->_R Trans
+                          (<GHC.IORef.IORef GHC.Types.Int>_R
+                           ->_R Sym (GHC.Types.N:IO[0] <a>_R))
+                          (Trans
+                               (Sym (Control.Monad.Trans.Reader.N:ReaderT[0]
+                                         <*>_N
+                                         <GHC.IORef.IORef GHC.Types.Int>_R
+                                         <GHC.Types.IO>_R
+                                         <a>_N))
+                               (Sym (Language.R.Instance.N:R[0] <s>_P) <a>_N))) -}
+9613d8ba45160f8678f5d0c32027817c
+  $fApplicativeR_$s$fApplicativeReaderT_$c<*> ::
+    Control.Monad.Trans.Reader.ReaderT r GHC.Types.IO (a -> b)
+    -> Control.Monad.Trans.Reader.ReaderT r GHC.Types.IO a
+    -> Control.Monad.Trans.Reader.ReaderT r GHC.Types.IO b
+  {- Arity: 4, HasNoCafRefs,
+     Strictness: <C(C(S(SL))),1*C1(C1(U(U,1*C1(U))))><L,1*C1(C1(U(U,U)))><L,U><S,U>,
+     Inline: INLINE (sat-args=2),
+     Unfolding: InlineRule (2, False, False)
+                (\ @ r
+                   @ a
+                   @ b
+                   (f :: Control.Monad.Trans.Reader.ReaderT r GHC.Types.IO (a -> b))
+                   (v :: Control.Monad.Trans.Reader.ReaderT r GHC.Types.IO a) ->
+                 GHC.Base.$
+                   @ 'GHC.Types.PtrRepLifted
+                   @ (r -> GHC.Types.IO b)
+                   @ (Control.Monad.Trans.Reader.ReaderT r GHC.Types.IO b)
+                   (\ (tpl :: r -> GHC.Types.IO b) -> tpl)
+                     `cast`
+                   (<r -> GHC.Types.IO b>_R
+                    ->_R Sym (Control.Monad.Trans.Reader.N:ReaderT[0]
+                                  <*>_N <r>_R <GHC.Types.IO>_R <b>_N))
+                   (\ (r1 :: r) ->
+                    GHC.Base.$fApplicativeIO_$sap
+                      @ a
+                      @ b
+                      (Control.Monad.Trans.Reader.runReaderT
+                         @ r
+                         @ *
+                         @ GHC.Types.IO
+                         @ (a -> b)
+                         f
+                         r1)
+                      (Control.Monad.Trans.Reader.runReaderT
+                         @ r
+                         @ *
+                         @ GHC.Types.IO
+                         @ a
+                         v
+                         r1))) -}
+d12aecbc65b0e658ffd684160f413f71
+  $fDefaultConfig ::
+    Data.Default.Class.Default Language.R.Instance.Config
+  DFunId
+  {- Strictness: m, Inline: INLINE (sat-args=0),
+     Unfolding: InlineRule (0, False, True)
+                Language.R.Instance.defaultConfig
+                  `cast`
+                (Sym (Data.Default.Class.N:Default[0]
+                          <Language.R.Instance.Config>_N)) -}
+74115e3d17bc6506da54d03835c71928
+  $fFunctorR :: GHC.Base.Functor (Language.R.Instance.R s)
+  DFunId
+  {- Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun: @ s.
+                  @ (Language.R.Instance.R s)
+                  (Language.R.Instance.$fFunctorR_$cfmap @ s)
+                  (Language.R.Instance.$fFunctorR_$c<$ @ s) -}
+1aabbb9e2520aaee71301b59264d73c2
+  $fFunctorR1 ::
+    a
+    -> Control.Monad.Trans.Reader.ReaderT
+         (GHC.IORef.IORef GHC.Types.Int) GHC.Types.IO b
+    -> GHC.IORef.IORef GHC.Types.Int
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, a #)
+  {- Arity: 4, HasNoCafRefs,
+     Strictness: <L,U><C(C(S(SL))),1*C1(C1(U(U,A)))><L,U><S,U>,
+     Unfolding: InlineRule (4, True, False)
+                (\ @ b
+                   @ a
+                   (eta :: a)
+                   (eta1 :: Control.Monad.Trans.Reader.ReaderT
+                              (GHC.IORef.IORef GHC.Types.Int) GHC.Types.IO b)
+                   (eta2 :: GHC.IORef.IORef GHC.Types.Int)
+                   (eta3 :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                 case (eta1
+                         `cast`
+                       (Control.Monad.Trans.Reader.N:ReaderT[0]
+                            <*>_N <GHC.IORef.IORef GHC.Types.Int>_R <GHC.Types.IO>_R <b>_N)
+                         eta2)
+                        `cast`
+                      (GHC.Types.N:IO[0] <b>_R)
+                        eta3 of ds { (#,#) ipv ipv1 ->
+                 (# ipv, eta #) }) -}
+74115e3d17bc6506da54d03835c71928
+  $fFunctorR_$c<$ ::
+    a -> Language.R.Instance.R s b -> Language.R.Instance.R s a
+  {- Arity: 4, HasNoCafRefs,
+     Strictness: <L,U><C(C(S(SL))),1*C1(C1(U(U,A)))><L,U><S,U>,
+     Unfolding: InlineRule (0, True, True)
+                (\ @ s @ a @ b -> Language.R.Instance.$fFunctorR1 @ b @ a)
+                  `cast`
+                (forall (s :: <*>_N) (a :: <*>_N) (b :: <*>_N).
+                 <a>_R
+                 ->_R Sym (Language.R.Instance.N:R[0] <s>_P) <b>_N
+                 ->_R Trans
+                          (<GHC.IORef.IORef GHC.Types.Int>_R
+                           ->_R Sym (GHC.Types.N:IO[0] <a>_R))
+                          (Trans
+                               (Sym (Control.Monad.Trans.Reader.N:ReaderT[0]
+                                         <*>_N
+                                         <GHC.IORef.IORef GHC.Types.Int>_R
+                                         <GHC.Types.IO>_R
+                                         <a>_N))
+                               (Sym (Language.R.Instance.N:R[0] <s>_P) <a>_N))) -}
+74115e3d17bc6506da54d03835c71928
+  $fFunctorR_$cfmap ::
+    (a -> b) -> Language.R.Instance.R s a -> Language.R.Instance.R s b
+  {- Arity: 4, HasNoCafRefs,
+     Strictness: <L,1*C1(U)><C(C(S(SL))),1*C1(C1(U(U,U)))><L,U><S,U>,
+     Unfolding: InlineRule (0, True, True)
+                (\ @ s @ a @ b ->
+                 Language.R.Instance.$fFunctorR_$s$fFunctorReaderT_$cfmap
+                   @ (GHC.IORef.IORef GHC.Types.Int)
+                   @ a
+                   @ b)
+                  `cast`
+                (forall (s :: <*>_N) (a :: <*>_N) (b :: <*>_N).
+                 <a -> b>_R
+                 ->_R Sym (Language.R.Instance.N:R[0] <s>_P) <a>_N
+                 ->_R Sym (Language.R.Instance.N:R[0] <s>_P) <b>_N) -}
+f3da6fbe5afe988b4406374cbef2c153
+  $fFunctorR_$s$fFunctorReaderT_$cfmap ::
+    (a -> b)
+    -> Control.Monad.Trans.Reader.ReaderT r GHC.Types.IO a
+    -> Control.Monad.Trans.Reader.ReaderT r GHC.Types.IO b
+  {- Arity: 4, HasNoCafRefs,
+     Strictness: <L,1*C1(U)><C(C(S(SL))),1*C1(C1(U(U,U)))><L,U><S,U>,
+     Inline: INLINE (sat-args=1),
+     Unfolding: InlineRule (1, False, False)
+                (\ @ r
+                   @ a
+                   @ b
+                   (f :: a -> b)
+                   (eta :: Control.Monad.Trans.Reader.ReaderT r GHC.Types.IO a)
+                   (eta1 :: r) ->
+                 (GHC.Base.$
+                    @ 'GHC.Types.PtrRepLifted
+                    @ (r -> GHC.Types.IO b)
+                    @ (Control.Monad.Trans.Reader.ReaderT r GHC.Types.IO b)
+                    (\ (tpl :: r -> GHC.Types.IO b) -> tpl)
+                      `cast`
+                    (<r -> GHC.Types.IO b>_R
+                     ->_R Sym (Control.Monad.Trans.Reader.N:ReaderT[0]
+                                   <*>_N <r>_R <GHC.Types.IO>_R <b>_N))
+                    (let {
+                       g :: r -> GHC.Types.IO a
+                       = Control.Monad.Trans.Reader.runReaderT
+                           @ r
+                           @ *
+                           @ GHC.Types.IO
+                           @ a
+                           eta
+                     } in
+                     (\ (x :: r)
+                        (eta2 :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                      (GHC.Base.$fFunctorIO_$cfmap @ a @ b f (g x))
+                        `cast`
+                      (GHC.Types.N:IO[0] <b>_R)
+                        eta2)
+                       `cast`
+                     (<r>_R ->_R Sym (GHC.Types.N:IO[0] <b>_R))))
+                   `cast`
+                 (Control.Monad.Trans.Reader.N:ReaderT[0]
+                      <*>_N <r>_R <GHC.Types.IO>_R <b>_N)
+                   eta1)
+                  `cast`
+                (forall (r :: <*>_N) (a :: <*>_N) (b :: <*>_N).
+                 <a -> b>_R
+                 ->_R <Control.Monad.Trans.Reader.ReaderT r GHC.Types.IO a>_R
+                 ->_R Sym (Control.Monad.Trans.Reader.N:ReaderT[0]
+                               <*>_N <r>_R <GHC.Types.IO>_R <b>_N)) -}
+74115e3d17bc6506da54d03835c71928
+  $fMonadCatchR ::
+    Control.Monad.Catch.MonadCatch (Language.R.Instance.R s)
+  DFunId
+  {- Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun: @ s.
+                  @ (Language.R.Instance.R s)
+                  (Language.R.Instance.$fMonadThrowR @ s)
+                  (Language.R.Instance.$fMonadCatchR_$ccatch @ s) -}
+84f7a4a15947ab83a9fd77a434599214
+  $fMonadCatchR1 ::
+    GHC.Exception.Exception e =>
+    Control.Monad.Trans.Reader.ReaderT
+      (GHC.IORef.IORef GHC.Types.Int) GHC.Types.IO a
+    -> (e
+        -> Control.Monad.Trans.Reader.ReaderT
+             (GHC.IORef.IORef GHC.Types.Int) GHC.Types.IO a)
+    -> GHC.IORef.IORef GHC.Types.Int
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, a #)
+  {- Arity: 5, HasNoCafRefs,
+     Strictness: <L,1*U(A,A,A,1*C1(U),A)><L,1*C1(U)><L,1*C1(C1(C1(U)))><L,U><S,U>,
+     Unfolding: (\ @ s
+                   @ e
+                   @ a
+                   ($dException :: GHC.Exception.Exception e)
+                   (ds :: Control.Monad.Trans.Reader.ReaderT
+                            (GHC.IORef.IORef GHC.Types.Int) GHC.Types.IO a)
+                   (c :: e
+                         -> Control.Monad.Trans.Reader.ReaderT
+                              (GHC.IORef.IORef GHC.Types.Int) GHC.Types.IO a)
+                   (r1 :: GHC.IORef.IORef GHC.Types.Int)
+                   (eta :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                 GHC.Prim.catch#
+                   @ a
+                   @ GHC.Exception.SomeException
+                   (GHC.Magic.lazy
+                      @ (GHC.Types.IO a)
+                      (ds
+                         `cast`
+                       (Control.Monad.Trans.Reader.N:ReaderT[0]
+                            <*>_N <GHC.IORef.IORef GHC.Types.Int>_R <GHC.Types.IO>_R <a>_N)
+                         r1))
+                     `cast`
+                   (GHC.Types.N:IO[0] <a>_R)
+                   (\ (e1 :: GHC.Exception.SomeException)[OneShot] ->
+                    case GHC.Exception.fromException @ e $dException e1 of wild {
+                      GHC.Base.Nothing
+                      -> GHC.Prim.raiseIO# @ GHC.Exception.SomeException @ a e1
+                      GHC.Base.Just e'
+                      -> ((c e')
+                            `cast`
+                          (Control.Monad.Trans.Reader.N:ReaderT[0]
+                               <*>_N <GHC.IORef.IORef GHC.Types.Int>_R <GHC.Types.IO>_R <a>_N)
+                            r1)
+                           `cast`
+                         (GHC.Types.N:IO[0] <a>_R) })
+                   eta) -}
+74115e3d17bc6506da54d03835c71928
+  $fMonadCatchR_$ccatch ::
+    GHC.Exception.Exception e =>
+    Language.R.Instance.R s a
+    -> (e -> Language.R.Instance.R s a) -> Language.R.Instance.R s a
+  {- Arity: 5, HasNoCafRefs,
+     Strictness: <L,1*U(A,A,A,1*C1(U),A)><L,1*C1(U)><L,1*C1(C1(C1(U)))><L,U><S,U>,
+     Unfolding: InlineRule (0, True, True)
+                Language.R.Instance.$fMonadCatchR1
+                  `cast`
+                (forall (s :: <*>_N) (e :: <*>_N) (a :: <*>_N).
+                 <GHC.Exception.Exception e>_R
+                 ->_R Sym (Language.R.Instance.N:R[0] <s>_P) <a>_N
+                 ->_R (<e>_R ->_R Sym (Language.R.Instance.N:R[0] <s>_P) <a>_N)
+                 ->_R Trans
+                          (<GHC.IORef.IORef GHC.Types.Int>_R
+                           ->_R Sym (GHC.Types.N:IO[0] <a>_R))
+                          (Trans
+                               (Sym (Control.Monad.Trans.Reader.N:ReaderT[0]
+                                         <*>_N
+                                         <GHC.IORef.IORef GHC.Types.Int>_R
+                                         <GHC.Types.IO>_R
+                                         <a>_N))
+                               (Sym (Language.R.Instance.N:R[0] <s>_P) <a>_N))) -}
+74115e3d17bc6506da54d03835c71928
+  $fMonadIOR ::
+    Control.Monad.IO.Class.MonadIO (Language.R.Instance.R s)
+  DFunId
+  {- Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun: @ s.
+                  @ (Language.R.Instance.R s)
+                  (Language.R.Instance.$fMonadR @ s)
+                  (Language.R.Instance.$fMonadIOR_$cliftIO @ s) -}
+3d9c2c11c57cb03c11d017aca9c785ee
+  $fMonadIOR1 ::
+    GHC.Types.IO a -> GHC.IORef.IORef GHC.Types.Int -> GHC.Types.IO a
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><L,A>,
+     Unfolding: InlineRule (2, True, True)
+                (\ @ a
+                   (eta :: GHC.Types.IO a)
+                   (ds :: GHC.IORef.IORef GHC.Types.Int) ->
+                 eta) -}
+74115e3d17bc6506da54d03835c71928
+  $fMonadIOR_$cliftIO :: GHC.Types.IO a -> Language.R.Instance.R s a
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><L,A>,
+     Unfolding: InlineRule (0, True, True)
+                (\ @ s @ a -> Language.R.Instance.$fMonadIOR1 @ a)
+                  `cast`
+                (forall (s :: <*>_N) (a :: <*>_N).
+                 <GHC.Types.IO a>_R
+                 ->_R Trans
+                          (Sym (Control.Monad.Trans.Reader.N:ReaderT[0]
+                                    <*>_N <GHC.IORef.IORef GHC.Types.Int>_R <GHC.Types.IO>_R <a>_N))
+                          (Sym (Language.R.Instance.N:R[0] <s>_P) <a>_N)) -}
+74115e3d17bc6506da54d03835c71928
+  $fMonadMaskR ::
+    Control.Monad.Catch.MonadMask (Language.R.Instance.R s)
+  DFunId
+  {- Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun: @ s.
+                  @ (Language.R.Instance.R s)
+                  (Language.R.Instance.$fMonadCatchR @ s)
+                  (Language.R.Instance.$fMonadMaskR_$cmask @ s)
+                  (Language.R.Instance.$fMonadMaskR_$cuninterruptibleMask @ s) -}
+74115e3d17bc6506da54d03835c71928
+  $fMonadMaskR1 ::
+    ((forall a. Language.R.Instance.R s a -> Language.R.Instance.R s a)
+     -> Language.R.Instance.R s b)
+    -> GHC.IORef.IORef GHC.Types.Int
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, b #)
+  {- Arity: 3, HasNoCafRefs,
+     Strictness: <C(C(C(S))),1*C1(C1(C1(U(U,U))))><L,U><S,U>,
+     Unfolding: (\ @ s
+                   @ b
+                   (ds :: (forall a.
+                           Language.R.Instance.R s a -> Language.R.Instance.R s a)
+                          -> Language.R.Instance.R s b)
+                   (eta :: GHC.IORef.IORef GHC.Types.Int)
+                   (eta1 :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                 case GHC.Prim.getMaskingState# eta1 of ds1 { (#,#) ipv ipv1 ->
+                 case ipv1 of ds2 {
+                   DEFAULT
+                   -> GHC.Prim.maskUninterruptible#
+                        @ b
+                        ((ds
+                            Language.R.Instance.$fMonadMaskR4
+                              `cast`
+                            (forall (a1 :: <*>_N).
+                             Sym (Language.R.Instance.N:R[0] <s>_P) <(a1 `cast` <*>_N)
+                                                                     `cast`
+                                                                     <*>_N>_N
+                             ->_R Trans
+                                      (<GHC.IORef.IORef GHC.Types.Int>_R
+                                       ->_R Sym (GHC.Types.N:IO[0] <a1>_R))
+                                      (Trans
+                                           (Sym (Control.Monad.Trans.Reader.N:ReaderT[0]
+                                                     <*>_N
+                                                     <GHC.IORef.IORef GHC.Types.Int>_R
+                                                     <GHC.Types.IO>_R
+                                                     <a1>_N))
+                                           (Sym (Language.R.Instance.N:R[0] <s>_P) <(a1
+                                                                                     `cast`
+                                                                                     <*>_N)
+                                                                                    `cast`
+                                                                                    <*>_N>_N))))
+                           `cast`
+                         (Trans
+                              (Language.R.Instance.N:R[0] <s>_P <b>_N)
+                              (Control.Monad.Trans.Reader.N:ReaderT[0]
+                                   <*>_N <GHC.IORef.IORef GHC.Types.Int>_R <GHC.Types.IO>_R <b>_N))
+                           eta)
+                          `cast`
+                        (GHC.Types.N:IO[0] <b>_R)
+                        ipv
+                   0#
+                   -> GHC.Prim.maskUninterruptible#
+                        @ b
+                        ((ds
+                            Language.R.Instance.$fMonadMaskR3
+                              `cast`
+                            (forall (a1 :: <*>_N).
+                             Sym (Language.R.Instance.N:R[0] <s>_P) <(a1 `cast` <*>_N)
+                                                                     `cast`
+                                                                     <*>_N>_N
+                             ->_R Trans
+                                      (<GHC.IORef.IORef GHC.Types.Int>_R
+                                       ->_R Sym (GHC.Types.N:IO[0] <a1>_R))
+                                      (Trans
+                                           (Sym (Control.Monad.Trans.Reader.N:ReaderT[0]
+                                                     <*>_N
+                                                     <GHC.IORef.IORef GHC.Types.Int>_R
+                                                     <GHC.Types.IO>_R
+                                                     <a1>_N))
+                                           (Sym (Language.R.Instance.N:R[0] <s>_P) <(a1
+                                                                                     `cast`
+                                                                                     <*>_N)
+                                                                                    `cast`
+                                                                                    <*>_N>_N))))
+                           `cast`
+                         (Trans
+                              (Language.R.Instance.N:R[0] <s>_P <b>_N)
+                              (Control.Monad.Trans.Reader.N:ReaderT[0]
+                                   <*>_N <GHC.IORef.IORef GHC.Types.Int>_R <GHC.Types.IO>_R <b>_N))
+                           eta)
+                          `cast`
+                        (GHC.Types.N:IO[0] <b>_R)
+                        ipv
+                   1#
+                   -> ((ds
+                          Language.R.Instance.$fMonadMaskR2
+                            `cast`
+                          (forall (a1 :: <*>_N).
+                           Sym (Language.R.Instance.N:R[0] <s>_P) <(a1 `cast` <*>_N)
+                                                                   `cast`
+                                                                   <*>_N>_N
+                           ->_R Trans
+                                    (<GHC.IORef.IORef GHC.Types.Int>_R
+                                     ->_R Sym (GHC.Types.N:IO[0] <a1>_R))
+                                    (Trans
+                                         (Sym (Control.Monad.Trans.Reader.N:ReaderT[0]
+                                                   <*>_N
+                                                   <GHC.IORef.IORef GHC.Types.Int>_R
+                                                   <GHC.Types.IO>_R
+                                                   <a1>_N))
+                                         (Sym (Language.R.Instance.N:R[0] <s>_P) <(a1 `cast` <*>_N)
+                                                                                  `cast`
+                                                                                  <*>_N>_N))))
+                         `cast`
+                       (Trans
+                            (Language.R.Instance.N:R[0] <s>_P <b>_N)
+                            (Control.Monad.Trans.Reader.N:ReaderT[0]
+                                 <*>_N <GHC.IORef.IORef GHC.Types.Int>_R <GHC.Types.IO>_R <b>_N))
+                         eta)
+                        `cast`
+                      (GHC.Types.N:IO[0] <b>_R)
+                        ipv } }) -}
+f62ad324dac24aab1015347aa3a4b538
+  $fMonadMaskR2 ::
+    Control.Monad.Trans.Reader.ReaderT
+      (GHC.IORef.IORef GHC.Types.Int) GHC.Types.IO a1
+    -> GHC.IORef.IORef GHC.Types.Int
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, a1 #)
+  {- Arity: 3, HasNoCafRefs,
+     Unfolding: (\ @ a1
+                   (ds :: Control.Monad.Trans.Reader.ReaderT
+                            (GHC.IORef.IORef GHC.Types.Int) GHC.Types.IO a1)
+                   (eta1 :: GHC.IORef.IORef GHC.Types.Int)
+                   (eta :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                 GHC.Prim.maskUninterruptible#
+                   @ a1
+                   (ds
+                      `cast`
+                    (Control.Monad.Trans.Reader.N:ReaderT[0]
+                         <*>_N <GHC.IORef.IORef GHC.Types.Int>_R <GHC.Types.IO>_R <a1>_N)
+                      eta1)
+                     `cast`
+                   (GHC.Types.N:IO[0] <a1>_R)
+                   eta) -}
+488428214a7b03412b42a00433c5a6b0
+  $fMonadMaskR3 ::
+    Control.Monad.Trans.Reader.ReaderT
+      (GHC.IORef.IORef GHC.Types.Int) GHC.Types.IO a1
+    -> GHC.IORef.IORef GHC.Types.Int
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, a1 #)
+  {- Arity: 3, HasNoCafRefs,
+     Unfolding: (\ @ a1
+                   (ds :: Control.Monad.Trans.Reader.ReaderT
+                            (GHC.IORef.IORef GHC.Types.Int) GHC.Types.IO a1)
+                   (eta1 :: GHC.IORef.IORef GHC.Types.Int)
+                   (eta :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                 GHC.Prim.unmaskAsyncExceptions#
+                   @ a1
+                   (ds
+                      `cast`
+                    (Control.Monad.Trans.Reader.N:ReaderT[0]
+                         <*>_N <GHC.IORef.IORef GHC.Types.Int>_R <GHC.Types.IO>_R <a1>_N)
+                      eta1)
+                     `cast`
+                   (GHC.Types.N:IO[0] <a1>_R)
+                   eta) -}
+2d2f92b76a92d7c6820ff5220cc7c2cf
+  $fMonadMaskR4 ::
+    Control.Monad.Trans.Reader.ReaderT
+      (GHC.IORef.IORef GHC.Types.Int) GHC.Types.IO a1
+    -> GHC.IORef.IORef GHC.Types.Int
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, a1 #)
+  {- Arity: 3, HasNoCafRefs,
+     Unfolding: (\ @ a1
+                   (ds :: Control.Monad.Trans.Reader.ReaderT
+                            (GHC.IORef.IORef GHC.Types.Int) GHC.Types.IO a1)
+                   (eta1 :: GHC.IORef.IORef GHC.Types.Int)
+                   (eta :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                 GHC.Prim.maskAsyncExceptions#
+                   @ a1
+                   (ds
+                      `cast`
+                    (Control.Monad.Trans.Reader.N:ReaderT[0]
+                         <*>_N <GHC.IORef.IORef GHC.Types.Int>_R <GHC.Types.IO>_R <a1>_N)
+                      eta1)
+                     `cast`
+                   (GHC.Types.N:IO[0] <a1>_R)
+                   eta) -}
+74115e3d17bc6506da54d03835c71928
+  $fMonadMaskR5 ::
+    ((forall a. Language.R.Instance.R s a -> Language.R.Instance.R s a)
+     -> Language.R.Instance.R s b)
+    -> GHC.IORef.IORef GHC.Types.Int
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, b #)
+  {- Arity: 3, HasNoCafRefs,
+     Strictness: <C(C(C(S))),1*C1(C1(C1(U(U,U))))><L,U><S,U>,
+     Unfolding: (\ @ s
+                   @ b
+                   (ds :: (forall a.
+                           Language.R.Instance.R s a -> Language.R.Instance.R s a)
+                          -> Language.R.Instance.R s b)
+                   (eta :: GHC.IORef.IORef GHC.Types.Int)
+                   (eta1 :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                 case GHC.Prim.getMaskingState# eta1 of ds1 { (#,#) ipv ipv1 ->
+                 case ipv1 of ds2 {
+                   DEFAULT
+                   -> ((ds
+                          Language.R.Instance.$fMonadMaskR4
+                            `cast`
+                          (forall (a1 :: <*>_N).
+                           Sym (Language.R.Instance.N:R[0] <s>_P) <(a1 `cast` <*>_N)
+                                                                   `cast`
+                                                                   <*>_N>_N
+                           ->_R Trans
+                                    (<GHC.IORef.IORef GHC.Types.Int>_R
+                                     ->_R Sym (GHC.Types.N:IO[0] <a1>_R))
+                                    (Trans
+                                         (Sym (Control.Monad.Trans.Reader.N:ReaderT[0]
+                                                   <*>_N
+                                                   <GHC.IORef.IORef GHC.Types.Int>_R
+                                                   <GHC.Types.IO>_R
+                                                   <a1>_N))
+                                         (Sym (Language.R.Instance.N:R[0] <s>_P) <(a1 `cast` <*>_N)
+                                                                                  `cast`
+                                                                                  <*>_N>_N))))
+                         `cast`
+                       (Trans
+                            (Language.R.Instance.N:R[0] <s>_P <b>_N)
+                            (Control.Monad.Trans.Reader.N:ReaderT[0]
+                                 <*>_N <GHC.IORef.IORef GHC.Types.Int>_R <GHC.Types.IO>_R <b>_N))
+                         eta)
+                        `cast`
+                      (GHC.Types.N:IO[0] <b>_R)
+                        ipv
+                   0#
+                   -> GHC.Prim.maskAsyncExceptions#
+                        @ b
+                        ((ds
+                            Language.R.Instance.$fMonadMaskR3
+                              `cast`
+                            (forall (a1 :: <*>_N).
+                             Sym (Language.R.Instance.N:R[0] <s>_P) <(a1 `cast` <*>_N)
+                                                                     `cast`
+                                                                     <*>_N>_N
+                             ->_R Trans
+                                      (<GHC.IORef.IORef GHC.Types.Int>_R
+                                       ->_R Sym (GHC.Types.N:IO[0] <a1>_R))
+                                      (Trans
+                                           (Sym (Control.Monad.Trans.Reader.N:ReaderT[0]
+                                                     <*>_N
+                                                     <GHC.IORef.IORef GHC.Types.Int>_R
+                                                     <GHC.Types.IO>_R
+                                                     <a1>_N))
+                                           (Sym (Language.R.Instance.N:R[0] <s>_P) <(a1
+                                                                                     `cast`
+                                                                                     <*>_N)
+                                                                                    `cast`
+                                                                                    <*>_N>_N))))
+                           `cast`
+                         (Trans
+                              (Language.R.Instance.N:R[0] <s>_P <b>_N)
+                              (Control.Monad.Trans.Reader.N:ReaderT[0]
+                                   <*>_N <GHC.IORef.IORef GHC.Types.Int>_R <GHC.Types.IO>_R <b>_N))
+                           eta)
+                          `cast`
+                        (GHC.Types.N:IO[0] <b>_R)
+                        ipv
+                   1#
+                   -> ((ds
+                          Language.R.Instance.$fMonadMaskR2
+                            `cast`
+                          (forall (a1 :: <*>_N).
+                           Sym (Language.R.Instance.N:R[0] <s>_P) <(a1 `cast` <*>_N)
+                                                                   `cast`
+                                                                   <*>_N>_N
+                           ->_R Trans
+                                    (<GHC.IORef.IORef GHC.Types.Int>_R
+                                     ->_R Sym (GHC.Types.N:IO[0] <a1>_R))
+                                    (Trans
+                                         (Sym (Control.Monad.Trans.Reader.N:ReaderT[0]
+                                                   <*>_N
+                                                   <GHC.IORef.IORef GHC.Types.Int>_R
+                                                   <GHC.Types.IO>_R
+                                                   <a1>_N))
+                                         (Sym (Language.R.Instance.N:R[0] <s>_P) <(a1 `cast` <*>_N)
+                                                                                  `cast`
+                                                                                  <*>_N>_N))))
+                         `cast`
+                       (Trans
+                            (Language.R.Instance.N:R[0] <s>_P <b>_N)
+                            (Control.Monad.Trans.Reader.N:ReaderT[0]
+                                 <*>_N <GHC.IORef.IORef GHC.Types.Int>_R <GHC.Types.IO>_R <b>_N))
+                         eta)
+                        `cast`
+                      (GHC.Types.N:IO[0] <b>_R)
+                        ipv } }) -}
+74115e3d17bc6506da54d03835c71928
+  $fMonadMaskR_$cmask ::
+    ((forall a. Language.R.Instance.R s a -> Language.R.Instance.R s a)
+     -> Language.R.Instance.R s b)
+    -> Language.R.Instance.R s b
+  {- Arity: 3, HasNoCafRefs,
+     Strictness: <C(C(C(S))),1*C1(C1(C1(U(U,U))))><L,U><S,U>,
+     Unfolding: InlineRule (0, True, True)
+                Language.R.Instance.$fMonadMaskR5
+                  `cast`
+                (forall (s :: <*>_N) (b :: <*>_N).
+                 <(forall a. Language.R.Instance.R s a -> Language.R.Instance.R s a)
+                  -> Language.R.Instance.R s b>_R
+                 ->_R Trans
+                          (<GHC.IORef.IORef GHC.Types.Int>_R
+                           ->_R Sym (GHC.Types.N:IO[0] <b>_R))
+                          (Trans
+                               (Sym (Control.Monad.Trans.Reader.N:ReaderT[0]
+                                         <*>_N
+                                         <GHC.IORef.IORef GHC.Types.Int>_R
+                                         <GHC.Types.IO>_R
+                                         <b>_N))
+                               (Sym (Language.R.Instance.N:R[0] <s>_P) <b>_N))) -}
+74115e3d17bc6506da54d03835c71928
+  $fMonadMaskR_$cuninterruptibleMask ::
+    ((forall a. Language.R.Instance.R s a -> Language.R.Instance.R s a)
+     -> Language.R.Instance.R s b)
+    -> Language.R.Instance.R s b
+  {- Arity: 3, HasNoCafRefs,
+     Strictness: <C(C(C(S))),1*C1(C1(C1(U(U,U))))><L,U><S,U>,
+     Unfolding: InlineRule (0, True, True)
+                Language.R.Instance.$fMonadMaskR1
+                  `cast`
+                (forall (s :: <*>_N) (b :: <*>_N).
+                 <(forall a. Language.R.Instance.R s a -> Language.R.Instance.R s a)
+                  -> Language.R.Instance.R s b>_R
+                 ->_R Trans
+                          (<GHC.IORef.IORef GHC.Types.Int>_R
+                           ->_R Sym (GHC.Types.N:IO[0] <b>_R))
+                          (Trans
+                               (Sym (Control.Monad.Trans.Reader.N:ReaderT[0]
+                                         <*>_N
+                                         <GHC.IORef.IORef GHC.Types.Int>_R
+                                         <GHC.Types.IO>_R
+                                         <b>_N))
+                               (Sym (Language.R.Instance.N:R[0] <s>_P) <b>_N))) -}
+74115e3d17bc6506da54d03835c71928
+  $fMonadR :: GHC.Base.Monad (Language.R.Instance.R s)
+  DFunId
+  {- Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun: @ s.
+                  @ (Language.R.Instance.R s)
+                  (Language.R.Instance.$fApplicativeR @ s)
+                  (Language.R.Instance.$fMonadR_$c>>= @ s)
+                  (Language.R.Instance.$fMonadR_$c>> @ s)
+                  (Language.R.Instance.$fApplicativeR_$creturn @ s)
+                  (Language.R.Instance.$fMonadR_$cfail @ s) -}
+74115e3d17bc6506da54d03835c71928
+  $fMonadRR :: Control.Monad.R.Class.MonadR (Language.R.Instance.R s)
+  DFunId
+  {- Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun: @ s.
+                  @ (Language.R.Instance.R s)
+                  (Language.R.Instance.$fApplicativeR @ s)
+                  (Language.R.Instance.$fMonadIOR @ s)
+                  (Language.R.Instance.$fMonadCatchR @ s)
+                  (Language.R.Instance.$fMonadMaskR @ s)
+                  (Language.R.Instance.$fPrimMonadR @ s)
+                  (Language.R.Instance.$fMonadRR_$cio @ s)
+                  (Language.R.Instance.$fMonadRR_$cacquire @ s)
+                  (Language.R.Instance.$fMonadRR_$cgetExecContext @ s)
+                  (Language.R.Instance.$fMonadRR_$cunsafeRunWithExecContext @ s) -}
+74115e3d17bc6506da54d03835c71928
+  $fMonadRR1 ::
+    s1 Data.Type.Equality.~ Control.Memory.Region.V =>
+    Foreign.R.Internal.SEXP s1 a
+    -> GHC.IORef.IORef GHC.Types.Int
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+          Foreign.R.Internal.SEXP
+            (Control.Monad.R.Class.Region (Language.R.Instance.R s)) a #)
+  {- Arity: 4, Strictness: <S(S),1*U(1*U)><S(S),U(U)><L,U(U)><S,U>,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (4, True, False)
+                (\ @ s
+                   @ s1
+                   @ (a :: Foreign.R.Type.SEXPTYPE)
+                   (w :: s1 Data.Type.Equality.~ Control.Memory.Region.V)
+                   (w1 :: Foreign.R.Internal.SEXP s1 a)
+                   (w2 :: GHC.IORef.IORef GHC.Types.Int)
+                   (w3 :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                 case w1
+                        `cast`
+                      (Foreign.R.Internal.N:SEXP[0]
+                           <s1>_P <a>_P) of ww { GHC.Ptr.Ptr ww1 ->
+                 Language.R.Instance.$w$cacquire @ s @ s1 @ a w ww1 w2 w3 }) -}
+ab06142a05e288a40b90f533f07f9ff4
+  $fMonadRR2 ::
+    GHC.Types.IO a -> GHC.IORef.IORef GHC.Types.Int -> GHC.Types.IO a
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><L,A>,
+     Unfolding: InlineRule (2, True, True)
+                (\ @ s
+                   @ a
+                   (m :: GHC.Types.IO a)
+                   (ds :: GHC.IORef.IORef GHC.Types.Int) ->
+                 m) -}
+74115e3d17bc6506da54d03835c71928
+  $fMonadRR_$cacquire ::
+    s1 Data.Type.Equality.~ Control.Memory.Region.V =>
+    Foreign.R.Internal.SEXP s1 a
+    -> Language.R.Instance.R
+         s
+         (Foreign.R.Internal.SEXP
+            (Control.Monad.R.Class.Region (Language.R.Instance.R s)) a)
+  {- Arity: 4, Strictness: <S(S),1*U(1*U)><S(S),U(U)><L,U(U)><S,U>,
+     Unfolding: InlineRule (0, True, True)
+                Language.R.Instance.$fMonadRR1
+                  `cast`
+                (forall (s :: <*>_N) (s1 :: <*>_N) (a :: <Foreign.R.Type.SEXPTYPE>_N).
+                 <s1 Data.Type.Equality.~ Control.Memory.Region.V>_R
+                 ->_R <Foreign.R.Internal.SEXP s1 a>_R
+                 ->_R Trans
+                          (<GHC.IORef.IORef GHC.Types.Int>_R
+                           ->_R Sym (GHC.Types.N:IO[0]
+                                         <Foreign.R.Internal.SEXP
+                                            (Control.Monad.R.Class.Region (Language.R.Instance.R s))
+                                            a>_R))
+                          (Trans
+                               (Sym (Control.Monad.Trans.Reader.N:ReaderT[0]
+                                         <*>_N
+                                         <GHC.IORef.IORef GHC.Types.Int>_R
+                                         <GHC.Types.IO>_R
+                                         <Foreign.R.Internal.SEXP
+                                            (Control.Monad.R.Class.Region (Language.R.Instance.R s))
+                                            a>_N))
+                               (Sym (Language.R.Instance.N:R[0] <s>_P) <Foreign.R.Internal.SEXP
+                                                                          (Control.Monad.R.Class.Region
+                                                                             (Language.R.Instance.R
+                                                                                s))
+                                                                          a>_N))) -}
+74115e3d17bc6506da54d03835c71928
+  $fMonadRR_$cgetExecContext ::
+    Language.R.Instance.R
+      s (Control.Monad.R.Class.ExecContext (Language.R.Instance.R s))
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,U><S,U>,
+     Unfolding: InlineRule (0, True, True)
+                (\ @ s ->
+                 GHC.Base.returnIO1
+                   @ (Control.Monad.R.Class.ExecContext (Language.R.Instance.R s)))
+                  `cast`
+                (forall (s :: <*>_N).
+                 Trans
+                     (Trans
+                          (Language.R.Instance.D:R:ExecContextR0[0] <s>_N)
+                          (Language.R.Instance.N:R:ExecContextR[0] <s>_N)
+                      ->_R Sym (GHC.Types.N:IO[0]
+                                    <Control.Monad.R.Class.ExecContext
+                                       (Language.R.Instance.R s)>_R))
+                     (Trans
+                          (Sym (Control.Monad.Trans.Reader.N:ReaderT[0]
+                                    <*>_N
+                                    <GHC.IORef.IORef GHC.Types.Int>_R
+                                    <GHC.Types.IO>_R
+                                    <Control.Monad.R.Class.ExecContext
+                                       (Language.R.Instance.R s)>_N))
+                          (Sym (Language.R.Instance.N:R[0]
+                                    <s>_P) <Control.Monad.R.Class.ExecContext
+                                              (Language.R.Instance.R s)>_N))) -}
+74115e3d17bc6506da54d03835c71928
+  $fMonadRR_$cio :: GHC.Types.IO a -> Language.R.Instance.R s a
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><L,A>,
+     Unfolding: InlineRule (0, True, True)
+                Language.R.Instance.$fMonadRR2
+                  `cast`
+                (forall (s :: <*>_N) (a :: <*>_N).
+                 <GHC.Types.IO a>_R
+                 ->_R Trans
+                          (Sym (Control.Monad.Trans.Reader.N:ReaderT[0]
+                                    <*>_N <GHC.IORef.IORef GHC.Types.Int>_R <GHC.Types.IO>_R <a>_N))
+                          (Sym (Language.R.Instance.N:R[0] <s>_P) <a>_N)) -}
+74115e3d17bc6506da54d03835c71928
+  $fMonadRR_$cunsafeRunWithExecContext ::
+    Language.R.Instance.R s a
+    -> Control.Monad.R.Class.ExecContext (Language.R.Instance.R s)
+    -> GHC.Types.IO a
+  {- Arity: 2, HasNoCafRefs, Strictness: <C(S),1*C1(U)><L,U>,
+     Unfolding: InlineRule (2, True, True)
+                (\ @ s
+                   @ a
+                   (m :: Language.R.Instance.R s a)
+                   (ds :: Control.Monad.R.Class.ExecContext
+                            (Language.R.Instance.R s)) ->
+                 m `cast`
+                 (Trans
+                      (Language.R.Instance.N:R[0] <s>_P <a>_N)
+                      (Control.Monad.Trans.Reader.N:ReaderT[0]
+                           <*>_N <GHC.IORef.IORef GHC.Types.Int>_R <GHC.Types.IO>_R <a>_N))
+                   ds
+                     `cast`
+                   (Trans
+                        (Language.R.Instance.D:R:ExecContextR0[0] <s>_N)
+                        (Language.R.Instance.N:R:ExecContextR[0] <s>_N))) -}
+74115e3d17bc6506da54d03835c71928
+  $fMonadR_$c>> ::
+    Language.R.Instance.R s a
+    -> Language.R.Instance.R s b -> Language.R.Instance.R s b
+  {- Arity: 4, HasNoCafRefs,
+     Strictness: <C(C(S(SL))),1*C1(C1(U(U,A)))><L,1*C1(C1(U(U,U)))><L,U><S,U>,
+     Unfolding: InlineRule (0, True, True)
+                (\ @ s @ a @ b ->
+                 Language.R.Instance.$fMonadR_$s$fMonadReaderT_$c>>
+                   @ (GHC.IORef.IORef GHC.Types.Int)
+                   @ a
+                   @ b)
+                  `cast`
+                (forall (s :: <*>_N) (a :: <*>_N) (b :: <*>_N).
+                 Sym (Language.R.Instance.N:R[0] <s>_P) <a>_N
+                 ->_R Sym (Language.R.Instance.N:R[0] <s>_P) <b>_N
+                 ->_R Sym (Language.R.Instance.N:R[0] <s>_P) <b>_N) -}
+74115e3d17bc6506da54d03835c71928
+  $fMonadR_$c>>= ::
+    Language.R.Instance.R s a
+    -> (a -> Language.R.Instance.R s b) -> Language.R.Instance.R s b
+  {- Arity: 4, HasNoCafRefs,
+     Strictness: <C(C(S(SL))),1*C1(C1(U(U,U)))><L,1*C1(C1(C1(U(U,U))))><L,U><S,U>,
+     Unfolding: InlineRule (0, True, True)
+                (\ @ s @ a @ b ->
+                 Language.R.Instance.$fMonadR_$s$fMonadReaderT_$c>>=
+                   @ (GHC.IORef.IORef GHC.Types.Int)
+                   @ a
+                   @ b)
+                  `cast`
+                (forall (s :: <*>_N) (a :: <*>_N) (b :: <*>_N).
+                 Sym (Language.R.Instance.N:R[0] <s>_P) <a>_N
+                 ->_R (<a>_R ->_R Sym (Language.R.Instance.N:R[0] <s>_P) <b>_N)
+                 ->_R Sym (Language.R.Instance.N:R[0] <s>_P) <b>_N) -}
+74115e3d17bc6506da54d03835c71928
+  $fMonadR_$cfail :: GHC.Base.String -> Language.R.Instance.R s a
+  {- Arity: 3, Strictness: <B,U><B,A><B,U>x,
+     Unfolding: InlineRule (0, True, True)
+                (\ @ s @ a ->
+                 Language.R.Instance.$fMonadR_$s$fMonadReaderT_$cfail
+                   @ (GHC.IORef.IORef GHC.Types.Int)
+                   @ a)
+                  `cast`
+                (forall (s :: <*>_N) (a :: <*>_N).
+                 <[GHC.Types.Char]>_R
+                 ->_R Sym (Language.R.Instance.N:R[0] <s>_P) <a>_N) -}
+c53de5b9417275b7c1ce926fae68c63b
+  $fMonadR_$s$fMonadReaderT_$c>> ::
+    Control.Monad.Trans.Reader.ReaderT r GHC.Types.IO a
+    -> Control.Monad.Trans.Reader.ReaderT r GHC.Types.IO b
+    -> Control.Monad.Trans.Reader.ReaderT r GHC.Types.IO b
+  {- Arity: 4, HasNoCafRefs,
+     Strictness: <C(C(S(SL))),1*C1(C1(U(U,A)))><L,1*C1(C1(U(U,U)))><L,U><S,U>,
+     Inline: INLINE (sat-args=2),
+     Unfolding: InlineRule (2, False, False)
+                (\ @ r
+                   @ a
+                   @ b
+                   (m1 :: Control.Monad.Trans.Reader.ReaderT r GHC.Types.IO a)
+                   (k :: Control.Monad.Trans.Reader.ReaderT r GHC.Types.IO b) ->
+                 GHC.Base.$
+                   @ 'GHC.Types.PtrRepLifted
+                   @ (r -> GHC.Types.IO b)
+                   @ (Control.Monad.Trans.Reader.ReaderT r GHC.Types.IO b)
+                   (\ (tpl :: r -> GHC.Types.IO b) -> tpl)
+                     `cast`
+                   (<r -> GHC.Types.IO b>_R
+                    ->_R Sym (Control.Monad.Trans.Reader.N:ReaderT[0]
+                                  <*>_N <r>_R <GHC.Types.IO>_R <b>_N))
+                   (\ (r1 :: r) ->
+                    GHC.Base.bindIO
+                      @ a
+                      @ b
+                      (Control.Monad.Trans.Reader.runReaderT
+                         @ r
+                         @ *
+                         @ GHC.Types.IO
+                         @ a
+                         m1
+                         r1)
+                      (\ (a1 :: a) ->
+                       Control.Monad.Trans.Reader.runReaderT
+                         @ r
+                         @ *
+                         @ GHC.Types.IO
+                         @ b
+                         k
+                         r1))) -}
+84b679fa48b91ad11f21f541bdaf8e66
+  $fMonadR_$s$fMonadReaderT_$c>>= ::
+    Control.Monad.Trans.Reader.ReaderT r GHC.Types.IO a
+    -> (a -> Control.Monad.Trans.Reader.ReaderT r GHC.Types.IO b)
+    -> Control.Monad.Trans.Reader.ReaderT r GHC.Types.IO b
+  {- Arity: 4, HasNoCafRefs,
+     Strictness: <C(C(S(SL))),1*C1(C1(U(U,U)))><L,1*C1(C1(C1(U(U,U))))><L,U><S,U>,
+     Inline: INLINE (sat-args=2),
+     Unfolding: InlineRule (2, False, False)
+                (\ @ r
+                   @ a
+                   @ b
+                   (m1 :: Control.Monad.Trans.Reader.ReaderT r GHC.Types.IO a)
+                   (k :: a -> Control.Monad.Trans.Reader.ReaderT r GHC.Types.IO b) ->
+                 GHC.Base.$
+                   @ 'GHC.Types.PtrRepLifted
+                   @ (r -> GHC.Types.IO b)
+                   @ (Control.Monad.Trans.Reader.ReaderT r GHC.Types.IO b)
+                   (\ (tpl :: r -> GHC.Types.IO b) -> tpl)
+                     `cast`
+                   (<r -> GHC.Types.IO b>_R
+                    ->_R Sym (Control.Monad.Trans.Reader.N:ReaderT[0]
+                                  <*>_N <r>_R <GHC.Types.IO>_R <b>_N))
+                   (\ (r1 :: r) ->
+                    GHC.Base.bindIO
+                      @ a
+                      @ b
+                      (Control.Monad.Trans.Reader.runReaderT
+                         @ r
+                         @ *
+                         @ GHC.Types.IO
+                         @ a
+                         m1
+                         r1)
+                      (\ (a1 :: a) ->
+                       Control.Monad.Trans.Reader.runReaderT
+                         @ r
+                         @ *
+                         @ GHC.Types.IO
+                         @ b
+                         (k a1)
+                         r1))) -}
+9a4c53c2f75f39dffbd9c990ab2e42a6
+  $fMonadR_$s$fMonadReaderT_$cfail ::
+    GHC.Base.String
+    -> Control.Monad.Trans.Reader.ReaderT r GHC.Types.IO a
+  {- Arity: 3, Strictness: <B,U><B,A><B,U>x,
+     Inline: INLINE (sat-args=1),
+     Unfolding: InlineRule (1, False, False)
+                (\ @ r @ a (msg :: GHC.Base.String) ->
+                 let {
+                   eta :: GHC.Types.IO a = GHC.Base.$fMonadIO_$cfail @ a msg
+                 } in
+                 (\ (eta1 :: r) -> GHC.Base.const @ (GHC.Types.IO a) @ r eta eta1)
+                   `cast`
+                 (Sym (Control.Monad.Trans.Reader.N:ReaderT[0]
+                           <*>_N <r>_R <GHC.Types.IO>_R <a>_N))) -}
+74115e3d17bc6506da54d03835c71928
+  $fMonadThrowR ::
+    Control.Monad.Catch.MonadThrow (Language.R.Instance.R s)
+  DFunId
+  {- Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun: @ s.
+                  @ (Language.R.Instance.R s)
+                  (Language.R.Instance.$fMonadR @ s)
+                  (Language.R.Instance.$fMonadThrowR_$cthrowM @ s) -}
+9d60beb0b4e498bc4a93eb46c419d080
+  $fMonadThrowR1 ::
+    GHC.Exception.Exception e =>
+    e
+    -> GHC.IORef.IORef GHC.Types.Int
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, a #)
+  {- Arity: 4, HasNoCafRefs,
+     Strictness: <B,1*U(A,A,1*C1(U),A,A)><B,U><B,A><B,U>x,
+     Unfolding: InlineRule (4, True, True)
+                (\ @ s
+                   @ e
+                   @ a
+                   ($dException :: GHC.Exception.Exception e)
+                   (eta1 :: e)
+                   (eta :: GHC.IORef.IORef GHC.Types.Int)
+                   (eta2 :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                 GHC.IO.throwIO1 @ e @ a $dException eta1 eta2) -}
+74115e3d17bc6506da54d03835c71928
+  $fMonadThrowR_$cthrowM ::
+    GHC.Exception.Exception e => e -> Language.R.Instance.R s a
+  {- Arity: 4, HasNoCafRefs,
+     Strictness: <B,1*U(A,A,1*C1(U),A,A)><B,U><B,A><B,U>x,
+     Unfolding: InlineRule (0, True, True)
+                Language.R.Instance.$fMonadThrowR1
+                  `cast`
+                (forall (s :: <*>_N) (e :: <*>_N) (a :: <*>_N).
+                 <GHC.Exception.Exception e>_R
+                 ->_R <e>_R
+                 ->_R Trans
+                          (<GHC.IORef.IORef GHC.Types.Int>_R
+                           ->_R Sym (GHC.Types.N:IO[0] <a>_R))
+                          (Trans
+                               (Sym (Control.Monad.Trans.Reader.N:ReaderT[0]
+                                         <*>_N
+                                         <GHC.IORef.IORef GHC.Types.Int>_R
+                                         <GHC.Types.IO>_R
+                                         <a>_N))
+                               (Sym (Language.R.Instance.N:R[0] <s>_P) <a>_N))) -}
+d12aecbc65b0e658ffd684160f413f71
+  $fMonoidConfig :: GHC.Base.Monoid Language.R.Instance.Config
+  DFunId
+  {- Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ Language.R.Instance.Config
+                  Language.R.Instance.defaultConfig
+                  Language.R.Instance.$fMonoidConfig_$cmappend
+                  Language.R.Instance.$fMonoidConfig_$cmconcat -}
+d12aecbc65b0e658ffd684160f413f71
+  $fMonoidConfig_$cmappend ::
+    Language.R.Instance.Config
+    -> Language.R.Instance.Config -> Language.R.Instance.Config
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <L,U(1*U,1*U,1*U)><L,U(1*U,1*U,1*U)>m,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (2, True, False)
+                (\ (w :: Language.R.Instance.Config)
+                   (w1 :: Language.R.Instance.Config) ->
+                 Language.R.Instance.Config
+                   (case w1 of wild { Language.R.Instance.Config ds ds1 ds2 ->
+                    case ds
+                           `cast`
+                         (Data.Monoid.N:Last[0] <[GHC.Types.Char]>_N) of wild1 {
+                      GHC.Base.Nothing
+                      -> case w of wild2 { Language.R.Instance.Config ds3 ds4 ds5 ->
+                         ds3 }
+                      GHC.Base.Just ipv
+                      -> wild1
+                           `cast`
+                         (Sym (Data.Monoid.N:Last[0]) <[GHC.Types.Char]>_N) } })
+                   (case w of wild { Language.R.Instance.Config ds ds1 ds2 ->
+                    GHC.Base.++
+                      @ [GHC.Types.Char]
+                      ds1
+                      (case w1 of wild1 { Language.R.Instance.Config ds3 ds4 ds5 ->
+                       ds4 }) })
+                   (case w1 of wild { Language.R.Instance.Config ds ds1 ds2 ->
+                    case ds2
+                           `cast`
+                         (Data.Monoid.N:Last[0] <GHC.Types.Bool>_N) of wild1 {
+                      GHC.Base.Nothing
+                      -> case w of wild2 { Language.R.Instance.Config ds3 ds4 ds5 ->
+                         ds5 }
+                      GHC.Base.Just ipv
+                      -> wild1
+                           `cast`
+                         (Sym (Data.Monoid.N:Last[0]) <GHC.Types.Bool>_N) } })) -}
+d12aecbc65b0e658ffd684160f413f71
+  $fMonoidConfig_$cmconcat ::
+    [Language.R.Instance.Config] -> Language.R.Instance.Config
+  {- Arity: 1, Strictness: <S,1*U>m, Inline: INLINE[0],
+     Unfolding: InlineRule (1, True, False)
+                (\ (w :: [Language.R.Instance.Config]) ->
+                 case Language.R.Instance.$wgo w of ww { (#,,#) ww1 ww2 ww3 ->
+                 Language.R.Instance.Config ww1 ww2 ww3 }) -}
+74115e3d17bc6506da54d03835c71928
+  $fPrimMonadR ::
+    Control.Monad.Primitive.PrimMonad (Language.R.Instance.R s)
+  DFunId
+  {- Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun: @ s.
+                  @ (Language.R.Instance.R s)
+                  (Language.R.Instance.$fMonadR @ s)
+                  (Language.R.Instance.$fPrimMonadR_$cprimitive @ s) -}
+74115e3d17bc6506da54d03835c71928
+  $fPrimMonadR1 ::
+    (GHC.Prim.State#
+       (Control.Monad.Primitive.PrimState (Language.R.Instance.R s))
+     -> (# GHC.Prim.State#
+             (Control.Monad.Primitive.PrimState (Language.R.Instance.R s)),
+           a #))
+    -> GHC.IORef.IORef GHC.Types.Int
+    -> GHC.Prim.State#
+         (Control.Monad.Primitive.PrimState (Language.R.Instance.R s))
+    -> (# GHC.Prim.State#
+            (Control.Monad.Primitive.PrimState (Language.R.Instance.R s)),
+          a #)
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><L,A>,
+     Unfolding: InlineRule (2, True, True)
+                (\ @ s
+                   @ a
+                   (f :: GHC.Prim.State#
+                           (Control.Monad.Primitive.PrimState (Language.R.Instance.R s))
+                         -> (# GHC.Prim.State#
+                                 (Control.Monad.Primitive.PrimState (Language.R.Instance.R s)),
+                               a #))
+                   (eta1 :: GHC.IORef.IORef GHC.Types.Int) ->
+                 f) -}
+74115e3d17bc6506da54d03835c71928
+  $fPrimMonadR_$cprimitive ::
+    (GHC.Prim.State#
+       (Control.Monad.Primitive.PrimState (Language.R.Instance.R s))
+     -> (# GHC.Prim.State#
+             (Control.Monad.Primitive.PrimState (Language.R.Instance.R s)),
+           a #))
+    -> Language.R.Instance.R s a
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><L,A>,
+     Unfolding: InlineRule (0, True, True)
+                Language.R.Instance.$fPrimMonadR1
+                  `cast`
+                (forall (s :: <*>_N) (a :: <*>_N).
+                 <GHC.Prim.State#
+                    (Control.Monad.Primitive.PrimState (Language.R.Instance.R s))
+                  -> (# GHC.Prim.State#
+                          (Control.Monad.Primitive.PrimState (Language.R.Instance.R s)),
+                        a #)>_R
+                 ->_R Trans
+                          (<GHC.IORef.IORef GHC.Types.Int>_R
+                           ->_R Trans
+                                    ((GHC.Prim.State#
+                                        (Language.R.Instance.D:R:PrimStateR[0]
+                                             (UnsafeCo nominal s GHC.Prim.RealWorld)))_R
+                                     ->_R ((#,#)
+                                             <'GHC.Types.VoidRep>_R
+                                             <'GHC.Types.PtrRepLifted>_R
+                                             (GHC.Prim.State#
+                                                (Language.R.Instance.D:R:PrimStateR[0]
+                                                     (UnsafeCo nominal s GHC.Prim.RealWorld)))_R
+                                             <a>_R)_R)
+                                    (Sym (GHC.Types.N:IO[0] <a>_R)))
+                          (Trans
+                               (Sym (Control.Monad.Trans.Reader.N:ReaderT[0]
+                                         <*>_N
+                                         <GHC.IORef.IORef GHC.Types.Int>_R
+                                         <GHC.Types.IO>_R
+                                         <a>_N))
+                               (Sym (Language.R.Instance.N:R[0] <s>_P) <a>_N))) -}
+7158d80a802758d414014219114f2523
+  $tc'Config :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   17353343118621874225##
+                   4195424813794135630##
+                   Language.R.Instance.$trModule
+                   Language.R.Instance.$tc'Config1) -}
+7b20c303929d1589075eaa20f6be7696
+  $tc'Config1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'Config"#) -}
+65250e93d07d583afca224dc31dd49d6
+  $tc'R :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   3012584837420472765##
+                   7133040363453551467##
+                   Language.R.Instance.$trModule
+                   Language.R.Instance.$tc'R1) -}
+e320dcbb9551d340db3cb48f38fb10eb
+  $tc'R1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'R"#) -}
+c54efb14d9059cea84533638c3f77c8b
+  $tcConfig :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   8805938406487187002##
+                   14004484683738992879##
+                   Language.R.Instance.$trModule
+                   Language.R.Instance.$tcConfig1) -}
+23edc81c15c4736fa1e5329affe39ce6
+  $tcConfig1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "Config"#) -}
+f7fe6260a3df2fbaaa70c897d1260005
+  $tcR :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   15789931275766977566##
+                   7655751957122442921##
+                   Language.R.Instance.$trModule
+                   Language.R.Instance.$tcR1) -}
+693a878cf4d72b9662b626e42e4e8957
+  $tcR1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "R"#) -}
+9822600aa8c7c06ca8caf700588d862b
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module
+                   Language.R.Instance.$trModule2
+                   Language.R.Instance.$trModule1) -}
+72670c63420712ce53cfa1b53dee398f
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "Language.R.Instance"#) -}
+db6f9d166d4d80bc9b5e6c2bafbede14
+  $trModule2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   "inline-r-0.9.0.2-GXEXrsxC4K8OTVxhqWwxs"#) -}
+74115e3d17bc6506da54d03835c71928
+  $w$cacquire ::
+    s1 Data.Type.Equality.~ Control.Memory.Region.V =>
+    GHC.Prim.Addr#
+    -> GHC.IORef.IORef GHC.Types.Int
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+          Foreign.R.Internal.SEXP
+            (Control.Monad.R.Class.Region (Language.R.Instance.R s)) a #)
+  {- Arity: 4, Strictness: <S(S),1*U(1*U)><S,U><L,U(U)><S,U>,
+     Inline: [0],
+     Unfolding: (\ @ s
+                   @ s1
+                   @ (a :: Foreign.R.Type.SEXPTYPE)
+                   (w :: s1 Data.Type.Equality.~ Control.Memory.Region.V)
+                   (ww :: GHC.Prim.Addr#)
+                   (w1 :: GHC.IORef.IORef GHC.Types.Int)
+                   (w2 :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                 case GHC.Types.HEq_sc
+                        @ *
+                        @ *
+                        @ s1
+                        @ Control.Memory.Region.V
+                        w `cast`
+                        (Data.Type.Equality.N:~[0]
+                             <*>_N <s1>_N <Control.Memory.Region.V>_N) of cobox0 { DEFAULT ->
+                 case GHC.Prim.getMaskingState# w2 of ds { (#,#) ipv ipv1 ->
+                 let {
+                   io :: GHC.Prim.State# GHC.Prim.RealWorld
+                         -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+                               Foreign.R.Internal.SEXP
+                                 (Control.Monad.R.Class.Region (Language.R.Instance.R s)) a #)
+                     {- Arity: 1, Strictness: <S,U> -}
+                   = \ (s2 :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                     case {__pkg_ccall_GC inline-r-0.9.0.2-GXEXrsxC4K8OTVxhqWwxs Rf_protect GHC.Prim.Addr#
+                                                                                            -> GHC.Prim.State#
+                                                                                                 GHC.Prim.RealWorld
+                                                                                            -> (# GHC.Prim.State#
+                                                                                                    GHC.Prim.RealWorld,
+                                                                                                  GHC.Prim.Addr# #)}
+                            ww
+                            s2 of wild { (#,#) ds2 ds3 ->
+                     case w1
+                            `cast`
+                          (GHC.IORef.N:IORef[0] <GHC.Types.Int>_N) of wild1 { GHC.STRef.STRef var# ->
+                     case GHC.Prim.readMutVar#
+                            @ GHC.Prim.RealWorld
+                            @ GHC.Types.Int
+                            var#
+                            ds2 of ds1 { (#,#) ipv2 ipv3 ->
+                     case ipv3 of wild2 { GHC.Types.I# x1 ->
+                     case x1 of wild3 {
+                       DEFAULT
+                       -> case GHC.Prim.writeMutVar#
+                                 @ GHC.Prim.RealWorld
+                                 @ GHC.Types.Int
+                                 var#
+                                 (GHC.Types.I# (GHC.Prim.+# wild3 1#))
+                                 ipv2 of s2# { DEFAULT ->
+                          (# s2#,
+                             (GHC.Ptr.Ptr @ Foreign.R.Internal.SEXPREC ds3)
+                               `cast`
+                             (Trans
+                                  (GHC.Ptr.Ptr
+                                     <Foreign.R.Internal.SEXPREC, Language.R.HExp.HExp
+                                                                    (Control.Monad.R.Class.Region
+                                                                       (Language.R.Instance.R s))
+                                                                    a>)_R
+                                  (Sym (Foreign.R.Internal.N:SEXP[0]
+                                            <Control.Monad.R.Class.Region
+                                               (Language.R.Instance.R s)>_P
+                                            <a>_P))) #) }
+                       9223372036854775807#
+                       -> case GHC.Enum.$fEnumInt2
+                          ret_ty (# GHC.Prim.State# GHC.Prim.RealWorld,
+                                    Foreign.R.Internal.SEXP
+                                      (Control.Monad.R.Class.Region (Language.R.Instance.R s)) a #)
+                          of {} } } } } }
+                 } in
+                 case ipv1 of ds1 {
+                   DEFAULT
+                   -> GHC.Prim.maskUninterruptible#
+                        @ (Foreign.R.Internal.SEXP
+                             (Control.Monad.R.Class.Region (Language.R.Instance.R s)) a)
+                        io
+                        ipv
+                   1# -> io ipv } } }) -}
+d12aecbc65b0e658ffd684160f413f71
+  $wgo ::
+    [Language.R.Instance.Config]
+    -> (# Data.Monoid.Last GHC.Base.String, [GHC.Base.String],
+          Data.Monoid.Last GHC.Types.Bool #)
+  {- Arity: 1, Strictness: <S,1*U>, Inline: [0] -}
+08961ce40d93d1467d056d38387ec235
+  $winitialize ::
+    Data.Monoid.Last GHC.Base.String
+    -> [GHC.Base.String]
+    -> Data.Monoid.Last GHC.Types.Bool
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+  {- Arity: 4, Strictness: <L,U><L,U><L,U><S,U>, Inline: [0] -}
+d4bff34fd2e7c495b13fd4ee14961aea
+  $wwithEmbeddedR ::
+    Data.Monoid.Last GHC.Base.String
+    -> [GHC.Base.String]
+    -> Data.Monoid.Last GHC.Types.Bool
+    -> GHC.Types.IO a
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, a #)
+  {- Arity: 5, Strictness: <L,U><L,U><L,U><L,C(U)><S,U>, Inline: [0],
+     Unfolding: (\ @ a
+                   (ww :: Data.Monoid.Last GHC.Base.String)
+                   (ww1 :: [GHC.Base.String])
+                   (ww2 :: Data.Monoid.Last GHC.Types.Bool)
+                   (w :: GHC.Types.IO a)
+                   (w1 :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                 case GHC.Prim.getMaskingState# w1 of ds { (#,#) ipv ipv1 ->
+                 case ipv1 of ds1 {
+                   DEFAULT
+                   -> case Language.R.Instance.$winitialize
+                             ww
+                             ww1
+                             ww2
+                             ipv of ds2 { (#,#) ipv2 ipv3 ->
+                      case GHC.Prim.catch#
+                             @ a
+                             @ GHC.Exception.SomeException
+                             (GHC.Magic.lazy
+                                @ (GHC.Types.IO a)
+                                (GHC.Prim.maskAsyncExceptions#
+                                   @ a
+                                   w `cast` (GHC.Types.N:IO[0] <a>_R))
+                                  `cast`
+                                (Sym (GHC.Types.N:IO[0] <a>_R)))
+                               `cast`
+                             (GHC.Types.N:IO[0] <a>_R)
+                             (Language.R.Instance.withEmbeddedR2 @ a)
+                             ipv2 of ds3 { (#,#) ipv4 ipv5 ->
+                      case {__pkg_ccall_GC inline-r-0.9.0.2-GXEXrsxC4K8OTVxhqWwxs Rf_endEmbeddedR GHC.Prim.Int#
+                                                                                                  -> GHC.Prim.State#
+                                                                                                       GHC.Prim.RealWorld
+                                                                                                  -> (# GHC.Prim.State#
+                                                                                                          GHC.Prim.RealWorld #)}
+                             0#
+                             ipv4 of wild1 { Unit# ds4 ->
+                      case GHC.Prim.writeInt32OffAddr#
+                             @ GHC.Prim.RealWorld
+                             __label "isRInitialized" (data)
+                             0#
+                             0#
+                             ds4 of s2 { DEFAULT ->
+                      (# s2, ipv5 #) } } } }
+                   0#
+                   -> GHC.Prim.maskAsyncExceptions#
+                        @ a
+                        (\ (eta1 :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                         case Language.R.Instance.$winitialize
+                                ww
+                                ww1
+                                ww2
+                                eta1 of ds2 { (#,#) ipv2 ipv3 ->
+                         case GHC.Prim.catch#
+                                @ a
+                                @ GHC.Exception.SomeException
+                                (GHC.Magic.lazy
+                                   @ (GHC.Types.IO a)
+                                   (GHC.Prim.unmaskAsyncExceptions#
+                                      @ a
+                                      w `cast` (GHC.Types.N:IO[0] <a>_R))
+                                     `cast`
+                                   (Sym (GHC.Types.N:IO[0] <a>_R)))
+                                  `cast`
+                                (GHC.Types.N:IO[0] <a>_R)
+                                (Language.R.Instance.withEmbeddedR2 @ a)
+                                ipv2 of ds3 { (#,#) ipv4 ipv5 ->
+                         case {__pkg_ccall_GC inline-r-0.9.0.2-GXEXrsxC4K8OTVxhqWwxs Rf_endEmbeddedR GHC.Prim.Int#
+                                                                                                     -> GHC.Prim.State#
+                                                                                                          GHC.Prim.RealWorld
+                                                                                                     -> (# GHC.Prim.State#
+                                                                                                             GHC.Prim.RealWorld #)}
+                                0#
+                                ipv4 of wild1 { Unit# ds4 ->
+                         case GHC.Prim.writeInt32OffAddr#
+                                @ GHC.Prim.RealWorld
+                                __label "isRInitialized" (data)
+                                0#
+                                0#
+                                ds4 of s2 { DEFAULT ->
+                         (# s2, ipv5 #) } } } })
+                        ipv
+                   1#
+                   -> case Language.R.Instance.$winitialize
+                             ww
+                             ww1
+                             ww2
+                             ipv of ds2 { (#,#) ipv2 ipv3 ->
+                      case GHC.Prim.catch#
+                             @ a
+                             @ GHC.Exception.SomeException
+                             (GHC.Magic.lazy
+                                @ (GHC.Types.IO a)
+                                (GHC.Prim.maskUninterruptible#
+                                   @ a
+                                   w `cast` (GHC.Types.N:IO[0] <a>_R))
+                                  `cast`
+                                (Sym (GHC.Types.N:IO[0] <a>_R)))
+                               `cast`
+                             (GHC.Types.N:IO[0] <a>_R)
+                             (Language.R.Instance.withEmbeddedR2 @ a)
+                             ipv2 of ds3 { (#,#) ipv4 ipv5 ->
+                      case {__pkg_ccall_GC inline-r-0.9.0.2-GXEXrsxC4K8OTVxhqWwxs Rf_endEmbeddedR GHC.Prim.Int#
+                                                                                                  -> GHC.Prim.State#
+                                                                                                       GHC.Prim.RealWorld
+                                                                                                  -> (# GHC.Prim.State#
+                                                                                                          GHC.Prim.RealWorld #)}
+                             0#
+                             ipv4 of wild1 { Unit# ds4 ->
+                      case GHC.Prim.writeInt32OffAddr#
+                             @ GHC.Prim.RealWorld
+                             __label "isRInitialized" (data)
+                             0#
+                             0#
+                             ds4 of s2 { DEFAULT ->
+                      (# s2, ipv5 #) } } } } } }) -}
+d12aecbc65b0e658ffd684160f413f71
+  data Config
+    = Config {configProgName :: Data.Monoid.Last GHC.Base.String,
+              configArgs :: [GHC.Base.String],
+              configSignalHandlers :: Data.Monoid.Last GHC.Types.Bool}
+74115e3d17bc6506da54d03835c71928
+  axiom D:R:ExecContextR0::
+    [s]
+      Control.Monad.R.Class.ExecContext (Language.R.Instance.R s)
+        = Language.R.Instance.R:ExecContextR s
+74115e3d17bc6506da54d03835c71928
+  axiom D:R:PrimStateR::
+    [s] Control.Monad.Primitive.PrimState (Language.R.Instance.R s) = s
+74115e3d17bc6506da54d03835c71928
+  type role R phantom nominal
+  newtype R s a
+    = R {unR :: Control.Monad.Trans.Reader.ReaderT
+                  (GHC.IORef.IORef GHC.Types.Int) GHC.Types.IO a}
+74115e3d17bc6506da54d03835c71928
+  newtype instance Control.Monad.R.Class.ExecContext
+                     (Language.R.Instance.R s)
+    = ExecContext (GHC.IORef.IORef GHC.Types.Int)
+    RecFlag: Recursive
+5162241156de73608b5e8fa4747c57ee
+  configArgs :: Language.R.Instance.Config -> [GHC.Base.String]
+  RecSel Left Language.R.Instance.Config
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(LSL),1*U(A,1*U,A)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: Language.R.Instance.Config) ->
+                 case ds of wild { Language.R.Instance.Config ds1 ds2 ds3 ->
+                 ds2 }) -}
+e64b63c99f20bc1f08d11067bd93bc41
+  configProgName ::
+    Language.R.Instance.Config -> Data.Monoid.Last GHC.Base.String
+  RecSel Left Language.R.Instance.Config
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(SLL),1*U(1*U,A,A)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: Language.R.Instance.Config) ->
+                 case ds of wild { Language.R.Instance.Config ds1 ds2 ds3 ->
+                 ds1 }) -}
+13ab18dab2c97bcce219e47e839b8b57
+  configSignalHandlers ::
+    Language.R.Instance.Config -> Data.Monoid.Last GHC.Types.Bool
+  RecSel Left Language.R.Instance.Config
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(LLS),1*U(A,A,1*U)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (ds :: Language.R.Instance.Config) ->
+                 case ds of wild { Language.R.Instance.Config ds1 ds2 ds3 ->
+                 ds3 }) -}
+d12aecbc65b0e658ffd684160f413f71
+  defaultConfig :: Language.R.Instance.Config
+  {- Strictness: m,
+     Unfolding: (Language.R.Instance.Config
+                   (GHC.Base.Nothing @ GHC.Base.String)
+                     `cast`
+                   (Sym (Data.Monoid.N:Last[0]) <GHC.Base.String>_N)
+                   Language.R.Instance.defaultConfig2
+                   Language.R.Instance.defaultConfig1
+                     `cast`
+                   (Sym (Data.Monoid.N:Last[0]) <GHC.Types.Bool>_N)) -}
+f53c23d81e23e10f6c43e0200bd35272
+  defaultConfig1 :: GHC.Base.Maybe GHC.Types.Bool
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (GHC.Base.Just @ GHC.Types.Bool GHC.Types.False) -}
+c1020f494e1144b183dc7686cb4fe3ed
+  defaultConfig2 :: [GHC.Base.String]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Base.String
+                   Language.R.Instance.defaultConfig5
+                   Language.R.Instance.defaultConfig3) -}
+353c54b0ae51371901408558c40548db
+  defaultConfig3 :: [GHC.Base.String]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Base.String
+                   Language.R.Instance.defaultConfig4
+                   (GHC.Types.[] @ GHC.Base.String)) -}
+9d06b9398cbd71617685a9a1276b61d0
+  defaultConfig4 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "--silent"#) -}
+9272993eae5b1aee1bcaa91e6afda347
+  defaultConfig5 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "--vanilla"#) -}
+220fed73658484b9c04ad3b2d1a1f7a1
+  finalize :: GHC.Types.IO ()
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,U>,
+     Unfolding: InlineRule (0, True, True)
+                Language.R.Instance.finalize1
+                  `cast`
+                (Sym (GHC.Types.N:IO[0] <()>_R)) -}
+f59179cffefea4a6d3e237f8d87cf9d4
+  finalize1 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (s :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                 case {__pkg_ccall_GC inline-r-0.9.0.2-GXEXrsxC4K8OTVxhqWwxs Rf_endEmbeddedR GHC.Prim.Int#
+                                                                                             -> GHC.Prim.State#
+                                                                                                  GHC.Prim.RealWorld
+                                                                                             -> (# GHC.Prim.State#
+                                                                                                     GHC.Prim.RealWorld #)}
+                        0#
+                        s of wild1 { Unit# ds ->
+                 case GHC.Prim.writeInt32OffAddr#
+                        @ GHC.Prim.RealWorld
+                        __label "isRInitialized" (data)
+                        0#
+                        0#
+                        ds of s2 { DEFAULT ->
+                 (# s2, GHC.Tuple.() #) } }) -}
+7e225ff95b71c13e5dae5740f3fbcba9
+  initialize :: Language.R.Instance.Config -> GHC.Types.IO ()
+  {- Arity: 2, Strictness: <S,1*U(U,U,U)><S,U>,
+     Unfolding: InlineRule (0, True, True)
+                Language.R.Instance.initialize1
+                  `cast`
+                (<Language.R.Instance.Config>_R
+                 ->_R Sym (GHC.Types.N:IO[0] <()>_R)) -}
+99d65a19f4013a855af5b20d03a64424
+  initialize1 ::
+    Language.R.Instance.Config
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+  {- Arity: 2, Strictness: <S,1*U(U,U,U)><S,U>, Inline: INLINE[0],
+     Unfolding: InlineRule (2, True, False)
+                (\ (w :: Language.R.Instance.Config)
+                   (w1 :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                 case w of ww { Language.R.Instance.Config ww1 ww2 ww3 ->
+                 Language.R.Instance.$winitialize ww1 ww2 ww3 w1 }) -}
+2dc6fcdbf6d1ddc15c4a52a7c2ef6cad
+  runRegion ::
+    Control.DeepSeq.NFData a =>
+    (forall s. Language.R.Instance.R s a) -> GHC.Types.IO a
+  {- Arity: 3, HasNoCafRefs, Strictness: <L,C(H)><L,C(C1(U(U,U)))>,
+     Unfolding: InlineRule (0, True, True)
+                Language.R.Instance.runRegion1
+                  `cast`
+                (forall (a :: <*>_N).
+                 <Control.DeepSeq.NFData a>_R
+                 ->_R <forall s. Language.R.Instance.R s a>_R
+                 ->_R Sym (GHC.Types.N:IO[0] <a>_R)) -}
+a6f34afc91bb3e106c31112722aaac44
+  runRegion1 ::
+    Control.DeepSeq.NFData a =>
+    (forall s. Language.R.Instance.R s a)
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, a #)
+  {- Arity: 3, HasNoCafRefs, Strictness: <L,C(H)><L,C(C1(U(U,U)))>,
+     Unfolding: InlineRule (2, True, True)
+                (\ @ a
+                   ($dNFData :: Control.DeepSeq.NFData a)
+                   (r :: forall s. Language.R.Instance.R s a)
+                   (eta :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                 Language.R.Instance.runRegion2
+                   @ a
+                   @ GHC.Prim.Any
+                   $dNFData
+                   (r @ GHC.Prim.Any)
+                   eta) -}
+fcea8b297c208b3a269aead5c5f07c3b
+  runRegion2 ::
+    Control.DeepSeq.NFData a =>
+    Language.R.Instance.R s a
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, a #)
+  {- Arity: 3, HasNoCafRefs,
+     Strictness: <L,C(H)><L,C(C1(U(U,U)))><S,U>,
+     Unfolding: (\ @ a
+                   @ s
+                   ($dNFData :: Control.DeepSeq.NFData a)
+                   (r :: Language.R.Instance.R s a)
+                   (eta :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                 case GHC.Prim.getMaskingState# eta of ds { (#,#) ipv ipv1 ->
+                 case ipv1 of ds1 {
+                   DEFAULT
+                   -> case GHC.Prim.newMutVar#
+                             @ GHC.Types.Int
+                             @ GHC.Prim.RealWorld
+                             Language.R.Instance.runRegion3
+                             ipv of ds2 { (#,#) ipv2 ipv3 ->
+                      case GHC.Prim.catch#
+                             @ a
+                             @ GHC.Exception.SomeException
+                             (GHC.Magic.lazy
+                                @ (GHC.Types.IO a)
+                                (GHC.Prim.maskAsyncExceptions#
+                                   @ a
+                                   (\ (s1 :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                                    case (r `cast`
+                                          (Trans
+                                               (Language.R.Instance.N:R[0] <s>_P <a>_N)
+                                               (Control.Monad.Trans.Reader.N:ReaderT[0]
+                                                    <*>_N
+                                                    <GHC.IORef.IORef GHC.Types.Int>_R
+                                                    <GHC.Types.IO>_R
+                                                    <a>_N))
+                                            (GHC.STRef.STRef
+                                               @ GHC.Prim.RealWorld
+                                               @ GHC.Types.Int
+                                               ipv3)
+                                              `cast`
+                                            (Sym (GHC.IORef.N:IORef[0]) <GHC.Types.Int>_N))
+                                           `cast`
+                                         (GHC.Types.N:IO[0] <a>_R)
+                                           s1 of ds3 { (#,#) ipv4 ipv5 ->
+                                    case $dNFData `cast` (Control.DeepSeq.N:NFData[0] <a>_N)
+                                           ipv5 of wild { () ->
+                                    ds3 } }))
+                                  `cast`
+                                (Sym (GHC.Types.N:IO[0] <a>_R)))
+                               `cast`
+                             (GHC.Types.N:IO[0] <a>_R)
+                             (\ (e1 :: GHC.Exception.SomeException)[OneShot]
+                                (eta1 :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                              case GHC.Prim.readMutVar#
+                                     @ GHC.Prim.RealWorld
+                                     @ GHC.Types.Int
+                                     ipv3
+                                     eta1 of ds3 { (#,#) ipv4 ipv5 ->
+                              case ipv5 of wild { GHC.Types.I# x# ->
+                              case {__pkg_ccall_GC inline-r-0.9.0.2-GXEXrsxC4K8OTVxhqWwxs Rf_unprotect GHC.Prim.Int#
+                                                                                                       -> GHC.Prim.State#
+                                                                                                            GHC.Prim.RealWorld
+                                                                                                       -> (# GHC.Prim.State#
+                                                                                                               GHC.Prim.RealWorld #)}
+                                     (GHC.Prim.narrow32Int# x#)
+                                     ipv4 of wild1 { Unit# ds4 ->
+                              GHC.Prim.raiseIO# @ GHC.Exception.SomeException @ a e1 ds4 } } })
+                             ipv2 of ds3 { (#,#) ipv4 ipv5 ->
+                      case GHC.Prim.readMutVar#
+                             @ GHC.Prim.RealWorld
+                             @ GHC.Types.Int
+                             ipv3
+                             ipv4 of ds4 { (#,#) ipv7 ipv8 ->
+                      case ipv8 of wild { GHC.Types.I# x# ->
+                      case {__pkg_ccall_GC inline-r-0.9.0.2-GXEXrsxC4K8OTVxhqWwxs Rf_unprotect GHC.Prim.Int#
+                                                                                               -> GHC.Prim.State#
+                                                                                                    GHC.Prim.RealWorld
+                                                                                               -> (# GHC.Prim.State#
+                                                                                                       GHC.Prim.RealWorld #)}
+                             (GHC.Prim.narrow32Int# x#)
+                             ipv7 of wild1 { Unit# ds5 ->
+                      (# ds5, ipv5 #) } } } } }
+                   0#
+                   -> GHC.Prim.maskAsyncExceptions#
+                        @ a
+                        (\ (eta1 :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                         case GHC.Prim.newMutVar#
+                                @ GHC.Types.Int
+                                @ GHC.Prim.RealWorld
+                                Language.R.Instance.runRegion3
+                                eta1 of ds2 { (#,#) ipv2 ipv3 ->
+                         case GHC.Prim.catch#
+                                @ a
+                                @ GHC.Exception.SomeException
+                                (GHC.Magic.lazy
+                                   @ (GHC.Types.IO a)
+                                   (GHC.Prim.unmaskAsyncExceptions#
+                                      @ a
+                                      (\ (s1 :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                                       case (r `cast`
+                                             (Trans
+                                                  (Language.R.Instance.N:R[0] <s>_P <a>_N)
+                                                  (Control.Monad.Trans.Reader.N:ReaderT[0]
+                                                       <*>_N
+                                                       <GHC.IORef.IORef GHC.Types.Int>_R
+                                                       <GHC.Types.IO>_R
+                                                       <a>_N))
+                                               (GHC.STRef.STRef
+                                                  @ GHC.Prim.RealWorld
+                                                  @ GHC.Types.Int
+                                                  ipv3)
+                                                 `cast`
+                                               (Sym (GHC.IORef.N:IORef[0]) <GHC.Types.Int>_N))
+                                              `cast`
+                                            (GHC.Types.N:IO[0] <a>_R)
+                                              s1 of ds3 { (#,#) ipv4 ipv5 ->
+                                       case $dNFData `cast` (Control.DeepSeq.N:NFData[0] <a>_N)
+                                              ipv5 of wild { () ->
+                                       ds3 } }))
+                                     `cast`
+                                   (Sym (GHC.Types.N:IO[0] <a>_R)))
+                                  `cast`
+                                (GHC.Types.N:IO[0] <a>_R)
+                                (\ (e1 :: GHC.Exception.SomeException)[OneShot]
+                                   (eta2 :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                                 case GHC.Prim.readMutVar#
+                                        @ GHC.Prim.RealWorld
+                                        @ GHC.Types.Int
+                                        ipv3
+                                        eta2 of ds3 { (#,#) ipv4 ipv5 ->
+                                 case ipv5 of wild { GHC.Types.I# x# ->
+                                 case {__pkg_ccall_GC inline-r-0.9.0.2-GXEXrsxC4K8OTVxhqWwxs Rf_unprotect GHC.Prim.Int#
+                                                                                                          -> GHC.Prim.State#
+                                                                                                               GHC.Prim.RealWorld
+                                                                                                          -> (# GHC.Prim.State#
+                                                                                                                  GHC.Prim.RealWorld #)}
+                                        (GHC.Prim.narrow32Int# x#)
+                                        ipv4 of wild1 { Unit# ds4 ->
+                                 GHC.Prim.raiseIO# @ GHC.Exception.SomeException @ a e1 ds4 } } })
+                                ipv2 of ds3 { (#,#) ipv4 ipv5 ->
+                         case GHC.Prim.readMutVar#
+                                @ GHC.Prim.RealWorld
+                                @ GHC.Types.Int
+                                ipv3
+                                ipv4 of ds4 { (#,#) ipv7 ipv8 ->
+                         case ipv8 of wild { GHC.Types.I# x# ->
+                         case {__pkg_ccall_GC inline-r-0.9.0.2-GXEXrsxC4K8OTVxhqWwxs Rf_unprotect GHC.Prim.Int#
+                                                                                                  -> GHC.Prim.State#
+                                                                                                       GHC.Prim.RealWorld
+                                                                                                  -> (# GHC.Prim.State#
+                                                                                                          GHC.Prim.RealWorld #)}
+                                (GHC.Prim.narrow32Int# x#)
+                                ipv7 of wild1 { Unit# ds5 ->
+                         (# ds5, ipv5 #) } } } } })
+                        ipv
+                   1#
+                   -> case GHC.Prim.newMutVar#
+                             @ GHC.Types.Int
+                             @ GHC.Prim.RealWorld
+                             Language.R.Instance.runRegion3
+                             ipv of ds2 { (#,#) ipv2 ipv3 ->
+                      case GHC.Prim.catch#
+                             @ a
+                             @ GHC.Exception.SomeException
+                             (GHC.Magic.lazy
+                                @ (GHC.Types.IO a)
+                                (GHC.Prim.maskUninterruptible#
+                                   @ a
+                                   (\ (s1 :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                                    case (r `cast`
+                                          (Trans
+                                               (Language.R.Instance.N:R[0] <s>_P <a>_N)
+                                               (Control.Monad.Trans.Reader.N:ReaderT[0]
+                                                    <*>_N
+                                                    <GHC.IORef.IORef GHC.Types.Int>_R
+                                                    <GHC.Types.IO>_R
+                                                    <a>_N))
+                                            (GHC.STRef.STRef
+                                               @ GHC.Prim.RealWorld
+                                               @ GHC.Types.Int
+                                               ipv3)
+                                              `cast`
+                                            (Sym (GHC.IORef.N:IORef[0]) <GHC.Types.Int>_N))
+                                           `cast`
+                                         (GHC.Types.N:IO[0] <a>_R)
+                                           s1 of ds3 { (#,#) ipv4 ipv5 ->
+                                    case $dNFData `cast` (Control.DeepSeq.N:NFData[0] <a>_N)
+                                           ipv5 of wild { () ->
+                                    ds3 } }))
+                                  `cast`
+                                (Sym (GHC.Types.N:IO[0] <a>_R)))
+                               `cast`
+                             (GHC.Types.N:IO[0] <a>_R)
+                             (\ (e1 :: GHC.Exception.SomeException)[OneShot]
+                                (eta1 :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                              case GHC.Prim.readMutVar#
+                                     @ GHC.Prim.RealWorld
+                                     @ GHC.Types.Int
+                                     ipv3
+                                     eta1 of ds3 { (#,#) ipv4 ipv5 ->
+                              case ipv5 of wild { GHC.Types.I# x# ->
+                              case {__pkg_ccall_GC inline-r-0.9.0.2-GXEXrsxC4K8OTVxhqWwxs Rf_unprotect GHC.Prim.Int#
+                                                                                                       -> GHC.Prim.State#
+                                                                                                            GHC.Prim.RealWorld
+                                                                                                       -> (# GHC.Prim.State#
+                                                                                                               GHC.Prim.RealWorld #)}
+                                     (GHC.Prim.narrow32Int# x#)
+                                     ipv4 of wild1 { Unit# ds4 ->
+                              GHC.Prim.raiseIO# @ GHC.Exception.SomeException @ a e1 ds4 } } })
+                             ipv2 of ds3 { (#,#) ipv4 ipv5 ->
+                      case GHC.Prim.readMutVar#
+                             @ GHC.Prim.RealWorld
+                             @ GHC.Types.Int
+                             ipv3
+                             ipv4 of ds4 { (#,#) ipv7 ipv8 ->
+                      case ipv8 of wild { GHC.Types.I# x# ->
+                      case {__pkg_ccall_GC inline-r-0.9.0.2-GXEXrsxC4K8OTVxhqWwxs Rf_unprotect GHC.Prim.Int#
+                                                                                               -> GHC.Prim.State#
+                                                                                                    GHC.Prim.RealWorld
+                                                                                               -> (# GHC.Prim.State#
+                                                                                                       GHC.Prim.RealWorld #)}
+                             (GHC.Prim.narrow32Int# x#)
+                             ipv7 of wild1 { Unit# ds5 ->
+                      (# ds5, ipv5 #) } } } } } } }) -}
+e5217e15ae4958a07ab5b3214f19ab30
+  runRegion3 :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 0#) -}
+2e23e2e1292a6ff8739641e97a176d57
+  unR ::
+    Language.R.Instance.R s a
+    -> Control.Monad.Trans.Reader.ReaderT
+         (GHC.IORef.IORef GHC.Types.Int) GHC.Types.IO a
+  RecSel Left Language.R.Instance.R
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>,
+     Unfolding: InlineRule (0, True, True)
+                Language.R.Instance.unR1
+                  `cast`
+                (forall (s :: <*>_N) (a :: <*>_N).
+                 <Language.R.Instance.R s a>_R
+                 ->_R Language.R.Instance.N:R[0] <s>_P <a>_N) -}
+f4f13496b478e8bcc79ca31f25bc68cd
+  unR1 :: Language.R.Instance.R s a -> Language.R.Instance.R s a
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, True)
+                (\ @ s @ a (ds :: Language.R.Instance.R s a) -> ds) -}
+ddd1b411860efaabd12cbe1c70b87418
+  unsafeRunRegion ::
+    Control.DeepSeq.NFData a =>
+    Language.R.Instance.R s a -> GHC.Types.IO a
+  {- Arity: 3, HasNoCafRefs,
+     Strictness: <L,C(H)><L,C(C1(U(U,U)))><S,U>,
+     Unfolding: InlineRule (0, True, True)
+                Language.R.Instance.runRegion2
+                  `cast`
+                (forall (a :: <*>_N) (s :: <*>_N).
+                 <Control.DeepSeq.NFData a>_R
+                 ->_R <Language.R.Instance.R s a>_R
+                 ->_R Sym (GHC.Types.N:IO[0] <a>_R)) -}
+5eae59fe31af030bb0ac888e3bc71d2c
+  withEmbeddedR ::
+    Language.R.Instance.Config -> GHC.Types.IO a -> GHC.Types.IO a
+  {- Arity: 3, Strictness: <S,1*U(U,U,U)><L,C(U)><S,U>,
+     Unfolding: InlineRule (0, True, True)
+                Language.R.Instance.withEmbeddedR1
+                  `cast`
+                (forall (a :: <*>_N).
+                 <Language.R.Instance.Config>_R
+                 ->_R <GHC.Types.IO a>_R
+                 ->_R Sym (GHC.Types.N:IO[0] <a>_R)) -}
+e5fe55f701e7d3f488f2dbad8ff2ce2c
+  withEmbeddedR1 ::
+    Language.R.Instance.Config
+    -> GHC.Types.IO a
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, a #)
+  {- Arity: 3, Strictness: <S,1*U(U,U,U)><L,C(U)><S,U>,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (3, True, False)
+                (\ @ a
+                   (w :: Language.R.Instance.Config)
+                   (w1 :: GHC.Types.IO a)
+                   (w2 :: GHC.Prim.State# GHC.Prim.RealWorld)[OneShot] ->
+                 case w of ww { Language.R.Instance.Config ww1 ww2 ww3 ->
+                 Language.R.Instance.$wwithEmbeddedR @ a ww1 ww2 ww3 w1 w2 }) -}
+a2f69e3ed5d356349c4b6d3f5835b2c0
+  withEmbeddedR2 ::
+    GHC.Exception.SomeException
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, a #)
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,U><L,U>x -}
+instance GHC.Base.Applicative [Language.R.Instance.R]
+  = Language.R.Instance.$fApplicativeR
+instance Data.Default.Class.Default [Language.R.Instance.Config]
+  = Language.R.Instance.$fDefaultConfig
+instance GHC.Base.Functor [Language.R.Instance.R]
+  = Language.R.Instance.$fFunctorR
+instance Control.Monad.Catch.MonadCatch [Language.R.Instance.R]
+  = Language.R.Instance.$fMonadCatchR
+instance Control.Monad.IO.Class.MonadIO [Language.R.Instance.R]
+  = Language.R.Instance.$fMonadIOR
+instance Control.Monad.Catch.MonadMask [Language.R.Instance.R]
+  = Language.R.Instance.$fMonadMaskR
+instance GHC.Base.Monad [Language.R.Instance.R]
+  = Language.R.Instance.$fMonadR
+instance Control.Monad.R.Class.MonadR [Language.R.Instance.R]
+  = Language.R.Instance.$fMonadRR
+instance Control.Monad.Catch.MonadThrow [Language.R.Instance.R]
+  = Language.R.Instance.$fMonadThrowR
+instance GHC.Base.Monoid [Language.R.Instance.Config]
+  = Language.R.Instance.$fMonoidConfig
+instance Control.Monad.Primitive.PrimMonad [Language.R.Instance.R]
+  = Language.R.Instance.$fPrimMonadR
+family instance Control.Monad.R.Class.ExecContext [Language.R.Instance.R]
+  = Language.R.Instance.D:R:ExecContextR0
+family instance Control.Monad.Primitive.PrimState [Language.R.Instance.R]
+  = Language.R.Instance.D:R:PrimStateR
+"SPEC/Language.R.Instance $fApplicativeReaderT_$c<*> @ IO _" [ALWAYS] forall @ r
+                                                                             ($dApplicative :: GHC.Base.Applicative
+                                                                                                 GHC.Types.IO)
+  Control.Monad.Trans.Reader.$fApplicativeReaderT_$c<*> @ GHC.Types.IO
+                                                        @ r
+                                                        $dApplicative
+  = Language.R.Instance.$fApplicativeR_$s$fApplicativeReaderT_$c<*>
+      @ r
+"SPEC/Language.R.Instance $fFunctorReaderT_$cfmap @ IO _" [ALWAYS] forall @ r
+                                                                          ($dFunctor :: GHC.Base.Functor
+                                                                                          GHC.Types.IO)
+  Control.Monad.Trans.Reader.$fFunctorReaderT_$cfmap @ GHC.Types.IO
+                                                     @ r
+                                                     $dFunctor
+  = Language.R.Instance.$fFunctorR_$s$fFunctorReaderT_$cfmap @ r
+"SPEC/Language.R.Instance $fMonadReaderT_$c>> @ IO _" [ALWAYS] forall @ r
+                                                                      ($dMonad :: GHC.Base.Monad
+                                                                                    GHC.Types.IO)
+  Control.Monad.Trans.Reader.$fMonadReaderT_$c>> @ GHC.Types.IO
+                                                 @ r
+                                                 $dMonad
+  = Language.R.Instance.$fMonadR_$s$fMonadReaderT_$c>> @ r
+"SPEC/Language.R.Instance $fMonadReaderT_$c>>= @ IO _" [ALWAYS] forall @ r
+                                                                       ($dMonad :: GHC.Base.Monad
+                                                                                     GHC.Types.IO)
+  Control.Monad.Trans.Reader.$fMonadReaderT_$c>>= @ GHC.Types.IO
+                                                  @ r
+                                                  $dMonad
+  = Language.R.Instance.$fMonadR_$s$fMonadReaderT_$c>>= @ r
+"SPEC/Language.R.Instance $fMonadReaderT_$cfail @ IO _" [ALWAYS] forall @ r
+                                                                        ($dMonad :: GHC.Base.Monad
+                                                                                      GHC.Types.IO)
+  Control.Monad.Trans.Reader.$fMonadReaderT_$cfail @ GHC.Types.IO
+                                                   @ r
+                                                   $dMonad
+  = Language.R.Instance.$fMonadR_$s$fMonadReaderT_$cfail @ r
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: none
+require own pkg trusted: False
+
